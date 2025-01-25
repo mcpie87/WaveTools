@@ -1,0 +1,842 @@
+[
+  {
+    "id": 1402,
+    "rarity": 4,
+    "name": "Yangyang",
+    "elementId": 4,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_1_UI.T_IconRoleHead175_1_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_1_UI.T_IconRoleHeadCircle256_1_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_1_UI.T_IconRoleHead256_1_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_1.T_IconRoleHead150_1"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1202,
+    "rarity": 4,
+    "name": "Chixia",
+    "elementId": 2,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_2_UI.T_IconRoleHead175_2_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_2_UI.T_IconRoleHeadCircle256_2_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_2_UI.T_IconRoleHead256_2_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_2.T_IconRoleHead150_2"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1503,
+    "rarity": 5,
+    "name": "Verina",
+    "elementId": 5,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_3_UI.T_IconRoleHead175_3_UI",
+    "body": "FemaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_3_UI.T_IconRoleHeadCircle256_3_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_3_UI.T_IconRoleHead256_3_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_3.T_IconRoleHead150_3"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1501,
+    "rarity": 5,
+    "name": "Rover-Spectro",
+    "elementId": 5,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_4_UI.T_IconRoleHead175_4_UI",
+    "body": "MaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_4_UI.T_IconRoleHeadCircle256_4_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_4_UI.T_IconRoleHead256_4_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_4.T_IconRoleHead150_4"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1102,
+    "rarity": 4,
+    "name": "Sanhua",
+    "elementId": 1,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_UI.T_IconRoleHead175_7_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_7_UI.T_IconRoleHeadCircle256_7_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_UI.T_IconRoleHead256_7_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_7.T_IconRoleHead150_7"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1601,
+    "rarity": 4,
+    "name": "Taoqi",
+    "elementId": 6,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_9_UI.T_IconRoleHead175_9_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_9_UI.T_IconRoleHeadCircle256_9_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_9_UI.T_IconRoleHead256_9_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_9.T_IconRoleHead150_9"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1502,
+    "rarity": 5,
+    "name": "Rover-Spectro",
+    "elementId": 5,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_5_UI.T_IconRoleHead175_5_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_5_UI.T_IconRoleHeadCircle256_5_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.T_IconRoleHead256_5_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_5.T_IconRoleHead150_5"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1103,
+    "rarity": 4,
+    "name": "Baizhi",
+    "elementId": 1,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_6_UI.T_IconRoleHead175_6_UI",
+    "body": "FemaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_6_UI.T_IconRoleHeadCircle256_6_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_6_UI.T_IconRoleHead256_6_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_6.T_IconRoleHead150_6"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1203,
+    "rarity": 5,
+    "name": "Encore",
+    "elementId": 2,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_8_UI.T_IconRoleHead175_8_UI",
+    "body": "FemaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_8_UI.T_IconRoleHeadCircle256_8_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_8_UI.T_IconRoleHead256_8_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_8.T_IconRoleHead150_8"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1602,
+    "rarity": 4,
+    "name": "Danjin",
+    "elementId": 6,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_10_UI.T_IconRoleHead175_10_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_10_UI.T_IconRoleHeadCircle256_10_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_10_UI.T_IconRoleHead256_10_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_10.T_IconRoleHead150_10"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1403,
+    "rarity": 4,
+    "name": "Aalto",
+    "elementId": 4,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_12_UI.T_IconRoleHead175_12_UI",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_12_UI.T_IconRoleHeadCircle256_12_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_12_UI.T_IconRoleHead256_12_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_12.T_IconRoleHead150_12"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1404,
+    "rarity": 5,
+    "name": "Jiyan",
+    "elementId": 4,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_11_UI.T_IconRoleHead175_11_UI",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_11_UI.T_IconRoleHeadCircle256_11_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_11_UI.T_IconRoleHead256_11_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_11.T_IconRoleHead150_11"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1204,
+    "rarity": 4,
+    "name": "Mortefi",
+    "elementId": 2,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_13_UI.T_IconRoleHead175_13_UI",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_13_UI.T_IconRoleHeadCircle256_13_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_13_UI.T_IconRoleHead256_13_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_13.T_IconRoleHead150_13"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1603,
+    "rarity": 5,
+    "name": "Camellya",
+    "elementId": 6,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_29_UI.T_IconRoleHead175_29_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_29_UI.T_IconRoleHeadCircle256_29_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_29_UI.T_IconRoleHead256_29_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_29_UI.T_IconRoleHead150_29_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1301,
+    "rarity": 5,
+    "name": "Calcharo",
+    "elementId": 3,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_18_UI.T_IconRoleHead175_18_UI",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_18_UI.T_IconRoleHeadCircle256_18_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_18_UI.T_IconRoleHead256_18_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_18.T_IconRoleHead150_18"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1302,
+    "rarity": 5,
+    "name": "Yinlin",
+    "elementId": 3,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_17_UI.T_IconRoleHead175_17_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_17_UI.T_IconRoleHeadCircle256_17_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_17_UI.T_IconRoleHead256_17_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_17.T_IconRoleHead150_17"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1104,
+    "rarity": 5,
+    "name": "Lingyang",
+    "elementId": 1,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_14_UI.T_IconRoleHead175_14_UI",
+    "body": "MaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_14_UI.T_IconRoleHeadCircle256_14_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_14_UI.T_IconRoleHead256_14_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_14.T_IconRoleHead150_14"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1303,
+    "rarity": 4,
+    "name": "Yuanwu",
+    "elementId": 3,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_15_UI.T_IconRoleHead175_15_UI",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_15_UI.T_IconRoleHeadCircle256_15_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_15_UI.T_IconRoleHead256_15_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_15.T_IconRoleHead150_15"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1604,
+    "rarity": 5,
+    "name": "Rover-Havoc",
+    "elementId": 6,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_5_UI.T_IconRoleHead175_5_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_5_UI.T_IconRoleHeadCircle256_5_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.T_IconRoleHead256_5_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_5.T_IconRoleHead150_5"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1605,
+    "rarity": 5,
+    "name": "Rover-Havoc",
+    "elementId": 6,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_4_UI.T_IconRoleHead175_4_UI",
+    "body": "MaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_4_UI.T_IconRoleHeadCircle256_4_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_4_UI.T_IconRoleHead256_4_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_4.T_IconRoleHead150_4"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1405,
+    "rarity": 5,
+    "name": "Jianxin",
+    "elementId": 4,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_23_UI.T_IconRoleHead175_23_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_23_UI.T_IconRoleHeadCircle256_23_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_23_UI.T_IconRoleHead256_23_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_23_UI.T_IconRoleHead150_23_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1304,
+    "rarity": 5,
+    "name": "Jinhsi",
+    "elementId": 5,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_24_UI.T_IconRoleHead175_24_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_24_UI.T_IconRoleHeadCircle256_24_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_24_UI.T_IconRoleHead256_24_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_24_UI.T_IconRoleHead150_24_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1305,
+    "rarity": 5,
+    "name": "Xiangli Yao",
+    "elementId": 3,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_25_UI.T_IconRoleHead175_25_UI",
+    "body": "MaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_25_UI.T_IconRoleHeadCircle256_25_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_25_UI.T_IconRoleHead256_25_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_25_UI.T_IconRoleHead150_25_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1205,
+    "rarity": 5,
+    "name": "Changli",
+    "elementId": 2,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_26_UI.T_IconRoleHead175_26_UI",
+    "body": "FemaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_26_UI.T_IconRoleHeadCircle256_26_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_26_UI.T_IconRoleHead256_26_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_26_UI.T_IconRoleHead150_26_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1105,
+    "rarity": 5,
+    "name": "Zhezhi",
+    "elementId": 1,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_27_UI.T_IconRoleHead175_27_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_27_UI.T_IconRoleHeadCircle256_27_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_27_UI.T_IconRoleHead256_27_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_27_UI.T_IconRoleHead150_27_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1504,
+    "rarity": 4,
+    "name": "Lumi",
+    "elementId": 3,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_30_UI.T_IconRoleHead175_30_UI",
+    "body": "FemaleMS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_30_UI.T_IconRoleHeadCircle256_30_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_30_UI.T_IconRoleHead256_30_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_30_UI.T_IconRoleHead150_30_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1106,
+    "rarity": 4,
+    "name": "Youhu",
+    "elementId": 1,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_31_UI.T_IconRoleHead175_31_UI",
+    "body": "FemaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_31_UI.T_IconRoleHeadCircle256_31_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_31_UI.T_IconRoleHead256_31_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_31_UI.T_IconRoleHead150_31_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1505,
+    "rarity": 5,
+    "name": "Shorekeeper",
+    "elementId": 5,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_28_UI.T_IconRoleHead175_28_UI",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_28_UI.T_IconRoleHeadCircle256_28_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_28_UI.T_IconRoleHead256_28_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_28_UI.T_IconRoleHead150_28_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1606,
+    "rarity": 5,
+    "name": "Roccia",
+    "elementId": 6,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_33_UI.T_IconRoleHead175_33_UI",
+    "body": "FemaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_33_UI.T_IconRoleHeadCircle256_33_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_33_UI.T_IconRoleHead256_33_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_33_UI.T_IconRoleHead150_33_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1107,
+    "rarity": 5,
+    "name": "Carlotta",
+    "elementId": 1,
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_32_UI.T_IconRoleHead175_32_UI",
+    "body": "FemaleMS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_32_UI.T_IconRoleHeadCircle256_32_UI",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_32_UI.T_IconRoleHead256_32_UI",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_32_UI.T_IconRoleHead150_32_UI"
+    },
+    "materials": {
+      "weekly": "",
+      "boss": "",
+      "specialty": "",
+      "common": "",
+      "talent": ""
+    },
+    "talents": {
+      "normal_attack": "",
+      "resonance_skill": "",
+      "forte": "",
+      "resonance_liberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  }
+]
