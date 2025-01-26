@@ -8,19 +8,26 @@ export const DataProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
+    async function fetchData() {
       try {
-        const resonator = await fetch('/data/resonator.json');
-        const resonatorData = await resonatorData.json();
+        const itemsResponse = await fetch('/data/items.json');
+        const itemsDb = await itemsResponse.json();
 
-        setData({ resonatorData });
+        const resonatorResponse = await fetch('/data/resonator.json');
+        const resonatorDb = await resonatorResponse.json();
+
+        console.log("Fetching data");
+        setData({
+          items: itemsDb,
+          resonators: resonatorDb,
+        });
+        console.log("Fetched data:", resonatorDb); // Log fetched data
+        setLoading(false);
       } catch (err) {
         setError(err);
-      } finally {
         setLoading(false);
       }
     }
-
     fetchData();
   }, []);
 
@@ -28,7 +35,7 @@ export const DataProvider = ({ children }) => {
     <DataContext.Provider value={{ data, loading, error }}>
       {children}
     </DataContext.Provider>
-  )
+  );
 };
 
 export const useData = () => useContext(DataContext);
