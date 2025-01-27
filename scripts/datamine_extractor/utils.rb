@@ -26,6 +26,21 @@ def convert_to_png(path)
     return "#{directory}/#{filename}.png"
 end
 
+# convert Consume: [{Key, Value}]
+# into something more appealing to the eye
+# above describes a single material in a level, for example key=2, value=1000
+# means shell credit cost of 1000
+def convert_ascension_cost(item_database, entry)
+    entry.map do |e|
+        item = item_database[e["Key"]]
+        {
+            id: item["Id"],
+            name: get_textmap_name(item["Name"]),
+            value: e["Value"],
+        }
+    end
+end
+
 def get_textmap_name(id)
     TEXTMAP_JSON.each do |textmap|
         if textmap["Id"] == id
@@ -51,6 +66,7 @@ def save_json(data, path)
     out_path = "out/#{path}"
     File.open(out_path, "w") do |f|
         f.write(JSON.pretty_generate(data))
+        # f.write(data.to_json)
     end
     puts "Generated #{out_path}."
 end
