@@ -1,4 +1,5 @@
 require 'json'
+require 'csv'
 require 'awesome_print'
 require 'byebug'
 
@@ -67,6 +68,16 @@ def save_json(data, path)
     File.open(out_path, "w") do |f|
         f.write(JSON.pretty_generate(data))
         # f.write(data.to_json)
+    end
+    puts "Generated #{out_path}."
+end
+
+def save_csv(data, path)
+    out_path = "out/#{path}"
+    CSV.open(out_path, "w") do |csv|
+        data.each do |v|
+            csv << v
+        end
     end
     puts "Generated #{out_path}."
 end
