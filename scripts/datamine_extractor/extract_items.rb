@@ -19,3 +19,18 @@ iteminfo.each do |row|
 end
 
 save_json(data, "items.json")
+
+# save as csv
+csv_data = []
+data.each do |row|
+  new_row = []
+  new_row << row[:id]
+  new_row << row[:name]
+  new_row << row[:rarity]
+  new_row << row[:icon]
+  new_row << row[:icon_middle]
+  new_row << row[:icon_small]
+  csv_data << new_row
+end
+
+save_csv(csv_data, "items.csv")

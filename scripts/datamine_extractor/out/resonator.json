@@ -34852,5 +34852,2331 @@
         }
       }
     }
+  },
+  {
+    "id": 1206,
+    "rarity": 5,
+    "name": "Brant",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 2,
+      "name": "Fusion",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementFire.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_44_UI.png",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_44_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_44_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_44_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100051,
+            "name": "LF Tidal Residuum",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400184,
+            "name": "Blazing Bone",
+            "value": 3
+          },
+          {
+            "id": 42601140,
+            "name": "Golden Fleece",
+            "value": 4
+          },
+          {
+            "id": 41100052,
+            "name": "MF Tidal Residuum",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400184,
+            "name": "Blazing Bone",
+            "value": 6
+          },
+          {
+            "id": 42601140,
+            "name": "Golden Fleece",
+            "value": 8
+          },
+          {
+            "id": 41100052,
+            "name": "MF Tidal Residuum",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400184,
+            "name": "Blazing Bone",
+            "value": 9
+          },
+          {
+            "id": 42601140,
+            "name": "Golden Fleece",
+            "value": 12
+          },
+          {
+            "id": 41100053,
+            "name": "HF Tidal Residuum",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400184,
+            "name": "Blazing Bone",
+            "value": 12
+          },
+          {
+            "id": 42601140,
+            "name": "Golden Fleece",
+            "value": 16
+          },
+          {
+            "id": 41100053,
+            "name": "HF Tidal Residuum",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400184,
+            "name": "Blazing Bone",
+            "value": 16
+          },
+          {
+            "id": 42601140,
+            "name": "Golden Fleece",
+            "value": 20
+          },
+          {
+            "id": 41100054,
+            "name": "FF Tidal Residuum",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": {
+        "id": 1002901,
+        "name": "Captain's Rhapsody",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceSkill": {
+        "id": 1002902,
+        "name": "Anchors Aweigh!",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceLiberation": {
+        "id": 1002903,
+        "name": "To the Horizon",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "inherentFirst": {
+        "id": 1002904,
+        "name": "Voyager's Blaze",
+        "levels": {
+          "1": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 10000
+            }
+          ]
+        }
+      },
+      "inherentSecond": {
+        "id": 1002905,
+        "name": "Trial by Fire and Tide",
+        "levels": {
+          "1": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 20000
+            }
+          ]
+        }
+      },
+      "intro": {
+        "id": 1002906,
+        "name": "Applaud for Me!",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "forte": {
+        "id": 1002907,
+        "name": "Ocean Odyssey",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400194,
+              "name": "The Netherworld's Stare",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "outro": {
+        "id": 1002909,
+        "name": "The Course is Set!",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      },
+      "cooking": {
+        "id": 1002908,
+        "name": "Skillful Cooking",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": 1506,
+    "rarity": 5,
+    "name": "Phoebe",
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "element": {
+      "id": 5,
+      "name": "Spectro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementLight.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_45_UI.png",
+    "body": "FemaleMS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_45_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_45_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_45_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 3
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 6
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 9
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 12
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 16
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": {
+        "id": 1003001,
+        "name": "O Come Divine Light",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 4
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceSkill": {
+        "id": 1003002,
+        "name": "To Where Light Shines",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 4
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceLiberation": {
+        "id": 1003003,
+        "name": "Dawn of Enlightenment",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 4
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "inherentFirst": {
+        "id": 1003004,
+        "name": "Presence",
+        "levels": {
+          "1": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 10000
+            }
+          ]
+        }
+      },
+      "inherentSecond": {
+        "id": 1003005,
+        "name": "Revelation",
+        "levels": {
+          "1": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 20000
+            }
+          ]
+        }
+      },
+      "intro": {
+        "id": 1003006,
+        "name": "Golden Grace",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 4
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "forte": {
+        "id": 1003007,
+        "name": "Radiant Invocation",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100011,
+              "name": "LF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100012,
+              "name": "MF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100013,
+              "name": "HF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 2
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 3
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100014,
+              "name": "FF Whisperin Core",
+              "value": 4
+            },
+            {
+              "id": 41400144,
+              "name": "Sentinel's Dagger",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "outro": {
+        "id": 1003009,
+        "name": "Attentive Heart",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      },
+      "cooking": {
+        "id": 1003008,
+        "name": "Skillful Cooking",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      }
+    }
   }
 ]

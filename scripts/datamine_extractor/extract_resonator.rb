@@ -168,3 +168,18 @@ data = []
 end
 
 save_json(data, "resonator.json")
+
+# save as csv
+csv_data = []
+data.each do |row|
+  new_row = []
+  new_row << row[:id]
+  new_row << row[:name]
+  new_row << row[:rarity]
+  new_row << row[:element][:name]
+  new_row << row[:weaponType][:name]
+  new_row << row[:icon][:big]
+  csv_data << new_row
+end
+
+save_csv(csv_data, "resonators.csv")

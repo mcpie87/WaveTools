@@ -79,13 +79,16 @@ data.each do |row|
   new_row << row[:element].join(",")
   new_row << row[:icon]
   unless row[:stats].nil?
-    new_row << row[:stats][:Physical]
-    new_row << row[:stats][:Glacio]
-    new_row << row[:stats][:Fusion]
-    new_row << row[:stats][:Electro]
-    new_row << row[:stats][:Aero]
-    new_row << row[:stats][:Spectro]
-    new_row << row[:stats][:Havoc]
+    new_row << row[:stats][:HP]
+    new_row << row[:stats][:ATK]
+    new_row << row[:stats][:DEF]
+    new_row << row[:stats][:resistances][:Physical]
+    new_row << row[:stats][:resistances][:Glacio]
+    new_row << row[:stats][:resistances][:Fusion]
+    new_row << row[:stats][:resistances][:Electro]
+    new_row << row[:stats][:resistances][:Aero]
+    new_row << row[:stats][:resistances][:Spectro]
+    new_row << row[:stats][:resistances][:Havoc]
   end
   csv_data << new_row
 end
