@@ -1,5 +1,5 @@
-export default function dataFind(
-  data: Object[],
+export default function dataFind<T extends Record<string, unknown>>(
+  data: T[],
   key: string,
   value: string,
   // keys: string[] | string

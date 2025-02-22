@@ -1,87 +1,14 @@
 import {
-  UPGRADE_COST,
-  SUBSTATS,
-  simulate,
-  Substat
+  SUBSTATS
 } from "../services/simulate";
-import React, { useState } from "react";
-const formatNumber = (num: string | number): string => {
-  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
-interface GenerateResultsRowsProps {
-  simulateCount: number;
-  desiredSubstats: string[];
-  startSubstats: string[];
-}
-
-const GenerateResultsRows: React.FC<GenerateResultsRowsProps> = ({ simulateCount, desiredSubstats, startSubstats }) => {
-  const results: { [key: number]: number } = {};
-  const ATTEMPTS = simulateCount;
-
-  const trimmedStartSubstats: string[] = startSubstats.filter(e => e);
-  const trimmedDesiredSubstats: string[] = desiredSubstats.filter(e => e);
-
-  const startLevel = trimmedStartSubstats.length;
-  for (let i = 0; i < ATTEMPTS; ++i) {
-    for (let j = startLevel; j <= 5; ++j) {
-      if (j < trimmedDesiredSubstats.length) {
-        continue;
-      }
-      const pickedSubstats = [...trimmedStartSubstats];
-      const result = simulate(trimmedDesiredSubstats, pickedSubstats, j);
-      if (!results[j]) {
-        results[j] = 0;
-      }
-      if (result) {
-        results[j]++;
-      }
-    }
-  }
-
-  const mainOut: any[] = [];
-  for (const [k, v] of Object.entries(results)) {
-    const chanceToHit = v / ATTEMPTS;
-    const displayedLevel = "+" + (5 * k);
-    const displayedStartLevel = "+" + (5 * startLevel);
-    const expectedAttempts = 1 / chanceToHit;
-    const expectedTuners = expectedAttempts * (UPGRADE_COST[displayedLevel].tuners - UPGRADE_COST[displayedStartLevel].tuners);
-    const expectedExperience = expectedAttempts * (UPGRADE_COST[displayedLevel].exp - UPGRADE_COST[displayedStartLevel].exp);
-
-    const waveplateCost = 60;
-    const waveplateTunerReward = 20;
-    const waveplateExpReward = 24000;
-    const expectedWaveplateForTuner = expectedTuners * (waveplateCost / waveplateTunerReward);
-    const expectedWaveplateForExp = expectedExperience * (waveplateCost / waveplateExpReward);
-
-    const out = [];
-    if (v > 0) {
-      out.push(<td className="px-4 py-2 border-b">{displayedLevel}</td>);
-      out.push(<td className="px-4 py-2 border-b">{chanceToHit}</td>);
-      out.push(<td className="px-4 py-2 border-b">{formatNumber(expectedAttempts.toFixed(2))}</td>);
-      out.push(<td className="px-4 py-2 border-b">{formatNumber(expectedTuners.toFixed(0))}</td>);
-      out.push(<td className="px-4 py-2 border-b">{formatNumber(expectedWaveplateForTuner.toFixed(0))}</td>);
-      out.push(<td className="px-4 py-2 border-b">{formatNumber(expectedExperience.toFixed(0))}</td>);
-      out.push(<td className="px-4 py-2 border-b">{formatNumber(expectedWaveplateForExp.toFixed(0))}</td>);
-    }
-    mainOut.push(out);
-  }
-
-  return mainOut.map((line, index) => {
-    console.log("wololo", line, index);
-    return (
-      <tr key={index} className="bg-white hover:bg-gray-100">
-        {line}
-      </tr>
-    )
-  })
-}
+import React, { JSX, useState } from "react";
+import { GenerateResultsRows } from "./GenerateResultsRows";
 
 function EchoSimulationComponent() {
   const [simulateCount, setSimulateCount] = useState<number>(1e4);
   const [startSubstats, setStartSubstats] = useState<string[]>(new Array(5).fill(""));
   const [desiredSubstats, setDesiredSubstats] = useState<string[]>(new Array(5).fill(""));
-  const [calculateTime, setCalculateTime] = useState<any>("");
+  const [calculateTime, setCalculateTime] = useState<number>(0);
   const [rows, setRows] = useState<JSX.Element[]>([]);
 
   const handleSubstatChange = (type: "desired" | "start", key: number, value: string) => {
@@ -97,8 +24,6 @@ function EchoSimulationComponent() {
   }
 
   const generateAvailableSubstats = (pickedSubstats: string[], value: string): string[] => {
-    console.log("GENERATE!", pickedSubstats);
-
     return [
       ...SUBSTATS.filter(substat => !pickedSubstats.includes(substat)),
       ...(value !== "" ? [value] : [])
@@ -115,13 +40,14 @@ function EchoSimulationComponent() {
     setStartSubstats(startSubs);
     setDesiredSubstats(desiredSubs);
     const start = performance.now();
-    await setRows((
-      <GenerateResultsRows
-        simulateCount={simulateCount}
-        startSubstats={startSubstats}
-        desiredSubstats={desiredSubstats}
-      />
-    ));
+    console.log("Wololo start");
+    const rows = await GenerateResultsRows(
+      simulateCount,
+      startSubstats,
+      desiredSubstats
+    );
+    console.log("wololo end", rows);
+    setRows(rows);
     const end = performance.now();
     console.log("CALCULATE", start, end, end - start);
     setCalculateTime(end - start);
@@ -169,18 +95,18 @@ function EchoSimulationComponent() {
       </form>
 
       <div>
-        <p>Time spent [ms]: {calculateTime}</p>
+        <p>Time spent [ms]: {calculateTime || ""}</p>
         <table className="overflow-x-auto bg-white shadow-md rounded-lg">
           <thead className="bg-gray-200 text-gray-700">
             <tr>
-              <th className="px-4 py-2 border-b" rowSpan="3">Lvl</th>
-              <th className="px-4 py-2 border-b" rowSpan="3">Chance</th>
-              <th className="px-4 py-2 border-b" colSpan="5">Expected</th>
+              <th className="px-4 py-2 border-b" rowSpan={3}>Lvl</th>
+              <th className="px-4 py-2 border-b" rowSpan={3}>Chance</th>
+              <th className="px-4 py-2 border-b" colSpan={5}>Expected</th>
             </tr>
             <tr>
-              <th className="px-4 py-2 border-b" rowSpan="2">Attempts</th>
-              <th className="px-4 py-2 border-b" colSpan="2">Tuners</th>
-              <th className="px-4 py-2 border-b" colSpan="2">Echo EXP</th>
+              <th className="px-4 py-2 border-b" rowSpan={2}>Attempts</th>
+              <th className="px-4 py-2 border-b" colSpan={2}>Tuners</th>
+              <th className="px-4 py-2 border-b" colSpan={2}>Echo EXP</th>
             </tr>
             <tr>
               <th className="px-4 py-2 border-b">Count</th>

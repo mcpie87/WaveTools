@@ -3,8 +3,12 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { DataProvider } from '@/app/context/DataContext';
+import React, { ReactNode } from "react";
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: ReactNode;
+}
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <DataProvider>
       <div className="container mx-auto p-4">
@@ -15,3 +19,5 @@ export default function Layout({ children }) {
     </DataProvider>
   );
 }
+
+export default Layout;

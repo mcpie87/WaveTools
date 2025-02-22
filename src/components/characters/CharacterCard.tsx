@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 // import { IItemCard, ItemCard } from '@/components/items/ItemCard';
 import Image from 'next/image';
 import { ASSET_URL } from '@/utils/constants';
@@ -26,14 +25,6 @@ export interface ICharacter {
     large: string,
     big: string,
   },
-  materials: any,
-  // materials: {
-  //   weekly: string,
-  //   boss: string,
-  //   specialty: string,
-  //   common: string,
-  //   talent: string,
-  // },
   talents: {
     normal_attack: string,
     resonance_skill: string,
@@ -55,7 +46,10 @@ export interface ICharacter {
 //   );
 // }
 
-export default function CharacterCard({ item }) {
+interface CharacterCardProps {
+  item: ICharacter
+};
+export default function CharacterCard({ item }: CharacterCardProps) {
   return (
     <div className="flex flex-col items-center justify-center bg-gray-900 p-6 rounded-lg shadow-xl space-y-4">
       <div className="relative">

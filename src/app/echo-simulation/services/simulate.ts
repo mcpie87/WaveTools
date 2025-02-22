@@ -17,7 +17,7 @@ const substatsDict: { [key: string]: number } = {
   "resonance_liberation_dmg_bonus": CHANCE,
 };
 // deepseek
-function pickSubstat(pickedSubstats: string[]) {
+function pickSubstat(pickedSubstats: string[]): string {
   let totalChance = 0;
   const available = [];
 
@@ -28,7 +28,9 @@ function pickSubstat(pickedSubstats: string[]) {
     }
   }
 
-  if (available.length === 0) return null;
+  if (available.length === 0) {
+    throw new Error("No more subs available");
+  }
 
   const random = Math.random() * totalChance;
   let cumulative = 0;
@@ -39,104 +41,69 @@ function pickSubstat(pickedSubstats: string[]) {
       return available[i];
     }
   }
+
+  // This fallback should never be reached if the logic is correct
+  throw new Error("Unable to pick substat");
 }
-
-export function calculateProbability(
-  pickedSubstats: Substat[],
-  targetSubstats: Substat[],
-  depth: number = 5
-): number {
-  // Base case: If all target substats are picked, return 1 (100% probability)
-  if (targetSubstats.every((substat) => pickedSubstats.includes(substat))) {
-    return 1;
-  }
-
-  // Base case: If depth is 0 (no more picks), return 0 (target not achieved)
-  if (depth === 0) {
-    return 0;
-  }
-
-  // Calculate available substats and their total chance
-  let totalChance = 0;
-  const available: Substat[] = [];
-  for (const substat in substatsDict) {
-    if (!pickedSubstats.includes(substat)) {
-      available.push(substat);
-      totalChance += substatsDict[substat];
-    }
-  }
-
-  // If no available substats, return 0
-  if (available.length === 0) {
-    return 0;
-  }
-
-  // Recursively calculate probabilities for each possible next pick
-  let probability = 0;
-  for (const substat of available) {
-    const chance = substatsDict[substat] / totalChance;
-    const newPickedSubstats = [...pickedSubstats, substat];
-    probability += chance * calculateProbability(newPickedSubstats, targetSubstats, depth - 1);
-  }
-
-  return probability;
-}
-
 
 // export function pickSubstat(alreadyPicked: string[]) {
-//   // const substatsMap = new Map(Object.entries(substatsDict));
-//   // for (const pickedSubstat of alreadyPicked) {
-//   //   if (substatsMap.get(pickedSubstat)) {
-//   //     substatsMap.delete(pickedSubstat);
-//   //   }
-//   // }
-
-//   // const substatsArr = Array.from(substatsMap);
-//   // const totalChance = substatsArr.reduce((acc, [, subChance]) => acc + subChance, 0);
-
-//   // let rng = Math.random() * totalChance;
-//   // for (const [possibleSubstat, possibleSubstatChance] of substatsArr) {
-//   //   rng -= possibleSubstatChance;
-//   //   if (rng < 0) {
-//   //     return possibleSubstat;
-//   //   }
-//   // }
-//   // throw new Error("Well shit");
-//   // Convert alreadyPicked array to a Set for O(1) lookup time
-//   const pickedSet = new Set(alreadyPicked);
-
-//   // Calculate total chance and store remaining substats in one loop
-//   let totalChance = 0;
-//   const remainingSubstats: { substat: string, chance: number }[] = [];
-
-//   for (const [substat, chance] of Object.entries(substatsDict)) {
-//     if (!pickedSet.has(substat)) {
-//       remainingSubstats.push({ substat, chance });
-//       totalChance += chance; // Accumulate total chance
+//   const substatsMap = new Map(Object.entries(substatsDict));
+//   for (const pickedSubstat of alreadyPicked) {
+//     if (substatsMap.get(pickedSubstat)) {
+//       substatsMap.delete(pickedSubstat);
 //     }
 //   }
 
-//   // If no substats remain, throw an error
-//   if (remainingSubstats.length === 0) {
-//     throw new Error("No substats available to pick");
-//   }
+//   const substatsArr = Array.from(substatsMap);
+//   const totalChance = substatsArr.reduce((acc, [, subChance]) => acc + subChance, 0);
 
-//   // Generate a random number and select the corresponding substat
 //   let rng = Math.random() * totalChance;
-//   for (const { substat, chance } of remainingSubstats) {
-//     rng -= chance;
+//   for (const [possibleSubstat, possibleSubstatChance] of substatsArr) {
+//     rng -= possibleSubstatChance;
 //     if (rng < 0) {
-//       return substat;
+//       return possibleSubstat;
 //     }
 //   }
+//   throw new Error("Well shit");
+//   // // Convert alreadyPicked array to a Set for O(1) lookup time
+//   // const pickedSet = new Set(alreadyPicked);
 
-//   // This fallback should never be reached if the logic is correct
-//   throw new Error("Unable to pick substat");
+//   // // Calculate total chance and store remaining substats in one loop
+//   // let totalChance = 0;
+//   // const remainingSubstats: { substat: string, chance: number }[] = [];
+
+//   // for (const [substat, chance] of Object.entries(substatsDict)) {
+//   //   if (!pickedSet.has(substat)) {
+//   //     remainingSubstats.push({ substat, chance });
+//   //     totalChance += chance; // Accumulate total chance
+//   //   }
+//   // }
+
+//   // // If no substats remain, throw an error
+//   // if (remainingSubstats.length === 0) {
+//   //   throw new Error("No substats available to pick");
+//   // }
+
+//   // // Generate a random number and select the corresponding substat
+//   // let rng = Math.random() * totalChance;
+//   // for (const { substat, chance } of remainingSubstats) {
+//   //   rng -= chance;
+//   //   if (rng < 0) {
+//   //     return substat;
+//   //   }
+//   // }
+
+//   // // This fallback should never be reached if the logic is correct
+//   // throw new Error("Unable to pick substat");
 // }
 
 export const SUBSTATS = Object.keys(substatsDict);
 
-export const UPGRADE_COST = {
+interface UpgradeCost {
+  tuners: number;
+  exp: number;
+}
+export const UPGRADE_COST: { [key: string]: UpgradeCost } = {
   "+0": { tuners: 0, exp: 0 },
   "+5": { tuners: 10, exp: 4400 },
   "+10": { tuners: 20, exp: 16500 },
@@ -149,7 +116,7 @@ export const UPGRADE_COST = {
 // endLevel - 0 means +0, 5 means +25
 export function simulate(desiredSubstats: string[], pickedSubstats: string[], endLevel: number) {
   for (let i = pickedSubstats.length; i < endLevel; ++i) {
-    const pickedSubstat = pickSubstat(pickedSubstats);
+    const pickedSubstat: string = pickSubstat(pickedSubstats);
     pickedSubstats.push(pickedSubstat);
   }
 

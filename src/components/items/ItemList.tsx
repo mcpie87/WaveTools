@@ -1,10 +1,9 @@
 import ItemCard, { IItemCard } from "./ItemCard";
-import { useData } from "@/app/context/DataContext";
 
 interface ItemListProps {
   data: IItemCard[];
   itemCount: number;
-}[]
+}
 
 export default function ItemList({ data, itemCount }: ItemListProps) {
   const slicedData = itemCount > 0 ? data.slice(0, itemCount) : data;
