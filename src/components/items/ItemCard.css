@@ -1,0 +1,47 @@
+.card-container {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin: 2px;
+  gap: 2px;
+}
+
+.card-wrapper {
+  display: block;
+  position: relative;
+}
+
+.card-body {
+  display: block;
+  width: min-content;
+  text-align: center;
+  border-radius: 3px;
+  background: #000;
+}
+
+.card-image-container {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-rarity-3 {
+  position: relative;
+}
+
+.card-text {
+  /* TODO: move this */
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+  height: 16px;
+  overflow-wrap: anywhere;
+  position: relative;
+  top: 0px;
+  text-align: center;
+}

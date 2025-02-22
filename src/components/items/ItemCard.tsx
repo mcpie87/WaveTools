@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { ASSET_URL } from '@/utils/constants';
+import './ItemCard.css';
 
 export interface IItemCard {
   id: number,
@@ -14,16 +15,22 @@ interface ItemCardProps {
 
 export default function ItemCard({ item }: ItemCardProps) {
   return (
-    <div className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-      <Image
-        src={`${ASSET_URL}${item.icon}`}
-        alt={`${item.name} icon`}
-        width={64}
-        height={64}
-        className="rounded-lg"
-      />
-      <div className="text-white font-bold mb-2">{item.id}</div>
-      <div className="text-white text-lg">{item.name} - {item.value}</div>
+    <div className="card-container">
+      <span className="card-wrapper">
+        <span className="card-body">
+          <span className="card-image-container card-rarity-4">
+            <Image
+              src={`${ASSET_URL}${item.icon}`}
+              alt={`${item.name} icon`}
+              width={64}
+              height={64}
+              className="rounded-lg"
+            />
+          </span>
+
+          <span className="card-text card-font">{item.value}</span>
+        </span>
+      </span>
     </div>
   );
 }

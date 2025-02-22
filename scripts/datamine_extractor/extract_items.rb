@@ -1,6 +1,6 @@
 require_relative 'utils'
 
-iteminfo = load_file("#{DATAMINE_PATH}/#{BINDATA}/item/iteminfo.json")
+iteminfo = load_file("#{DATAMINE_PATH}/#{BINDATA}/item/iteminfo.json", true)
 
 data = []
 iteminfo.each do |row|
@@ -15,7 +15,7 @@ iteminfo.each do |row|
         rarity: row["QualityId"],
     }
     data << new_row unless new_row[:name].nil?
-    # puts("#{new_row[:id]}  #{new_row[:rarity]} #{new_row[:name]}")
+    puts("#{new_row[:id]}  #{new_row[:rarity]} #{new_row[:name]}")
 end
 
 save_json(data, "items.json")

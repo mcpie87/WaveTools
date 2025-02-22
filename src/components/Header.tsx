@@ -14,6 +14,9 @@ export default function Header() {
                 <Link href="/items" className="text-blue-600 hover:underline">
                     Items
                 </Link>
+                <Link href="/echo-simulation" className="text-blue-600 hover:underline">
+                    Echo Roll Simulator
+                </Link>
             </nav>
         </header>
     );

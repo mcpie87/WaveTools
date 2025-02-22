@@ -7,8 +7,7 @@ interface ItemListProps {
 }[]
 
 export default function ItemList({ data, itemCount }: ItemListProps) {
-  const slicedData = data.slice(0, itemCount);
-  console.log("Data", slicedData);
+  const slicedData = itemCount > 0 ? data.slice(0, itemCount) : data;
 
   return (
     <div className="flex flex-row flex-wrap space-x-4">

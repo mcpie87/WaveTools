@@ -1,6 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import CharacterCard from '@/components/characters/CharacterCard';
+import ItemList from '@/components/items/ItemList';
 import { useCharacters } from '../contexts/CharacterContext';
+import { useData } from '@/app/context/DataContext';
+import dataFind from '@/utils/DataSearcher';
 
 interface Material {
   id: number;
@@ -25,14 +28,39 @@ interface PlannerCardProps {
   item: Item;
 }
 
+interface CalculatedMaterialsPre {
+  [key: string]: {
+    id: number;
+    value: string;
+  };
+};
+
+const mapCalculatedMaterials = (materials: CalculatedMaterialsPre, itemsData: any) => {
+  // console.log("map!", materials, itemsData);
+  const retData: [] = [];
+  for (const [k, v] of Object.entries(materials)) {
+    retData.push({
+      id: v.id,
+      name: k,
+      value: v.value,
+      icon: dataFind(itemsData, "id", v.id)?.icon
+    })
+    // console.log("KVAL", k, v);
+  }
+  console.log("RETDATA", itemsData, retData);
+  return retData;
+  // console.log("PREV", materials, "AFTER", retData);
+}
+
 const calculateMaterials = (
   currentAscension: number,
   desiredAscension: number,
-  materials: Ascension[]
+  materials: Ascension[],
+  itemsData: any
 ) => {
   const totalMaterials = {};
   for (const ascension of materials) {
-    if (ascension.rank >= currentAscension && ascension.rank < desiredAscension) {
+    if (ascension.rank > currentAscension && ascension.rank <= desiredAscension) {
       for (const material of ascension.materials) {
         if (totalMaterials[material.name]) {
           totalMaterials[material.name].value += material.value;
@@ -45,7 +73,13 @@ const calculateMaterials = (
       }
     }
   }
-  return totalMaterials;
+
+  console.log("TOTAL MATS!",);
+
+  return mapCalculatedMaterials(
+    totalMaterials,
+    itemsData
+  );
 }
 
 const PlannerCard: React.FC<PlannerCardProps> = ({ index, item }) => {
@@ -67,14 +101,22 @@ const PlannerCard: React.FC<PlannerCardProps> = ({ index, item }) => {
   const [currentIntro, setCurrentIntro] = useState<number>(savedData.currentIntro || 1);
   const [desiredIntro, setDesiredIntro] = useState<number>(savedData.desiredIntro || 10);
 
+  const { data, loading, error } = useData();
+  if (loading) {
+    return (<div>Loading...</div>)
+  }
+  console.log("CHARACTERS DATA!", data.items)
+  console.log(dataFind(data.items, "name", "Basic Energy Core"));
+
   const calculatedMaterials = useMemo(() => {
     return calculateMaterials(
       currentAscension,
       desiredAscension,
-      item.materials
+      item.materials,
+      data.items
     );
-  }, [currentAscension, desiredAscension, item.materials]);
-  console.log("Mats", item.name, calculatedMaterials)
+  }, [currentAscension, desiredAscension, item.materials, data.items]);
+  // console.log("Mats", item.name, calculatedMaterials)
 
   const calculate = () => {
     console.log('calculate!');
@@ -249,11 +291,7 @@ const PlannerCard: React.FC<PlannerCardProps> = ({ index, item }) => {
           <div>
             <h2>Required Materials</h2>
             <ul>
-              {Object.entries(calculatedMaterials).map(([materialName, materialData]) => (
-                <li key={materialName}>
-                  {materialName}: {materialData.id} {materialData.value}
-                </li>
-              ))}
+              <ItemList data={calculatedMaterials} />
             </ul>
           </div>
         </div>
