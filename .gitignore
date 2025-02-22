@@ -16,7 +16,7 @@ public/assets
 
 # next.js
 /.next/
-:/out/
+/out/
 
 # production
 /build
