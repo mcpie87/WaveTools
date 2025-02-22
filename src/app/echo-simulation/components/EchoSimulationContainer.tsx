@@ -1,10 +1,10 @@
 import {
   UPGRADE_COST,
   SUBSTATS,
-  simulate
+  simulate,
+  Substat
 } from "../services/simulate";
 import React, { useState } from "react";
-
 const formatNumber = (num: string | number): string => {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -81,6 +81,7 @@ function EchoSimulationComponent() {
   const [simulateCount, setSimulateCount] = useState<number>(1e4);
   const [startSubstats, setStartSubstats] = useState<string[]>(new Array(5).fill(""));
   const [desiredSubstats, setDesiredSubstats] = useState<string[]>(new Array(5).fill(""));
+  const [calculateTime, setCalculateTime] = useState<any>("");
   const [rows, setRows] = useState<JSX.Element[]>([]);
 
   const handleSubstatChange = (type: "desired" | "start", key: number, value: string) => {
@@ -98,15 +99,13 @@ function EchoSimulationComponent() {
   const generateAvailableSubstats = (pickedSubstats: string[], value: string): string[] => {
     console.log("GENERATE!", pickedSubstats);
 
-    const res = [
+    return [
       ...SUBSTATS.filter(substat => !pickedSubstats.includes(substat)),
-      value
+      ...(value !== "" ? [value] : [])
     ].sort();
-    console.log(res);
-    return res;
   }
 
-  const calculate = (e: React.FormEvent) => {
+  const calculate = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const startSubs = startSubstats;
@@ -115,13 +114,17 @@ function EchoSimulationComponent() {
     // Update the state with the new arrays
     setStartSubstats(startSubs);
     setDesiredSubstats(desiredSubs);
-    setRows((
+    const start = performance.now();
+    await setRows((
       <GenerateResultsRows
         simulateCount={simulateCount}
         startSubstats={startSubstats}
         desiredSubstats={desiredSubstats}
       />
     ));
+    const end = performance.now();
+    console.log("CALCULATE", start, end, end - start);
+    setCalculateTime(end - start);
   }
 
   console.log("RENDER!");
@@ -162,23 +165,28 @@ function EchoSimulationComponent() {
           <h3>Simulate count</h3>
           <input id="simulateCount" type="number" value={simulateCount} onChange={(e) => setSimulateCount(Number(e.target.value))} />
         </div>
-        <button type="submit" className="bg-blue-200">Calculate</button>
+        <button type="submit" className="bg-blue-200 w-60">Calculate</button>
       </form>
 
       <div>
-        <div>Desired substats: {desiredSubstats.length} {desiredSubstats}</div>
-        <div>Start substats: {startSubstats.length} {startSubstats}</div>
-        <div>Attempt count: {formatNumber(simulateCount)}</div>
+        <p>Time spent [ms]: {calculateTime}</p>
         <table className="overflow-x-auto bg-white shadow-md rounded-lg">
           <thead className="bg-gray-200 text-gray-700">
             <tr>
-              <th className="px-4 py-2 border-b">Lvl</th>
-              <th className="px-4 py-2 border-b">Chance</th>
-              <th className="px-4 py-2 border-b">Expected Attempts</th>
-              <th className="px-4 py-2 border-b">Expected Tuners Count</th>
-              <th className="px-4 py-2 border-b">Expected Tuner Waveplates</th>
-              <th className="px-4 py-2 border-b">Expected Echo EXP Count</th>
-              <th className="px-4 py-2 border-b">Expected Echo EXP Waveplates</th>
+              <th className="px-4 py-2 border-b" rowSpan="3">Lvl</th>
+              <th className="px-4 py-2 border-b" rowSpan="3">Chance</th>
+              <th className="px-4 py-2 border-b" colSpan="5">Expected</th>
+            </tr>
+            <tr>
+              <th className="px-4 py-2 border-b" rowSpan="2">Attempts</th>
+              <th className="px-4 py-2 border-b" colSpan="2">Tuners</th>
+              <th className="px-4 py-2 border-b" colSpan="2">Echo EXP</th>
+            </tr>
+            <tr>
+              <th className="px-4 py-2 border-b">Count</th>
+              <th className="px-4 py-2 border-b">Waveplates</th>
+              <th className="px-4 py-2 border-b">Count</th>
+              <th className="px-4 py-2 border-b">Waveplates</th>
             </tr>
           </thead>
 
