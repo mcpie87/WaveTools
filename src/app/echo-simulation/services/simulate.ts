@@ -1,7 +1,7 @@
-export type Substat = keyof typeof substatsDict;
+export type SubstatName = keyof typeof substatsDict;
 export type SubstatValue = number;
 export type SubstatEntry = {
-  name: Substat;
+  name: SubstatName;
   value: SubstatValue;
 }
 const substatsDict: { [key: string]: number } = {
@@ -20,7 +20,7 @@ const substatsDict: { [key: string]: number } = {
   "resonance_liberation_dmg_bonus": 0.0769230769,
 };
 
-const substatValues: { [key: Substat]: SubstatValue[] } = {
+export const substatValues: { [key: SubstatName]: SubstatValue[] } = {
   "flat_def": [40, 50, 60, 70],
   "flat_atk": [30, 40, 50, 60],
   "flat_hp": [320, 360, 390, 430, 470, 510, 540, 580],
@@ -42,12 +42,13 @@ const substatChances: { [key: number]: SubstatValue[] } = {
   8: [0.0739, 0.069, 0.2072, 0.2490, 0.1823, 0.1360, 0.0534, 0.0293],
 };
 
-function pickSubstat(pickedSubstats: Substat[]): SubstatEntry {
+function pickSubstat(pickedSubstats: SubstatEntry[]): SubstatEntry {
   let totalChance = 0;
   const available = [];
 
+  const pickedSubstatNames = new Set(pickedSubstats.map(substatEntry => substatEntry.name));
   for (const substat in substatsDict) {
-    if (!pickedSubstats.includes(substat)) {
+    if (!pickedSubstatNames.has(substat)) {
       available.push(substat);
       totalChance += substatsDict[substat];
     }
@@ -101,19 +102,25 @@ export const UPGRADE_COST: { [key: string]: UpgradeCost } = {
 
 // endLevel - 0 means +0, 5 means +25
 export function simulate(
-  desiredSubstats: Substat[],
-  pickedSubstats: Substat[],
+  desiredSubstats: SubstatEntry[],
+  pickedSubstats: SubstatEntry[],
   endLevel: number
 ) {
   for (let i = pickedSubstats.length; i < endLevel; ++i) {
-    const pickedSubstat: Substat = pickSubstat(pickedSubstats).name;
+    const pickedSubstat: SubstatEntry = pickSubstat(pickedSubstats);
     pickedSubstats.push(pickedSubstat);
   }
-
   for (const desiredSubstat of desiredSubstats) {
-    if (!pickedSubstats.includes(desiredSubstat)) {
+    const pickedSubstat = pickedSubstats.find(substat => substat.name === desiredSubstat.name);
+
+    if (!pickedSubstat) {
+      return false;
+    }
+
+    if (pickedSubstat.value < desiredSubstat.value) {
       return false;
     }
   }
+
   return true;
 }

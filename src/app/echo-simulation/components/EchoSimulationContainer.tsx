@@ -1,5 +1,5 @@
 import {
-  Substat
+  SubstatEntry
 } from "../services/simulate";
 import React, { JSX, useState } from "react";
 import { GenerateResultsRows } from "./GenerateResultsRows";
@@ -7,21 +7,19 @@ import SubstatsSelector from "./SubstatsSelector";
 
 function EchoSimulationComponent() {
   const [simulateCount, setSimulateCount] = useState<number>(1e5);
-  const [startSubstats, setStartSubstats] = useState<Substat[]>([]);
-  const [desiredSubstats, setDesiredSubstats] = useState<Substat[]>([]);
+  const [startSubstats, setStartSubstats] = useState<SubstatEntry[]>([]);
+  const [desiredSubstats, setDesiredSubstats] = useState<SubstatEntry[]>([]);
   const [calculateTime, setCalculateTime] = useState<number>(0);
   const [rows, setRows] = useState<JSX.Element[]>([]);
 
   const calculate = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const startSubs = startSubstats;
-    const desiredSubs = desiredSubstats;
-
     // Update the state with the new arrays
-    setStartSubstats(startSubs);
-    setDesiredSubstats(desiredSubs);
+    setStartSubstats(startSubstats);
+    setDesiredSubstats(desiredSubstats);
     const start = performance.now();
+    console.log("Sending calculate", startSubstats, desiredSubstats);
     const rows = await GenerateResultsRows(
       simulateCount,
       startSubstats,
@@ -34,7 +32,7 @@ function EchoSimulationComponent() {
   }
   // console.log(typeof setStartSubstats, typeof setDesiredSubstats);
   return (
-    <div className="">
+    <div className="w-[800] center">
       <form className="flex flex-col" onSubmit={calculate}>
         <div className="flex-col">
           <h3>Start subs</h3>
@@ -48,15 +46,22 @@ function EchoSimulationComponent() {
           <SubstatsSelector
             selectedSubstats={desiredSubstats}
             selectedSubstatsSetter={setDesiredSubstats}
+            renderValues={true}
           />
         </div>
         <div className="flex flex-row gap-4">
           <h3>Simulate count</h3>
-          <input id="simulateCount" type="number" value={simulateCount} onChange={(e) => setSimulateCount(Number(e.target.value))} />
+          <input
+            id="simulateCount"
+            type="number"
+            className="border"
+            value={simulateCount}
+            onChange={(e) => setSimulateCount(Number(e.target.value))}
+          />
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
+          className="w-[400] bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
         >
           Calculate
         </button>

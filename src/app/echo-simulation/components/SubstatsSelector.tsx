@@ -1,27 +1,38 @@
 import React from "react";
-import { SUBSTATS, Substat } from "../services/simulate";
+import { SUBSTATS, SubstatEntry, substatValues, SubstatName, SubstatValue } from "../services/simulate";
 
-const generateAvailableSubstats = (pickedSubstats: Substat[], value: Substat): Substat[] => {
+const generateAvailableSubstats = (pickedSubstats: SubstatEntry[], value: SubstatName): SubstatName[] => {
+  const pickedSubstatNames: SubstatName[] = pickedSubstats.map(e => e.name);
   return [
-    ...SUBSTATS.filter((substat) => !pickedSubstats.includes(substat) || substat === value)
+    ...SUBSTATS.filter((substat) => !pickedSubstatNames.includes(substat) || substat === value)
   ].sort();
 };
 
 interface MultiSelectorProps {
-  selectedSubstats: Substat[];
-  selectedSubstatsSetter: (substats: Substat[]) => void;
+  selectedSubstats: SubstatEntry[];
+  selectedSubstatsSetter: (substats: SubstatEntry[]) => void;
+  renderValues?: boolean;
 }
 
-const SubstatsSelector: React.FC<MultiSelectorProps> = ({ selectedSubstats, selectedSubstatsSetter }) => {
-  const handleSubstatChange = (index: number, value: Substat) => {
+const SubstatsSelector: React.FC<MultiSelectorProps> = ({
+  selectedSubstats,
+  selectedSubstatsSetter,
+  renderValues = false
+}) => {
+  const handleSubstatChange = (index: number, value: SubstatName, substatValue: SubstatValue) => {
     const updatedSubstats = [...selectedSubstats];
-    updatedSubstats[index] = value;
+    console.log("HANDLE SUBSTAT", index, value, substatValue);
+    updatedSubstats[index] = {
+      name: value,
+      value: substatValue
+    }
+    console.log("HANDLE", updatedSubstats);
     selectedSubstatsSetter(updatedSubstats);
   };
 
   const addRow = () => {
     if (selectedSubstats.length < 5) {
-      selectedSubstatsSetter([...selectedSubstats, ""]); // Ensure valid initial value
+      selectedSubstatsSetter([...selectedSubstats, { name: "", value: 0 }]); // Ensure valid initial value
     }
   };
 
@@ -29,19 +40,20 @@ const SubstatsSelector: React.FC<MultiSelectorProps> = ({ selectedSubstats, sele
     selectedSubstatsSetter(selectedSubstats.filter((_, i) => i !== index));
   };
 
+  console.log("RENDER VAL", renderValues);
   return (
     <div className="space-y-2">
       {selectedSubstats.map((option, index) => (
         <div key={index} className="flex items-center gap-2">
           <select
-            value={option}
-            onChange={(e) => handleSubstatChange(index, e.target.value as Substat)}
+            value={option.name}
+            onChange={(e) => handleSubstatChange(index, e.target.value as SubstatName, 0)}
             className="border border-gray-300 rounded-md p-2 w-48"
           >
             <option value="">
               Select an option
             </option>
-            {generateAvailableSubstats(selectedSubstats, option).map((substat) => (
+            {generateAvailableSubstats(selectedSubstats, option.name).map((substat) => (
               <option key={substat} value={substat}>
                 {substat}
               </option>
@@ -54,6 +66,25 @@ const SubstatsSelector: React.FC<MultiSelectorProps> = ({ selectedSubstats, sele
           >
             Delete
           </button>
+          {renderValues && option.name &&
+            <>
+              <span>{">="}</span>
+              <select
+                value={option.value}
+                onChange={(e) => handleSubstatChange(index, option.name, Number(e.target.value) as SubstatValue)}
+                className="border border-gray-300 rounded-md p-2 w-48"
+              >
+                <option value={0}>
+                  Select an option
+                </option>
+                {substatValues[option.name].map((substatValue) => (
+                  <option key={substatValue} value={substatValue}>
+                    {substatValue}
+                  </option>
+                ))}
+              </select>
+            </>
+          }
         </div>
       ))}
       {selectedSubstats.length < 5 && (
