@@ -21,18 +21,16 @@ const SubstatsSelector: React.FC<MultiSelectorProps> = ({
 }) => {
   const handleSubstatChange = (index: number, value: SubstatName, substatValue: SubstatValue) => {
     const updatedSubstats = [...selectedSubstats];
-    console.log("HANDLE SUBSTAT", index, value, substatValue);
     updatedSubstats[index] = {
       name: value,
       value: substatValue
     }
-    console.log("HANDLE", updatedSubstats);
     selectedSubstatsSetter(updatedSubstats);
   };
 
   const addRow = () => {
     if (selectedSubstats.length < 5) {
-      selectedSubstatsSetter([...selectedSubstats, { name: "", value: 0 }]); // Ensure valid initial value
+      selectedSubstatsSetter([...selectedSubstats, { name: "", value: 0 }]);
     }
   };
 
@@ -40,7 +38,6 @@ const SubstatsSelector: React.FC<MultiSelectorProps> = ({
     selectedSubstatsSetter(selectedSubstats.filter((_, i) => i !== index));
   };
 
-  console.log("RENDER VAL", renderValues);
   return (
     <div className="space-y-2">
       {selectedSubstats.map((option, index) => (

@@ -19,8 +19,9 @@ export const GenerateResultsRows = async (
   desiredSubstats: SubstatEntry[]
 ): Promise<React.JSX.Element[]> => {
   const results: { [key: number]: number } = {};
-  const trimmedStartSubstats: SubstatEntry[] = startSubstats.filter(e => e);
-  const trimmedDesiredSubstats: SubstatEntry[] = desiredSubstats.filter(e => e);
+  const trimmedStartSubstats: SubstatEntry[] = startSubstats.filter(e => e.name);
+  const trimmedDesiredSubstats: SubstatEntry[] = desiredSubstats.filter(e => e.name);
+  console.log("GENERATE RESULTS", trimmedStartSubstats, trimmedDesiredSubstats);
   const startLevel = trimmedStartSubstats.length;
   for (let i = 0; i < simulateCount; ++i) {
     for (let j = startLevel; j <= 5; ++j) {
@@ -35,7 +36,6 @@ export const GenerateResultsRows = async (
       if (result) {
         results[j]++;
       }
-      // console.log("GENERATE SIMU", results, startSubstats, desiredSubstats);
     }
   }
 

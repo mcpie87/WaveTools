@@ -14,12 +14,9 @@ function EchoSimulationComponent() {
 
   const calculate = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Update the state with the new arrays
     setStartSubstats(startSubstats);
     setDesiredSubstats(desiredSubstats);
     const start = performance.now();
-    console.log("Sending calculate", startSubstats, desiredSubstats);
     const rows = await GenerateResultsRows(
       simulateCount,
       startSubstats,
@@ -30,7 +27,7 @@ function EchoSimulationComponent() {
     console.log("CALCULATE", start, end, end - start);
     setCalculateTime(end - start);
   }
-  // console.log(typeof setStartSubstats, typeof setDesiredSubstats);
+
   return (
     <div className="w-[800] center">
       <form className="flex flex-col" onSubmit={calculate}>
