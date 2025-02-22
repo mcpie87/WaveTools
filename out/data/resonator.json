@@ -1,0 +1,5552 @@
+[
+  {
+    "id": 1402,
+    "rarity": 4,
+    "name": "Yangyang",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 4,
+      "name": "Aero",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementWind.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_1_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_1_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_1_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_1.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100031,
+            "name": "Crude Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 3
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 4
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 6
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 8
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 9
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 12
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 12
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 16
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 16
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 20
+          },
+          {
+            "id": 41100034,
+            "name": "Tailored Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1202,
+    "rarity": 4,
+    "name": "Chixia",
+    "weaponType": {
+      "id": 3,
+      "name": "Pistols",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorGun.png"
+    },
+    "element": {
+      "id": 2,
+      "name": "Fusion",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementFire.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_2_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_2_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_2_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_2.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1503,
+    "rarity": 5,
+    "name": "Verina",
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "element": {
+      "id": 5,
+      "name": "Spectro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementLight.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_3_UI.png",
+    "body": "FemaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_3_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_3_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_3.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 4
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 8
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 12
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 16
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 20
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1501,
+    "rarity": 5,
+    "name": "Rover-Spectro",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 5,
+      "name": "Spectro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementLight.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_4_UI.png",
+    "body": "MaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_4_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_4_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_4.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1102,
+    "rarity": 4,
+    "name": "Sanhua",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 1,
+      "name": "Glacio",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementIce.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_7_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_7.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1601,
+    "rarity": 4,
+    "name": "Taoqi",
+    "weaponType": {
+      "id": 1,
+      "name": "Broadblade",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorSword.png"
+    },
+    "element": {
+      "id": 6,
+      "name": "Havoc",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementDark.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_9_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_9_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_9_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_9.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400064,
+            "name": "Gold-Dissolving Feather",
+            "value": 3
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 4
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400064,
+            "name": "Gold-Dissolving Feather",
+            "value": 6
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 8
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400064,
+            "name": "Gold-Dissolving Feather",
+            "value": 9
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 12
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400064,
+            "name": "Gold-Dissolving Feather",
+            "value": 12
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 16
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400064,
+            "name": "Gold-Dissolving Feather",
+            "value": 16
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 20
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1502,
+    "rarity": 5,
+    "name": "Rover-Spectro",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 5,
+      "name": "Spectro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementLight.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_5_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_5_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_5.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1103,
+    "rarity": 4,
+    "name": "Baizhi",
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "element": {
+      "id": 1,
+      "name": "Glacio",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementIce.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_6_UI.png",
+    "body": "FemaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_6_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_6_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_6.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 4
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 8
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 12
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 16
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 20
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1203,
+    "rarity": 5,
+    "name": "Encore",
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "element": {
+      "id": 2,
+      "name": "Fusion",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementFire.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_8_UI.png",
+    "body": "FemaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_8_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_8_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_8.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1602,
+    "rarity": 4,
+    "name": "Danjin",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 6,
+      "name": "Havoc",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementDark.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_10_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_10_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_10_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_10.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100031,
+            "name": "Crude Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400014,
+            "name": "Strife Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 4
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400014,
+            "name": "Strife Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 8
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400014,
+            "name": "Strife Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 12
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400014,
+            "name": "Strife Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 16
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400014,
+            "name": "Strife Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300070,
+            "name": "Belle Poppy",
+            "value": 20
+          },
+          {
+            "id": 41100034,
+            "name": "Tailored Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1403,
+    "rarity": 4,
+    "name": "Aalto",
+    "weaponType": {
+      "id": 3,
+      "name": "Pistols",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorGun.png"
+    },
+    "element": {
+      "id": 4,
+      "name": "Aero",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementWind.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_12_UI.png",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_12_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_12_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_12.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 3
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 4
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 6
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 8
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 9
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 12
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 12
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 16
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 16
+          },
+          {
+            "id": 42300090,
+            "name": "Wintry Bell",
+            "value": 20
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1404,
+    "rarity": 5,
+    "name": "Jiyan",
+    "weaponType": {
+      "id": 1,
+      "name": "Broadblade",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorSword.png"
+    },
+    "element": {
+      "id": 4,
+      "name": "Aero",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementWind.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_11_UI.png",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_11_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_11_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_11.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 3
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 4
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 6
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 8
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 9
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 12
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 12
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 16
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 16
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 20
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1204,
+    "rarity": 4,
+    "name": "Mortefi",
+    "weaponType": {
+      "id": 3,
+      "name": "Pistols",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorGun.png"
+    },
+    "element": {
+      "id": 2,
+      "name": "Fusion",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementFire.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_13_UI.png",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_13_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_13_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_13.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1603,
+    "rarity": 5,
+    "name": "Camellya",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 6,
+      "name": "Havoc",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementDark.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_29_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_29_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_29_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_29_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 3
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 6
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 9
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 12
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 16
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1301,
+    "rarity": 5,
+    "name": "Calcharo",
+    "weaponType": {
+      "id": 1,
+      "name": "Broadblade",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorSword.png"
+    },
+    "element": {
+      "id": 3,
+      "name": "Electro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementThunder.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_18_UI.png",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_18_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_18_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_18.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100031,
+            "name": "Crude Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 4
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 8
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 12
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 16
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300030,
+            "name": "Iris",
+            "value": 20
+          },
+          {
+            "id": 41100034,
+            "name": "Tailored Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1302,
+    "rarity": 5,
+    "name": "Yinlin",
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "element": {
+      "id": 3,
+      "name": "Electro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementThunder.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_17_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_17_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_17_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_17.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400084,
+            "name": "Group Abomination Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400084,
+            "name": "Group Abomination Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400084,
+            "name": "Group Abomination Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400084,
+            "name": "Group Abomination Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400084,
+            "name": "Group Abomination Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1104,
+    "rarity": 5,
+    "name": "Lingyang",
+    "weaponType": {
+      "id": 4,
+      "name": "Gauntlets",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorFist.png"
+    },
+    "element": {
+      "id": 1,
+      "name": "Glacio",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementIce.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_14_UI.png",
+    "body": "MaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_14_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_14_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_14.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300080,
+            "name": "Coriolus",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1303,
+    "rarity": 4,
+    "name": "Yuanwu",
+    "weaponType": {
+      "id": 4,
+      "name": "Gauntlets",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorFist.png"
+    },
+    "element": {
+      "id": 3,
+      "name": "Electro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementThunder.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_15_UI.png",
+    "body": "MaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_15_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_15_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_15.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100031,
+            "name": "Crude Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 4
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 8
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 12
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 16
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 20
+          },
+          {
+            "id": 41100034,
+            "name": "Tailored Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1604,
+    "rarity": 5,
+    "name": "Rover-Havoc",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 6,
+      "name": "Havoc",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementDark.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_5_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_5_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_5.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1605,
+    "rarity": 5,
+    "name": "Rover-Havoc",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 6,
+      "name": "Havoc",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementDark.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_4_UI.png",
+    "body": "MaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_4_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_4_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_4.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1405,
+    "rarity": 5,
+    "name": "Jianxin",
+    "weaponType": {
+      "id": 4,
+      "name": "Gauntlets",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorFist.png"
+    },
+    "element": {
+      "id": 4,
+      "name": "Aero",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementWind.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_23_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_23_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_23_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_23_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 3
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 6
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 9
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 12
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400054,
+            "name": "Roaring Rock Fist",
+            "value": 16
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1304,
+    "rarity": 5,
+    "name": "Jinhsi",
+    "weaponType": {
+      "id": 1,
+      "name": "Broadblade",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorSword.png"
+    },
+    "element": {
+      "id": 5,
+      "name": "Spectro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementLight.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_24_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_24_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_24_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_24_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42310210,
+            "name": "Loong's Pearl",
+            "value": 4
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42310210,
+            "name": "Loong's Pearl",
+            "value": 8
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42310210,
+            "name": "Loong's Pearl",
+            "value": 12
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42310210,
+            "name": "Loong's Pearl",
+            "value": 16
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400034,
+            "name": "Elegy Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42310210,
+            "name": "Loong's Pearl",
+            "value": 20
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1305,
+    "rarity": 5,
+    "name": "Xiangli Yao",
+    "weaponType": {
+      "id": 4,
+      "name": "Gauntlets",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorFist.png"
+    },
+    "element": {
+      "id": 3,
+      "name": "Electro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementThunder.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_25_UI.png",
+    "body": "MaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_25_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_25_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_25_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400134,
+            "name": "Hidden Thunder Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1205,
+    "rarity": 5,
+    "name": "Changli",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 2,
+      "name": "Fusion",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementFire.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_26_UI.png",
+    "body": "FemaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_26_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_26_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_26_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100031,
+            "name": "Crude Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42310200,
+            "name": "Pavo Plum",
+            "value": 4
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42310200,
+            "name": "Pavo Plum",
+            "value": 8
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42310200,
+            "name": "Pavo Plum",
+            "value": 12
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42310200,
+            "name": "Pavo Plum",
+            "value": 16
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400044,
+            "name": "Rage Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42310200,
+            "name": "Pavo Plum",
+            "value": 20
+          },
+          {
+            "id": 41100034,
+            "name": "Tailored Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1105,
+    "rarity": 5,
+    "name": "Zhezhi",
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "element": {
+      "id": 1,
+      "name": "Glacio",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementIce.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_27_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_27_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_27_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_27_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 4
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 8
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 12
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 16
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400074,
+            "name": "Sound-Keeping Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300050,
+            "name": "Lanternberry",
+            "value": 20
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1504,
+    "rarity": 4,
+    "name": "Lumi",
+    "weaponType": {
+      "id": 1,
+      "name": "Broadblade",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorSword.png"
+    },
+    "element": {
+      "id": 3,
+      "name": "Electro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementThunder.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_30_UI.png",
+    "body": "FemaleMS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_30_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_30_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_30_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 3
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 4
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 6
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 8
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 9
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 12
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 12
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 16
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400024,
+            "name": "Thundering Tacet Core",
+            "value": 16
+          },
+          {
+            "id": 42300040,
+            "name": "Terraspawn Fungus",
+            "value": 20
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1106,
+    "rarity": 4,
+    "name": "Youhu",
+    "weaponType": {
+      "id": 4,
+      "name": "Gauntlets",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorFist.png"
+    },
+    "element": {
+      "id": 1,
+      "name": "Glacio",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementIce.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_31_UI.png",
+    "body": "FemaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_31_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_31_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_31_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100031,
+            "name": "Crude Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 3
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 4
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 6
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 8
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 9
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 12
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 12
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 16
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 16
+          },
+          {
+            "id": 42300100,
+            "name": "Violet Coral",
+            "value": 20
+          },
+          {
+            "id": 41100034,
+            "name": "Tailored Ring",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1505,
+    "rarity": 5,
+    "name": "Shorekeeper",
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "element": {
+      "id": 5,
+      "name": "Spectro",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementLight.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_28_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_28_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_28_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_28_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 3
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 6
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 9
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 12
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400154,
+            "name": "Topological Confinement",
+            "value": 16
+          },
+          {
+            "id": 42310230,
+            "name": "Nova",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1606,
+    "rarity": 5,
+    "name": "Roccia",
+    "weaponType": {
+      "id": 4,
+      "name": "Gauntlets",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorFist.png"
+    },
+    "element": {
+      "id": 6,
+      "name": "Havoc",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementDark.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_33_UI.png",
+    "body": "FemaleS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_33_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_33_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_33_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100051,
+            "name": "LF Tidal Residuum",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 3
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 4
+          },
+          {
+            "id": 41100052,
+            "name": "MF Tidal Residuum",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 6
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 8
+          },
+          {
+            "id": 41100052,
+            "name": "MF Tidal Residuum",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 9
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 12
+          },
+          {
+            "id": 41100053,
+            "name": "HF Tidal Residuum",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 12
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 16
+          },
+          {
+            "id": 41100053,
+            "name": "HF Tidal Residuum",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 16
+          },
+          {
+            "id": 42601160,
+            "name": "Firecracker Jewelweed",
+            "value": 20
+          },
+          {
+            "id": 41100054,
+            "name": "FF Tidal Residuum",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  },
+  {
+    "id": 1107,
+    "rarity": 5,
+    "name": "Carlotta",
+    "weaponType": {
+      "id": 3,
+      "name": "Pistols",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorGun.png"
+    },
+    "element": {
+      "id": 1,
+      "name": "Glacio",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementIce.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_32_UI.png",
+    "body": "FemaleMS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_32_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_32_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_32_UI.png"
+    },
+    "materials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "materials": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "materials": [
+          {
+            "id": 41100041,
+            "name": "LF Polygon Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "materials": [
+          {
+            "id": 41400174,
+            "name": "Platinum Core",
+            "value": 3
+          },
+          {
+            "id": 42601150,
+            "name": "Sword Acorus",
+            "value": 4
+          },
+          {
+            "id": 41100042,
+            "name": "MF Polygon Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "materials": [
+          {
+            "id": 41400174,
+            "name": "Platinum Core",
+            "value": 6
+          },
+          {
+            "id": 42601150,
+            "name": "Sword Acorus",
+            "value": 8
+          },
+          {
+            "id": 41100042,
+            "name": "MF Polygon Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "materials": [
+          {
+            "id": 41400174,
+            "name": "Platinum Core",
+            "value": 9
+          },
+          {
+            "id": 42601150,
+            "name": "Sword Acorus",
+            "value": 12
+          },
+          {
+            "id": 41100043,
+            "name": "HF Polygon Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "materials": [
+          {
+            "id": 41400174,
+            "name": "Platinum Core",
+            "value": 12
+          },
+          {
+            "id": 42601150,
+            "name": "Sword Acorus",
+            "value": 16
+          },
+          {
+            "id": 41100043,
+            "name": "HF Polygon Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "materials": [
+          {
+            "id": 41400174,
+            "name": "Platinum Core",
+            "value": 16
+          },
+          {
+            "id": 42601150,
+            "name": "Sword Acorus",
+            "value": 20
+          },
+          {
+            "id": 41100044,
+            "name": "FF Polygon Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "normalAttack": "",
+      "resonanceSkill": "",
+      "forte": "",
+      "resonanceLiberation": "",
+      "intro": "",
+      "outro": ""
+    }
+  }
+]
