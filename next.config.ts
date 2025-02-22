@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
   trailingSlash: true,
-  basePath: '',
+  basePath: '/wuwa-tracker/out',
 };
 
 export default nextConfig;
