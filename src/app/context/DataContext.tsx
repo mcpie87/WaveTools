@@ -42,12 +42,10 @@ export const DataProvider = ({ children }: DataProviderProps) => {
         const resonatorResponse = await fetch('/data/resonator.json');
         const resonatorDb = await resonatorResponse.json();
 
-        console.log("Fetching data");
         setData({
           items: itemsDb,
           resonators: resonatorDb,
         });
-        console.log("Fetched data:", resonatorDb); // Log fetched data
         setLoading(false);
       } catch (err) {
         if (err instanceof Error) {

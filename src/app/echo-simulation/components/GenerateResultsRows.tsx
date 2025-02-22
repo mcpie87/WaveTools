@@ -1,4 +1,5 @@
 import {
+  Substat,
   UPGRADE_COST,
   simulate
 } from "../services/simulate";
@@ -14,14 +15,12 @@ const formatNumber = (num: string | number): string => {
 
 export const GenerateResultsRows = async (
   simulateCount: number,
-  startSubstats: string[],
-  desiredSubstats: string[]
+  startSubstats: Substat[],
+  desiredSubstats: Substat[]
 ): Promise<React.JSX.Element[]> => {
   const results: { [key: number]: number } = {};
-  const trimmedStartSubstats: string[] = startSubstats.filter(e => e);
-  const trimmedDesiredSubstats: string[] = desiredSubstats.filter(e => e);
-  console.log("Generate RESULTS nm", startSubstats, desiredSubstats);
-  console.log("Generate RESULTS trim", trimmedStartSubstats, trimmedDesiredSubstats);
+  const trimmedStartSubstats: Substat[] = startSubstats.filter(e => e);
+  const trimmedDesiredSubstats: Substat[] = desiredSubstats.filter(e => e);
   const startLevel = trimmedStartSubstats.length;
   for (let i = 0; i < simulateCount; ++i) {
     for (let j = startLevel; j <= 5; ++j) {
@@ -38,7 +37,6 @@ export const GenerateResultsRows = async (
       }
     }
   }
-  console.log("RESULTS", results);
 
   const rows: React.JSX.Element[] = [];
   for (const [k, v] of Object.entries(results)) {
