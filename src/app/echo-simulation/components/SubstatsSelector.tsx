@@ -1,12 +1,12 @@
 import React from "react";
-import { SUBSTATS, SubstatEntry, substatValues, SubstatName, SubstatValue } from "../services/simulate";
+import { SUBSTATS, SubstatEntry, substatValues, SubstatName, SubstatValue, substatsDisplayOrder } from "../services/simulate";
 import { formatSubstatValue } from "../utils/utils";
 
 const generateAvailableSubstats = (pickedSubstats: SubstatEntry[], value: SubstatName): SubstatName[] => {
   const pickedSubstatNames: SubstatName[] = pickedSubstats.map(e => e.name);
   return [
     ...SUBSTATS.filter((substat) => !pickedSubstatNames.includes(substat) || substat === value)
-  ].sort();
+  ].sort((a, b) => substatsDisplayOrder[a] - substatsDisplayOrder[b]);
 };
 
 interface MultiSelectorProps {

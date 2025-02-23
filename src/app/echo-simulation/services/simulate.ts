@@ -5,6 +5,23 @@ export type SubstatEntry = {
   name: SubstatName;
   value: SubstatValue;
 }
+
+export const substatsDisplayOrder: { [key: string]: number } = {
+  [Substats.FlatATK]: 1,
+  [Substats.FlatHP]: 2,
+  [Substats.FlatDEF]: 3,
+  [Substats.ATK]: 4,
+  [Substats.HP]: 5,
+  [Substats.DEF]: 6,
+  [Substats.ER]: 7,
+  [Substats.CR]: 8,
+  [Substats.CDMG]: 9,
+  [Substats.Basic_DMG]: 10,
+  [Substats.Heavy_DMG]: 11,
+  [Substats.Skill_DMG]: 12,
+  [Substats.Liberation_DMG]: 13,
+}
+
 const substatsDict: { [key: string]: number } = {
   [Substats.FlatATK]: 0.0769230769,
   [Substats.FlatHP]: 0.0769230769,
