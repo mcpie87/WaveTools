@@ -11,9 +11,17 @@ function EchoSimulationComponent() {
   const [desiredSubstats, setDesiredSubstats] = useState<SubstatEntry[]>([]);
   const [calculateTime, setCalculateTime] = useState<number>(0);
   const [rows, setRows] = useState<JSX.Element[]>([]);
-
+  const [showResults, setShowResults] = useState<boolean>(false);
   const calculate = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (simulateCount > 1e6) {
+      if (!confirm(`You sure? Estimated duration: ${(simulateCount / 1e7)} minutes`)) {
+        return;
+      }
+    }
+    // doesn't render, no clue why
+    // it's not the await
+    setShowResults(false);
     setStartSubstats(startSubstats);
     setDesiredSubstats(desiredSubstats);
     const start = performance.now();
@@ -26,10 +34,11 @@ function EchoSimulationComponent() {
     const end = performance.now();
     console.log("CALCULATE", start, end, end - start);
     setCalculateTime(end - start);
+    setShowResults(true);
   }
 
   return (
-    <div className="w-[800] center">
+    <div>
       <form className="flex flex-col" onSubmit={calculate}>
         <div className="flex-col">
           <h3>Start subs</h3>
@@ -58,39 +67,40 @@ function EchoSimulationComponent() {
         </div>
         <button
           type="submit"
-          className="w-[400] bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
+          className="w-[400px] bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
         >
           Calculate
         </button>
       </form>
+      {showResults &&
+        <div>
+          <p>Time spent [ms]: {calculateTime || ""}</p>
+          <table className="overflow-x-auto bg-white shadow-md rounded-lg">
+            <thead className="bg-gray-200 text-gray-700">
+              <tr>
+                <th className="px-4 py-2 border-b" rowSpan={3}>Lvl</th>
+                <th className="px-4 py-2 border-b" rowSpan={3}>Chance</th>
+                <th className="px-4 py-2 border-b" colSpan={5}>Expected</th>
+              </tr>
+              <tr>
+                <th className="px-4 py-2 border-b" rowSpan={2}>Attempts</th>
+                <th className="px-4 py-2 border-b" colSpan={2}>Tuners</th>
+                <th className="px-4 py-2 border-b" colSpan={2}>Echo EXP</th>
+              </tr>
+              <tr>
+                <th className="px-4 py-2 border-b">Count</th>
+                <th className="px-4 py-2 border-b">Waveplates</th>
+                <th className="px-4 py-2 border-b">Count</th>
+                <th className="px-4 py-2 border-b">Waveplates</th>
+              </tr>
+            </thead>
 
-      <div>
-        <p>Time spent [ms]: {calculateTime || ""}</p>
-        <table className="overflow-x-auto bg-white shadow-md rounded-lg">
-          <thead className="bg-gray-200 text-gray-700">
-            <tr>
-              <th className="px-4 py-2 border-b" rowSpan={3}>Lvl</th>
-              <th className="px-4 py-2 border-b" rowSpan={3}>Chance</th>
-              <th className="px-4 py-2 border-b" colSpan={5}>Expected</th>
-            </tr>
-            <tr>
-              <th className="px-4 py-2 border-b" rowSpan={2}>Attempts</th>
-              <th className="px-4 py-2 border-b" colSpan={2}>Tuners</th>
-              <th className="px-4 py-2 border-b" colSpan={2}>Echo EXP</th>
-            </tr>
-            <tr>
-              <th className="px-4 py-2 border-b">Count</th>
-              <th className="px-4 py-2 border-b">Waveplates</th>
-              <th className="px-4 py-2 border-b">Count</th>
-              <th className="px-4 py-2 border-b">Waveplates</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            {rows}
-          </tbody>
-        </table>
-      </div>
+            <tbody>
+              {rows}
+            </tbody>
+          </table>
+        </div>
+      }
     </div>
   )
 }

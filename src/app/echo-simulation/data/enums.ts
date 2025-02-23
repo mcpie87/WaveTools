@@ -1,0 +1,15 @@
+export enum Substats {
+  FlatATK = "Flat ATK",
+  FlatHP = "Flat HP",
+  FlatDEF = "Flat DEF",
+  ATK = "ATK%",
+  HP = "HP%",
+  DEF = "DEF%",
+  ER = "Energy Regen",
+  CR = "Crit. Rate",
+  CDMG = "Crit. Damage",
+  Basic_DMG = "Basic Attack DMG Bonus",
+  Heavy_DMG = "Heavy Attack DMG Bonus",
+  Skill_DMG = "Resonance Skill DMG Bonus",
+  Liberation_DMG = "Resonance Liberation DMG Bonus",
+}

@@ -1,3 +1,4 @@
+import { Substats } from "../data/enums";
 export type SubstatName = keyof typeof substatsDict;
 export type SubstatValue = number;
 export type SubstatEntry = {
@@ -5,35 +6,35 @@ export type SubstatEntry = {
   value: SubstatValue;
 }
 const substatsDict: { [key: string]: number } = {
-  "flat_atk": 0.0769230769,
-  "flat_hp": 0.0769230769,
-  "flat_def": 0.0769230769,
-  "atk%": 0.0769230769,
-  "hp%": 0.0769230769,
-  "def%": 0.0769230769,
-  "energy_regen": 0.0769230769,
-  "crit_rate": 0.0769230769,
-  "crit_damage": 0.0769230769,
-  "basic_attack_dmg_bonus": 0.0769230769,
-  "heavy_attack_dmg_bonus": 0.0769230769,
-  "resonance_skill_dmg_bonus": 0.0769230769,
-  "resonance_liberation_dmg_bonus": 0.0769230769,
+  [Substats.FlatATK]: 0.0769230769,
+  [Substats.FlatHP]: 0.0769230769,
+  [Substats.FlatDEF]: 0.0769230769,
+  [Substats.ATK]: 0.0769230769,
+  [Substats.HP]: 0.0769230769,
+  [Substats.DEF]: 0.0769230769,
+  [Substats.ER]: 0.0769230769,
+  [Substats.CR]: 0.0769230769,
+  [Substats.CDMG]: 0.0769230769,
+  [Substats.Basic_DMG]: 0.0769230769,
+  [Substats.Heavy_DMG]: 0.0769230769,
+  [Substats.Skill_DMG]: 0.0769230769,
+  [Substats.Liberation_DMG]: 0.0769230769,
 };
 
 export const substatValues: { [key: SubstatName]: SubstatValue[] } = {
-  "flat_def": [40, 50, 60, 70],
-  "flat_atk": [30, 40, 50, 60],
-  "flat_hp": [320, 360, 390, 430, 470, 510, 540, 580],
-  "atk%": [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
-  "hp%": [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
-  "def%": [0.081, 0.09, 0.1, 0.109, 0.118, 0.128, 0.138, 0.147],
-  "energy_regen": [0.068, 0.076, 0.084, 0.092, 0.1, 0.108, 0.116, 0.124],
-  "crit_rate": [0.063, 0.069, 0.075, 0.081, 0.087, 0.093, 0.099, 0.105],
-  "crit_damage": [0.126, 0.138, 0.15, 0.162, 0.174, 0.186, 0.198, 0.21],
-  "basic_attack_dmg_bonus": [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
-  "heavy_attack_dmg_bonus": [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
-  "resonance_skill_dmg_bonus": [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
-  "resonance_liberation_dmg_bonus": [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
+  [Substats.FlatDEF]: [40, 50, 60, 70],
+  [Substats.FlatATK]: [30, 40, 50, 60],
+  [Substats.FlatHP]: [320, 360, 390, 430, 470, 510, 540, 580],
+  [Substats.ATK]: [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
+  [Substats.HP]: [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
+  [Substats.DEF]: [0.081, 0.09, 0.1, 0.109, 0.118, 0.128, 0.138, 0.147],
+  [Substats.ER]: [0.068, 0.076, 0.084, 0.092, 0.1, 0.108, 0.116, 0.124],
+  [Substats.CR]: [0.063, 0.069, 0.075, 0.081, 0.087, 0.093, 0.099, 0.105],
+  [Substats.CDMG]: [0.126, 0.138, 0.15, 0.162, 0.174, 0.186, 0.198, 0.21],
+  [Substats.Basic_DMG]: [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
+  [Substats.Heavy_DMG]: [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
+  [Substats.Skill_DMG]: [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
+  [Substats.Liberation_DMG]: [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
 };
 
 // taken from wiki page

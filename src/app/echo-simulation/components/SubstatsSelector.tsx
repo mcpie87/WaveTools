@@ -1,5 +1,6 @@
 import React from "react";
 import { SUBSTATS, SubstatEntry, substatValues, SubstatName, SubstatValue } from "../services/simulate";
+import { formatSubstatValue } from "../utils/utils";
 
 const generateAvailableSubstats = (pickedSubstats: SubstatEntry[], value: SubstatName): SubstatName[] => {
   const pickedSubstatNames: SubstatName[] = pickedSubstats.map(e => e.name);
@@ -56,13 +57,6 @@ const SubstatsSelector: React.FC<MultiSelectorProps> = ({
               </option>
             ))}
           </select>
-          <button
-            type="button"
-            onClick={() => removeRow(index)}
-            className="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
-          >
-            Delete
-          </button>
           {renderValues && option.name &&
             <>
               <span>{">="}</span>
@@ -76,12 +70,19 @@ const SubstatsSelector: React.FC<MultiSelectorProps> = ({
                 </option>
                 {substatValues[option.name].map((substatValue) => (
                   <option key={substatValue} value={substatValue}>
-                    {substatValue}
+                    {formatSubstatValue(substatValue)}
                   </option>
                 ))}
               </select>
             </>
           }
+          <button
+            type="button"
+            onClick={() => removeRow(index)}
+            className="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
+          >
+            Delete
+          </button>
         </div>
       ))}
       {selectedSubstats.length < 5 && (
