@@ -16,7 +16,8 @@ const formatNumber = (num: string | number): string => {
 export const GenerateResultsRows = async (
   simulateCount: number,
   startSubstats: SubstatEntry[],
-  desiredSubstats: SubstatEntry[]
+  desiredSubstats: SubstatEntry[],
+  checkForAny: boolean
 ): Promise<React.JSX.Element[]> => {
   const results: { [key: number]: number } = {};
   const trimmedStartSubstats: SubstatEntry[] = startSubstats.filter(e => e.name);
@@ -25,11 +26,11 @@ export const GenerateResultsRows = async (
   const startLevel = trimmedStartSubstats.length;
   for (let i = 0; i < simulateCount; ++i) {
     for (let j = startLevel; j <= 5; ++j) {
-      if (j < trimmedDesiredSubstats.length) {
+      if (!checkForAny && j < trimmedDesiredSubstats.length) {
         continue;
       }
       const pickedSubstats = [...trimmedStartSubstats];
-      const result = simulate(trimmedDesiredSubstats, pickedSubstats, j);
+      const result = simulate(trimmedDesiredSubstats, pickedSubstats, j, checkForAny);
       if (!results[j]) {
         results[j] = 0;
       }

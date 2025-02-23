@@ -12,6 +12,7 @@ function EchoSimulationComponent() {
   const [calculateTime, setCalculateTime] = useState<number>(0);
   const [rows, setRows] = useState<JSX.Element[]>([]);
   const [showResults, setShowResults] = useState<boolean>(false);
+  const [checkForAny, setCheckForAny] = useState<boolean>(false);
   const calculate = async (e: React.FormEvent) => {
     e.preventDefault();
     if (simulateCount > 1e6) {
@@ -28,7 +29,8 @@ function EchoSimulationComponent() {
     const rows = await GenerateResultsRows(
       simulateCount,
       startSubstats,
-      desiredSubstats
+      desiredSubstats,
+      checkForAny
     );
     setRows(rows);
     const end = performance.now();
@@ -48,7 +50,21 @@ function EchoSimulationComponent() {
           />
         </div>
         <div className="flex-col">
-          <h3>Desired subs</h3>
+          <div className="flex flex-row gap-4">
+            <h3>Desired subs</h3>
+            <label className="flex items-center space-x-2">
+              <input
+                id="checkForAny"
+                type="checkbox"
+                className="text-sm"
+                checked={checkForAny}
+                onChange={(e) => setCheckForAny(Boolean(e.target.checked))}
+              />
+              <span className="text-sm">
+                Look for any?
+              </span>
+            </label>
+          </div>
           <SubstatsSelector
             selectedSubstats={desiredSubstats}
             selectedSubstatsSetter={setDesiredSubstats}

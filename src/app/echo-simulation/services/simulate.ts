@@ -117,28 +117,21 @@ export const UPGRADE_COST: { [key: string]: UpgradeCost } = {
   "+25": { tuners: 50, exp: 142600 },
 }
 
-
 // endLevel - 0 means +0, 5 means +25
 export function simulate(
   desiredSubstats: SubstatEntry[],
   pickedSubstats: SubstatEntry[],
-  endLevel: number
+  endLevel: number,
+  checkForAny: boolean
 ) {
-  for (let i = pickedSubstats.length; i < endLevel; ++i) {
-    const pickedSubstat: SubstatEntry = pickSubstat(pickedSubstats);
-    pickedSubstats.push(pickedSubstat);
-  }
-  for (const desiredSubstat of desiredSubstats) {
-    const pickedSubstat = pickedSubstats.find(substat => substat.name === desiredSubstat.name);
-
-    if (!pickedSubstat) {
-      return false;
-    }
-
-    if (pickedSubstat.value < desiredSubstat.value) {
-      return false;
-    }
+  while (pickedSubstats.length < endLevel) {
+    pickedSubstats.push(pickSubstat(pickedSubstats));
   }
 
-  return true;
+  const pickedSubsContainsSubstat = ({ name, value }: SubstatEntry) => (
+    pickedSubstats.some(sub => sub.name === name && sub.value >= value)
+  );
+  return checkForAny
+    ? desiredSubstats.some(pickedSubsContainsSubstat)
+    : desiredSubstats.every(pickedSubsContainsSubstat)
 }
