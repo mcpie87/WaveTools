@@ -38,7 +38,7 @@ function EchoSimulationComponent() {
   }
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <form className="flex flex-col" onSubmit={calculate}>
         <div className="flex-col">
           <h3>Start subs</h3>
