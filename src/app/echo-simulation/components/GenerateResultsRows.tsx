@@ -7,11 +7,6 @@ const formatNumber = (num: string | number): string => {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-// interface GenerateResultsRowsProps {
-//   desiredSubstats: string[];
-//   startSubstats: string[];
-// }
-
 export const GenerateResultsRows = async (
   startSubstats: SubstatEntry[],
   desiredSubstats: SubstatEntry[],

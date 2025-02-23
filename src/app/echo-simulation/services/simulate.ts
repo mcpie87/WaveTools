@@ -65,20 +65,20 @@ function generateLeftStats(substats: SubstatName[], amount: number): SubstatName
 
   function backtrack(path: SubstatName[]) {
     if (path.length === amount) {
-      permutations.push([...path]); // Add the current permutation to the result
+      permutations.push([...path]);
       return;
     }
 
     for (let i = 0; i < substats.length; ++i) {
-      if (!path.includes(substats[i])) { // Ensure no duplicates in the current path
-        path.push(substats[i]); // Add the current element to the permutation
-        backtrack(path); // Recurse
-        path.pop(); // Backtrack (remove the last element to try the next one)
+      if (!path.includes(substats[i])) {
+        path.push(substats[i]);
+        backtrack(path);
+        path.pop();
       }
     }
   }
 
-  backtrack([]); // Start the recursion
+  backtrack([]);
   return permutations;
 }
 
