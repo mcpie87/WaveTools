@@ -1,20 +1,18 @@
 import {
   SubstatEntry,
   UPGRADE_COST,
-  simulate
+  calculateProbabilityOfDesiredSubstats
 } from "../services/simulate";
 const formatNumber = (num: string | number): string => {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 // interface GenerateResultsRowsProps {
-//   simulateCount: number;
 //   desiredSubstats: string[];
 //   startSubstats: string[];
 // }
 
 export const GenerateResultsRows = async (
-  simulateCount: number,
   startSubstats: SubstatEntry[],
   desiredSubstats: SubstatEntry[],
   checkForAny: boolean
@@ -22,27 +20,20 @@ export const GenerateResultsRows = async (
   const results: { [key: number]: number } = {};
   const trimmedStartSubstats: SubstatEntry[] = startSubstats.filter(e => e.name);
   const trimmedDesiredSubstats: SubstatEntry[] = desiredSubstats.filter(e => e.name);
-  console.log("GENERATE RESULTS", trimmedStartSubstats, trimmedDesiredSubstats);
   const startLevel = trimmedStartSubstats.length;
-  for (let i = 0; i < simulateCount; ++i) {
-    for (let j = startLevel; j <= 5; ++j) {
-      if (!checkForAny && j < trimmedDesiredSubstats.length) {
-        continue;
-      }
-      const pickedSubstats = [...trimmedStartSubstats];
-      const result = simulate(trimmedDesiredSubstats, pickedSubstats, j, checkForAny);
-      if (!results[j]) {
-        results[j] = 0;
-      }
-      if (result) {
-        results[j]++;
-      }
-    }
+
+  for (let i = startLevel; i <= 5; ++i) {
+    results[i] = calculateProbabilityOfDesiredSubstats(
+      trimmedDesiredSubstats,
+      trimmedStartSubstats,
+      i,
+      checkForAny
+    );
   }
 
   const rows: React.JSX.Element[] = [];
   for (const [k, v] of Object.entries(results)) {
-    const chanceToHit = v / simulateCount;
+    const chanceToHit = v;
     console.log("GENERATE ROWS CHANCE", k, v, chanceToHit);
     const displayedLevel = "+" + (5 * Number(k));
     const displayedStartLevel = "+" + (5 * startLevel);

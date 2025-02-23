@@ -60,46 +60,102 @@ const substatChances: { [key: number]: SubstatValue[] } = {
   8: [0.0739, 0.069, 0.2072, 0.2490, 0.1823, 0.1360, 0.0534, 0.0293],
 };
 
-function pickSubstat(pickedSubstats: SubstatEntry[]): SubstatEntry {
-  let totalChance = 0;
-  const available = [];
+function generateLeftStats(substats: SubstatName[], amount: number): SubstatName[][] {
+  const permutations: SubstatName[][] = [];
 
-  const pickedSubstatNames = new Set(pickedSubstats.map(substatEntry => substatEntry.name));
-  for (const substat in substatsDict) {
-    if (!pickedSubstatNames.has(substat)) {
-      available.push(substat);
-      totalChance += substatsDict[substat];
+  function backtrack(path: SubstatName[]) {
+    if (path.length === amount) {
+      permutations.push([...path]); // Add the current permutation to the result
+      return;
     }
-  }
 
-  if (available.length === 0) {
-    throw new Error("No more subs available");
-  }
-
-  const random = Math.random() * totalChance;
-  let cumulative = 0;
-
-  for (let i = 0; i < available.length; i++) {
-    cumulative += substatsDict[available[i]];
-    if (random <= cumulative) {
-      const pickedSubstat = available[i];
-      const possibleRolls = substatValues[pickedSubstat];
-      const possibleChances = substatChances[possibleRolls.length];
-      const valueRng = Math.random();
-      let valuesCumulative = 0;
-      for (let j = 0; j < possibleChances.length; ++j) {
-        valuesCumulative += possibleChances[j];
-        if (valueRng <= valuesCumulative) {
-          return {
-            name: pickedSubstat,
-            value: possibleRolls[j]
-          }
-        }
+    for (let i = 0; i < substats.length; ++i) {
+      if (!path.includes(substats[i])) { // Ensure no duplicates in the current path
+        path.push(substats[i]); // Add the current element to the permutation
+        backtrack(path); // Recurse
+        path.pop(); // Backtrack (remove the last element to try the next one)
       }
     }
   }
 
-  throw new Error("Unable to pick substat");
+  backtrack([]); // Start the recursion
+  return permutations;
+}
+
+function calculateSubstatNameChance(
+  pickedSubstats: Set<SubstatName>,
+  desiredSubstat: SubstatName
+): number {
+  let cumulativeSubstatChance = 0;
+  for (const substat in substatsDict) {
+    if (!pickedSubstats.has(substat)) {
+      cumulativeSubstatChance += substatsDict[substat];
+    }
+  }
+  return substatsDict[desiredSubstat] / cumulativeSubstatChance;
+}
+
+
+function calculateSubstatRollChance(desiredSubstat: SubstatEntry): number {
+  const substatRolls = substatValues[desiredSubstat.name];
+  const substatRollChances = substatChances[substatRolls.length];
+  let cumulativeRollChance = 0;
+  const totalRollChance = substatRollChances.reduce((acc, e) => acc + e);
+  for (let i = 0; i < substatRollChances.length; ++i) {
+    if (substatRolls[i] >= desiredSubstat.value) {
+      cumulativeRollChance += substatRollChances[i];
+    }
+  }
+  return cumulativeRollChance / totalRollChance;
+}
+
+export function calculateProbabilityOfDesiredSubstats(
+  desiredSubstats: SubstatEntry[],
+  startSubstats: SubstatEntry[],
+  endLevel: number,
+  checkForAny: boolean
+): number {
+  const levels = endLevel - startSubstats.length;
+  if (levels <= 0) {
+    return 0;
+  }
+
+  const startSubstatsNames = startSubstats.map(e => e.name);
+  const leftSubstats = Object.keys(substatsDict)
+    .filter(substat => !startSubstatsNames.includes(substat));
+
+  const allLeftCombinations: SubstatName[][] = generateLeftStats(leftSubstats, levels);
+
+  let totalChance = 0;
+  for (const combination of allLeftCombinations) {
+    const currentSubstats = new Set<SubstatName>(startSubstatsNames);
+    let chanceForCombination = 1;
+    for (let i = 0; i < levels; ++i) {
+      chanceForCombination *= calculateSubstatNameChance(currentSubstats, combination[i]);
+      currentSubstats.add(combination[i]);
+    }
+
+    // Converting picked substats into only ones from desired + chance for each
+    const desiredFromCurrentSubstats = [];
+    for (const desiredSubstat of desiredSubstats) {
+      if (currentSubstats.has(desiredSubstat.name)) {
+        desiredFromCurrentSubstats.push(desiredSubstat);
+      }
+    }
+    const desiredFromCurrentSubstatsRollChances = desiredFromCurrentSubstats
+      .map(substat => calculateSubstatRollChance(substat));
+
+    if (checkForAny) {
+      chanceForCombination *= Math.max(...desiredFromCurrentSubstatsRollChances, 0);
+      totalChance += chanceForCombination;
+    } else if (desiredFromCurrentSubstats.length === desiredSubstats.length) {
+      for (const desiredSubstat of desiredSubstats) {
+        chanceForCombination *= calculateSubstatRollChance(desiredSubstat);
+      }
+      totalChance += chanceForCombination;
+    }
+  }
+  return totalChance;
 }
 
 export const SUBSTATS = Object.keys(substatsDict);
@@ -115,23 +171,4 @@ export const UPGRADE_COST: { [key: string]: UpgradeCost } = {
   "+15": { tuners: 30, exp: 39600 },
   "+20": { tuners: 40, exp: 79100 },
   "+25": { tuners: 50, exp: 142600 },
-}
-
-// endLevel - 0 means +0, 5 means +25
-export function simulate(
-  desiredSubstats: SubstatEntry[],
-  pickedSubstats: SubstatEntry[],
-  endLevel: number,
-  checkForAny: boolean
-) {
-  while (pickedSubstats.length < endLevel) {
-    pickedSubstats.push(pickSubstat(pickedSubstats));
-  }
-
-  const pickedSubsContainsSubstat = ({ name, value }: SubstatEntry) => (
-    pickedSubstats.some(sub => sub.name === name && sub.value >= value)
-  );
-  return checkForAny
-    ? desiredSubstats.some(pickedSubsContainsSubstat)
-    : desiredSubstats.every(pickedSubsContainsSubstat)
 }

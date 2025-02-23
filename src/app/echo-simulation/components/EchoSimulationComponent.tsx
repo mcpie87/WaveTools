@@ -6,7 +6,6 @@ import { GenerateResultsRows } from "./GenerateResultsRows";
 import SubstatsSelector from "./SubstatsSelector";
 
 function EchoSimulationComponent() {
-  const [simulateCount, setSimulateCount] = useState<number>(1e5);
   const [startSubstats, setStartSubstats] = useState<SubstatEntry[]>([]);
   const [desiredSubstats, setDesiredSubstats] = useState<SubstatEntry[]>([]);
   const [calculateTime, setCalculateTime] = useState<number>(0);
@@ -15,11 +14,6 @@ function EchoSimulationComponent() {
   const [checkForAny, setCheckForAny] = useState<boolean>(false);
   const calculate = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (simulateCount > 1e6) {
-      if (!confirm(`You sure? Estimated duration: ${(simulateCount / 1e7)} minutes`)) {
-        return;
-      }
-    }
     // doesn't render, no clue why
     // it's not the await
     setShowResults(false);
@@ -27,7 +21,6 @@ function EchoSimulationComponent() {
     setDesiredSubstats(desiredSubstats);
     const start = performance.now();
     const rows = await GenerateResultsRows(
-      simulateCount,
       startSubstats,
       desiredSubstats,
       checkForAny
@@ -69,16 +62,6 @@ function EchoSimulationComponent() {
             selectedSubstats={desiredSubstats}
             selectedSubstatsSetter={setDesiredSubstats}
             renderValues={true}
-          />
-        </div>
-        <div className="flex flex-row gap-4">
-          <h3>Simulate count</h3>
-          <input
-            id="simulateCount"
-            type="number"
-            className="border"
-            value={simulateCount}
-            onChange={(e) => setSimulateCount(Number(e.target.value))}
           />
         </div>
         <button
