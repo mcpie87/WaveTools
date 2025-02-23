@@ -1,9 +1,11 @@
 import Link from "next/link";
+import DarkModeToggle from "./DarkModeToggle";
 
 export default function Header() {
     return (
         <header className="flex justify-between items-center py-4 border-b">
             <h1 className="text-2xl font-bold">Wuwa Planner</h1>
+            <DarkModeToggle />
             <nav className="space-x-4">
                 {process.env.NODE_ENV === "development" && (
                     <>

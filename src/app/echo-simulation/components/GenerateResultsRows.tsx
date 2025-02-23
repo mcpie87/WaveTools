@@ -57,14 +57,14 @@ export const GenerateResultsRows = async (
 
     if (v > 0) {
       rows.push(
-        <tr key={k} className="bg-white hover:bg-gray-100">
-          <td className="px-4 py-2 border-b">{displayedLevel}</td>
-          <td className="px-4 py-2 border-b">{chanceToHit}</td>
-          <td className="px-4 py-2 border-b">{formatNumber(expectedAttempts.toFixed(2))}</td>
-          <td className="px-4 py-2 border-b">{formatNumber(expectedTuners.toFixed(0))}</td>
-          <td className="px-4 py-2 border-b">{formatNumber(expectedWaveplateForTuner.toFixed(0))}</td>
-          <td className="px-4 py-2 border-b">{formatNumber(expectedExperience.toFixed(0))}</td>
-          <td className="px-4 py-2 border-b">{formatNumber(expectedWaveplateForExp.toFixed(0))}</td>
+        <tr key={k}>
+          <td>{displayedLevel}</td>
+          <td>{chanceToHit}</td>
+          <td>{formatNumber(expectedAttempts.toFixed(2))}</td>
+          <td>{formatNumber(expectedTuners.toFixed(0))}</td>
+          <td>{formatNumber(expectedWaveplateForTuner.toFixed(0))}</td>
+          <td>{formatNumber(expectedExperience.toFixed(0))}</td>
+          <td>{formatNumber(expectedWaveplateForExp.toFixed(0))}</td>
         </tr>
       );
     }
