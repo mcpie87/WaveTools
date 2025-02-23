@@ -2,14 +2,14 @@
 
 import Layout from "@/components/Layout";
 // import { CharacterProvider } from "./contexts/CharacterContext";
-// // import PlannerContainer from './components/container';
+// import PlannerContainer from './components/container';
 
 export default function Planner() {
   return (
     <Layout>
       {/* <CharacterProvider> */}
-      <div>Planner</div>
       {/* <PlannerContainer /> */}
+      <div>hey</div>
       {/* </CharacterProvider> */}
     </Layout>
   );
