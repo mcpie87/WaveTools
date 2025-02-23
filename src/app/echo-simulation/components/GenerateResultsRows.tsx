@@ -3,9 +3,7 @@ import {
   UPGRADE_COST,
   calculateProbabilityOfDesiredSubstats
 } from "../services/simulate";
-const formatNumber = (num: string | number): string => {
-  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+import { formatNumber, formatPercent } from "../utils/utils";
 
 export const GenerateResultsRows = async (
   startSubstats: SubstatEntry[],
@@ -46,7 +44,7 @@ export const GenerateResultsRows = async (
       rows.push(
         <tr key={k}>
           <td>{displayedLevel}</td>
-          <td>{chanceToHit}</td>
+          <td>{formatPercent(chanceToHit, 8)}</td>
           <td>{formatNumber(expectedAttempts.toFixed(2))}</td>
           <td>{formatNumber(expectedTuners.toFixed(0))}</td>
           <td>{formatNumber(expectedWaveplateForTuner.toFixed(0))}</td>
