@@ -20,7 +20,7 @@ function EchoSimulationContainer() {
           <button onClick={() => removeComponent(component.id)}>Remove</button>
         </div>
       ))}
-      <button onClick={addComponent} className="m-10 p-3">Add Component</button>
+      <button onClick={addComponent} className="m-10 p-3">Add</button>
     </div>
   );
 }
