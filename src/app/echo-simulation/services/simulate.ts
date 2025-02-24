@@ -6,7 +6,7 @@ export type SubstatEntry = {
   value: SubstatValue;
 }
 
-export const substatsDisplayOrder: { [key: string]: number } = {
+export const substatsDisplayOrder: { [key in SubstatName]: number } = {
   [Substats.FlatATK]: 1,
   [Substats.FlatHP]: 2,
   [Substats.FlatDEF]: 3,
@@ -22,7 +22,7 @@ export const substatsDisplayOrder: { [key: string]: number } = {
   [Substats.Liberation_DMG]: 13,
 }
 
-const substatsDict: { [key: string]: number } = {
+export const substatsDict: { [key: string]: number } = {
   [Substats.FlatATK]: 0.0769230769,
   [Substats.FlatHP]: 0.0769230769,
   [Substats.FlatDEF]: 0.0769230769,
@@ -38,7 +38,7 @@ const substatsDict: { [key: string]: number } = {
   [Substats.Liberation_DMG]: 0.0769230769,
 };
 
-export const substatValues: { [key: SubstatName]: SubstatValue[] } = {
+export const substatValues: { [key in SubstatName]: SubstatValue[] } = {
   [Substats.FlatDEF]: [40, 50, 60, 70],
   [Substats.FlatATK]: [30, 40, 50, 60],
   [Substats.FlatHP]: [320, 360, 390, 430, 470, 510, 540, 580],
@@ -55,7 +55,7 @@ export const substatValues: { [key: SubstatName]: SubstatValue[] } = {
 };
 
 // taken from wiki page
-const substatChances: { [key: number]: SubstatValue[] } = {
+export const substatChances: { [key: number]: SubstatValue[] } = {
   4: [0.1243, 0.4621, 0.3857, 0.0279],
   8: [0.0739, 0.069, 0.2072, 0.2490, 0.1823, 0.1360, 0.0534, 0.0293],
 };
