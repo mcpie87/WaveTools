@@ -5,8 +5,12 @@ export type SubstatEntry = {
   name: SubstatName;
   value: SubstatValue;
 }
+export interface UpgradeCost {
+  tuners: number;
+  exp: number;
+}
 
-export const substatsDisplayOrder: { [key in SubstatName]: number } = {
+export const substatsDisplayOrder: Record<SubstatName, number> = {
   [Substats.FlatATK]: 1,
   [Substats.FlatHP]: 2,
   [Substats.FlatDEF]: 3,
@@ -22,7 +26,7 @@ export const substatsDisplayOrder: { [key in SubstatName]: number } = {
   [Substats.Liberation_DMG]: 13,
 }
 
-export const substatsDict: { [key: string]: number } = {
+export const substatsDict: Record<string, number> = {
   [Substats.FlatATK]: 0.0769230769,
   [Substats.FlatHP]: 0.0769230769,
   [Substats.FlatDEF]: 0.0769230769,
@@ -38,7 +42,7 @@ export const substatsDict: { [key: string]: number } = {
   [Substats.Liberation_DMG]: 0.0769230769,
 };
 
-export const substatValues: { [key in SubstatName]: SubstatValue[] } = {
+export const substatValues: Record<SubstatName, SubstatValue[]> = {
   [Substats.FlatDEF]: [40, 50, 60, 70],
   [Substats.FlatATK]: [30, 40, 50, 60],
   [Substats.FlatHP]: [320, 360, 390, 430, 470, 510, 540, 580],
@@ -55,15 +59,24 @@ export const substatValues: { [key in SubstatName]: SubstatValue[] } = {
 };
 
 // taken from wiki page
-export const substatChances: { [key: number]: SubstatValue[] } = {
+export const substatChances: Record<number, SubstatValue[]> = {
   4: [0.1243, 0.4621, 0.3857, 0.0279],
   8: [0.0739, 0.069, 0.2072, 0.2490, 0.1823, 0.1360, 0.0534, 0.0293],
 };
 
-function generateLeftStats(substats: SubstatName[], amount: number): SubstatName[][] {
-  const permutations: SubstatName[][] = [];
+export const UPGRADE_COST: Record<string, UpgradeCost> = {
+  "+0": { tuners: 0, exp: 0 },
+  "+5": { tuners: 10, exp: 4400 },
+  "+10": { tuners: 20, exp: 16500 },
+  "+15": { tuners: 30, exp: 39600 },
+  "+20": { tuners: 40, exp: 79100 },
+  "+25": { tuners: 50, exp: 142600 },
+}
 
-  function backtrack(path: SubstatName[]) {
+function generatePermutations<T>(substats: T[], amount: number): T[][] {
+  const permutations: T[][] = [];
+
+  function backtrack(path: T[]) {
     if (path.length === amount) {
       permutations.push([...path]);
       return;
@@ -95,40 +108,35 @@ function calculateSubstatNameChance(
   return substatsDict[desiredSubstat] / cumulativeSubstatChance;
 }
 
-
 function calculateSubstatRollChance(desiredSubstat: SubstatEntry): number {
-  const substatRolls = substatValues[desiredSubstat.name];
-  const substatRollChances = substatChances[substatRolls.length];
-  let cumulativeRollChance = 0;
-  const totalRollChance = substatRollChances.reduce((acc, e) => acc + e);
-  for (let i = 0; i < substatRollChances.length; ++i) {
-    if (substatRolls[i] >= desiredSubstat.value) {
-      cumulativeRollChance += substatRollChances[i];
-    }
-  }
-  return cumulativeRollChance / totalRollChance;
+  const possibleRolls = substatValues[desiredSubstat.name];
+  const rollProbabilities = substatChances[possibleRolls.length];
+  const totalProbability = rollProbabilities.reduce((sum, prob) => sum + prob, 0);
+  const cumulativeProbability = possibleRolls.reduce((sum, value, idx) =>
+    value >= desiredSubstat.value ? sum + rollProbabilities[idx] : sum, 0);
+  return cumulativeProbability / totalProbability;
 }
 
 export function calculateProbabilityOfDesiredSubstats(
   desiredSubstats: SubstatEntry[],
-  startSubstats: SubstatEntry[],
-  endLevel: number,
+  initialSubstats: SubstatEntry[],
+  targetLevel: number,
   checkForAny: boolean
 ): number {
-  const levels = endLevel - startSubstats.length;
+  const levels = targetLevel - initialSubstats.length;
   if (levels <= 0) {
     return 0;
   }
 
-  const startSubstatsNames = startSubstats.map(e => e.name);
-  const leftSubstats = Object.keys(substatsDict)
-    .filter(substat => !startSubstatsNames.includes(substat));
+  const initialSubstatsNames = initialSubstats.map(e => e.name);
+  const availableSubstats = Object.keys(substatsDict)
+    .filter(substat => !initialSubstatsNames.includes(substat));
 
-  const allLeftCombinations: SubstatName[][] = generateLeftStats(leftSubstats, levels);
+  const allLeftCombinations: SubstatName[][] = generatePermutations(availableSubstats, levels);
 
   let totalChance = 0;
   for (const combination of allLeftCombinations) {
-    const currentSubstats = new Set<SubstatName>(startSubstatsNames);
+    const currentSubstats = new Set<SubstatName>(initialSubstatsNames);
     let chanceForCombination = 1;
     for (let i = 0; i < levels; ++i) {
       chanceForCombination *= calculateSubstatNameChance(currentSubstats, combination[i]);
@@ -159,16 +167,3 @@ export function calculateProbabilityOfDesiredSubstats(
 }
 
 export const SUBSTATS = Object.keys(substatsDict);
-
-interface UpgradeCost {
-  tuners: number;
-  exp: number;
-}
-export const UPGRADE_COST: { [key: string]: UpgradeCost } = {
-  "+0": { tuners: 0, exp: 0 },
-  "+5": { tuners: 10, exp: 4400 },
-  "+10": { tuners: 20, exp: 16500 },
-  "+15": { tuners: 30, exp: 39600 },
-  "+20": { tuners: 40, exp: 79100 },
-  "+25": { tuners: 50, exp: 142600 },
-}
