@@ -5,7 +5,8 @@ import {
   substatValues,
   substatChances,
   calculateProbabilityOfDesiredSubstats,
-  SubstatEntry
+  SubstatEntry,
+  SubstatName
 } from "@/app/echo-simulation/services/simulate";
 
 const SUBSTATS: Substats[] = [
@@ -24,7 +25,20 @@ const SUBSTATS: Substats[] = [
   Substats.Liberation_DMG,
 ]
 
-describe('add function', () => {
+function calculateSubstatNameChance(
+  pickedSubstats: Set<SubstatName>,
+  desiredSubstat: SubstatName
+): number {
+  let cumulativeSubstatChance = 0;
+  for (const substat in substatsDict) {
+    if (!pickedSubstats.has(substat)) {
+      cumulativeSubstatChance += substatsDict[substat];
+    }
+  }
+  return substatsDict[desiredSubstat] / cumulativeSubstatChance;
+}
+
+describe('simulate function', () => {
   test('each substat should be present', () => {
     expect(typeof substatsDict).toBe('object');
     for (const substat of SUBSTATS) {
@@ -34,7 +48,7 @@ describe('add function', () => {
     }
   });
 
-  test('each substat should have chances', () => {
+  test('each substat should have chances and sum should be ~1', () => {
     for (const substat of SUBSTATS) {
       const rolls = substatValues[substat];
       const chances = substatChances[rolls.length];
@@ -47,7 +61,7 @@ describe('add function', () => {
     }
   });
 
-  test('each substat roll should be <1 or >=30', () => {
+  test('each substat roll should be >0 or <1 or >=30', () => {
     for (const substat of SUBSTATS) {
       const rolls = substatValues[substat];
       for (const roll of rolls) {
@@ -89,4 +103,141 @@ describe('add function', () => {
       expect(prob).toBeLessThanOrEqual(1 + Number.EPSILON * 100);
     }
   });
+
+  test('order should be flat -> % -> er -> crit -> dmg', () => {
+    const order: { [key in SubstatName]: number } = {
+      [Substats.FlatATK]: 1,
+      [Substats.FlatHP]: 2,
+      [Substats.FlatDEF]: 3,
+      [Substats.ATK]: 4,
+      [Substats.HP]: 5,
+      [Substats.DEF]: 6,
+      [Substats.ER]: 7,
+      [Substats.CR]: 8,
+      [Substats.CDMG]: 9,
+      [Substats.Basic_DMG]: 10,
+      [Substats.Heavy_DMG]: 11,
+      [Substats.Skill_DMG]: 12,
+      [Substats.Liberation_DMG]: 13,
+    }
+    for (const key in substatsDisplayOrder) {
+      expect(substatsDisplayOrder[key]).toEqual(order[key]);
+    }
+  });
+
+  /* probability tests */
+  test('picking any substat with 4 starting subs should be base chance', () => {
+    const startSubstats: SubstatName[] = [
+      Substats.ATK,
+      Substats.DEF,
+      Substats.HP,
+      Substats.CR,
+    ];
+    const desiredSubstatCollection = Object.keys(substatsDict)
+      .filter(key => !startSubstats.includes(key));
+
+    // test values: 0 -> 1st -> 2nd -> 3rd -> max
+    const idxs = [0, 1, 2, 3, -1];
+    for (const substat of desiredSubstatCollection) {
+      for (const idx of idxs) {
+        const calcProb: number = calculateProbabilityOfDesiredSubstats(
+          [{ name: substat, value: substatValues[substat].at(idx) as number }],
+          startSubstats.map(e => ({ name: e, value: 0 })),
+          5,
+          false
+        );
+        const possibleChances = substatChances[substatValues[substat].length];
+
+        let totalSubChance = 0;
+        for (const [sub, chance] of Object.entries(substatsDict)) {
+          if (!startSubstats.includes(sub)) {
+            totalSubChance += chance;
+          }
+        }
+        const substatChance = calculateSubstatNameChance(new Set(startSubstats), substat);
+        const totalRollChance = possibleChances.reduce((acc, e) => acc + e, 0);
+        const rollChance = possibleChances.slice(idx).reduce((acc, e) => acc + e, 0) / totalRollChance;
+
+        const realProb: number = substatChance * rollChance;
+
+        expect(calcProb).toBe(realProb);
+      }
+    }
+  });
+
+  test('chance for a single desired substat with after consecutive rolls', () => {
+    const desiredSubstat: SubstatName = Substats.CDMG;
+    const substatsToPick: SubstatName[] = [
+      Substats.ATK,
+      Substats.HP,
+      Substats.DEF,
+      Substats.CR
+    ];
+    // we start from 1 (+5), end at 5 (+25)
+    const pickedSubstats = new Set<SubstatName>();
+    const possibleRollChances = substatChances[substatValues[desiredSubstat].length];
+    for (let i = 1; i <= 5; ++i) {
+      for (let j = 0; j < possibleRollChances.length; ++j) {
+        const substatChance = calculateSubstatNameChance(pickedSubstats, desiredSubstat);
+        const totalRollChance = possibleRollChances.reduce((acc, e) => acc + e, 0);
+        const rollChance = possibleRollChances.slice(j).reduce((acc, e) => acc + e, 0) / totalRollChance;
+
+        // chance of rolling desired sub at i lvl
+        const substatRollChance = substatChance * rollChance;
+
+        const calcProb: number = calculateProbabilityOfDesiredSubstats(
+          [{ name: desiredSubstat, value: substatValues[desiredSubstat][j] }],
+          [...pickedSubstats].map(e => ({ name: e, value: 0 })),
+          i,
+          false
+        );
+        expect(calcProb).toBe(substatRollChance);
+      }
+      if (i < 5) {
+        // prevent undefined
+        pickedSubstats.add(substatsToPick[i - 1]);
+      };
+    }
+  });
+
+  test('chance for checkForAny=true should be a sum at each stage', () => {
+    const desiredSubstats: SubstatEntry[] = [
+      { name: Substats.CDMG, value: substatValues[Substats.CDMG][7] },
+      { name: Substats.CR, value: substatValues[Substats.CR][2] },
+    ];
+    const substatsToPick: SubstatName[] = [
+      Substats.ATK,
+      Substats.HP,
+      Substats.DEF,
+      Substats.FlatHP
+    ];
+    const pickedSubstats: Set<SubstatName> = new Set<SubstatName>();
+    for (let i = 1; i <= 5; ++i) {
+      let totalChance = 0;
+      for (const desiredSubstat of desiredSubstats) {
+        const substatChance = calculateSubstatNameChance(pickedSubstats, desiredSubstat.name);
+        const possibleRollChances = substatChances[substatValues[desiredSubstat.name].length];
+        const totalRollChance = possibleRollChances.reduce((acc, e) => acc + e, 0);
+        let cumRollChance = 0;
+        for (const [idx, rollValue] of substatValues[desiredSubstat.name].entries()) {
+          if (desiredSubstat.value <= rollValue) {
+            cumRollChance += possibleRollChances[idx];
+          }
+        }
+        totalChance += substatChance * (cumRollChance / totalRollChance);
+      }
+      const calcProb: number = calculateProbabilityOfDesiredSubstats(
+        desiredSubstats,
+        [...pickedSubstats].map(e => ({ name: e, value: 0 })),
+        i,
+        true
+      );
+      expect(calcProb).toBe(totalChance);
+
+      if (i < 5) {
+        // undefined prevention
+        pickedSubstats.add(substatsToPick[i - 1]);
+      }
+    }
+  })
 });
