@@ -1,12 +1,9 @@
 'use client';
 
-import Layout from "@/components/Layout";
-import EchoSimulationComponent from "./components/EchoSimulationContainer";
+import EchoSimulationComponent from "./components/EchoSimulationComponent";
 
-export default function Planner() {
+export default function EchoSimulation() {
   return (
-    <Layout>
-      <EchoSimulationComponent />
-    </Layout>
+    <EchoSimulationComponent />
   );
 }
