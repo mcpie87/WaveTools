@@ -148,12 +148,6 @@ describe('simulate function', () => {
         );
         const possibleChances = substatChances[substatValues[substat].length];
 
-        let totalSubChance = 0;
-        for (const [sub, chance] of Object.entries(substatsDict)) {
-          if (!startSubstats.includes(sub)) {
-            totalSubChance += chance;
-          }
-        }
         const substatChance = calculateSubstatNameChance(new Set(startSubstats), substat);
         const totalRollChance = possibleChances.reduce((acc, e) => acc + e, 0);
         const rollChance = possibleChances.slice(idx).reduce((acc, e) => acc + e, 0) / totalRollChance;
