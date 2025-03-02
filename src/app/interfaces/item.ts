@@ -4,9 +4,10 @@ export interface IItem {
   id: number;
   name: string;
   rarity: number;
-  attributes_description: string;
-  bg_description: string;
   icon: IconURL;
   icon_middle: IconURL;
   icon_small: IconURL;
+  value?: number;
+  attributes_description?: string;
+  bg_description?: string;
 };

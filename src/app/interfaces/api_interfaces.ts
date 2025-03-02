@@ -31,7 +31,7 @@ export interface IItemEntry {
 export interface IAPIItem {
   id: number;
   name: string;
-  rarity: string;
+  rarity: number;
   attributes_description: string;
   bg_description: string;
   icon: IconURL;
