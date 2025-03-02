@@ -1,5 +1,5 @@
 import { IResonator } from "@/app/interfaces/api_interfaces";
-import { ResonatorStateDBEntry } from "@/types/resonatorTypes";
+import { getAscensions, ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { convertToUrl } from "@/utils/utils";
 import Image from "next/image";
 import { PlannerCardCurrentDesiredComponent } from "./PlannerCardCurrentDesiredComponent";
@@ -65,6 +65,7 @@ export function PlannerCardComponent({ resonator, dbData, onEditResonator }: Pla
   }
   const { deleteCharacter } = resonatorContext;
 
+  const requiredMaterials = getMaterials(dbData, resonator);
   return (
     <div className="flex flex-col items-center border bg-gray-300 w-[200px]">
       <div className={`
@@ -109,6 +110,13 @@ export function PlannerCardComponent({ resonator, dbData, onEditResonator }: Pla
         </div>
       </div>
       {/* <ItemList */}
+      <div>
+        {Object.entries(requiredMaterials).map(([name, value]) => (
+          <div key={name}>
+            {name} - {value}
+          </div>
+        ))}
+      </div>
       <div className="flex flex-row">
         <button onClick={() => confirm("Edit?") ? onEditResonator(dbData) : null}>
           Edit
@@ -121,22 +129,25 @@ export function PlannerCardComponent({ resonator, dbData, onEditResonator }: Pla
   )
 }
 
-// const getMaterials = (resonatorEntry: ResonatorStateDBEntry, apiResonator: IResonator) => {
-//   const materials = apiResonator.materials;
-//   const ascensionMaterials = materials.ascension.map(e => e.items);
-//   const talentMaterials = materials.talents;
+const getMaterials = (resonatorEntry: ResonatorStateDBEntry, apiResonator: IResonator) => {
+  const materials = apiResonator.materials;
+  const ascensionMaterials = materials.ascension.map(e => e.items);
+  // const talentMaterials = materials.talents;
 
-//   const res = {}
-//   // level first
-//   console.log("RESONATOR ascension", apiResonator.name, ascensionMaterials);
-//   console.log("CURRENT DESIRED", resonatorEntry.level?.current, resonatorEntry.level?.desired);
-//   // console.log("WOLOLO parsing", apiResonator.name, parseResonatorToPlanner(apiResonator));
-//   // console.log("ascension mats", ascensionMaterials);
-//   // console.log("talent mats", talentMaterials);
-//   for (const key of Object.keys(ActiveSkillNames)) {
-//     // console.log("ACTIVE MAT!", key);
-//   }
-//   for (const key of Object.keys(PassiveSkillNames)) {
-//     // console.log("PASSIVE MAT!", key, talentMaterials[key]);
-//   }
-// }
+  // const levelDifference = parseInt(resonatorEntry.level.desired as string) - parseInt(resonatorEntry.level.current as string);
+  const requiredAscensions = getAscensions(resonatorEntry.level.current, resonatorEntry.level.desired);
+  const requiredMaterials: { [key: string]: number } = {};
+
+  // Ascension materials
+  for (const ascensionKey of requiredAscensions) {
+    const ascensionMats = ascensionMaterials[ascensionKey];
+    for (const { name, value } of ascensionMats) {
+      if (!requiredMaterials[name]) {
+        requiredMaterials[name] = value;
+      } else {
+        requiredMaterials[name] += value;
+      }
+    }
+  }
+  return requiredMaterials;
+}

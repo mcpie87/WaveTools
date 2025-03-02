@@ -55,7 +55,15 @@ export const createCurrentDesiredSchema = (
     })
     .default({ current: defaultCurrent, desired: defaultDesired })
     .refine(
-      (data) => data.current <= data.desired,
+      (data) => {
+        const currentInt = parseInt(data.current as string);
+        const desiredInt = parseInt(data.desired as string);
+        if (typeof data.current === "string" && typeof data.desired !== "string" && currentInt === desiredInt) {
+          // cases like 20* -> 20
+          return false;
+        }
+        return currentInt <= desiredInt;
+      },
       {
         message: "Current value must be less than or equal to desired value",
         path: ["current"]
