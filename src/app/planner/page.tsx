@@ -45,12 +45,6 @@ export default function CharactersPage() {
       <div className="flex flex-row">
         <button
           className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-          onClick={() => setShowEditForm(!showEditForm)}
-        >
-          {showEditForm ? 'Hide Form' : 'Show Form'}
-        </button>
-        <button
-          className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
           onClick={() => setShowAddForm(!showAddForm)}
         >
           Add character
