@@ -4,7 +4,7 @@ const repositoryName = 'wuwa-tracker';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'export', // needed in order to deploy public folder
+  output: isProduction ? 'export' : undefined, // needed in order to deploy public folder
   basePath: isProduction ? `/${repositoryName}` : '',
   assetPrefix: isProduction ? `/${repositoryName}/` : '',
   trailingSlash: true,
