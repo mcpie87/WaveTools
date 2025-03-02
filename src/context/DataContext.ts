@@ -1,8 +1,8 @@
 import { createContext, useContext } from 'react';
-import { IItem, IResonator } from '../app/interfaces/api_interfaces';
+import { IAPIItem, IAPIResonator } from '../app/interfaces/api_interfaces';
 
 export interface DataContextType {
-  data: { items: IItem[]; resonators: IResonator[] } | null;
+  data: { items: IAPIItem[]; resonators: IAPIResonator[] } | null;
   loading: boolean;
   error: Error | null;
 }

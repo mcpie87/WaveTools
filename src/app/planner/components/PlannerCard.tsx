@@ -1,60 +1,14 @@
-import { IResonator } from "@/app/interfaces/api_interfaces";
-import { getAscensions, ResonatorStateDBEntry } from "@/types/resonatorTypes";
+import { IAPIResonator } from "@/app/interfaces/api_interfaces";
+import { ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { convertToUrl } from "@/utils/utils";
 import Image from "next/image";
 import { PlannerCardCurrentDesiredComponent } from "./PlannerCardCurrentDesiredComponent";
 import { useCharacters } from "@/context/CharacterContext";
+import { getMaterials } from "@/utils/planner_utils";
 
-
-// // const mapCalculatedMaterials = (materials: CalculatedMaterialsPre, itemsData: object[]) => {
-// //   // console.log("map!", materials, itemsData);
-// //   const retData: object[] = [];
-// //   for (const [k, v] of Object.entries(materials)) {
-// //     retData.push({
-// //       id: v.id,
-// //       name: k,
-// //       value: v.value,
-// //       icon: dataFind(itemsData, "id", v.id)?.icon
-// //     })
-// //     // console.log("KVAL", k, v);
-// //   }
-// //   console.log("RETDATA", itemsData, retData);
-// //   return retData;
-// //   // console.log("PREV", materials, "AFTER", retData);
-// // }
-
-// // const calculateMaterials = (
-// //   currentAscension: number,
-// //   desiredAscension: number,
-// //   materials: Ascension[],
-// //   itemsData: object[]
-// // ) => {
-// //   const totalMaterials = {};
-// //   for (const ascension of materials) {
-// //     if (ascension.rank > currentAscension && ascension.rank <= desiredAscension) {
-// //       for (const material of ascension.materials) {
-// //         if (totalMaterials[material.name]) {
-// //           totalMaterials[material.name].value += material.value;
-// //         } else {
-// //           totalMaterials[material.name] = {
-// //             id: material.id,
-// //             value: material.value,
-// //           }
-// //         }
-// //       }
-// //     }
-// //   }
-
-// //   console.log("TOTAL MATS!",);
-
-// //   return mapCalculatedMaterials(
-// //     totalMaterials,
-// //     itemsData
-// //   );
-// // }
 
 interface PlannerCardComponentProps {
-  resonator: IResonator,
+  resonator: IAPIResonator,
   dbData: ResonatorStateDBEntry,
   onEditResonator: (resonator: ResonatorStateDBEntry) => void;
 }
@@ -129,25 +83,3 @@ export function PlannerCardComponent({ resonator, dbData, onEditResonator }: Pla
   )
 }
 
-const getMaterials = (resonatorEntry: ResonatorStateDBEntry, apiResonator: IResonator) => {
-  const materials = apiResonator.materials;
-  const ascensionMaterials = materials.ascension.map(e => e.items);
-  // const talentMaterials = materials.talents;
-
-  // const levelDifference = parseInt(resonatorEntry.level.desired as string) - parseInt(resonatorEntry.level.current as string);
-  const requiredAscensions = getAscensions(resonatorEntry.level.current, resonatorEntry.level.desired);
-  const requiredMaterials: { [key: string]: number } = {};
-
-  // Ascension materials
-  for (const ascensionKey of requiredAscensions) {
-    const ascensionMats = ascensionMaterials[ascensionKey];
-    for (const { name, value } of ascensionMats) {
-      if (!requiredMaterials[name]) {
-        requiredMaterials[name] = value;
-      } else {
-        requiredMaterials[name] += value;
-      }
-    }
-  }
-  return requiredMaterials;
-}

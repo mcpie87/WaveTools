@@ -1,6 +1,6 @@
 'use client';
 
-import { IItem, IResonator } from "@/app/interfaces/api_interfaces";
+import { IAPIItem, IAPIResonator } from "@/app/interfaces/api_interfaces";
 import { DataContext, DataContextType } from "@/context/DataContext";
 import { ReactNode, useEffect, useState } from "react";
 
@@ -17,10 +17,10 @@ export const DataProvider = ({ children }: DataProviderProps) => {
       try {
         const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
         const itemsResponse = await fetch(`${basePath}/data/items.json`);
-        const itemsDb: IItem[] = await itemsResponse.json();
+        const itemsDb: IAPIItem[] = await itemsResponse.json();
 
         const resonatorResponse = await fetch(`${basePath}/data/resonator.json`);
-        const resonatorDb: IResonator[] = await resonatorResponse.json();
+        const resonatorDb: IAPIResonator[] = await resonatorResponse.json();
 
         setData({
           items: itemsDb,

@@ -1,4 +1,5 @@
 export type SHELL_CREDIT = "Shell Credit";
+export const SHELL_CREDIT: SHELL_CREDIT = "Shell Credit";
 
 export enum ItemEchoEXP {
   RARITY_5 = "Premium Sealed Tube",

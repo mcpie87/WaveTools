@@ -1,4 +1,4 @@
-import { IItemEntry, IResonator } from "@/app/interfaces/api_interfaces";
+import { IItemEntry, IAPIResonator } from "@/app/interfaces/api_interfaces";
 import { ItemEliteBoss, ItemWeapon, ItemWeeklyBoss, ItemCommon, ItemSpecialty } from "@/app/interfaces/item_types";
 import { IResonatorPlanner } from "@/app/interfaces/resonator";
 
@@ -7,7 +7,7 @@ const enum LOOKUP_TYPE {
   Talent
 }
 
-export function parseResonatorToPlanner(data: IResonator): IResonatorPlanner {
+export function parseResonatorToPlanner(data: IAPIResonator): IResonatorPlanner {
   return {
     name: data.name,
     rarity: data.rarity,
@@ -21,7 +21,7 @@ export function parseResonatorToPlanner(data: IResonator): IResonatorPlanner {
 }
 
 function findMaterial<T extends Record<string, string>>(
-  data: IResonator,
+  data: IAPIResonator,
   materialEnum: T,
   lookup: LOOKUP_TYPE
 ): T[keyof T] {
@@ -38,7 +38,7 @@ function findMaterial<T extends Record<string, string>>(
   throw new Error(`${materialEnum.name} not found`);
 }
 
-function getAscensionMaterials(data: IResonator): IItemEntry[] {
+function getAscensionMaterials(data: IAPIResonator): IItemEntry[] {
   const materials = data.materials.ascension;
   if (materials.length != 7) {
     throw new Error("Unrecognized length of ascension material ranks");
@@ -46,7 +46,7 @@ function getAscensionMaterials(data: IResonator): IItemEntry[] {
   return materials[6].items;
 }
 
-function getTalentMaterials(data: IResonator): { name: string }[] {
+function getTalentMaterials(data: IAPIResonator): { name: string }[] {
   const materials = data.materials.talents.inherentSecond.levels[1];
   if (!materials) {
     throw new Error("Upgrade materials not found for inherent skill");

@@ -28,7 +28,7 @@ export interface IItemEntry {
   value: number;
 }
 
-export interface IItem {
+export interface IAPIItem {
   id: number;
   name: string;
   rarity: string;
@@ -47,7 +47,7 @@ export interface ITalentCost {
   };
 }
 
-export interface IResonator {
+export interface IAPIResonator {
   id: number;
   name: string;
   rarity: number;
