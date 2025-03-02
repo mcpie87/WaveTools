@@ -88,6 +88,7 @@ export const activeSkillSchema = createCurrentDesiredSchema(activeSkillBaseSchem
 export const passiveSkillSchema = createCurrentDesiredSchema(passiveSkillBaseSchema, 0, 0);
 
 export const resonatorSchema = z.object({
+  name: z.string().default(""),
   level: levelSchema,
   // Dynamically map over ActiveSkillNames and PassiveSkillNames
   ...Object.fromEntries(
@@ -97,4 +98,7 @@ export const resonatorSchema = z.object({
     Object.keys(PassiveSkillNames).map((skill) => [skill, passiveSkillSchema])
   ) as { [key in keyof typeof PassiveSkillNames]: typeof passiveSkillSchema; },
 });
+// hack cause i'm a noob, need to remove name from this cause otherwise watch()
+// from form will yell at me
 export type resonatorSchemaField = keyof typeof resonatorSchema.shape;
+export type resonatorSchemaForForm = Exclude<keyof typeof resonatorSchema.shape, "name">;

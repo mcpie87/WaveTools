@@ -1,16 +1,11 @@
-import React, { createContext, ReactNode, useContext, useEffect, useState } from 'react';
-import { IItem, IResonator } from '../interfaces/api_interfaces';
+'use client';
 
-
-export interface DataContextType {
-  data: { items: IItem[]; resonators: IResonator[] } | null;
-  loading: boolean;
-  error: Error | null;
-}
-const DataContext = createContext<DataContextType | undefined>(undefined);
+import { IItem, IResonator } from "@/app/interfaces/api_interfaces";
+import { DataContext, DataContextType } from "@/context/DataContext";
+import { ReactNode, useEffect, useState } from "react";
 
 interface DataProviderProps {
-  children: ReactNode
+  children: ReactNode;
 };
 export const DataProvider = ({ children }: DataProviderProps) => {
   const [data, setData] = useState<DataContextType['data']>(null);
@@ -24,7 +19,7 @@ export const DataProvider = ({ children }: DataProviderProps) => {
         const itemsDb: IItem[] = await itemsResponse.json();
 
         const resonatorResponse = await fetch('/data/resonator.json');
-        const resonatorDb = await resonatorResponse.json();
+        const resonatorDb: IResonator[] = await resonatorResponse.json();
 
         setData({
           items: itemsDb,
@@ -49,5 +44,3 @@ export const DataProvider = ({ children }: DataProviderProps) => {
     </DataContext.Provider>
   );
 };
-
-export const useData = () => useContext(DataContext);

@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { ASSET_URL } from '@/utils/constants';
 import './ItemCard.css';
+import { convertToUrl } from '@/utils/utils';
 
 export interface IItemCard {
   id: number,
@@ -20,7 +20,7 @@ export default function ItemCard({ item }: ItemCardProps) {
         <span className="card-body">
           <span className="card-image-container card-rarity-4">
             <Image
-              src={`${ASSET_URL}${item.icon}`}
+              src={`${convertToUrl(item.icon)}`}
               alt={`${item.name} icon`}
               width={64}
               height={64}

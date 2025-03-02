@@ -1,16 +1,68 @@
-// 'use client';
+'use client'; // Mark as a Client Component in Next.js
 
-import Layout from "@/components/Layout";
-// import { CharacterProvider } from "./contexts/CharacterContext";
-// import PlannerContainer from './components/container';
+import { AddResonatorForm } from '@/components/PlannerForm/AddResonatorForm';
+import { ResonatorForm } from '@/components/PlannerForm/ResonatorForm';
+import { resonatorSchema } from '@/schemas/resonatorSchema';
+import { ResonatorStateDBEntry } from '@/types/resonatorTypes';
+import { useState } from 'react';
+import PlannerDataComponent from './components/PlannerDataComponent';
+import { useCharacters } from '@/context/CharacterContext';
 
-export default function Planner() {
+export default function CharactersPage() {
+  const [showEditForm, setShowEditForm] = useState(false);
+  const [showAddForm, setShowAddForm] = useState(false);
+  const [selectedResonator, setSelectedResonator] = useState<ResonatorStateDBEntry | null>(null);
+  const resonatorContext = useCharacters();
+  if (!resonatorContext) {
+    return (<div>Resonator context does not exist</div>);
+  }
+  const { updateCharacter } = resonatorContext;
+  const handleSubmit = (data: ResonatorStateDBEntry) => {
+    console.log('Form submitted:', data);
+    const parsedData = resonatorSchema.parse(data);
+    updateCharacter(parsedData.name, parsedData);
+    setShowEditForm(false);
+  };
+
+  const handleAddResonator = (name: string) => {
+    console.log("handleAddResonator", name);
+    setSelectedResonator({
+      ...resonatorSchema.parse({}),
+      name
+    });
+    setShowEditForm(true);
+  }
+
+  const handleEditResonator = (resonator: ResonatorStateDBEntry) => {
+    console.log("handleEditResonator", resonator);
+    setSelectedResonator(resonator);
+    setShowEditForm(true);
+  }
+
+
   return (
-    <Layout>
-      {/* <CharacterProvider> */}
-      {/* <PlannerContainer /> */}
-      <div>hey</div>
-      {/* </CharacterProvider> */}
-    </Layout>
+    <div>
+      <div className="flex flex-row">
+        <button
+          className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          onClick={() => setShowEditForm(!showEditForm)}
+        >
+          {showEditForm ? 'Hide Form' : 'Show Form'}
+        </button>
+        <button
+          className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          onClick={() => setShowAddForm(!showAddForm)}
+        >
+          Add character
+        </button>
+      </div>
+      {showEditForm && selectedResonator && (
+        <ResonatorForm initialData={selectedResonator} onSubmit={handleSubmit} />
+      )}
+      {showAddForm && (
+        <AddResonatorForm onAddResonator={handleAddResonator} />
+      )}
+      <PlannerDataComponent onEditResonator={handleEditResonator} />
+    </div>
   );
 }

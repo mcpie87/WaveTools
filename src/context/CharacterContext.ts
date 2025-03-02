@@ -4,11 +4,9 @@ import { ResonatorDBSchema, ResonatorStateDBEntry } from '../types/resonatorType
 type CharacterContextType = {
   characters: ResonatorDBSchema;
   updateCharacter: (id: string, data: ResonatorStateDBEntry) => void;
+  deleteCharacter: (id: string) => void;
 };
 
-export const CharacterContext = createContext<CharacterContextType>({
-  characters: {},
-  updateCharacter: () => { },
-});
+export const CharacterContext = createContext<CharacterContextType | undefined>(undefined);
 
 export const useCharacters = () => useContext(CharacterContext);

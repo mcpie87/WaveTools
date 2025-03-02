@@ -4,6 +4,7 @@ import "./globals.css";
 import { CharacterProvider } from "@/providers/CharacterProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { DataProvider } from "@/providers/DataProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,13 +29,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <CharacterProvider>
-          <div className="container mx-auto p-4">
-            <Header />
-            <main className="mt-8">{children}</main>
-            <Footer />
-          </div>
-        </CharacterProvider>
+        <DataProvider>
+          <CharacterProvider>
+            <div className="container mx-auto p-4">
+              <Header />
+              <main className="mt-8">{children}</main>
+              <Footer />
+            </div>
+          </CharacterProvider>
+        </DataProvider>
       </body>
     </html>
   );

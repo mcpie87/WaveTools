@@ -60,6 +60,7 @@ export const InputNumber = ({
         <div className="flex">
           <button
             onClick={() => setValue(prev(value))}
+            type="button"
             className="border rounded-tl-full rounded-bl-full"
             disabled={disableDecrement}
           >
@@ -68,12 +69,13 @@ export const InputNumber = ({
           <input
             ref={inputRef}
             onClick={inputOnClick}
-            className="bg-white text-center"
+            className="bg-white text-center w-[50px]"
             value={value}
             onChange={handleChange}
           />
           <button
             onClick={() => setValue(next(value))}
+            type="button"
             className="border rounded-tr-full rounded-br-full"
             disabled={disableIncrement}
           >

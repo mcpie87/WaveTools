@@ -1,11 +1,14 @@
-'use client'; // Mark as a Client Component in Next.js
+'use client';
 
 import { ReactNode, useState, useEffect } from 'react';
 import { CharacterContext } from '../context/CharacterContext';
 import { ResonatorDBSchema, ResonatorStateDBEntry } from '../types/resonatorTypes';
 import { resonatorSchema } from '../schemas/resonatorSchema';
 
-export const CharacterProvider = ({ children }: { children: ReactNode }) => {
+interface CharacterProviderProps {
+  children: ReactNode;
+}
+export const CharacterProvider = ({ children }: CharacterProviderProps) => {
   const [characters, setCharacters] = useState<ResonatorDBSchema>(() => {
     if (typeof window !== 'undefined') {
       const savedData = localStorage.getItem('characters');
@@ -21,6 +24,9 @@ export const CharacterProvider = ({ children }: { children: ReactNode }) => {
   }, [characters]);
 
   const updateCharacter = (id: string, data: ResonatorStateDBEntry) => {
+    if (!data.name) {
+      data.name = id;
+    }
     const validationResult = resonatorSchema.safeParse(data);
     if (!validationResult.success) {
       console.error("Validation failed:", validationResult.error);
@@ -33,8 +39,16 @@ export const CharacterProvider = ({ children }: { children: ReactNode }) => {
     }));
   };
 
+  const deleteCharacter = (id: string) => {
+    setCharacters((prev) => {
+      const { [id]: _, ...rest } = prev;
+      void _;
+      return rest;
+    });
+  }
+
   return (
-    <CharacterContext.Provider value={{ characters, updateCharacter }}>
+    <CharacterContext.Provider value={{ characters, updateCharacter, deleteCharacter }}>
       {children}
     </CharacterContext.Provider>
   );
