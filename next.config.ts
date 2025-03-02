@@ -4,6 +4,7 @@ const repositoryName = 'wuwa-tracker';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: 'export',
   basePath: isProduction ? `/${repositoryName}` : '',
   assetPrefix: isProduction ? `/${repositoryName}/` : '',
   trailingSlash: true,
