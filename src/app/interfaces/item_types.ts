@@ -37,6 +37,7 @@ export enum ItemWeeklyBoss {
 export type WEAPON_MOLD = "Standard Weapon Mold";
 
 export enum ItemEliteBoss {
+  MYSTERIOUS_CODE = "Mysterious Code", // Rover material
   TEMPEST_MEPHIS = "Hidden Thunder Tacet Core",
   INFERNO_RIDER = "Rage Tacet Core",
   IMPERMANENCE_HERON = "Gold-Dissolving Feather",
