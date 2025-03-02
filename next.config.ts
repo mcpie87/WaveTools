@@ -2,8 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: 'export',
   trailingSlash: true,
+  images: {
+    domains: ['raw.githubusercontent.com'],
+  }
 };
 
 export default nextConfig;

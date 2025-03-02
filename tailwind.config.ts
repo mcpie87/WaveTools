@@ -12,6 +12,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        rarity5: "#e1d170",
+        rarity4: "#cab2e3",
       },
     },
   },

@@ -45,7 +45,7 @@ def get_ascension_mats(id)
             {
                 rank: row["BreachLevel"],
                 max: row["MaxLevel"],
-                materials: row["BreachConsume"].map{|mat|
+                items: row["BreachConsume"].map{|mat|
                     {
                         id: mat["Key"],
                         name: get_textmap_name(@iteminfo[mat["Key"]]["Name"]),
@@ -160,8 +160,10 @@ data = []
             large: convert_to_png(role_value["RoleHeadIconLarge"]),
             big: convert_to_png(role_value["RoleHeadIconBig"]),
         },
-        ascensionMaterials: ascension_mats,
-        talents: get_talents(role_value["SkillTreeGroupId"]),
+        materials: {
+            ascension: ascension_mats,
+            talents: get_talents(role_value["SkillTreeGroupId"]),
+        }
     }
     data << new_row
     puts("#{new_row[:id]}  #{new_row[:rarity]} #{new_row[:name]}")
