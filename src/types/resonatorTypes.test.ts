@@ -43,6 +43,18 @@ describe('testing getAscensions materials', () => {
       tmpArr.push(key);
     }
   });
+
+  test('same -> same', () => {
+    // testing 1,2,...,90)
+    const numbers = Array.from({ length: 90 }, (_, i) => i + 1);
+    for (const number of numbers) {
+      expect(getAscensions(number, number)).toStrictEqual([]);
+    }
+    // testing ascension levels
+    for (const ascension in ascensionMap) {
+      expect(getAscensions(ascension, ascension)).toStrictEqual([]);
+    }
+  })
 });
 
 describe('test next and prev level', () => {

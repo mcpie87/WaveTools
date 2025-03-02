@@ -74,7 +74,10 @@ export const prevLevel = (level: number | string) => {
   }
 };
 export const getAscensions = (from: number | string, to: number | string): number[] => {
-  const res = [];
+  const res: number[] = [];
+  if (from === to) {
+    return res;
+  }
   const fromInt = parseInt(from as string);
   const toInt = parseInt(to as string);
   let ascensionKey = 0;
