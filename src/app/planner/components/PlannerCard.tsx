@@ -3,7 +3,6 @@ import { ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { convertToUrl } from "@/utils/utils";
 import Image from "next/image";
 import { PlannerCardCurrentDesiredComponent } from "./PlannerCardCurrentDesiredComponent";
-import { ActiveSkillNames, PassiveSkillNames } from "@/schemas/resonatorSchema";
 import { useCharacters } from "@/context/CharacterContext";
 
 
