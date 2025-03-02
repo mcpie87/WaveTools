@@ -76,6 +76,8 @@ jobs:
       - name: Run tests
         run: ${{ steps.detect-package-manager.outputs.manager }} test
       - name: Build with Next.js
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ secrets.NEXT_PUBLIC_BASE_PATH }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
