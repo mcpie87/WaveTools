@@ -15,10 +15,11 @@ export const DataProvider = ({ children }: DataProviderProps) => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const itemsResponse = await fetch('/data/items.json');
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+        const itemsResponse = await fetch(`${basePath}/data/items.json`);
         const itemsDb: IItem[] = await itemsResponse.json();
 
-        const resonatorResponse = await fetch('/data/resonator.json');
+        const resonatorResponse = await fetch(`${basePath}/data/resonator.json`);
         const resonatorDb: IResonator[] = await resonatorResponse.json();
 
         setData({

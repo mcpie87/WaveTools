@@ -1,12 +1,11 @@
 import type { NextConfig } from "next";
-const isProd = process.env.NODE_ENV === "production";
+const isProduction = process.env.NODE_ENV === 'production';
+const repositoryName = 'wuwa-tracker';
 
 const nextConfig: NextConfig = {
   /* config options here */
-  ...(isProd && {
-    basePath: "/wuwa-tracker",
-    assetPrefix: "/wuwa-tracker/",
-  }),
+  basePath: isProduction ? `/${repositoryName}` : '',
+  assetPrefix: isProduction ? `/${repositoryName}/` : '',
   trailingSlash: true,
   images: {
     domains: ['raw.githubusercontent.com'],
