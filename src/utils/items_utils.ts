@@ -6,7 +6,8 @@ import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_ELITE_BOSS_COST, WAVEPLATE_FORGERY, WAV
 
 export function convertItemMapToItemList(
   items: IAPIItem[],
-  mappedItems: { [key: string]: number }
+  mappedItems: { [key: string]: number },
+  removeZeroes: boolean = false
 ): IItem[] {
   const resultsMap: { [key: string]: IItem } = {};
   for (const [matKey, matValue] of Object.entries(mappedItems)) {
@@ -31,7 +32,10 @@ export function convertItemMapToItemList(
     ItemWeapon,
     ItemCommon,
   ];
-  return sortToItemList(sortOrder, resultsMap);
+  const res = sortToItemList(sortOrder, resultsMap)
+  return removeZeroes
+    ? res.filter(item => (item.value ?? 0) > 0)
+    : res;
 }
 
 export function filterType<T extends Record<string, string>>(items: IItem[], filterType: T): IItem[] {

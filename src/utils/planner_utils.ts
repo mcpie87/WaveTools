@@ -89,7 +89,8 @@ const addAscensionMaterials = (
     } = ASCENSION_MATERIALS[ascensionKey];
     requiredMaterials[SHELL_CREDIT] = (requiredMaterials[SHELL_CREDIT] ?? 0) + SHELL;
     if (ELITE_MATERIAL) {
-      requiredMaterials[parsedResonator.eliteMaterial] = (requiredMaterials[parsedResonator.eliteMaterial] ?? 0) + ELITE_MATERIAL;
+      const eliteMats = (parsedResonator.name.includes("Rover")) ? 1 : ELITE_MATERIAL;
+      requiredMaterials[parsedResonator.eliteMaterial] = (requiredMaterials[parsedResonator.eliteMaterial] ?? 0) + eliteMats;
     }
     const commonMaterial = getCommonMaterial(parsedResonator.commonMaterial, COMMON_RARITY);
     requiredMaterials[commonMaterial] = (requiredMaterials[commonMaterial] ?? 0) + COMMON;

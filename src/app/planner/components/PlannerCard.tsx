@@ -22,7 +22,7 @@ export function PlannerCardComponent({ resonator, items, dbData, onEditResonator
   }
   const { deleteCharacter } = resonatorContext;
   const requiredMaterials = getMaterials(dbData, resonator);
-  const convertedMaterials = convertItemMapToItemList(items, requiredMaterials);
+  const convertedMaterials = convertItemMapToItemList(items, requiredMaterials, true);
   const waveplateNeeded = calculateWaveplate(convertedMaterials);
   return (
     <div className="flex flex-col items-center border bg-gray-300 w-[400px]">
