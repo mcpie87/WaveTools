@@ -22,7 +22,7 @@ export default function PlannerDataComponent({ onEditResonator }: PlannerDataCom
     return (<div>Resonator context does not exist</div>);
   }
   const { characters } = resonatorContext;
-  const { resonators } = data;
+  const { resonators, items } = data;
   return (
     <div className="flex flex-row flex-wrap">
       {
@@ -36,6 +36,7 @@ export default function PlannerDataComponent({ onEditResonator }: PlannerDataCom
             <PlannerCardComponent
               key={name}
               resonator={resonatorAssetData}
+              items={items}
               dbData={resonator}
               onEditResonator={onEditResonator}
             />

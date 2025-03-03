@@ -1,10 +1,10 @@
-import ItemCard, { IItemCard } from "./ItemCard";
+import { IItem } from "@/app/interfaces/item";
+import ItemCard from "./ItemCard";
 
 interface ItemListProps {
-  data: IItemCard[];
+  data: IItem[];
 }
 export default function ItemList({ data }: ItemListProps) {
-
   return (
     <div className="flex flex-row flex-wrap space-x-4">
       {data.map((item, key) => (

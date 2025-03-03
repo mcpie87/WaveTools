@@ -1,7 +1,7 @@
 import { IAPIResonator } from "@/app/interfaces/api_interfaces";
 import { getAscensions, InputEntry, ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { getKeyFromEnumValue } from "@/utils/utils";
-import { ASCENSION_MATERIALS, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry } from "@/utils/character_ascension";
+import { ASCENSION_MATERIALS, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry } from "@/constants/character_ascension";
 import { parseResonatorToPlanner } from "@/utils/api_parser";
 import { ItemCommon, ItemWeapon, SHELL_CREDIT } from "@/app/interfaces/item_types";
 import { IResonatorPlanner } from "@/app/interfaces/resonator";

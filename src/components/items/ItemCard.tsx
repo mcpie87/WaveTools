@@ -1,18 +1,11 @@
 import Image from 'next/image';
 import './ItemCard.css';
 import { convertToUrl } from '@/utils/utils';
-
-export interface IItemCard {
-  id: number,
-  name: string,
-  icon: string,
-  value: string | null,
-}
+import { IItem } from '@/app/interfaces/item';
 
 interface ItemCardProps {
-  item: IItemCard;
+  item: IItem
 }
-
 export default function ItemCard({ item }: ItemCardProps) {
   return (
     <div className="card-container">
@@ -27,7 +20,6 @@ export default function ItemCard({ item }: ItemCardProps) {
               className="rounded-lg"
             />
           </span>
-
           <span className="card-text card-font">{item.value}</span>
         </span>
       </span>

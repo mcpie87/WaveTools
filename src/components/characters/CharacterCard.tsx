@@ -2,7 +2,7 @@
 
 // import { IItemCard, ItemCard } from '@/components/items/ItemCard';
 import Image from 'next/image';
-import { ASSET_URL } from '@/utils/constants';
+import { ASSET_URL } from '@/constants/constants';
 
 export interface ICharacter {
   id: number,
