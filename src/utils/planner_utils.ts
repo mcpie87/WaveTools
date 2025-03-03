@@ -1,9 +1,9 @@
 import { IAPIResonator } from "@/app/interfaces/api_interfaces";
 import { getAscensions, InputEntry, ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { getKeyFromEnumValue } from "@/utils/utils";
-import { ASCENSION_MATERIALS, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry } from "@/constants/character_ascension";
+import { ASCENSION_MATERIALS, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry, TOTAL_LEVEL_EXPERIENCE } from "@/constants/character_ascension";
 import { parseResonatorToPlanner } from "@/utils/api_parser";
-import { ItemCommon, ItemWeapon, SHELL_CREDIT } from "@/app/interfaces/item_types";
+import { ItemCommon, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, SHELL_CREDIT } from "@/app/interfaces/item_types";
 import { IResonatorPlanner } from "@/app/interfaces/resonator";
 import { ActiveSkillNames, PassiveSkillNames, resonatorSchemaForForm } from "@/schemas/resonatorSchema";
 
@@ -20,6 +20,7 @@ export const getMaterials = (resonatorEntry: ResonatorStateDBEntry, apIAPIResona
     requiredAscensions,
     parsedResonator
   );
+  addResonatorEXP(requiredMaterials, resonatorEntry);
 
   // Active talent materials
   for (const skill of Object.keys(ActiveSkillNames)) {
@@ -41,6 +42,36 @@ export const getMaterials = (resonatorEntry: ResonatorStateDBEntry, apIAPIResona
     );
   }
   return requiredMaterials;
+}
+
+const addResonatorEXP = (
+  requiredMaterials: { [key: string]: number },
+  resonatorEntry: ResonatorStateDBEntry
+): void => {
+  const { current, desired } = resonatorEntry.level;
+  const parsedCurrent = parseInt(current as string);
+  const parsedDesired = parseInt(desired as string);
+  const expLeft = TOTAL_LEVEL_EXPERIENCE[parsedDesired] - TOTAL_LEVEL_EXPERIENCE[parsedCurrent];
+  addEXP(requiredMaterials, expLeft, ItemResonatorEXP);
+}
+
+const addEXP = (
+  requiredMaterials: { [key: string]: number },
+  expLeft: number,
+  expType: typeof ItemResonatorEXP | typeof ItemWeaponEXP
+): void => {
+  const potionValues = [20000, 8000, 3000, 1000];
+  potionValues.forEach((value, idx) => {
+    const count = idx === potionValues.length - 1
+      ? Math.ceil(expLeft / value)
+      : Math.floor(expLeft / value);
+    expLeft -= count * value;
+    const key = `RARITY_${5 - idx}` as keyof typeof expType;
+    requiredMaterials[expType[key]] = count;
+  });
+  if (expLeft > 0) {
+    throw new Error("Exp is higher than 0");
+  }
 }
 
 const addAscensionMaterials = (
