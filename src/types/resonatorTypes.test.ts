@@ -1,3 +1,4 @@
+import { ASCENSION_MATERIALS } from "@/constants/character_ascension";
 import { getAscensions, nextLevel, prevLevel } from "./resonatorTypes";
 
 const ascensionMap = {
@@ -54,6 +55,26 @@ describe('testing getAscensions materials', () => {
     for (const ascension in ascensionMap) {
       expect(getAscensions(ascension, ascension)).toStrictEqual([]);
     }
+  })
+
+  test('1 -> 90 should have exactly these materials', () => {
+    const ascensions = getAscensions(1, 90);
+    const results: { [key: string]: number } = {};
+    for (const ascension of ascensions) {
+      const stage = ASCENSION_MATERIALS[ascension];
+      results.SHELL = (results.SHELL ?? 0) + stage.SHELL;
+      results.ELITE_MATERIAL = (results.ELITE_MATERIAL ?? 0) + stage.ELITE_MATERIAL;
+      results.SPECIALTY_MATERIAL = (results.SPECIALTY_MATERIAL ?? 0) + stage.SPECIALTY_MATERIAL;
+      const commonKey = "COMMON" + stage.COMMON_RARITY;
+      results[commonKey] = (results[commonKey] ?? 0) + stage.COMMON;
+    }
+    expect(results.SHELL).toBe(170000);
+    expect(results.ELITE_MATERIAL).toBe(46);
+    expect(results.SPECIALTY_MATERIAL).toBe(60);
+    expect(results["COMMON2"]).toBe(4);
+    expect(results["COMMON3"]).toBe(12);
+    expect(results["COMMON4"]).toBe(12);
+    expect(results["COMMON5"]).toBe(4);
   })
 });
 
