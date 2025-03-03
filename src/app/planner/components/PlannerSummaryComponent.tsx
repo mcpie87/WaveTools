@@ -37,7 +37,7 @@ export const PlannerSummaryComponent = ({
   }
 
   const requiredMaterials = getCombinedRequiredMaterials();
-  const convertedMaterials = convertItemMapToItemList(apiItems, requiredMaterials);
+  const convertedMaterials = convertItemMapToItemList(apiItems, requiredMaterials, true);
   const waveplateNeeded = calculateWaveplate(convertedMaterials);
 
   const displayedMaterials = [
