@@ -1,4 +1,4 @@
-import { ItemCommon, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
+import { ItemCommon, ItemEchoEXP, ItemEliteBoss, ItemResonatorEXP, ItemTuner, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
 import { ModalComponent } from "./ModalComponent"
 import { IAPIItem } from "@/app/interfaces/api_interfaces";
 import { parseItemToItemCard } from "@/utils/api_parser";
@@ -29,6 +29,9 @@ export const InventoryForm = ({
     const displayedItemTypes = [
       { SHELL_CREDIT: SHELL_CREDIT },
       ItemWeeklyBoss,
+      ItemEliteBoss,
+      ItemEchoEXP,
+      ItemTuner,
       ItemResonatorEXP,
       ItemWeapon,
       ItemWeaponEXP,
@@ -43,14 +46,24 @@ export const InventoryForm = ({
       items.filter((item) => predicate(item.name))
         .map(item => parseItemToItemCard(item))
     );
-    setDisplayedItems(convertedItems);
+    // Need to sort rarity desc, id asc
+    setDisplayedItems(
+      [...convertedItems]
+        .sort((a, b) => a.id - b.id)
+        .sort((a, b) => b.rarity - a.rarity)
+    );
     const asdf = {
       ...Object.fromEntries(
-        convertedItems.map(item => [item.name, { name: item.name, owned: 0 }])
+        convertedItems.map(item => [item.name, {
+          id: item.id,
+          name: item.name,
+          rarity: item.rarity,
+          owned: 0,
+        }])
       ),
       ...initialFormData
     };
-    console.log("useEffect", asdf, initialFormData);
+    console.log("useEffect", asdf);
     setFormData(asdf)
   }, [showForm, initialFormData, items])
 

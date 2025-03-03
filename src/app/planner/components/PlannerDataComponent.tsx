@@ -14,10 +14,14 @@ export const PlannerDataComponent = ({
   resonators,
   items
 }: PlannerDataComponentProps) => {
+  // sort resonators by their priority
+  const sortedResonators = Object.entries(characters)
+    .sort((a, b) => a[1].priority - b[1].priority);
+
   return (
     <div className="flex flex-row flex-wrap">
       {
-        Object.entries(characters).map(([name, resonator]) => {
+        sortedResonators.map(([name, resonator]) => {
           const resonatorAssetData = resonators.find(e => e.name === name);
           if (!resonatorAssetData || !resonator) {
             return <div key={name}>Resonator data not found! {name}</div>
