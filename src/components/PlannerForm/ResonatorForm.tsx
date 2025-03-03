@@ -6,12 +6,20 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { ActiveSkillNames, PassiveSkillNames, resonatorSchema, resonatorSchemaFieldsMinMaxValues, resonatorSchemaForForm } from '@/schemas/resonatorSchema';
 import { InputNumber } from '../InputNumber';
 import { Path } from 'react-hook-form';
+import { ModalComponent } from './ModalComponent';
 
 interface ResonatorFormProps {
   initialData: ResonatorStateDBEntry;
   onSubmit: (data: ResonatorStateDBEntry) => void;
+  showForm: boolean;
+  onClose: () => void;
 }
-export const ResonatorForm = ({ initialData, onSubmit }: ResonatorFormProps) => {
+export const ResonatorForm = ({
+  initialData,
+  showForm,
+  onClose,
+  onSubmit
+}: ResonatorFormProps) => {
   const {
     handleSubmit,
     formState: { isSubmitting },
@@ -54,109 +62,123 @@ export const ResonatorForm = ({ initialData, onSubmit }: ResonatorFormProps) => 
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col flex-wrap h-[600px] text-sm">
-      <div className="border">
-        <div className="flex flex-col items-center justify-center">
-          <h3>Current Level</h3>
-          <div className="flex flex-row">
-            <InputNumber
-              value={watch("level.current")}
-              label={"Current"}
-              setValue={(newValue) => handleSetValue("level.current", newValue)}
-              disableDecrement={!canDecrement("level", "current")}
-              disableIncrement={!canIncrement("level", "current")}
-              prev={prevLevel}
-              next={nextLevel}
-              min={1}
-              max={watch("level.desired")}
-              values={levelSelectValues}
-            />
-            <InputNumber
-              value={watch("level.desired")}
-              label={"Desired"}
-              setValue={(newValue) => handleSetValue("level.desired", newValue)}
-              disableDecrement={!canDecrement("level", "desired")}
-              disableIncrement={!canIncrement("level", "desired")}
-              prev={prevLevel}
-              next={nextLevel}
-              min={watch("level.current")}
-              max={90}
-              values={levelSelectValues}
-            />
+    <ModalComponent show={showForm} onClose={onClose}>
+      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col flex-wrap w-1/2 text-sm">
+        <div className="flex flex-col gap-10">
+          <div className="flex flex-col flex-wrap">
+            <div className="border">
+              <div className="flex flex-col items-center justify-center">
+                <h3>Level</h3>
+                <div className="flex flex-row gap-5">
+                  <InputNumber
+                    value={watch("level.current")}
+                    label={"Current"}
+                    setValue={(newValue) => handleSetValue("level.current", newValue)}
+                    disableDecrement={!canDecrement("level", "current")}
+                    disableIncrement={!canIncrement("level", "current")}
+                    prev={prevLevel}
+                    next={nextLevel}
+                    min={1}
+                    max={watch("level.desired")}
+                    values={levelSelectValues}
+                  />
+                  <InputNumber
+                    value={watch("level.desired")}
+                    label={"Desired"}
+                    setValue={(newValue) => handleSetValue("level.desired", newValue)}
+                    disableDecrement={!canDecrement("level", "desired")}
+                    disableIncrement={!canIncrement("level", "desired")}
+                    prev={prevLevel}
+                    next={nextLevel}
+                    min={watch("level.current")}
+                    max={90}
+                    values={levelSelectValues}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-row justify-center gap-10">
+              <div className="border">
+                <div className="text-center text-xl">
+                  Active Talents
+                </div>
+                {Object.entries(ActiveSkillNames).map(([skillKey, skillValue]) => {
+                  const typedSkillKey = skillKey as resonatorSchemaForForm;
+                  const currentSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.current`;
+                  const desiredSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.desired`;
+                  return (
+                    <div key={skillKey} className="flex flex-col items-center justify-center">
+                      <h3>{skillValue}</h3>
+                      <div className="flex flex-row gap-5">
+                        <InputNumber
+                          value={watch(currentSkillKey)}
+                          label={"Current"}
+                          setValue={(newValue) => handleSetValue(currentSkillKey, newValue)}
+                          disableDecrement={!canDecrement(typedSkillKey, "current")}
+                          disableIncrement={!canIncrement(typedSkillKey, "current")}
+                          min={1}
+                          max={watch(desiredSkillKey)}
+                        />
+                        <InputNumber
+                          value={watch(desiredSkillKey)}
+                          label={"Desired"}
+                          setValue={(newValue) => handleSetValue(desiredSkillKey, newValue)}
+                          disableDecrement={!canDecrement(typedSkillKey, "desired")}
+                          disableIncrement={!canIncrement(typedSkillKey, "desired")}
+                          min={watch(currentSkillKey)}
+                          max={10}
+                        />
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+              <div className="border">
+                <div className="text-center text-xl">
+                  Passive Talents
+                </div>
+                {Object.entries(PassiveSkillNames).map(([skillKey, skillValue]) => {
+                  const typedSkillKey = skillKey as resonatorSchemaForForm;
+                  const currentSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.current`;
+                  const desiredSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.desired`;
+                  return (
+                    <div key={skillKey} className="flex flex-col items-center justify-center">
+                      <h3>{skillValue}</h3>
+                      <div className="flex flex-row gap-5">
+                        <InputNumber
+                          value={watch(currentSkillKey)}
+                          label={"Current"}
+                          setValue={(newValue) => handleSetValue(currentSkillKey, newValue)}
+                          disableDecrement={!canDecrement(typedSkillKey, "current")}
+                          disableIncrement={!canIncrement(typedSkillKey, "current")}
+                          min={0}
+                          max={watch(desiredSkillKey)}
+                        />
+                        <InputNumber
+                          value={watch(desiredSkillKey)}
+                          label={"Desired"}
+                          setValue={(newValue) => handleSetValue(desiredSkillKey, newValue)}
+                          disableDecrement={!canDecrement(typedSkillKey, "desired")}
+                          disableIncrement={!canIncrement(typedSkillKey, "desired")}
+                          min={watch(currentSkillKey)}
+                          max={2}
+                        />
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
           </div>
+          <button
+            type="submit"
+            className="bg-blue-500 disabled:bg-gray-500 py-2 rounded"
+            disabled={isSubmitting}
+          >
+            Submit
+          </button>
         </div>
-      </div>
-      <div className="border">
-        {Object.entries(ActiveSkillNames).map(([skillKey, skillValue]) => {
-          const typedSkillKey = skillKey as resonatorSchemaForForm;
-          const currentSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.current`;
-          const desiredSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.desired`;
-          return (
-            <div key={skillKey} className="flex flex-col items-center justify-center">
-              <h3>{skillValue}</h3>
-              <div className="flex flex-row">
-                <InputNumber
-                  value={watch(currentSkillKey)}
-                  label={"Current"}
-                  setValue={(newValue) => handleSetValue(currentSkillKey, newValue)}
-                  disableDecrement={!canDecrement(typedSkillKey, "current")}
-                  disableIncrement={!canIncrement(typedSkillKey, "current")}
-                  min={1}
-                  max={watch(desiredSkillKey)}
-                />
-                <InputNumber
-                  value={watch(desiredSkillKey)}
-                  label={"Desired"}
-                  setValue={(newValue) => handleSetValue(desiredSkillKey, newValue)}
-                  disableDecrement={!canDecrement(typedSkillKey, "desired")}
-                  disableIncrement={!canIncrement(typedSkillKey, "desired")}
-                  min={watch(currentSkillKey)}
-                  max={10}
-                />
-              </div>
-            </div>
-          )
-        })}
-      </div>
-      <div className="border">
-        {Object.entries(PassiveSkillNames).map(([skillKey, skillValue]) => {
-          const typedSkillKey = skillKey as resonatorSchemaForForm;
-          const currentSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.current`;
-          const desiredSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.desired`;
-          return (
-            <div key={skillKey} className="flex flex-col items-center justify-center">
-              <h3>{skillValue}</h3>
-              <div className="flex flex-row">
-                <InputNumber
-                  value={watch(currentSkillKey)}
-                  label={"Current"}
-                  setValue={(newValue) => handleSetValue(currentSkillKey, newValue)}
-                  disableDecrement={!canDecrement(typedSkillKey, "current")}
-                  disableIncrement={!canIncrement(typedSkillKey, "current")}
-                  min={0}
-                  max={watch(desiredSkillKey)}
-                />
-                <InputNumber
-                  value={watch(desiredSkillKey)}
-                  label={"Desired"}
-                  setValue={(newValue) => handleSetValue(desiredSkillKey, newValue)}
-                  disableDecrement={!canDecrement(typedSkillKey, "desired")}
-                  disableIncrement={!canIncrement(typedSkillKey, "desired")}
-                  min={watch(currentSkillKey)}
-                  max={2}
-                />
-              </div>
-            </div>
-          )
-        })}
-      </div>
-      <button
-        type="submit"
-        className="bg-blue-500 disabled:bg-gray-500 py-2 rounded"
-        disabled={isSubmitting}
-      >
-        Submit
-      </button>
-    </form>
+      </form>
+    </ModalComponent>
   );
 };

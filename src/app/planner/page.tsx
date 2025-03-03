@@ -25,11 +25,11 @@ export default function CharactersPage() {
   };
 
   const handleAddResonator = (name: string) => {
-    console.log("handleAddResonator", name);
     setSelectedResonator({
       ...resonatorSchema.parse({}),
       name
     });
+    setShowAddForm(false);
     setShowEditForm(true);
   }
 
@@ -51,10 +51,19 @@ export default function CharactersPage() {
         </button>
       </div>
       {showEditForm && selectedResonator && (
-        <ResonatorForm initialData={selectedResonator} onSubmit={handleSubmit} />
+        <ResonatorForm
+          initialData={selectedResonator}
+          onSubmit={handleSubmit}
+          showForm={showEditForm}
+          onClose={() => setShowEditForm(false)}
+        />
       )}
       {showAddForm && (
-        <AddResonatorForm onAddResonator={handleAddResonator} />
+        <AddResonatorForm
+          showForm={showAddForm}
+          onClose={() => setShowAddForm(false)}
+          onAddResonator={handleAddResonator}
+        />
       )}
       <PlannerDataComponent onEditResonator={handleEditResonator} />
     </div>
