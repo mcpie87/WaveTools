@@ -12,14 +12,15 @@ export default function Header() {
                         <Link href="/" className="text-blue-600 hover:underline">
                             Home
                         </Link>
-                        <Link href="/planner" className="text-blue-600 hover:underline">
-                            Planner
-                        </Link>
+
                         <Link href="/items" className="text-blue-600 hover:underline">
                             Items
                         </Link>
                     </>
                 )}
+                <Link href="/planner" className="text-blue-600 hover:underline">
+                    Planner
+                </Link>
                 <Link href="/echo-simulation" className="text-blue-600 hover:underline">
                     Echo Roll Simulator
                 </Link>
