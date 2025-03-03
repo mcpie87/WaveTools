@@ -98,7 +98,7 @@ const getWeapon2CountFromList = (items: IItem[]): number => {
   return items
     .filter((item) => Object.values(ItemWeapon).includes(item.name as ItemWeapon))
     .map(item => (item.value ?? 0) * Math.pow(3, item.rarity - 2))
-    .reduce((sum, item) => sum + item);
+    .reduce((sum, item) => sum + item, 0);
 }
 
 const getResonatorExpNeededFromList = (items: IItem[]): number => {
@@ -106,7 +106,7 @@ const getResonatorExpNeededFromList = (items: IItem[]): number => {
   return items
     .filter((item) => Object.values(ItemResonatorEXP).includes(item.name as ItemResonatorEXP))
     .map(item => (item.value ?? 0) * vals[item.rarity - 2])
-    .reduce((sum, item) => sum + item);
+    .reduce((sum, item) => sum + item, 0);
 }
 
 const getShellFromItemList = (items: IItem[]): number => {
