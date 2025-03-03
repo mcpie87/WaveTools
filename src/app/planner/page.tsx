@@ -123,7 +123,7 @@ export default function CharactersPage() {
         <PlannerDataComponent
           characters={characters}
           resonators={resonators}
-          items={items}
+          apiItems={items}
           onEditResonator={handleEditResonator}
         />
       </div>

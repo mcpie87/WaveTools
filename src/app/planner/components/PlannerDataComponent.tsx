@@ -5,14 +5,14 @@ import { IAPIItem, IAPIResonator } from "@/app/interfaces/api_interfaces";
 interface PlannerDataComponentProps {
   characters: ResonatorDBSchema
   resonators: IAPIResonator[],
-  items: IAPIItem[],
+  apiItems: IAPIItem[],
   onEditResonator: (resonator: ResonatorStateDBEntry) => void;
 }
 export const PlannerDataComponent = ({
   onEditResonator,
   characters,
   resonators,
-  items
+  apiItems
 }: PlannerDataComponentProps) => {
   // sort resonators by their priority
   const sortedResonators = Object.entries(characters)
@@ -30,7 +30,7 @@ export const PlannerDataComponent = ({
             <PlannerCardComponent
               key={name}
               resonator={resonatorAssetData}
-              items={items}
+              apiItems={apiItems}
               dbData={resonator}
               onEditResonator={onEditResonator}
             />
