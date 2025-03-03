@@ -5,7 +5,7 @@ import Image from "next/image";
 import { PlannerCardCurrentDesiredComponent } from "./PlannerCardCurrentDesiredComponent";
 import { useCharacters } from "@/context/CharacterContext";
 import { getMaterials } from "@/utils/planner_utils";
-import { convertItemMapToItemList } from "@/utils/items_utils";
+import { calculateWaveplate, convertItemMapToItemList } from "@/utils/items_utils";
 import ItemList from "@/components/items/ItemList";
 
 
@@ -23,6 +23,7 @@ export function PlannerCardComponent({ resonator, items, dbData, onEditResonator
   const { deleteCharacter } = resonatorContext;
   const requiredMaterials = getMaterials(dbData, resonator);
   const convertedMaterials = convertItemMapToItemList(items, requiredMaterials);
+  const waveplateNeeded = calculateWaveplate(convertedMaterials);
   return (
     <div className="flex flex-col items-center border bg-gray-300 w-[400px]">
       <div className={`
@@ -67,6 +68,28 @@ export function PlannerCardComponent({ resonator, items, dbData, onEditResonator
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        Waveplate:
+        <table>
+          <tr>
+            <th>Type</th>
+            <th>Runs</th>
+            <th>Waveplate</th>
+          </tr>
+          {waveplateNeeded.map(e => (
+            <tr key={e[0]}>
+              <td>{e[0]}</td>
+              <td>{(e[1] as number).toFixed(3)}</td>
+              <td>{(e[2] as number).toFixed(3)}</td>
+            </tr>
+          ))}
+          <tr>
+            <td>TOTAL</td>
+            <td>{waveplateNeeded.map(e => +e[1]).reduce((acc, e) => e + acc).toFixed(2)}</td>
+            <td>{waveplateNeeded.map(e => +e[2]).reduce((acc, e) => e + acc).toFixed(2)}</td>
+          </tr>
+        </table>
       </div>
       <ItemList data={convertedMaterials} />
       <div className="flex flex-row">

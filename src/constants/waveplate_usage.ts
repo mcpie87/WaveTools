@@ -18,6 +18,12 @@ export interface IWaveplateTacetFieldEntry {
   TUNER_3: number;
   ECHO_EXP: number;
 }
+
+export interface IWaveplateForgeryEntry {
+  SHELL: number;
+  WEAPON_2: number;
+}
+
 export interface IWaveplateSimResonanceEntry {
   SHELL: number;
   RESONATOR_EXP: number;
@@ -32,6 +38,7 @@ export interface IWaveplateSimShellEntry {
   SHELL: number;
 }
 
+export const WAVEPLATE_WEEKLY_BOSS_COST = 60;
 export const WAVEPLATE_WEEKLY_BOSS: { [key: number]: IWaveplateWeeklyBossEntry } = {
   1: { SHELL: 18000, WEEKLY: 1.5, ECHO_EXP: 5400, RESONATOR_EXP: 21600 },
   2: { SHELL: 18000, WEEKLY: 1.57142857142857, ECHO_EXP: 5428.57142857143, RESONATOR_EXP: 21857.1428571429 },
@@ -43,6 +50,7 @@ export const WAVEPLATE_WEEKLY_BOSS: { [key: number]: IWaveplateWeeklyBossEntry }
   8: { SHELL: 54000, WEEKLY: 3, ECHO_EXP: 20000, RESONATOR_EXP: 66666.6666666667 }
 }
 
+export const WAVEPLATE_ELITE_BOSS_COST = 60;
 export const WAVEPLATE_ELITE_BOSS: { [key: number]: IWaveplateEliteBossEntry } = {
   1: { SHELL: 2400, ELITE: 1, ECHO_EXP: 1333.33333333333, RESONATOR_EXP: 7333.33333333333, WEAPON_EXP: 7000 },
   2: { SHELL: 4800, ELITE: 1, ECHO_EXP: 2900, RESONATOR_EXP: 13800., WEAPON_EXP: 14400 },
@@ -54,6 +62,16 @@ export const WAVEPLATE_ELITE_BOSS: { [key: number]: IWaveplateEliteBossEntry } =
   8: { SHELL: 10000, ELITE: 4.59375, ECHO_EXP: 7312.5, RESONATOR_EXP: 28250, WEAPON_EXP: 28000 }
 }
 
+export const WAVEPLATE_FORGERY_COST = 40;
+export const WAVEPLATE_FORGERY: { [key: number]: IWaveplateForgeryEntry } = {
+  3: { SHELL: 1200, WEAPON_2: 15.25 },
+  4: { SHELL: 1600, WEAPON_2: 20.271186440678 },
+  5: { SHELL: 2000, WEAPON_2: 27.5147058823529 },
+  6: { SHELL: 2800, WEAPON_2: 34.1666666666667 },
+  7: { SHELL: 4000, WEAPON_2: 50.8484848484848 }
+};
+
+export const WAVEPLATE_TACET_FIELDS_COST = 60;
 export const WAVEPLATE_TACET_FIELDS: { [key: number]: IWaveplateTacetFieldEntry } = {
   1: { SHELL: 2500, TUNER_5: 0, TUNER_4: 0, TUNER_3: 20, ECHO_EXP: 11555.5555555556 },
   2: { SHELL: 2500, TUNER_5: 0, TUNER_4: 0, TUNER_3: 20, ECHO_EXP: 11529.4117647059 },
@@ -65,6 +83,7 @@ export const WAVEPLATE_TACET_FIELDS: { [key: number]: IWaveplateTacetFieldEntry 
   8: { SHELL: 5250, TUNER_5: 20, TUNER_4: 0, TUNER_3: 0, ECHO_EXP: 24017.6991150442 }
 }
 
+export const WAVEPLATE_SIM_RESONANCE_COST = 40;
 export const WAVEPLATE_SIM_RESONANCE: { [key: number]: IWaveplateSimResonanceEntry } = {
   2: { SHELL: 2000, RESONATOR_EXP: 38062.5 },
   3: { SHELL: 2800, RESONATOR_EXP: 54071.4285714286 },
@@ -75,6 +94,7 @@ export const WAVEPLATE_SIM_RESONANCE: { [key: number]: IWaveplateSimResonanceEnt
   8: { SHELL: 4200, RESONATOR_EXP: 0 }
 }
 
+export const WAVEPLATE_SIM_ENERGY_COST = 40;
 export const WAVEPLATE_SIM_ENERGY: { [key: number]: IWaveplateSimEnergyEntry } = {
   2: { SHELL: 2000, RESONATOR_EXP: 37687.5 },
   3: { SHELL: 2800, RESONATOR_EXP: 53361.1111111111 },
@@ -85,6 +105,7 @@ export const WAVEPLATE_SIM_ENERGY: { [key: number]: IWaveplateSimEnergyEntry } =
   8: { SHELL: 4200, RESONATOR_EXP: 0 }
 }
 
+export const WAVEPLATE_SIM_SHELL_COST = 40;
 export const WAVEPLATE_SIM_SHELL: { [key: number]: IWaveplateSimShellEntry } = {
   2: { SHELL: 40000 },
   3: { SHELL: 56000 },
