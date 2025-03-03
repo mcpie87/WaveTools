@@ -31,6 +31,17 @@ export const ResonatorForm = ({
   });
 
   const handleSetValue = (fieldName: Path<ResonatorStateDBEntry>, newValue: number | string) => {
+    // TODO: this requires way more control
+    if (fieldName === "level.current") {
+      const current = watch("level.current");
+      const desired = watch("level.desired");
+      const currentInt = parseInt(current as string);
+      const desiredInt = parseInt(desired as string);
+      if (currentInt > desiredInt || (currentInt === desiredInt && typeof current === "string")) {
+        // Selected current level is higher than desired, we have to update desired
+        setValue("level.desired", newValue);
+      }
+    }
     setValue(fieldName, newValue);
   };
 
@@ -65,6 +76,7 @@ export const ResonatorForm = ({
     <ModalComponent show={showForm} onClose={onClose}>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col flex-wrap w-1/2 text-sm">
         <div className="flex flex-col gap-10">
+          <div className="text-center text-xl">{initialData.name}</div>
           <div className="flex flex-col flex-wrap">
             <div className="border">
               <div className="flex flex-col items-center justify-center">

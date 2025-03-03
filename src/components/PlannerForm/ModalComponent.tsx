@@ -7,14 +7,18 @@ interface ModalComponentProps {
 }
 export const ModalComponent = ({ show, children, onClose }: ModalComponentProps) => {
   useEffect(() => {
-    // document.body.style.overflow = show ? "hidden" : "auto";
-  })
+    document.body.style.overflow = show ? "hidden" : "auto";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [show]);
 
   if (!show) return null;
 
   return (
     <div
-      className="z-50 fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+      className="z-50 fixed inset-0 bg-black bg-opacity-50 flex justify-center items-start overflow-y-auto"
       onClick={onClose}
     >
       <div
