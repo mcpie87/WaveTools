@@ -6,13 +6,16 @@ import { ResonatorDBSchema, ResonatorStateDBEntry } from '../types/resonatorType
 import { resonatorSchema } from '../schemas/resonatorSchema';
 import { getStorageKey } from '@/utils/utils';
 
+const STORAGE_KEY = getStorageKey('resonators');
+// const VERSION_KEY = `${STORAGE_KEY}_2025-03-03T18:07`;
+
 interface CharacterProviderProps {
   children: ReactNode;
 }
 export const CharacterProvider = ({ children }: CharacterProviderProps) => {
   const [characters, setCharacters] = useState<ResonatorDBSchema>(() => {
     if (typeof window !== 'undefined') {
-      const savedData = localStorage.getItem(getStorageKey('characters'));
+      const savedData = localStorage.getItem(STORAGE_KEY);
       return savedData ? JSON.parse(savedData) : {};
     }
     return {};
@@ -20,7 +23,7 @@ export const CharacterProvider = ({ children }: CharacterProviderProps) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      localStorage.setItem(getStorageKey('characters'), JSON.stringify(characters));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(characters));
     }
   }, [characters]);
 

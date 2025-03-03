@@ -1,7 +1,7 @@
 import { IItemEntry, IAPIResonator, IAPIItem } from "@/app/interfaces/api_interfaces";
 import { IItem } from "@/app/interfaces/item";
 import { ItemEliteBoss, ItemWeapon, ItemWeeklyBoss, ItemCommon, ItemSpecialty } from "@/app/interfaces/item_types";
-import { IResonatorPlanner } from "@/app/interfaces/resonator";
+import { IResonatorPlanner, IResonatorUpgradeItem } from "@/app/interfaces/resonator";
 
 const enum LOOKUP_TYPE {
   Ascension,
@@ -38,14 +38,17 @@ function findMaterial<T extends Record<string, string>>(
   data: IAPIResonator,
   materialEnum: T,
   lookup: LOOKUP_TYPE
-): T[keyof T] {
+): IResonatorUpgradeItem<T[keyof T]> {
   const materials = lookup === LOOKUP_TYPE.Ascension
     ? getAscensionMaterials(data)
     : getTalentMaterials(data);
 
-  for (const { name } of materials) {
+  for (const { id, name } of materials) {
     if (Object.values(materialEnum).includes(name as T[keyof T])) {
-      return name as T[keyof T];
+      return {
+        id: id,
+        name: name as T[keyof T]
+      };
     }
   }
 
@@ -60,7 +63,7 @@ function getAscensionMaterials(data: IAPIResonator): IItemEntry[] {
   return materials[6].items;
 }
 
-function getTalentMaterials(data: IAPIResonator): { name: string }[] {
+function getTalentMaterials(data: IAPIResonator): IItemEntry[] {
   const materials = data.materials.talents.inherentSecond.levels[1];
   if (!materials) {
     throw new Error("Upgrade materials not found for inherent skill");

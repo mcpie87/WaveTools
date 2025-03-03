@@ -11,18 +11,18 @@ import ItemList from "@/components/items/ItemList";
 
 interface PlannerCardComponentProps {
   resonator: IAPIResonator,
-  items: IAPIItem[],
+  apiItems: IAPIItem[],
   dbData: ResonatorStateDBEntry,
   onEditResonator: (resonator: ResonatorStateDBEntry) => void;
 }
-export function PlannerCardComponent({ resonator, items, dbData, onEditResonator }: PlannerCardComponentProps) {
+export function PlannerCardComponent({ resonator, apiItems, dbData, onEditResonator }: PlannerCardComponentProps) {
   const resonatorContext = useCharacters();
   if (!resonatorContext) {
     return (<div>Resonator context does not exist</div>);
   }
   const { deleteCharacter } = resonatorContext;
-  const requiredMaterials = getMaterials(dbData, resonator);
-  const convertedMaterials = convertItemMapToItemList(items, requiredMaterials, true);
+  const requiredMaterials = getMaterials(dbData, apiItems, resonator);
+  const convertedMaterials = convertItemMapToItemList(apiItems, requiredMaterials, true);
   const waveplateNeeded = calculateWaveplate(convertedMaterials);
   return (
     <div className="flex flex-col items-center border bg-gray-300 w-[400px]">

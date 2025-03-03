@@ -13,14 +13,14 @@ interface InventoryFormProps {
   initialFormData: ItemStateDBSchema;
   onClose: () => void;
   onSubmit: (data: ItemStateDBSchema) => void;
-  items: IAPIItem[];
+  apiItems: IAPIItem[];
 }
 export const InventoryForm = ({
   showForm,
   initialFormData,
   onClose,
   onSubmit,
-  items
+  apiItems
 }: InventoryFormProps) => {
   const [formData, setFormData] = useState<ItemStateDBSchema>(initialFormData);
   const [displayedItems, setDisplayedItems] = useState<IItem[]>([]);
@@ -43,7 +43,8 @@ export const InventoryForm = ({
     }
     const convertedItems = sortToItemList(
       displayedItemTypes,
-      items.filter((item) => predicate(item.name))
+      apiItems,
+      apiItems.filter((item) => predicate(item.name))
         .map(item => parseItemToItemCard(item))
     );
     // Need to sort rarity desc, id asc
@@ -65,7 +66,7 @@ export const InventoryForm = ({
     };
     console.log("useEffect", asdf);
     setFormData(asdf)
-  }, [showForm, initialFormData, items])
+  }, [showForm, initialFormData, apiItems])
 
   const handleSubmit = () => {
     onSubmit(formData);

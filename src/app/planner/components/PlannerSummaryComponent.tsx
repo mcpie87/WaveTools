@@ -26,7 +26,7 @@ export const PlannerSummaryComponent = ({
         throw new Error(`Resonator not present in API ${dbResonator.name}`);
       }
 
-      const requiredMaterialsForResonator = getMaterials(dbResonator, apiResonator);
+      const requiredMaterialsForResonator = getMaterials(dbResonator, apiItems, apiResonator);
 
       for (const [material, amount] of Object.entries(requiredMaterialsForResonator)) {
         combinedRequiredMaterials[material] = (combinedRequiredMaterials[material] ?? 0) + amount;

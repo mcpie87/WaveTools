@@ -46,9 +46,13 @@ export default function CharactersPage() {
   }
 
   const handleAddResonator = (name: string) => {
+    const resonator = resonators.find(entry => entry.name === name);
+
     setSelectedResonator({
       ...resonatorSchema.parse({
-        priority: Object.keys(characters).length
+        id: resonator?.id,
+        priority: Object.keys(characters).length,
+        rarity: resonator?.rarity,
       }),
       name
     });
@@ -105,7 +109,7 @@ export default function CharactersPage() {
             showForm={showInventoryForm}
             onSubmit={handleInventorySubmit}
             initialFormData={dbItems}
-            items={items}
+            apiItems={items}
             onClose={() => setShowInventoryForm(false)}
           />
         )}

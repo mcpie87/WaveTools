@@ -96,6 +96,7 @@ export const activeSkillSchema = createCurrentDesiredSchema(activeSkillBaseSchem
 export const passiveSkillSchema = createCurrentDesiredSchema(passiveSkillBaseSchema, 0, 0);
 
 export const resonatorSchema = z.object({
+  id: z.number(),
   name: z.string().default(""),
   priority: z.number(),
   rarity: z.number(),
@@ -111,4 +112,4 @@ export const resonatorSchema = z.object({
 // hack cause i'm a noob, need to remove name from this cause otherwise watch()
 // from form will yell at me
 export type resonatorSchemaField = keyof typeof resonatorSchema.shape;
-export type resonatorSchemaForForm = Exclude<keyof typeof resonatorSchema.shape, "name" | "priority" | "rarity">;
+export type resonatorSchemaForForm = Exclude<keyof typeof resonatorSchema.shape, "name" | "priority" | "rarity" | "id">;

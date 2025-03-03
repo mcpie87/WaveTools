@@ -4,20 +4,28 @@ import { parseItemToItemCard } from "./api_parser";
 import { ItemCommon, ItemEchoEXP, ItemEliteBoss, ItemResonatorEXP, ItemSpecialty, ItemTuner, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
 import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_ELITE_BOSS_COST, WAVEPLATE_FORGERY, WAVEPLATE_FORGERY_COST, WAVEPLATE_SIM_RESONANCE, WAVEPLATE_SIM_RESONANCE_COST, WAVEPLATE_SIM_SHELL, WAVEPLATE_SIM_SHELL_COST, WAVEPLATE_WEEKLY_BOSS, WAVEPLATE_WEEKLY_BOSS_COST } from "@/constants/waveplate_usage";
 
+export function findItemByName(name: string, items: IAPIItem[]): IAPIItem | undefined {
+  return items.find(item => item.name === name);
+}
+export function findItemsByNames(names: string[], items: IAPIItem[]): IAPIItem[] {
+  return items.filter(item => names.includes(item.name));
+}
+
 export function convertItemMapToItemList(
-  items: IAPIItem[],
+  apiItems: IAPIItem[],
   mappedItems: { [key: string]: number },
   removeZeroes: boolean = false
 ): IItem[] {
   const resultsMap: { [key: string]: IItem } = {};
-  for (const [matKey, matValue] of Object.entries(mappedItems)) {
-    const apiItem = items.find(item => item.name === matKey);
+  for (const [matId, matValue] of Object.entries(mappedItems)) {
+    const apiItem = apiItems.find(item => item.id.toString() === matId);
     if (!apiItem) {
-      throw new Error(`apiItem not found ${matKey}`);
+      console.error(`apiItem not found ${matId} ${matValue}`);
+      continue;
     }
     const parsedItem = parseItemToItemCard(apiItem);
     parsedItem.value = matValue;
-    resultsMap[matKey] = (parsedItem);
+    resultsMap[matId] = (parsedItem);
   }
 
   const sortOrder = [
@@ -32,7 +40,8 @@ export function convertItemMapToItemList(
     ItemWeapon,
     ItemCommon,
   ];
-  const res = sortToItemList(sortOrder, resultsMap)
+  const res = sortToItemList(sortOrder, apiItems, resultsMap)
+  console.log("convertItemMap end", res, resultsMap);
   return removeZeroes
     ? res.filter(item => (item.value ?? 0) > 0)
     : res;
@@ -44,14 +53,16 @@ export function filterType<T extends Record<string, string>>(items: IItem[], fil
 
 export function sortToItemList<T extends Record<string, string>>(
   sortOrder: T[],
+  apiItems: IAPIItem[],
   items: IItem[] | { [key: string]: IItem }
 ): IItem[] {
   const retMap = Array.isArray(items)
-    ? Object.fromEntries(Object.values(items).map(item => [item.name, item]))
+    ? Object.fromEntries(Object.values(items).map(item => [item.id, item]))
     : items;
 
   return sortOrder.flatMap(order =>
-    Object.values(order).map(name => retMap[name]).filter(Boolean)
+    findItemsByNames(Object.values(order), apiItems)
+      .map(apiItem => retMap[apiItem.id]).filter(Boolean)
   );
 }
 

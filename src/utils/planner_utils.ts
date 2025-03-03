@@ -1,31 +1,37 @@
-import { IAPIResonator } from "@/app/interfaces/api_interfaces";
+import { IAPIItem, IAPIResonator } from "@/app/interfaces/api_interfaces";
 import { getAscensions, InputEntry, ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { getKeyFromEnumValue } from "@/utils/utils";
 import { ASCENSION_MATERIALS, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry, TOTAL_LEVEL_EXPERIENCE } from "@/constants/character_ascension";
 import { parseResonatorToPlanner } from "@/utils/api_parser";
-import { ItemCommon, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, SHELL_CREDIT } from "@/app/interfaces/item_types";
+import { ItemCommon, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, SHELL_CREDIT, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
 import { IResonatorPlanner } from "@/app/interfaces/resonator";
 import { ActiveSkillNames, PassiveSkillNames, resonatorSchemaForForm } from "@/schemas/resonatorSchema";
+import { findItemByName } from "./items_utils";
 
-export const getMaterials = (resonatorEntry: ResonatorStateDBEntry, apIAPIResonator: IAPIResonator) => {
+export const getMaterials = (
+  resonatorEntry: ResonatorStateDBEntry,
+  apiItems: IAPIItem[],
+  apIAPIResonator: IAPIResonator
+) => {
   const parsedResonator: IResonatorPlanner = parseResonatorToPlanner(apIAPIResonator);
 
-  // const levelDifference = parseInt(resonatorEntry.level.desired as string) - parseInt(resonatorEntry.level.current as string);
   const requiredAscensions = getAscensions(resonatorEntry.level.current, resonatorEntry.level.desired);
+  // item id -> amount of items needed
   const requiredMaterials: { [key: string]: number } = {};
 
   // Add all of the required ascension materials
   addAscensionMaterials(
     requiredMaterials,
+    apiItems,
     requiredAscensions,
     parsedResonator
   );
-  addResonatorEXP(requiredMaterials, resonatorEntry);
+  addResonatorEXP(requiredMaterials, apiItems, resonatorEntry);
 
   // Active talent materials
   for (const skill of Object.keys(ActiveSkillNames)) {
     const { current, desired } = resonatorEntry[skill as resonatorSchemaForForm] as InputEntry<number>;
-    addTalentMaterials(requiredMaterials, current, desired, parsedResonator, TALENT_MATERIALS);
+    addTalentMaterials(requiredMaterials, apiItems, current, desired, parsedResonator, TALENT_MATERIALS);
   }
 
   // Passive skills
@@ -33,6 +39,7 @@ export const getMaterials = (resonatorEntry: ResonatorStateDBEntry, apIAPIResona
     const { current, desired } = resonatorEntry[skill as resonatorSchemaForForm] as InputEntry<number>;
     addTalentMaterials(
       requiredMaterials,
+      apiItems,
       current,
       desired,
       parsedResonator,
@@ -46,17 +53,19 @@ export const getMaterials = (resonatorEntry: ResonatorStateDBEntry, apIAPIResona
 
 const addResonatorEXP = (
   requiredMaterials: { [key: string]: number },
+  items: IAPIItem[],
   resonatorEntry: ResonatorStateDBEntry
 ): void => {
   const { current, desired } = resonatorEntry.level;
   const parsedCurrent = parseInt(current as string);
   const parsedDesired = parseInt(desired as string);
   const expLeft = TOTAL_LEVEL_EXPERIENCE[parsedDesired] - TOTAL_LEVEL_EXPERIENCE[parsedCurrent];
-  addEXP(requiredMaterials, expLeft, ItemResonatorEXP);
+  addEXP(requiredMaterials, items, expLeft, ItemResonatorEXP);
 }
 
 const addEXP = (
   requiredMaterials: { [key: string]: number },
+  items: IAPIItem[],
   expLeft: number,
   expType: typeof ItemResonatorEXP | typeof ItemWeaponEXP
 ): void => {
@@ -67,7 +76,12 @@ const addEXP = (
       : Math.floor(expLeft / value);
     expLeft -= count * value;
     const key = `RARITY_${5 - idx}` as keyof typeof expType;
-    requiredMaterials[expType[key]] = count;
+    const itemId = findItemByName(expType[key], items)
+    if (!itemId) {
+      console.error(`addEXP ItemId not found for ${expType[key]}`);
+      return;
+    }
+    requiredMaterials[itemId?.id] = count;
   });
   if (expLeft > 0) {
     throw new Error("Exp is higher than 0");
@@ -76,6 +90,7 @@ const addEXP = (
 
 const addAscensionMaterials = (
   requiredMaterials: { [key: string]: number },
+  apiItems: IAPIItem[],
   requiredAscensions: number[],
   parsedResonator: IResonatorPlanner
 ): void => {
@@ -87,21 +102,25 @@ const addAscensionMaterials = (
       COMMON,
       COMMON_RARITY,
     } = ASCENSION_MATERIALS[ascensionKey];
-    requiredMaterials[SHELL_CREDIT] = (requiredMaterials[SHELL_CREDIT] ?? 0) + SHELL;
+    requiredMaterials[SHELL_CREDIT_ID] = (requiredMaterials[SHELL_CREDIT] ?? 0) + SHELL;
     if (ELITE_MATERIAL) {
       const eliteMats = (parsedResonator.name.includes("Rover")) ? 1 : ELITE_MATERIAL;
-      requiredMaterials[parsedResonator.eliteMaterial] = (requiredMaterials[parsedResonator.eliteMaterial] ?? 0) + eliteMats;
+      requiredMaterials[parsedResonator.eliteMaterial.id] = (requiredMaterials[parsedResonator.eliteMaterial.id] ?? 0) + eliteMats;
     }
-    const commonMaterial = getCommonMaterial(parsedResonator.commonMaterial, COMMON_RARITY);
-    requiredMaterials[commonMaterial] = (requiredMaterials[commonMaterial] ?? 0) + COMMON;
+    const commonMaterial = getCommonMaterial(parsedResonator.commonMaterial.name, COMMON_RARITY);
+    const commonMaterialEntry = findItemByName(commonMaterial, apiItems);
+    if (commonMaterialEntry) {
+      requiredMaterials[commonMaterialEntry.id] = (requiredMaterials[commonMaterialEntry.id] ?? 0) + COMMON;
+    }
     if (SPECIALTY_MATERIAL) {
-      requiredMaterials[parsedResonator.specialtyMaterial] = (requiredMaterials[parsedResonator.specialtyMaterial] ?? 0) + SPECIALTY_MATERIAL;
+      requiredMaterials[parsedResonator.specialtyMaterial.id] = (requiredMaterials[parsedResonator.specialtyMaterial.id] ?? 0) + SPECIALTY_MATERIAL;
     }
   }
 }
 
 const addTalentMaterials = (
   requiredMaterials: { [key: string]: number },
+  apiItems: IAPIItem[],
   from: number,
   to: number,
   parsedResonator: IResonatorPlanner,
@@ -118,15 +137,16 @@ const addTalentMaterials = (
     } = talentMap[i];
     requiredMaterials[SHELL_CREDIT] = (requiredMaterials[SHELL_CREDIT] ?? 0) + SHELL;
     if (WEEKLY_MATERIAL) {
-      requiredMaterials[parsedResonator.weeklyMaterial] = (requiredMaterials[parsedResonator.weeklyMaterial] ?? 0) + WEEKLY_MATERIAL;
+      requiredMaterials[parsedResonator.weeklyMaterial.id] = (requiredMaterials[parsedResonator.weeklyMaterial.id] ?? 0) + WEEKLY_MATERIAL;
     }
-    const weaponMaterial = getWeaponMaterial(parsedResonator.weaponMaterial, WEAPON_RARITY);
+    const weaponMaterial = getWeaponMaterial(parsedResonator.weaponMaterial.name, WEAPON_RARITY);
     if (weaponMaterial) {
       requiredMaterials[weaponMaterial] = (requiredMaterials[weaponMaterial] ?? 0) + WEAPON_MATERIAL;
     }
-    const commonMaterial = getCommonMaterial(parsedResonator.commonMaterial, COMMON_RARITY);
-    if (commonMaterial) {
-      requiredMaterials[commonMaterial] = (requiredMaterials[commonMaterial] ?? 0) + COMMON_MATERIAL;
+    const commonMaterial = getCommonMaterial(parsedResonator.commonMaterial.name, COMMON_RARITY);
+    const commonMaterialEntry = findItemByName(commonMaterial, apiItems);
+    if (commonMaterialEntry) {
+      requiredMaterials[commonMaterialEntry.id] = (requiredMaterials[commonMaterialEntry.id] ?? 0) + COMMON_MATERIAL;
     }
   }
 }
