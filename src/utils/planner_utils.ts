@@ -3,7 +3,7 @@ import { getAscensions, InputEntry, ResonatorStateDBEntry } from "@/types/resona
 import { getKeyFromEnumValue } from "@/utils/utils";
 import { ASCENSION_MATERIALS, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry, TOTAL_LEVEL_EXPERIENCE } from "@/constants/character_ascension";
 import { parseResonatorToPlanner } from "@/utils/api_parser";
-import { ItemCommon, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, SHELL_CREDIT, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
+import { ItemCommon, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
 import { IResonatorPlanner } from "@/app/interfaces/resonator";
 import { ActiveSkillNames, PassiveSkillNames, resonatorSchemaForForm } from "@/schemas/resonatorSchema";
 import { findItemByName } from "./items_utils";
@@ -102,7 +102,7 @@ const addAscensionMaterials = (
       COMMON,
       COMMON_RARITY,
     } = ASCENSION_MATERIALS[ascensionKey];
-    requiredMaterials[SHELL_CREDIT_ID] = (requiredMaterials[SHELL_CREDIT] ?? 0) + SHELL;
+    requiredMaterials[SHELL_CREDIT_ID] = (requiredMaterials[SHELL_CREDIT_ID] ?? 0) + SHELL;
     if (ELITE_MATERIAL) {
       const eliteMats = (parsedResonator.name.includes("Rover")) ? 1 : ELITE_MATERIAL;
       requiredMaterials[parsedResonator.eliteMaterial.id] = (requiredMaterials[parsedResonator.eliteMaterial.id] ?? 0) + eliteMats;
@@ -135,13 +135,14 @@ const addTalentMaterials = (
       COMMON_MATERIAL,
       COMMON_RARITY,
     } = talentMap[i];
-    requiredMaterials[SHELL_CREDIT] = (requiredMaterials[SHELL_CREDIT] ?? 0) + SHELL;
+    requiredMaterials[SHELL_CREDIT_ID] = (requiredMaterials[SHELL_CREDIT_ID] ?? 0) + SHELL;
     if (WEEKLY_MATERIAL) {
       requiredMaterials[parsedResonator.weeklyMaterial.id] = (requiredMaterials[parsedResonator.weeklyMaterial.id] ?? 0) + WEEKLY_MATERIAL;
     }
     const weaponMaterial = getWeaponMaterial(parsedResonator.weaponMaterial.name, WEAPON_RARITY);
-    if (weaponMaterial) {
-      requiredMaterials[weaponMaterial] = (requiredMaterials[weaponMaterial] ?? 0) + WEAPON_MATERIAL;
+    const weaponMaterialEntry = findItemByName(weaponMaterial, apiItems);
+    if (weaponMaterialEntry) {
+      requiredMaterials[weaponMaterialEntry.id] = (requiredMaterials[weaponMaterialEntry.id] ?? 0) + WEAPON_MATERIAL;
     }
     const commonMaterial = getCommonMaterial(parsedResonator.commonMaterial.name, COMMON_RARITY);
     const commonMaterialEntry = findItemByName(commonMaterial, apiItems);
