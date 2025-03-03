@@ -22,6 +22,10 @@ export function convertItemMapToItemList(
   return sortToItemList(resultsMap);
 }
 
+export function filterType<T extends Record<string, string>>(items: IItem[], filterType: T): IItem[] {
+  return items.filter((item) => Object.values(filterType).includes(item.name))
+}
+
 function sortToItemList(items: { [key: string]: IItem }): IItem[] {
   const sortOrder = [
     [SHELL_CREDIT],
