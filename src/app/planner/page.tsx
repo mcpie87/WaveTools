@@ -12,11 +12,13 @@ import { useData } from '@/context/DataContext';
 import { InventoryForm } from '@/components/PlannerForm/InventoryForm';
 import { ItemStateDBSchema } from '@/types/itemTypes';
 import { useItems } from '@/context/ItemContext';
+import { ManagePriorityComponent } from '@/components/PlannerForm/ManagePriorityComponent';
 
 export default function CharactersPage() {
   const [showEditForm, setShowEditForm] = useState(false);
   const [showAddForm, setShowAddForm] = useState(false);
   const [showInventoryForm, setShowInventoryForm] = useState(false);
+  const [showManagePriority, setShowManagePriority] = useState(false);
   const [selectedResonator, setSelectedResonator] = useState<ResonatorStateDBEntry | null>(null);
 
   const resonatorContext = useCharacters();
@@ -30,10 +32,9 @@ export default function CharactersPage() {
   const { characters } = resonatorContext;
   const { updateItems, items: dbItems } = itemContext;
   const { resonators, items } = data;
-
   const { updateCharacter } = resonatorContext;
+
   const handleResonatorSubmit = (data: ResonatorStateDBEntry) => {
-    console.log('Form submitted:', data);
     const parsedData = resonatorSchema.parse(data);
     updateCharacter(parsedData.name, parsedData);
     setShowEditForm(false);
@@ -46,7 +47,9 @@ export default function CharactersPage() {
 
   const handleAddResonator = (name: string) => {
     setSelectedResonator({
-      ...resonatorSchema.parse({}),
+      ...resonatorSchema.parse({
+        priority: Object.keys(characters).length
+      }),
       name
     });
     setShowAddForm(false);
@@ -59,11 +62,10 @@ export default function CharactersPage() {
     setShowEditForm(true);
   }
 
-
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row justify-between">
       <div>
-        <div className="flex flex-row">
+        <div className="flex flex-row gap-x-2">
           <button
             className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
             onClick={() => setShowAddForm(!showAddForm)}
@@ -75,6 +77,12 @@ export default function CharactersPage() {
             onClick={() => setShowInventoryForm(!showInventoryForm)}
           >
             Show inventory
+          </button>
+          <button
+            className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+            onClick={() => setShowManagePriority(!showManagePriority)}
+          >
+            Manage Priority
           </button>
         </div>
         {showEditForm && selectedResonator && (
@@ -99,6 +107,13 @@ export default function CharactersPage() {
             initialFormData={dbItems}
             items={items}
             onClose={() => setShowInventoryForm(false)}
+          />
+        )}
+        {showManagePriority && (
+          <ManagePriorityComponent
+            showForm={showManagePriority}
+            resonators={characters}
+            onClose={() => setShowManagePriority(false)}
           />
         )}
         <PlannerDataComponent

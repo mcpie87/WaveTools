@@ -52,7 +52,6 @@ export const PlannerSummaryComponent = ({
     ["Forgery", filterType(convertedMaterials, ItemWeapon)],
     ["Common Enemies", filterType(convertedMaterials, ItemCommon)],
   ].filter((elem) => elem[1].length > 0);
-  console.log("HEY", displayedMaterials);
 
   return (
     <div>
