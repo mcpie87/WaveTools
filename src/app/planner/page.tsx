@@ -9,28 +9,40 @@ import { PlannerDataComponent } from './components/PlannerDataComponent';
 import { useCharacters } from '@/context/CharacterContext';
 import { PlannerSummaryComponent } from './components/PlannerSummaryComponent';
 import { useData } from '@/context/DataContext';
+import { InventoryForm } from '@/components/PlannerForm/InventoryForm';
+import { ItemStateDBSchema } from '@/types/itemTypes';
+import { useItems } from '@/context/ItemContext';
 
 export default function CharactersPage() {
   const [showEditForm, setShowEditForm] = useState(false);
   const [showAddForm, setShowAddForm] = useState(false);
+  const [showInventoryForm, setShowInventoryForm] = useState(false);
   const [selectedResonator, setSelectedResonator] = useState<ResonatorStateDBEntry | null>(null);
 
   const resonatorContext = useCharacters();
+  const itemContext = useItems();
   const { data, error, loading } = useData();
   if (loading) return (<div>Loading...</div>);
   if (!data) return (<div>Data is not present</div>);
   if (error) return (<div>Error present: {error.message}</div>);
   if (!resonatorContext) return (<div>Resonator context does not exist</div>);
+  if (!itemContext) return (<div>Item context does not exist</div>);
   const { characters } = resonatorContext;
+  const { updateItems, items: dbItems } = itemContext;
   const { resonators, items } = data;
 
   const { updateCharacter } = resonatorContext;
-  const handleSubmit = (data: ResonatorStateDBEntry) => {
+  const handleResonatorSubmit = (data: ResonatorStateDBEntry) => {
     console.log('Form submitted:', data);
     const parsedData = resonatorSchema.parse(data);
     updateCharacter(parsedData.name, parsedData);
     setShowEditForm(false);
   };
+
+  const handleInventorySubmit = (data: ItemStateDBSchema) => {
+    updateItems(data);
+    setShowInventoryForm(false);
+  }
 
   const handleAddResonator = (name: string) => {
     setSelectedResonator({
@@ -58,11 +70,17 @@ export default function CharactersPage() {
           >
             Add character
           </button>
+          <button
+            className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+            onClick={() => setShowInventoryForm(!showInventoryForm)}
+          >
+            Show inventory
+          </button>
         </div>
         {showEditForm && selectedResonator && (
           <ResonatorForm
             initialData={selectedResonator}
-            onSubmit={handleSubmit}
+            onSubmit={handleResonatorSubmit}
             showForm={showEditForm}
             onClose={() => setShowEditForm(false)}
           />
@@ -72,6 +90,15 @@ export default function CharactersPage() {
             showForm={showAddForm}
             onClose={() => setShowAddForm(false)}
             onAddResonator={handleAddResonator}
+          />
+        )}
+        {showInventoryForm && (
+          <InventoryForm
+            showForm={showInventoryForm}
+            onSubmit={handleInventorySubmit}
+            initialFormData={dbItems}
+            items={items}
+            onClose={() => setShowInventoryForm(false)}
           />
         )}
         <PlannerDataComponent

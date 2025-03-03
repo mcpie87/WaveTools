@@ -4,6 +4,7 @@ import { ReactNode, useState, useEffect } from 'react';
 import { CharacterContext } from '../context/CharacterContext';
 import { ResonatorDBSchema, ResonatorStateDBEntry } from '../types/resonatorTypes';
 import { resonatorSchema } from '../schemas/resonatorSchema';
+import { getStorageKey } from '@/utils/utils';
 
 interface CharacterProviderProps {
   children: ReactNode;
@@ -11,7 +12,7 @@ interface CharacterProviderProps {
 export const CharacterProvider = ({ children }: CharacterProviderProps) => {
   const [characters, setCharacters] = useState<ResonatorDBSchema>(() => {
     if (typeof window !== 'undefined') {
-      const savedData = localStorage.getItem('characters');
+      const savedData = localStorage.getItem(getStorageKey('characters'));
       return savedData ? JSON.parse(savedData) : {};
     }
     return {};
@@ -19,7 +20,7 @@ export const CharacterProvider = ({ children }: CharacterProviderProps) => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      localStorage.setItem('characters', JSON.stringify(characters));
+      localStorage.setItem(getStorageKey('characters'), JSON.stringify(characters));
     }
   }, [characters]);
 

@@ -19,16 +19,8 @@ export function convertItemMapToItemList(
     resultsMap[matKey] = (parsedItem);
   }
 
-  return sortToItemList(resultsMap);
-}
-
-export function filterType<T extends Record<string, string>>(items: IItem[], filterType: T): IItem[] {
-  return items.filter((item) => Object.values(filterType).includes(item.name))
-}
-
-function sortToItemList(items: { [key: string]: IItem }): IItem[] {
   const sortOrder = [
-    [SHELL_CREDIT],
+    { SHELL_CREDIT: SHELL_CREDIT },
     ItemResonatorEXP,
     ItemWeaponEXP,
     ItemTuner,
@@ -39,9 +31,23 @@ function sortToItemList(items: { [key: string]: IItem }): IItem[] {
     ItemWeapon,
     ItemCommon,
   ];
+  return sortToItemList(sortOrder, resultsMap);
+}
+
+export function filterType<T extends Record<string, string>>(items: IItem[], filterType: T): IItem[] {
+  return items.filter((item) => Object.values(filterType).includes(item.name))
+}
+
+export function sortToItemList<T extends Record<string, string>>(
+  sortOrder: T[],
+  items: IItem[] | { [key: string]: IItem }
+): IItem[] {
+  const retMap = Array.isArray(items)
+    ? Object.fromEntries(Object.values(items).map(item => [item.name, item]))
+    : items;
 
   return sortOrder.flatMap(order =>
-    Object.values(order).map(name => items[name]).filter(Boolean)
+    Object.values(order).map(name => retMap[name]).filter(Boolean)
   );
 }
 
