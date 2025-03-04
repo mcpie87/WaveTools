@@ -32,7 +32,7 @@ export default function CharactersPage() {
   const { characters } = resonatorContext;
   const { updateItems, items: dbItems } = itemContext;
   const { resonators, items } = data;
-  const { updateCharacter } = resonatorContext;
+  const { updateCharacter, updatePriority } = resonatorContext;
 
   const handleResonatorSubmit = (data: ResonatorStateDBEntry) => {
     const parsedData = resonatorSchema.parse(data);
@@ -116,8 +116,10 @@ export default function CharactersPage() {
         {showManagePriority && (
           <ManagePriorityComponent
             showForm={showManagePriority}
-            resonators={characters}
+            dbResonators={characters}
+            apiResonators={resonators}
             onClose={() => setShowManagePriority(false)}
+            onDragAndDrop={updatePriority}
           />
         )}
         <PlannerDataComponent

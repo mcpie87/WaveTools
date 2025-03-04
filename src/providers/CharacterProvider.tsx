@@ -8,6 +8,7 @@ import { getStorageKey } from '@/utils/utils';
 
 const STORAGE_KEY = getStorageKey('resonators');
 // const VERSION_KEY = `${STORAGE_KEY}_2025-03-03T18:07`;
+// TODO: remove "characters" key for future migration
 
 interface CharacterProviderProps {
   children: ReactNode;
@@ -51,8 +52,32 @@ export const CharacterProvider = ({ children }: CharacterProviderProps) => {
     });
   }
 
+  const updatePriority = (name: string, newPriority: number) => {
+    const prevPriority = characters[name].priority;
+    const prev = { ...characters };
+
+    if (newPriority < prevPriority) {
+      for (const key in prev) {
+        if (newPriority <= prev[key].priority && prev[key].priority < prevPriority) {
+          ++prev[key].priority;
+        }
+      }
+    }
+
+    if (newPriority > prevPriority) {
+      for (const key in prev) {
+        if (prevPriority < prev[key].priority && prev[key].priority <= newPriority) {
+          --prev[key].priority;
+        }
+      }
+    }
+
+    prev[name].priority = newPriority;
+    setCharacters(prev);
+  }
+
   return (
-    <CharacterContext.Provider value={{ characters, updateCharacter, deleteCharacter }}>
+    <CharacterContext.Provider value={{ characters, updateCharacter, deleteCharacter, updatePriority }}>
       {children}
     </CharacterContext.Provider>
   );

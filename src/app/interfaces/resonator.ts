@@ -17,5 +17,6 @@ export interface IResonatorUpgrade {
 };
 
 export interface IResonatorPlanner extends IResonatorUpgrade {
+  priority: number;
   icon: IconURL;
 }

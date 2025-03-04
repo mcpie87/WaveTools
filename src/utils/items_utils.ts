@@ -40,8 +40,7 @@ export function convertItemMapToItemList(
     ItemWeapon,
     ItemCommon,
   ];
-  const res = sortToItemList(sortOrder, apiItems, resultsMap)
-  console.log("convertItemMap end", res, resultsMap);
+  const res = sortToItemList(sortOrder, apiItems, resultsMap);
   return removeZeroes
     ? res.filter(item => (item.value ?? 0) > 0)
     : res;

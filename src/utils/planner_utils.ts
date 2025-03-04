@@ -11,9 +11,9 @@ import { findItemByName } from "./items_utils";
 export const getMaterials = (
   resonatorEntry: ResonatorStateDBEntry,
   apiItems: IAPIItem[],
-  apIAPIResonator: IAPIResonator
+  apiResonator: IAPIResonator
 ) => {
-  const parsedResonator: IResonatorPlanner = parseResonatorToPlanner(apIAPIResonator);
+  const parsedResonator: IResonatorPlanner = parseResonatorToPlanner(apiResonator, resonatorEntry);
 
   const requiredAscensions = getAscensions(resonatorEntry.level.current, resonatorEntry.level.desired);
   // item id -> amount of items needed

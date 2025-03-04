@@ -2,6 +2,7 @@ import { IItemEntry, IAPIResonator, IAPIItem } from "@/app/interfaces/api_interf
 import { IItem } from "@/app/interfaces/item";
 import { ItemEliteBoss, ItemWeapon, ItemWeeklyBoss, ItemCommon, ItemSpecialty } from "@/app/interfaces/item_types";
 import { IResonatorPlanner, IResonatorUpgradeItem } from "@/app/interfaces/resonator";
+import { ResonatorStateDBEntry } from "@/types/resonatorTypes";
 
 const enum LOOKUP_TYPE {
   Ascension,
@@ -21,11 +22,15 @@ export function parseItemToItemCard(data: IAPIItem): IItem {
   }
 }
 
-export function parseResonatorToPlanner(data: IAPIResonator): IResonatorPlanner {
+export function parseResonatorToPlanner(
+  data: IAPIResonator,
+  dbEntry: ResonatorStateDBEntry
+): IResonatorPlanner {
   return {
     name: data.name,
     rarity: data.rarity,
     icon: data.icon.circle,
+    priority: dbEntry.priority,
     weeklyMaterial: findMaterial(data, ItemWeeklyBoss, LOOKUP_TYPE.Talent),
     eliteMaterial: findMaterial(data, ItemEliteBoss, LOOKUP_TYPE.Ascension),
     specialtyMaterial: findMaterial(data, ItemSpecialty, LOOKUP_TYPE.Ascension),
