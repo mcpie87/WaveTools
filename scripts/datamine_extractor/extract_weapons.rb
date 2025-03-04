@@ -21,7 +21,7 @@ weapon_types = load_file("#{DATAMINE_PATH}/#{BINDATA}/mapping/mapping.json", tru
 
 def get_weapon_breach_info(weapon_id)
   @weapon_breach_info
-    .select{|e| e["BreachId"] == weapon_id}
+    .select{|e| e["WeaponId"] == weapon_id}
     .map{|row|
       {
         rank: row["Level"],
