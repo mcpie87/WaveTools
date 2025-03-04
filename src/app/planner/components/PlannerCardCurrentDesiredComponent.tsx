@@ -9,9 +9,19 @@ export function PlannerCardCurrentDesiredComponent<T>({
   currentDesired
 }: PlannerCardCurrentDesiredComponentProps<T>) {
   const { current, desired } = currentDesired ?? {};
+
+  const renderCurrentDesired = () => {
+    if (current === desired) {
+      return (<span>{current as string}</span>);
+    }
+    return (
+      <span>{current as string} → {desired as string}</span>
+    )
+  }
+
   return (
-    <div className="flex flex-row justify-between">
-      <div>{current as string} → {desired as string}</div>
+    <div className="flex flex-row justify-between gap-1">
+      <div>{renderCurrentDesired()}</div>
       <div>{label}</div>
     </div>
   )
