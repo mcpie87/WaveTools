@@ -1,6 +1,6 @@
 import React from "react";
 import { SUBSTATS, SubstatEntry, substatValues, SubstatName, SubstatValue, substatsDisplayOrder } from "../services/simulate";
-import { formatSubstatValue } from "../utils/utils";
+import { formatSubstatValue } from "@/utils/utils";
 
 const generateAvailableSubstats = (pickedSubstats: SubstatEntry[], value: SubstatName): SubstatName[] => {
   const pickedSubstatNames: SubstatName[] = pickedSubstats.map(e => e.name);

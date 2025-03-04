@@ -3,7 +3,7 @@ import {
   UPGRADE_COST,
   calculateProbabilityOfDesiredSubstats
 } from "../services/simulate";
-import { formatNumber, formatPercent } from "../utils/utils";
+import { formatNumber, formatPercent } from "@/utils/utils";
 
 export const GenerateResultsRows = async (
   startSubstats: SubstatEntry[],

@@ -43,15 +43,15 @@ export const PlannerSummaryComponent = ({
 
   const displayedMaterials = [
     ["Shell Credit", convertedMaterials.filter((item) => item.name === SHELL_CREDIT)],
-    ["Resonator EXP", filterType(convertedMaterials, ItemResonatorEXP)],
-    ["Weapon EXP", filterType(convertedMaterials, ItemWeaponEXP)],
-    ["Tuners", filterType(convertedMaterials, ItemTuner)],
-    ["Echo EXP", filterType(convertedMaterials, ItemEchoEXP)],
-    ["Elite Boss", filterType(convertedMaterials, ItemEliteBoss)],
-    ["Weekly Boss", filterType(convertedMaterials, ItemWeeklyBoss)],
-    ["Specialty", filterType(convertedMaterials, ItemSpecialty)],
-    ["Forgery", filterType(convertedMaterials, ItemWeapon)],
-    ["Common Enemies", filterType(convertedMaterials, ItemCommon)],
+    ["Resonator EXP", filterType(convertedMaterials, ItemResonatorEXP).reverse()],
+    ["Weapon EXP", filterType(convertedMaterials, ItemWeaponEXP).reverse()],
+    ["Tuners", filterType(convertedMaterials, ItemTuner).reverse()],
+    ["Echo EXP", filterType(convertedMaterials, ItemEchoEXP).reverse()],
+    ["Elite Boss", filterType(convertedMaterials, ItemEliteBoss).reverse()],
+    ["Weekly Boss", filterType(convertedMaterials, ItemWeeklyBoss).reverse()],
+    ["Specialty", filterType(convertedMaterials, ItemSpecialty).reverse()],
+    ["Forgery", filterType(convertedMaterials, ItemWeapon).reverse()],
+    ["Common Enemies", filterType(convertedMaterials, ItemCommon).reverse()],
   ].filter((elem) => elem[1].length > 0);
 
   return (
