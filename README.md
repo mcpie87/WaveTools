@@ -1,6 +1,9 @@
 # WaveTools
 Fairly simple collection of tools for Wuthering Waves.
 
+Shortened link for planner \
+https://waa.ai/WaveToolsPlanner
+
 # Features
 
 ## Planner
