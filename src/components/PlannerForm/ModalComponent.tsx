@@ -1,18 +1,14 @@
-import { ReactNode, useEffect } from "react";
+import useModal from "@/hooks/useModal";
+import { ReactNode } from "react";
 
 interface ModalComponentProps {
   show: boolean;
   children: ReactNode;
+  onReturn?: () => void;
   onClose: () => void;
 }
-export const ModalComponent = ({ show, children, onClose }: ModalComponentProps) => {
-  useEffect(() => {
-    document.body.style.overflow = show ? "hidden" : "auto";
-
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [show]);
+export const ModalComponent = ({ show, children, onClose, onReturn }: ModalComponentProps) => {
+  useModal(show);
 
   if (!show) return null;
 
@@ -31,6 +27,14 @@ export const ModalComponent = ({ show, children, onClose }: ModalComponentProps)
         >
           x
         </button>
+        {onReturn && (
+          <button
+            onClick={onReturn}
+            className="absolute top-2 left-2 text-xl text-gray-500"
+          >
+            &gt
+          </button>
+        )}
         {children}
       </div>
     </div>
