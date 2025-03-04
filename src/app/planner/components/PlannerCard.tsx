@@ -5,10 +5,11 @@ import Image from "next/image";
 import { PlannerCardCurrentDesiredComponent } from "./PlannerCardCurrentDesiredComponent";
 import { useCharacters } from "@/context/CharacterContext";
 import { getMaterials } from "@/utils/planner_utils";
-import { calculateWaveplate, convertItemMapToItemList } from "@/utils/items_utils";
+import { calculateWaveplate, convertItemMapToItemList, sortToItemList } from "@/utils/items_utils";
 import ItemList from "@/components/items/ItemList";
 import { WaveplateComponent } from "@/components/WaveplateComponent";
 import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
+import { ItemResonatorEXP, ItemWeaponEXP, ItemTuner, ItemEchoEXP, ItemEliteBoss, ItemWeeklyBoss, ItemSpecialty, ItemWeapon, ItemCommon, SHELL_CREDIT } from "@/app/interfaces/item_types";
 
 
 interface PlannerCardComponentProps {
@@ -23,8 +24,22 @@ export function PlannerCardComponent({ resonator, apiItems, dbData, onEditResona
     return (<div>Resonator context does not exist</div>);
   }
   const { deleteCharacter } = resonatorContext;
+
+  const sortOrder = [
+    { SHELL_CREDIT: SHELL_CREDIT },
+    ItemResonatorEXP,
+    ItemWeaponEXP,
+    ItemTuner,
+    ItemEchoEXP,
+    ItemEliteBoss,
+    ItemWeeklyBoss,
+    ItemSpecialty,
+    ItemWeapon,
+    ItemCommon,
+  ];
   const requiredMaterials = getMaterials(dbData, apiItems, resonator);
   const convertedMaterials = convertItemMapToItemList(apiItems, requiredMaterials, true);
+  const displayedMaterials = sortToItemList(sortOrder, apiItems, convertedMaterials)
   const waveplateNeeded = calculateWaveplate(convertedMaterials);
   return (
     <div className="flex flex-col items-center bg-gray-300">
@@ -98,7 +113,7 @@ export function PlannerCardComponent({ resonator, apiItems, dbData, onEditResona
           </div>
         </div>
       </div>
-      <ItemList data={convertedMaterials} />
+      <ItemList data={displayedMaterials} />
     </div >
   )
 }

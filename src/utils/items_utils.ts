@@ -1,7 +1,7 @@
 import { IAPIItem } from "@/app/interfaces/api_interfaces";
 import { IItem } from "@/app/interfaces/item";
 import { parseItemToItemCard } from "./api_parser";
-import { ItemCommon, ItemEchoEXP, ItemEliteBoss, ItemResonatorEXP, ItemSpecialty, ItemTuner, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
+import { ItemEliteBoss, ItemResonatorEXP, ItemWeapon, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
 import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_ELITE_BOSS_COST, WAVEPLATE_FORGERY, WAVEPLATE_FORGERY_COST, WAVEPLATE_SIM_RESONANCE, WAVEPLATE_SIM_RESONANCE_COST, WAVEPLATE_SIM_SHELL, WAVEPLATE_SIM_SHELL_COST, WAVEPLATE_WEEKLY_BOSS, WAVEPLATE_WEEKLY_BOSS_COST } from "@/constants/waveplate_usage";
 import { WaveplateEntry } from "@/components/WaveplateComponent";
 
@@ -17,7 +17,7 @@ export function convertItemMapToItemList(
   mappedItems: { [key: string]: number },
   removeZeroes: boolean = false
 ): IItem[] {
-  const resultsMap: { [key: string]: IItem } = {};
+  const results: IItem[] = [];
   for (const [matId, matValue] of Object.entries(mappedItems)) {
     const apiItem = apiItems.find(item => item.id.toString() === matId);
     if (!apiItem) {
@@ -26,44 +26,38 @@ export function convertItemMapToItemList(
     }
     const parsedItem = parseItemToItemCard(apiItem);
     parsedItem.value = matValue;
-    resultsMap[matId] = (parsedItem);
+    results.push(parsedItem);
   }
 
-  const sortOrder = [
-    { SHELL_CREDIT: SHELL_CREDIT },
-    ItemResonatorEXP,
-    ItemWeaponEXP,
-    ItemTuner,
-    ItemEchoEXP,
-    ItemEliteBoss,
-    ItemWeeklyBoss,
-    ItemSpecialty,
-    ItemWeapon,
-    ItemCommon,
-  ];
-  const res = sortToItemList(sortOrder, apiItems, resultsMap);
   return removeZeroes
-    ? res.filter(item => (item.value ?? 0) > 0)
-    : res;
+    ? results.filter(item => (item.value ?? 0) > 0)
+    : results;
 }
 
-export function filterType<T extends Record<string, string>>(items: IItem[], filterType: T): IItem[] {
+export function filterType<T extends Record<string, string>>(
+  items: IItem[],
+  filterType: T
+): IItem[] {
   return items.filter((item) => Object.values(filterType).includes(item.name))
 }
 
 export function sortToItemList<T extends Record<string, string>>(
   sortOrder: T[],
   apiItems: IAPIItem[],
-  items: IItem[] | { [key: string]: IItem }
+  items: IItem[] | { [key: string]: IItem },
+  byRarity: boolean = true
 ): IItem[] {
   const retMap = Array.isArray(items)
     ? Object.fromEntries(Object.values(items).map(item => [item.id, item]))
     : items;
 
-  return sortOrder.flatMap(order =>
-    findItemsByNames(Object.values(order), apiItems)
-      .map(apiItem => retMap[apiItem.id]).filter(Boolean)
-  );
+  return sortOrder.flatMap(order => {
+    const ret = findItemsByNames(Object.values(order), apiItems)
+      .map(apiItem => retMap[apiItem.id]).filter(Boolean);
+    return byRarity
+      ? ret.sort((a, b) => b.rarity - a.rarity)
+      : ret;
+  });
 }
 
 export function calculateWaveplate(items: IItem[]): WaveplateEntry[] {

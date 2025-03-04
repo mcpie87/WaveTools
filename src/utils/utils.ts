@@ -14,3 +14,14 @@ export const getKeyFromEnumValue = <T extends Record<string, string>>(enumObj: T
   return Object.keys(enumObj)
     .find((k) => enumObj[k as keyof T] === value) as keyof T | undefined;
 }
+
+export const getRarityClass = (rarity: number) => {
+  switch (rarity) {
+    case 5: return "bg-rarity5";
+    case 4: return "bg-rarity4";
+    case 3: return "bg-rarity3";
+    case 2: return "bg-rarity2";
+    case 1: return "bg-rarity1";
+    default: return "bg-rarity1";
+  }
+}
