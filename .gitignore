@@ -41,3 +41,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 scripts/datamine_extractor/.byebug_history
+scripts/datamine_extractor/out
