@@ -16,6 +16,7 @@ export const DataProvider = ({ children }: DataProviderProps) => {
     async function fetchData() {
       try {
         const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+        console.log("fetchData", "basePath", basePath, "env", process.env.NEXT_PUBLIC_BASE_PATH);
         const itemsResponse = await fetch(`${basePath}/data/items.json`);
         const itemsDb: IAPIItem[] = await itemsResponse.json();
 
