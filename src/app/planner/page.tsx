@@ -75,7 +75,7 @@ export default function CharactersPage() {
           apiItems={items}
         />
       </div>
-      <div className="order-1">
+      <div className="order-1 w-full m-2">
         <div className="flex flex-row gap-x-2 justify-center">
           <button
             className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"

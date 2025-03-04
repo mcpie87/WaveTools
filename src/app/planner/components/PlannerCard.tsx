@@ -42,7 +42,7 @@ export function PlannerCardComponent({ resonator, apiItems, dbData, onEditResona
   const displayedMaterials = sortToItemList(sortOrder, apiItems, convertedMaterials)
   const waveplateNeeded = calculateWaveplate(convertedMaterials);
   return (
-    <div className="flex flex-col items-center bg-gray-300">
+    <div className="flex flex-col items-center bg-gray-300 h-full">
       <div className={`
           ${resonator.rarity === 5 ? "bg-rarity5" : "bg-rarity4"}
           flex items-center justify-between w-full border border-black`}
