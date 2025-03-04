@@ -68,8 +68,15 @@ export default function CharactersPage() {
 
   return (
     <div className="flex flex-row justify-between">
-      <div>
-        <div className="flex flex-row gap-x-2">
+      <div className="border w-[350px] order-2 shrink-0">
+        <PlannerSummaryComponent
+          dbResonators={characters}
+          apiResonators={resonators}
+          apiItems={items}
+        />
+      </div>
+      <div className="order-1">
+        <div className="flex flex-row gap-x-2 justify-center">
           <button
             className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
             onClick={() => setShowAddForm(!showAddForm)}
@@ -127,14 +134,6 @@ export default function CharactersPage() {
           resonators={resonators}
           apiItems={items}
           onEditResonator={handleEditResonator}
-        />
-      </div>
-      <div className="border w-[600px]">
-        <div className="text-center">Summary</div>
-        <PlannerSummaryComponent
-          dbResonators={characters}
-          apiResonators={resonators}
-          apiItems={items}
         />
       </div>
     </div>

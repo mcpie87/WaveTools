@@ -6,7 +6,7 @@ interface ItemListProps {
 }
 export default function ItemList({ data }: ItemListProps) {
   return (
-    <div className="flex flex-row flex-wrap gap-1">
+    <div className="flex flex-row flex-wrap gap-1 justify-center items-center">
       {data.map((item, key) => (
         <ItemCard key={key} item={item} />
       ))}

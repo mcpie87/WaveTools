@@ -33,7 +33,7 @@ export default function RootLayout({
         <DataProvider>
           <CharacterProvider>
             <ItemProvider>
-              <div className="container mx-auto">
+              <div className="mx-auto">
                 <Header />
                 <main className="mt-8">{children}</main>
                 <Footer />

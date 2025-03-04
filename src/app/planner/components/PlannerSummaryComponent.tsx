@@ -2,6 +2,7 @@ import { IAPIItem, IAPIResonator } from "@/app/interfaces/api_interfaces";
 import { IItem } from "@/app/interfaces/item";
 import { ItemCommon, ItemEchoEXP, ItemEliteBoss, ItemResonatorEXP, ItemSpecialty, ItemTuner, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
 import ItemList from "@/components/items/ItemList";
+import { WaveplateComponent } from "@/components/WaveplateComponent";
 import { ResonatorDBSchema } from "@/types/resonatorTypes";
 import { calculateWaveplate, convertItemMapToItemList, filterType } from "@/utils/items_utils";
 import { getMaterials } from "@/utils/planner_utils";
@@ -54,31 +55,10 @@ export const PlannerSummaryComponent = ({
   ].filter((elem) => elem[1].length > 0);
 
   return (
-    <div>
+    <>
+      <div className="text-center">Summary</div>
       <div>
-        <table>
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Runs</th>
-              <th>Waveplate</th>
-            </tr>
-          </thead>
-          <tbody>
-            {waveplateNeeded.map(e => (
-              <tr key={e[0]}>
-                <td>{e[0]}</td>
-                <td>{(e[1] as number).toFixed(3)}</td>
-                <td>{(e[2] as number).toFixed(3)}</td>
-              </tr>
-            ))}
-            <tr>
-              <td>TOTAL</td>
-              <td>{waveplateNeeded.map(e => +e[1]).reduce((acc, e) => e + acc).toFixed(2)}</td>
-              <td>{waveplateNeeded.map(e => +e[2]).reduce((acc, e) => e + acc).toFixed(2)}</td>
-            </tr>
-          </tbody>
-        </table>
+        <WaveplateComponent breakdown={waveplateNeeded} />
       </div>
       {displayedMaterials.map((materials, idx) => (
         <div key={idx} className="flex flex-col justify-center">
@@ -88,6 +68,6 @@ export const PlannerSummaryComponent = ({
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }

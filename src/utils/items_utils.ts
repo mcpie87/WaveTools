@@ -3,6 +3,7 @@ import { IItem } from "@/app/interfaces/item";
 import { parseItemToItemCard } from "./api_parser";
 import { ItemCommon, ItemEchoEXP, ItemEliteBoss, ItemResonatorEXP, ItemSpecialty, ItemTuner, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
 import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_ELITE_BOSS_COST, WAVEPLATE_FORGERY, WAVEPLATE_FORGERY_COST, WAVEPLATE_SIM_RESONANCE, WAVEPLATE_SIM_RESONANCE_COST, WAVEPLATE_SIM_SHELL, WAVEPLATE_SIM_SHELL_COST, WAVEPLATE_WEEKLY_BOSS, WAVEPLATE_WEEKLY_BOSS_COST } from "@/constants/waveplate_usage";
+import { WaveplateEntry } from "@/components/WaveplateComponent";
 
 export function findItemByName(name: string, items: IAPIItem[]): IAPIItem | undefined {
   return items.find(item => item.name === name);
@@ -65,7 +66,7 @@ export function sortToItemList<T extends Record<string, string>>(
   );
 }
 
-export function calculateWaveplate(items: IItem[]): (number | string)[][] {
+export function calculateWaveplate(items: IItem[]): WaveplateEntry[] {
   const worldLevel = 8;
   const weeklyBossDropRates = WAVEPLATE_WEEKLY_BOSS[worldLevel > 7 ? 7 : worldLevel];
   const eliteBossDropRates = WAVEPLATE_ELITE_BOSS[worldLevel];
@@ -78,8 +79,11 @@ export function calculateWaveplate(items: IItem[]): (number | string)[][] {
   const simShellDropRates = WAVEPLATE_SIM_SHELL[worldLevel];
 
   const weeklyCount = getWeeklyCountFromList(items) / weeklyBossDropRates.WEEKLY;
-  const eliteCount = getEliteCountFromList(items) / eliteBossDropRates.ELITE;
   const forgeryCount = getWeapon2CountFromList(items) / forgeryDropRates.WEAPON_2;
+  // If it's resonator, we get items for free
+  const eliteCount = items.find(e => e.name === ItemEliteBoss.MYSTERIOUS_CODE)
+    ? 0
+    : getEliteCountFromList(items) / eliteBossDropRates.ELITE;
 
   let resonatorExpNeeded = getResonatorExpNeededFromList(items);
   resonatorExpNeeded -= weeklyCount * weeklyBossDropRates.RESONATOR_EXP;
@@ -94,12 +98,20 @@ export function calculateWaveplate(items: IItem[]): (number | string)[][] {
   const simShellCount = shellNeeded / simShellDropRates.SHELL
 
   return [
-    ["shell", simShellCount, simShellCount * WAVEPLATE_SIM_SHELL_COST],
-    ["weekly", weeklyCount, weeklyCount * WAVEPLATE_WEEKLY_BOSS_COST],
-    ["elite", eliteCount, eliteCount * WAVEPLATE_ELITE_BOSS_COST],
-    ["forgery", forgeryCount, forgeryCount * WAVEPLATE_FORGERY_COST],
-    ["resonator exp", simResonatorCount, simResonatorCount * WAVEPLATE_SIM_RESONANCE_COST]
+    getWaveplateEntry("shell", simShellCount, WAVEPLATE_SIM_SHELL_COST),
+    getWaveplateEntry("weekly", weeklyCount, WAVEPLATE_WEEKLY_BOSS_COST),
+    getWaveplateEntry("elite", eliteCount, WAVEPLATE_ELITE_BOSS_COST),
+    getWaveplateEntry("forgery", forgeryCount, WAVEPLATE_FORGERY_COST),
+    getWaveplateEntry("resonator exp", simResonatorCount, WAVEPLATE_SIM_RESONANCE_COST),
   ];
+}
+
+const getWaveplateEntry = (label: string, runCount: number, cost: number): WaveplateEntry => {
+  return {
+    label,
+    runCount,
+    waveplateCount: runCount * cost
+  }
 }
 
 const getWeeklyCountFromList = (items: IItem[]): number => {

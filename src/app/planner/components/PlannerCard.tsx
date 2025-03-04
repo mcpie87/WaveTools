@@ -7,6 +7,8 @@ import { useCharacters } from "@/context/CharacterContext";
 import { getMaterials } from "@/utils/planner_utils";
 import { calculateWaveplate, convertItemMapToItemList } from "@/utils/items_utils";
 import ItemList from "@/components/items/ItemList";
+import { WaveplateComponent } from "@/components/WaveplateComponent";
+import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
 
 
 interface PlannerCardComponentProps {
@@ -25,11 +27,35 @@ export function PlannerCardComponent({ resonator, apiItems, dbData, onEditResona
   const convertedMaterials = convertItemMapToItemList(apiItems, requiredMaterials, true);
   const waveplateNeeded = calculateWaveplate(convertedMaterials);
   return (
-    <div className="flex flex-col items-center border bg-gray-300 w-[400px]">
+    <div className="flex flex-col items-center bg-gray-300">
       <div className={`
-        ${resonator.rarity === 5 ? "bg-rarity5" : "bg-rarity4"}
-        text-2xl border border-solid border-black w-full text-center`}>
-        {resonator.name}
+          ${resonator.rarity === 5 ? "bg-rarity5" : "bg-rarity4"}
+          flex items-center justify-between w-full border border-black`}
+      >
+        <div className="flex space-x-4 h-full items-center m-2">
+          <FaEdit
+            onClick={() => onEditResonator(dbData)}
+            className="
+            w-10  h-10 p-2 border border-black rounded-full
+            text-white bg-gray-800
+            hover:text-black hover:bg-gray-400
+            "
+          />
+        </div>
+        <span className="text-2xl w-full text-center">
+          {resonator.name}
+        </span>
+        <div className="flex space-x-4 h-full items-center m-2">
+          {/* <FaSearch /> */}
+          <FaRegTrashAlt
+            onClick={() => confirm("Delete?") ? deleteCharacter(resonator.name) : null}
+            className="
+          w-10  h-10 p-2 border border-black rounded-full
+          text-white bg-gray-800
+          hover:text-black hover:bg-gray-400
+          "
+          />
+        </div>
       </div>
       <div className="flex flex-row">
         <div>
@@ -39,6 +65,9 @@ export function PlannerCardComponent({ resonator, apiItems, dbData, onEditResona
             width={64}
             height={64}
           />
+          <div>
+            <WaveplateComponent breakdown={waveplateNeeded} vertical={true} />
+          </div>
         </div>
         <div className="border">
           <div className="text-center">
@@ -69,41 +98,7 @@ export function PlannerCardComponent({ resonator, apiItems, dbData, onEditResona
           </div>
         </div>
       </div>
-      <div>
-        Waveplate:
-        <table>
-          <thead>
-            <tr>
-              <th>Type</th>
-              <th>Runs</th>
-              <th>Waveplate</th>
-            </tr>
-          </thead>
-          <tbody>
-            {waveplateNeeded.map(e => (
-              <tr key={e[0]}>
-                <td>{e[0]}</td>
-                <td>{(e[1] as number).toFixed(3)}</td>
-                <td>{(e[2] as number).toFixed(3)}</td>
-              </tr>
-            ))}
-            <tr>
-              <td>TOTAL</td>
-              <td>{waveplateNeeded.map(e => +e[1]).reduce((acc, e) => e + acc).toFixed(2)}</td>
-              <td>{waveplateNeeded.map(e => +e[2]).reduce((acc, e) => e + acc).toFixed(2)}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
       <ItemList data={convertedMaterials} />
-      <div className="flex flex-row">
-        <button onClick={() => confirm("Edit?") ? onEditResonator(dbData) : null}>
-          Edit
-        </button>
-        <button onClick={() => confirm("Delete?") ? deleteCharacter(resonator.name) : null}>
-          Delete
-        </button>
-      </div>
     </div >
   )
 }

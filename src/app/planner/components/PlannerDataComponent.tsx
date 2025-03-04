@@ -19,7 +19,7 @@ export const PlannerDataComponent = ({
     .sort((a, b) => a[1].priority - b[1].priority);
 
   return (
-    <div className="flex flex-row flex-wrap">
+    <div className="grid grid-cols-4 gap-2">
       {
         sortedResonators.map(([name, resonator]) => {
           const resonatorAssetData = resonators.find(e => e.name === name);
