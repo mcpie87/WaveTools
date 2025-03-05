@@ -30,8 +30,6 @@ export const RESONATOR_STATE_DB_ENTRY_DEFAULT = {
 // hack cause i'm a noob, need to remove name from this cause otherwise watch()
 // from form will yell at me
 export type ResonatorStateDBEntry = z.infer<typeof resonatorSchema>;
-export type ResonatorStateDBEntryWithoutName = Omit<ResonatorStateDBEntry, "name">;
-export type ResonatorStateDBEntryField = keyof ResonatorStateDBEntry
 
 export interface ResonatorDBSchema {
   [id: string]: ResonatorStateDBEntry;

@@ -160,10 +160,8 @@ data = []
             large: convert_to_png(role_value["RoleHeadIconLarge"]),
             big: convert_to_png(role_value["RoleHeadIconBig"]),
         },
-        materials: {
-            ascension: ascension_mats,
-            talents: get_talents(role_value["SkillTreeGroupId"]),
-        }
+        ascensionMaterials: ascension_mats,
+        talentMaterials: get_talents(role_value["SkillTreeGroupId"]),
     }
     data << new_row
     puts("#{new_row[:id]}  #{new_row[:rarity]} #{new_row[:name]}")

@@ -29,9 +29,6 @@ export const CharacterProvider = ({ children }: CharacterProviderProps) => {
   }, [characters]);
 
   const updateCharacter = (id: string, data: ResonatorStateDBEntry) => {
-    if (!data.name) {
-      data.name = id;
-    }
     const validationResult = resonatorSchema.safeParse(data);
     if (!validationResult.success) {
       console.error("Validation failed:", validationResult.error);

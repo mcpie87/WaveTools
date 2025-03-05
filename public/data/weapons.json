@@ -13,7 +13,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010015_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010015_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -162,7 +162,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020015_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020015_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -311,7 +311,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030015_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030015_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -460,7 +460,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040015_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040015_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -609,7 +609,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050015_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050015_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -758,7 +758,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010024_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010024_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -907,7 +907,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020024_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020024_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -1056,7 +1056,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030024_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030024_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -1205,7 +1205,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040024_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040024_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -1354,7 +1354,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050024_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050024_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -1503,7 +1503,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010013_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010013_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -1652,7 +1652,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020013_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020013_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -1801,7 +1801,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030013_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030013_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -1950,7 +1950,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040013_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040013_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -2099,7 +2099,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050013_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050013_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -2248,7 +2248,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010012_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010012_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -2365,7 +2365,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020012_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020012_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -2482,7 +2482,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030012_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030012_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -2599,7 +2599,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040012_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040012_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -2716,7 +2716,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050012_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050012_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -2833,7 +2833,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010011_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010011_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -2950,7 +2950,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020011_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020011_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -3067,7 +3067,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030011_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030011_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -3184,7 +3184,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040011_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040011_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -3301,7 +3301,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050011_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050011_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -3418,7 +3418,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010023_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010023_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -3567,7 +3567,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020023_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020023_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -3716,7 +3716,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050023_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050023_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -3865,7 +3865,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010034_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010034_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -4014,7 +4014,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020034_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020034_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -4163,7 +4163,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050034_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050034_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -4312,7 +4312,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010044_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010044_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -4461,7 +4461,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020044_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020044_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -4610,7 +4610,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030044_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030044_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -4759,7 +4759,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040044_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040044_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -4908,7 +4908,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050044_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050044_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -5057,7 +5057,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010043_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010043_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -5206,7 +5206,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020043_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020043_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -5355,7 +5355,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050043_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050043_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -5504,7 +5504,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010053_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010053_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -5653,7 +5653,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020053_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020053_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -5802,7 +5802,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030053_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030053_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -5951,7 +5951,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040053_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040053_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -6100,7 +6100,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050053_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050053_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -6249,7 +6249,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010064_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010064_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -6398,7 +6398,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020064_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020064_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -6547,7 +6547,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030064_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030064_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -6696,7 +6696,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050064_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050064_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -6845,7 +6845,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030023_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030023_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -6994,7 +6994,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040023_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040023_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -7143,7 +7143,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030034_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030034_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -7292,7 +7292,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040034_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040034_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -7441,7 +7441,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010074_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010074_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -7590,7 +7590,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020074_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020074_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -7739,7 +7739,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030074_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030074_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -7888,7 +7888,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040074_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040074_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -8037,7 +8037,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050074_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050074_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -8186,7 +8186,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010016_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010016_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -8335,7 +8335,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050016_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050016_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -8484,7 +8484,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010014_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010084_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -8633,7 +8633,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020014_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020084_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -8782,7 +8782,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030014_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030084_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -8931,7 +8931,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050014_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050084_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -9080,7 +9080,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040064_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040064_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -9229,7 +9229,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030043_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030043_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -9378,7 +9378,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040043_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040043_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -9527,7 +9527,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010026_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010026_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -9676,7 +9676,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020016_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020016_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -9825,7 +9825,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010063_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010063_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -9974,7 +9974,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050026_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050026_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -10123,7 +10123,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040016_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040016_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -10272,7 +10272,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050027_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050027_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -10421,7 +10421,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040074_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040084_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -10570,7 +10570,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020019_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020019_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -10719,7 +10719,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050017_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050017_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -10868,7 +10868,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020017_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020017_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -11017,7 +11017,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010094_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010094_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -11166,7 +11166,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020094_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020094_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -11315,7 +11315,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030094_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030094_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -11464,7 +11464,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040094_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040094_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -11613,7 +11613,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050094_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050094_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -11762,7 +11762,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040018_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040018_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -11911,7 +11911,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030017_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030017_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -12060,7 +12060,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020025_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020025_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -12209,7 +12209,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050029_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050029_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,
@@ -12358,7 +12358,7 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050036_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050036_UI.png"
     },
-    "materials": [
+    "ascensionMaterials": [
       {
         "rank": 0,
         "max": 20,

@@ -116,8 +116,8 @@ export const ResonatorForm = ({
                 </div>
                 {Object.entries(ActiveSkillNames).map(([skillKey, skillValue]) => {
                   const typedSkillKey = skillKey as resonatorSchemaForForm;
-                  const currentSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.current`;
-                  const desiredSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.desired`;
+                  const currentSkillKey: Path<ResonatorStateDBEntry> = `${typedSkillKey}.current`;
+                  const desiredSkillKey: Path<ResonatorStateDBEntry> = `${typedSkillKey}.desired`;
                   return (
                     <div key={skillKey} className="flex flex-col items-center justify-center">
                       <h3>{skillValue}</h3>
@@ -151,8 +151,8 @@ export const ResonatorForm = ({
                 </div>
                 {Object.entries(PassiveSkillNames).map(([skillKey, skillValue]) => {
                   const typedSkillKey = skillKey as resonatorSchemaForForm;
-                  const currentSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.current`;
-                  const desiredSkillKey: Path<ResonatorStateDBEntryWithoutName> = `${typedSkillKey}.desired`;
+                  const currentSkillKey: Path<ResonatorStateDBEntry> = `${typedSkillKey}.current`;
+                  const desiredSkillKey: Path<ResonatorStateDBEntry> = `${typedSkillKey}.desired`;
                   return (
                     <div key={skillKey} className="flex flex-col items-center justify-center">
                       <h3>{skillValue}</h3>

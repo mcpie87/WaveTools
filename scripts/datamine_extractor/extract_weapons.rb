@@ -21,7 +21,7 @@ weapon_types = load_file("#{DATAMINE_PATH}/#{BINDATA}/mapping/mapping.json", tru
 
 def get_weapon_breach_info(weapon_id)
   @weapon_breach_info
-    .select{|e| e["WeaponId"] == weapon_id}
+    .select{|e| e["BreachId"] == weapon_id}
     .map{|row|
       {
         rank: row["Level"],
@@ -57,7 +57,7 @@ data = []
             middle: convert_to_png(weapon_value["IconMiddle"]),
             small: convert_to_png(weapon_value["IconSmall"]),
         },
-        materials: get_weapon_breach_info(weapon_value["ItemId"])
+        ascensionMaterials: get_weapon_breach_info(weapon_value["ItemId"])
     }
     data << new_row
     puts("#{new_row[:id]}  #{new_row[:rarity]} #{new_row[:name]}")

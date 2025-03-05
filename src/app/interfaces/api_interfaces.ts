@@ -47,6 +47,12 @@ export interface ITalentCost {
   };
 }
 
+interface IAscension {
+  rank: number;
+  max: number;
+  items: IItemEntry[];
+}
+
 export interface IAPIResonator {
   id: number;
   name: string;
@@ -60,22 +66,31 @@ export interface IAPIResonator {
     large: IconURL;
     big: IconURL;
   };
-  materials: {
-    ascension: {
-      rank: number;
-      max: number;
-      items: IItemEntry[];
-    }[];
-    talents: {
-      normalAttack: ITalentCost;
-      resonanceSkill: ITalentCost;
-      resonanceLiberation: ITalentCost;
-      inherentFirst: ITalentCost;
-      inherentSecond: ITalentCost;
-      intro: ITalentCost;
-      forte: ITalentCost;
-      outro: ITalentCost;
-      cooking: ITalentCost;
-    }
-  }
-};
+  ascensionMaterials: IAscension[];
+  talentMaterials: {
+    normalAttack: ITalentCost;
+    resonanceSkill: ITalentCost;
+    resonanceLiberation: ITalentCost;
+    inherentFirst: ITalentCost;
+    inherentSecond: ITalentCost;
+    intro: ITalentCost;
+    forte: ITalentCost;
+    outro: ITalentCost;
+    cooking: ITalentCost;
+  };
+}
+
+export interface IAPIWeapon {
+  id: number;
+  name: string;
+  rarity: number;
+  weaponType: IWeaponType;
+  icon: {
+    default: IconURL;
+    middle: IconURL;
+    small: IconURL;
+  };
+  ascensionMaterials: IAscension[];
+}
+
+export type IAPIPlannerElement = IAPIResonator | IAPIWeapon;
