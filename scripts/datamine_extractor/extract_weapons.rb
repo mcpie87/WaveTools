@@ -20,29 +20,37 @@ weapon_types = load_file("#{DATAMINE_PATH}/#{BINDATA}/mapping/mapping.json", tru
 @iteminfo = load_file("#{DATAMINE_PATH}/#{BINDATA}/item/iteminfo.json")
 
 def get_weapon_breach_info(weapon_id)
-  @weapon_breach_info
-    .select{|e| e["BreachId"] == weapon_id}
+  ascension_mats = @weapon_breach_info.select{|e| e["BreachId"] == weapon_id}
     .map{|row|
-      {
-        rank: row["Level"],
-        max: row["LevelLimit"],
-        items: [
-          {
-            id: 2,
-            name: get_textmap_name(@iteminfo[2]["Name"]),
-            value: row["GoldConsume"]
-          },
-          row["Consume"].map{|mat|
+        {
+          rank: row["Level"],
+          max: row["LevelLimit"],
+          items: [
             {
-              id: mat["Key"],
-              name: get_textmap_name(@iteminfo[mat["Key"]]["Name"]),
-              value: mat["Value"],
+              id: 2,
+              name: get_textmap_name(@iteminfo[2]["Name"]),
+              value: row["GoldConsume"]
+            },
+            row["Consume"].map{|mat|
+              {
+                id: mat["Key"],
+                name: get_textmap_name(@iteminfo[mat["Key"]]["Name"]),
+                value: mat["Value"],
+              }
             }
-          }
-        ].flatten
+          ].flatten
+        }
       }
-    }
-    .sort_by { |row| row[:rank] }
+      .sort_by { |row| row[:rank] }
+
+  ascension_mats_items = ascension_mats.map { |entry| entry[:items] }
+      .reverse
+  
+  first_elem = ascension_mats_items.shift
+  ascension_mats_items << first_elem
+  retval = ascension_mats.reverse.each_with_index.map { |entry, index| entry.merge(items: ascension_mats_items[index]) }
+
+  return retval.reverse
 end
 
 data = []
