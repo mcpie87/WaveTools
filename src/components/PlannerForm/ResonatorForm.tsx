@@ -1,7 +1,7 @@
 'use client'; // Mark as a Client Component in Next.js
 
 import { useForm } from 'react-hook-form';
-import { levelSelectValues, nextLevel, prevLevel, ResonatorStateDBEntry, ResonatorStateDBEntryWithoutName } from '../../types/resonatorTypes';
+import { levelSelectValues, nextLevel, prevLevel, ResonatorStateDBEntry } from '../../types/resonatorTypes';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { ActiveSkillNames, PassiveSkillNames, resonatorSchema, resonatorSchemaFieldsMinMaxValues, resonatorSchemaForForm } from '@/schemas/resonatorSchema';
 import { InputNumber } from '../InputNumber';

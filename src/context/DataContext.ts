@@ -1,8 +1,12 @@
 import { createContext, useContext } from 'react';
-import { IAPIItem, IAPIResonator } from '../app/interfaces/api_interfaces';
+import { IAPIItem, IAPIResonator, IAPIWeapon } from '../app/interfaces/api_interfaces';
 
 export interface DataContextType {
-  data: { items: IAPIItem[]; resonators: IAPIResonator[] } | null;
+  data: {
+    items: IAPIItem[];
+    resonators: IAPIResonator[];
+    weapons: IAPIWeapon[];
+  } | null;
   loading: boolean;
   error: Error | null;
 }

@@ -1,35 +1,27 @@
-import { IAPIItem, IAPIResonator } from "@/app/interfaces/api_interfaces";
+import { IAPIItem } from "@/app/interfaces/api_interfaces";
 import { IItem } from "@/app/interfaces/item";
 import { ItemCommon, ItemEchoEXP, ItemEliteBoss, ItemResonatorEXP, ItemSpecialty, ItemTuner, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
+import { IResonatorPlanner, IWeaponPlanner } from "@/app/interfaces/planner_item";
 import ItemList from "@/components/items/ItemList";
 import { WaveplateComponent } from "@/components/WaveplateComponent";
-import { ResonatorDBSchema } from "@/types/resonatorTypes";
 import { calculateWaveplate, convertItemMapToItemList, filterType } from "@/utils/items_utils";
 import { getMaterials } from "@/utils/planner_utils";
 
 interface PlannerSummaryComponentProps {
-  dbResonators: ResonatorDBSchema;
-  apiResonators: IAPIResonator[];
+  plannerItems: (IResonatorPlanner | IWeaponPlanner)[];
   apiItems: IAPIItem[];
 }
 export const PlannerSummaryComponent = ({
-  dbResonators,
-  apiResonators,
-  apiItems
+  plannerItems,
+  apiItems,
 }: PlannerSummaryComponentProps) => {
-
   const getCombinedRequiredMaterials = () => {
     const combinedRequiredMaterials: { [key: string]: number } = {};
 
-    for (const dbResonator of Object.values(dbResonators)) {
-      const apiResonator = apiResonators.find((e => e.name === dbResonator.name));
-      if (!apiResonator) {
-        throw new Error(`Resonator not present in API ${dbResonator.name}`);
-      }
+    for (const plannerItem of plannerItems) {
+      const requiredMaterials = getMaterials(plannerItem, apiItems);
 
-      const requiredMaterialsForResonator = getMaterials(dbResonator, apiItems, apiResonator);
-
-      for (const [material, amount] of Object.entries(requiredMaterialsForResonator)) {
+      for (const [material, amount] of Object.entries(requiredMaterials)) {
         combinedRequiredMaterials[material] = (combinedRequiredMaterials[material] ?? 0) + amount;
       }
     }

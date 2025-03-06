@@ -13,31 +13,48 @@ import { InventoryForm } from '@/components/PlannerForm/InventoryForm';
 import { ItemStateDBSchema } from '@/types/itemTypes';
 import { useItems } from '@/context/ItemContext';
 import { ManagePriorityComponent } from '@/components/PlannerForm/ManagePriorityComponent';
+import { useWeapons } from '@/context/WeaponContext';
+import { usePriority } from '@/hooks/usePriority';
+import { weaponSchema } from '@/schemas/weaponSchema';
+import { AddWeaponForm } from '@/components/PlannerForm/AddWeaponForm';
+import { WeaponStateDBEntry } from '@/types/weaponTypes';
+import { WeaponForm } from '@/components/PlannerForm/WeaponForm';
+import { getPlannerDBSize, getPlannerItems } from '@/utils/planner_utils';
 
 export default function CharactersPage() {
-  const [showEditForm, setShowEditForm] = useState(false);
-  const [showAddForm, setShowAddForm] = useState(false);
+  const [showAddResonatorForm, setShowAddResonatorForm] = useState(false);
+  const [showAddWeaponForm, setShowAddWeaponForm] = useState(false);
+  const [showEditResonatorForm, setShowEditResonatorForm] = useState(false);
+  const [showEditWeaponForm, setShowEditWeaponForm] = useState(false);
   const [showInventoryForm, setShowInventoryForm] = useState(false);
   const [showManagePriority, setShowManagePriority] = useState(false);
   const [selectedResonator, setSelectedResonator] = useState<ResonatorStateDBEntry | null>(null);
+  const [selectedWeapon, setSelectedWeapon] = useState<WeaponStateDBEntry | null>(null);
 
   const resonatorContext = useCharacters();
   const itemContext = useItems();
+  const weaponContext = useWeapons();
+  const { updatePriority } = usePriority();
   const { data, error, loading } = useData();
   if (loading) return (<div>Loading...</div>);
   if (!data) return (<div>Data is not present</div>);
   if (error) return (<div>Error present: {error.message}</div>);
-  if (!resonatorContext) return (<div>Resonator context does not exist</div>);
-  if (!itemContext) return (<div>Item context does not exist</div>);
-  const { characters } = resonatorContext;
+  const { weapons: apiWeapons, resonators, items } = data;
   const { updateItems, items: dbItems } = itemContext;
-  const { resonators, items } = data;
-  const { updateCharacter, updatePriority } = resonatorContext;
+  const { updateWeapon, deleteWeapon, weapons: dbWeapons } = weaponContext;
+  const { characters, updateCharacter, deleteCharacter } = resonatorContext;
+  const plannerItems = getPlannerItems(characters, resonators, dbWeapons, apiWeapons, items);
 
   const handleResonatorSubmit = (data: ResonatorStateDBEntry) => {
     const parsedData = resonatorSchema.parse(data);
     updateCharacter(parsedData.name, parsedData);
-    setShowEditForm(false);
+    setShowEditResonatorForm(false);
+  };
+
+  const handleWeaponSubmit = (data: WeaponStateDBEntry) => {
+    const parsedData = weaponSchema.parse(data);
+    updateWeapon(parsedData.name, parsedData);
+    setShowEditWeaponForm(false);
   };
 
   const handleInventorySubmit = (data: ItemStateDBSchema) => {
@@ -51,27 +68,57 @@ export default function CharactersPage() {
     setSelectedResonator({
       ...resonatorSchema.parse({
         id: resonator?.id,
-        priority: Object.keys(characters).length,
+        priority: getPlannerDBSize(characters, dbWeapons) + 1,
         rarity: resonator?.rarity,
       }),
       name
     });
-    setShowAddForm(false);
-    setShowEditForm(true);
+    setShowAddResonatorForm(false);
+    setShowEditResonatorForm(true);
+  }
+
+  const handleAddWeapon = (name: string) => {
+    const weapon = apiWeapons.find(entry => entry.name === name);
+    console.log("handleAddWeapon", weapon);
+    setSelectedWeapon({
+      ...weaponSchema.parse({
+        id: weapon?.id,
+        orderId: dbWeapons[name]?.length ?? 0,
+        priority: getPlannerDBSize(characters, dbWeapons) + 1,
+        rarity: weapon?.rarity,
+      }),
+      name
+    });
+    setShowAddWeaponForm(false);
+    setShowEditWeaponForm(true);
   }
 
   const handleEditResonator = (resonator: ResonatorStateDBEntry) => {
     console.log("handleEditResonator", resonator);
     setSelectedResonator(resonator);
-    setShowEditForm(true);
+    setShowEditResonatorForm(true);
+  }
+
+  const handleEditWeapon = (weapon: WeaponStateDBEntry) => {
+    console.log("handleEditWeapon", weapon);
+    setSelectedWeapon(weapon);
+    setShowEditWeaponForm(true);
+  }
+
+  const handleDeleteResonator = (resonator: ResonatorStateDBEntry) => {
+    console.log("handleDeleteResonator", resonator);
+    deleteCharacter(resonator.name);
+  }
+  const handleDeleteWeapon = (weapon: WeaponStateDBEntry) => {
+    console.log("handleDeleteWeapon", weapon);
+    deleteWeapon(weapon.name, weapon.orderId);
   }
 
   return (
     <div className="flex flex-row justify-between">
       <div className="border w-[350px] order-2 shrink-0">
         <PlannerSummaryComponent
-          dbResonators={characters}
-          apiResonators={resonators}
+          plannerItems={plannerItems}
           apiItems={items}
         />
       </div>
@@ -79,9 +126,15 @@ export default function CharactersPage() {
         <div className="flex flex-row gap-x-2 justify-center">
           <button
             className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-            onClick={() => setShowAddForm(!showAddForm)}
+            onClick={() => setShowAddResonatorForm(!showAddResonatorForm)}
           >
             Add character
+          </button>
+          <button
+            className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+            onClick={() => setShowAddWeaponForm(!showAddWeaponForm)}
+          >
+            Add weapon
           </button>
           <button
             className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
@@ -96,19 +149,34 @@ export default function CharactersPage() {
             Manage Priority
           </button>
         </div>
-        {showEditForm && selectedResonator && (
+        {showEditResonatorForm && selectedResonator && (
           <ResonatorForm
             initialData={selectedResonator}
             onSubmit={handleResonatorSubmit}
-            showForm={showEditForm}
-            onClose={() => setShowEditForm(false)}
+            showForm={showEditResonatorForm}
+            onClose={() => setShowEditResonatorForm(false)}
           />
         )}
-        {showAddForm && (
+        {showEditWeaponForm && selectedWeapon && (
+          <WeaponForm
+            initialData={selectedWeapon}
+            onSubmit={handleWeaponSubmit}
+            showForm={showEditWeaponForm}
+            onClose={() => setShowEditWeaponForm(false)}
+          />
+        )}
+        {showAddResonatorForm && (
           <AddResonatorForm
-            showForm={showAddForm}
-            onClose={() => setShowAddForm(false)}
+            showForm={showAddResonatorForm}
+            onClose={() => setShowAddResonatorForm(false)}
             onAddResonator={handleAddResonator}
+          />
+        )}
+        {showAddWeaponForm && (
+          <AddWeaponForm
+            showForm={showAddWeaponForm}
+            onClose={() => setShowAddWeaponForm(false)}
+            onAddWeapon={handleAddWeapon}
           />
         )}
         {showInventoryForm && (
@@ -123,17 +191,18 @@ export default function CharactersPage() {
         {showManagePriority && (
           <ManagePriorityComponent
             showForm={showManagePriority}
-            dbResonators={characters}
-            apiResonators={resonators}
+            plannerItems={plannerItems}
             onClose={() => setShowManagePriority(false)}
             onDragAndDrop={updatePriority}
           />
         )}
         <PlannerDataComponent
-          characters={characters}
-          resonators={resonators}
+          plannerItems={plannerItems}
           apiItems={items}
           onEditResonator={handleEditResonator}
+          onEditWeapon={handleEditWeapon}
+          onDeleteResonator={handleDeleteResonator}
+          onDeleteWeapon={handleDeleteWeapon}
         />
       </div>
     </div>

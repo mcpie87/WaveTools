@@ -27,7 +27,6 @@ function EchoSimulationComponent() {
     );
     setRows(rows);
     const end = performance.now();
-    console.log("CALCULATE", start, end, end - start);
     setCalculateTime(end - start);
     setShowResults(true);
   }

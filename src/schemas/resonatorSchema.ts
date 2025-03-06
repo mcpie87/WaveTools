@@ -1,3 +1,4 @@
+import { PLANNER_TYPE } from '@/app/interfaces/planner_item';
 import { z } from 'zod';
 
 // it's lowercase due easier access
@@ -97,6 +98,7 @@ export const passiveSkillSchema = createCurrentDesiredSchema(passiveSkillBaseSch
 
 export const resonatorSchema = z.object({
   id: z.number(),
+  type: z.string().default(PLANNER_TYPE.RESONATOR),
   name: z.string().default(""),
   priority: z.number(),
   rarity: z.number(),
@@ -112,4 +114,7 @@ export const resonatorSchema = z.object({
 // hack cause i'm a noob, need to remove name from this cause otherwise watch()
 // from form will yell at me
 export type resonatorSchemaField = keyof typeof resonatorSchema.shape;
-export type resonatorSchemaForForm = Exclude<keyof typeof resonatorSchema.shape, "name" | "priority" | "rarity" | "id">;
+export type resonatorSchemaForForm = Exclude<
+  keyof typeof resonatorSchema.shape,
+  "name" | "priority" | "rarity" | "id" | "type"
+>;

@@ -31,7 +31,7 @@ export interface IWaveplateSimResonanceEntry {
 
 export interface IWaveplateSimEnergyEntry {
   SHELL: number;
-  RESONATOR_EXP: number;
+  WEAPON_EXP: number;
 }
 
 export interface IWaveplateSimShellEntry {
@@ -96,13 +96,13 @@ export const WAVEPLATE_SIM_RESONANCE: { [key: number]: IWaveplateSimResonanceEnt
 
 export const WAVEPLATE_SIM_ENERGY_COST = 40;
 export const WAVEPLATE_SIM_ENERGY: { [key: number]: IWaveplateSimEnergyEntry } = {
-  2: { SHELL: 2000, RESONATOR_EXP: 37687.5 },
-  3: { SHELL: 2800, RESONATOR_EXP: 53361.1111111111 },
-  4: { SHELL: 3600, RESONATOR_EXP: 67718.75 },
-  5: { SHELL: 3800, RESONATOR_EXP: 74666.6666666667 },
-  6: { SHELL: 4000, RESONATOR_EXP: 0 },
-  7: { SHELL: 4100, RESONATOR_EXP: 76800 },
-  8: { SHELL: 4200, RESONATOR_EXP: 0 }
+  2: { SHELL: 2000, WEAPON_EXP: 37687.5 },
+  3: { SHELL: 2800, WEAPON_EXP: 53361.1111111111 },
+  4: { SHELL: 3600, WEAPON_EXP: 67718.75 },
+  5: { SHELL: 3800, WEAPON_EXP: 74666.6666666667 },
+  6: { SHELL: 4000, WEAPON_EXP: 0 },
+  7: { SHELL: 4100, WEAPON_EXP: 76800 },
+  8: { SHELL: 4200, WEAPON_EXP: 0 }
 }
 
 export const WAVEPLATE_SIM_SHELL_COST = 40;

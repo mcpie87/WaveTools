@@ -8,4 +8,10 @@ type ItemContextType = {
 
 export const ItemContext = createContext<ItemContextType | undefined>(undefined);
 
-export const useItems = () => useContext(ItemContext);
+export const useItems = () => {
+  const context = useContext(ItemContext);
+  if (!context) {
+    throw new Error("Item context not found");
+  }
+  return context;
+}

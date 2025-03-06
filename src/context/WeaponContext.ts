@@ -5,9 +5,15 @@ type WeaponContextType = {
   weapons: WeaponDBSchema;
   updateWeapon: (id: string, data: WeaponStateDBEntry) => void;
   deleteWeapon: (id: string, index: number) => void;
-  updatePriority: (name: string, index: number, newPriority: number) => void;
+  updatePriorities: (newWeapons: WeaponStateDBEntry[]) => void;
 };
 
 export const WeaponContext = createContext<WeaponContextType | undefined>(undefined);
 
-export const useWeapons = () => useContext(WeaponContext);
+export const useWeapons = () => {
+  const context = useContext(WeaponContext);
+  if (!context) {
+    throw new Error("Weapon context not found");
+  }
+  return context;
+}

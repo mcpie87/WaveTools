@@ -1,8 +1,8 @@
 import { IAPIItem } from "@/app/interfaces/api_interfaces";
 import { IItem } from "@/app/interfaces/item";
 import { parseItemToItemCard } from "./api_parser";
-import { ItemEliteBoss, ItemResonatorEXP, ItemWeapon, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
-import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_ELITE_BOSS_COST, WAVEPLATE_FORGERY, WAVEPLATE_FORGERY_COST, WAVEPLATE_SIM_RESONANCE, WAVEPLATE_SIM_RESONANCE_COST, WAVEPLATE_SIM_SHELL, WAVEPLATE_SIM_SHELL_COST, WAVEPLATE_WEEKLY_BOSS, WAVEPLATE_WEEKLY_BOSS_COST } from "@/constants/waveplate_usage";
+import { ItemEliteBoss, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
+import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_ELITE_BOSS_COST, WAVEPLATE_FORGERY, WAVEPLATE_FORGERY_COST, WAVEPLATE_SIM_ENERGY, WAVEPLATE_SIM_ENERGY_COST, WAVEPLATE_SIM_RESONANCE, WAVEPLATE_SIM_RESONANCE_COST, WAVEPLATE_SIM_SHELL, WAVEPLATE_SIM_SHELL_COST, WAVEPLATE_WEEKLY_BOSS, WAVEPLATE_WEEKLY_BOSS_COST } from "@/constants/waveplate_usage";
 import { WaveplateEntry } from "@/components/WaveplateComponent";
 
 export function findItemByName(name: string, items: IAPIItem[]): IAPIItem | undefined {
@@ -69,7 +69,7 @@ export function calculateWaveplate(items: IItem[]): WaveplateEntry[] {
   // const tacetFieldsDropRates = WAVEPLATE_TACET_FIELDS[worldLevel];
 
   const simResonanceDropRates = WAVEPLATE_SIM_RESONANCE[worldLevel > 7 ? 7 : worldLevel];
-  // const simEnergyDropRates = WAVEPLATE_SIM_ENERGY[worldLevel > 7 ? 7 : worldLevel];
+  const simEnergyDropRates = WAVEPLATE_SIM_ENERGY[worldLevel > 7 ? 7 : worldLevel];
   const simShellDropRates = WAVEPLATE_SIM_SHELL[worldLevel];
 
   const weeklyCount = getWeeklyCountFromList(items) / weeklyBossDropRates.WEEKLY;
@@ -84,6 +84,10 @@ export function calculateWaveplate(items: IItem[]): WaveplateEntry[] {
   resonatorExpNeeded -= eliteCount * eliteBossDropRates.RESONATOR_EXP;
   const simResonatorCount = resonatorExpNeeded / simResonanceDropRates.RESONATOR_EXP;
 
+  let weaponExpNeeded = getWeaponExpNeededFromList(items);
+  weaponExpNeeded -= eliteCount * eliteBossDropRates.WEAPON_EXP;
+  const simEnergyCount = weaponExpNeeded / simEnergyDropRates.WEAPON_EXP;
+
   let shellNeeded = getShellFromItemList(items);
   shellNeeded -= weeklyCount * weeklyBossDropRates.SHELL;
   shellNeeded -= eliteCount * eliteBossDropRates.SHELL;
@@ -97,6 +101,7 @@ export function calculateWaveplate(items: IItem[]): WaveplateEntry[] {
     getWaveplateEntry("elite", eliteCount, WAVEPLATE_ELITE_BOSS_COST),
     getWaveplateEntry("forgery", forgeryCount, WAVEPLATE_FORGERY_COST),
     getWaveplateEntry("resonator exp", simResonatorCount, WAVEPLATE_SIM_RESONANCE_COST),
+    getWaveplateEntry("weapon exp", simEnergyCount, WAVEPLATE_SIM_ENERGY_COST),
   ];
 }
 
@@ -131,6 +136,14 @@ const getResonatorExpNeededFromList = (items: IItem[]): number => {
   const vals = [1000, 3000, 8000, 20000];
   return items
     .filter((item) => Object.values(ItemResonatorEXP).includes(item.name as ItemResonatorEXP))
+    .map(item => (item.value ?? 0) * vals[item.rarity - 2])
+    .reduce((sum, item) => sum + item, 0);
+}
+
+const getWeaponExpNeededFromList = (items: IItem[]): number => {
+  const vals = [1000, 3000, 8000, 20000];
+  return items
+    .filter((item) => Object.values(ItemWeaponEXP).includes(item.name as ItemWeaponEXP))
     .map(item => (item.value ?? 0) * vals[item.rarity - 2])
     .reduce((sum, item) => sum + item, 0);
 }

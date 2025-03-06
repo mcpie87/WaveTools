@@ -49,32 +49,23 @@ export const CharacterProvider = ({ children }: CharacterProviderProps) => {
     });
   }
 
-  const updatePriority = (name: string, newPriority: number) => {
-    const prevPriority = characters[name].priority;
-    const prev = { ...characters };
-
-    if (newPriority < prevPriority) {
-      for (const key in prev) {
-        if (newPriority <= prev[key].priority && prev[key].priority < prevPriority) {
-          ++prev[key].priority;
-        }
+  const updatePriorities = (updatedWeapons: ResonatorStateDBEntry[]) => {
+    setCharacters((prev) => {
+      const newCharacters = { ...prev };
+      for (const resonator of updatedWeapons) {
+        newCharacters[resonator.name].priority = resonator.priority;
       }
-    }
-
-    if (newPriority > prevPriority) {
-      for (const key in prev) {
-        if (prevPriority < prev[key].priority && prev[key].priority <= newPriority) {
-          --prev[key].priority;
-        }
-      }
-    }
-
-    prev[name].priority = newPriority;
-    setCharacters(prev);
+      return newCharacters;
+    });
   }
 
   return (
-    <CharacterContext.Provider value={{ characters, updateCharacter, deleteCharacter, updatePriority }}>
+    <CharacterContext.Provider value={{
+      characters,
+      updateCharacter,
+      deleteCharacter,
+      updatePriorities
+    }}>
       {children}
     </CharacterContext.Provider>
   );

@@ -25,7 +25,6 @@ export const ItemProvider = ({ children }: ItemProviderProps) => {
   }, [items]);
 
   const updateItems = (data: ItemStateDBSchema) => {
-    console.log("updateItems", data)
     setItems(data);
   };
 

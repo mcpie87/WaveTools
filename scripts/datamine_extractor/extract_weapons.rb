@@ -55,20 +55,20 @@ end
 
 data = []
 @weapon_info.each do |weapon_value|
-    new_row = {
-        id: weapon_value["ItemId"],
-        name: get_textmap_name(weapon_value["WeaponName"]),
-        rarity: weapon_value["QualityId"],
-        weaponType: weapon_types[weapon_value["WeaponType"]],
-        icon: {
-            default: convert_to_png(weapon_value["Icon"]),
-            middle: convert_to_png(weapon_value["IconMiddle"]),
-            small: convert_to_png(weapon_value["IconSmall"]),
-        },
-        ascensionMaterials: get_weapon_breach_info(weapon_value["ItemId"])
-    }
-    data << new_row
-    puts("#{new_row[:id]}  #{new_row[:rarity]} #{new_row[:name]}")
+  new_row = {
+    id: weapon_value["ItemId"],
+    name: get_textmap_name(weapon_value["WeaponName"]),
+    rarity: weapon_value["QualityId"],
+    weaponType: weapon_types[weapon_value["WeaponType"]],
+    icon: {
+      default: convert_to_png(weapon_value["Icon"]),
+      middle: convert_to_png(weapon_value["IconMiddle"]),
+      small: convert_to_png(weapon_value["IconSmall"]),
+    },
+    ascensionMaterials: get_weapon_breach_info(weapon_value["ItemId"])
+  }
+  data << new_row
+  puts("#{new_row[:id]}  #{new_row[:rarity]} #{new_row[:name]}")
 end
 
 save_json(data, "weapons.json")

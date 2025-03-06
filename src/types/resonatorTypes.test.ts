@@ -1,4 +1,4 @@
-import { ASCENSION_MATERIALS } from "@/constants/character_ascension";
+import { RESONATOR_ASCENSION_MATERIALS } from "@/constants/character_ascension";
 import { getAscensions, nextLevel, prevLevel } from "./resonatorTypes";
 
 const ascensionMap = {
@@ -61,7 +61,7 @@ describe('testing getAscensions materials', () => {
     const ascensions = getAscensions(1, 90);
     const results: { [key: string]: number } = {};
     for (const ascension of ascensions) {
-      const stage = ASCENSION_MATERIALS[ascension];
+      const stage = RESONATOR_ASCENSION_MATERIALS[ascension];
       results.SHELL = (results.SHELL ?? 0) + stage.SHELL;
       results.ELITE_MATERIAL = (results.ELITE_MATERIAL ?? 0) + stage.ELITE_MATERIAL;
       results.SPECIALTY_MATERIAL = (results.SPECIALTY_MATERIAL ?? 0) + stage.SPECIALTY_MATERIAL;
@@ -75,6 +75,14 @@ describe('testing getAscensions materials', () => {
     expect(results["COMMON3"]).toBe(12);
     expect(results["COMMON4"]).toBe(12);
     expect(results["COMMON5"]).toBe(4);
+  })
+
+  test('pre-asc -> asc+1 should ascend', () => {
+    for (const [ascension, key] of Object.entries(ascensionMap)) {
+      const [from, to] = [parseInt(ascension), parseInt(ascension) + 1];
+      const ascensions = getAscensions(from, to);
+      expect(ascensions).toStrictEqual([key]);
+    }
   })
 });
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { IAPIItem, IAPIResonator } from "@/app/interfaces/api_interfaces";
+import { IAPIItem, IAPIResonator, IAPIWeapon } from "@/app/interfaces/api_interfaces";
 import { DataContext, DataContextType } from "@/context/DataContext";
 import { ReactNode, useEffect, useState } from "react";
 
@@ -22,9 +22,13 @@ export const DataProvider = ({ children }: DataProviderProps) => {
         const resonatorResponse = await fetch(`${basePath}/data/resonator.json`);
         const resonatorDb: IAPIResonator[] = await resonatorResponse.json();
 
+        const weaponsResponse = await fetch(`${basePath}/data/weapons.json`);
+        const weaponsDb: IAPIWeapon[] = await weaponsResponse.json();
+
         setData({
           items: itemsDb,
           resonators: resonatorDb,
+          weapons: weaponsDb,
         });
         setLoading(false);
       } catch (err) {

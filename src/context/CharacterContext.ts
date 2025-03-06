@@ -5,9 +5,15 @@ type CharacterContextType = {
   characters: ResonatorDBSchema;
   updateCharacter: (id: string, data: ResonatorStateDBEntry) => void;
   deleteCharacter: (id: string) => void;
-  updatePriority: (name: string, newPriority: number) => void;
+  updatePriorities: (newResonators: ResonatorStateDBEntry[]) => void;
 };
 
 export const CharacterContext = createContext<CharacterContextType | undefined>(undefined);
 
-export const useCharacters = () => useContext(CharacterContext);
+export const useCharacters = () => {
+  const context = useContext(CharacterContext);
+  if (!context) {
+    throw new Error("Character context not found");
+  }
+  return context;
+}

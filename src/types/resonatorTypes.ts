@@ -91,6 +91,8 @@ export const getAscensions = (from: number | string, to: number | string): numbe
       res.push(ascensionKey);
     } else if (fromInt < levelInt && levelInt < toInt) {
       res.push(ascensionKey);
+    } else if (fromInt === levelInt && levelInt < toInt && typeof from === "number") {
+      res.push(ascensionKey);
     }
   }
   return res;

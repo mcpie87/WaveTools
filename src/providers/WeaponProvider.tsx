@@ -32,20 +32,33 @@ export const WeaponProvider = ({ children }: WeaponProviderProps) => {
   const updateWeapon = (id: string, data: WeaponStateDBEntry) => {
     const validationResult = weaponSchema.safeParse(data);
     if (!validationResult.success) {
-      console.error("Validation failed:", validationResult.error);
+      console.error("Validation failed:", validationResult.error, data);
       return;
     }
 
     const arrToUpdate = weapons[id];
     if (!arrToUpdate) {
-      setWeapons((prev) => ({
-        ...prev,
-        [id]: [data],
-      }));
+      setWeapons((prev) => {
+        return ({
+          ...prev,
+          [id]: [data],
+        })
+      });
       return;
     }
     const updatedArr = [...arrToUpdate];
-    updatedArr.push(data);
+    if (data.orderId > updatedArr.length) {
+      // addition
+      updatedArr.push(data);
+    } else {
+      // edit
+      updatedArr[data.orderId] = data;
+    }
+    // force reorder on items
+    for (let i = 0; i < updatedArr.length; ++i) {
+      updatedArr[i].orderId = i;
+    }
+
     setWeapons((prev) => ({
       ...prev,
       [id]: updatedArr,
@@ -61,7 +74,15 @@ export const WeaponProvider = ({ children }: WeaponProviderProps) => {
 
       const updatedWeaponsArr = [...weaponsArr];
       updatedWeaponsArr.splice(index, 1);
+      for (let i = 0; i < updatedWeaponsArr.length; ++i) {
+        updatedWeaponsArr[i].orderId = i;
+      }
 
+      if (updatedWeaponsArr.length === 0) {
+        const { [id]: _, ...rest } = prev;
+        void _;
+        return rest;
+      }
       return {
         ...prev,
         [id]: updatedWeaponsArr,
@@ -69,10 +90,14 @@ export const WeaponProvider = ({ children }: WeaponProviderProps) => {
     });
   }
 
-  const updatePriority = (name: string, index: number, newPriority: number) => {
-    // TODO: implement
-    console.log(name, index, newPriority)
-    return;
+  const updatePriorities = (updatedWeapons: WeaponStateDBEntry[]) => {
+    setWeapons((prev) => {
+      const newWeapons = { ...prev };
+      for (const weapon of updatedWeapons) {
+        newWeapons[weapon.name][weapon.orderId].priority = weapon.priority;
+      }
+      return newWeapons;
+    });
   }
 
   return (
@@ -80,7 +105,7 @@ export const WeaponProvider = ({ children }: WeaponProviderProps) => {
       weapons,
       updateWeapon,
       deleteWeapon,
-      updatePriority,
+      updatePriorities,
     }}>
       {children}
     </WeaponContext.Provider>

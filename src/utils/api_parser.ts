@@ -1,10 +1,10 @@
 import { IItemEntry, IAPIResonator, IAPIItem, IAPIWeapon, IAPIPlannerElement } from "@/app/interfaces/api_interfaces";
 import { IItem } from "@/app/interfaces/item";
 import { ItemEliteBoss, ItemWeapon, ItemWeeklyBoss, ItemCommon, ItemSpecialty } from "@/app/interfaces/item_types";
-import { IResonatorPlanner, IResonatorUpgradeItem } from "@/app/interfaces/resonator";
-import { IWeaponPlanner } from "@/app/interfaces/weapon";
+import { IPlannerUpgradeItem, IResonatorPlanner, IWeaponPlanner, PLANNER_TYPE } from "@/app/interfaces/planner_item";
 import { ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { WeaponStateDBEntry } from "@/types/weaponTypes";
+import { getMaterials } from "./planner_utils";
 
 const enum LOOKUP_TYPE {
   Ascension,
@@ -24,11 +24,24 @@ export function parseItemToItemCard(data: IAPIItem): IItem {
   }
 }
 
+export function parseAPIDataToPlanner(
+  dbEntry: ResonatorStateDBEntry | WeaponStateDBEntry,
+  apiItems: IAPIItem[],
+  apiData: IAPIResonator | IAPIWeapon,
+): IResonatorPlanner | IWeaponPlanner {
+  if (dbEntry.type === PLANNER_TYPE.RESONATOR) {
+    return parseResonatorToPlanner(dbEntry as ResonatorStateDBEntry, apiItems, apiData as IAPIResonator);
+  }
+  return parseWeaponToPlanner(dbEntry as WeaponStateDBEntry, apiItems, apiData as IAPIWeapon);
+}
+
 export function parseResonatorToPlanner(
+  dbEntry: ResonatorStateDBEntry,
+  apiItems: IAPIItem[],
   data: IAPIResonator,
-  dbEntry: ResonatorStateDBEntry
 ): IResonatorPlanner {
-  return {
+  const resonatorItem: IResonatorPlanner = {
+    type: PLANNER_TYPE.RESONATOR,
     name: data.name,
     rarity: data.rarity,
     icon: data.icon.circle,
@@ -38,21 +51,34 @@ export function parseResonatorToPlanner(
     specialtyMaterial: findMaterial(data, ItemSpecialty, LOOKUP_TYPE.Ascension),
     weaponMaterial: findMaterial(data, ItemWeapon, LOOKUP_TYPE.Talent),
     commonMaterial: findMaterial(data, ItemCommon, LOOKUP_TYPE.Talent),
+    dbData: dbEntry,
   }
+  // for display calculations
+  resonatorItem.requiredMaterials = getMaterials(resonatorItem, apiItems);
+  return resonatorItem;
 }
 
 export function parseWeaponToPlanner(
+  dbEntry: WeaponStateDBEntry,
+  apiItems: IAPIItem[],
   data: IAPIWeapon,
-  dbEntry: WeaponStateDBEntry
 ): IWeaponPlanner {
-  return {
+
+  const weaponItem: IWeaponPlanner = {
+    type: PLANNER_TYPE.WEAPON,
     name: data.name,
     rarity: data.rarity,
     icon: data.icon.default,
     weaponMaterial: findMaterial(data, ItemWeapon, LOOKUP_TYPE.Ascension),
     commonMaterial: findMaterial(data, ItemCommon, LOOKUP_TYPE.Ascension),
     priority: dbEntry.priority,
+
+    // for display calculations
+    dbData: dbEntry,
+    orderId: dbEntry.orderId,
   }
+  weaponItem.requiredMaterials = getMaterials(weaponItem, apiItems);
+  return weaponItem;
 }
 
 
@@ -60,15 +86,14 @@ function findMaterial<T extends Record<string, string>>(
   data: IAPIResonator | IAPIWeapon,
   materialEnum: T,
   lookup: LOOKUP_TYPE
-): IResonatorUpgradeItem<T[keyof T]> {
+): IPlannerUpgradeItem<T[keyof T]> {
   const materials = lookup === LOOKUP_TYPE.Ascension
     ? getAscensionMaterials(data)
     : getTalentMaterials(data as IAPIResonator);
-
   for (const { id, name } of materials) {
     if (Object.values(materialEnum).includes(name as T[keyof T])) {
       return {
-        id: id,
+        id,
         name: name as T[keyof T]
       };
     }

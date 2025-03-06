@@ -53,7 +53,7 @@ export const InventoryForm = ({
         .sort((a, b) => a.id - b.id)
         .sort((a, b) => b.rarity - a.rarity)
     );
-    const asdf = {
+    setFormData({
       ...Object.fromEntries(
         convertedItems.map(item => [item.name, {
           id: item.id,
@@ -63,16 +63,12 @@ export const InventoryForm = ({
         }])
       ),
       ...initialFormData
-    };
-    console.log("useEffect", asdf);
-    setFormData(asdf)
+    })
   }, [showForm, initialFormData, apiItems])
 
   const handleSubmit = () => {
     onSubmit(formData);
-    console.log("HELLO");
   }
-
 
   return (
     <ModalComponent show={showForm} onClose={onClose}>

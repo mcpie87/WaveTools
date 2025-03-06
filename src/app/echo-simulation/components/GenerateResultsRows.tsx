@@ -27,7 +27,6 @@ export const GenerateResultsRows = async (
   const rows: React.JSX.Element[] = [];
   for (const [k, v] of Object.entries(results)) {
     const chanceToHit = v;
-    console.log("GENERATE ROWS CHANCE", k, v, chanceToHit);
     const displayedLevel = "+" + (5 * Number(k));
     const displayedStartLevel = "+" + (5 * startLevel);
     const expectedAttempts = 1 / chanceToHit;
