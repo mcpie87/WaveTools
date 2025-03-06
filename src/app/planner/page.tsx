@@ -10,8 +10,8 @@ import { useCharacters } from '@/context/CharacterContext';
 import { PlannerSummaryComponent } from './components/PlannerSummaryComponent';
 import { useData } from '@/context/DataContext';
 import { InventoryForm } from '@/components/PlannerForm/InventoryForm';
-import { ItemStateDBSchema } from '@/types/itemTypes';
-import { useItems } from '@/context/ItemContext';
+import { InventoryDBSchema } from '@/types/inventoryTypes';
+import { useItems } from '@/context/InventoryContext';
 import { ManagePriorityComponent } from '@/components/PlannerForm/ManagePriorityComponent';
 import { useWeapons } from '@/context/WeaponContext';
 import { usePriority } from '@/hooks/usePriority';
@@ -57,7 +57,7 @@ export default function CharactersPage() {
     setShowEditWeaponForm(false);
   };
 
-  const handleInventorySubmit = (data: ItemStateDBSchema) => {
+  const handleInventorySubmit = (data: InventoryDBSchema) => {
     updateItems(data);
     setShowInventoryForm(false);
   }

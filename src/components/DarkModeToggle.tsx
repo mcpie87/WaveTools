@@ -1,14 +1,18 @@
 "use client";
 
-import { getStorageKey } from "@/utils/utils";
+import LocalStorageService from "@/services/LocalStorageService";
 import { useEffect, useState } from "react";
+
+const storageService = new LocalStorageService("theme");
 
 export default function DarkModeToggle() {
   // dark mode by default cause people...
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    return storageService.load() || false;
+  });
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem(getStorageKey("theme"));
+    const savedTheme = storageService.load();
     if (savedTheme === "dark") {
       document.documentElement.classList.add("dark");
       setDarkMode(true);
@@ -18,10 +22,10 @@ export default function DarkModeToggle() {
   const toggleDarkMode = () => {
     if (darkMode) {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem(getStorageKey("theme"), "light");
+      storageService.save("light");
     } else {
       document.documentElement.classList.add("dark");
-      localStorage.setItem(getStorageKey("theme"), "dark");
+      storageService.save("dark");
     }
     setDarkMode(!darkMode);
   };

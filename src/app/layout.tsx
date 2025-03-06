@@ -5,7 +5,7 @@ import { CharacterProvider } from "@/providers/CharacterProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { DataProvider } from "@/providers/DataProvider";
-import { ItemProvider } from "@/providers/ItemProvider";
+import { InventoryProvider } from "@/providers/InventoryProvider";
 import { WeaponProvider } from "@/providers/WeaponProvider";
 
 const geistSans = Geist({
@@ -34,13 +34,13 @@ export default function RootLayout({
         <DataProvider>
           <CharacterProvider>
             <WeaponProvider>
-              <ItemProvider>
+              <InventoryProvider>
                 <div className="mx-auto">
                   <Header />
                   <main className="mt-8">{children}</main>
                   <Footer />
                 </div>
-              </ItemProvider>
+              </InventoryProvider>
             </WeaponProvider>
           </CharacterProvider>
         </DataProvider>

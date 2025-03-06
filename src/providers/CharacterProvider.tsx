@@ -4,9 +4,9 @@ import { ReactNode, useState, useEffect } from 'react';
 import { CharacterContext } from '../context/CharacterContext';
 import { ResonatorDBSchema, ResonatorStateDBEntry } from '../types/resonatorTypes';
 import { resonatorSchema } from '../schemas/resonatorSchema';
-import { getStorageKey } from '@/utils/utils';
+import LocalStorageService from '@/services/LocalStorageService';
 
-const STORAGE_KEY = getStorageKey('resonators');
+const storageService = new LocalStorageService("resonators");
 // const VERSION_KEY = `${STORAGE_KEY}_2025-03-03T18:07`;
 // TODO: remove "characters" key for future migration
 
@@ -15,17 +15,11 @@ interface CharacterProviderProps {
 }
 export const CharacterProvider = ({ children }: CharacterProviderProps) => {
   const [characters, setCharacters] = useState<ResonatorDBSchema>(() => {
-    if (typeof window !== 'undefined') {
-      const savedData = localStorage.getItem(STORAGE_KEY);
-      return savedData ? JSON.parse(savedData) : {};
-    }
-    return {};
+    return storageService.load() as ResonatorDBSchema || {};
   });
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(characters));
-    }
+    storageService.save(characters);
   }, [characters]);
 
   const updateCharacter = (id: string, data: ResonatorStateDBEntry) => {

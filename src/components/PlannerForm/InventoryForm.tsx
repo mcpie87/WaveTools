@@ -6,13 +6,13 @@ import { sortToItemList } from "@/utils/items_utils";
 import { InputInventoryItem } from "../InputInventoryItem";
 import { useEffect, useState } from "react";
 import { IItem } from "@/app/interfaces/item";
-import { ItemStateDBSchema } from "@/types/itemTypes";
+import { InventoryDBSchema } from "@/types/inventoryTypes";
 
 interface InventoryFormProps {
   showForm: boolean;
-  initialFormData: ItemStateDBSchema;
+  initialFormData: InventoryDBSchema;
   onClose: () => void;
-  onSubmit: (data: ItemStateDBSchema) => void;
+  onSubmit: (data: InventoryDBSchema) => void;
   apiItems: IAPIItem[];
 }
 export const InventoryForm = ({
@@ -22,7 +22,7 @@ export const InventoryForm = ({
   onSubmit,
   apiItems
 }: InventoryFormProps) => {
-  const [formData, setFormData] = useState<ItemStateDBSchema>(initialFormData);
+  const [formData, setFormData] = useState<InventoryDBSchema>(initialFormData);
   const [displayedItems, setDisplayedItems] = useState<IItem[]>([]);
 
   useEffect(() => {

@@ -1,14 +1,14 @@
 'use client';
 
 import { ReactNode, useState, useEffect } from 'react';
-
-import { getStorageKey } from '@/utils/utils';
 import { WeaponDBSchema, WeaponStateDBEntry } from '@/types/weaponTypes';
 import { weaponSchema } from '@/schemas/weaponSchema';
 import { WeaponContext } from '@/context/WeaponContext';
+import LocalStorageService from '@/services/LocalStorageService';
 
-const STORAGE_KEY = getStorageKey('weapons');
 // const VERSION_KEY = `${STORAGE_KEY}_2025-03-03T18:07`;
+
+const storageService = new LocalStorageService("weapons");
 
 interface WeaponProviderProps {
   children: ReactNode;
@@ -16,17 +16,11 @@ interface WeaponProviderProps {
 
 export const WeaponProvider = ({ children }: WeaponProviderProps) => {
   const [weapons, setWeapons] = useState<WeaponDBSchema>(() => {
-    if (typeof window !== 'undefined') {
-      const savedData = localStorage.getItem(STORAGE_KEY);
-      return savedData ? JSON.parse(savedData) : {};
-    }
-    return {};
+    return storageService.load() as WeaponDBSchema || {};
   });
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(weapons));
-    }
+    storageService.save(weapons);
   }, [weapons]);
 
   const updateWeapon = (id: string, data: WeaponStateDBEntry) => {
