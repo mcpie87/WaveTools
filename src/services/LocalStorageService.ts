@@ -3,7 +3,7 @@ import { ResonatorDBSchema } from "@/types/resonatorTypes";
 import { WeaponDBSchema } from "@/types/weaponTypes";
 
 // const VERSION_KEY = "2025-03-06T03:36";
-const STORAGE_KEY = "wuwa_planner";
+const STORAGE_KEY = "wave_tools";
 
 type LocalStorageData = string | ResonatorDBSchema | WeaponDBSchema | InventoryDBSchema;
 
