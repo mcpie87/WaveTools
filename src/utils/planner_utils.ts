@@ -136,6 +136,7 @@ const addEXP = (
     }
     reqMats[itemId?.id] = count;
 
+    // TODO: requires refinement due to overflows? maybe? 
     const shellRatio = expType === ItemWeaponEXP
       ? WEAPON_EXP_TO_SHELL_RATIO
       : RESONATOR_EXP_TO_SHELL_RATIO;
