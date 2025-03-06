@@ -14,7 +14,14 @@ class LocalStorageService {
     this.key = `${STORAGE_KEY}_${key}`;
   }
 
+  private isBrowser(): boolean {
+    return typeof window !== 'undefined' && typeof window.localStorage !== 'undefined';
+  }
+
   private loadRaw(): LocalStorageData | null {
+    if (!this.isBrowser()) {
+      return null;
+    }
     const rawData = localStorage.getItem(this.key);
     if (!rawData) {
       return null;
@@ -32,10 +39,16 @@ class LocalStorageService {
   }
 
   save(data: LocalStorageData) {
+    if (!this.isBrowser()) {
+      return;
+    }
     localStorage.setItem(this.key, JSON.stringify(data));
   }
 
   clear() {
+    if (!this.isBrowser()) {
+      return;
+    }
     localStorage.removeItem(this.key);
   }
 }
