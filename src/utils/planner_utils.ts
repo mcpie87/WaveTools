@@ -1,7 +1,7 @@
 import { IAPIItem, IAPIResonator, IAPIWeapon } from "@/app/interfaces/api_interfaces";
 import { getAscensions, InputEntry, ResonatorDBSchema, ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { getKeyFromEnumValue } from "@/utils/utils";
-import { RESONATOR_ASCENSION_MATERIALS, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry, TOTAL_LEVEL_EXPERIENCE, TOTAL_WEAPON_EXP, WEAPON_ASCENSION_MATERIALS } from "@/constants/character_ascension";
+import { RESONATOR_ASCENSION_MATERIALS, RESONATOR_EXP_TO_SHELL_RATIO, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry, TOTAL_LEVEL_EXPERIENCE, TOTAL_WEAPON_EXP, WEAPON_ASCENSION_MATERIALS, WEAPON_EXP_TO_SHELL_RATIO } from "@/constants/character_ascension";
 import { ItemCommon, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
 import { ActiveSkillNames, PassiveSkillNames, resonatorSchemaForForm } from "@/schemas/resonatorSchema";
 import { findItemByName } from "./items_utils";
@@ -116,7 +116,7 @@ const addWeaponEXP = (
 }
 
 const addEXP = (
-  requiredMaterials: { [key: string]: number },
+  reqMats: { [key: string]: number },
   items: IAPIItem[],
   expLeft: number,
   expType: typeof ItemResonatorEXP | typeof ItemWeaponEXP
@@ -126,14 +126,20 @@ const addEXP = (
     const count = idx === potionValues.length - 1
       ? Math.ceil(expLeft / value)
       : Math.floor(expLeft / value);
-    expLeft -= count * value;
+    const expForThisLevel = count * value;
+    expLeft -= expForThisLevel;
     const key = `RARITY_${5 - idx}` as keyof typeof expType;
     const itemId = findItemByName(expType[key], items)
     if (!itemId) {
       console.error(`addEXP ItemId not found for ${expType[key]}`);
       return;
     }
-    requiredMaterials[itemId?.id] = count;
+    reqMats[itemId?.id] = count;
+
+    const shellRatio = expType === ItemWeaponEXP
+      ? WEAPON_EXP_TO_SHELL_RATIO
+      : RESONATOR_EXP_TO_SHELL_RATIO;
+    reqMats[SHELL_CREDIT_ID] = (reqMats[SHELL_CREDIT_ID] ?? 0) + expForThisLevel * shellRatio;
   });
   if (expLeft > 0) {
     throw new Error("Exp is higher than 0");

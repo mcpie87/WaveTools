@@ -51,6 +51,8 @@ export const WaveplateComponent = ({ breakdown, vertical }: WaveplateComponentPr
 }
 
 const WaveplateSummaryComponent = ({ breakdown }: WaveplateComponentProps) => {
+  const displayedBreakdown = breakdown.filter(e => e.waveplateCount > 0);
+
   return (
     <table>
       <thead>
@@ -61,7 +63,7 @@ const WaveplateSummaryComponent = ({ breakdown }: WaveplateComponentProps) => {
         </tr>
       </thead>
       <tbody>
-        {breakdown.map(waveplateEntry => (
+        {displayedBreakdown.map(waveplateEntry => (
           <tr key={waveplateEntry.label}>
             <td>{waveplateEntry.label}</td>
             <td>{waveplateEntry.runCount.toFixed(3)}</td>

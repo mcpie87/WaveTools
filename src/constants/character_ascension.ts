@@ -1,3 +1,7 @@
+// conversion costs during leveling, eg. 31k resonator exp = 10850 shell credits (35% of exp)
+export const RESONATOR_EXP_TO_SHELL_RATIO = 0.35;
+export const WEAPON_EXP_TO_SHELL_RATIO = 0.4;
+
 interface ResonatorAscensionMaterialDataInterfaceEntry {
   SHELL: number;
   ELITE_MATERIAL: number;

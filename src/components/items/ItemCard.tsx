@@ -8,9 +8,9 @@ interface ItemCardProps {
 export default function ItemCard({ item }: ItemCardProps) {
 
   const formatValue = (value: number) => {
-    if (value > 1e9) return `~${(value / 1e9)}B`;
-    if (value > 1e6) return `~${(value / 1e6)}M`;
-    if (value > 1e3) return `~${(value / 1e3)}K`;
+    if (value > 1e9) return `~${(value / 1e9).toFixed(3)}B`;
+    if (value > 1e6) return `~${(value / 1e6).toFixed(3)}M`;
+    if (value > 1e3) return `~${(value / 1e3).toFixed(3)}K`;
     return value.toString();
   }
 

@@ -79,12 +79,14 @@ export function calculateWaveplate(items: IItem[]): WaveplateEntry[] {
     ? 0
     : getEliteCountFromList(items) / eliteBossDropRates.ELITE;
 
-  let resonatorExpNeeded = getResonatorExpNeededFromList(items);
+  const initialResonatorExpNeeded = getResonatorExpNeededFromList(items);
+  let resonatorExpNeeded = initialResonatorExpNeeded;
   resonatorExpNeeded -= weeklyCount * weeklyBossDropRates.RESONATOR_EXP;
   resonatorExpNeeded -= eliteCount * eliteBossDropRates.RESONATOR_EXP;
   const simResonatorCount = resonatorExpNeeded / simResonanceDropRates.RESONATOR_EXP;
 
-  let weaponExpNeeded = getWeaponExpNeededFromList(items);
+  const initialWeaponExpNeeded = getWeaponExpNeededFromList(items);
+  let weaponExpNeeded = initialWeaponExpNeeded;
   weaponExpNeeded -= eliteCount * eliteBossDropRates.WEAPON_EXP;
   const simEnergyCount = weaponExpNeeded / simEnergyDropRates.WEAPON_EXP;
 
@@ -108,8 +110,8 @@ export function calculateWaveplate(items: IItem[]): WaveplateEntry[] {
 const getWaveplateEntry = (label: string, runCount: number, cost: number): WaveplateEntry => {
   return {
     label,
-    runCount,
-    waveplateCount: runCount * cost
+    runCount: Math.max(0, runCount),
+    waveplateCount: Math.max(0, runCount) * cost
   }
 }
 
