@@ -1,9 +1,9 @@
 'use client';
 
-import EchoSimulationComponent from "./components/EchoSimulationComponent";
+import EchoSimulationContainer from "./components/EchoSimulationContainer";
 
 export default function EchoSimulation() {
   return (
-    <EchoSimulationComponent />
+    <EchoSimulationContainer />
   );
 }

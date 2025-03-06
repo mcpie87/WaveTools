@@ -13,7 +13,7 @@ function EchoSimulationContainer() {
   };
 
   return (
-    <div className="flex flex-wrap">
+    <div className="grid grid-cols-[repeat(auto-fit,minmax(650px,1fr))] gap-2">
       {components.map(component => (
         <div key={component.id} className="m-10 border p-3">
           <EchoSimulationComponent />

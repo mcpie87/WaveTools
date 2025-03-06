@@ -33,7 +33,7 @@ function EchoSimulationComponent() {
 
   return (
     <div className="flex flex-col items-center">
-      <form className="flex flex-col" onSubmit={calculate}>
+      <form className="flex flex-col gap-2" onSubmit={calculate}>
         <div className="flex-col">
           <h3>Start subs</h3>
           <SubstatsSelector
