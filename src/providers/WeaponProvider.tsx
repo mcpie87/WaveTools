@@ -59,27 +59,27 @@ export const WeaponProvider = ({ children }: WeaponProviderProps) => {
     }));
   };
 
-  const deleteWeapon = (id: string, index: number) => {
+  const deleteWeapon = (weapon: WeaponStateDBEntry) => {
     setWeapons((prev) => {
-      const weaponsArr = prev[id];
+      const weaponsArr = prev[weapon.name];
       if (!weaponsArr) {
         return prev;
       }
 
       const updatedWeaponsArr = [...weaponsArr];
-      updatedWeaponsArr.splice(index, 1);
+      updatedWeaponsArr.splice(weapon.orderId, 1);
       for (let i = 0; i < updatedWeaponsArr.length; ++i) {
         updatedWeaponsArr[i].orderId = i;
       }
 
       if (updatedWeaponsArr.length === 0) {
-        const { [id]: _, ...rest } = prev;
+        const { [weapon.name]: _, ...rest } = prev;
         void _;
         return rest;
       }
       return {
         ...prev,
-        [id]: updatedWeaponsArr,
+        [weapon.name]: updatedWeaponsArr,
       }
     });
   }

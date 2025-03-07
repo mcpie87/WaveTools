@@ -14,12 +14,13 @@ import { InventoryDBSchema } from '@/types/inventoryTypes';
 import { useItems } from '@/context/InventoryContext';
 import { ManagePriorityComponent } from '@/components/PlannerForm/ManagePriorityComponent';
 import { useWeapons } from '@/context/WeaponContext';
-import { usePriority } from '@/hooks/usePriority';
+import { usePlanner } from '@/hooks/usePlanner';
 import { weaponSchema } from '@/schemas/weaponSchema';
 import { AddWeaponForm } from '@/components/PlannerForm/AddWeaponForm';
 import { WeaponStateDBEntry } from '@/types/weaponTypes';
 import { WeaponForm } from '@/components/PlannerForm/WeaponForm';
 import { getPlannerDBSize, getPlannerItems } from '@/utils/planner_utils';
+import { IResonatorPlanner, IWeaponPlanner } from '../interfaces/planner_item';
 
 export default function CharactersPage() {
   const [showAddResonatorForm, setShowAddResonatorForm] = useState(false);
@@ -34,15 +35,15 @@ export default function CharactersPage() {
   const resonatorContext = useCharacters();
   const itemContext = useItems();
   const weaponContext = useWeapons();
-  const { updatePriority } = usePriority();
+  const { updatePlannerPriority, deletePlannerItem } = usePlanner();
   const { data, error, loading } = useData();
   if (loading) return (<div>Loading...</div>);
   if (!data) return (<div>Data is not present</div>);
   if (error) return (<div>Error present: {error.message}</div>);
   const { weapons: apiWeapons, resonators, items } = data;
   const { updateItems, items: dbItems } = itemContext;
-  const { updateWeapon, deleteWeapon, weapons: dbWeapons } = weaponContext;
-  const { characters, updateCharacter, deleteCharacter } = resonatorContext;
+  const { updateWeapon, weapons: dbWeapons } = weaponContext;
+  const { characters, updateCharacter } = resonatorContext;
   const plannerItems = getPlannerItems(characters, resonators, dbWeapons, apiWeapons, items);
 
   const handleResonatorSubmit = (data: ResonatorStateDBEntry) => {
@@ -105,13 +106,9 @@ export default function CharactersPage() {
     setShowEditWeaponForm(true);
   }
 
-  const handleDeleteResonator = (resonator: ResonatorStateDBEntry) => {
-    console.log("handleDeleteResonator", resonator);
-    deleteCharacter(resonator.name);
-  }
-  const handleDeleteWeapon = (weapon: WeaponStateDBEntry) => {
-    console.log("handleDeleteWeapon", weapon);
-    deleteWeapon(weapon.name, weapon.orderId);
+  const handleDeletePlannerItem = (plannerItem: IResonatorPlanner | IWeaponPlanner) => {
+    console.log("handleDeletePlannerItem", plannerItem);
+    deletePlannerItem(plannerItem);
   }
 
   return (
@@ -193,7 +190,7 @@ export default function CharactersPage() {
             showForm={showManagePriority}
             plannerItems={plannerItems}
             onClose={() => setShowManagePriority(false)}
-            onDragAndDrop={updatePriority}
+            onDragAndDrop={updatePlannerPriority}
           />
         )}
         <PlannerDataComponent
@@ -201,8 +198,7 @@ export default function CharactersPage() {
           apiItems={items}
           onEditResonator={handleEditResonator}
           onEditWeapon={handleEditWeapon}
-          onDeleteResonator={handleDeleteResonator}
-          onDeleteWeapon={handleDeleteWeapon}
+          onDelete={handleDeletePlannerItem}
         />
       </div>
     </div>

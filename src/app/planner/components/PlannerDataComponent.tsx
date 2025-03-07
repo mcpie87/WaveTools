@@ -9,29 +9,20 @@ interface PlannerDataComponentProps {
   apiItems: IAPIItem[],
   onEditResonator: (resonator: ResonatorStateDBEntry) => void;
   onEditWeapon: (weapon: WeaponStateDBEntry) => void;
-  onDeleteResonator: (resonator: ResonatorStateDBEntry) => void;
-  onDeleteWeapon: (weapon: WeaponStateDBEntry) => void;
+  onDelete: (plannerItem: IResonatorPlanner | IWeaponPlanner) => void;
 }
 export const PlannerDataComponent = ({
   plannerItems,
   apiItems,
   onEditResonator,
   onEditWeapon,
-  onDeleteResonator,
-  onDeleteWeapon,
+  onDelete,
 }: PlannerDataComponentProps) => {
   const handleEdit = (item: IResonatorPlanner | IWeaponPlanner) => {
     if (item.type === PLANNER_TYPE.RESONATOR) {
       onEditResonator(item.dbData as ResonatorStateDBEntry);
     } else {
       onEditWeapon(item.dbData as WeaponStateDBEntry);
-    }
-  }
-  const handleDelete = (item: IResonatorPlanner | IWeaponPlanner) => {
-    if (item.type === PLANNER_TYPE.RESONATOR) {
-      onDeleteResonator(item.dbData as ResonatorStateDBEntry);
-    } else {
-      onDeleteWeapon(item.dbData as WeaponStateDBEntry);
     }
   }
 
@@ -44,7 +35,7 @@ export const PlannerDataComponent = ({
               plannerItem={item}
               apiItems={apiItems}
               onEdit={handleEdit}
-              onDelete={handleDelete}
+              onDelete={onDelete}
             />
           </div>
         ))

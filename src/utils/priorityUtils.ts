@@ -6,16 +6,40 @@ import { WeaponDBSchema, WeaponStateDBEntry } from "@/types/weaponTypes";
 export const updateSharedPriority = (
   resonators: ResonatorDBSchema,
   weapons: WeaponDBSchema,
-  target: ResonatorStateDBEntry | WeaponStateDBEntry,
-  newPriority: number
+  target?: ResonatorStateDBEntry | WeaponStateDBEntry,
+  newPriority?: number
 ) => {
   // make a deep copy to .priority level of all items
   const allItems = [
     ...Object.values(resonators),
     ...Object.values(weapons).flatMap(e => e)
   ].map(item => ({ ...item }));
-  const targetItem = getTargetItem(allItems, target);
 
+  if (target && newPriority) {
+    applyPriorityChanges(allItems, target, newPriority);
+  } else if (target && newPriority === undefined) {
+    // delete
+    allItems.splice(allItems.findIndex(item => item.id === target.id), 1);
+  }
+
+  // Force normalization on ordering
+  allItems.sort((a, b) => a.priority - b.priority);
+  allItems.forEach((item, idx) => item.priority = idx + 1);
+
+  const newResonators = allItems.filter(item => item.type === PLANNER_TYPE.RESONATOR);
+  const newWeapons = allItems.filter(item => item.type === PLANNER_TYPE.WEAPON);
+  return {
+    newResonators: newResonators as ResonatorStateDBEntry[],
+    newWeapons: newWeapons as WeaponStateDBEntry[],
+  };
+}
+
+const applyPriorityChanges = (
+  allItems: (ResonatorStateDBEntry | WeaponStateDBEntry)[],
+  target: ResonatorStateDBEntry | WeaponStateDBEntry,
+  newPriority: number
+) => {
+  const targetItem = getTargetItem(allItems, target);
   const prevPriority = target.priority;
 
   if (newPriority < target.priority) {
@@ -34,21 +58,7 @@ export const updateSharedPriority = (
     }
   }
 
-  // Force normalization on ordering
   targetItem.priority = newPriority;
-  allItems.sort((a, b) => a.priority - b.priority);
-  allItems.forEach((item, idx) => item.priority = idx + 1);
-  for (const item of allItems) {
-    console.log("item", item.priority, item.name);
-  }
-
-  const newResonators = allItems.filter(item => item.type === PLANNER_TYPE.RESONATOR);
-  const newWeapons = allItems.filter(item => item.type === PLANNER_TYPE.WEAPON);
-
-  return {
-    newResonators: newResonators as ResonatorStateDBEntry[],
-    newWeapons: newWeapons as WeaponStateDBEntry[],
-  };
 }
 
 const getTargetItem = (

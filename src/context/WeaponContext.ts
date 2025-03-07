@@ -4,7 +4,7 @@ import { WeaponDBSchema, WeaponStateDBEntry } from '@/types/weaponTypes';
 type WeaponContextType = {
   weapons: WeaponDBSchema;
   updateWeapon: (id: string, data: WeaponStateDBEntry) => void;
-  deleteWeapon: (id: string, index: number) => void;
+  deleteWeapon: (target: WeaponStateDBEntry) => void;
   updatePriorities: (newWeapons: WeaponStateDBEntry[]) => void;
 };
 

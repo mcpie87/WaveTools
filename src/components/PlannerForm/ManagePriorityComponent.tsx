@@ -1,14 +1,12 @@
-import { ResonatorStateDBEntry } from "@/types/resonatorTypes"
 import { ModalComponent } from "./ModalComponent";
 import React, { useState } from "react";
 import { convertToUrl } from "@/utils/utils";
 import Image from "next/image";
-import { WeaponStateDBEntry } from "@/types/weaponTypes";
 import { IResonatorPlanner, IWeaponPlanner } from "@/app/interfaces/planner_item";
 
 interface ManagePriorityComponentProps {
   plannerItems: (IResonatorPlanner | IWeaponPlanner)[];
-  onDragAndDrop: (target: ResonatorStateDBEntry | WeaponStateDBEntry, newPriority: number) => void;
+  onDragAndDrop: (target: IResonatorPlanner | IWeaponPlanner, newPriority: number) => void;
   showForm: boolean;
   onClose: () => void;
 }
@@ -34,7 +32,7 @@ export const ManagePriorityComponent = ({
       return;
     }
     const draggedItem = plannerItems[draggedItemIndex];
-    onDragAndDrop(draggedItem.dbData, dropIndex);
+    onDragAndDrop(draggedItem, dropIndex + 1);
     setDraggedItemIndex(null);
   };
 
