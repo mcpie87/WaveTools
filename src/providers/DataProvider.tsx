@@ -16,13 +16,13 @@ export const DataProvider = ({ children }: DataProviderProps) => {
     async function fetchData() {
       try {
         const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-        const itemsResponse = await fetch(`${basePath}/data/items.json`);
+        const itemsResponse = await fetch(`${basePath}/data/items_minified.json`);
         const itemsDb: IAPIItem[] = await itemsResponse.json();
 
-        const resonatorResponse = await fetch(`${basePath}/data/resonator.json`);
+        const resonatorResponse = await fetch(`${basePath}/data/resonators_minified.json`);
         const resonatorDb: IAPIResonator[] = await resonatorResponse.json();
 
-        const weaponsResponse = await fetch(`${basePath}/data/weapons.json`);
+        const weaponsResponse = await fetch(`${basePath}/data/weapons_minified.json`);
         const weaponsDb: IAPIWeapon[] = await weaponsResponse.json();
 
         setData({
