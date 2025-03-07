@@ -1,6 +1,6 @@
 import { useCharacters } from "@/context/CharacterContext";
 import { useData } from "@/context/DataContext";
-import { convertToUrl } from "@/utils/utils";
+import { convertToUrl, getRarityClass } from "@/utils/utils";
 import Image from "next/image";
 import { ModalComponent } from "./ModalComponent";
 import { useState } from "react";
@@ -116,7 +116,7 @@ export const AddResonatorForm = ({ showForm, onAddResonator, onClose }: AddReson
           {filterSearchResonators(displayedResonators).map((resonator, idx) => (
             <div
               key={idx}
-              className={`${resonator.rarity === 5 ? "bg-rarity5" : "bg-rarity4"} border p-2 w-[100px]`}
+              className={`${getRarityClass(resonator.rarity)} border p-2 w-[100px]`}
               onClick={() => onAddResonator(resonator.name)}
             >
               <Image

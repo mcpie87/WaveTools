@@ -23,12 +23,12 @@ export const DataProvider = ({ children }: DataProviderProps) => {
         const resonatorDb: IAPIResonator[] = await resonatorResponse.json();
 
         const weaponsResponse = await fetch(`${basePath}/data/weapons_minified.json`);
-        const weaponsDb: IAPIWeapon[] = await weaponsResponse.json();
+        const weaponsDb: IAPIWeapon[] = (await weaponsResponse.json());
 
         setData({
           items: itemsDb,
           resonators: resonatorDb,
-          weapons: weaponsDb,
+          weapons: weaponsDb.filter(weapon => weapon.rarity >= 3), // we don't support 1/2 stars for now
         });
         setLoading(false);
       } catch (err) {

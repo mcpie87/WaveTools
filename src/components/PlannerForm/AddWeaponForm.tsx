@@ -1,5 +1,5 @@
 import { useData } from "@/context/DataContext";
-import { convertToUrl } from "@/utils/utils";
+import { convertToUrl, getRarityClass } from "@/utils/utils";
 import Image from "next/image";
 import { ModalComponent } from "./ModalComponent";
 import { useState } from "react";
@@ -93,7 +93,7 @@ export const AddWeaponForm = ({ showForm, onAddWeapon, onClose }: AddWeaponFormP
           {filterSearchWeapons(displayedWeapons).map((weapon, idx) => (
             <div
               key={idx}
-              className={`${weapon.rarity === 5 ? "bg-rarity5" : "bg-rarity4"} border p-2 w-[100px]`}
+              className={`${getRarityClass(weapon.rarity)} border p-2 w-[100px]`}
               onClick={() => onAddWeapon(weapon.name)}
             >
               <Image
