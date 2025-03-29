@@ -35,6 +35,7 @@ export enum ItemWeeklyBoss {
   BELL_BORNE = "Monument Bell",
   JUE = "Sentinel's Dagger",
   HECATE = "The Netherworld's Stare",
+  FLEURDELYS = "When Irises Bloom",
 };
 export type WEAPON_MOLD = "Standard Weapon Mold";
 
@@ -76,7 +77,8 @@ export enum ItemSpecialty {
   // Rinascita
   FIRECRACKER_JEWELWEED = "Firecracker Jewelweed",
   GOLDEN_FLEEC = "Golden Fleec",
-  SWORD_ACORUS = "Sword Acorus"
+  SWORD_ACORUS = "Sword Acorus",
+  SEASIDE_CENDRELIS = "Seaside Cendrelis",
 }
 
 export enum ItemWeapon {
