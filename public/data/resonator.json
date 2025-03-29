@@ -3491,7 +3491,7 @@
   {
     "id": 1501,
     "rarity": 5,
-    "name": "Rover-Spectro",
+    "name": "Rover: Spectro",
     "weaponType": {
       "id": 2,
       "name": "Sword",
@@ -6971,7 +6971,7 @@
   {
     "id": 1502,
     "rarity": 5,
-    "name": "Rover-Spectro",
+    "name": "Rover: Spectro",
     "weaponType": {
       "id": 2,
       "name": "Sword",
@@ -20918,7 +20918,7 @@
   {
     "id": 1604,
     "rarity": 5,
-    "name": "Rover-Havoc",
+    "name": "Rover: Havoc",
     "weaponType": {
       "id": 2,
       "name": "Sword",
@@ -22072,7 +22072,7 @@
   {
     "id": 1605,
     "rarity": 5,
-    "name": "Rover-Havoc",
+    "name": "Rover: Havoc",
     "weaponType": {
       "id": 2,
       "name": "Sword",
@@ -37170,6 +37170,3495 @@
       },
       "cooking": {
         "id": 1003008,
+        "name": "Skillful Cooking",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": 1406,
+    "rarity": 5,
+    "name": "Rover: Aero",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 4,
+      "name": "Aero",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementWind.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_4_UI.png",
+    "body": "MaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_4_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_4_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_4.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talentMaterials": {
+      "normalAttack": {
+        "id": 1003201,
+        "name": "Wind Cutter",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceSkill": {
+        "id": 1003202,
+        "name": "Illusion Breaker",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceLiberation": {
+        "id": 1003203,
+        "name": "Omega Storm",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "inherentFirst": {
+        "id": 1003204,
+        "name": "Sand in the Storm",
+        "levels": {
+          "1": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 10000
+            }
+          ]
+        }
+      },
+      "inherentSecond": {
+        "id": 1003205,
+        "name": "Boundless Winds",
+        "levels": {
+          "1": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 20000
+            }
+          ]
+        }
+      },
+      "intro": {
+        "id": 1003206,
+        "name": "Relentless Squall",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "forte": {
+        "id": 1003207,
+        "name": "Cycle of Wind",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "outro": {
+        "id": 1003209,
+        "name": "Storm's Echo",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      },
+      "cooking": {
+        "id": 1003208,
+        "name": "Skillful Cooking",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": 1607,
+    "rarity": 5,
+    "name": "Cantarella",
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "element": {
+      "id": 6,
+      "name": "Havoc",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementDark.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_34_UI.png",
+    "body": "FemaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_34_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_34_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_34_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 41100041,
+            "name": "LF Polygon Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 3
+          },
+          {
+            "id": 42601170,
+            "name": "Seaside Cendrelis",
+            "value": 4
+          },
+          {
+            "id": 41100042,
+            "name": "MF Polygon Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 6
+          },
+          {
+            "id": 42601170,
+            "name": "Seaside Cendrelis",
+            "value": 8
+          },
+          {
+            "id": 41100042,
+            "name": "MF Polygon Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 9
+          },
+          {
+            "id": 42601170,
+            "name": "Seaside Cendrelis",
+            "value": 12
+          },
+          {
+            "id": 41100043,
+            "name": "HF Polygon Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 12
+          },
+          {
+            "id": 42601170,
+            "name": "Seaside Cendrelis",
+            "value": 16
+          },
+          {
+            "id": 41100043,
+            "name": "HF Polygon Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 41400164,
+            "name": "Cleansing Conch",
+            "value": 16
+          },
+          {
+            "id": 42601170,
+            "name": "Seaside Cendrelis",
+            "value": 20
+          },
+          {
+            "id": 41100044,
+            "name": "FF Polygon Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talentMaterials": {
+      "normalAttack": {
+        "id": 1003101,
+        "name": "Illusion Collapse",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceSkill": {
+        "id": 1003102,
+        "name": "Dance with Shadows",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceLiberation": {
+        "id": 1003103,
+        "name": "Beneath the Sea",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "inherentFirst": {
+        "id": 1003104,
+        "name": "\"Cure\"",
+        "levels": {
+          "1": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 10000
+            }
+          ]
+        }
+      },
+      "inherentSecond": {
+        "id": 1003105,
+        "name": "\"Poison\"",
+        "levels": {
+          "1": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 20000
+            }
+          ]
+        }
+      },
+      "intro": {
+        "id": 1003106,
+        "name": "Cruise",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "forte": {
+        "id": 1003107,
+        "name": "Between Illusion and Reality",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 2
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020031,
+              "name": "Lento Helix",
+              "value": 3
+            },
+            {
+              "id": 41100041,
+              "name": "LF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 2
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020032,
+              "name": "Adagio Helix",
+              "value": 3
+            },
+            {
+              "id": 41100042,
+              "name": "MF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 3
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020033,
+              "name": "Andante Helix",
+              "value": 5
+            },
+            {
+              "id": 41100043,
+              "name": "HF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 2
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 3
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020034,
+              "name": "Presto Helix",
+              "value": 6
+            },
+            {
+              "id": 41100044,
+              "name": "FF Polygon Core",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "outro": {
+        "id": 1003109,
+        "name": "Gentle Tentacles",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      },
+      "cooking": {
+        "id": 1003108,
+        "name": null,
+        "levels": {
+          "1": [
+
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": 1408,
+    "rarity": 5,
+    "name": "Rover: Aero",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 4,
+      "name": "Aero",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementWind.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_5_UI.png",
+    "body": "FemaleM",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_5_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_5.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 4
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 8
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 12
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 16
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 41300005,
+            "name": "Mysterious Code",
+            "value": 1
+          },
+          {
+            "id": 42300060,
+            "name": "Pecok Flower",
+            "value": 20
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talentMaterials": {
+      "normalAttack": {
+        "id": 1003201,
+        "name": "Wind Cutter",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceSkill": {
+        "id": 1003202,
+        "name": "Illusion Breaker",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceLiberation": {
+        "id": 1003203,
+        "name": "Omega Storm",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "inherentFirst": {
+        "id": 1003204,
+        "name": "Sand in the Storm",
+        "levels": {
+          "1": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 10000
+            }
+          ]
+        }
+      },
+      "inherentSecond": {
+        "id": 1003205,
+        "name": "Boundless Winds",
+        "levels": {
+          "1": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 20000
+            }
+          ]
+        }
+      },
+      "intro": {
+        "id": 1003206,
+        "name": "Relentless Squall",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "forte": {
+        "id": 1003207,
+        "name": "Cycle of Wind",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43020011,
+              "name": "Inert Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100051,
+              "name": "LF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43020012,
+              "name": "Reactive Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100052,
+              "name": "MF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43020013,
+              "name": "Polarized Metallic Drip",
+              "value": 5
+            },
+            {
+              "id": 41100053,
+              "name": "HF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 2
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 2
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 3
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 3
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43020014,
+              "name": "Heterized Metallic Drip",
+              "value": 6
+            },
+            {
+              "id": 41100054,
+              "name": "FF Tidal Residuum",
+              "value": 4
+            },
+            {
+              "id": 41400204,
+              "name": "When Irises Bloom",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "outro": {
+        "id": 1003209,
+        "name": "Storm's Echo",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      },
+      "cooking": {
+        "id": 1003208,
         "name": "Skillful Cooking",
         "levels": {
           "1": [
