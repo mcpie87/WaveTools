@@ -117,14 +117,14 @@ const getWaveplateEntry = (label: string, runCount: number, cost: number): Wavep
 
 const getWeeklyCountFromList = (items: IItem[]): number => {
   return items
-    .find((item) => Object.values(ItemWeeklyBoss).includes(item.name as ItemWeeklyBoss))
-    ?.value ?? 0;
+    .filter((item) => Object.values(ItemWeeklyBoss).includes(item.name as ItemWeeklyBoss))
+    .reduce((sum, item) => sum + (item.value ?? 0), 0);
 }
 
 const getEliteCountFromList = (items: IItem[]): number => {
   return items
-    .find((item) => Object.values(ItemEliteBoss).includes(item.name as ItemEliteBoss))
-    ?.value ?? 0;
+    .filter((item) => Object.values(ItemEliteBoss).includes(item.name as ItemEliteBoss))
+    .reduce((sum, item) => sum + (item.value ?? 0), 0);
 }
 
 const getWeapon2CountFromList = (items: IItem[]): number => {
