@@ -7,6 +7,13 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    'bg-rarity1',
+    'bg-rarity2',
+    'bg-rarity3',
+    'bg-rarity4',
+    'bg-rarity5',
+  ],
   theme: {
     extend: {
       colors: {
