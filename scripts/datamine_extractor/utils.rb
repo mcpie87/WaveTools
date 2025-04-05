@@ -3,13 +3,12 @@ require 'csv'
 require 'awesome_print'
 require 'byebug'
 
-DATAMINE_PATH = "/mnt/c/Users/pkmac/projects/wuwa/WutheringWaves_Data"
+DATAMINE_PATH = "/home/curdy/projects/wuwa/WutheringWaves_Data"
 BINDATA = "BinData"
 TEXTMAPS = "Textmaps"
 
-textmaps_en = "#{DATAMINE_PATH}/#{TEXTMAPS}/en/multi_text/MultiText.json"
-textmaps_file = File.open(textmaps_en)
-TEXTMAP_JSON = JSON.load(textmaps_file)
+# textmaps_en = "#{DATAMINE_PATH}/#{TEXTMAPS}/en/multi_text/MultiText.json"
+# textmaps_file = File.open(textmaps_en)
 
 WEAPON_TYPE = {
     1 => "Broadblade",
@@ -25,6 +24,19 @@ def convert_to_png(path)
     filename = filename.gsub(/\b(\w+)(?:\W+\1\b)+/, '\1')
     
     return "#{directory}/#{filename}.png"
+end
+
+def parse_iteminfo(item)
+    {
+        id: item["Id"],
+        name: get_textmap_name(item["Name"]),
+        attributes_description: get_textmap_name(item["AttributesDescription"]),
+        bg_description: get_textmap_name(item["BgDescription"]),
+        icon: convert_to_png(item["Icon"]),
+        icon_middle: convert_to_png(item["IconMiddle"]),
+        icon_small: convert_to_png(item["IconSmall"]),
+        rarity: item["QualityId"],
+    }
 end
 
 # convert Consume: [{Key, Value}]
@@ -43,12 +55,13 @@ def convert_ascension_cost(item_database, entry)
 end
 
 def get_textmap_name(id)
-    TEXTMAP_JSON.each do |textmap|
-        if textmap["Id"] == id
-            return textmap["Content"]
-        end
-    end
-    return nil
+    TEXTMAP_JSON[id]&.[]("Content") || "NO CONTENT"
+    # TEXTMAP_JSON.each do |textmap|
+    #     if textmap["Id"] == id
+    #         return textmap["Content"]
+    #     end
+    # end
+    # return nil
 end
 
 def load_file(path, keepArray = false)
@@ -61,6 +74,7 @@ def load_file(path, keepArray = false)
         acc[element["Id"]] = element
     end
 end
+TEXTMAP_JSON = load_file("#{DATAMINE_PATH}/#{TEXTMAPS}/en/multi_text/MultiText.json")
 
 def save_json(data, path)
     FileUtils.mkdir_p("out") unless Dir.exist?("out")
