@@ -18,6 +18,9 @@ export default function Header() {
                         </Link>
                     </>
                 )}
+                <Link href="/recipes" className="text-blue-600 hover:underline">
+                    Recipes
+                </Link>
                 <Link href="/planner" className="text-blue-600 hover:underline">
                     Planner
                 </Link>

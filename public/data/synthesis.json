@@ -1,0 +1,2298 @@
+[
+  {
+    "type": "synthesis",
+    "id": 23,
+    "resultItem": {
+      "id": 43020054,
+      "name": "Cadence Blossom",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Gauntlets Resonators.",
+      "bg_description": "An unusual substance resembling the shape of a blossom. If you listen carefully, you can hear the petals unfolding. At the end of the silent time, a blossom of Cadence finally bursts into bloom.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_016_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_016_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_016_UI.png",
+      "rarity": 5
+    },
+    "name": "Cadence Blossom",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43020053,
+        "name": "Cadence Leaf",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 24,
+    "resultItem": {
+      "id": 43020053,
+      "name": "Cadence Leaf",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Gauntlets Resonators.",
+      "bg_description": "An unusual substance resembling the shape of a new leaf. If you listen carefully, you can hear the faint rustle of it bathing in sunlight and sucking dew. In fact, it is able to absorb the wandering Frequency Energy from the environment.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_015_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_015_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_015_UI.png",
+      "rarity": 4
+    },
+    "name": "Cadence Leaf",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43020052,
+        "name": "Cadence Bud",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 25,
+    "resultItem": {
+      "id": 43020052,
+      "name": "Cadence Bud",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Gauntlets Resonators.",
+      "bg_description": "An unusual substance resembling the shape of a plant bud. If you listen carefully, you can sense the pleasure of sprouting from the ground. However, it can never grow into a complete plant.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_014_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_014_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_014_UI.png",
+      "rarity": 3
+    },
+    "name": "Cadence Bud",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43020051,
+        "name": "Cadence Seed",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 26,
+    "resultItem": {
+      "id": 43020044,
+      "name": "Waveworn Residue 239",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Broadblade Resonators.",
+      "bg_description": "A Waveworn residue featuring a double-layered spherical shell. It is known for its astonishing balance. Due to its indispensable role in many high-tech fields, it is subject to the most stringent trade restrictions.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_012_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_012_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_012_UI.png",
+      "rarity": 5
+    },
+    "name": "Waveworn Residue 239",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43020043,
+        "name": "Waveworn Residue 235",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 27,
+    "resultItem": {
+      "id": 43020043,
+      "name": "Waveworn Residue 235",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Broadblade Resonators.",
+      "bg_description": "A Waveworn residue featuring a double-layered spherical shell. It maintains a delicate balance. When it is highly concentrated in a centrifuge, it produces products that have various applications.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_011_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_011_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_011_UI.png",
+      "rarity": 4
+    },
+    "name": "Waveworn Residue 235",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43020042,
+        "name": "Waveworn Residue 226",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 28,
+    "resultItem": {
+      "id": 43020042,
+      "name": "Waveworn Residue 226",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Broadblade Resonators.",
+      "bg_description": "A Waveworn residue featuring a double-layered spherical shell. It is not in a state of decline. By selecting an appropriate absorber, users may still have the chance to extract Remnant Energy.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_010_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_010_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_010_UI.png",
+      "rarity": 3
+    },
+    "name": "Waveworn Residue 226",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43020041,
+        "name": "Waveworn Residue 210",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 29,
+    "resultItem": {
+      "id": 43020034,
+      "name": "Presto Helix",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Rectifier Resonators.",
+      "bg_description": "A helix with intense waveforms. Researchers are greatly captivated by the perfect harmony of movement and stillness it displays. However, to this day, no one knows how this harmony is formed.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_008_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_008_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_008_UI.png",
+      "rarity": 5
+    },
+    "name": "Presto Helix",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43020033,
+        "name": "Andante Helix",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 30,
+    "resultItem": {
+      "id": 43020033,
+      "name": "Andante Helix",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Rectifier Resonators.",
+      "bg_description": "A helix with graceful waveforms, like a melodious song composed by nature. Instead of being studied by scientists, it might in essence be a subject best explored by researchers of aesthetics.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_007_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_007_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_007_UI.png",
+      "rarity": 4
+    },
+    "name": "Andante Helix",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43020032,
+        "name": "Adagio Helix",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 31,
+    "resultItem": {
+      "id": 43020032,
+      "name": "Adagio Helix",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Rectifier Resonators.",
+      "bg_description": "A helix with gentle waveforms. Researchers can extract and utilize the sealed Cadence Energy within it. However, it is worth mentioning that researchers cannot effectively analyze the content contained within this helix.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_006_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_006_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_006_UI.png",
+      "rarity": 3
+    },
+    "name": "Adagio Helix",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43020031,
+        "name": "Lento Helix",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 32,
+    "resultItem": {
+      "id": 43020024,
+      "name": "Flawless Phlogiston",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Pistols Resonators.",
+      "bg_description": "A crystal shaped like a raging flame, known for its impeccable purity. As a result, some Resonators don't want to use these crystals solely for enhancement, instead opting to entrust professional craftsmen to process them into unique accessories.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_04_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_04_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_04_UI.png",
+      "rarity": 5
+    },
+    "name": "Flawless Phlogiston",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43020023,
+        "name": "Refined Phlogiston",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 33,
+    "resultItem": {
+      "id": 43020023,
+      "name": "Refined Phlogiston",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Pistols Resonators.",
+      "bg_description": "A crystal shaped like a solidified firework. After repeated purification, it is almost free of impurities. Its eye-catching and magnificent appearance not only holds practical utility but also elevates its collectible value.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_03_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_03_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_03_UI.png",
+      "rarity": 4
+    },
+    "name": "Refined Phlogiston",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43020022,
+        "name": "Extracted Phlogiston",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 34,
+    "resultItem": {
+      "id": 43020022,
+      "name": "Extracted Phlogiston",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Pistols Resonators.",
+      "bg_description": "A crystal shaped like a solidified candle flame. Its impurities are significantly reduced through a rough extraction and recrystallization process. This makes it simple even for those without expertise to distinguish between crystals of varying quality.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_02_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_02_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_02_UI.png",
+      "rarity": 3
+    },
+    "name": "Extracted Phlogiston",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43020021,
+        "name": "Impure Phlogiston",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 35,
+    "resultItem": {
+      "id": 43020014,
+      "name": "Heterized Metallic Drip",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Sword Resonators.",
+      "bg_description": "A special fluid metallic drip which can barely form naturally. It maintains a perpetual flow on its surface. Microscopic examinations of a few samples have revealed its intricate inner structure, resembling more of a living organism than an inorganic substance.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_Setpup_004_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_Setpup_004_4_UI.png",
+      "rarity": 5
+    },
+    "name": "Heterized Metallic Drip",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43020013,
+        "name": "Polarized Metallic Drip",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 36,
+    "resultItem": {
+      "id": 43020013,
+      "name": "Polarized Metallic Drip",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Sword Resonators.",
+      "bg_description": "A fluid metallic drip with high activity. Its surface presents an amazing luster. This polarized matter only forms under extremely strict conditions, and the scientific world has yet to fully figure out its transformation patter.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_Setpup_004_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_Setpup_004_3_UI.png",
+      "rarity": 4
+    },
+    "name": "Polarized Metallic Drip",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43020012,
+        "name": "Reactive Metallic Drip",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 37,
+    "resultItem": {
+      "id": 43020012,
+      "name": "Reactive Metallic Drip",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Sword Resonators.",
+      "bg_description": "A fluid metallic drip whose activity has been partially retained. Its surface presents a luster similar to that of Tacetites. As it is quite reactive, it needs to be stored properly upon collection to prevent any loss of Frequency Energy.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_Setpup_004_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_Setpup_004_2_UI.png",
+      "rarity": 3
+    },
+    "name": "Reactive Metallic Drip",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43020011,
+        "name": "Inert Metallic Drip",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 56,
+    "resultItem": {
+      "id": 41200034,
+      "name": "Mask of Insanity",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A very peculiar Fractsidus mask. It would be nearly impossible for a normal person to imagine the mental state of its owner. Judging from the residual frequency on the mask, one can perceive that the owner's emotions have become severely distorted, generating frequencies that resemble Tacet Discords.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_004_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_004_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_004_UI.png",
+      "rarity": 5
+    },
+    "name": "Mask of Insanity",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41200033,
+        "name": "Mask of Distortion",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 57,
+    "resultItem": {
+      "id": 41200033,
+      "name": "Mask of Distortion",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A mask worn by Fractsidus veterans. The original owner has now had no turning back on the road of Overclocking. Would they have chosen to wear this mask if they had foreseen all the torment and suffering that lay ahead?",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_003_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_003_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_003_UI.png",
+      "rarity": 4
+    },
+    "name": "Mask of Distortion",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41200032,
+        "name": "Mask of Erosion",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 58,
+    "resultItem": {
+      "id": 41200032,
+      "name": "Mask of Erosion",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A mask worn by Fractsidus active members. Due to long-term use, its ability to stabilize frequency has been greatly mitigated. One can clearly feel the torment of being drowning in negative emotions from the mask.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_002_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_002_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_002_UI.png",
+      "rarity": 3
+    },
+    "name": "Mask of Erosion",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41200031,
+        "name": "Mask of Constraint",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 65,
+    "resultItem": {
+      "id": 41100034,
+      "name": "Tailored Ring",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A ring made of special material using unique techniques. Its owner must boast a legendary experience. Much of the information stored within it is encrypted and challenging to decipher for details.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_003_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_003_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_003_4_UI.png",
+      "rarity": 5
+    },
+    "name": "Tailored Ring",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41100033,
+        "name": "Improved Ring",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 66,
+    "resultItem": {
+      "id": 41100033,
+      "name": "Improved Ring",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "An improved Ring, exclusive to a selected few. This ring stores a large amount of wilderness survival information. Certain entries detailing rare plants and special minerals hold academic significance compared to papers written by the Academy.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_003_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_003_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_003_3_UI.png",
+      "rarity": 4
+    },
+    "name": "Improved Ring",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41100032,
+        "name": "Basic Ring",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 67,
+    "resultItem": {
+      "id": 41100032,
+      "name": "Basic Ring",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A ring with bearable quality. Apart from helping the Exiles to recognize each other's identification, it also provides various functions such as basic communication, location services, and scanning. These features assist the Exiles to better survive in the wilderness.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_003_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_003_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_003_2_UI.png",
+      "rarity": 3
+    },
+    "name": "Basic Ring",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41100031,
+        "name": "Crude Ring",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 68,
+    "resultItem": {
+      "id": 41100024,
+      "name": "FF Howler Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "The Tacet Core of a special Howler. It takes the form of a seed emerging from a withered Tacetite Bloom. Life is brimming with endless possibilities. This core, akin to the seed of life, also contains infinite possibilities.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_E_002_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_E_002_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_E_002_4_UI.png",
+      "rarity": 5
+    },
+    "name": "FF Howler Core",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41100023,
+        "name": "HF Howler Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 69,
+    "resultItem": {
+      "id": 41100023,
+      "name": "HF Howler Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "The Tacet Core of a powerful Howler. The fierce and untamed Frequency Energy continues to reverberate within it. Evolution is all about adapting to the environment. Who will emerge victorious from the ordeal of the devastating Waveworm Phenomenon?",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_E_002_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_E_002_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_E_002_3_UI.png",
+      "rarity": 4
+    },
+    "name": "HF Howler Core",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41100022,
+        "name": "MF Howler Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 70,
+    "resultItem": {
+      "id": 41100022,
+      "name": "MF Howler Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "The Tacet Core of a common Howler. After the Tacetite Bloom withers, a certain amount of Frequency Energy remains. Similar to the natural cycle of life, this frequency can probably serve as the sustenance for newcomers.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_E_002_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_E_002_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_E_002_2_UI.png",
+      "rarity": 3
+    },
+    "name": "MF Howler Core",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41100021,
+        "name": "LF Howler Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 71,
+    "resultItem": {
+      "id": 41100014,
+      "name": "FF Whisperin Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "The Tacet Core of a special Whisperin. It takes the form of an intricate star, bearing both recognizable and unfamiliar Frequency Energy. It seems that humans only know the tip of the iceberg of themselves.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_002_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_002_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_002_4_UI.png",
+      "rarity": 5
+    },
+    "name": "FF Whisperin Core",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41100013,
+        "name": "HF Whisperin Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 72,
+    "resultItem": {
+      "id": 41100013,
+      "name": "HF Whisperin Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "The Tacet Core of a powerful Whisperin. It takes the form of a star with sharp ridges along its outline—like an embodiment of its shrill Frequency Energy. Perhaps, its personification has already led to the Uncanny Valley effect.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_002_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_002_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_002_3_UI.png",
+      "rarity": 4
+    },
+    "name": "HF Whisperin Core",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41100012,
+        "name": "MF Whisperin Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 73,
+    "resultItem": {
+      "id": 41100012,
+      "name": "MF Whisperin Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "The Tacet Core of a common Whisperin. It takes the form of a clear and complete star. Its Frequency Energy aligns with the hearing range of normal people. Yet, the question remains: what's the intention behind this imitation?",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_002_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_002_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_002_2_UI.png",
+      "rarity": 3
+    },
+    "name": "MF Whisperin Core",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41100011,
+        "name": "LF Whisperin Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 101,
+    "resultItem": {
+      "id": 42100001,
+      "name": "Fusion Resistance Spray",
+      "attributes_description": "Increases Fusion DMG RES of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A pressurized canister spray filled using an advanced process that creates a special protective layer on the user's body surface to increase resistance to specified types of injuries.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_001_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_001_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_001_UI.png",
+      "rarity": 3
+    },
+    "name": "Fusion Resistance Spray",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310090,
+        "name": "Waterlamp",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 102,
+    "resultItem": {
+      "id": 42100002,
+      "name": "Aero Resistance Spray",
+      "attributes_description": "Increases Aero DMG RES of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A pressurized canister spray filled using an advanced process that creates a special protective layer on the user's body surface to increase resistance to specified types of injuries.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_006_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_006_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_006_UI.png",
+      "rarity": 3
+    },
+    "name": "Aero Resistance Spray",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310100,
+        "name": "Bunnywort",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 103,
+    "resultItem": {
+      "id": 42100003,
+      "name": "Electro Resistance Spray",
+      "attributes_description": "Increases Electro DMG RES of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A pressurized canister spray filled using an advanced process that creates a special protective layer on the user's body surface to increase resistance to specified types of injuries.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_005_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_005_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_005_UI.png",
+      "rarity": 3
+    },
+    "name": "Electro Resistance Spray",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300070,
+        "name": "Belle Poppy",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 104,
+    "resultItem": {
+      "id": 42100004,
+      "name": "Glacio Resistance Spray",
+      "attributes_description": "Increases Glacio DMG RES of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A pressurized canister spray filled using an advanced process that creates a special protective layer on the user's body surface to increase resistance to specified types of injuries.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_004_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_004_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_004_UI.png",
+      "rarity": 3
+    },
+    "name": "Glacio Resistance Spray",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300090,
+        "name": "Wintry Bell",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 105,
+    "resultItem": {
+      "id": 42100005,
+      "name": "Spectro Resistance Spray",
+      "attributes_description": "Increases Spectro DMG RES of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A pressurized canister spray filled using an advanced process that creates a special protective layer on the user's body surface to increase resistance to specified types of injuries.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_002_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_002_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_002_UI.png",
+      "rarity": 3
+    },
+    "name": "Spectro Resistance Spray",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310060,
+        "name": "Angelica",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 106,
+    "resultItem": {
+      "id": 42100006,
+      "name": "Havoc Resistance Spray",
+      "attributes_description": "Increases Havoc DMG RES of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A pressurized canister spray filled using an advanced process that creates a special protective layer on the user's body surface to increase resistance to specified types of injuries.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_003_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_003_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_003_UI.png",
+      "rarity": 3
+    },
+    "name": "Havoc Resistance Spray",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310150,
+        "name": "Cliffrecluse",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 107,
+    "resultItem": {
+      "id": 42100007,
+      "name": "Fusion Petrol",
+      "attributes_description": "Increases Fusion DMG Bonus of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A compound potion that enhances offensive capabilities. It combines a potion efficacy catalyst with different solution developed for different resonance properties. When not in use, the two compounds separate naturally and need to be shaken well before use and then applied to the weapon.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_007_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_007_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_007_UI.png",
+      "rarity": 3
+    },
+    "name": "Fusion Petrol",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300050,
+        "name": "Lanternberry",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 108,
+    "resultItem": {
+      "id": 42100008,
+      "name": "Aero Petrol",
+      "attributes_description": "Increases Aero DMG Bonus of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A compound potion that enhances offensive capabilities. It combines a potion efficacy catalyst with different solution developed for different resonance properties. When not in use, the two compounds separate naturally and need to be shaken well before use and then applied to the weapon.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_012_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_012_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_012_UI.png",
+      "rarity": 3
+    },
+    "name": "Aero Petrol",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310080,
+        "name": "Erodorchid",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 109,
+    "resultItem": {
+      "id": 42100009,
+      "name": "Electro Petrol",
+      "attributes_description": "Increases Electro DMG Bonus of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A compound potion that enhances offensive capabilities. It combines a potion efficacy catalyst with different solution developed for different resonance properties. When not in use, the two compounds separate naturally and need to be shaken well before use and then applied to the weapon.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_011_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_011_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_011_UI.png",
+      "rarity": 3
+    },
+    "name": "Electro Petrol",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300070,
+        "name": "Belle Poppy",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 110,
+    "resultItem": {
+      "id": 42100010,
+      "name": "Glacio Petrol",
+      "attributes_description": "Increases Glacio DMG Bonus of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A compound potion that enhances offensive capabilities. It combines a potion efficacy catalyst with different solution developed for different resonance properties. When not in use, the two compounds separate naturally and need to be shaken well before use and then applied to the weapon.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_010_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_010_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_010_UI.png",
+      "rarity": 3
+    },
+    "name": "Glacio Petrol",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300090,
+        "name": "Wintry Bell",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 111,
+    "resultItem": {
+      "id": 42100011,
+      "name": "Spectro Petrol",
+      "attributes_description": "Increases Spectro DMG Bonus of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A compound potion that enhances offensive capabilities. It combines a potion efficacy catalyst with different solution developed for different resonance properties. When not in use, the two compounds separate naturally and need to be shaken well before use and then applied to the weapon.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_008_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_008_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_008_UI.png",
+      "rarity": 3
+    },
+    "name": "Spectro Petrol",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310060,
+        "name": "Angelica",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 112,
+    "resultItem": {
+      "id": 42100012,
+      "name": "Havoc Petrol",
+      "attributes_description": "Increases Havoc DMG Bonus of all Resonators in the team by 15%, lasting for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A compound potion that enhances offensive capabilities. It combines a potion efficacy catalyst with different solution developed for different resonance properties. When not in use, the two compounds separate naturally and need to be shaken well before use and then applied to the weapon.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_009_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_009_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_009_UI.png",
+      "rarity": 3
+    },
+    "name": "Havoc Petrol",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310150,
+        "name": "Cliffrecluse",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 113,
+    "resultItem": {
+      "id": 42100013,
+      "name": "Basic Revival Inhaler",
+      "attributes_description": "Used to immediately revive and heal a selected downed Resonator for 100 HP. This item can only be used once every 60s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication for reviving downed individuals in emergencies. Its portable design includes a mechanical compartment with highly concentrated active ingredients for quick recovery.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_013_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_013_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_013_UI.png",
+      "rarity": 2
+    },
+    "name": "Basic Revival Inhaler",
+    "rarity": 2,
+    "materials": [
+      {
+        "id": 42310030,
+        "name": "Noctemint",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 114,
+    "resultItem": {
+      "id": 42100014,
+      "name": "Medium Revival Inhaler",
+      "attributes_description": "Used to immediately revive and heal 10% of a selected downed Resonator's Max HP. This item can only be used once every 60s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication for reviving downed individuals in emergencies. Its portable design includes a mechanical compartment with highly concentrated active ingredients for quick recovery.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_014_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_014_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_014_UI.png",
+      "rarity": 3
+    },
+    "name": "Medium Revival Inhaler",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310030,
+        "name": "Noctemint",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 115,
+    "resultItem": {
+      "id": 42100015,
+      "name": "Advanced Revival Inhaler",
+      "attributes_description": "Used to immediately revive and heal 25% of a selected downed Resonator's Max HP. This item can only be used once every 60s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication for reviving downed individuals in emergencies. Its portable design includes a mechanical compartment with highly concentrated active ingredients for quick recovery.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_015_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_015_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_015_UI.png",
+      "rarity": 4
+    },
+    "name": "Advanced Revival Inhaler",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42310040,
+        "name": "Honeysuckle",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 116,
+    "resultItem": {
+      "id": 42100016,
+      "name": "Premium Revival Inhaler",
+      "attributes_description": "Used to immediately revive and heal 100% of a selected downed Resonator's Max HP. This item can only be used once every 60s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication for reviving downed individuals in emergencies. Its portable design includes a mechanical compartment with highly concentrated active ingredients for quick recovery.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_016_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_016_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_016_UI.png",
+      "rarity": 5
+    },
+    "name": "Premium Revival Inhaler",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42310040,
+        "name": "Honeysuckle",
+        "value": 2
+      },
+      {
+        "id": 42400100,
+        "name": "Chrysopa",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 117,
+    "resultItem": {
+      "id": 42100017,
+      "name": "Basic Nutrient Block",
+      "attributes_description": "Used to heal 10% of a selected Resonator's Max HP, plus an extra 500 HP. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A sugar cube supplement made from concentrated precious nutrients. Its active ingredients can be quickly absorbed by the human body.\nSweet and delicious, it's a favorite among children.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_017_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_017_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_017_UI.png",
+      "rarity": 2
+    },
+    "name": "Basic Nutrient Block",
+    "rarity": 2,
+    "materials": [
+      {
+        "id": 42310020,
+        "name": "Dewvetch",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 118,
+    "resultItem": {
+      "id": 42100018,
+      "name": "Medium Nutrient Block",
+      "attributes_description": "Used to heal 15% of a selected Resonator's Max HP, plus an extra 1,000 HP. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A sugar cube supplement made from concentrated precious nutrients. Its active ingredients can be quickly absorbed by the human body.\nSweet and delicious, it's a favorite among children.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_018_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_018_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_018_UI.png",
+      "rarity": 3
+    },
+    "name": "Medium Nutrient Block",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310020,
+        "name": "Dewvetch",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 119,
+    "resultItem": {
+      "id": 42100019,
+      "name": "Advanced Nutrient Block",
+      "attributes_description": "Used to heal 20% of a selected Resonator's Max HP, plus an extra 1,500 HP. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A sugar cube supplement made from concentrated precious nutrients. Its active ingredients can be quickly absorbed by the human body.\nSweet and delicious, it's a favorite among children.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_019_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_019_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_019_UI.png",
+      "rarity": 4
+    },
+    "name": "Advanced Nutrient Block",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021002,
+        "name": "Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42300110,
+        "name": "Bittberry",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 121,
+    "resultItem": {
+      "id": 42100021,
+      "name": "Premium Nutrient Block",
+      "attributes_description": "Used to heal 30% of a selected Resonator's Max HP, plus an extra 2,000 HP. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A sugar cube supplement made from concentrated precious nutrients. Its active ingredients can be quickly absorbed by the human body.\nSweet and delicious, it's a favorite among children.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_020_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_020_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_020_UI.png",
+      "rarity": 5
+    },
+    "name": "Premium Nutrient Block",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42300110,
+        "name": "Bittberry",
+        "value": 2
+      },
+      {
+        "id": 42400150,
+        "name": "Green Pit Lizard",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 122,
+    "resultItem": {
+      "id": 42100022,
+      "name": "Basic Energy Bag",
+      "attributes_description": "Used to heal a selected Resonator in the team for 100 HP per second over 30s. Only effective on your own Resonators in Co-op.",
+      "bg_description": "Portable liquid supplements filled using an advanced process that provides a quick and easy way to recharge and rejuvenate.\n“An energy supply in your pocket. A must-have for adventures.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_021_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_021_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_021_UI.png",
+      "rarity": 2
+    },
+    "name": "Basic Energy Bag",
+    "rarity": 2,
+    "materials": [
+      {
+        "id": 42310070,
+        "name": "Lemongrass",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 123,
+    "resultItem": {
+      "id": 42100023,
+      "name": "Medium Energy Bag",
+      "attributes_description": "Used to heal a selected Resonator in the team for 150 HP per second over 30s. Only effective on your own Resonators in Co-op.",
+      "bg_description": "Portable liquid supplements filled using an advanced process that provides a quick and easy way to recharge and rejuvenate.\n“An energy supply in your pocket. A must-have for adventures.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_022_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_022_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_022_UI.png",
+      "rarity": 3
+    },
+    "name": "Medium Energy Bag",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310070,
+        "name": "Lemongrass",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 124,
+    "resultItem": {
+      "id": 42100024,
+      "name": "Advanced Energy Bag",
+      "attributes_description": "Used to heal 2% of a selected Resonator's Max HP, plus an extra 200 HP per second over 30s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Portable liquid supplements filled using an advanced process that provides a quick and easy way to recharge and rejuvenate.\n“An energy supply in your pocket. A must-have for adventures.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_023_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_023_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_023_UI.png",
+      "rarity": 4
+    },
+    "name": "Advanced Energy Bag",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42300010,
+        "name": "Lotus Seeds",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 125,
+    "resultItem": {
+      "id": 42100025,
+      "name": "Premium Energy Bag",
+      "attributes_description": "Used to heal 3% of a selected Resonator's Max HP, plus an extra 300 HP per second over 30s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Portable liquid supplements filled using an advanced process that provides a quick and easy way to recharge and rejuvenate.\n“An energy supply in your pocket. A must-have for adventures.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_024_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_024_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_024_UI.png",
+      "rarity": 5
+    },
+    "name": "Premium Energy Bag",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42300010,
+        "name": "Lotus Seeds",
+        "value": 2
+      },
+      {
+        "id": 42400170,
+        "name": "Goldenback Frog",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 126,
+    "resultItem": {
+      "id": 42100026,
+      "name": "Supersonic Solvent",
+      "attributes_description": "Reduces Echo Skill Cooldown of a selected Resonator in the team by 30% for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A solid solvent made using a special process allows the user to use Echo Forte more frequently.\n“I run faster after taking this, which means I must have gotten lighter, which means I have gotten thinner... So does it mean it's also a weight-loss product?”",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_025_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_025_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_025_UI.png",
+      "rarity": 4
+    },
+    "name": "Supersonic Solvent",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42310190,
+        "name": "Gloom Slough",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 127,
+    "resultItem": {
+      "id": 42100027,
+      "name": "Trainer Solvent",
+      "attributes_description": "Increases Echo Skill DMG of all Resonators in the team by 40% for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A solid solvent created using a special process that boosts the Echo Forte you cast.\nSaid to be invented by a self-proclaimed aspiring Echo Training Master.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_026_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_026_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_026_UI.png",
+      "rarity": 4
+    },
+    "name": "Trainer Solvent",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42400130,
+        "name": "Silver-Banded Lizard",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 128,
+    "resultItem": {
+      "id": 42100028,
+      "name": "String Solvent",
+      "attributes_description": "Grants a selected Resonator in the team 1 Concerto Energy per second for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Using a solid solvent made by a special process. Just one tablet can put the whole squad in a melodious melody and follow the music to finish the battle gracefully.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_027_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_027_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_027_UI.png",
+      "rarity": 4
+    },
+    "name": "String Solvent",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42400020,
+        "name": "Feather",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 129,
+    "resultItem": {
+      "id": 42100029,
+      "name": "Drummer Solvent",
+      "attributes_description": "Boosts Energy Regen of all Resonators in the team by 30% for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Using a solid solvent made by a special process. Just one table can make the entire squad's ears ring with a thrilling rhythm, as if they were holding drumsticks instead of weapons.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_028_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_028_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_028_UI.png",
+      "rarity": 4
+    },
+    "name": "Drummer Solvent",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42310120,
+        "name": "Chromeshell",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 132,
+    "resultItem": {
+      "id": 42100032,
+      "name": "Morale Tablets",
+      "attributes_description": "Allows a selected Resonator in the team to additionally reduce the Vibration Strength of the targets by a certain percentage when they trigger Counterattack within 60s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A special product that combines potions of different potencies, which may provide a variety of unexpected benefits.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_029_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_029_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_029_UI.png",
+      "rarity": 5
+    },
+    "name": "Morale Tablets",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42400110,
+        "name": "Golden-ringed Dragonfly",
+        "value": 2
+      },
+      {
+        "id": 42400080,
+        "name": "Red Feather Butterfly",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 133,
+    "resultItem": {
+      "id": 42100033,
+      "name": "Harmony Tablets",
+      "attributes_description": "Allows a selected Resonator in the team to regain 20 Concerto Energy when releasing Intro Skill within 60s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A special product that combines potions of different potencies, which may provide a variety of unexpected benefits.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_029_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_029_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_029_UI.png",
+      "rarity": 5
+    },
+    "name": "Harmony Tablets",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42400090,
+        "name": "Blue Feather Butterfly",
+        "value": 2
+      },
+      {
+        "id": 42400140,
+        "name": "Azure Lizard",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 134,
+    "resultItem": {
+      "id": 42100034,
+      "name": "Passion Tablets",
+      "attributes_description": "Allows a selected Resonator in the team to regain 5 Resonance Energy when they successfully Dodge an attack within 60s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A special product that combines potions of different potencies, which may provide a variety of unexpected benefits.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_030_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_030_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_030_UI.png",
+      "rarity": 5
+    },
+    "name": "Passion Tablets",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42310130,
+        "name": "Dripsnail",
+        "value": 2
+      },
+      {
+        "id": 42400070,
+        "name": "Phoenix Butterfly",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 135,
+    "resultItem": {
+      "id": 42100035,
+      "name": "Vigor Tablets",
+      "attributes_description": "Grants a selected Resonator in the team immunity to the next fatal damage and heals 25% of the Resonator's Max HP, lasting for 60s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A special product that combines potions of different potencies, which may provide a variety of unexpected benefits.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_030_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_030_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_030_UI.png",
+      "rarity": 5
+    },
+    "name": "Vigor Tablets",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42400130,
+        "name": "Silver-Banded Lizard",
+        "value": 2
+      },
+      {
+        "id": 42400160,
+        "name": "Black-Striped Frog",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 136,
+    "resultItem": {
+      "id": 80021001,
+      "name": "Base Fluid",
+      "attributes_description": "A material used for Synthesis.",
+      "bg_description": "It is widely used as a base liquid in various preparations.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_032_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_032_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_032_UI.png",
+      "rarity": 2
+    },
+    "name": "Base Fluid",
+    "rarity": 2,
+    "materials": [
+      {
+        "id": 42310010,
+        "name": "Pearl Leaf",
+        "value": 2
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 137,
+    "resultItem": {
+      "id": 80021002,
+      "name": "Fluid Catalyst",
+      "attributes_description": "A material used for Synthesis.",
+      "bg_description": "Catalytic fluids that can accelerate the onset of action of all types of potions.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_033_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_033_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_033_UI.png",
+      "rarity": 3
+    },
+    "name": "Fluid Catalyst",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 42310070,
+        "name": "Lemongrass",
+        "value": 2
+      },
+      {
+        "id": 42310020,
+        "name": "Dewvetch",
+        "value": 1
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 138,
+    "resultItem": {
+      "id": 80021004,
+      "name": "Fluid Stabilizer",
+      "attributes_description": "A material used for Synthesis.",
+      "bg_description": "Stabilizing fluids that improve the reliability of all types of potions.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_035_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_035_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_035_UI.png",
+      "rarity": 3
+    },
+    "name": "Fluid Stabilizer",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 42310060,
+        "name": "Angelica",
+        "value": 2
+      },
+      {
+        "id": 42310020,
+        "name": "Dewvetch",
+        "value": 1
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 140,
+    "resultItem": {
+      "id": 80021003,
+      "name": "Strong Fluid Catalyst",
+      "attributes_description": "A material used for Synthesis.",
+      "bg_description": "Powerful catalytic fluids that can significantly accelerate the onset of action of all types of formulations.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_034_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_034_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_034_UI.png",
+      "rarity": 4
+    },
+    "name": "Strong Fluid Catalyst",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310160,
+        "name": "Umbragricus",
+        "value": 2
+      },
+      {
+        "id": 42310170,
+        "name": "Gemberry",
+        "value": 2
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 141,
+    "resultItem": {
+      "id": 80021005,
+      "name": "Strong Fluid Stabilizer",
+      "attributes_description": "A material used for Synthesis.",
+      "bg_description": "Strong stabilizing fluids that significantly improve the reliability of all types of potions.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_036_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_036_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_036_UI.png",
+      "rarity": 4
+    },
+    "name": "Strong Fluid Stabilizer",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310140,
+        "name": "Viola",
+        "value": 2
+      },
+      {
+        "id": 42310170,
+        "name": "Gemberry",
+        "value": 2
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 4,
+    "resultItem": {
+      "id": 10807,
+      "name": "Sonar Circuit",
+      "attributes_description": "Can be used to activate the Casket Sonar's search and pinpointing functions for special collectibles.",
+      "bg_description": "The most basic structure to artificially reproduce or store Remnant frequency. It allows the Casket Sonar to match the frequencies around with the Remnant information within its storage to locate special collectibles.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_08_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_08_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_08_UI.png",
+      "rarity": 4
+    },
+    "name": "Sonar Circuit",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 42500010,
+        "name": "Scarletthorn",
+        "value": 10
+      },
+      {
+        "id": 42500040,
+        "name": "Floramber",
+        "value": 10
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 10000
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 5,
+    "resultItem": {
+      "id": 10808,
+      "name": "Waypoint Module",
+      "attributes_description": "Used to activate the search function of Waypoint.",
+      "bg_description": "The core module of the Waypoint, responsible for collecting, sharing, and updating location information. It connects the Waypoint and the Resonance Beacon, making it essential for initiating and maintaining the functioning of the Waypoint.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_09_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_09_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_09_UI.png",
+      "rarity": 4
+    },
+    "name": "Waypoint Module",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 42500030,
+        "name": "Indigoite",
+        "value": 5
+      },
+      {
+        "id": 42500040,
+        "name": "Floramber",
+        "value": 5
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 5000
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 6,
+    "resultItem": {
+      "id": 43020001,
+      "name": "Basic Energy Core",
+      "attributes_description": "Provides 1,000 Weapon EXP.",
+      "bg_description": "Purified liquid energy extracted from Tacetite, its purity increasing with higher ratings. When injected into a weapon, it offers a corresponding bonus.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Exp_1_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_Exp_1_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_Exp_1_UI.png",
+      "rarity": 2
+    },
+    "name": "Basic Energy Core",
+    "rarity": 2,
+    "materials": [
+      {
+        "id": 42500040,
+        "name": "Floramber",
+        "value": 2
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 500
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 7,
+    "resultItem": {
+      "id": 43020002,
+      "name": "Medium Energy Core",
+      "attributes_description": "Provides 3,000 Weapon EXP.",
+      "bg_description": "A supplement storing a small amount of Tacetite Energy. It can be used to recharge the core modules of Tacetite Weapons. Routine preventative maintenance of weapons is advised for all Resonators, or they may find themselves caught off guard in the case of an emergency.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Exp_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_Exp_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_Exp_2_UI.png",
+      "rarity": 3
+    },
+    "name": "Medium Energy Core",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 42500040,
+        "name": "Floramber",
+        "value": 5
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 1000
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 8,
+    "resultItem": {
+      "id": 36000001,
+      "name": "Basic Sealed Tube",
+      "attributes_description": "Basic Echo EXP item. Provides 500 EXP.",
+      "bg_description": "A cylindrical storage that contains simplified frequency cluster. To activate it, users must rotate the cipher wheel to the correct position. Resonators can then extract its data using their Terminal, employing it to optimize the performance of the absorbed Echoes.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_10_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_10_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_10_UI.png",
+      "rarity": 2
+    },
+    "name": "Basic Sealed Tube",
+    "rarity": 2,
+    "materials": [
+      {
+        "id": 42500090,
+        "name": "Fluorite",
+        "value": 3
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 1500
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 9,
+    "resultItem": {
+      "id": 36000002,
+      "name": "Medium Sealed Tube",
+      "attributes_description": "Medium Echo EXP item. Provides 1,000 EXP.",
+      "bg_description": "A cylindrical storage that contains standard frequencies. To activate it, users must rotate the cipher wheel to the correct position. This medium-sized storage holds a greater volume of information compared to the basic version. Consequently, the database available for training is more complete, better optimizing the performance of the absorbed Echoes.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_11_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_11_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_11_UI.png",
+      "rarity": 3
+    },
+    "name": "Medium Sealed Tube",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 42500090,
+        "name": "Fluorite",
+        "value": 6
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 2500
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 10,
+    "resultItem": {
+      "id": 36000013,
+      "name": "Advanced Tuner",
+      "attributes_description": "A device for Tuning 4-star Echoes. Unlocks one Substat.",
+      "bg_description": "Adjust Echoes' frequencies, remove any noise, and unleash their true potential.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_txq_02_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_txq_02_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_txq_02_UI.png",
+      "rarity": 4
+    },
+    "name": "Advanced Tuner",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 36000012,
+        "name": "Medium Tuner",
+        "value": 5
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 11,
+    "resultItem": {
+      "id": 36000014,
+      "name": "Premium Tuner",
+      "attributes_description": "A device for Tuning 5-star Echoes. Unlocks one Substat.",
+      "bg_description": "Adjust Echoes' frequencies, remove any noise, and unleash their true potential.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_txq_03_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_txq_03_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_txq_03_UI.png",
+      "rarity": 5
+    },
+    "name": "Premium Tuner",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 36000013,
+        "name": "Advanced Tuner",
+        "value": 5
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "type": "synthesis",
+    "id": 142,
+    "resultItem": {
+      "id": 42100036,
+      "name": "Fusion-resistant Spray",
+      "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Fusion DMG RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication stored in aerosol containers, pressurized through an advanced industrial process. When applied, it forms a damage-resistant layer on the skin that absorbs enemy power to increase the user's RES against a specific type of damage.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_001_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_001_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_001_UI.png",
+      "rarity": 4
+    },
+    "name": "Fusion-resistant Spray",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601020,
+        "name": "Thief's Talon",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 143,
+    "resultItem": {
+      "id": 42100037,
+      "name": "Aero-resistant Spray",
+      "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Fusion DMG RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication stored in aerosol containers, pressurized through an advanced industrial process. When applied, it forms a damage-resistant layer on the skin that absorbs enemy power to increase the user's RES against a specific type of damage.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_006_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_006_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_006_UI.png",
+      "rarity": 4
+    },
+    "name": "Aero-resistant Spray",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601050,
+        "name": "Fur",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 144,
+    "resultItem": {
+      "id": 42100038,
+      "name": "Electro-resistant Spray",
+      "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Electro DMG RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication stored in aerosol containers, pressurized through an advanced industrial process. When applied, it forms a damage-resistant layer on the skin that absorbs enemy power to increase the user's RES against a specific type of damage.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_005_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_005_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_005_UI.png",
+      "rarity": 4
+    },
+    "name": "Electro-resistant Spray",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601060,
+        "name": "Goldcrest Scarab",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 145,
+    "resultItem": {
+      "id": 42100039,
+      "name": "Glacio-resistant Spray",
+      "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Glacio DMG RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication stored in aerosol containers, pressurized through an advanced industrial process. When applied, it forms a damage-resistant layer on the skin that absorbs enemy power to increase the user's RES against a specific type of damage.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_004_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_004_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_004_UI.png",
+      "rarity": 4
+    },
+    "name": "Glacio-resistant Spray",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601090,
+        "name": "Mastic Nuvola",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 146,
+    "resultItem": {
+      "id": 42100040,
+      "name": "Spectro-resistant Spray",
+      "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Spectro RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication stored in aerosol containers, pressurized through an advanced industrial process. When applied, it forms a damage-resistant layer on the skin that absorbs enemy power to increase the user's RES against a specific type of damage.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_002_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_002_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_002_UI.png",
+      "rarity": 4
+    },
+    "name": "Spectro-resistant Spray",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601120,
+        "name": "Cassia Bud",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 147,
+    "resultItem": {
+      "id": 42100041,
+      "name": "Havoc-resistant Spray",
+      "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Havoc DMG RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A medication stored in aerosol containers, pressurized through an advanced industrial process. When applied, it forms a damage-resistant layer on the skin that absorbs enemy power to increase the user's RES against a specific type of damage.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_003_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_003_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_003_UI.png",
+      "rarity": 4
+    },
+    "name": "Havoc-resistant Spray",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601130,
+        "name": "Felicitous Olives",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 74,
+    "resultItem": {
+      "id": 41100044,
+      "name": "FF Polygon Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A robust polygonal Tacet Core with an intricate, terraced pattern. The polygonal structure shows a tendency to expand outwards, likely because of the lack of capacity for storing the growingly complex logic in the behaviors of a Tacet Discord.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_004_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_004_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_004_4_UI.png",
+      "rarity": 5
+    },
+    "name": "FF Polygon Core",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41100043,
+        "name": "HF Polygon Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 75,
+    "resultItem": {
+      "id": 41100043,
+      "name": "HF Polygon Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A robust polygonal Tacet Core with an intricate, terraced pattern. The concentric layers spiral inward in dense steps. It's deduced the density of its pattern correlates with the complexity of the Tacet Discord's behavioral patterns.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_004_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_004_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_004_3_UI.png",
+      "rarity": 4
+    },
+    "name": "HF Polygon Core",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41100042,
+        "name": "MF Polygon Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 76,
+    "resultItem": {
+      "id": 41100042,
+      "name": "MF Polygon Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A common polygonal Tacet Core with an intricate, terraced pattern. The spiral structure is fairly complete. Seems to be an analog circuit recording the behavioral patterns of a Tacet Discord.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_004_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_004_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_004_2_UI.png",
+      "rarity": 3
+    },
+    "name": "MF Polygon Core",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41100041,
+        "name": "LF Polygon Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 77,
+    "resultItem": {
+      "id": 41100054,
+      "name": "FF Tidal Residuum",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A unique formation resembling a tide-breaking vessel, found only on a few powerful Tacet Discords in Rinascita. Legend say Tacet Discords bearing this Residuum can chart the course to the Journeying Paradise.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_005_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_005_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_005_4_UI.png",
+      "rarity": 5
+    },
+    "name": "FF Tidal Residuum",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41100053,
+        "name": "HF Tidal Residuum",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 78,
+    "resultItem": {
+      "id": 41100053,
+      "name": "HF Tidal Residuum",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A robust formation resembling a sailing ship, occasionally found on certain Tacet Discords in Rinascita. Legend say Tacet Discords with this Residuum can hear the distant echoes of the Dark Tide.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_005_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_005_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_005_3_UI.png",
+      "rarity": 4
+    },
+    "name": "HF Tidal Residuum",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41100052,
+        "name": "MF Tidal Residuum",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 79,
+    "resultItem": {
+      "id": 41100052,
+      "name": "MF Tidal Residuum",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A common formation resembling a storm-weathered boat, often found on Tacet Discords in Rinascita, which are said to be born of the Dark Tide and carry this Residuum since their formation.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_005_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_005_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_005_2_UI.png",
+      "rarity": 3
+    },
+    "name": "MF Tidal Residuum",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41100051,
+        "name": "LF Tidal Residuum",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  }
+]

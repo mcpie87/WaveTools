@@ -1,0 +1,1458 @@
+[
+  {
+    "id": 23,
+    "name": "Cadence Blossom",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_016_UI.png",
+    "materials": [
+      {
+        "id": 43020053,
+        "name": "Cadence Leaf",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 24,
+    "name": "Cadence Leaf",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_015_UI.png",
+    "materials": [
+      {
+        "id": 43020052,
+        "name": "Cadence Bud",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 25,
+    "name": "Cadence Bud",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_014_UI.png",
+    "materials": [
+      {
+        "id": 43020051,
+        "name": "Cadence Seed",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 26,
+    "name": "Waveworn Residue 239",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_012_UI.png",
+    "materials": [
+      {
+        "id": 43020043,
+        "name": "Waveworn Residue 235",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 27,
+    "name": "Waveworn Residue 235",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_011_UI.png",
+    "materials": [
+      {
+        "id": 43020042,
+        "name": "Waveworn Residue 226",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 28,
+    "name": "Waveworn Residue 226",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_010_UI.png",
+    "materials": [
+      {
+        "id": 43020041,
+        "name": "Waveworn Residue 210",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 29,
+    "name": "Presto Helix",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_008_UI.png",
+    "materials": [
+      {
+        "id": 43020033,
+        "name": "Andante Helix",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 30,
+    "name": "Andante Helix",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_007_UI.png",
+    "materials": [
+      {
+        "id": 43020032,
+        "name": "Adagio Helix",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 31,
+    "name": "Adagio Helix",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_006_UI.png",
+    "materials": [
+      {
+        "id": 43020031,
+        "name": "Lento Helix",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 32,
+    "name": "Flawless Phlogiston",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_04_UI.png",
+    "materials": [
+      {
+        "id": 43020023,
+        "name": "Refined Phlogiston",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 33,
+    "name": "Refined Phlogiston",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_03_UI.png",
+    "materials": [
+      {
+        "id": 43020022,
+        "name": "Extracted Phlogiston",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 34,
+    "name": "Extracted Phlogiston",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_02_UI.png",
+    "materials": [
+      {
+        "id": 43020021,
+        "name": "Impure Phlogiston",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 35,
+    "name": "Heterized Metallic Drip",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_4_UI.png",
+    "materials": [
+      {
+        "id": 43020013,
+        "name": "Polarized Metallic Drip",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 36,
+    "name": "Polarized Metallic Drip",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_3_UI.png",
+    "materials": [
+      {
+        "id": 43020012,
+        "name": "Reactive Metallic Drip",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 37,
+    "name": "Reactive Metallic Drip",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Setpup_004_2_UI.png",
+    "materials": [
+      {
+        "id": 43020011,
+        "name": "Inert Metallic Drip",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 56,
+    "name": "Mask of Insanity",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_004_UI.png",
+    "materials": [
+      {
+        "id": 41200033,
+        "name": "Mask of Distortion",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 57,
+    "name": "Mask of Distortion",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_003_UI.png",
+    "materials": [
+      {
+        "id": 41200032,
+        "name": "Mask of Erosion",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 58,
+    "name": "Mask of Erosion",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_002_UI.png",
+    "materials": [
+      {
+        "id": 41200031,
+        "name": "Mask of Constraint",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 65,
+    "name": "Tailored Ring",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_003_4_UI.png",
+    "materials": [
+      {
+        "id": 41100033,
+        "name": "Improved Ring",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 66,
+    "name": "Improved Ring",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_003_3_UI.png",
+    "materials": [
+      {
+        "id": 41100032,
+        "name": "Basic Ring",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 67,
+    "name": "Basic Ring",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_003_2_UI.png",
+    "materials": [
+      {
+        "id": 41100031,
+        "name": "Crude Ring",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 68,
+    "name": "FF Howler Core",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_E_002_4_UI.png",
+    "materials": [
+      {
+        "id": 41100023,
+        "name": "HF Howler Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 69,
+    "name": "HF Howler Core",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_E_002_3_UI.png",
+    "materials": [
+      {
+        "id": 41100022,
+        "name": "MF Howler Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 70,
+    "name": "MF Howler Core",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_E_002_2_UI.png",
+    "materials": [
+      {
+        "id": 41100021,
+        "name": "LF Howler Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 71,
+    "name": "FF Whisperin Core",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_002_4_UI.png",
+    "materials": [
+      {
+        "id": 41100013,
+        "name": "HF Whisperin Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 72,
+    "name": "HF Whisperin Core",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_002_3_UI.png",
+    "materials": [
+      {
+        "id": 41100012,
+        "name": "MF Whisperin Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 73,
+    "name": "MF Whisperin Core",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_002_2_UI.png",
+    "materials": [
+      {
+        "id": 41100011,
+        "name": "LF Whisperin Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 101,
+    "name": "Fusion Resistance Spray",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_001_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310090,
+        "name": "Waterlamp",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 102,
+    "name": "Aero Resistance Spray",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_006_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310100,
+        "name": "Bunnywort",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 103,
+    "name": "Electro Resistance Spray",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_005_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300070,
+        "name": "Belle Poppy",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 104,
+    "name": "Glacio Resistance Spray",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_004_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300090,
+        "name": "Wintry Bell",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 105,
+    "name": "Spectro Resistance Spray",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_002_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310060,
+        "name": "Angelica",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 106,
+    "name": "Havoc Resistance Spray",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_003_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310150,
+        "name": "Cliffrecluse",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 107,
+    "name": "Fusion Petrol",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_007_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300050,
+        "name": "Lanternberry",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 108,
+    "name": "Aero Petrol",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_012_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310080,
+        "name": "Erodorchid",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 109,
+    "name": "Electro Petrol",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_011_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300070,
+        "name": "Belle Poppy",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 110,
+    "name": "Glacio Petrol",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_010_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42300090,
+        "name": "Wintry Bell",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 111,
+    "name": "Spectro Petrol",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_008_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310060,
+        "name": "Angelica",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 112,
+    "name": "Havoc Petrol",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_009_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310150,
+        "name": "Cliffrecluse",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 113,
+    "name": "Basic Revival Inhaler",
+    "rarity": 2,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_013_UI.png",
+    "materials": [
+      {
+        "id": 42310030,
+        "name": "Noctemint",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 114,
+    "name": "Medium Revival Inhaler",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_014_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310030,
+        "name": "Noctemint",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 115,
+    "name": "Advanced Revival Inhaler",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_015_UI.png",
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42310040,
+        "name": "Honeysuckle",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 116,
+    "name": "Premium Revival Inhaler",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_016_UI.png",
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42310040,
+        "name": "Honeysuckle",
+        "value": 2
+      },
+      {
+        "id": 42400100,
+        "name": "Chrysopa",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 117,
+    "name": "Basic Nutrient Block",
+    "rarity": 2,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_017_UI.png",
+    "materials": [
+      {
+        "id": 42310020,
+        "name": "Dewvetch",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 118,
+    "name": "Medium Nutrient Block",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_018_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310020,
+        "name": "Dewvetch",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 119,
+    "name": "Advanced Nutrient Block",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_019_UI.png",
+    "materials": [
+      {
+        "id": 80021002,
+        "name": "Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42300110,
+        "name": "Bittberry",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 121,
+    "name": "Premium Nutrient Block",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_020_UI.png",
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42300110,
+        "name": "Bittberry",
+        "value": 2
+      },
+      {
+        "id": 42400150,
+        "name": "Green Pit Lizard",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 122,
+    "name": "Basic Energy Bag",
+    "rarity": 2,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_021_UI.png",
+    "materials": [
+      {
+        "id": 42310070,
+        "name": "Lemongrass",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 123,
+    "name": "Medium Energy Bag",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_022_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310070,
+        "name": "Lemongrass",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 124,
+    "name": "Advanced Energy Bag",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_023_UI.png",
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42300010,
+        "name": "Lotus Seeds",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 125,
+    "name": "Premium Energy Bag",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_024_UI.png",
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42300010,
+        "name": "Lotus Seeds",
+        "value": 2
+      },
+      {
+        "id": 42400170,
+        "name": "Goldenback Frog",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 126,
+    "name": "Supersonic Solvent",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_025_UI.png",
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42310190,
+        "name": "Gloom Slough",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 127,
+    "name": "Trainer Solvent",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_026_UI.png",
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42400130,
+        "name": "Silver-Banded Lizard",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 128,
+    "name": "String Solvent",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_027_UI.png",
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42400020,
+        "name": "Feather",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 129,
+    "name": "Drummer Solvent",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_028_UI.png",
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42310120,
+        "name": "Chromeshell",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 132,
+    "name": "Morale Tablets",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_029_UI.png",
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42400110,
+        "name": "Golden-ringed Dragonfly",
+        "value": 2
+      },
+      {
+        "id": 42400080,
+        "name": "Red Feather Butterfly",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 133,
+    "name": "Harmony Tablets",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_029_UI.png",
+    "materials": [
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": 1
+      },
+      {
+        "id": 42400090,
+        "name": "Blue Feather Butterfly",
+        "value": 2
+      },
+      {
+        "id": 42400140,
+        "name": "Azure Lizard",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 134,
+    "name": "Passion Tablets",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_030_UI.png",
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42310130,
+        "name": "Dripsnail",
+        "value": 2
+      },
+      {
+        "id": 42400070,
+        "name": "Phoenix Butterfly",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 135,
+    "name": "Vigor Tablets",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_030_UI.png",
+    "materials": [
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": 1
+      },
+      {
+        "id": 42400130,
+        "name": "Silver-Banded Lizard",
+        "value": 2
+      },
+      {
+        "id": 42400160,
+        "name": "Black-Striped Frog",
+        "value": 2
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 136,
+    "name": "Base Fluid",
+    "rarity": 2,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_032_UI.png",
+    "materials": [
+      {
+        "id": 42310010,
+        "name": "Pearl Leaf",
+        "value": 2
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 137,
+    "name": "Fluid Catalyst",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_033_UI.png",
+    "materials": [
+      {
+        "id": 42310070,
+        "name": "Lemongrass",
+        "value": 2
+      },
+      {
+        "id": 42310020,
+        "name": "Dewvetch",
+        "value": 1
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 138,
+    "name": "Fluid Stabilizer",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_035_UI.png",
+    "materials": [
+      {
+        "id": 42310060,
+        "name": "Angelica",
+        "value": 2
+      },
+      {
+        "id": 42310020,
+        "name": "Dewvetch",
+        "value": 1
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 140,
+    "name": "Strong Fluid Catalyst",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_034_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310160,
+        "name": "Umbragricus",
+        "value": 2
+      },
+      {
+        "id": 42310170,
+        "name": "Gemberry",
+        "value": 2
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 141,
+    "name": "Strong Fluid Stabilizer",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_036_UI.png",
+    "materials": [
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": 1
+      },
+      {
+        "id": 42310140,
+        "name": "Viola",
+        "value": 2
+      },
+      {
+        "id": 42310170,
+        "name": "Gemberry",
+        "value": 2
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 4,
+    "name": "Sonar Circuit",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_08_UI.png",
+    "materials": [
+      {
+        "id": 42500010,
+        "name": "Scarletthorn",
+        "value": 10
+      },
+      {
+        "id": 42500040,
+        "name": "Floramber",
+        "value": 10
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 10000
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 5,
+    "name": "Waypoint Module",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_09_UI.png",
+    "materials": [
+      {
+        "id": 42500030,
+        "name": "Indigoite",
+        "value": 5
+      },
+      {
+        "id": 42500040,
+        "name": "Floramber",
+        "value": 5
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 5000
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 6,
+    "name": "Basic Energy Core",
+    "rarity": 2,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Exp_1_UI.png",
+    "materials": [
+      {
+        "id": 42500040,
+        "name": "Floramber",
+        "value": 2
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 500
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 7,
+    "name": "Medium Energy Core",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_Exp_2_UI.png",
+    "materials": [
+      {
+        "id": 42500040,
+        "name": "Floramber",
+        "value": 5
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 1000
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 8,
+    "name": "Basic Sealed Tube",
+    "rarity": 2,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_10_UI.png",
+    "materials": [
+      {
+        "id": 42500090,
+        "name": "Fluorite",
+        "value": 3
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 1500
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 9,
+    "name": "Medium Sealed Tube",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_11_UI.png",
+    "materials": [
+      {
+        "id": 42500090,
+        "name": "Fluorite",
+        "value": 6
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": 2500
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 10,
+    "name": "Advanced Tuner",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_txq_02_UI.png",
+    "materials": [
+      {
+        "id": 36000012,
+        "name": "Medium Tuner",
+        "value": 5
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 11,
+    "name": "Premium Tuner",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_txq_03_UI.png",
+    "materials": [
+      {
+        "id": 36000013,
+        "name": "Advanced Tuner",
+        "value": 5
+      }
+    ],
+    "formulaType": 2
+  },
+  {
+    "id": 142,
+    "name": "Fusion-resistant Spray",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_001_UI.png",
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601020,
+        "name": "Thief's Talon",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 143,
+    "name": "Aero-resistant Spray",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_006_UI.png",
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601050,
+        "name": "Fur",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 144,
+    "name": "Electro-resistant Spray",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_005_UI.png",
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601060,
+        "name": "Goldcrest Scarab",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 145,
+    "name": "Glacio-resistant Spray",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_004_UI.png",
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601090,
+        "name": "Mastic Nuvola",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 146,
+    "name": "Spectro-resistant Spray",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_002_UI.png",
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601120,
+        "name": "Cassia Bud",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 147,
+    "name": "Havoc-resistant Spray",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_003_UI.png",
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601130,
+        "name": "Felicitous Olives",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "id": 74,
+    "name": "FF Polygon Core",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_004_4_UI.png",
+    "materials": [
+      {
+        "id": 41100043,
+        "name": "HF Polygon Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 75,
+    "name": "HF Polygon Core",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_004_3_UI.png",
+    "materials": [
+      {
+        "id": 41100042,
+        "name": "MF Polygon Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 76,
+    "name": "MF Polygon Core",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_004_2_UI.png",
+    "materials": [
+      {
+        "id": 41100041,
+        "name": "LF Polygon Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 77,
+    "name": "FF Tidal Residuum",
+    "rarity": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_005_4_UI.png",
+    "materials": [
+      {
+        "id": 41100053,
+        "name": "HF Tidal Residuum",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 78,
+    "name": "HF Tidal Residuum",
+    "rarity": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_005_3_UI.png",
+    "materials": [
+      {
+        "id": 41100052,
+        "name": "MF Tidal Residuum",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "id": 79,
+    "name": "MF Tidal Residuum",
+    "rarity": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_005_2_UI.png",
+    "materials": [
+      {
+        "id": 41100051,
+        "name": "LF Tidal Residuum",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  }
+]

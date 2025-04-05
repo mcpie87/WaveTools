@@ -1,4 +1,4 @@
-import { IAPIItem } from "@/app/interfaces/api_interfaces";
+import { IAPIItem, IItemEntry } from "@/app/interfaces/api_interfaces";
 import { IItem } from "@/app/interfaces/item";
 import { parseItemToItemCard } from "./api_parser";
 import { ItemEliteBoss, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
@@ -10,6 +10,21 @@ export function findItemByName(name: string, items: IAPIItem[]): IAPIItem | unde
 }
 export function findItemsByNames(names: string[], items: IAPIItem[]): IAPIItem[] {
   return items.filter(item => names.includes(item.name));
+}
+
+export function convertCostListToItemList(costList: IItemEntry[], apiItems: IAPIItem[]): IItem[] {
+  const results: IItem[] = [];
+  for (const item of costList) {
+    const apiItem = apiItems.find(apiItem => item.id === apiItem.id);
+    if (!apiItem) {
+      console.error(`apiItem not found ${item.id} ${item.value}`);
+      continue;
+    }
+    const parsedItem = parseItemToItemCard(apiItem);
+    parsedItem.value = item.value;
+    results.push(parsedItem);
+  }
+  return results;
 }
 
 export function convertItemMapToItemList(

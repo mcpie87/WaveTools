@@ -1,0 +1,3790 @@
+[
+  {
+    "id": 5,
+    "itemName": "Waveplate",
+    "shops": [
+      {
+        "id": 7,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Crystal Solvent - 1"
+        ],
+        "limit": -1
+      },
+      {
+        "id": 6,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Astrite - 60"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 6,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Astrite - 60"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 6,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Astrite - 120"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 6,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Astrite - 120"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 6,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Astrite - 120"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 6,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Astrite - 120"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 7,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Waveplate Crystal - 1"
+        ],
+        "limit": -1
+      }
+    ]
+  },
+  {
+    "id": 41100011,
+    "itemName": "LF Whisperin Core",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 60
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 3"
+        ],
+        "limit": 40
+      }
+    ]
+  },
+  {
+    "id": 41100021,
+    "itemName": "LF Howler Core",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 60
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 3"
+        ],
+        "limit": 40
+      }
+    ]
+  },
+  {
+    "id": 41100031,
+    "itemName": "Crude Ring",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 60
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 3"
+        ],
+        "limit": 40
+      }
+    ]
+  },
+  {
+    "id": 41100012,
+    "itemName": "MF Whisperin Core",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 5"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 4"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 30"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 42100017,
+    "itemName": "Basic Nutrient Block",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 100
+      }
+    ]
+  },
+  {
+    "id": 42100013,
+    "itemName": "Basic Revival Inhaler",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 100
+      }
+    ]
+  },
+  {
+    "id": 42300060,
+    "itemName": "Pecok Flower",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42300070,
+    "itemName": "Belle Poppy",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42300090,
+    "itemName": "Wintry Bell",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42300030,
+    "itemName": "Iris",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42300080,
+    "itemName": "Coriolus",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 50001,
+    "itemName": "Lustrous Tide",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 50"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 43010003,
+    "itemName": "Advanced Resonance Potion",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 6"
+        ],
+        "limit": 30
+      },
+      {
+        "id": 113,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 4"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 80"
+        ],
+        "limit": 15
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 16"
+        ],
+        "limit": 25
+      }
+    ]
+  },
+  {
+    "id": 43020003,
+    "itemName": "Advanced Energy Core",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 6"
+        ],
+        "limit": 30
+      },
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 5"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 113,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 4"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 80"
+        ],
+        "limit": 15
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 16"
+        ],
+        "limit": 25
+      }
+    ]
+  },
+  {
+    "id": 36000003,
+    "itemName": "Advanced Sealed Tube",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 6"
+        ],
+        "limit": 30
+      },
+      {
+        "id": 113,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 5"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 100"
+        ],
+        "limit": 15
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 20"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 36000014,
+    "itemName": "Premium Tuner",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 20"
+        ],
+        "limit": 25
+      },
+      {
+        "id": 113,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 20"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80010002,
+    "itemName": "Perilla Salad Recipe",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 5"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010017,
+    "itemName": "Aureate Fried Rice Recipe",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 10"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42400010,
+    "itemName": "Fowl Meat",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 42400030,
+    "itemName": "Raw Meat",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 42400120,
+    "itemName": "Fish",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 42600010,
+    "itemName": "Bird Egg",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 42310060,
+    "itemName": "Angelica",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 10
+      },
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 80050000,
+    "itemName": "Flour",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80050001,
+    "itemName": "Cooking oil",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80050002,
+    "itemName": "Chili",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 80050003,
+    "itemName": "Sugar",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80050004,
+    "itemName": "Tea",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80050005,
+    "itemName": "Milk",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000000,
+    "itemName": "Jinzhou Skewers",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 110,
+        "shopName": "Tiger's Maw Eatery",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 100
+      }
+    ]
+  },
+  {
+    "id": 80000001,
+    "itemName": "Stuffed Flatbread",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 110,
+        "shopName": "Tiger's Maw Eatery",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 100
+      }
+    ]
+  },
+  {
+    "id": 80000002,
+    "itemName": "Perilla Salad",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 5
+      },
+      {
+        "id": 110,
+        "shopName": "Tiger's Maw Eatery",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80000003,
+    "itemName": "Spicy Pulled Chicken",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 5
+      },
+      {
+        "id": 110,
+        "shopName": "Tiger's Maw Eatery",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80000004,
+    "itemName": "Loong Whiskers Crisp",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 5
+      },
+      {
+        "id": 110,
+        "shopName": "Tiger's Maw Eatery",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80000012,
+    "itemName": "Loong Bun",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 5
+      },
+      {
+        "id": 110,
+        "shopName": "Tiger's Maw Eatery",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80000014,
+    "itemName": "Jinzhou Stew",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 5
+      },
+      {
+        "id": 110,
+        "shopName": "Tiger's Maw Eatery",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80010004,
+    "itemName": "Loong Whiskers Crisp Recipe",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010012,
+    "itemName": "Loong Bun Recipe",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010014,
+    "itemName": "Jinzhou Stew Recipe",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42300040,
+    "itemName": "Terraspawn Fungus",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42300050,
+    "itemName": "Lanternberry",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42310010,
+    "itemName": "Pearl Leaf",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42310020,
+    "itemName": "Dewvetch",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42310030,
+    "itemName": "Noctemint",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42310040,
+    "itemName": "Honeysuckle",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42310050,
+    "itemName": "Perilla",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 80050006,
+    "itemName": "Rice",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80050007,
+    "itemName": "Kudzu Root",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80050008,
+    "itemName": "Salt",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80050009,
+    "itemName": "Beans",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 80050010,
+    "itemName": "Vinegar",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 100
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 41100022,
+    "itemName": "MF Howler Core",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 5"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 4"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 30"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 41100032,
+    "itemName": "Basic Ring",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 5"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 4"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 30"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 43020011,
+    "itemName": "Inert Metallic Drip",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 2"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 43020021,
+    "itemName": "Impure Phlogiston",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 2"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 43020031,
+    "itemName": "Lento Helix",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 2"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80010005,
+    "itemName": "Food Ration Bar Recipe",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 10"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010013,
+    "itemName": "Edodes Recipe",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 10"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010032,
+    "itemName": "A recipe that details how to make Happiness Tea.",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 10"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010023,
+    "itemName": "Caltrop Soup Recipe",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 15"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 43020041,
+    "itemName": "Waveworn Residue 210",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 2"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 43020051,
+    "itemName": "Cadence Seed",
+    "shops": [
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 2"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 21010011,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 21020011,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 21030011,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 21040011,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 21050011,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80020000,
+    "itemName": "Hot Pot Base",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 4000"
+        ],
+        "limit": 3
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 2
+      }
+    ]
+  },
+  {
+    "id": 80020001,
+    "itemName": "Clear Soup",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 4000"
+        ],
+        "limit": 3
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 2
+      }
+    ]
+  },
+  {
+    "id": 80020002,
+    "itemName": "Braising Sauce",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 5
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 3
+      }
+    ]
+  },
+  {
+    "id": 80020003,
+    "itemName": "Sweet and Sour Sauce",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 5
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 3
+      }
+    ]
+  },
+  {
+    "id": 80020004,
+    "itemName": "Tofu",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 5
+      },
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 3
+      }
+    ]
+  },
+  {
+    "id": 50000201,
+    "itemName": "Originite Weapon Supply Chest",
+    "shops": [
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 80"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 43020002,
+    "itemName": "Medium Energy Core",
+    "shops": [
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 2"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 43020004,
+    "itemName": "Premium Energy Core",
+    "shops": [
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 10"
+        ],
+        "limit": 10
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 200"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "itemName": "Shell Credit",
+    "shops": [
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 1"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 6"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 104,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 2"
+        ],
+        "limit": -1
+      },
+      {
+        "id": 113,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 1"
+        ],
+        "limit": -1
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 5"
+        ],
+        "limit": 30
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 5"
+        ],
+        "limit": 30
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 5"
+        ],
+        "limit": 40
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 100"
+        ],
+        "limit": 12
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 20"
+        ],
+        "limit": 30
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 100"
+        ],
+        "limit": 22
+      }
+    ]
+  },
+  {
+    "id": 43020012,
+    "itemName": "Reactive Metallic Drip",
+    "shops": [
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 3"
+        ],
+        "limit": 10
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 43020042,
+    "itemName": "Waveworn Residue 226",
+    "shops": [
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 3"
+        ],
+        "limit": 10
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 43020022,
+    "itemName": "Extracted Phlogiston",
+    "shops": [
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 3"
+        ],
+        "limit": 10
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 43020052,
+    "itemName": "Cadence Bud",
+    "shops": [
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 3"
+        ],
+        "limit": 10
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 43020032,
+    "itemName": "Adagio Helix",
+    "shops": [
+      {
+        "id": 109,
+        "shopName": "Tiger's Maw Ore",
+        "price": [
+          "Lampylumen - 3"
+        ],
+        "limit": 10
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 42400070,
+    "itemName": "Phoenix Butterfly",
+    "shops": [
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42400080,
+    "itemName": "Red Feather Butterfly",
+    "shops": [
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42400090,
+    "itemName": "Blue Feather Butterfly",
+    "shops": [
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42400100,
+    "itemName": "Chrysopa",
+    "shops": [
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42400110,
+    "itemName": "Golden-ringed Dragonfly",
+    "shops": [
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42400130,
+    "itemName": "Silver-Banded Lizard",
+    "shops": [
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42400140,
+    "itemName": "Azure Lizard",
+    "shops": [
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42400150,
+    "itemName": "Green Pit Lizard",
+    "shops": [
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42400170,
+    "itemName": "Goldenback Frog",
+    "shops": [
+      {
+        "id": 111,
+        "shopName": "Yibai Clinic",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 80010021,
+    "itemName": "Star Flakes Recipe",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42310070,
+    "itemName": "Lemongrass",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42310080,
+    "itemName": "Erodorchid",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42300010,
+    "itemName": "Lotus Seeds",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 21010012,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 21020012,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 21030012,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 21040012,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 21050012,
+    "itemName": "NO ITEM",
+    "shops": [
+      {
+        "id": 101,
+        "shopName": "Weapon Shop",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80010033,
+    "itemName": "Recipe: Lotus Pastry",
+    "shops": [
+      {
+        "id": 113,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 10"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010034,
+    "itemName": "Recipe: Spicy Meat with Pavo Plums",
+    "shops": [
+      {
+        "id": 113,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 10"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010018,
+    "itemName": "Lemon-Braised Pork Recipe",
+    "shops": [
+      {
+        "id": 113,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 15"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010030,
+    "itemName": "Stuffed Tofu Recipe",
+    "shops": [
+      {
+        "id": 113,
+        "shopName": "Souvenir Store",
+        "price": [
+          "Wood-textured Shard - 20"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42310200,
+    "itemName": "Pavo Plum",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42310210,
+    "itemName": "Loong's Pearl",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42310220,
+    "itemName": "Silver Lotus",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 1000"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 80021006,
+    "itemName": "Premium Incense Oil",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 5000"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80021007,
+    "itemName": "Premium Gold Incense Oil",
+    "shops": [
+      {
+        "id": 107,
+        "shopName": "Mahe's Grocery",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80000036,
+    "itemName": "Plumpcake",
+    "shops": [
+      {
+        "id": 114,
+        "shopName": "Yumyum Haven",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80000037,
+    "itemName": "Moon Pearl",
+    "shops": [
+      {
+        "id": 114,
+        "shopName": "Yumyum Haven",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 70140025,
+    "itemName": "Skyshaker",
+    "shops": [
+      {
+        "id": 115,
+        "shopName": "Fireworks Store",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 100
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "itemName": "Wish",
+    "shops": [
+      {
+        "id": 116,
+        "shopName": "Wishing Stall",
+        "price": [
+          "Operation Fund - 50000"
+        ],
+        "limit": -1
+      }
+    ]
+  },
+  {
+    "id": 80021001,
+    "itemName": "Base Fluid",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 6
+      },
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 6
+      }
+    ]
+  },
+  {
+    "id": 80021002,
+    "itemName": "Fluid Catalyst",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
+      },
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
+      }
+    ]
+  },
+  {
+    "id": 80021004,
+    "itemName": "Fluid Stabilizer",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
+      },
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
+      }
+    ]
+  },
+  {
+    "id": 80021003,
+    "itemName": "Strong Fluid Catalyst",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
+      },
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
+      }
+    ]
+  },
+  {
+    "id": 80021005,
+    "itemName": "Strong Fluid Stabilizer",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
+      },
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
+      }
+    ]
+  },
+  {
+    "id": 80000038,
+    "itemName": "Moon Brew",
+    "shops": [
+      {
+        "id": 114,
+        "shopName": "Yumyum Haven",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80001001,
+    "itemName": "Sweet Stuffed Flatbread",
+    "shops": [
+      {
+        "id": 114,
+        "shopName": "Yumyum Haven",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80001035,
+    "itemName": "Vege Omelette",
+    "shops": [
+      {
+        "id": 114,
+        "shopName": "Yumyum Haven",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80010036,
+    "itemName": "Plumpcake Recipe",
+    "shops": [
+      {
+        "id": 114,
+        "shopName": "Yumyum Haven",
+        "price": [
+          "Shell Credit - 5000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010035,
+    "itemName": "Huanglong Omelette Recipe",
+    "shops": [
+      {
+        "id": 114,
+        "shopName": "Yumyum Haven",
+        "price": [
+          "Shell Credit - 5000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42300100,
+    "itemName": "Violet Coral",
+    "shops": [
+      {
+        "id": 103,
+        "shopName": "Shifang Pharmacy",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "itemName": "Preparation Credits",
+    "shops": [
+      {
+        "id": 114,
+        "shopName": "Yumyum Haven",
+        "price": [
+          "Shell Credit - 5000"
+        ],
+        "limit": 3
+      }
+    ]
+  },
+  {
+    "id": 42310230,
+    "itemName": "Nova",
+    "shops": [
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 80010040,
+    "itemName": "Honeysuckle Cake Recipe",
+    "shops": [
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010039,
+    "itemName": "Fisher's Chowder Recipe",
+    "shops": [
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 50000202,
+    "itemName": "Poetry and Paean Weapon Chest",
+    "shops": [
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 150"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 50000088,
+    "itemName": "Malleable Elite Class Echo I",
+    "shops": [
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 100"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 100"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 50000089,
+    "itemName": "Malleable Elite Class Echo II",
+    "shops": [
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 100"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 100"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 50000084,
+    "itemName": "Morphable Overlord Class Echo",
+    "shops": [
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 10"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 10"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 50000085,
+    "itemName": "Morphable Elite Class Echo",
+    "shops": [
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 10"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 10"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 50000086,
+    "itemName": "Morphable Common Class Echo",
+    "shops": [
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 10"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 10"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "itemName": "Astrite",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 400"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 400"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 400"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 50000307,
+    "itemName": "Advanced Enclosure Tank",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 40"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80010047,
+    "itemName": "Laurus Salad Recipe",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 150"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010050,
+    "itemName": "Every Flavor Bell Crab Recipe",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 150"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 44010043,
+    "itemName": "Romance in Farewell Crafting Recipe",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 400"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 44010044,
+    "itemName": "Legend of Drunken Hero Crafting Recipe",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 400"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42601030,
+    "itemName": "Animal Fat",
+    "shops": [
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 42601040,
+    "itemName": "Sea Bunny Meat",
+    "shops": [
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 42601080,
+    "itemName": "Bell Crab",
+    "shops": [
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 42601100,
+    "itemName": "Sunflare Everlasting",
+    "shops": [
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 42601110,
+    "itemName": "Viscum Berry",
+    "shops": [
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 42601070,
+    "itemName": "Heliobane Fungia",
+    "shops": [
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 42601130,
+    "itemName": "Felicitous Olives",
+    "shops": [
+      {
+        "id": 118,
+        "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 80000048,
+    "itemName": "Nectarwine",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000045,
+    "itemName": "Ragunna Espresso",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000042,
+    "itemName": "Pizza Tropicale",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000043,
+    "itemName": "Triple-Scoop Ice Cream",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000046,
+    "itemName": "Steak Margherita",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000049,
+    "itemName": "Daily Panini",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000044,
+    "itemName": "Nuvola Pasta",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80010048,
+    "itemName": "Nectarwine Recipe",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 5000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010045,
+    "itemName": "Ragunna Espresso Recipe",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 5000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010042,
+    "itemName": "Pizza Tropicale Recipe",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010043,
+    "itemName": "Triple-Scoop Recipe",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42601010,
+    "itemName": "Bay Leaf",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601120,
+    "itemName": "Cassia Bud",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601050,
+    "itemName": "Fur",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601060,
+    "itemName": "Goldcrest Scarab",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601090,
+    "itemName": "Mastic Nuvola",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601150,
+    "itemName": "Sword Acorus",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601160,
+    "itemName": "Firecracker Jewelweed",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601140,
+    "itemName": "Golden Fleece",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 43010004,
+    "itemName": "Premium Resonance Potion",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 200"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 36000004,
+    "itemName": "Premium Sealed Tube",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 250"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 50000308,
+    "itemName": "Premium Enclosure Tank",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 120"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 41100042,
+    "itemName": "MF Polygon Core",
+    "shops": [
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 5"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 4"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 30"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 41100052,
+    "itemName": "MF Tidal Residuum",
+    "shops": [
+      {
+        "id": 123,
+        "shopName": "Stillwind Sundries",
+        "price": [
+          "Resonant Calcite - 5"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 4"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 30"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 41100041,
+    "itemName": "LF Polygon Core",
+    "shops": [
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 60
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 3"
+        ],
+        "limit": 40
+      }
+    ]
+  },
+  {
+    "id": 41100051,
+    "itemName": "LF Tidal Residuum",
+    "shops": [
+      {
+        "id": 122,
+        "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 60
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 3"
+        ],
+        "limit": 40
+      }
+    ]
+  },
+  {
+    "id": 80000052,
+    "itemName": "Troupe Strength",
+    "shops": [
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000051,
+    "itemName": "Baton Bread",
+    "shops": [
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000041,
+    "itemName": "Pizza Classica",
+    "shops": [
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80010052,
+    "itemName": "Troupe Strength Recipe",
+    "shops": [
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 5000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42100036,
+    "itemName": "Fusion-resistant Spray",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100037,
+    "itemName": "Aero-resistant Spray",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100038,
+    "itemName": "Electro-resistant Spray",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100039,
+    "itemName": "Glacio-resistant Spray",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100040,
+    "itemName": "Spectro-resistant Spray",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100041,
+    "itemName": "Havoc-resistant Spray",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80010046,
+    "itemName": "Steak Margherita Recipe",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010049,
+    "itemName": "Daily Panini Recipe",
+    "shops": [
+      {
+        "id": 120,
+        "shopName": "Trattoria Margherita",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010041,
+    "itemName": "Pizza Classica Recipe",
+    "shops": [
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010044,
+    "itemName": "Nuvola Pasta Recipe",
+    "shops": [
+      {
+        "id": 124,
+        "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010007,
+    "itemName": "Salted Milk Tea Recipe",
+    "shops": [
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "itemName": "\"Sweet Puff\"",
+    "shops": [
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Riccioli Fishery Coin - 3000"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "itemName": "Sandworm",
+    "shops": [
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Riccioli Fishery Coin - 5000"
+        ],
+        "limit": 50
+      }
+    ]
+  },
+  {
+    "id": 71510204,
+    "itemName": "Rusty Iron Case",
+    "shops": [
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Riccioli Fishery Coin - 10000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 30"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 50001102,
+    "itemName": "Malleable Elite Class Echo III",
+    "shops": [
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 200"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 50001103,
+    "itemName": "Malleable Elite Class Echo IV",
+    "shops": [
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 200"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010054,
+    "itemName": "Every Flavor Bell-less Crab Recipe",
+    "shops": [
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 100"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010055,
+    "itemName": "Wine-Brewed Octopus Clam Recipe",
+    "shops": [
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 50"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010056,
+    "itemName": "Riccioli Salt Baked Fish Recipe",
+    "shops": [
+      {
+        "id": 127,
+        "shopName": "Bouton de Rose",
+        "price": [
+          "Abyssal Coral - 50"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 50001201,
+    "itemName": "Malleable Elite Class Echo V",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 400"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 50001202,
+    "itemName": "Malleable Elite Class Echo VI",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 400"
+        ],
+        "limit": 1
+      }
+    ]
+  }
+]

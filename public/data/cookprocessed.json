@@ -1,0 +1,162 @@
+[
+  {
+    "type": "processed",
+    "id": 30000,
+    "resultItem": {
+      "id": 80020000,
+      "name": "Hot Pot Base",
+      "attributes_description": "Ingredients obtained through Culinary Research.",
+      "bg_description": "A universal seasoning made from chili, spices, and fats. It can bring unexpected flavors to almost all ingredients.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_A01_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_A01_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_A01_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": 2
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": 2
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 1
+      },
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "type": "processed",
+    "id": 30001,
+    "resultItem": {
+      "id": 80020001,
+      "name": "Clear Soup",
+      "attributes_description": "Ingredients obtained through Culinary Research.",
+      "bg_description": "A common thickening ingredient often used as a substitute for water in cooking to enrich the texture.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_A02_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_A02_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_A02_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      },
+      {
+        "id": 42310180,
+        "name": "Edodes",
+        "value": 2
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 1
+      },
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "type": "processed",
+    "id": 30002,
+    "resultItem": {
+      "id": 80020002,
+      "name": "Braising Sauce",
+      "attributes_description": "Ingredients obtained through Culinary Research.",
+      "bg_description": "Wonderfully thickened broth with natural fragrances that can bring out the hidden flavors of meat dishes.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_A03_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_A03_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_A03_UI.png",
+      "rarity": 2
+    },
+    "materials": [
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 1
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "type": "processed",
+    "id": 30003,
+    "resultItem": {
+      "id": 80020003,
+      "name": "Sweet and Sour Sauce",
+      "attributes_description": "Ingredients obtained through Culinary Research.",
+      "bg_description": "A sweet and sour, bright red sauce that can provide a sweet and sour, rich taste to food.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_A15_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_A15_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_A15_UI.png",
+      "rarity": 1
+    },
+    "materials": [
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": 1
+      },
+      {
+        "id": 80050010,
+        "name": "Vinegar",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "type": "processed",
+    "id": 30004,
+    "resultItem": {
+      "id": 80020004,
+      "name": "Tofu",
+      "attributes_description": "Ingredients obtained through Culinary Research.",
+      "bg_description": "A nutritious ingredient made from beans, widely used in various specialty dishes due to its unique taste.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_A04_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_A04_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_A04_UI.png",
+      "rarity": 1
+    },
+    "materials": [
+      {
+        "id": 80050009,
+        "name": "Beans",
+        "value": 2
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      }
+    ]
+  }
+]
