@@ -3550,6 +3550,26 @@
     "rarity": 1
   },
   {
+    "id": 70010066,
+    "name": "NO CONTENT",
+    "attributes_description": "ItemInfo_70010066_AttributesDescription",
+    "bg_description": "ItemInfo_70010066_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_025_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_025_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_025_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 70010067,
+    "name": "NO CONTENT",
+    "attributes_description": "ItemInfo_70010067_AttributesDescription",
+    "bg_description": "ItemInfo_70010067_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_025_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_025_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_025_UI.png",
+    "rarity": 1
+  },
+  {
     "id": 44010027,
     "name": "test/Universal Echo",
     "attributes_description": "ItemInfo_44010027_AttributesDescription",
@@ -5507,6 +5527,16 @@
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_pad_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_pad_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_pad_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 70050026,
+    "name": "NO CONTENT",
+    "attributes_description": "",
+    "bg_description": "",
+    "icon": "./.png",
+    "icon_middle": "./.png",
+    "icon_small": "./.png",
     "rarity": 3
   },
   {
@@ -9182,6 +9212,16 @@
   {
     "id": 80110416,
     "name": "A Million Possibilities",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110417,
+    "name": "NO CONTENT",
     "attributes_description": "ItemInfo_80110101_AttributesDescription",
     "bg_description": "ItemInfo_80110101_BgDescription",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",

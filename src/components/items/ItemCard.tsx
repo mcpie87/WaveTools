@@ -3,14 +3,16 @@ import { convertToUrl, getRarityClass } from '@/utils/utils';
 import { IItem } from '@/app/interfaces/item';
 
 interface ItemCardProps {
-  item: IItem
+  item: IItem;
+  width?: number;
+  height?: number;
 }
-export default function ItemCard({ item }: ItemCardProps) {
+export default function ItemCard({ item, width, height }: ItemCardProps) {
 
   const formatValue = (value: number) => {
-    if (value > 1e9) return `~${(value / 1e9).toFixed(3)}B`;
-    if (value > 1e6) return `~${(value / 1e6).toFixed(3)}M`;
-    if (value > 1e3) return `~${(value / 1e3).toFixed(3)}K`;
+    if (value > 1e9) return `~${(value / 1e9).toFixed(2)}B`;
+    if (value > 1e6) return `~${(value / 1e6).toFixed(2)}M`;
+    if (value > 1e3) return `~${(value / 1e3).toFixed(2)}K`;
     return value.toString();
   }
 
@@ -20,9 +22,9 @@ export default function ItemCard({ item }: ItemCardProps) {
         <Image
           src={`${convertToUrl(item.icon)}`}
           alt={`${item.name} icon`}
-          width={48}
-          height={48}
-          className="rounded-lg"
+          width={width || 48}
+          height={height || 48}
+          className={`rounded-lg w-[${width || 48}] h-[${height || 48}]`}
         />
       </span>
       <span className="text-center text-xs bg-black text-white">
