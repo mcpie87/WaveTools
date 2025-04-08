@@ -100,11 +100,12 @@ export default function RecipesPage() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const dishesResponse = await fetch("/data/cooking.json");
+      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+      const dishesResponse = await fetch(`${basePath}/data/cooking.json`);
       const dishesData = await dishesResponse.json();
-      const synthesisResponse = await fetch("/data/synthesis.json");
+      const synthesisResponse = await fetch(`${basePath}/data/synthesis.json`);
       const synthesisData = await synthesisResponse.json();
-      const processedResponse = await fetch("/data/cookprocessed.json");
+      const processedResponse = await fetch(`${basePath}/data/cookprocessed.json`);
       const processedData = await processedResponse.json();
       const data = [...dishesData, ...synthesisData, ...processedData];
       setDisplayedFormulas(data);
