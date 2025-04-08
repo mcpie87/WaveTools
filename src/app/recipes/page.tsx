@@ -110,7 +110,7 @@ export default function RecipesPage() {
       const data = [...dishesData, ...synthesisData, ...processedData];
       setDisplayedFormulas(data);
 
-      const shopsResponse = await fetch("/data/buyable_items.json");
+      const shopsResponse = await fetch(`${basePath}/data/buyable_items.json`);
       const shopsData = await shopsResponse.json();
       const shopsMap: Record<string, IItemToShops> = {};
       shopsData.forEach((itemToShop: IItemToShops) => {
@@ -180,7 +180,6 @@ export default function RecipesPage() {
     .filter((formula) => !displayedCategory || formula.type === displayedCategory)
     .filter((formula) => formula.formulaType !== 3) // 3 === Synthesis Conversion Materials
     .filter((formula) => !displayedRarity || formula.resultItem.rarity === displayedRarity)
-    .filter((formula) => !searchQuery || searchQueryPredicate(searchQuery, formula));
 
   if (showTotalMats) {
     filteredFormulas = filteredFormulas.map((formula) => ({
@@ -190,6 +189,8 @@ export default function RecipesPage() {
       ),
     }));
   }
+  filteredFormulas = filteredFormulas
+    .filter((formula) => !searchQuery || searchQueryPredicate(searchQuery, formula));
 
   const MaterialComponent = ({ material }: { material: IRecipeItem }) => {
     if (!material) return null;
