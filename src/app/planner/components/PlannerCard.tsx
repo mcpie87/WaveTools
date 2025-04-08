@@ -1,5 +1,5 @@
 import { IAPIItem } from "@/app/interfaces/api_interfaces";
-import { convertToUrl } from "@/utils/utils";
+import { convertToUrl, getRarityClass } from "@/utils/utils";
 import Image from "next/image";
 import { PlannerCardCurrentDesiredComponent } from "./PlannerCardCurrentDesiredComponent";
 import { calculateWaveplate, convertItemMapToItemList, sortToItemList } from "@/utils/items_utils";
@@ -12,7 +12,7 @@ import { ResonatorStateDBEntry } from "@/types/resonatorTypes";
 
 interface PlannerCardComponentProps {
   plannerItem: IResonatorPlanner | IWeaponPlanner;
-  apiItems: IAPIItem[],
+  apiItems: IAPIItem[];
   onEdit: (item: IResonatorPlanner | IWeaponPlanner, index?: number) => void;
   onDelete: (item: IResonatorPlanner | IWeaponPlanner, index?: number) => void;
 }
@@ -20,7 +20,7 @@ export function PlannerCardComponent({
   plannerItem,
   apiItems,
   onEdit,
-  onDelete
+  onDelete,
 }: PlannerCardComponentProps) {
   const sortOrder = [
     { SHELL_CREDIT: SHELL_CREDIT },
@@ -37,13 +37,13 @@ export function PlannerCardComponent({
   const { dbData, requiredMaterials } = plannerItem;
 
   const itemList = convertItemMapToItemList(apiItems, requiredMaterials as TItemMap, true);
-  const displayedMaterials = sortToItemList(sortOrder, apiItems, itemList)
+  const displayedMaterials = sortToItemList(sortOrder, apiItems, itemList);
   const waveplateNeeded = calculateWaveplate(itemList);
 
   return (
     <div className="flex flex-col items-center bg-gray-300 h-full">
       <div className={`
-          ${plannerItem.rarity === 5 ? "bg-rarity5" : "bg-rarity4"}
+          ${getRarityClass(plannerItem.rarity)}
           flex items-center justify-between w-full border border-black`}
       >
         <div className="flex space-x-4 h-full items-center m-2">

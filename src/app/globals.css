@@ -3,82 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --text-primary: #1e1e1e;
+  --text-secondary: #4b5563;
+  --base-100: #ffffff;
+  --base-200: #f5f5f5;
+  --base-300: #e5e5e5;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Light Mode (Default) */
-body {
-  @apply bg-gray-50 text-black transition-colors duration-300;
-}
-
-/* Dark Mode */
-.dark body {
-  @apply bg-gray-900 text-white;
-}
-
-/* Navbar */
-nav {
-  @apply bg-gray-100 text-black dark:bg-gray-800 dark:text-white p-4 shadow-md;
-}
-
-/* Card UI */
-.card {
-  @apply bg-white text-black dark:bg-gray-800 dark:text-white p-6 rounded-lg shadow-lg;
-}
-
-/* Buttons */
-button {
-  @apply bg-gray-200 text-black dark:bg-gray-700 dark:text-white px-4 py-2 rounded-md;
-}
-
-/* Table Styling */
-table {
-  @apply w-full border-collapse bg-white dark:bg-gray-800;
-}
-
-th,
-td {
-  @apply border border-gray-300 dark:border-gray-600 p-2;
-}
-
-th {
-  @apply bg-gray-200 dark:bg-gray-700 text-black dark:text-white;
-}
-
-/* Input Fields */
-input,
-select {
-  @apply bg-white text-black dark:bg-gray-700 dark:text-white border border-gray-300 dark:border-gray-600 rounded-md p-2;
-}
-
-/* Links */
-a {
-  @apply text-blue-600 dark:text-blue-400 hover:underline;
-}
-
-/* Custom Scrollbar (Optional) */
-::-webkit-scrollbar {
-  @apply w-2;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-gray-100 dark:bg-gray-800;
+/* Dark Theme */
+.dark {
+  --text-primary: #f1f1f1;
+  --text-secondary: #aaa;
+  --base-100: #1e1e1e;
+  --base-200: #2a2a2a;
+  --base-300: #3b3b3b;
 }

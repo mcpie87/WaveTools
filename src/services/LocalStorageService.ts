@@ -3,15 +3,20 @@ import { ResonatorDBSchema } from "@/types/resonatorTypes";
 import { WeaponDBSchema } from "@/types/weaponTypes";
 
 // const VERSION_KEY = "2025-03-06T03:36";
-const STORAGE_KEY = "wave_tools";
+export const STORAGE_KEY = "wave_tools";
 
 type LocalStorageData = string | ResonatorDBSchema | WeaponDBSchema | InventoryDBSchema;
 
+// Usage:
+// const storageService = new LocalStorageService("resonators");
+// const resonators = storageService.load();
+// resonators["name"] = { ... };
+// storageService.save(resonators);
 class LocalStorageService {
   private key: string;
 
-  constructor(key: string) {
-    this.key = `${STORAGE_KEY}_${key}`;
+  constructor(key: string, prefix: string = STORAGE_KEY) {
+    this.key = `${prefix}_${key}`;
   }
 
   private isBrowser(): boolean {

@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   darkMode: 'class',
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,8 +17,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "base-100": "var(--base-100)",
+        "base-200": "var(--base-200)",
+        "base-300": "var(--base-300)",
+        "text-primary": "var(--text-primary)",
+        "text-secondary": "var(--text-secondary)",
         rarity5: "#e1d170",
         rarity4: "#cab2e3",
         rarity3: "#5c9bcc",
@@ -28,4 +31,5 @@ export default {
     },
   },
   plugins: [],
-} satisfies Config;
+}
+export default config;
