@@ -24,9 +24,13 @@ export const getPlannerItems = (
   apiItems: IAPIItem[],
 ): (IResonatorPlanner | IWeaponPlanner)[] => {
   const resonatorItems: IResonatorPlanner[] = Object.keys(dbResonators).map(name => {
-    const resonator = apiResonators.find(e => e.name === name);
+    let resonator = apiResonators.find(e => e.name === name);
     if (!resonator) {
-      throw new Error(`Resonator not present in API ${name}`);
+      console.log("Resonator not found, searching for rover");
+      resonator = apiResonators.find(e => e.name === name.replace("-", ": "));
+      if (!resonator) {
+        throw new Error(`Resonator not present in API ${name}`);
+      }
     }
     return parseResonatorToPlanner(dbResonators[name], apiItems, resonator);
   });
