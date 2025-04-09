@@ -7,9 +7,16 @@ export const enum ERecipeType {
   processed = "processed",
 }
 
+export const enum EDishType {
+  offensive = 1,
+  defensive = 2,
+  exploration = 3,
+}
+
 export interface IRecipeFormulaBase {
   id: number;
   type: ERecipeType;
+  typeId?: EDishType;
   resultItem: IItem;
   // materials: (IItem | IItemEntry)[];
   formulaType?: number;

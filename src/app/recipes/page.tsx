@@ -5,7 +5,7 @@ import { convertCostListToItemList } from "@/utils/items_utils";
 import { useEffect, useState } from "react";
 import { IAPIItem } from "../interfaces/api_interfaces";
 // import { FixedSizeList, ListChildComponentProps } from "react-window";
-import { ERecipeType, IAPIRecipeFormula, IItemToShops, IRecipeFormula, IRecipeItem } from "./RecipeTypes";
+import { EDishType, ERecipeType, IAPIRecipeFormula, IItemToShops, IRecipeFormula, IRecipeItem } from "./RecipeTypes";
 import { RecipeRowComponent } from "./components/RecipeRowComponent";
 
 // const VirtualizedRecipeList = ({
@@ -115,6 +115,7 @@ const COOKING_MATERIAL_LIST: string[] = [
 export default function RecipesPage() {
   const [displayedFormulas, setDisplayedFormulas] = useState<IAPIRecipeFormula[]>([]);
   const [displayedCategory, setDisplayedCategory] = useState<Set<string>>(new Set());
+  const [displayedDishCategory, setDisplayedDishCategory] = useState<Set<EDishType>>(new Set());
   const [displayedRarity, setDisplayedRarity] = useState<Set<number>>(new Set());
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [showTotalMats, setShowTotalMats] = useState<boolean>(false);
@@ -152,6 +153,18 @@ export default function RecipesPage() {
 
   const setCategory = (category: ERecipeType | null) => {
     setDisplayedCategory((prev) => {
+      if (category === null) return new Set();
+      const newSet = new Set(prev);
+      if (newSet.has(category)) {
+        newSet.delete(category);
+      } else {
+        newSet.add(category);
+      }
+      return newSet;
+    })
+  }
+  const setDishCategory = (category: EDishType | null) => {
+    setDisplayedDishCategory((prev) => {
       if (category === null) return new Set();
       const newSet = new Set(prev);
       if (newSet.has(category)) {
@@ -214,7 +227,7 @@ export default function RecipesPage() {
       if (retMaterials[material.name]) {
         retMaterials[material.name].value += material.value;
       } else {
-        retMaterials[material.name] = material;
+        retMaterials[material.name] = { ...material };
       }
     }
 
@@ -224,7 +237,8 @@ export default function RecipesPage() {
   let filteredFormulas = baseFilteredFormulas
     .filter((formula) => !displayedCategory.size || displayedCategory.has(formula.type))
     .filter((formula) => formula.formulaType !== 3) // 3 === Synthesis Conversion Materials
-    .filter((formula) => !displayedRarity.size || displayedRarity.has(formula.resultItem.rarity));
+    .filter((formula) => !displayedRarity.size || displayedRarity.has(formula.resultItem.rarity))
+    .filter((formula) => formula.typeId && (!displayedDishCategory.size || displayedDishCategory.has(formula.typeId)));
 
   if (showTotalMats) {
     filteredFormulas = filteredFormulas.map((formula) => ({
@@ -243,33 +257,59 @@ export default function RecipesPage() {
 
   return (
     <div>
-      <div className="flex flex-row justify-center gap-2">
-        <div>
-          {filteredFormulas.length} results
+      <div className="flex flex-col justify-center items-center gap-2">
+        <div className="flex flex-row gap-2">
+          <div>
+            {filteredFormulas.length} results
+          </div>
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search..."
+          />
         </div>
-        <input
-          type="text"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search..."
-        />
-        <button className={`btn ${displayedCategory.size === 0 ? "active" : ""}`} onClick={() => setCategory(null)}>All</button>
-        <button className={`btn ${displayedCategory.has(ERecipeType.synthesis) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.synthesis)}>Synthesis</button>
-        <button className={`btn ${displayedCategory.has(ERecipeType.dish) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.dish)}>Dish</button>
-        <button className={`btn ${displayedCategory.has(ERecipeType.processed) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.processed)}>Processed</button>
-        <button className={`btn ${displayedRarity.has(1) ? "active" : ""}`} onClick={() => toggleRarity(1)}>1</button>
-        <button className={`btn ${displayedRarity.has(2) ? "active" : ""}`} onClick={() => toggleRarity(2)}>2</button>
-        <button className={`btn ${displayedRarity.has(3) ? "active" : ""}`} onClick={() => toggleRarity(3)}>3</button>
-        <button className={`btn ${displayedRarity.has(4) ? "active" : ""}`} onClick={() => toggleRarity(4)}>4</button>
-        <button className={`btn ${displayedRarity.has(5) ? "active" : ""}`} onClick={() => toggleRarity(5)}>5</button>
-        <button className={`btn ${displayedRarity.size === 0 ? "active" : ""}`} onClick={() => toggleRarity(null)}>all</button>
-        <div className="flex flex-row justify-between items-center">
-          <input type="checkbox" onChange={(e) => toggleShowTotalMats(e.target.checked)} />
-          <span>Show Total Materials</span>
+        <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-1">
+            {/* Displayed Category */}
+            <button className={`btn ${displayedCategory.size === 0 ? "active" : ""}`} onClick={() => setCategory(null)}>All</button>
+            <button className={`btn ${displayedCategory.has(ERecipeType.synthesis) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.synthesis)}>Synthesis</button>
+            <button className={`btn ${displayedCategory.has(ERecipeType.dish) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.dish)}>Dish</button>
+            <button className={`btn ${displayedCategory.has(ERecipeType.processed) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.processed)}>Processed</button>
+          </div>
         </div>
-        <div className="flex flex-row justify-between items-center">
-          <input type="checkbox" onChange={(e) => toggleDisablePurchasableCookingMaterials(e.target.checked)} />
-          <span>Disable Purchasable Cooking Materials</span>
+        <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-1">
+            {/* Dish category */}
+            <button className={`btn ${displayedDishCategory.size === 0 ? "active" : ""}`} onClick={() => setDishCategory(null)}>All</button>
+            <button className={`btn ${displayedDishCategory.has(EDishType.offensive) ? "active" : ""}`} onClick={() => setDishCategory(EDishType.offensive)}>Offensive</button>
+            <button className={`btn ${displayedDishCategory.has(EDishType.defensive) ? "active" : ""}`} onClick={() => setDishCategory(EDishType.defensive)}>Defensive</button>
+            <button className={`btn ${displayedDishCategory.has(EDishType.exploration) ? "active" : ""}`} onClick={() => setDishCategory(EDishType.exploration)}>Exploration</button>
+          </div>
+        </div>
+        <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-1">
+            {/* Displayed Rarity */}
+            <button className={`btn ${displayedRarity.has(1) ? "active" : ""}`} onClick={() => toggleRarity(1)}>1</button>
+            <button className={`btn ${displayedRarity.has(2) ? "active" : ""}`} onClick={() => toggleRarity(2)}>2</button>
+            <button className={`btn ${displayedRarity.has(3) ? "active" : ""}`} onClick={() => toggleRarity(3)}>3</button>
+            <button className={`btn ${displayedRarity.has(4) ? "active" : ""}`} onClick={() => toggleRarity(4)}>4</button>
+            <button className={`btn ${displayedRarity.has(5) ? "active" : ""}`} onClick={() => toggleRarity(5)}>5</button>
+            <button className={`btn ${displayedRarity.size === 0 ? "active" : ""}`} onClick={() => toggleRarity(null)}>All</button>
+          </div>
+        </div>
+        <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-1">
+            {/* Toggle buttons */}
+            <div className="flex flex-row justify-between items-center">
+              <input type="checkbox" onChange={(e) => toggleShowTotalMats(e.target.checked)} />
+              <span>Show Total Materials</span>
+            </div>
+            <div className="flex flex-row justify-between items-center">
+              <input type="checkbox" onChange={(e) => toggleDisablePurchasableCookingMaterials(e.target.checked)} />
+              <span>Disable Purchasable Cooking Materials</span>
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex flex-col justify-center m-auto gap-4 w-[800px]">
