@@ -7,6 +7,8 @@ import { IAPIItem } from "../interfaces/api_interfaces";
 // import { FixedSizeList, ListChildComponentProps } from "react-window";
 import { EDishType, ERecipeType, IAPIRecipeFormula, IItemToShops, IRecipeFormula, IRecipeItem } from "./RecipeTypes";
 import { RecipeRowComponent } from "./components/RecipeRowComponent";
+import { Button } from "@/components/ui/button";
+import { Toggle } from "@/components/ui/toggle";
 
 // const VirtualizedRecipeList = ({
 //   filteredFormulas,
@@ -242,7 +244,7 @@ export default function RecipesPage() {
     .filter((formula) => !displayedCategory.size || displayedCategory.has(formula.type))
     .filter((formula) => formula.formulaType !== 3) // 3 === Synthesis Conversion Materials
     .filter((formula) => !displayedRarity.size || displayedRarity.has(formula.resultItem.rarity))
-    .filter((formula) => formula.typeId && (!displayedDishCategory.size || displayedDishCategory.has(formula.typeId)));
+    .filter((formula) => !formula.typeId || (!displayedDishCategory.size || displayedDishCategory.has(formula.typeId)));
 
   if (showTotalMats) {
     filteredFormulas = filteredFormulas.map((formula) => ({
@@ -276,47 +278,43 @@ export default function RecipesPage() {
         <div className="flex flex-row gap-2">
           <div className="flex flex-row gap-1">
             {/* Displayed Category */}
-            <button className={`btn ${displayedCategory.size === 0 ? "active" : ""}`} onClick={() => setCategory(null)}>All</button>
-            <button className={`btn ${displayedCategory.has(ERecipeType.synthesis) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.synthesis)}>Synthesis</button>
-            <button className={`btn ${displayedCategory.has(ERecipeType.dish) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.dish)}>Dish</button>
-            <button className={`btn ${displayedCategory.has(ERecipeType.processed) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.processed)}>Processed</button>
-          </div>
-        </div>
-        <div className="flex flex-row gap-2">
-          <div className="flex flex-row gap-1">
-            {/* Dish category */}
-            <button className={`btn ${displayedDishCategory.size === 0 ? "active" : ""}`} onClick={() => setDishCategory(null)}>All</button>
-            <button className={`btn ${displayedDishCategory.has(EDishType.offensive) ? "active" : ""}`} onClick={() => setDishCategory(EDishType.offensive)}>Offensive</button>
-            <button className={`btn ${displayedDishCategory.has(EDishType.defensive) ? "active" : ""}`} onClick={() => setDishCategory(EDishType.defensive)}>Defensive</button>
-            <button className={`btn ${displayedDishCategory.has(EDishType.exploration) ? "active" : ""}`} onClick={() => setDishCategory(EDishType.exploration)}>Exploration</button>
+            <Toggle pressed={displayedCategory.size === 0} onPressedChange={() => setCategory(null)}>All</Toggle>
+            <Toggle pressed={displayedCategory.has(ERecipeType.synthesis)} onPressedChange={() => setCategory(ERecipeType.synthesis)}>Synthesis</Toggle>
+            <Toggle pressed={displayedCategory.has(ERecipeType.dish)} onPressedChange={() => setCategory(ERecipeType.dish)}>Dish</Toggle>
+            <Toggle pressed={displayedCategory.has(ERecipeType.processed)} onPressedChange={() => setCategory(ERecipeType.processed)}>Processed</Toggle>
           </div>
         </div>
         <div className="flex flex-row gap-2">
           <div className="flex flex-row gap-1">
             {/* Displayed Rarity */}
-            <button className={`btn ${displayedRarity.has(1) ? "active" : ""}`} onClick={() => toggleRarity(1)}>1</button>
-            <button className={`btn ${displayedRarity.has(2) ? "active" : ""}`} onClick={() => toggleRarity(2)}>2</button>
-            <button className={`btn ${displayedRarity.has(3) ? "active" : ""}`} onClick={() => toggleRarity(3)}>3</button>
-            <button className={`btn ${displayedRarity.has(4) ? "active" : ""}`} onClick={() => toggleRarity(4)}>4</button>
-            <button className={`btn ${displayedRarity.has(5) ? "active" : ""}`} onClick={() => toggleRarity(5)}>5</button>
-            <button className={`btn ${displayedRarity.size === 0 ? "active" : ""}`} onClick={() => toggleRarity(null)}>All</button>
+            <Toggle pressed={displayedRarity.size === 0} onPressedChange={() => toggleRarity(null)}>All</Toggle>
+            <Toggle pressed={displayedRarity.has(1)} onPressedChange={() => toggleRarity(1)}>1</Toggle>
+            <Toggle pressed={displayedRarity.has(2)} onPressedChange={() => toggleRarity(2)}>2</Toggle>
+            <Toggle pressed={displayedRarity.has(3)} onPressedChange={() => toggleRarity(3)}>3</Toggle>
+            <Toggle pressed={displayedRarity.has(4)} onPressedChange={() => toggleRarity(4)}>4</Toggle>
+            <Toggle pressed={displayedRarity.has(5)} onPressedChange={() => toggleRarity(5)}>5</Toggle>
           </div>
         </div>
+        {displayedCategory.has(ERecipeType.dish) || !displayedCategory.size && (
+          <div className="flex flex-row gap-2">
+            <div className="flex flex-row gap-1">
+              {/* Displayed Dish Category */}
+              <Toggle pressed={displayedDishCategory.size === 0} onPressedChange={() => setDishCategory(null)}>All</Toggle>
+              <Toggle pressed={displayedDishCategory.has(EDishType.offensive)} onPressedChange={() => setDishCategory(EDishType.offensive)}>Offensive</Toggle>
+              <Toggle pressed={displayedDishCategory.has(EDishType.defensive)} onPressedChange={() => setDishCategory(EDishType.defensive)}>Defensive</Toggle>
+              <Toggle pressed={displayedDishCategory.has(EDishType.exploration)} onPressedChange={() => setDishCategory(EDishType.exploration)}>Exploration</Toggle>
+            </div>
+          </div>
+        )}
         <div className="flex flex-row gap-2">
           <div className="flex flex-row gap-1">
             {/* Toggle buttons */}
-            <button
-              className={`btn ${showTotalMats ? "active" : ""}`}
-              onClick={() => toggleShowTotalMats(!showTotalMats)}
-            >
+            <Toggle pressed={showTotalMats} onPressedChange={() => toggleShowTotalMats(!showTotalMats)}>
               Show Total Materials
-            </button>
-            <button
-              className={`btn ${disablePurchasableCookingMaterials ? "active" : ""}`}
-              onClick={() => toggleDisablePurchasableCookingMaterials(!disablePurchasableCookingMaterials)}
-            >
+            </Toggle>
+            <Toggle pressed={disablePurchasableCookingMaterials} onPressedChange={() => toggleDisablePurchasableCookingMaterials(!disablePurchasableCookingMaterials)}>
               Disable Purchasable Cooking Materials
-            </button>
+            </Toggle>
           </div>
         </div>
       </div>
