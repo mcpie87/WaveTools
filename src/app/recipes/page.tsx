@@ -114,8 +114,8 @@ const COOKING_MATERIAL_LIST: string[] = [
 
 export default function RecipesPage() {
   const [displayedFormulas, setDisplayedFormulas] = useState<IAPIRecipeFormula[]>([]);
-  const [displayedCategory, setDisplayedCategory] = useState<string | null>(null);
-  const [displayedRarity, setDisplayedRarity] = useState<number | null>(null);
+  const [displayedCategory, setDisplayedCategory] = useState<Set<string>>(new Set());
+  const [displayedRarity, setDisplayedRarity] = useState<Set<number>>(new Set());
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [showTotalMats, setShowTotalMats] = useState<boolean>(false);
   const [disablePurchasableCookingMaterials, setDisablePurchasableCookingMaterials] = useState<boolean>(false);
@@ -151,10 +151,28 @@ export default function RecipesPage() {
   const { items: apiItems } = data;
 
   const setCategory = (category: ERecipeType | null) => {
-    setDisplayedCategory(category);
+    setDisplayedCategory((prev) => {
+      if (category === null) return new Set();
+      const newSet = new Set(prev);
+      if (newSet.has(category)) {
+        newSet.delete(category);
+      } else {
+        newSet.add(category);
+      }
+      return newSet;
+    })
   }
-  const setRarity = (rarity: number | null) => {
-    setDisplayedRarity(rarity);
+  const toggleRarity = (rarity: number | null) => {
+    setDisplayedRarity((prev) => {
+      if (rarity === null) return new Set();
+      const newSet = new Set(prev);
+      if (newSet.has(rarity)) {
+        newSet.delete(rarity);
+      } else {
+        newSet.add(rarity);
+      }
+      return newSet;
+    })
   }
 
   const baseFilteredFormulas = postprocessFormulas(displayedFormulas, apiItems, shops)
@@ -204,9 +222,9 @@ export default function RecipesPage() {
   }
 
   let filteredFormulas = baseFilteredFormulas
-    .filter((formula) => !displayedCategory || formula.type === displayedCategory)
+    .filter((formula) => !displayedCategory.size || displayedCategory.has(formula.type))
     .filter((formula) => formula.formulaType !== 3) // 3 === Synthesis Conversion Materials
-    .filter((formula) => !displayedRarity || formula.resultItem.rarity === displayedRarity)
+    .filter((formula) => !displayedRarity.size || displayedRarity.has(formula.resultItem.rarity));
 
   if (showTotalMats) {
     filteredFormulas = filteredFormulas.map((formula) => ({
@@ -235,16 +253,16 @@ export default function RecipesPage() {
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search..."
         />
-        <button onClick={() => setCategory(null)}>All</button>
-        <button onClick={() => setCategory(ERecipeType.synthesis)}>Synthesis</button>
-        <button onClick={() => setCategory(ERecipeType.dish)}>Dish</button>
-        <button onClick={() => setCategory(ERecipeType.processed)}>Processed</button>
-        <button onClick={() => setRarity(1)}>1</button>
-        <button onClick={() => setRarity(2)}>2</button>
-        <button onClick={() => setRarity(3)}>3</button>
-        <button onClick={() => setRarity(4)}>4</button>
-        <button onClick={() => setRarity(5)}>5</button>
-        <button onClick={() => setRarity(null)}>all</button>
+        <button className={`btn ${displayedCategory.size === 0 ? "active" : ""}`} onClick={() => setCategory(null)}>All</button>
+        <button className={`btn ${displayedCategory.has(ERecipeType.synthesis) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.synthesis)}>Synthesis</button>
+        <button className={`btn ${displayedCategory.has(ERecipeType.dish) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.dish)}>Dish</button>
+        <button className={`btn ${displayedCategory.has(ERecipeType.processed) ? "active" : ""}`} onClick={() => setCategory(ERecipeType.processed)}>Processed</button>
+        <button className={`btn ${displayedRarity.has(1) ? "active" : ""}`} onClick={() => toggleRarity(1)}>1</button>
+        <button className={`btn ${displayedRarity.has(2) ? "active" : ""}`} onClick={() => toggleRarity(2)}>2</button>
+        <button className={`btn ${displayedRarity.has(3) ? "active" : ""}`} onClick={() => toggleRarity(3)}>3</button>
+        <button className={`btn ${displayedRarity.has(4) ? "active" : ""}`} onClick={() => toggleRarity(4)}>4</button>
+        <button className={`btn ${displayedRarity.has(5) ? "active" : ""}`} onClick={() => toggleRarity(5)}>5</button>
+        <button className={`btn ${displayedRarity.size === 0 ? "active" : ""}`} onClick={() => toggleRarity(null)}>all</button>
         <div className="flex flex-row justify-between items-center">
           <input type="checkbox" onChange={(e) => toggleShowTotalMats(e.target.checked)} />
           <span>Show Total Materials</span>
