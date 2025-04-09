@@ -190,15 +190,19 @@ export default function RecipesPage() {
 
   const baseFilteredFormulas = postprocessFormulas(displayedFormulas, apiItems, shops)
   const searchQueryPredicate = (query: string, formula: IRecipeFormula) => {
-    if (!query) return true;
-    const isNameMatch = formula.resultItem.name.toLowerCase().includes(query.toLowerCase());
-    const isDescriptionMatch = formula.resultItem.attributes_description.toLowerCase().includes(query.toLowerCase());
-    if (isNameMatch || isDescriptionMatch) return true;
-    const isMaterialMatch = formula.materials
-      .some((material) => material.name.toLowerCase().includes(query.toLowerCase()));
-    if (isMaterialMatch) return true;
+    if (!query?.trim()) return true;
 
-    return false;
+    const isMatch = (name: string | undefined) => {
+      return !!name?.toLowerCase().includes(query.toLowerCase());
+    }
+
+    return (
+      isMatch(formula.resultItem.name) ||
+      isMatch(formula.resultItem.attributes_description) ||
+      formula.materials.some((material) => isMatch(material.name)) ||
+      isMatch(formula.specialtyCook?.name) ||
+      isMatch(formula.specialtyItem?.attributes_description)
+    )
   }
 
   const toggleShowTotalMats = (show: boolean) => {
