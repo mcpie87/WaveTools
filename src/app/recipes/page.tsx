@@ -8,6 +8,7 @@ import { IAPIItem } from "../interfaces/api_interfaces";
 import { EDishType, ERecipeType, IAPIRecipeFormula, IItemToShops, IRecipeFormula, IRecipeItem } from "./RecipeTypes";
 import { RecipeRowComponent } from "./components/RecipeRowComponent";
 import { Toggle } from "@/components/ui/toggle";
+import { Input } from "@/components/ui/input";
 
 // const VirtualizedRecipeList = ({
 //   filteredFormulas,
@@ -118,6 +119,7 @@ export default function RecipesPage() {
   const [displayedCategory, setDisplayedCategory] = useState<Set<string>>(new Set());
   const [displayedDishCategory, setDisplayedDishCategory] = useState<Set<EDishType>>(new Set());
   const [displayedRarity, setDisplayedRarity] = useState<Set<number>>(new Set());
+  const [displayedPage, setDisplayedPage] = useState<number>(0); // 0 indexed
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [showTotalMats, setShowTotalMats] = useState<boolean>(false);
   const [disablePurchasableCookingMaterials, setDisablePurchasableCookingMaterials] = useState<boolean>(false);
@@ -260,20 +262,42 @@ export default function RecipesPage() {
   filteredFormulas = filteredFormulas
     .filter((formula) => !searchQuery || searchQueryPredicate(searchQuery, formula));
 
+  const pageSize = 20;
+  const totalPages = Math.ceil(filteredFormulas.length / pageSize);
+  const totalResults = filteredFormulas.length;
+  filteredFormulas = filteredFormulas.slice(pageSize * displayedPage, pageSize * (displayedPage + 1));
+
+  const setPage = (page: number) => {
+    setDisplayedPage(page);
+  }
   return (
     <div>
       <div className="flex flex-col justify-center items-center gap-2">
-        <div className="flex flex-row gap-2">
-          <div>
-            {filteredFormulas.length} results
+
+        <div className="flex flex-row gap-2 justify-center items-center">
+          <div className="flex whitespace-nowrap">
+            {totalResults} results
           </div>
-          <input
+          <Input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search..."
           />
         </div>
+        {totalPages > 1 && (
+          <div className="flex flex-row gap-2 justify-center">
+            {Array.from({ length: totalPages }).map((_, idx) => (
+              <Toggle
+                key={idx}
+                pressed={displayedPage === idx}
+                onPressedChange={() => setPage(idx)}
+              >
+                {idx + 1}
+              </Toggle>
+            ))}
+          </div>
+        )}
         <div className="flex flex-row gap-2">
           <div className="flex flex-row gap-1">
             {/* Displayed Category */}
@@ -287,14 +311,14 @@ export default function RecipesPage() {
           <div className="flex flex-row gap-1">
             {/* Displayed Rarity */}
             <Toggle pressed={displayedRarity.size === 0} onPressedChange={() => toggleRarity(null)}>All</Toggle>
-            <Toggle pressed={displayedRarity.has(1)} onPressedChange={() => toggleRarity(1)}>1</Toggle>
-            <Toggle pressed={displayedRarity.has(2)} onPressedChange={() => toggleRarity(2)}>2</Toggle>
-            <Toggle pressed={displayedRarity.has(3)} onPressedChange={() => toggleRarity(3)}>3</Toggle>
-            <Toggle pressed={displayedRarity.has(4)} onPressedChange={() => toggleRarity(4)}>4</Toggle>
-            <Toggle pressed={displayedRarity.has(5)} onPressedChange={() => toggleRarity(5)}>5</Toggle>
+            <Toggle pressed={displayedRarity.has(1)} onPressedChange={() => toggleRarity(1)}>1*</Toggle>
+            <Toggle pressed={displayedRarity.has(2)} onPressedChange={() => toggleRarity(2)}>2*</Toggle>
+            <Toggle pressed={displayedRarity.has(3)} onPressedChange={() => toggleRarity(3)}>3*</Toggle>
+            <Toggle pressed={displayedRarity.has(4)} onPressedChange={() => toggleRarity(4)}>4*</Toggle>
+            <Toggle pressed={displayedRarity.has(5)} onPressedChange={() => toggleRarity(5)}>5*</Toggle>
           </div>
         </div>
-        {displayedCategory.has(ERecipeType.dish) || !displayedCategory.size && (
+        {(displayedCategory.has(ERecipeType.dish) || !displayedCategory.size) && (
           <div className="flex flex-row gap-2">
             <div className="flex flex-row gap-1">
               {/* Displayed Dish Category */}

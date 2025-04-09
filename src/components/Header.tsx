@@ -1,5 +1,6 @@
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
     return (
@@ -9,28 +10,46 @@ export default function Header() {
             <nav className="space-x-4">
                 {process.env.NODE_ENV === "development" && (
                     <>
-                        <Link href="/" className="text-blue-600 hover:underline">
-                            Home
-                        </Link>
+                        <Button asChild>
+                            <Link href="/">
+                                Home
+                            </Link>
+                        </Button>
 
-                        <Link href="/items" className="text-blue-600 hover:underline">
-                            Items
-                        </Link>
+                        <Button asChild>
+                            <Link href="/map">
+                                Map
+                            </Link>
+                        </Button>
+
+                        <Button asChild>
+                            <Link href="/items">
+                                Items
+                            </Link>
+                        </Button>
                     </>
                 )}
-                <Link href="/union-level" className="text-blue-600 hover:underline">
-                    Union Level
-                </Link>
-                <Link href="/recipes" className="text-blue-600 hover:underline">
-                    Recipes
-                </Link>
-                <Link href="/planner" className="text-blue-600 hover:underline">
-                    Planner
-                </Link>
-                <Link href="/echo-simulation" className="text-blue-600 hover:underline">
-                    Echo Roll Simulator
-                </Link>
+                <Button asChild>
+                    <Link href="/union-level">
+                        Union Level
+                    </Link>
+                </Button>
+                <Button asChild>
+                    <Link href="/recipes">
+                        Recipes
+                    </Link>
+                </Button>
+                <Button asChild>
+                    <Link href="/planner">
+                        Planner
+                    </Link>
+                </Button>
+                <Button asChild>
+                    <Link href="/echo-simulation">
+                        Echo Roll Simulator
+                    </Link>
+                </Button>
             </nav>
-        </header>
+        </header >
     );
 }
