@@ -2,59 +2,69 @@
 
 import { useData } from "@/context/DataContext";
 import { convertCostListToItemList } from "@/utils/items_utils";
-import { convertToUrl } from "@/utils/utils";
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import { IAPIItem, IItemEntry } from "../interfaces/api_interfaces";
-import { IItem } from "../interfaces/item";
-import { SHELL_CREDIT_ICON_URL } from "@/constants/constants";
-import ItemCard from "@/components/items/ItemCard";
-import classNames from "classnames";
+import { IAPIItem } from "../interfaces/api_interfaces";
+// import { FixedSizeList, ListChildComponentProps } from "react-window";
+import { ERecipeType, IAPIRecipeFormula, IItemToShops, IRecipeFormula, IRecipeItem } from "./RecipeTypes";
+import { RecipeRowComponent } from "./components/RecipeRowComponent";
 
-const enum ERecipeType {
-  synthesis = "synthesis",
-  dish = "dish",
-  processed = "processed",
-}
+// const VirtualizedRecipeList = ({
+//   filteredFormulas,
+//   baseFilteredFormulas,
+// }: {
+//   filteredFormulas: IRecipeFormula[];
+//   baseFilteredFormulas: IRecipeFormula[];
+// }) => {
+//   const containerRef = useRef<HTMLDivElement>(null);
+//   const [dimensions, setDimensions] = useState({ height: 0, width: 0 });
 
-interface IRecipeFormulaBase {
-  id: number;
-  type: ERecipeType;
-  resultItem: IItem;
-  // materials: (IItem | IItemEntry)[];
-  formulaType?: number;
-  specialtyItem?: IItem;
-  specialtyCook?: {
-    id: number;
-    name: string;
-    icon: string;
-    rarity: number;
-  };
-}
+//   useEffect(() => {
+//     const updateDimensions = () => {
+//       if (containerRef.current) {
+//         const { height, width } = containerRef.current.getBoundingClientRect();
+//         setDimensions({ height, width });
+//       }
+//     };
 
-interface IAPIRecipeFormula extends IRecipeFormulaBase {
-  materials: IItemEntry[];
-}
+//     updateDimensions(); // Initial measurement
+//     window.addEventListener("resize", updateDimensions); // Update on resize
+//     return () => window.removeEventListener("resize", updateDimensions);
+//   }, []);
 
-interface IRecipeItem extends IItem {
-  price?: number;
-  value: number;
-}
-interface IRecipeFormula extends IRecipeFormulaBase {
-  materials: IRecipeItem[];
-}
+//   const RecipeRow = ({ index, style, data }: ListChildComponentProps) => {
+//     const { filteredFormulas, baseFilteredFormulas } = data;
+//     const item = filteredFormulas[index];
+//     return (
+//       <div style={style} className="flex">
+//         <RecipeRowComponent
+//           key={item.id}
+//           item={item}
+//           baseFilteredFormulas={baseFilteredFormulas}
+//         />
+//       </div>
+//     );
+//   };
 
-interface IShop {
-  id: number;
-  shopName: string;
-  price: string[];
-  limit: number;
-}
-interface IItemToShops {
-  id: number;
-  itemName: string;
-  shops: IShop[];
-}
+//   return (
+//     <div
+//       ref={containerRef}
+//       className="flex flex-col justify-center m-auto gap-4 w-[800px] h-[calc(100vh-150px)]"
+//     >
+//       {dimensions.height > 0 && dimensions.width > 0 && (
+//         <FixedSizeList
+//           height={1080} // Matches container height
+//           width={1000}   // Matches container width (up to 800px)
+//           itemCount={filteredFormulas.length}
+//           itemSize={60} // Adjust based on your RecipeRowComponent height
+//           itemData={{ filteredFormulas, baseFilteredFormulas }}
+//         >
+//           {RecipeRow}
+//         </FixedSizeList>
+//       )}
+//     </div>
+//   );
+// };
+
 
 const getCheapestShop = (itemName: string, shops: Record<string, IItemToShops>) => {
   const itemToShop = shops[itemName];
@@ -90,12 +100,25 @@ const postprocessFormulas = (
   }));
 }
 
+const COOKING_MATERIAL_LIST: string[] = [
+  "Flour",
+  "Cooking oil",
+  "Salt",
+  "Chili",
+  "Sugar",
+  "Kudzu Root",
+  "Rice",
+  "Tea",
+  "Milk",
+];
+
 export default function RecipesPage() {
   const [displayedFormulas, setDisplayedFormulas] = useState<IAPIRecipeFormula[]>([]);
   const [displayedCategory, setDisplayedCategory] = useState<string | null>(null);
   const [displayedRarity, setDisplayedRarity] = useState<number | null>(null);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [showTotalMats, setShowTotalMats] = useState<boolean>(false);
+  const [disablePurchasableCookingMaterials, setDisablePurchasableCookingMaterials] = useState<boolean>(false);
   const [shops, setShops] = useState<Record<string, IItemToShops>>({});
 
   useEffect(() => {
@@ -138,7 +161,8 @@ export default function RecipesPage() {
   const searchQueryPredicate = (query: string, formula: IRecipeFormula) => {
     if (!query) return true;
     const isNameMatch = formula.resultItem.name.toLowerCase().includes(query.toLowerCase());
-    if (isNameMatch) return true;
+    const isDescriptionMatch = formula.resultItem.attributes_description.toLowerCase().includes(query.toLowerCase());
+    if (isNameMatch || isDescriptionMatch) return true;
     const isMaterialMatch = formula.materials
       .some((material) => material.name.toLowerCase().includes(query.toLowerCase()));
     if (isMaterialMatch) return true;
@@ -148,6 +172,9 @@ export default function RecipesPage() {
 
   const toggleShowTotalMats = (show: boolean) => {
     setShowTotalMats(show);
+  }
+  const toggleDisablePurchasableCookingMaterials = (show: boolean) => {
+    setDisablePurchasableCookingMaterials(show);
   }
 
   const getBaseMaterials = (material: IRecipeItem): IRecipeItem[] => {
@@ -189,100 +216,19 @@ export default function RecipesPage() {
       ),
     }));
   }
+  if (disablePurchasableCookingMaterials) {
+    filteredFormulas = filteredFormulas
+      .filter((formula) => !formula.materials.some((material) => COOKING_MATERIAL_LIST.includes(material.name)));
+  }
   filteredFormulas = filteredFormulas
     .filter((formula) => !searchQuery || searchQueryPredicate(searchQuery, formula));
-
-  const MaterialComponent = ({ material }: { material: IRecipeItem }) => {
-    if (!material) return null;
-    const matchingFormula = baseFilteredFormulas
-      .find((formula) => formula.resultItem.name === material.name);
-
-    const rowComponent = (
-      <div className="bg-base-300 rounded-md inline-flex justify-between col-span-1 w-full h-fit">
-        {/* <ItemCard item={material} width={32} height={32} /> */}
-        <div className="h-9 w-9 shrink-0 relative">
-          <Image
-            className="w-[32px] h-[32px] z-10 bg-transparent absolute inset-0"
-            src={convertToUrl(material.icon)}
-            alt={material.name}
-            width={32}
-            height={32}
-          />
-          <div
-            className={classNames(
-              "rounded-md absolute inset-0 bg-gradient-to-t via-transparent via-50% to-transparent",
-              { "from-yellow-300/50": material.rarity === 5 },
-              { "from-purple-600/50": material.rarity === 4 },
-              { "from-blue-500/50": material.rarity === 3 },
-              { "from-green-300/50": material.rarity === 2 },
-              { "from-gray-400/50": material.rarity === 1 }
-            )}
-          />
-          <span className="absolute bottom-0 right-0 text-xs font-thin p-0.5 bg-black/70 rounded-br-md rounded-tl-md rounded-tr-md text-white z-10">
-            {material.value}
-          </span>
-        </div>
-        <div className="flex flex-col gap-1 items-center">
-          <h2 className="leading-none text-wrap max-w-48">{material.name}</h2>
-          {material.price && (
-            <div className="inline-flex gap-0.5 w-full">
-              <Image
-                src={convertToUrl(SHELL_CREDIT_ICON_URL)}
-                alt="Shell credits image"
-                className="h-4 w-4"
-                width={24}
-                height={24}
-              />
-              <p className="text-xs font-thin leading-none">{material.price}</p>
-            </div>
-          )}
-        </div>
-        {/* <div className="bg-black rounded-r-md px-2 flex items-center text-white">
-          <span>{material.value}</span>
-        </div> */}
-        {/*         
-        <div>
-          <div className="flex flex-col">
-            <div>{material.name}</div>
-            {cheapestShop && (
-              <div className="flex flex-row">
-                <Image
-                  className="w-[24px] h-[24px]"
-                  src={convertToUrl(SHELL_CREDIT_ICON_URL)}
-                  alt="shell credit"
-                  width={24}
-                  height={24}
-                />
-                <span>{material.price}</span>
-              </div>
-            )}
-          </div>
-          <div>{material.value}</div>
-        </div> */}
-      </div>
-    );
-
-    if (!matchingFormula) return rowComponent;
-
-    return (
-      <div className="flex flex-col">
-        {rowComponent}
-        <div className="flex flex-col">
-          {matchingFormula.materials.map((material) => (
-            <div key={material.id} className="border flex flex-row p-1">
-              <MaterialComponent material={material} />
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
-
 
   return (
     <div>
       <div className="flex flex-row justify-center gap-2">
+        <div>
+          {filteredFormulas.length} results
+        </div>
         <input
           type="text"
           value={searchQuery}
@@ -303,49 +249,22 @@ export default function RecipesPage() {
           <input type="checkbox" onChange={(e) => toggleShowTotalMats(e.target.checked)} />
           <span>Show Total Materials</span>
         </div>
+        <div className="flex flex-row justify-between items-center">
+          <input type="checkbox" onChange={(e) => toggleDisablePurchasableCookingMaterials(e.target.checked)} />
+          <span>Disable Purchasable Cooking Materials</span>
+        </div>
       </div>
       <div className="flex flex-col justify-center m-auto gap-4 w-[800px]">
+        {/* <VirtualizedRecipeList
+          filteredFormulas={filteredFormulas}
+          baseFilteredFormulas={baseFilteredFormulas}
+        /> */}
         {filteredFormulas.map((item) => (
-          <div key={item.id} className="max-w-4xl mx-auto p-2">
-            <div className="flex flex-col gap-1 bg-base-200 p-2 rounded-md border">
-              <div className="flex flex-row">
-                <ItemCard item={item.resultItem} width={64} height={64} />
-                <div>
-                  <h2>{item.resultItem.name}</h2>
-                  <p>{item.resultItem.attributes_description}</p>
-                </div>
-              </div>
-              {/* <p>BgDesc: {item.resultItem.bg_description}</p> */}
-              <div className="flex flex-row justify-center">
-                {item.materials.map((material) => (
-                  <div key={material.id} className="border flex flex-row">
-                    <MaterialComponent material={material} />
-                  </div>
-                ))}
-              </div>
-              {item.specialtyCook && item.specialtyItem && (
-                <div className="flex flex-row">
-                  <ItemCard item={item.specialtyItem} width={64} height={64} />
-                  <div className="flex flex-col">
-                    <div>{item.specialtyItem.name}</div>
-                    <div className="flex flex-row">
-                      <Image
-                        className="w-[24px] h-[24px]"
-                        src={convertToUrl(item.specialtyCook?.icon)}
-                        alt={item.specialtyCook?.name}
-                        width={24}
-                        height={24}
-                      />
-                      <div className="flex flex-col">
-                        <span>{item.specialtyCook.name} Special</span>
-                      </div>
-                    </div>
-                    <div>{item.specialtyItem?.attributes_description}</div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
+          <RecipeRowComponent
+            key={item.id}
+            item={item}
+            baseFilteredFormulas={baseFilteredFormulas}
+          />
         ))}
       </div>
     </div >
