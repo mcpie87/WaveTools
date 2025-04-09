@@ -18,6 +18,9 @@ export default function Header() {
                         </Link>
                     </>
                 )}
+                <Link href="/union-level" className="text-blue-600 hover:underline">
+                    Union Level
+                </Link>
                 <Link href="/recipes" className="text-blue-600 hover:underline">
                     Recipes
                 </Link>
