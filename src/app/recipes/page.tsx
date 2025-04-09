@@ -301,14 +301,18 @@ export default function RecipesPage() {
         <div className="flex flex-row gap-2">
           <div className="flex flex-row gap-1">
             {/* Toggle buttons */}
-            <div className="flex flex-row justify-between items-center">
-              <input type="checkbox" onChange={(e) => toggleShowTotalMats(e.target.checked)} />
-              <span>Show Total Materials</span>
-            </div>
-            <div className="flex flex-row justify-between items-center">
-              <input type="checkbox" onChange={(e) => toggleDisablePurchasableCookingMaterials(e.target.checked)} />
-              <span>Disable Purchasable Cooking Materials</span>
-            </div>
+            <button
+              className={`btn ${showTotalMats ? "active" : ""}`}
+              onClick={() => toggleShowTotalMats(!showTotalMats)}
+            >
+              Show Total Materials
+            </button>
+            <button
+              className={`btn ${disablePurchasableCookingMaterials ? "active" : ""}`}
+              onClick={() => toggleDisablePurchasableCookingMaterials(!disablePurchasableCookingMaterials)}
+            >
+              Disable Purchasable Cooking Materials
+            </button>
           </div>
         </div>
       </div>
