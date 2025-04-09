@@ -11,6 +11,7 @@ export default function DarkModeToggle() {
     return storageService.load() || false;
   });
 
+  console.log("DARK MODE", darkMode);
   useEffect(() => {
     const savedTheme = storageService.load();
     if (savedTheme === "dark") {
@@ -20,14 +21,14 @@ export default function DarkModeToggle() {
   }, []);
 
   const toggleDarkMode = () => {
-    if (darkMode) {
+    if (darkMode === "dark") {
       document.documentElement.classList.remove("dark");
       storageService.save("light");
     } else {
       document.documentElement.classList.add("dark");
       storageService.save("dark");
     }
-    setDarkMode(!darkMode);
+    setDarkMode(darkMode === "dark" ? "light" : "dark");
   };
 
   return (
@@ -35,7 +36,7 @@ export default function DarkModeToggle() {
       onClick={toggleDarkMode}
       className="p-2 rounded-md bg-gray-200 dark:bg-gray-800 text-black dark:text-white"
     >
-      {darkMode ? "Dark Mode" : "Light Mode"}
+      {darkMode === "dark" ? "Dark Mode" : "Light Mode"}
     </button>
   );
 }
