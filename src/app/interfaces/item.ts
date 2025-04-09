@@ -7,7 +7,9 @@ export interface IItem {
   icon: IconURL;
   icon_middle: IconURL;
   icon_small: IconURL;
-  value?: number;
-  attributes_description?: string;
+  attributes_description: string;
   bg_description?: string;
+  // display purposes
+  value?: number;
+  checked?: boolean; // for inventory (need 4 -> have 5 => true)
 };
