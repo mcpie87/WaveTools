@@ -15,7 +15,9 @@ export default function UnionLevelPage() {
     const rows = [];
     for (let i = currentLevel + 1; i <= desiredLevel; i++) {
       const expDiff = UNION_LEVEL_DATA[i][1] - UNION_LEVEL_DATA[currentLevel][1] - currentExp;
-      const daysNeeded = expDiff / (7.5 * (240 + refreshCount * 60));
+      const waveplateUnion = 7.5 * (240 + refreshCount * 60);
+      const guidebookUnion = 2000;
+      const daysNeeded = expDiff / (waveplateUnion + guidebookUnion);
 
       rows.push(
         <tr key={i}>
