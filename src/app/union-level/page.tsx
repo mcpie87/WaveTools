@@ -11,26 +11,29 @@ import { useEffect } from "react";
 const storageService = new LocalStorageService("union_levels");
 
 export default function UnionLevelPage() {
-  const [unionLevelData, setUnionLevelData] = useState<UnionLevelPageData>(() => {
-    return storageService.load() as UnionLevelPageData || {
+  const [unionLevelData, setUnionLevelData] = useState<UnionLevelPageData | null>(null);
+  const [displayedRows, setDisplayedRows] = useState<JSX.Element[]>([]);
+
+  useEffect(() => {
+    const data = storageService.load() as UnionLevelPageData || {
       currentExp: 0,
       currentLevel: 1,
       desiredLevel: 80,
       refreshCount: 0,
       tableSteps: 1,
     };
-  });
-  const [displayedRows, setDisplayedRows] = useState<JSX.Element[]>([]);
+    setUnionLevelData(data);
+  }, []);
 
   useEffect(() => {
+    if (!unionLevelData) return;
     storageService.save(unionLevelData);
   }, [unionLevelData]);
 
+  if (!unionLevelData) return (<div>Loading...</div>);
+
   const updateField = (field: keyof UnionLevelPageData, value: number) => {
-    setUnionLevelData(prev => ({
-      ...prev,
-      [field]: value,
-    }));
+    setUnionLevelData(prev => (prev ? { ...prev, [field]: value } : prev));
   }
   const updateCurrentExp = (value: number) => {
     updateField("currentExp", Math.min(Math.max(value, 0), 1e9));
