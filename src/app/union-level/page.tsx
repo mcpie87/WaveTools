@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import LocalStorageService from "@/services/LocalStorageService";
 import { UnionLevelPageData } from "@/types/unionLevelDataTypes";
 import { useEffect } from "react";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const storageService = new LocalStorageService("union_levels");
 
@@ -71,13 +72,13 @@ export default function UnionLevelPage() {
       const crystalSolventNeeded = waveplateNeeded / 60;
 
       return (
-        <tr key={i}>
-          <td>{i}</td>
-          <td>{formatNumber(expDiff)}</td>
-          <td>{formatNumber(daysNeeded.toFixed(2))}</td>
-          <td>{formatNumber(waveplateNeeded.toFixed(2))}</td>
-          <td>{formatNumber(crystalSolventNeeded.toFixed(2))}</td>
-        </tr>
+        <TableRow key={i}>
+          <TableCell className="text-center">{i}</TableCell>
+          <TableCell className="text-right">{formatNumber(expDiff)}</TableCell>
+          <TableCell className="text-right">{formatNumber(daysNeeded.toFixed(2))}</TableCell>
+          <TableCell className="text-right">{formatNumber(waveplateNeeded.toFixed(2))}</TableCell>
+          <TableCell className="text-center">{formatNumber(crystalSolventNeeded.toFixed(2))}</TableCell>
+        </TableRow>
       )
     }
     const inc = Math.min(80, Math.max(tableSteps, 1));
@@ -94,72 +95,42 @@ export default function UnionLevelPage() {
       <h1>Union Level Page</h1>
       <div className="bg-base-200 flex flex-col gap-2">
         <form className="flex flex-col gap-2">
-          <div className="flex flex-row gap-2">
-            <label htmlFor="currentExp">Current Exp</label>
-            <input
-              type="number"
-              id="currentExp"
-              value={unionLevelData.currentExp}
-              onChange={(e) => updateCurrentExp(parseInt(e.target.value))}
-            />
-          </div>
-          <div className="flex flex-row gap-2">
-            <label htmlFor="currentLevel">Current Level</label>
-            <input
-              type="number"
-              id="currentLevel"
-              value={unionLevelData.currentLevel}
-              onChange={(e) => updateCurrentLevel(parseInt(e.target.value))}
-            />
-          </div>
-          <div className="flex flex-row gap-2">
-            <label htmlFor="desiredLevel">Desired Level</label>
-            <input
-              type="number"
-              id="desiredLevel"
-              value={unionLevelData.desiredLevel}
-              onChange={(e) => updateDesiredLevel(parseInt(e.target.value))}
-            />
-          </div>
-          <div className="flex flex-row gap-2">
-            <label htmlFor="refreshCount">Refresh Count</label>
-            <input
-              type="number"
-              id="refreshCount"
-              value={unionLevelData.refreshCount}
-              onChange={(e) => updateRefreshCount(parseInt(e.target.value))}
-            />
-          </div>
-          <div className="flex flex-row gap-2">
-            <label htmlFor="tableSteps">Table Steps</label>
-            <input
-              type="number"
-              id="tableSteps"
-              value={unionLevelData.tableSteps}
-              onChange={(e) => updateTableSteps(parseInt(e.target.value))}
-            />
-          </div>
+          {[
+            ["Current Exp", "currentExp", unionLevelData.currentExp, updateCurrentExp],
+            ["Current Level", "currentLevel", unionLevelData.currentLevel, updateCurrentLevel],
+            ["Desired Level", "desiredLevel", unionLevelData.desiredLevel, updateDesiredLevel],
+            ["Refresh Count", "refreshCount", unionLevelData.refreshCount, updateRefreshCount],
+            ["Table Steps", "tableSteps", unionLevelData.tableSteps, updateTableSteps],
+          ].map(([label, field, value, onChange]) => (
+            <div key={field as string} className="flex flex-row gap-2">
+              <label htmlFor={field as string}>{label as string}</label>
+              <input
+                type="number"
+                id={field as string}
+                value={value as number}
+                onChange={(e) => (onChange as (value: number) => void)(parseInt(e.target.value))}
+              />
+            </div>
+          ))}
           <Button onClick={calculate}>Calculate</Button>
         </form>
       </div>
       <div className="flex flex-col gap-2">
-        <div>Current Exp: {unionLevelData.currentExp}</div>
-        <table className="overflow-x-auto bg-white shadow-md rounded-lg text-sm">
-          <thead className="bg-gray-200 text-gray-700">
-            <tr>
-              <th className="px-4 py-2 border-b">Lvl</th>
-              <th className="px-4 py-2 border-b">Exp Diff</th>
-              <th className="px-4 py-2 border-b">Days</th>
-              <th className="px-4 py-2 border-b">Waveplate</th>
-              <th className="px-4 py-2 border-b">Crystal Solvent</th>
-            </tr>
-          </thead>
-
-          <tbody>
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="text-center">Lvl</TableHead>
+              <TableHead className="text-center">Exp Diff</TableHead>
+              <TableHead className="text-center">Days</TableHead>
+              <TableHead className="text-center">Waveplate</TableHead>
+              <TableHead className="text-center">Crystal Solvent</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
             {displayedRows}
-          </tbody>
-        </table>
+          </TableBody>
+        </Table>
       </div>
-    </div>
+    </div >
   );
 }
