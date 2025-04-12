@@ -34,7 +34,7 @@ function EchoSimulationComponent() {
   }
 
   return (
-    <div className="bg-base-200 rounded-md w-fit flex flex-col items-center p-4">
+    <div className="flex flex-col items-center">
       <form className="flex flex-col gap-2" onSubmit={calculate}>
         <div className="flex-col">
           <h3>Start subs</h3>

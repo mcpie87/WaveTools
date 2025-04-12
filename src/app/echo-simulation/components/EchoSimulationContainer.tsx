@@ -14,16 +14,24 @@ function EchoSimulationContainer() {
   };
 
   return (
-    <div className="flex flex-col">
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(650px,1fr))] gap-2">
+    <div className="flex flex-col gap-2 m-4">
+      <div className="grid place-items-center grid-cols-[repeat(auto-fit,minmax(650px,1fr))] gap-4">
         {components.map(component => (
-          <div key={component.id} className="m-10 border p-3">
+          <div key={component.id} className="bg-base-200 rounded-md flex flex-col gap-2 p-2">
             <EchoSimulationComponent />
-            <Button onClick={() => removeComponent(component.id)}>Remove</Button>
+            <Button
+              onClick={() => removeComponent(component.id)}
+              variant="destructive"
+              className="w-full"
+            >
+              Remove
+            </Button>
           </div>
         ))}
       </div>
-      <Button onClick={addComponent} className="m-10 p-3">Add</Button>
+      <div className="flex justify-center items-center">
+        <Button onClick={addComponent} className="w-[535px]">Add</Button>
+      </div>
     </div>
   );
 }
