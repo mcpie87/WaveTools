@@ -1,3 +1,4 @@
+import { TableCell, TableRow } from "@/components/ui/table";
 import {
   SubstatEntry,
   UPGRADE_COST,
@@ -5,11 +6,11 @@ import {
 } from "../services/simulate";
 import { formatNumber, formatPercent } from "@/utils/utils";
 
-export const GenerateResultsRows = async (
+export const GenerateResultsRows = (
   startSubstats: SubstatEntry[],
   desiredSubstats: SubstatEntry[],
   checkForAny: boolean
-): Promise<React.JSX.Element[]> => {
+): React.JSX.Element[] => {
   const results: { [key: number]: number } = {};
   const trimmedStartSubstats: SubstatEntry[] = startSubstats.filter(e => e.name);
   const trimmedDesiredSubstats: SubstatEntry[] = desiredSubstats.filter(e => e.name);
@@ -41,15 +42,15 @@ export const GenerateResultsRows = async (
 
     if (v > 0) {
       rows.push(
-        <tr key={k}>
-          <td>{displayedLevel}</td>
-          <td>{formatPercent(chanceToHit, 8)}</td>
-          <td>{formatNumber(expectedAttempts.toFixed(2))}</td>
-          <td>{formatNumber(expectedTuners.toFixed(0))}</td>
-          <td>{formatNumber(expectedWaveplateForTuner.toFixed(0))}</td>
-          <td>{formatNumber(expectedExperience.toFixed(0))}</td>
-          <td>{formatNumber(expectedWaveplateForExp.toFixed(0))}</td>
-        </tr>
+        <TableRow key={k}>
+          <TableCell className="text-center">{displayedLevel}</TableCell>
+          <TableCell className="text-center">{formatPercent(chanceToHit, 8)}</TableCell>
+          <TableCell className="text-center">{formatNumber(expectedAttempts.toFixed(2))}</TableCell>
+          <TableCell className="text-center">{formatNumber(expectedTuners.toFixed(0))}</TableCell>
+          <TableCell className="text-center">{formatNumber(expectedWaveplateForTuner.toFixed(0))}</TableCell>
+          <TableCell className="text-center">{formatNumber(expectedExperience.toFixed(0))}</TableCell>
+          <TableCell className="text-center">{formatNumber(expectedWaveplateForExp.toFixed(0))}</TableCell>
+        </TableRow>
       );
     }
   }

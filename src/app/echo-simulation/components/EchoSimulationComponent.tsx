@@ -4,6 +4,8 @@ import {
 import React, { JSX, useState } from "react";
 import { GenerateResultsRows } from "./GenerateResultsRows";
 import SubstatsSelector from "./SubstatsSelector";
+import { Table, TableBody, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
 
 function EchoSimulationComponent() {
   const [startSubstats, setStartSubstats] = useState<SubstatEntry[]>([]);
@@ -20,7 +22,7 @@ function EchoSimulationComponent() {
     setStartSubstats(startSubstats);
     setDesiredSubstats(desiredSubstats);
     const start = performance.now();
-    const rows = await GenerateResultsRows(
+    const rows = GenerateResultsRows(
       startSubstats,
       desiredSubstats,
       checkForAny
@@ -32,7 +34,7 @@ function EchoSimulationComponent() {
   }
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="bg-base-200 rounded-md w-fit flex flex-col items-center p-4">
       <form className="flex flex-col gap-2" onSubmit={calculate}>
         <div className="flex-col">
           <h3>Start subs</h3>
@@ -63,40 +65,35 @@ function EchoSimulationComponent() {
             renderValues={true}
           />
         </div>
-        <button
-          type="submit"
-          className="w-[400px] bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
-        >
-          Calculate
-        </button>
+        <Button type="submit">Calculate</Button>
       </form>
       {showResults &&
         <div>
           <p>Time spent [ms]: {calculateTime || ""}</p>
-          <table className="overflow-x-auto bg-white shadow-md rounded-lg text-sm">
-            <thead className="bg-gray-200 text-gray-700">
-              <tr>
-                <th className="px-4 py-2 border-b" rowSpan={3}>Lvl</th>
-                <th className="px-4 py-2 border-b" rowSpan={3}>Chance</th>
-                <th className="px-4 py-2 border-b" colSpan={5}>Expected</th>
-              </tr>
-              <tr>
-                <th className="px-4 py-2 border-b" rowSpan={2}>Attempts</th>
-                <th className="px-4 py-2 border-b" colSpan={2}>Tuners</th>
-                <th className="px-4 py-2 border-b" colSpan={2}>Echo EXP</th>
-              </tr>
-              <tr>
-                <th className="px-4 py-2 border-b">Count</th>
-                <th className="px-4 py-2 border-b">Waveplates</th>
-                <th className="px-4 py-2 border-b">Count</th>
-                <th className="px-4 py-2 border-b">Waveplates</th>
-              </tr>
-            </thead>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="text-center" rowSpan={3}>Lvl</TableHead>
+                <TableHead className="text-center" rowSpan={3}>Chance</TableHead>
+                <TableHead className="text-center" colSpan={5}>Expected</TableHead>
+              </TableRow>
+              <TableRow>
+                <TableHead className="text-center" rowSpan={2}>Attempts</TableHead>
+                <TableHead className="text-center" colSpan={2}>Tuners</TableHead>
+                <TableHead className="text-center" colSpan={2}>Echo EXP</TableHead>
+              </TableRow>
+              <TableRow>
+                <TableHead className="text-center">Count</TableHead>
+                <TableHead className="text-center">Waveplates</TableHead>
+                <TableHead className="text-center">Count</TableHead>
+                <TableHead className="text-center">Waveplates</TableHead>
+              </TableRow>
+            </TableHeader>
 
-            <tbody>
+            <TableBody>
               {rows}
-            </tbody>
-          </table>
+            </TableBody>
+          </Table>
         </div>
       }
     </div>

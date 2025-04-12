@@ -1,6 +1,8 @@
 import React from "react";
 import { SUBSTATS, SubstatEntry, substatValues, SubstatName, SubstatValue, substatsDisplayOrder } from "../services/simulate";
 import { formatSubstatValue } from "@/utils/utils";
+import { Button } from "@/components/ui/button";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const generateAvailableSubstats = (pickedSubstats: SubstatEntry[], value: SubstatName): SubstatName[] => {
   const pickedSubstatNames: SubstatName[] = pickedSubstats.map(e => e.name);
@@ -43,56 +45,60 @@ const SubstatsSelector: React.FC<MultiSelectorProps> = ({
     <div className="space-y-2">
       {selectedSubstats.map((option, index) => (
         <div key={index} className="flex items-center gap-2">
-          <select
+          <Select
             value={option.name}
-            onChange={(e) => handleSubstatChange(index, e.target.value as SubstatName, 0)}
-            className="border border-gray-300 rounded-md p-2 w-48"
+            onValueChange={(value) => handleSubstatChange(index, value as SubstatName, 0)}
           >
-            <option value="">
-              Select an option
-            </option>
-            {generateAvailableSubstats(selectedSubstats, option.name).map((substat) => (
-              <option key={substat} value={substat}>
-                {substat}
-              </option>
-            ))}
-          </select>
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Select a substat" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                {generateAvailableSubstats(selectedSubstats, option.name).map((substat) => (
+                  <SelectItem key={substat} value={substat}>
+                    {substat}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
           {renderValues && option.name &&
             <>
               <span>{">="}</span>
-              <select
-                value={option.value}
-                onChange={(e) => handleSubstatChange(index, option.name, Number(e.target.value) as SubstatValue)}
-                className="border border-gray-300 rounded-md p-2 w-48"
+              <Select
+                value={option.value.toString()}
+                onValueChange={(value) => handleSubstatChange(index, option.name, Number(value) as SubstatValue)}
               >
-                <option value={0}>
-                  Select an option
-                </option>
-                {substatValues[option.name].map((substatValue) => (
-                  <option key={substatValue} value={substatValue}>
-                    {formatSubstatValue(substatValue)}
-                  </option>
-                ))}
-              </select>
+                <SelectTrigger className="w-[180px]">
+                  <SelectValue placeholder="Select a substat" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectGroup>
+                    <SelectItem value={"0"}>
+                      Select a value
+                    </SelectItem>
+                    {substatValues[option.name].map((substatValue) => (
+                      <SelectItem key={substatValue} value={substatValue.toString()}>
+                        {formatSubstatValue(substatValue)}
+                      </SelectItem>
+                    ))}
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
             </>
           }
-          <button
-            type="button"
-            onClick={() => removeRow(index)}
-            className="bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600"
-          >
+          <Button type="button" onClick={() => removeRow(index)}>
             Delete
-          </button>
+          </Button>
         </div>
       ))}
       {selectedSubstats.length < 5 && (
-        <button
+        <Button
           type="button"
           onClick={addRow}
-          className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
         >
           Add
-        </button>
+        </Button>
       )}
     </div>
   );
