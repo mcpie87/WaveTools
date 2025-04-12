@@ -11,7 +11,6 @@ export default function DarkModeToggle() {
     return storageService.load() || false;
   });
 
-  console.log("DARK MODE", darkMode);
   useEffect(() => {
     const savedTheme = storageService.load();
     if (savedTheme === "dark") {
