@@ -3,30 +3,43 @@
 import React, { JSX, useState } from "react";
 import { UNION_LEVEL_DATA } from "./union-level-data";
 import { formatNumber } from "@/utils/utils";
+import { Button } from "@/components/ui/button";
 export default function UnionLevelPage() {
   const [currentExp, setCurrentExp] = useState<number>(0);
   const [currentLevel, setCurrentLevel] = useState<number>(1);
   const [desiredLevel, setDesiredLevel] = useState<number>(80);
   const [refreshCount, setRefreshCount] = useState<number>(0);
+  const [tableSteps, setTableSteps] = useState<number>(1);
   const [displayedRows, setDisplayedRows] = useState<JSX.Element[]>([]);
 
   const calculate = (e: React.FormEvent) => {
     e.preventDefault();
     const rows = [];
-    for (let i = currentLevel + 1; i <= desiredLevel; i++) {
+
+    const genRow = (i: number) => {
       const expDiff = UNION_LEVEL_DATA[i][1] - UNION_LEVEL_DATA[currentLevel][1] - currentExp;
       const waveplateUnion = 7.5 * (240 + refreshCount * 60);
       const guidebookUnion = 2000;
       const daysNeeded = expDiff / (waveplateUnion + guidebookUnion);
+      const waveplateNeeded = (expDiff * 240) / waveplateUnion;
+      const crystalSolventNeeded = waveplateNeeded / 60;
 
-      rows.push(
+      return (
         <tr key={i}>
           <td>{i}</td>
           <td>{formatNumber(expDiff)}</td>
           <td>{formatNumber(daysNeeded.toFixed(2))}</td>
+          <td>{formatNumber(waveplateNeeded.toFixed(2))}</td>
+          <td>{formatNumber(crystalSolventNeeded.toFixed(2))}</td>
         </tr>
       )
     }
+    const inc = Math.min(80, Math.max(tableSteps, 1));
+
+    for (let i = currentLevel + inc; i < desiredLevel; i += inc) {
+      rows.push(genRow(i));
+    }
+    rows.push(genRow(desiredLevel));
     setDisplayedRows(rows);
   };
 
@@ -71,7 +84,16 @@ export default function UnionLevelPage() {
               onChange={(e) => setRefreshCount(parseInt(e.target.value))}
             />
           </div>
-          <button onClick={calculate}>Calculate</button>
+          <div className="flex flex-row gap-2">
+            <label htmlFor="tableSteps">Table Steps</label>
+            <input
+              type="number"
+              id="tableSteps"
+              value={tableSteps}
+              onChange={(e) => setTableSteps(parseInt(e.target.value))}
+            />
+          </div>
+          <Button onClick={calculate}>Calculate</Button>
         </form>
       </div>
       <div className="flex flex-col gap-2">
@@ -82,6 +104,8 @@ export default function UnionLevelPage() {
               <th className="px-4 py-2 border-b">Lvl</th>
               <th className="px-4 py-2 border-b">Exp Diff</th>
               <th className="px-4 py-2 border-b">Days</th>
+              <th className="px-4 py-2 border-b">Waveplate</th>
+              <th className="px-4 py-2 border-b">Crystal Solvent</th>
             </tr>
           </thead>
 
