@@ -1,11 +1,16 @@
 import { InventoryDBSchema } from "@/types/inventoryTypes";
 import { ResonatorDBSchema } from "@/types/resonatorTypes";
+import { UnionLevelPageData } from "@/types/unionLevelDataTypes";
 import { WeaponDBSchema } from "@/types/weaponTypes";
 
 // const VERSION_KEY = "2025-03-06T03:36";
 export const STORAGE_KEY = "wave_tools";
 
-type LocalStorageData = string | ResonatorDBSchema | WeaponDBSchema | InventoryDBSchema;
+type LocalStorageData = string
+  | ResonatorDBSchema
+  | WeaponDBSchema
+  | InventoryDBSchema
+  | UnionLevelPageData;
 
 // Usage:
 // const storageService = new LocalStorageService("resonators");

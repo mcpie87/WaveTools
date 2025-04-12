@@ -4,19 +4,62 @@ import React, { JSX, useState } from "react";
 import { UNION_LEVEL_DATA } from "./union-level-data";
 import { formatNumber } from "@/utils/utils";
 import { Button } from "@/components/ui/button";
+import LocalStorageService from "@/services/LocalStorageService";
+import { UnionLevelPageData } from "@/types/unionLevelDataTypes";
+import { useEffect } from "react";
+
+const storageService = new LocalStorageService("union_levels");
+
 export default function UnionLevelPage() {
-  const [currentExp, setCurrentExp] = useState<number>(0);
-  const [currentLevel, setCurrentLevel] = useState<number>(1);
-  const [desiredLevel, setDesiredLevel] = useState<number>(80);
-  const [refreshCount, setRefreshCount] = useState<number>(0);
-  const [tableSteps, setTableSteps] = useState<number>(1);
+  const [unionLevelData, setUnionLevelData] = useState<UnionLevelPageData>(() => {
+    return storageService.load() as UnionLevelPageData || {
+      currentExp: 0,
+      currentLevel: 1,
+      desiredLevel: 80,
+      refreshCount: 0,
+      tableSteps: 1,
+    };
+  });
   const [displayedRows, setDisplayedRows] = useState<JSX.Element[]>([]);
+
+  useEffect(() => {
+    storageService.save(unionLevelData);
+  }, [unionLevelData]);
+
+  const updateField = (field: keyof UnionLevelPageData, value: number) => {
+    setUnionLevelData(prev => ({
+      ...prev,
+      [field]: value,
+    }));
+  }
+  const updateCurrentExp = (value: number) => {
+    updateField("currentExp", Math.min(Math.max(value, 0), 1e9));
+  }
+  const updateCurrentLevel = (value: number) => {
+    updateField("currentLevel", Math.min(Math.max(value, 1), 79));
+  }
+  const updateDesiredLevel = (value: number) => {
+    updateField("desiredLevel", Math.min(Math.max(value, 2), 80));
+  }
+  const updateRefreshCount = (value: number) => {
+    updateField("refreshCount", Math.min(Math.max(value, 0), 6));
+  }
+  const updateTableSteps = (value: number) => {
+    updateField("tableSteps", Math.min(Math.max(value, 1), 80));
+  }
 
   const calculate = (e: React.FormEvent) => {
     e.preventDefault();
     const rows = [];
+    const {
+      currentExp,
+      currentLevel,
+      desiredLevel,
+      refreshCount,
+      tableSteps,
+    } = unionLevelData;
 
-    const genRow = (i: number) => {
+    const genRow = (i: number): JSX.Element => {
       const expDiff = UNION_LEVEL_DATA[i][1] - UNION_LEVEL_DATA[currentLevel][1] - currentExp;
       const waveplateUnion = 7.5 * (240 + refreshCount * 60);
       const guidebookUnion = 2000;
@@ -53,8 +96,8 @@ export default function UnionLevelPage() {
             <input
               type="number"
               id="currentExp"
-              value={currentExp}
-              onChange={(e) => setCurrentExp(parseInt(e.target.value))}
+              value={unionLevelData.currentExp}
+              onChange={(e) => updateCurrentExp(parseInt(e.target.value))}
             />
           </div>
           <div className="flex flex-row gap-2">
@@ -62,8 +105,8 @@ export default function UnionLevelPage() {
             <input
               type="number"
               id="currentLevel"
-              value={currentLevel}
-              onChange={(e) => setCurrentLevel(parseInt(e.target.value))}
+              value={unionLevelData.currentLevel}
+              onChange={(e) => updateCurrentLevel(parseInt(e.target.value))}
             />
           </div>
           <div className="flex flex-row gap-2">
@@ -71,8 +114,8 @@ export default function UnionLevelPage() {
             <input
               type="number"
               id="desiredLevel"
-              value={desiredLevel}
-              onChange={(e) => setDesiredLevel(parseInt(e.target.value))}
+              value={unionLevelData.desiredLevel}
+              onChange={(e) => updateDesiredLevel(parseInt(e.target.value))}
             />
           </div>
           <div className="flex flex-row gap-2">
@@ -80,8 +123,8 @@ export default function UnionLevelPage() {
             <input
               type="number"
               id="refreshCount"
-              value={refreshCount}
-              onChange={(e) => setRefreshCount(parseInt(e.target.value))}
+              value={unionLevelData.refreshCount}
+              onChange={(e) => updateRefreshCount(parseInt(e.target.value))}
             />
           </div>
           <div className="flex flex-row gap-2">
@@ -89,15 +132,15 @@ export default function UnionLevelPage() {
             <input
               type="number"
               id="tableSteps"
-              value={tableSteps}
-              onChange={(e) => setTableSteps(parseInt(e.target.value))}
+              value={unionLevelData.tableSteps}
+              onChange={(e) => updateTableSteps(parseInt(e.target.value))}
             />
           </div>
           <Button onClick={calculate}>Calculate</Button>
         </form>
       </div>
       <div className="flex flex-col gap-2">
-        <div>Current Exp: {currentExp}</div>
+        <div>Current Exp: {unionLevelData.currentExp}</div>
         <table className="overflow-x-auto bg-white shadow-md rounded-lg text-sm">
           <thead className="bg-gray-200 text-gray-700">
             <tr>
