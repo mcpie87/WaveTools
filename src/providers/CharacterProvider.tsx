@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, useState, useEffect } from 'react';
+import { ReactNode, useState } from 'react';
 import { CharacterContext } from '../context/CharacterContext';
 import { ResonatorDBSchema, ResonatorStateDBEntry } from '../types/resonatorTypes';
 import { resonatorSchema } from '../schemas/resonatorSchema';
@@ -14,13 +14,9 @@ interface CharacterProviderProps {
   children: ReactNode;
 }
 export const CharacterProvider = ({ children }: CharacterProviderProps) => {
-  const [characters, setCharacters] = useState<ResonatorDBSchema>(() => {
-    return storageService.load() as ResonatorDBSchema || {};
-  });
-
-  useEffect(() => {
-    storageService.save(characters);
-  }, [characters]);
+  const [characters, setCharacters] = useState<ResonatorDBSchema>(
+    storageService.load() as ResonatorDBSchema || {}
+  );
 
   const updateCharacter = (id: string, data: ResonatorStateDBEntry) => {
     const validationResult = resonatorSchema.safeParse(data);
@@ -29,16 +25,18 @@ export const CharacterProvider = ({ children }: CharacterProviderProps) => {
       return;
     }
 
-    setCharacters((prev) => ({
-      ...prev,
-      [id]: data,
-    }));
+    setCharacters((prev) => {
+      const newState = { ...prev, [id]: data };
+      storageService.save(newState);
+      return newState;
+    });
   };
 
   const deleteCharacter = (id: string) => {
     setCharacters((prev) => {
       const { [id]: _, ...rest } = prev;
       void _;
+      storageService.save(rest);
       return rest;
     });
   }
@@ -49,6 +47,7 @@ export const CharacterProvider = ({ children }: CharacterProviderProps) => {
       for (const resonator of updatedWeapons) {
         newCharacters[resonator.name].priority = resonator.priority;
       }
+      storageService.save(newCharacters);
       return newCharacters;
     });
   }

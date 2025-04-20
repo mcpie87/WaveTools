@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { DataProvider } from "@/providers/DataProvider";
 import { InventoryProvider } from "@/providers/InventoryProvider";
 import { WeaponProvider } from "@/providers/WeaponProvider";
+import { ClientInit } from "@/components/ClientInit";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -36,11 +37,13 @@ export default function RootLayout({
           <CharacterProvider>
             <WeaponProvider>
               <InventoryProvider>
-                <div className="mx-auto">
-                  <Header />
-                  <main className="mt-8">{children}</main>
-                  <Footer />
-                </div>
+                <ClientInit>
+                  <div className="mx-auto">
+                    <Header />
+                    <main className="mt-8">{children}</main>
+                    <Footer />
+                  </div>
+                </ClientInit>
               </InventoryProvider>
             </WeaponProvider>
           </CharacterProvider>
