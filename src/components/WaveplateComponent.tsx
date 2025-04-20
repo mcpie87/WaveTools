@@ -3,6 +3,7 @@ import { convertToUrl } from "@/utils/utils";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { TooltipComponent } from "./TooltipComponent";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 export interface WaveplateEntry {
   label: string;
@@ -54,28 +55,28 @@ const WaveplateSummaryComponent = ({ breakdown }: WaveplateComponentProps) => {
   const displayedBreakdown = breakdown.filter(e => e.waveplateCount > 0);
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Runs</th>
-          <th>Waveplate</th>
-        </tr>
-      </thead>
-      <tbody>
+    <Table>
+      <TableHeader>
+        <TableRow>
+          <TableHead>Type</TableHead>
+          <TableHead>Runs</TableHead>
+          <TableHead>Waveplate</TableHead>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
         {displayedBreakdown.map(waveplateEntry => (
-          <tr key={waveplateEntry.label}>
-            <td>{waveplateEntry.label}</td>
-            <td>{waveplateEntry.runCount.toFixed(3)}</td>
-            <td>{waveplateEntry.waveplateCount.toFixed(3)}</td>
-          </tr>
+          <TableRow key={waveplateEntry.label}>
+            <TableCell>{waveplateEntry.label}</TableCell>
+            <TableCell>{waveplateEntry.runCount.toFixed(3)}</TableCell>
+            <TableCell>{waveplateEntry.waveplateCount.toFixed(3)}</TableCell>
+          </TableRow>
         ))}
-        <tr>
-          <td>TOTAL</td>
-          <td>{breakdown.map(e => e.runCount).reduce((acc, e) => e + acc).toFixed(2)}</td>
-          <td>{breakdown.map(e => e.waveplateCount).reduce((acc, e) => e + acc).toFixed(2)}</td>
-        </tr>
-      </tbody>
-    </table>
+        <TableRow>
+          <TableCell>TOTAL</TableCell>
+          <TableCell>{breakdown.map(e => e.runCount).reduce((acc, e) => e + acc).toFixed(2)}</TableCell>
+          <TableCell>{breakdown.map(e => e.waveplateCount).reduce((acc, e) => e + acc).toFixed(2)}</TableCell>
+        </TableRow>
+      </TableBody>
+    </Table>
   )
 }
