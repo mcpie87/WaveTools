@@ -33,21 +33,21 @@ export default function RootLayout({
     <html lang="en">
       {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}> */}
       <body className="text-primary bg-base-300">
-        <DataProvider>
-          <CharacterProvider>
-            <WeaponProvider>
-              <InventoryProvider>
-                <ClientInit>
+        <ClientInit>
+          <DataProvider>
+            <CharacterProvider>
+              <WeaponProvider>
+                <InventoryProvider>
                   <div className="mx-auto">
                     <Header />
                     <main className="mt-8">{children}</main>
                     <Footer />
                   </div>
-                </ClientInit>
-              </InventoryProvider>
-            </WeaponProvider>
-          </CharacterProvider>
-        </DataProvider>
+                </InventoryProvider>
+              </WeaponProvider>
+            </CharacterProvider>
+          </DataProvider>
+        </ClientInit>
       </body>
     </html>
   );
