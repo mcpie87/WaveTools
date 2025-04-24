@@ -91,22 +91,16 @@ export const applySynthesizerOnItems = (itemMap: TItemMap, inventory: InventoryD
 
       // We assume that item subtraction was already done
       if (rarity3 && rarity3.value! > 0) {
-        // console.log("Conversion needed to ⭐⭐⭐");
         synthesize(inventoryRarity2, rarity3);
-        // console.log("⭐⭐⭐", rarity3.name, rarity3.value, rarity3.converted, rarity3.checked);
       }
       if (rarity4 && rarity4.value! > 0) {
-        // console.log("Conversion needed to ⭐⭐⭐⭐");
         synthesize(inventoryRarity3, rarity4);
         synthesize(inventoryRarity2, rarity4);
-        // console.log("⭐⭐⭐⭐", rarity4.name, rarity4.value, rarity4.converted, rarity4.checked);
       }
       if (rarity5 && rarity5.value! > 0) {
-        // console.log("Conversion needed to ⭐⭐⭐⭐⭐");
         synthesize(inventoryRarity4, rarity5);
         synthesize(inventoryRarity3, rarity5);
         synthesize(inventoryRarity2, rarity5);
-        // console.log("⭐⭐⭐⭐⭐", rarity5.name, rarity5.value, rarity5.converted, rarity5.checked);
       }
 
       for (const item of synthesisItems) {
@@ -122,6 +116,9 @@ const synthesize = (
   sourceItem: InventoryStateDBEntry,
   targetItem: IItem
 ) => {
+  if (!sourceItem) {
+    return;
+  }
   const multiplier = 3 ** (targetItem.rarity - sourceItem.rarity);
   if (sourceItem.owned < multiplier) {
     // We don't have enough to bother, skip
