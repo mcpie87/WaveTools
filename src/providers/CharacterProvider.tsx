@@ -14,7 +14,7 @@ interface CharacterProviderProps {
   children: ReactNode;
 }
 export const CharacterProvider = ({ children }: CharacterProviderProps) => {
-  const [characters, setCharacters] = useState<ResonatorDBSchema>(
+  const [characters, setCharacters] = useState<ResonatorDBSchema>(() =>
     storageService.load() as ResonatorDBSchema || {}
   );
 
@@ -41,10 +41,10 @@ export const CharacterProvider = ({ children }: CharacterProviderProps) => {
     });
   }
 
-  const updatePriorities = (updatedWeapons: ResonatorStateDBEntry[]) => {
+  const updatePriorities = (updatedResonators: ResonatorStateDBEntry[]) => {
     setCharacters((prev) => {
       const newCharacters = { ...prev };
-      for (const resonator of updatedWeapons) {
+      for (const resonator of updatedResonators) {
         newCharacters[resonator.name].priority = resonator.priority;
       }
       storageService.save(newCharacters);
