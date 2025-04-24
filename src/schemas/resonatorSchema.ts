@@ -5,8 +5,8 @@ import { z } from 'zod';
 export enum ActiveSkillNames {
   normalAttack = "Normal Attack",
   resonanceSkill = "Resonance Skill",
-  resonanceLiberation = "Resonance Liberation",
   forte = "Forte",
+  resonanceLiberation = "Resonance Liberation",
   intro = "Intro",
 }
 export enum PassiveSkillNames {

@@ -4,15 +4,18 @@ import { ItemCommon, ItemEchoEXP, ItemEliteBoss, ItemResonatorEXP, ItemSpecialty
 import { IResonatorPlanner, IWeaponPlanner } from "@/app/interfaces/planner_item";
 import ItemList from "@/components/items/ItemList";
 import { WaveplateComponent } from "@/components/WaveplateComponent";
-import { calculateWaveplate, convertItemMapToItemList, filterType } from "@/utils/items_utils";
-import { getMaterials } from "@/utils/planner_utils";
+import { InventoryDBSchema } from "@/types/inventoryTypes";
+import { calculateWaveplate, convertItemMapToItemList, convertRequiredItemMapToItemMap, filterType } from "@/utils/items_utils";
+import { getMaterials, setItemsBasedOnInventory } from "@/utils/planner_utils";
 
 interface PlannerSummaryComponentProps {
   plannerItems: (IResonatorPlanner | IWeaponPlanner)[];
+  inventory: InventoryDBSchema;
   apiItems: IAPIItem[];
 }
 export const PlannerSummaryComponent = ({
   plannerItems,
+  inventory,
   apiItems,
 }: PlannerSummaryComponentProps) => {
   const getCombinedRequiredMaterials = () => {
@@ -29,11 +32,14 @@ export const PlannerSummaryComponent = ({
     return combinedRequiredMaterials;
   }
 
+  const leftoverInventory = JSON.parse(JSON.stringify(inventory));
   const requiredMaterials = getCombinedRequiredMaterials();
-  const convertedMaterials = convertItemMapToItemList(apiItems, requiredMaterials, true);
+  let convertedMaterialsMap = convertRequiredItemMapToItemMap(apiItems, requiredMaterials, true);
+  convertedMaterialsMap = setItemsBasedOnInventory(convertedMaterialsMap, leftoverInventory);
+  const convertedMaterials = convertItemMapToItemList(convertedMaterialsMap);
   const waveplateNeeded = calculateWaveplate(convertedMaterials);
 
-  const displayedMaterials = [
+  const rawMaterials: [string, IItem[]][] = [
     ["Shell Credit", convertedMaterials.filter((item) => item.name === SHELL_CREDIT)],
     ["Resonator EXP", filterType(convertedMaterials, ItemResonatorEXP).reverse()],
     ["Weapon EXP", filterType(convertedMaterials, ItemWeaponEXP).reverse()],
@@ -44,7 +50,8 @@ export const PlannerSummaryComponent = ({
     ["Specialty", filterType(convertedMaterials, ItemSpecialty).reverse()],
     ["Forgery", filterType(convertedMaterials, ItemWeapon).reverse()],
     ["Common Enemies", filterType(convertedMaterials, ItemCommon).reverse()],
-  ].filter((elem) => elem[1].length > 0);
+  ]
+  const displayedMaterials = rawMaterials.filter((elem) => elem[1].length > 0);
 
   return (
     <>

@@ -13,7 +13,7 @@ export interface IPlannerUpgradeItem<T> {
   name: T;
 }
 
-export type TItemMap = { [key: string]: number };
+export type IRequiredItemMap = { [key: string]: number };
 
 export interface IPlannerItem {
   name: string;
@@ -29,7 +29,7 @@ export interface IPlannerItem {
 
   // for display calculations
   dbData: ResonatorStateDBEntry | WeaponStateDBEntry;
-  requiredMaterials?: TItemMap;
+  requiredMaterials?: IRequiredItemMap;
 }
 
 export interface IWeaponPlanner extends IPlannerItem {

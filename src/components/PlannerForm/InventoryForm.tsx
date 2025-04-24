@@ -7,6 +7,7 @@ import { InputInventoryItem } from "../InputInventoryItem";
 import { useEffect, useState } from "react";
 import { IItem } from "@/app/interfaces/item";
 import { InventoryDBSchema } from "@/types/inventoryTypes";
+import { Button } from "../ui/button";
 
 interface InventoryFormProps {
   showForm: boolean;
@@ -74,7 +75,7 @@ export const InventoryForm = ({
     <ModalComponent show={showForm} onClose={onClose}>
       <div className="flex flex-col w-[1000px]">
         <div className="text-center">Inventory</div>
-        <div className="flex flex-row flex-wrap">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-2">
           {displayedItems.map((item, idx) => (
             <InputInventoryItem
               key={idx}
@@ -90,13 +91,12 @@ export const InventoryForm = ({
           ))}
         </div>
         {/* <ItemList data={convertedItems} /> */}
-        <button
+        <Button
           type="submit"
           onClick={handleSubmit}
-          className="bg-blue-500 disabled:bg-gray-500 py-2 rounded"
         >
           Submit
-        </button>
+        </Button>
       </div>
     </ModalComponent>
   )

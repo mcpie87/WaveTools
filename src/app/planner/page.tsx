@@ -21,6 +21,7 @@ import { WeaponStateDBEntry } from '@/types/weaponTypes';
 import { WeaponForm } from '@/components/PlannerForm/WeaponForm';
 import { getPlannerDBSize, getPlannerItems } from '@/utils/planner_utils';
 import { IResonatorPlanner, IWeaponPlanner } from '../interfaces/planner_item';
+import { Button } from '@/components/ui/button';
 
 export default function CharactersPage() {
   const [showAddResonatorForm, setShowAddResonatorForm] = useState(false);
@@ -116,35 +117,24 @@ export default function CharactersPage() {
       <div className="border w-[350px] order-2 shrink-0">
         <PlannerSummaryComponent
           plannerItems={plannerItems}
+          inventory={dbItems}
           apiItems={items}
         />
       </div>
-      <div className="order-1 w-full m-2">
+      <div className="order-1 w-full m-2 flex flex-col gap-2">
         <div className="flex flex-row gap-x-2 justify-center">
-          <button
-            className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-            onClick={() => setShowAddResonatorForm(!showAddResonatorForm)}
-          >
+          <Button onClick={() => setShowAddResonatorForm(!showAddResonatorForm)}>
             Add character
-          </button>
-          <button
-            className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-            onClick={() => setShowAddWeaponForm(!showAddWeaponForm)}
-          >
+          </Button>
+          <Button onClick={() => setShowAddWeaponForm(!showAddWeaponForm)}>
             Add weapon
-          </button>
-          <button
-            className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-            onClick={() => setShowInventoryForm(!showInventoryForm)}
-          >
+          </Button>
+          <Button onClick={() => setShowInventoryForm(!showInventoryForm)}>
             Show inventory
-          </button>
-          <button
-            className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-            onClick={() => setShowManagePriority(!showManagePriority)}
-          >
+          </Button>
+          <Button onClick={() => setShowManagePriority(!showManagePriority)}>
             Manage Priority
-          </button>
+          </Button>
         </div>
         {showEditResonatorForm && selectedResonator && (
           <ResonatorForm
@@ -196,6 +186,7 @@ export default function CharactersPage() {
         <PlannerDataComponent
           plannerItems={plannerItems}
           apiItems={items}
+          inventory={dbItems}
           onEditResonator={handleEditResonator}
           onEditWeapon={handleEditWeapon}
           onDelete={handleDeletePlannerItem}

@@ -19,19 +19,26 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
   }
 
   return (
-    <div className="flex flex-col bg-base-300 rounded-md">
-      <div className="h-9 w-9 shrink-0 relative">
+    <div
+      className="flex flex-col bg-base-300 rounded-md"
+      style={{ width: `${width || 48}px` }}
+    >
+      <div
+        className="relative"
+        style={{ width: `${width || 48}px`, height: `${height || 48}px` }}
+      >
         <Image
           src={`${convertToUrl(item.icon)}`}
           alt={`${item.name} icon`}
-          width={width || 48}
-          height={height || 48}
-          className="z-10 bg-transparent absolute inset-0"
+          fill
+          // width={width || 48}
+          // height={height || 48}
+          className="absolute inset-0 w-full h-full object-contain z-10"
         />
         {/* Rarity color fade */}
         <div
           className={classNames(
-            "rounded-md absolute inset-0 bg-gradient-to-t via-transparent via-50% to-transparent",
+            "rounded-md absolute inset-0 bg-gradient-to-t via-transparent via-50% to-transparent fadeIn",
             { "from-yellow-300/50": rarity === 5 },
             { "from-purple-600/50": rarity === 4 },
             { "from-blue-500/50": rarity === 3 },
@@ -40,17 +47,24 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
           )}
         />
         {/* Image quantity overlay */}
-        {overlay && value && (
+        {overlay && value !== undefined && (
           <span className="absolute bottom-0 right-0 text-xs font-thin p-0.5 bg-black/70 rounded-br-md rounded-tl-md rounded-tr-md text-white z-10">
             {value}
           </span>
         )}
-
       </div>
-      {!overlay && value && (
-        <span className="text-center text-xs bg-black text-white">
-          {item.value ? formatValue(item.value) : ""}
-        </span>
+      {!overlay && value !== undefined && (
+        <>
+          <span className="text-center text-xs bg-black text-white">
+            {item.value !== undefined ? formatValue(item.value) : ""}
+          </span>
+          <span className="text-center text-xs bg-black text-white">
+            {item.checked ? "✓" : ""}
+          </span>
+          <span className="text-center text-xs bg-black text-white">
+            {item.converted !== undefined ? formatValue(item.converted) : ""}
+          </span>
+        </>
       )}
       {/* <span className={`card-image-container ${getRarityClass(item.rarity)}`}>
         <Image

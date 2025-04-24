@@ -6,6 +6,8 @@ import { useState } from "react";
 import { IAPIWeapon } from "@/app/interfaces/api_interfaces";
 import { WeaponComponent } from "../WeaponIconComponent";
 import { WEAPON_TYPES } from "@/constants/weapon_types";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
 
 const defaultFilter: { [key: string]: boolean } = {
   Rarity5: false,
@@ -73,13 +75,13 @@ export const AddWeaponForm = ({ showForm, onAddWeapon, onClose }: AddWeaponFormP
   return (
     <ModalComponent show={showForm} onClose={onClose}>
       <div className="flex flex-col gap-5 w-[800px]">
-        <div className="flex justify-center items-center gap-10">
+        <div className="flex flex-rowjustify-center items-center gap-1">
           Search:
-          <input type="text" onChange={(e) => setSearchText(e.target.value)} />
-          <div>
-            <button onClick={() => setSortBy(SORT_BY.RARITY)}>Rarity</button>
-            <button onClick={() => setSortBy(SORT_BY.ALPHABETICAL)}>Alphabetically</button>
-            <button onClick={() => setSortBy(SORT_BY.RELEASE_DATE)}>Release</button>
+          <Input type="text" onChange={(e) => setSearchText(e.target.value)} />
+          <div className="flex flex-row gap-1">
+            <Button onClick={() => setSortBy(SORT_BY.RARITY)}>Rarity</Button>
+            <Button onClick={() => setSortBy(SORT_BY.ALPHABETICAL)}>Alphabetically</Button>
+            <Button onClick={() => setSortBy(SORT_BY.RELEASE_DATE)}>Release</Button>
           </div>
         </div>
         <div className="flex flex-row justify-center items-center gap-1">

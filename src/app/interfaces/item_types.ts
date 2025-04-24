@@ -1,3 +1,14 @@
+export enum ItemType {
+  SHELL_CREDIT = "SHELL_CREDIT",
+  COMMON = "COMMON",
+  WEAPON = "WEAPON",
+  WEEKLY_BOSS = "WEEKLY_BOSS",
+  ELITE_BOSS = "ELITE_BOSS",
+  SPECIALTY = "SPECIALTY",
+  RESONATOR_EXP = "RESONATOR_EXP",
+  WEAPON_EXP = "WEAPON_EXP",
+}
+
 export type SHELL_CREDIT = "Shell Credit";
 export const SHELL_CREDIT: SHELL_CREDIT = "Shell Credit";
 export const SHELL_CREDIT_ID: number = 2;

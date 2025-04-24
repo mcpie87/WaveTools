@@ -18,7 +18,7 @@ export const ModalComponent = ({ show, children, onClose, onReturn }: ModalCompo
       onClick={onClose}
     >
       <div
-        className="bg-white p-6 rounded-lg relative"
+        className="bg-base-200 text-primary p-6 rounded-lg relative"
         onClick={(e) => e.stopPropagation()}
       >
         <button

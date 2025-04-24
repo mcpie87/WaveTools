@@ -7,6 +7,7 @@ import { ActiveSkillNames, PassiveSkillNames, resonatorSchema, resonatorSchemaFi
 import { InputNumber } from '../InputNumber';
 import { Path } from 'react-hook-form';
 import { ModalComponent } from './ModalComponent';
+import { Button } from '../ui/button';
 
 interface ResonatorFormProps {
   initialData: ResonatorStateDBEntry;
@@ -182,13 +183,13 @@ export const ResonatorForm = ({
               </div>
             </div>
           </div>
-          <button
+          <Button
             type="submit"
-            className="bg-blue-500 disabled:bg-gray-500 py-2 rounded"
+            className="py-2 rounded"
             disabled={isSubmitting}
           >
             Submit
-          </button>
+          </Button>
         </div>
       </form>
     </ModalComponent>

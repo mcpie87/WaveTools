@@ -1,47 +1,31 @@
-import { IAPIItem } from "@/app/interfaces/api_interfaces";
 import { convertToUrl, getRarityClass } from "@/utils/utils";
 import Image from "next/image";
 import { PlannerCardCurrentDesiredComponent } from "./PlannerCardCurrentDesiredComponent";
-import { calculateWaveplate, convertItemMapToItemList, sortToItemList } from "@/utils/items_utils";
+import { calculateWaveplate } from "@/utils/items_utils";
 import ItemList from "@/components/items/ItemList";
 import { WaveplateComponent } from "@/components/WaveplateComponent";
 import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
-import { ItemResonatorEXP, ItemWeaponEXP, ItemTuner, ItemEchoEXP, ItemEliteBoss, ItemWeeklyBoss, ItemSpecialty, ItemWeapon, ItemCommon, SHELL_CREDIT } from "@/app/interfaces/item_types";
-import { IResonatorPlanner, IWeaponPlanner, PLANNER_TYPE, TItemMap } from "@/app/interfaces/planner_item";
+import { IResonatorPlanner, IWeaponPlanner, PLANNER_TYPE } from "@/app/interfaces/planner_item";
 import { ResonatorStateDBEntry } from "@/types/resonatorTypes";
+import { IItem } from "@/app/interfaces/item";
 
 interface PlannerCardComponentProps {
   plannerItem: IResonatorPlanner | IWeaponPlanner;
-  apiItems: IAPIItem[];
+  itemList: IItem[];
   onEdit: (item: IResonatorPlanner | IWeaponPlanner, index?: number) => void;
   onDelete: (item: IResonatorPlanner | IWeaponPlanner, index?: number) => void;
 }
 export function PlannerCardComponent({
   plannerItem,
-  apiItems,
+  itemList,
   onEdit,
   onDelete,
 }: PlannerCardComponentProps) {
-  const sortOrder = [
-    { SHELL_CREDIT: SHELL_CREDIT },
-    ItemResonatorEXP,
-    ItemWeaponEXP,
-    ItemTuner,
-    ItemEchoEXP,
-    ItemEliteBoss,
-    ItemWeeklyBoss,
-    ItemSpecialty,
-    ItemWeapon,
-    ItemCommon,
-  ];
-  const { dbData, requiredMaterials } = plannerItem;
-
-  const itemList = convertItemMapToItemList(apiItems, requiredMaterials as TItemMap, true);
-  const displayedMaterials = sortToItemList(sortOrder, apiItems, itemList);
+  const { dbData } = plannerItem;
   const waveplateNeeded = calculateWaveplate(itemList);
 
   return (
-    <div className="flex flex-col items-center bg-gray-300 h-full">
+    <div className="flex flex-col items-center bg-base-300 h-full">
       <div className={`
           ${getRarityClass(plannerItem.rarity)}
           flex items-center justify-between w-full border border-black`}
@@ -95,8 +79,8 @@ export function PlannerCardComponent({
                 <div>
                   <PlannerCardCurrentDesiredComponent label="Attack" currentDesired={(dbData as ResonatorStateDBEntry).normalAttack} />
                   <PlannerCardCurrentDesiredComponent label="Skill" currentDesired={(dbData as ResonatorStateDBEntry).resonanceSkill} />
-                  <PlannerCardCurrentDesiredComponent label="Liberation" currentDesired={(dbData as ResonatorStateDBEntry).resonanceLiberation} />
                   <PlannerCardCurrentDesiredComponent label="Forte" currentDesired={(dbData as ResonatorStateDBEntry).forte} />
+                  <PlannerCardCurrentDesiredComponent label="Liberation" currentDesired={(dbData as ResonatorStateDBEntry).resonanceLiberation} />
                   <PlannerCardCurrentDesiredComponent label="Intro" currentDesired={(dbData as ResonatorStateDBEntry).intro} />
                 </div>
               </div>
@@ -114,7 +98,7 @@ export function PlannerCardComponent({
           )}
         </div>
       </div>
-      <ItemList data={displayedMaterials} />
+      <ItemList data={itemList} />
     </div >
   )
 }

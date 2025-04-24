@@ -2,12 +2,14 @@ import { IAPIItem, IAPIResonator, IAPIWeapon } from "@/app/interfaces/api_interf
 import { getAscensions, InputEntry, ResonatorDBSchema, ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { getKeyFromEnumValue } from "@/utils/utils";
 import { RESONATOR_ASCENSION_MATERIALS, RESONATOR_EXP_TO_SHELL_RATIO, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry, TOTAL_LEVEL_EXPERIENCE, TOTAL_WEAPON_EXP, WEAPON_ASCENSION_MATERIALS, WEAPON_EXP_TO_SHELL_RATIO } from "@/constants/character_ascension";
-import { ItemCommon, ItemResonatorEXP, ItemWeapon, ItemWeaponEXP, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
+import { ItemResonatorEXP, ItemWeaponEXP, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
 import { ActiveSkillNames, PassiveSkillNames, resonatorSchemaForForm } from "@/schemas/resonatorSchema";
-import { findItemByName } from "./items_utils";
-import { IResonatorPlanner, IWeaponPlanner, PLANNER_TYPE, TItemMap } from "@/app/interfaces/planner_item";
+import { findItemByName, getCommonMaterial, getSynthesisItems, getWeaponMaterial } from "./items_utils";
+import { IResonatorPlanner, IWeaponPlanner, PLANNER_TYPE, IRequiredItemMap } from "@/app/interfaces/planner_item";
 import { WeaponDBSchema } from "@/types/weaponTypes";
 import { parseResonatorToPlanner, parseWeaponToPlanner } from "./api_parser";
+import { IItem, TItemMap } from "@/app/interfaces/item";
+import { InventoryDBSchema, InventoryStateDBEntry } from "@/types/inventoryTypes";
 
 export const getPlannerDBSize = (
   dbResonators: ResonatorDBSchema,
@@ -42,10 +44,111 @@ export const getPlannerItems = (
   return [...resonatorItems, ...weaponItems].sort((a, b) => a.priority - b.priority);
 }
 
+// THIS MUTATES ITEMLIST AND INVENTORY
+// it is meant to be mutated
+export const setItemsBasedOnInventory = (itemMap: TItemMap, inventory: InventoryDBSchema): TItemMap => {
+  for (const [name, item] of itemMap) {
+    if (!inventory[name]) {
+      continue;
+    }
+    const inventoryItem = inventory[name];
+    if (inventoryItem.owned >= item.value!) {
+      inventoryItem.owned -= item.value!;
+      item.value = 0;
+      item.checked = true;
+    } else {
+      item.value! -= inventoryItem.owned;
+      inventoryItem.owned = 0;
+    }
+  }
+
+  applySynthesizerOnItems(itemMap, inventory);
+  return itemMap;
+}
+
+// This only applies synthesised materials
+// Use this function only AFTER you've subtracted all of the owned mats
+export const applySynthesizerOnItems = (itemMap: TItemMap, inventory: InventoryDBSchema): TItemMap => {
+  const processedItems = new Set<string>();
+  for (const [name, item] of itemMap) {
+    if (processedItems.has(name)) {
+      continue;
+    }
+
+    const synthesisItems = getSynthesisItems(item);
+    if (synthesisItems.length === 0) {
+      processedItems.add(name);
+    } else if (synthesisItems.length === 4) {
+      // Works only for common / weapon for now
+      // Order is [2, 3, 4, 5] based on rarity
+      const rarity3: IItem | undefined = itemMap.get(synthesisItems[1]);
+      const rarity4: IItem | undefined = itemMap.get(synthesisItems[2]);
+      const rarity5: IItem | undefined = itemMap.get(synthesisItems[3]);
+
+      const inventoryRarity2 = inventory[synthesisItems[0]];
+      const inventoryRarity3 = inventory[synthesisItems[1]];
+      const inventoryRarity4 = inventory[synthesisItems[2]];
+
+      // We assume that item subtraction was already done
+      if (rarity3 && rarity3.value! > 0) {
+        // console.log("Conversion needed to ⭐⭐⭐");
+        synthesize(inventoryRarity2, rarity3);
+        // console.log("⭐⭐⭐", rarity3.name, rarity3.value, rarity3.converted, rarity3.checked);
+      }
+      if (rarity4 && rarity4.value! > 0) {
+        // console.log("Conversion needed to ⭐⭐⭐⭐");
+        synthesize(inventoryRarity3, rarity4);
+        synthesize(inventoryRarity2, rarity4);
+        // console.log("⭐⭐⭐⭐", rarity4.name, rarity4.value, rarity4.converted, rarity4.checked);
+      }
+      if (rarity5 && rarity5.value! > 0) {
+        // console.log("Conversion needed to ⭐⭐⭐⭐⭐");
+        synthesize(inventoryRarity4, rarity5);
+        synthesize(inventoryRarity3, rarity5);
+        synthesize(inventoryRarity2, rarity5);
+        // console.log("⭐⭐⭐⭐⭐", rarity5.name, rarity5.value, rarity5.converted, rarity5.checked);
+      }
+
+      for (const item of synthesisItems) {
+        processedItems.add(item);
+      }
+    }
+  }
+
+  return itemMap;
+}
+
+const synthesize = (
+  sourceItem: InventoryStateDBEntry,
+  targetItem: IItem
+) => {
+  const multiplier = 3 ** (targetItem.rarity - sourceItem.rarity);
+  if (sourceItem.owned < multiplier) {
+    // We don't have enough to bother, skip
+    return;
+  }
+
+  const converted = Math.floor(sourceItem.owned / multiplier);
+
+  if (targetItem.value! >= converted) {
+    // We don't have enough
+    targetItem.converted = converted;
+    sourceItem.owned -= multiplier * converted;
+  } else {
+    // We have enough, remove .value from inventory
+    targetItem.converted = targetItem.value;
+    sourceItem.owned -= targetItem.value! * multiplier;
+  }
+
+  if (targetItem.value! === targetItem.converted!) {
+    targetItem.checked = true;
+  }
+}
+
 export const getMaterials = (
   plannerItem: IResonatorPlanner | IWeaponPlanner,
   apiItems: IAPIItem[],
-): TItemMap => {
+): IRequiredItemMap => {
   const requiredAscensions = getAscensions(plannerItem.dbData.level.current, plannerItem.dbData.level.desired);
   // item id -> amount of items needed
   const reqMats: { [key: string]: number } = {};
@@ -250,66 +353,4 @@ const addTalentMaterials = (
       requiredMaterials[commonMaterialEntry.id] = (requiredMaterials[commonMaterialEntry.id] ?? 0) + COMMON_MATERIAL;
     }
   }
-}
-
-const getWeaponMaterial = (type: ItemWeapon, rarity: number): ItemWeapon => {
-  let retType: string;
-  switch (type) {
-    case ItemWeapon.PISTOL_RARITY_5: retType = "PISTOL"; break;
-    case ItemWeapon.PISTOL_RARITY_4: retType = "PISTOL"; break;
-    case ItemWeapon.PISTOL_RARITY_3: retType = "PISTOL"; break;
-    case ItemWeapon.PISTOL_RARITY_2: retType = "PISTOL"; break;
-    case ItemWeapon.SWORD_RARITY_5: retType = "SWORD"; break;
-    case ItemWeapon.SWORD_RARITY_4: retType = "SWORD"; break;
-    case ItemWeapon.SWORD_RARITY_3: retType = "SWORD"; break;
-    case ItemWeapon.SWORD_RARITY_2: retType = "SWORD"; break;
-    case ItemWeapon.BROADBLADE_RARITY_5: retType = "BROADBLADE"; break;
-    case ItemWeapon.BROADBLADE_RARITY_4: retType = "BROADBLADE"; break;
-    case ItemWeapon.BROADBLADE_RARITY_3: retType = "BROADBLADE"; break;
-    case ItemWeapon.BROADBLADE_RARITY_2: retType = "BROADBLADE"; break;
-    case ItemWeapon.GAUNTLETS_RARITY_5: retType = "GAUNTLETS"; break;
-    case ItemWeapon.GAUNTLETS_RARITY_4: retType = "GAUNTLETS"; break;
-    case ItemWeapon.GAUNTLETS_RARITY_3: retType = "GAUNTLETS"; break;
-    case ItemWeapon.GAUNTLETS_RARITY_2: retType = "GAUNTLETS"; break;
-    case ItemWeapon.RECTIFIER_RARITY_5: retType = "RECTIFIER"; break;
-    case ItemWeapon.RECTIFIER_RARITY_4: retType = "RECTIFIER"; break;
-    case ItemWeapon.RECTIFIER_RARITY_3: retType = "RECTIFIER"; break;
-    case ItemWeapon.RECTIFIER_RARITY_2: retType = "RECTIFIER"; break;
-    default: throw new Error(`Incorrect getWeaponMaterial call with ${type}`);
-  }
-  const key = `${retType}_RARITY_${rarity}` as keyof typeof ItemWeapon;
-  return ItemWeapon[key];
-}
-
-const getCommonMaterial = (type: ItemCommon, rarity: number): ItemCommon => {
-  let retType: string;
-  switch (type) {
-    case ItemCommon.WHISPERIN_RARITY_5: retType = "WHISPERIN"; break;
-    case ItemCommon.WHISPERIN_RARITY_4: retType = "WHISPERIN"; break;
-    case ItemCommon.WHISPERIN_RARITY_3: retType = "WHISPERIN"; break;
-    case ItemCommon.WHISPERIN_RARITY_2: retType = "WHISPERIN"; break;
-    case ItemCommon.HOWLER_RARITY_5: retType = "HOWLER"; break;
-    case ItemCommon.HOWLER_RARITY_4: retType = "HOWLER"; break;
-    case ItemCommon.HOWLER_RARITY_3: retType = "HOWLER"; break;
-    case ItemCommon.HOWLER_RARITY_2: retType = "HOWLER"; break;
-    case ItemCommon.EXILE_RARITY_5: retType = "EXILE"; break;
-    case ItemCommon.EXILE_RARITY_4: retType = "EXILE"; break;
-    case ItemCommon.EXILE_RARITY_3: retType = "EXILE"; break;
-    case ItemCommon.EXILE_RARITY_2: retType = "EXILE"; break;
-    case ItemCommon.FRACTSIDUS_RARITY_5: retType = "FRACTSIDUS"; break;
-    case ItemCommon.FRACTSIDUS_RARITY_4: retType = "FRACTSIDUS"; break;
-    case ItemCommon.FRACTSIDUS_RARITY_3: retType = "FRACTSIDUS"; break;
-    case ItemCommon.FRACTSIDUS_RARITY_2: retType = "FRACTSIDUS"; break;
-    case ItemCommon.POLYGON_RARITY_5: retType = "POLYGON"; break;
-    case ItemCommon.POLYGON_RARITY_4: retType = "POLYGON"; break;
-    case ItemCommon.POLYGON_RARITY_3: retType = "POLYGON"; break;
-    case ItemCommon.POLYGON_RARITY_2: retType = "POLYGON"; break;
-    case ItemCommon.TIDAL_RARITY_5: retType = "TIDAL"; break;
-    case ItemCommon.TIDAL_RARITY_4: retType = "TIDAL"; break;
-    case ItemCommon.TIDAL_RARITY_3: retType = "TIDAL"; break;
-    case ItemCommon.TIDAL_RARITY_2: retType = "TIDAL"; break;
-    default: throw new Error(`Incorrect getCommonMaterial call with ${type}`);
-  }
-  const key = `${retType}_RARITY_${rarity}` as keyof typeof ItemCommon;
-  return ItemCommon[key];
 }

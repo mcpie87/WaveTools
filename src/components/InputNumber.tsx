@@ -1,4 +1,6 @@
 import { ChangeEvent, useRef, useState } from "react";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 export type InputNumber = number | string;
 interface InputNumberProps {
@@ -58,32 +60,32 @@ export const InputNumber = ({
       <h3>{label}</h3>
       <div className="relative inline-block text-left">
         <div className="flex">
-          <button
+          <Button
             onClick={() => setValue(prev(value))}
             type="button"
             className="border rounded-tl-full rounded-bl-full"
             disabled={disableDecrement}
           >
             -
-          </button>
-          <input
+          </Button>
+          <Input
             ref={inputRef}
             onClick={inputOnClick}
-            className="bg-white text-center w-[50px]"
+            className="bg-static-base-100 text-static-text-primary text-center w-[50px]"
             value={value}
             onChange={handleChange}
           />
-          <button
+          <Button
             onClick={() => setValue(next(value))}
             type="button"
             className="border rounded-tr-full rounded-br-full"
             disabled={disableIncrement}
           >
             +
-          </button>
+          </Button>
         </div>
         {values && dropdownOpen && (
-          <div className="absolute flex flex-wrap mt-2 w-full bg-white border rounded shadow-lg z-10">
+          <div className="absolute flex flex-wrap mt-2 w-full bg-base-300 border rounded shadow-lg z-10">
             {values.map((lvl, idx) => {
               const fullWidth = idx === 0 || idx === values.length - 1;
               return (
@@ -93,7 +95,7 @@ export const InputNumber = ({
                     setValue(lvl);
                     setDropdownOpen(false);
                   }}
-                  className={`border border-solid flex px-4 py-2 hover:bg-gray-200 cursor-pointer ${fullWidth ? "w-full" : "w-1/2"}`}
+                  className={`border border-solid flex px-4 py-2 hover:bg-base-200 cursor-pointer ${fullWidth ? "w-full" : "w-1/2"}`}
                 >
                   {lvl}
                 </div>

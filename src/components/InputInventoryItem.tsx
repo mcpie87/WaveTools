@@ -1,6 +1,7 @@
 import { IItem } from "@/app/interfaces/item"
 import ItemCard from "./items/ItemCard";
 import { ChangeEvent, useRef } from "react";
+import { Input } from "./ui/input";
 
 interface InputInventoryItemProps {
   item: IItem;
@@ -33,9 +34,9 @@ export const InputInventoryItem = ({
 
   return (
     <div className="flex flex-col w-[100px]">
-      <ItemCard item={item} />
+      <ItemCard item={item} width={64} height={64} />
       {item.name}
-      <input
+      <Input
         id={item.name}
         value={value}
         ref={inputRef}
