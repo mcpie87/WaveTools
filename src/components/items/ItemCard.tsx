@@ -59,7 +59,7 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
             {item.value !== undefined ? formatValue(item.value) : ""}
           </span>
           <span className="text-center text-xs bg-black text-white">
-            {item.checked ? "✓" : ""}
+            {item.value === 0 || item.value === item.converted ? "✓" : ""}
           </span>
           <span className="text-center text-xs bg-black text-white">
             {item.converted !== undefined ? formatValue(item.converted) : ""}

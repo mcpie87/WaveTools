@@ -9,6 +9,8 @@ export enum ItemType {
   WEAPON_EXP = "WEAPON_EXP",
 }
 
+export type ItemTypeEXP = ItemType.RESONATOR_EXP | ItemType.WEAPON_EXP;
+
 export type SHELL_CREDIT = "Shell Credit";
 export const SHELL_CREDIT: SHELL_CREDIT = "Shell Credit";
 export const SHELL_CREDIT_ID: number = 2;

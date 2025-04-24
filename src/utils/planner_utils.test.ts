@@ -1,8 +1,8 @@
 import { IItem } from "@/app/interfaces/item";
-import { ItemWeapon } from "@/app/interfaces/item_types";
-import { inventoryForSynthesis } from "@/test/__mocks__/inventoryMocks";
-import { itemListForSynthesis } from "@/test/__mocks__/itemMocks";
-import { applySynthesizerOnItems } from "./planner_utils";
+import { ItemResonatorEXP, ItemType, ItemWeapon } from "@/app/interfaces/item_types";
+import { inventoryForResonatorExpConversion, inventoryForSynthesis } from "@/test/__mocks__/inventoryMocks";
+import { itemListForResonatorExpConversion, itemListForSynthesis } from "@/test/__mocks__/itemMocks";
+import { applyEXPConversion, applySynthesizerOnItems } from "./planner_utils";
 import { convertItemListToItemMap } from "./items_utils";
 import { InventoryDBSchema } from "@/types/inventoryTypes";
 
@@ -436,5 +436,174 @@ describe('planner utils test', () => {
     //     }
     //   }
     // });
+  });
+
+  describe('resonator and weapon exp conversion', () => {
+    let inventory: InventoryDBSchema;
+    let itemMap: Map<string, IItem>;
+    let expItems: IItem[];
+
+    beforeEach(() => {
+      inventory = JSON.parse(JSON.stringify(inventoryForResonatorExpConversion));
+      itemMap = new Map<string, IItem>(
+        convertItemListToItemMap(JSON.parse(JSON.stringify(itemListForResonatorExpConversion)))
+      );
+      expItems = [
+        ItemResonatorEXP.RARITY_2,
+        ItemResonatorEXP.RARITY_3,
+        ItemResonatorEXP.RARITY_4,
+        ItemResonatorEXP.RARITY_5,
+      ].map(e => itemMap.get(e)!);
+
+      for (const expItem of expItems) {
+        expItem.value = 0;
+        expItem.converted = undefined;
+      }
+    });
+
+    test('exp conversion from 2* to 5* should empty stock and set converted', () => {
+      expItems[0].value = 0;
+      expItems[1].value = 0;
+      expItems[2].value = 0;
+      expItems[3].value = 8;
+
+      inventory[expItems[0].name].owned = 10 * (20000 / 1000);
+      inventory[expItems[1].name].owned = 0;
+      inventory[expItems[2].name].owned = 0;
+      inventory[expItems[3].name].owned = 0;
+
+      applyEXPConversion(ItemType.RESONATOR_EXP, itemMap, inventory);
+
+      expect(expItems[0].value).toBe(0);
+      expect(expItems[1].value).toBe(0);
+      expect(expItems[2].value).toBe(0);
+      expect(expItems[3].value).toBe(8);
+
+      expect(expItems[0].converted).toBeUndefined();
+      expect(expItems[1].converted).toBeUndefined();
+      expect(expItems[2].converted).toBeUndefined();
+      expect(expItems[3].converted).toBe(8);
+
+      expect(inventory[expItems[0].name].owned).toBe(2 * (20000 / 1000));
+      expect(inventory[expItems[1].name].owned).toBe(0);
+      expect(inventory[expItems[2].name].owned).toBe(0);
+      expect(inventory[expItems[3].name].owned).toBe(0);
+    });
+
+    test('exp conversion from 3* to 5* should empty stock and set converted', () => {
+      expItems[0].value = 0;
+      expItems[1].value = 0;
+      expItems[2].value = 0;
+      expItems[3].value = 8; // 8 * 20k = 160k
+
+      inventory[expItems[0].name].owned = 0;
+      inventory[expItems[1].name].owned = 60; // 60 * 3k = 180k
+      inventory[expItems[2].name].owned = 0;
+      inventory[expItems[3].name].owned = 0;
+
+      applyEXPConversion(ItemType.RESONATOR_EXP, itemMap, inventory);
+
+      expect(expItems[0].value).toBe(0);
+      expect(expItems[1].value).toBe(0);
+      expect(expItems[2].value).toBe(0);
+      expect(expItems[3].value).toBe(8);
+
+      expect(expItems[0].converted).toBeUndefined();
+      expect(expItems[1].converted).toBeUndefined();
+      expect(expItems[2].converted).toBeUndefined();
+      expect(expItems[3].converted).toBe(8);
+
+      expect(inventory[expItems[0].name].owned).toBe(0);
+      expect(inventory[expItems[1].name].owned).toBe(6); // floor 20k
+      expect(inventory[expItems[2].name].owned).toBe(0);
+      expect(inventory[expItems[3].name].owned).toBe(0);
+    });
+
+    test('exp conversion from 4* to 5* should empty stock and set converted', () => {
+      expItems[0].value = 0;
+      expItems[1].value = 0;
+      expItems[2].value = 0;
+      expItems[3].value = 7; // 7 * 20k = 140k
+
+      inventory[expItems[0].name].owned = 0;
+      inventory[expItems[1].name].owned = 0; // 18 * 8k = 144k
+      inventory[expItems[2].name].owned = 18;
+      inventory[expItems[3].name].owned = 0;
+
+      applyEXPConversion(ItemType.RESONATOR_EXP, itemMap, inventory);
+
+      expect(expItems[0].value).toBe(0);
+      expect(expItems[1].value).toBe(0);
+      expect(expItems[2].value).toBe(0);
+      expect(expItems[3].value).toBe(7);
+
+      expect(expItems[0].converted).toBeUndefined();
+      expect(expItems[1].converted).toBeUndefined();
+      expect(expItems[2].converted).toBeUndefined();
+      expect(expItems[3].converted).toBe(7);
+
+      expect(inventory[expItems[0].name].owned).toBe(0);
+      expect(inventory[expItems[1].name].owned).toBe(0);
+      expect(inventory[expItems[2].name].owned).toBe(0); // exhausted due to floor
+      expect(inventory[expItems[3].name].owned).toBe(0);
+    });
+
+    test('exp conversion from 2* to others should fill everything', () => {
+      expItems[0].value = 0;
+      expItems[1].value = 10;
+      expItems[2].value = 20;
+      expItems[3].value = 30;
+
+      inventory[expItems[0].name].owned = 10 * 3 + 20 * 8 + 30 * 20 + 5; // 5 as extra
+      inventory[expItems[1].name].owned = 0;
+      inventory[expItems[2].name].owned = 0;
+      inventory[expItems[3].name].owned = 0;
+
+      applyEXPConversion(ItemType.RESONATOR_EXP, itemMap, inventory);
+
+      expect(expItems[0].value).toBe(0);
+      expect(expItems[1].value).toBe(10);
+      expect(expItems[2].value).toBe(20);
+      expect(expItems[3].value).toBe(30);
+
+      expect(expItems[0].converted).toBeUndefined();
+      expect(expItems[1].converted).toBe(10);
+      expect(expItems[2].converted).toBe(20);
+      expect(expItems[3].converted).toBe(30);
+
+      expect(inventory[expItems[0].name].owned).toBe(5);
+      expect(inventory[expItems[1].name].owned).toBe(0);
+      expect(inventory[expItems[2].name].owned).toBe(0);
+      expect(inventory[expItems[3].name].owned).toBe(0);
+    });
+
+    test('exp conversion from others to 5* should fill total', () => {
+      expItems[0].value = 0;
+      expItems[1].value = 0;
+      expItems[2].value = 0;
+      expItems[3].value = 30; // 600k
+
+      inventory[expItems[0].name].owned = 320; // 600 - 200 - 80 = 320
+      inventory[expItems[1].name].owned = 28; // 84k -> 1 item left (due to ceil)
+      inventory[expItems[2].name].owned = 26; // 208k -> 1 item left
+      inventory[expItems[3].name].owned = 0;
+
+      applyEXPConversion(ItemType.RESONATOR_EXP, itemMap, inventory);
+
+      expect(expItems[0].value).toBe(0);
+      expect(expItems[1].value).toBe(0);
+      expect(expItems[2].value).toBe(0);
+      expect(expItems[3].value).toBe(30);
+
+      expect(expItems[0].converted).toBeUndefined();
+      expect(expItems[1].converted).toBeUndefined();
+      expect(expItems[2].converted).toBeUndefined();
+      expect(expItems[3].converted).toBe(30);
+
+      expect(inventory[expItems[0].name].owned).toBe(0); // exhausted
+      expect(inventory[expItems[1].name].owned).toBe(1); // ceil
+      expect(inventory[expItems[2].name].owned).toBe(1); // ceil
+      expect(inventory[expItems[3].name].owned).toBe(0);
+    });
   });
 });

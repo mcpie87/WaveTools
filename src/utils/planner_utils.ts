@@ -2,7 +2,7 @@ import { IAPIItem, IAPIResonator, IAPIWeapon } from "@/app/interfaces/api_interf
 import { getAscensions, InputEntry, ResonatorDBSchema, ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { getKeyFromEnumValue } from "@/utils/utils";
 import { RESONATOR_ASCENSION_MATERIALS, RESONATOR_EXP_TO_SHELL_RATIO, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry, TOTAL_LEVEL_EXPERIENCE, TOTAL_WEAPON_EXP, WEAPON_ASCENSION_MATERIALS, WEAPON_EXP_TO_SHELL_RATIO } from "@/constants/character_ascension";
-import { ItemResonatorEXP, ItemWeaponEXP, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
+import { ItemResonatorEXP, ItemType, ItemTypeEXP, ItemWeaponEXP, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
 import { ActiveSkillNames, PassiveSkillNames, resonatorSchemaForForm } from "@/schemas/resonatorSchema";
 import { findItemByName, getCommonMaterial, getSynthesisItems, getWeaponMaterial } from "./items_utils";
 import { IResonatorPlanner, IWeaponPlanner, PLANNER_TYPE, IRequiredItemMap } from "@/app/interfaces/planner_item";
@@ -10,6 +10,7 @@ import { WeaponDBSchema } from "@/types/weaponTypes";
 import { parseResonatorToPlanner, parseWeaponToPlanner } from "./api_parser";
 import { IItem, TItemMap } from "@/app/interfaces/item";
 import { InventoryDBSchema, InventoryStateDBEntry } from "@/types/inventoryTypes";
+import { EXP_POTION_VALUES } from "@/constants/constants";
 
 export const getPlannerDBSize = (
   dbResonators: ResonatorDBSchema,
@@ -51,6 +52,7 @@ export const setItemsBasedOnInventory = (itemMap: TItemMap, inventory: Inventory
     if (!inventory[name]) {
       continue;
     }
+
     const inventoryItem = inventory[name];
     if (inventoryItem.owned >= item.value!) {
       inventoryItem.owned -= item.value!;
@@ -62,7 +64,73 @@ export const setItemsBasedOnInventory = (itemMap: TItemMap, inventory: Inventory
     }
   }
 
+  applyEXPConversion(ItemType.RESONATOR_EXP, itemMap, inventory);
+  applyEXPConversion(ItemType.WEAPON_EXP, itemMap, inventory);
   applySynthesizerOnItems(itemMap, inventory);
+  return itemMap;
+}
+
+const getEXPItems = (type: ItemTypeEXP): string[] => {
+  return type === ItemType.RESONATOR_EXP
+    ? Object.values(ItemResonatorEXP)
+    : Object.values(ItemWeaponEXP);
+}
+
+const calculateItemConversions = (
+  item: IItem,
+  baseValue: number,
+  inventoryItems: InventoryStateDBEntry[],
+): void => {
+  if (!item || item.value === 0) return;
+
+  item.converted = 0;
+
+  EXP_POTION_VALUES.forEach((value, index) => {
+    const inv = inventoryItems[index];
+    if (!inv || inv.owned === 0) return;
+
+    const neededPotions = item.value! - (item.converted ?? 0);
+    const maxConvertible = Math.floor((inv.owned * value) / baseValue);
+    const conversions = Math.min(neededPotions, maxConvertible);
+
+    if (conversions <= 0) return;
+
+    const itemsToConsume = Math.ceil((conversions * baseValue) / value);
+    inv.owned -= itemsToConsume;
+    item.converted! += conversions;
+  });
+
+  if (item.converted === 0) {
+    item.converted = undefined;
+  }
+};
+
+export const applyEXPConversion = (
+  type: ItemTypeEXP,
+  itemMap: TItemMap,
+  inventory: InventoryDBSchema
+): TItemMap => {
+  if (![ItemType.RESONATOR_EXP, ItemType.WEAPON_EXP].includes(type)) {
+    // Function doesn't support non exp values
+    return itemMap;
+  }
+
+  // Rarities: 5, 4, 3, 2 (descending)
+  const expItems = getEXPItems(type);
+
+  const inventoryItems = expItems.map((name) => inventory[name]);
+  if (inventoryItems.some(e => !e)) {
+    // Not enough inventory
+    console.warn("Inventory not defined for EXP conversion");
+    return itemMap;
+  }
+
+  const items = expItems.map((name) => itemMap.get(name)).filter(item => item !== undefined);
+
+  items.forEach((item, index) => {
+    calculateItemConversions(item, EXP_POTION_VALUES[index], inventoryItems);
+  });
+
   return itemMap;
 }
 
