@@ -1,9 +1,8 @@
-import { CartesianProduct } from "js-combinatorics";
 import { IItem } from "@/app/interfaces/item";
 import { ItemWeapon } from "@/app/interfaces/item_types";
 import { inventoryForSynthesis } from "@/test/__mocks__/inventoryMocks";
 import { itemListForSynthesis } from "@/test/__mocks__/itemMocks";
-import { applySynthesizerOnItems, setItemsBasedOnInventory } from "./planner_utils";
+import { applySynthesizerOnItems } from "./planner_utils";
 import { convertItemListToItemMap } from "./items_utils";
 import { InventoryDBSchema } from "@/types/inventoryTypes";
 
