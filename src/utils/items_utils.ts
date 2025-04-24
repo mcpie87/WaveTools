@@ -5,6 +5,7 @@ import { ItemCommon, ItemEliteBoss, ItemResonatorEXP, ItemSpecialty, ItemType, I
 import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_ELITE_BOSS_COST, WAVEPLATE_FORGERY, WAVEPLATE_FORGERY_COST, WAVEPLATE_SIM_ENERGY, WAVEPLATE_SIM_ENERGY_COST, WAVEPLATE_SIM_RESONANCE, WAVEPLATE_SIM_RESONANCE_COST, WAVEPLATE_SIM_SHELL, WAVEPLATE_SIM_SHELL_COST, WAVEPLATE_WEEKLY_BOSS, WAVEPLATE_WEEKLY_BOSS_COST } from "@/constants/waveplate_usage";
 import { WaveplateEntry } from "@/components/WaveplateComponent";
 import { IRequiredItemMap } from "@/app/interfaces/planner_item";
+import { EXP_POTION_VALUES_ASC } from "@/constants/constants";
 
 export function findItemByName(name: string, items: IAPIItem[]): IAPIItem | undefined {
   return items.find(item => item.name === name);
@@ -153,45 +154,48 @@ const getWaveplateEntry = (label: string, runCount: number, cost: number): Wavep
   }
 }
 
+const getRealItemValue = (item: IItem): number => {
+  return (item.value ?? 0) - (item.converted ?? 0);
+}
+
 const getWeeklyCountFromList = (items: IItem[]): number => {
   return items
     .filter((item) => Object.values(ItemWeeklyBoss).includes(item.name as ItemWeeklyBoss))
-    .reduce((sum, item) => sum + (item.value ?? 0), 0);
+    .reduce((sum, item) => sum + getRealItemValue(item), 0);
 }
 
 const getEliteCountFromList = (items: IItem[]): number => {
   return items
     .filter((item) => Object.values(ItemEliteBoss).includes(item.name as ItemEliteBoss))
-    .reduce((sum, item) => sum + (item.value ?? 0), 0);
+    .reduce((sum, item) => sum + getRealItemValue(item), 0);
 }
 
 const getWeapon2CountFromList = (items: IItem[]): number => {
   return items
     .filter((item) => Object.values(ItemWeapon).includes(item.name as ItemWeapon))
-    .map(item => (item.value ?? 0) * Math.pow(3, item.rarity - 2))
+    .map(item => getRealItemValue(item) * Math.pow(3, item.rarity - 2))
     .reduce((sum, item) => sum + item, 0);
 }
 
 const getResonatorExpNeededFromList = (items: IItem[]): number => {
-  const vals = [1000, 3000, 8000, 20000];
+  const vals = EXP_POTION_VALUES_ASC;
   return items
     .filter((item) => Object.values(ItemResonatorEXP).includes(item.name as ItemResonatorEXP))
-    .map(item => (item.value ?? 0) * vals[item.rarity - 2])
+    .map(item => getRealItemValue(item) * vals[item.rarity - 2])
     .reduce((sum, item) => sum + item, 0);
 }
 
 const getWeaponExpNeededFromList = (items: IItem[]): number => {
-  const vals = [1000, 3000, 8000, 20000];
+  const vals = EXP_POTION_VALUES_ASC;
   return items
     .filter((item) => Object.values(ItemWeaponEXP).includes(item.name as ItemWeaponEXP))
-    .map(item => (item.value ?? 0) * vals[item.rarity - 2])
+    .map(item => getRealItemValue(item) * vals[item.rarity - 2])
     .reduce((sum, item) => sum + item, 0);
 }
 
 const getShellFromItemList = (items: IItem[]): number => {
   return (items.find(item => item.name === SHELL_CREDIT)?.value) ?? 0;
 }
-
 
 export function getWeaponMaterial(type: ItemWeapon, rarity: number): ItemWeapon;
 export function getWeaponMaterial(type: ItemWeapon, rarity: number[]): ItemWeapon[];

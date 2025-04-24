@@ -10,7 +10,7 @@ import { WeaponDBSchema } from "@/types/weaponTypes";
 import { parseResonatorToPlanner, parseWeaponToPlanner } from "./api_parser";
 import { IItem, TItemMap } from "@/app/interfaces/item";
 import { InventoryDBSchema, InventoryStateDBEntry } from "@/types/inventoryTypes";
-import { EXP_POTION_VALUES } from "@/constants/constants";
+import { EXP_POTION_VALUES_DESC } from "@/constants/constants";
 
 export const getPlannerDBSize = (
   dbResonators: ResonatorDBSchema,
@@ -85,7 +85,7 @@ const calculateItemConversions = (
 
   item.converted = 0;
 
-  EXP_POTION_VALUES.forEach((value, index) => {
+  EXP_POTION_VALUES_DESC.forEach((value, index) => {
     const inv = inventoryItems[index];
     if (!inv || inv.owned === 0) return;
 
@@ -128,7 +128,7 @@ export const applyEXPConversion = (
   const items = expItems.map((name) => itemMap.get(name)).filter(item => item !== undefined);
 
   items.forEach((item, index) => {
-    calculateItemConversions(item, EXP_POTION_VALUES[index], inventoryItems);
+    calculateItemConversions(item, EXP_POTION_VALUES_DESC[index], inventoryItems);
   });
 
   return itemMap;
