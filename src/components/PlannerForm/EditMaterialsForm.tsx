@@ -47,11 +47,13 @@ export const EditSelectedMaterialsForm = ({
         <div className="text-center">Update selected group</div>
         <div className="flex flex-row">
           {/* <ItemCard item={selectedItem} /> */}
-          {displayedItems.map(item => (
+          {displayedItems.map((item, colIndex) => (
             <InputInventoryItem
               key={item.name}
               value={getInventoryEntry(item, formData).owned}
               item={item}
+              colIndex={colIndex}
+              totalColumns={displayedItems.length}
               displayedExtraRows={inventoryRowCount}
               displayedRow1Value={getDisplayedRow1Value(selectedItem, item, worldLevel)}
               setValue={(value) => {

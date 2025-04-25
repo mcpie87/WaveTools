@@ -79,6 +79,8 @@ export const InventoryForm = ({
               key={idx}
               value={formData[item.name].owned}
               item={item}
+              colIndex={idx}
+              totalColumns={displayedItems.length}
               setValue={(value) =>
                 setFormData(prev => ({
                   ...prev,

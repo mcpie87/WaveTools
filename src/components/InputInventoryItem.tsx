@@ -9,11 +9,15 @@ interface InputInventoryItemProps {
   setValue: (value: number) => void;
   displayedExtraRows?: 1 | 2; // 2 double drop is possible, 1 otherwise
   displayedRow1Value?: number;
+  colIndex: number;
+  totalColumns: number;
 }
 export const InputInventoryItem = ({
   item,
   value,
   setValue,
+  colIndex,
+  totalColumns,
   displayedExtraRows,
   displayedRow1Value,
 }: InputInventoryItemProps) => {
@@ -24,8 +28,6 @@ export const InputInventoryItem = ({
   const defaultValueRef = useRef(value);
   const [valueAddSub1, setValueAddSub1] = useState(displayedRow1Value ?? 0);
   const [valueAddSub2, setValueAddSub2] = useState(0);
-
-  console.log("RENDER", value, valueAddSub1, valueAddSub2, defaultValueRef.current);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const parsedInt = Number(e.target.value);
@@ -56,6 +58,7 @@ export const InputInventoryItem = ({
       {item.name}
       <Input
         id={item.name}
+        tabIndex={1 + 0 * totalColumns + colIndex} // For tab navigation
         value={Math.max(0, value)}
         ref={inputRef}
         onChange={handleChange}
@@ -65,6 +68,7 @@ export const InputInventoryItem = ({
       {displayedExtraRows && displayedExtraRows > 0 && (
         <Input
           id={`${item.name}_1`}
+          tabIndex={1 + 1 * totalColumns + colIndex} // For tab navigation
           value={valueAddSub1}
           ref={inputRefAddSub1}
           onChange={handleAddOrSubtract(1)}
@@ -75,6 +79,7 @@ export const InputInventoryItem = ({
       {displayedExtraRows && displayedExtraRows > 1 && (
         <Input
           id={`${item.name}_2`}
+          tabIndex={1 + 2 * totalColumns + colIndex} // For tab navigation
           value={valueAddSub2}
           ref={inputRefAddSub2}
           onChange={handleAddOrSubtract(2)}
