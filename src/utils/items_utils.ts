@@ -1,7 +1,7 @@
 import { IAPIItem, IItemEntry } from "@/app/interfaces/api_interfaces";
 import { IItem, TItemMap } from "@/app/interfaces/item";
 import { parseItemToItemCard } from "./api_parser";
-import { ItemCommon, ItemEliteBoss, ItemResonatorEXP, ItemSpecialty, ItemType, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
+import { ItemCommon, ItemEchoEXP, ItemEliteBoss, ItemResonatorEXP, ItemSpecialty, ItemType, ItemWeapon, ItemWeaponEXP, ItemWeeklyBoss, SHELL_CREDIT } from "@/app/interfaces/item_types";
 import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_ELITE_BOSS_COST, WAVEPLATE_FORGERY, WAVEPLATE_FORGERY_COST, WAVEPLATE_SIM_ENERGY, WAVEPLATE_SIM_ENERGY_COST, WAVEPLATE_SIM_RESONANCE, WAVEPLATE_SIM_RESONANCE_COST, WAVEPLATE_SIM_SHELL, WAVEPLATE_SIM_SHELL_COST, WAVEPLATE_WEEKLY_BOSS, WAVEPLATE_WEEKLY_BOSS_COST } from "@/constants/waveplate_usage";
 import { WaveplateEntry } from "@/components/WaveplateComponent";
 import { IRequiredItemMap } from "@/app/interfaces/planner_item";
@@ -338,6 +338,9 @@ export const getItemType = (item: IItem): ItemType => {
   }
   if (Object.values(ItemWeaponEXP).includes(item.name as ItemWeaponEXP)) {
     return ItemType.WEAPON_EXP;
+  }
+  if (Object.values(ItemEchoEXP).includes(item.name as ItemEchoEXP)) {
+    return ItemType.ECHO_EXP;
   }
   throw new Error(`Item ${item.name} is not a valid item type`);
 }

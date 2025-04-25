@@ -8,19 +8,21 @@ interface InputInventoryItemProps {
   value: number;
   setValue: (value: number) => void;
   displayedExtraRows?: 1 | 2; // 2 double drop is possible, 1 otherwise
+  displayedRow1Value?: number;
 }
 export const InputInventoryItem = ({
   item,
   value,
   setValue,
   displayedExtraRows,
+  displayedRow1Value,
 }: InputInventoryItemProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const inputRefAddSub1 = useRef<HTMLInputElement>(null);
   const inputRefAddSub2 = useRef<HTMLInputElement>(null);
 
   const defaultValueRef = useRef(value);
-  const [valueAddSub1, setValueAddSub1] = useState(0);
+  const [valueAddSub1, setValueAddSub1] = useState(displayedRow1Value ?? 0);
   const [valueAddSub2, setValueAddSub2] = useState(0);
 
   console.log("RENDER", value, valueAddSub1, valueAddSub2, defaultValueRef.current);

@@ -7,6 +7,7 @@ export enum ItemType {
   SPECIALTY = "SPECIALTY",
   RESONATOR_EXP = "RESONATOR_EXP",
   WEAPON_EXP = "WEAPON_EXP",
+  ECHO_EXP = "ECHO_EXP",
 }
 
 export type ItemTypeEXP = ItemType.RESONATOR_EXP | ItemType.WEAPON_EXP;

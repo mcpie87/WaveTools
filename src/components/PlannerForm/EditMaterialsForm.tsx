@@ -10,6 +10,7 @@ import { InputInventoryItem } from "../InputInventoryItem";
 import { Button } from "../ui/button";
 import { getAPIItems, parseItemToItemCard } from "@/utils/api_parser";
 import { getInventoryEntry } from "@/utils/inventory_utils";
+import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_FORGERY, WAVEPLATE_SIM_ENERGY, WAVEPLATE_SIM_RESONANCE, WAVEPLATE_SIM_SHELL, WAVEPLATE_WEEKLY_BOSS } from "@/constants/waveplate_usage";
 
 interface EditSelectedMaterialsFormProps {
   onSubmit: (data: InventoryDBSchema) => void;
@@ -32,7 +33,8 @@ export const EditSelectedMaterialsForm = ({
 
   if (!selectedItem) return null;
 
-  const relatedItems = getRelatedItems(selectedItem, 8);
+  const worldLevel = 8;
+  const relatedItems = getRelatedItems(selectedItem, worldLevel);
   const displayedItems = getAPIItems(relatedItems, apiItems).map(item => parseItemToItemCard(item));
   const inventoryRowCount = getInventoryRowCount(selectedItem);
   const handleSubmit = () => {
@@ -51,6 +53,7 @@ export const EditSelectedMaterialsForm = ({
               value={getInventoryEntry(item, formData).owned}
               item={item}
               displayedExtraRows={inventoryRowCount}
+              displayedRow1Value={getDisplayedRow1Value(selectedItem, item, worldLevel)}
               setValue={(value) => {
                 setFormData(prev => ({
                   ...prev,
@@ -84,15 +87,17 @@ const getRelatedItems = (item: IItem, worldLevel: number): string[] => {
     case ItemType.COMMON:
       return getCommonMaterial(item.name as ItemCommon, [5, 4, 3, 2]);
     case ItemType.WEAPON:
-      return getWeaponMaterial(item.name as ItemWeapon, [5, 4, 3, 2]);
+      return [SHELL_CREDIT, ...getWeaponMaterial(item.name as ItemWeapon, [5, 4, 3, 2])];
     case ItemType.WEEKLY_BOSS:
       return [
+        SHELL_CREDIT,
         item.name as ItemWeeklyBoss,
         worldLevel > 3 ? ItemEchoEXP.RARITY_4 : ItemEchoEXP.RARITY_3,
         worldLevel > 3 ? ItemWeaponEXP.RARITY_4 : ItemWeaponEXP.RARITY_3,
       ];
     case ItemType.ELITE_BOSS:
       return [
+        SHELL_CREDIT,
         item.name as ItemEliteBoss,
         worldLevel > 3 ? ItemEchoEXP.RARITY_4 : ItemEchoEXP.RARITY_3,
         worldLevel > 3 ? ItemResonatorEXP.RARITY_4 : ItemResonatorEXP.RARITY_3,
@@ -101,9 +106,9 @@ const getRelatedItems = (item: IItem, worldLevel: number): string[] => {
     case ItemType.SPECIALTY:
       return [item.name as ItemSpecialty];
     case ItemType.RESONATOR_EXP:
-      return Object.values(ItemResonatorEXP);
+      return [SHELL_CREDIT, ...Object.values(ItemResonatorEXP)];
     case ItemType.WEAPON_EXP:
-      return Object.values(ItemWeaponEXP);
+      return [SHELL_CREDIT, ...Object.values(ItemWeaponEXP)];
     default:
       throw new Error(`Invalid item type ${itemType}`);
   }
@@ -121,7 +126,43 @@ const getInventoryRowCount = (item: IItem) => {
     case ItemType.SPECIALTY: return 1;
     case ItemType.RESONATOR_EXP: return 2;
     case ItemType.WEAPON_EXP: return 2;
+    case ItemType.ECHO_EXP: return 2;
     default:
       throw new Error(`Invalid item type ${itemType}`);
+  }
+}
+
+const getDisplayedRow1Value = (selectedItem: IItem, item: IItem, worldLevel: number): number => {
+  const selectedItemType = getItemType(selectedItem);
+  const itemType = getItemType(item);
+
+  let waveplateUsage;
+  switch (selectedItemType) {
+    case ItemType.SHELL_CREDIT:
+      waveplateUsage = WAVEPLATE_SIM_SHELL[worldLevel];
+      break;
+    case ItemType.WEAPON:
+      waveplateUsage = WAVEPLATE_FORGERY[worldLevel === 8 ? 7 : worldLevel];
+      break;
+    case ItemType.WEEKLY_BOSS:
+      waveplateUsage = WAVEPLATE_WEEKLY_BOSS[worldLevel];
+      break;
+    case ItemType.ELITE_BOSS:
+      waveplateUsage = WAVEPLATE_ELITE_BOSS[worldLevel];
+      break;
+    case ItemType.RESONATOR_EXP:
+      waveplateUsage = WAVEPLATE_SIM_RESONANCE[worldLevel];
+      break;
+    case ItemType.WEAPON_EXP:
+      waveplateUsage = WAVEPLATE_SIM_ENERGY[worldLevel];
+      break;
+    default:
+      return 0;
+  }
+
+  switch (itemType) {
+    case ItemType.SHELL_CREDIT: return waveplateUsage.SHELL;
+    default:
+      return 0;
   }
 }
