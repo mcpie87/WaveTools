@@ -71,7 +71,7 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
 
         {/* Synthesis icon and converted value */}
         {!overlay && value !== undefined && converted !== undefined && (
-          <span className="text-center text-xs bg-black text-white absolute flex flex-row top-1 left-1 z-30">
+          <span className="text-center text-xs bg-black text-white absolute flex flex-row top-1 left-1 z-30 rounded-md p-0.5 opacity-80">
             <Image src={convertToUrl(SYNTHESIS_ICON_URL)} alt="synthesis icon" width={16} height={16} />
             {formatValue(converted)}
           </span>
@@ -84,7 +84,7 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
         )}
       </div>
       {!overlay && needed !== undefined && (
-        <span className="text-center text-xs bg-black text-white relative">
+        <span className="text-center text-xs bg-black text-white relative p-0.5">
           {formatValue(needed)}
         </span>
       )}
