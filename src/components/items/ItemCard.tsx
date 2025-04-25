@@ -34,7 +34,10 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
   }
 
   return (
-    <div className="flex flex-col bg-base-100 rounded-md relative overflow-hidden">
+    <div
+      className="flex flex-col bg-base-200 rounded-md relative overflow-hidden cursor-pointer"
+      onClick={() => alert(`${item.name} clicked`)}
+    >
       {/* Image with colors */}
       <div
         className={classNames(
@@ -83,9 +86,10 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
           </span>
         )}
       </div>
-      {!overlay && needed !== undefined && (
+      {/* Displayed value */}
+      {!overlay && needed !== undefined && value !== undefined && (
         <span className="text-center text-xs bg-black text-white relative p-0.5">
-          {formatValue(needed)}
+          {formatValue(value === 0 ? needed : value)}
         </span>
       )}
       {/* <span className={`card-image-container ${getRarityClass(item.rarity)}`}>
