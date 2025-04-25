@@ -35,10 +35,9 @@ enum SORT_BY {
 }
 interface AddResonatorFormProps {
   onAddResonator: (name: string) => void;
-  showForm: boolean;
   onClose: () => void;
 }
-export const AddResonatorForm = ({ showForm, onAddResonator, onClose }: AddResonatorFormProps) => {
+export const AddResonatorForm = ({ onAddResonator, onClose }: AddResonatorFormProps) => {
   const [searchText, setSearchText] = useState("");
   const [searchFilter, setSearchFilter] = useState(defaultFilter);
   const [sortBy, setSortBy] = useState(SORT_BY.RELEASE_DATE);
@@ -91,7 +90,7 @@ export const AddResonatorForm = ({ showForm, onAddResonator, onClose }: AddReson
   );
 
   return (
-    <ModalComponent show={showForm} onClose={onClose}>
+    <ModalComponent show={true} onClose={onClose}>
       <div className="flex flex-col gap-5 w-[800px]">
         <div className="flex flex-rowjustify-center items-center gap-1">
           Search:

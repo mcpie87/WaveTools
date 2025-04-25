@@ -4,6 +4,7 @@ import { IItem } from '@/app/interfaces/item';
 import classNames from 'classnames';
 import { SYNTHESIS_ICON_URL } from '@/constants/constants';
 import { FaCheck } from 'react-icons/fa';
+import { PlannerFormType, usePlannerFormContext } from '@/context/PlannerFormContext';
 
 interface ItemCardProps {
   item: IItem;
@@ -33,10 +34,17 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
     return `${displayedValue}${suffix}`;
   }
 
+  const { setForm, setSelectedItem } = usePlannerFormContext();
+
+  const handleClick = () => {
+    setSelectedItem(item);
+    setForm(PlannerFormType.EditSelectedMaterials);
+  }
+
   return (
     <div
       className="flex flex-col bg-base-200 rounded-md relative overflow-hidden cursor-pointer"
-      onClick={() => alert(`${item.name} clicked`)}
+      onClick={handleClick}
     >
       {/* Image with colors */}
       <div

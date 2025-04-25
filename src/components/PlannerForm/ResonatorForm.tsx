@@ -12,12 +12,10 @@ import { Button } from '../ui/button';
 interface ResonatorFormProps {
   initialData: ResonatorStateDBEntry;
   onSubmit: (data: ResonatorStateDBEntry) => void;
-  showForm: boolean;
   onClose: () => void;
 }
 export const ResonatorForm = ({
   initialData,
-  showForm,
   onClose,
   onSubmit
 }: ResonatorFormProps) => {
@@ -74,7 +72,7 @@ export const ResonatorForm = ({
   }
 
   return (
-    <ModalComponent show={showForm} onClose={onClose}>
+    <ModalComponent show={true} onClose={onClose}>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col flex-wrap w-1/2 text-sm">
         <div className="flex flex-col gap-10">
           <div className="text-center text-xl">{initialData.name}</div>

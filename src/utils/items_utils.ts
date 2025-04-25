@@ -6,12 +6,30 @@ import { WAVEPLATE_ELITE_BOSS, WAVEPLATE_ELITE_BOSS_COST, WAVEPLATE_FORGERY, WAV
 import { WaveplateEntry } from "@/components/WaveplateComponent";
 import { IRequiredItemMap } from "@/app/interfaces/planner_item";
 import { EXP_POTION_VALUES_ASC } from "@/constants/constants";
+import { InventoryStateDBEntry } from "@/types/inventoryTypes";
 
 export function findItemByName(name: string, items: IAPIItem[]): IAPIItem | undefined {
   return items.find(item => item.name === name);
 }
 export function findItemsByNames(names: string[], items: IAPIItem[]): IAPIItem[] {
   return items.filter(item => names.includes(item.name));
+}
+
+export const convertInventoryItemsToItemList = (items: InventoryStateDBEntry[], apiItems: IAPIItem[]): IItem[] => {
+  const results: IItem[] = [];
+  const selectedAPIItems = apiItems.filter(
+    item => items.some(dbItem => dbItem.name === item.name)
+  );
+  for (const item of items) {
+    const apiItem = selectedAPIItems.find(apiItem => item.name === apiItem.name);
+    if (!apiItem) {
+      console.error(`apiItem not found ${item.name}`);
+      continue;
+    }
+    const parsedItem = parseItemToItemCard(apiItem);
+    results.push(parsedItem);
+  }
+  return results;
 }
 
 export function convertCostListToItemList(costList: IItemEntry[], apiItems: IAPIItem[]): IItem[] {

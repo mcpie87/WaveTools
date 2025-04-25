@@ -10,14 +10,12 @@ import { InventoryDBSchema } from "@/types/inventoryTypes";
 import { Button } from "../ui/button";
 
 interface InventoryFormProps {
-  showForm: boolean;
   initialFormData: InventoryDBSchema;
   onClose: () => void;
   onSubmit: (data: InventoryDBSchema) => void;
   apiItems: IAPIItem[];
 }
 export const InventoryForm = ({
-  showForm,
   initialFormData,
   onClose,
   onSubmit,
@@ -65,14 +63,14 @@ export const InventoryForm = ({
       ),
       ...initialFormData
     })
-  }, [showForm, initialFormData, apiItems])
+  }, [initialFormData, apiItems])
 
   const handleSubmit = () => {
     onSubmit(formData);
   }
 
   return (
-    <ModalComponent show={showForm} onClose={onClose}>
+    <ModalComponent show={true} onClose={onClose}>
       <div className="flex flex-col w-[1000px]">
         <div className="text-center">Inventory</div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-2">

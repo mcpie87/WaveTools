@@ -1,10 +1,9 @@
-'use client'; // Mark as a Client Component in Next.js
+'use client';
 
 import { AddResonatorForm } from '@/components/PlannerForm/AddResonatorForm';
 import { ResonatorForm } from '@/components/PlannerForm/ResonatorForm';
 import { resonatorSchema } from '@/schemas/resonatorSchema';
 import { ResonatorStateDBEntry } from '@/types/resonatorTypes';
-import { useState } from 'react';
 import { PlannerDataComponent } from './components/PlannerDataComponent';
 import { useCharacters } from '@/context/CharacterContext';
 import { PlannerSummaryComponent } from './components/PlannerSummaryComponent';
@@ -22,47 +21,52 @@ import { WeaponForm } from '@/components/PlannerForm/WeaponForm';
 import { getPlannerDBSize, getPlannerItems } from '@/utils/planner_utils';
 import { IResonatorPlanner, IWeaponPlanner } from '../interfaces/planner_item';
 import { Button } from '@/components/ui/button';
+import { PlannerFormProvider } from '@/providers/PlannerFormProvider';
+import { PlannerFormType, usePlannerFormContext } from '@/context/PlannerFormContext';
+import { useState } from 'react';
+import { EditSelectedMaterialsForm } from '@/components/PlannerForm/EditMaterialsForm';
 
-export default function CharactersPage() {
-  const [showAddResonatorForm, setShowAddResonatorForm] = useState(false);
-  const [showAddWeaponForm, setShowAddWeaponForm] = useState(false);
-  const [showEditResonatorForm, setShowEditResonatorForm] = useState(false);
-  const [showEditWeaponForm, setShowEditWeaponForm] = useState(false);
-  const [showInventoryForm, setShowInventoryForm] = useState(false);
-  const [showManagePriority, setShowManagePriority] = useState(false);
+const CharactersPage = () => {
   const [selectedResonator, setSelectedResonator] = useState<ResonatorStateDBEntry | null>(null);
   const [selectedWeapon, setSelectedWeapon] = useState<WeaponStateDBEntry | null>(null);
 
-  const resonatorContext = useCharacters();
-  const itemContext = useItems();
-  const weaponContext = useWeapons();
-  const { updatePlannerPriority, deletePlannerItem } = usePlanner();
+  const { form, setForm, clearForm } = usePlannerFormContext();
+  const { updateWeapon, weapons: dbWeapons } = useWeapons();
+  const { updateItems, items: dbItems } = useItems();
+  const { characters, updateCharacter } = useCharacters();
+  const { updatePlannerPriority, deletePlannerItem } = usePlanner(); // TODO: rename or modify
   const { data, error, loading } = useData();
   if (loading) return (<div>Loading...</div>);
   if (!data) return (<div>Data is not present</div>);
   if (error) return (<div>Error present: {error.message}</div>);
   const { weapons: apiWeapons, resonators, items } = data;
-  const { updateItems, items: dbItems } = itemContext;
-  const { updateWeapon, weapons: dbWeapons } = weaponContext;
-  const { characters, updateCharacter } = resonatorContext;
   const plannerItems = getPlannerItems(characters, resonators, dbWeapons, apiWeapons, items);
+
 
   const handleResonatorSubmit = (data: ResonatorStateDBEntry) => {
     const parsedData = resonatorSchema.parse(data);
     updateCharacter(parsedData.name, parsedData);
-    setShowEditResonatorForm(false);
+    clearForm();
   };
 
   const handleWeaponSubmit = (data: WeaponStateDBEntry) => {
     const parsedData = weaponSchema.parse(data);
     updateWeapon(parsedData.name, parsedData);
-    setShowEditWeaponForm(false);
+    clearForm();
   };
 
   const handleInventorySubmit = (data: InventoryDBSchema) => {
     updateItems(data);
-    setShowInventoryForm(false);
+    clearForm();
   }
+
+  const handleEditSelectedMaterials = (data: InventoryDBSchema) => {
+    console.log("handleEditSelectedMaterials");
+    // TODO: maybe merge it with inventory submit?
+    updateItems(data);
+    clearForm();
+  }
+
 
   const handleAddResonator = (name: string) => {
     const resonator = resonators.find(entry => entry.name === name);
@@ -75,8 +79,7 @@ export default function CharactersPage() {
       }),
       name
     });
-    setShowAddResonatorForm(false);
-    setShowEditResonatorForm(true);
+    setForm(PlannerFormType.EditResonator);
   }
 
   const handleAddWeapon = (name: string) => {
@@ -91,20 +94,19 @@ export default function CharactersPage() {
       }),
       name
     });
-    setShowAddWeaponForm(false);
-    setShowEditWeaponForm(true);
+    setForm(PlannerFormType.EditWeapon);
   }
 
   const handleEditResonator = (resonator: ResonatorStateDBEntry) => {
     console.log("handleEditResonator", resonator);
     setSelectedResonator(resonator);
-    setShowEditResonatorForm(true);
+    setForm(PlannerFormType.EditResonator);
   }
 
   const handleEditWeapon = (weapon: WeaponStateDBEntry) => {
     console.log("handleEditWeapon", weapon);
     setSelectedWeapon(weapon);
-    setShowEditWeaponForm(true);
+    setForm(PlannerFormType.EditWeapon);
   }
 
   const handleDeletePlannerItem = (plannerItem: IResonatorPlanner | IWeaponPlanner) => {
@@ -122,65 +124,80 @@ export default function CharactersPage() {
         />
       </div>
       <div className="order-1 w-full m-2 flex flex-col gap-2">
+        {/* Top Buttons */}
         <div className="flex flex-row gap-x-2 justify-center">
-          <Button onClick={() => setShowAddResonatorForm(!showAddResonatorForm)}>
-            Add character
+          <Button
+            onClick={() => setForm(PlannerFormType.AddResonator)}
+            aria-label="Add a new resonator"
+          >
+            Add resonator
           </Button>
-          <Button onClick={() => setShowAddWeaponForm(!showAddWeaponForm)}>
+          <Button
+            onClick={() => setForm(PlannerFormType.AddWeapon)}
+            aria-label="Add a new weapon"
+          >
             Add weapon
           </Button>
-          <Button onClick={() => setShowInventoryForm(!showInventoryForm)}>
+          <Button
+            onClick={() => setForm(PlannerFormType.Inventory)}
+            aria-label="Show inventory"
+          >
             Show inventory
           </Button>
-          <Button onClick={() => setShowManagePriority(!showManagePriority)}>
+          <Button
+            onClick={() => setForm(PlannerFormType.ManagePriority)}
+            aria-label="Manage Priority"
+          >
             Manage Priority
           </Button>
         </div>
-        {showEditResonatorForm && selectedResonator && (
+        {form === PlannerFormType.EditResonator && selectedResonator && (
           <ResonatorForm
             initialData={selectedResonator}
             onSubmit={handleResonatorSubmit}
-            showForm={showEditResonatorForm}
-            onClose={() => setShowEditResonatorForm(false)}
+            onClose={clearForm}
           />
         )}
-        {showEditWeaponForm && selectedWeapon && (
+        {form === PlannerFormType.EditWeapon && selectedWeapon && (
           <WeaponForm
             initialData={selectedWeapon}
             onSubmit={handleWeaponSubmit}
-            showForm={showEditWeaponForm}
-            onClose={() => setShowEditWeaponForm(false)}
+            onClose={clearForm}
           />
         )}
-        {showAddResonatorForm && (
+        {form === PlannerFormType.AddResonator && (
           <AddResonatorForm
-            showForm={showAddResonatorForm}
-            onClose={() => setShowAddResonatorForm(false)}
+            onClose={clearForm}
             onAddResonator={handleAddResonator}
           />
         )}
-        {showAddWeaponForm && (
+        {form === PlannerFormType.AddWeapon && (
           <AddWeaponForm
-            showForm={showAddWeaponForm}
-            onClose={() => setShowAddWeaponForm(false)}
+            onClose={clearForm}
             onAddWeapon={handleAddWeapon}
           />
         )}
-        {showInventoryForm && (
+        {form === PlannerFormType.ManagePriority && (
+          <ManagePriorityComponent
+            plannerItems={plannerItems}
+            onClose={clearForm}
+            onDragAndDrop={updatePlannerPriority}
+          />
+        )}
+        {form === PlannerFormType.Inventory && (
           <InventoryForm
-            showForm={showInventoryForm}
             onSubmit={handleInventorySubmit}
             initialFormData={dbItems}
             apiItems={items}
-            onClose={() => setShowInventoryForm(false)}
+            onClose={clearForm}
           />
         )}
-        {showManagePriority && (
-          <ManagePriorityComponent
-            showForm={showManagePriority}
-            plannerItems={plannerItems}
-            onClose={() => setShowManagePriority(false)}
-            onDragAndDrop={updatePlannerPriority}
+        {form === PlannerFormType.EditSelectedMaterials && (
+          <EditSelectedMaterialsForm
+            onClose={clearForm}
+            onSubmit={handleEditSelectedMaterials}
+            inventory={dbItems}
+          // selectedItem={selectedItem}
           />
         )}
         <PlannerDataComponent
@@ -195,3 +212,12 @@ export default function CharactersPage() {
     </div>
   );
 }
+
+const PlannerPage = () => {
+  return (
+    <PlannerFormProvider>
+      <CharactersPage />
+    </PlannerFormProvider>
+  );
+}
+export default PlannerPage;

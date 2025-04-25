@@ -13,12 +13,10 @@ import { weaponSchema, weaponSchemaForForm } from '@/schemas/weaponSchema';
 interface WeaponFormProps {
   initialData: WeaponStateDBEntry;
   onSubmit: (data: WeaponStateDBEntry) => void;
-  showForm: boolean;
   onClose: () => void;
 }
 export const WeaponForm = ({
   initialData,
-  showForm,
   onClose,
   onSubmit
 }: WeaponFormProps) => {
@@ -75,7 +73,7 @@ export const WeaponForm = ({
   }
 
   return (
-    <ModalComponent show={showForm} onClose={onClose}>
+    <ModalComponent show={true} onClose={onClose}>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col flex-wrap w-1/2 text-sm">
         <div className="flex flex-col gap-10">
           <div className="text-center text-xl">{initialData.name}</div>
