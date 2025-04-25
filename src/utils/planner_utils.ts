@@ -192,6 +192,11 @@ const synthesize = (
     return;
   }
 
+  if (targetItem.value! === targetItem.converted) {
+    // Item already converted, skip
+    return;
+  }
+
   const converted = Math.floor(sourceItem.owned / multiplier);
   targetItem.converted ??= 0;
   if (targetItem.value! >= converted) {
