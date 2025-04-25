@@ -34,6 +34,7 @@ export const EditSelectedMaterialsForm = ({
 
   const relatedItems = getRelatedItems(selectedItem, 8);
   const displayedItems = getAPIItems(relatedItems, apiItems).map(item => parseItemToItemCard(item));
+  const inventoryRowCount = getInventoryRowCount(selectedItem);
   const handleSubmit = () => {
     onSubmit(formData);
   }
@@ -41,6 +42,7 @@ export const EditSelectedMaterialsForm = ({
   return (
     <ModalComponent show={true} onClose={onClose}>
       <div className="flex flex-col justify-center">
+        <div className="text-center">Update selected group</div>
         <div className="flex flex-row">
           {/* <ItemCard item={selectedItem} /> */}
           {displayedItems.map(item => (
@@ -48,6 +50,7 @@ export const EditSelectedMaterialsForm = ({
               key={item.name}
               value={getInventoryEntry(item, formData).owned}
               item={item}
+              displayedExtraRows={inventoryRowCount}
               setValue={(value) => {
                 setFormData(prev => ({
                   ...prev,
@@ -101,6 +104,23 @@ const getRelatedItems = (item: IItem, worldLevel: number): string[] => {
       return Object.values(ItemResonatorEXP);
     case ItemType.WEAPON_EXP:
       return Object.values(ItemWeaponEXP);
+    default:
+      throw new Error(`Invalid item type ${itemType}`);
+  }
+}
+
+const getInventoryRowCount = (item: IItem) => {
+  const itemType = getItemType(item);
+
+  switch (itemType) {
+    case ItemType.SHELL_CREDIT: return 1;
+    case ItemType.COMMON: return 2;
+    case ItemType.WEAPON: return 2;
+    case ItemType.WEEKLY_BOSS: return 1;
+    case ItemType.ELITE_BOSS: return 1;
+    case ItemType.SPECIALTY: return 1;
+    case ItemType.RESONATOR_EXP: return 2;
+    case ItemType.WEAPON_EXP: return 2;
     default:
       throw new Error(`Invalid item type ${itemType}`);
   }

@@ -1,35 +1,51 @@
 import { IItem } from "@/app/interfaces/item"
 import ItemCard from "./items/ItemCard";
-import { ChangeEvent, useRef } from "react";
+import React, { ChangeEvent, useRef, useState } from "react";
 import { Input } from "./ui/input";
 
 interface InputInventoryItemProps {
   item: IItem;
   value: number;
   setValue: (value: number) => void;
+  displayedExtraRows?: 1 | 2; // 2 double drop is possible, 1 otherwise
 }
 export const InputInventoryItem = ({
   item,
   value,
   setValue,
+  displayedExtraRows,
 }: InputInventoryItemProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
+  const inputRefAddSub1 = useRef<HTMLInputElement>(null);
+  const inputRefAddSub2 = useRef<HTMLInputElement>(null);
+
+  const defaultValueRef = useRef(value);
+  const [valueAddSub1, setValueAddSub1] = useState(0);
+  const [valueAddSub2, setValueAddSub2] = useState(0);
+
+  console.log("RENDER", value, valueAddSub1, valueAddSub2, defaultValueRef.current);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const parsedInt = parseInt((e.target.value) as string);
-    if (!parsedInt) {
-      setValue(0);
-      return;
-    }
+    const parsedInt = Number(e.target.value);
     if (parsedInt < 0) {
       setValue(0);
       return;
     }
-    setValue(parsedInt);
+    setValue(Math.max(0, parsedInt));
+    setValueAddSub1(parsedInt - defaultValueRef.current);
+    setValueAddSub2(0);
   }
 
-  const inputOnClick = () => {
-    inputRef.current?.select();
+  const handleAddOrSubtract = (idx: 1 | 2) => (e: ChangeEvent<HTMLInputElement>) => {
+    const setter = idx === 1 ? setValueAddSub1 : setValueAddSub2;
+    const parsedInt = Number(e.target.value);
+    setter(parsedInt);
+    setValue(defaultValueRef.current + parsedInt + (idx === 1 ? valueAddSub2 : valueAddSub1));
+  };
+
+  const inputOnClick = (ref: React.RefObject<HTMLInputElement> | null) => () => {
+    if (ref === null) return;
+    ref.current?.select();
   }
 
   return (
@@ -38,12 +54,32 @@ export const InputInventoryItem = ({
       {item.name}
       <Input
         id={item.name}
-        value={value}
+        value={Math.max(0, value)}
         ref={inputRef}
         onChange={handleChange}
-        onClick={inputOnClick}
+        onClick={inputOnClick(inputRef as React.RefObject<HTMLInputElement>)}
         type="number"
       />
+      {displayedExtraRows && displayedExtraRows > 0 && (
+        <Input
+          id={`${item.name}_1`}
+          value={valueAddSub1}
+          ref={inputRefAddSub1}
+          onChange={handleAddOrSubtract(1)}
+          onClick={inputOnClick(inputRefAddSub1 as React.RefObject<HTMLInputElement>)}
+          type="number"
+        />
+      )}
+      {displayedExtraRows && displayedExtraRows > 1 && (
+        <Input
+          id={`${item.name}_2`}
+          value={valueAddSub2}
+          ref={inputRefAddSub2}
+          onChange={handleAddOrSubtract(2)}
+          onClick={inputOnClick(inputRefAddSub2 as React.RefObject<HTMLInputElement>)}
+          type="number"
+        />
+      )}
     </div>
   )
 }
