@@ -25,23 +25,25 @@ import { PlannerFormProvider } from '@/providers/PlannerFormProvider';
 import { PlannerFormType, usePlannerFormContext } from '@/context/PlannerFormContext';
 import { useState } from 'react';
 import { EditSelectedMaterialsForm } from '@/components/PlannerForm/EditMaterialsForm';
+import { Toggle } from '@/components/ui/toggle';
 
 const CharactersPage = () => {
   const [selectedResonator, setSelectedResonator] = useState<ResonatorStateDBEntry | null>(null);
   const [selectedWeapon, setSelectedWeapon] = useState<WeaponStateDBEntry | null>(null);
+  const [showInactiveItems, setShowInactiveItems] = useState(false);
 
   const { form, setForm, clearForm } = usePlannerFormContext();
   const { updateWeapon, weapons: dbWeapons } = useWeapons();
   const { updateItems, items: dbItems } = useItems();
   const { characters, updateCharacter } = useCharacters();
-  const { updatePlannerPriority, deletePlannerItem } = usePlanner(); // TODO: rename or modify
+  const { updatePlannerPriority, deletePlannerItem, toggleActive } = usePlanner(); // TODO: rename or modify
   const { data, error, loading } = useData();
   if (loading) return (<div>Loading...</div>);
   if (!data) return (<div>Data is not present</div>);
   if (error) return (<div>Error present: {error.message}</div>);
   const { weapons: apiWeapons, resonators, items } = data;
-  const plannerItems = getPlannerItems(characters, resonators, dbWeapons, apiWeapons, items);
-
+  const plannerItems = getPlannerItems(characters, resonators, dbWeapons, apiWeapons, items)
+    .filter(item => showInactiveItems ? true : item.dbData.isActive);
 
   const handleResonatorSubmit = (data: ResonatorStateDBEntry) => {
     const parsedData = resonatorSchema.parse(data);
@@ -109,6 +111,11 @@ const CharactersPage = () => {
     setForm(PlannerFormType.EditWeapon);
   }
 
+  const handleToggleActive = (plannerItem: IResonatorPlanner | IWeaponPlanner) => {
+    console.log("handleToggleActive", plannerItem);
+    toggleActive(plannerItem);
+  }
+
   const handleDeletePlannerItem = (plannerItem: IResonatorPlanner | IWeaponPlanner) => {
     console.log("handleDeletePlannerItem", plannerItem);
     deletePlannerItem(plannerItem);
@@ -150,6 +157,12 @@ const CharactersPage = () => {
           >
             Manage Priority
           </Button>
+          <Toggle
+            pressed={showInactiveItems}
+            onPressedChange={() => setShowInactiveItems(!showInactiveItems)}
+          >
+            Display inactive items
+          </Toggle>
         </div>
         {form === PlannerFormType.EditResonator && selectedResonator && (
           <ResonatorForm
@@ -206,6 +219,7 @@ const CharactersPage = () => {
           inventory={dbItems}
           onEditResonator={handleEditResonator}
           onEditWeapon={handleEditWeapon}
+          onToggleActive={handleToggleActive}
           onDelete={handleDeletePlannerItem}
         />
       </div>

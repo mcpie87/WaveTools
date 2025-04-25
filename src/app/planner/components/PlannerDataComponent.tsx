@@ -15,6 +15,7 @@ interface PlannerDataComponentProps {
   inventory: InventoryDBSchema
   onEditResonator: (resonator: ResonatorStateDBEntry) => void;
   onEditWeapon: (weapon: WeaponStateDBEntry) => void;
+  onToggleActive: (plannerItem: IResonatorPlanner | IWeaponPlanner) => void;
   onDelete: (plannerItem: IResonatorPlanner | IWeaponPlanner) => void;
 }
 export const PlannerDataComponent = ({
@@ -23,6 +24,7 @@ export const PlannerDataComponent = ({
   inventory,
   onEditResonator,
   onEditWeapon,
+  onToggleActive,
   onDelete,
 }: PlannerDataComponentProps) => {
   const handleEdit = (item: IResonatorPlanner | IWeaponPlanner) => {
@@ -70,6 +72,7 @@ export const PlannerDataComponent = ({
               itemList={item.itemList}
               onEdit={handleEdit}
               onDelete={onDelete}
+              onToggleActive={onToggleActive}
             />
           </div>
         ))

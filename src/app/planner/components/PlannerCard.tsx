@@ -4,7 +4,7 @@ import { PlannerCardCurrentDesiredComponent } from "./PlannerCardCurrentDesiredC
 import { calculateWaveplate } from "@/utils/items_utils";
 import ItemList from "@/components/items/ItemList";
 import { WaveplateComponent } from "@/components/WaveplateComponent";
-import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
+import { FaEdit, FaPowerOff, FaRegTrashAlt } from "react-icons/fa";
 import { IResonatorPlanner, IWeaponPlanner, PLANNER_TYPE } from "@/app/interfaces/planner_item";
 import { ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { IItem } from "@/app/interfaces/item";
@@ -13,12 +13,14 @@ interface PlannerCardComponentProps {
   plannerItem: IResonatorPlanner | IWeaponPlanner;
   itemList: IItem[];
   onEdit: (item: IResonatorPlanner | IWeaponPlanner, index?: number) => void;
+  onToggleActive: (item: IResonatorPlanner | IWeaponPlanner, index?: number) => void;
   onDelete: (item: IResonatorPlanner | IWeaponPlanner, index?: number) => void;
 }
 export function PlannerCardComponent({
   plannerItem,
   itemList,
   onEdit,
+  onToggleActive,
   onDelete,
 }: PlannerCardComponentProps) {
   const { dbData } = plannerItem;
@@ -41,8 +43,19 @@ export function PlannerCardComponent({
           />
         </div>
         <span className="text-2xl w-full text-center">
-          {plannerItem.name}
+          {plannerItem.name} {plannerItem.dbData.isActive ? "" : "(Inactive)"}
         </span>
+        <div className="flex space-x-4 h-full items-center m-2">
+          {/* <FaSearch /> */}
+          <FaPowerOff
+            onClick={() => onToggleActive(plannerItem)}
+            className="
+          w-10  h-10 p-2 border border-black rounded-full
+          text-white bg-gray-800
+          hover:text-black hover:bg-gray-400
+          "
+          />
+        </div>
         <div className="flex space-x-4 h-full items-center m-2">
           {/* <FaSearch /> */}
           <FaRegTrashAlt
