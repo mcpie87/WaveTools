@@ -29,8 +29,15 @@ export default PlannerFormContext;
 
 export const usePlannerFormContext = () => {
   const context = useContext(PlannerFormContext);
-  if (!context) {
-    throw new Error('usePlannerFormContext must be used within a PlannerFormProvider');
+  if (context === undefined) {
+    console.warn("usePlannerFormContext used outside PlannerFormProvider; returning fallback");
+    return {
+      selectedItem: null,
+      form: null,
+      setSelectedItem: () => console.warn("setSelectedItem called without provider"),
+      setForm: () => console.warn("setForm called without provider"),
+      clearForm: () => console.warn("clearForm called without provider"),
+    };
   }
   return context;
 };

@@ -63,7 +63,7 @@ export const PlannerSummaryComponent = ({
         <div key={idx} className="flex flex-col justify-center">
           <div className="text-center">{materials[0] as string}</div>
           <div className="flex flex-wrap justify-center">
-            <ItemList data={materials[1] as IItem[]} />
+            <ItemList data={materials[1] as IItem[]} clickable={true} />
           </div>
         </div>
       ))}

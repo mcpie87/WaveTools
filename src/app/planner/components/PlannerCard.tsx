@@ -98,7 +98,7 @@ export function PlannerCardComponent({
           )}
         </div>
       </div>
-      <ItemList data={itemList} />
+      <ItemList data={itemList} clickable={true} />
     </div >
   )
 }
