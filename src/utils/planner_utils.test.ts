@@ -2,7 +2,7 @@ import { IItem } from "@/app/interfaces/item";
 import { ItemResonatorEXP, ItemType, ItemWeapon } from "@/app/interfaces/item_types";
 import { inventoryForResonatorExpConversion, inventoryForSynthesis } from "@/test/__mocks__/inventoryMocks";
 import { itemListForResonatorExpConversion, itemListForSynthesis } from "@/test/__mocks__/itemMocks";
-import { applyEXPConversion, applySynthesizerOnItems } from "./planner_utils";
+import { applyEXPConversion, applySynthesizerOnItems, setItemsBasedOnInventory } from "./planner_utils";
 import { convertItemListToItemMap } from "./items_utils";
 import { InventoryDBSchema } from "@/types/inventoryTypes";
 
@@ -604,6 +604,55 @@ describe('planner utils test', () => {
       expect(inventory[expItems[1].name].owned).toBe(1); // ceil
       expect(inventory[expItems[2].name].owned).toBe(1); // ceil
       expect(inventory[expItems[3].name].owned).toBe(0);
+    });
+  });
+
+  describe('inventory subtraction combined with synthesis', () => {
+    let inventory: InventoryDBSchema;
+    let itemMap: Map<string, IItem>;
+    let swordItems: IItem[];
+
+    beforeEach(() => {
+      inventory = JSON.parse(JSON.stringify(inventoryForSynthesis));
+      itemMap = new Map<string, IItem>(
+        convertItemListToItemMap(JSON.parse(JSON.stringify(itemListForSynthesis)))
+      );
+      swordItems = [
+        ItemWeapon.SWORD_RARITY_2,
+        ItemWeapon.SWORD_RARITY_3,
+        ItemWeapon.SWORD_RARITY_4,
+        ItemWeapon.SWORD_RARITY_5
+      ].map(e => itemMap.get(e)!);
+
+      for (const swordItem of swordItems) {
+        swordItem.value = 0;
+        swordItem.converted = undefined;
+      }
+    });
+
+    test('synthesis - real world test (convert 2/3/4 to 3/4/5)', () => {
+      swordItems[0].value = 0; // assumes that subtraction was already done
+      swordItems[1].value = 6; // 3*3
+      swordItems[2].value = 20; // 0*9
+      swordItems[3].value = 47; // 1*27
+      inventory[swordItems[0].name].owned = 402;
+      inventory[swordItems[1].name].owned = 180;
+      inventory[swordItems[2].name].owned = 47;
+      inventory[swordItems[3].name].owned = 0;
+
+      setItemsBasedOnInventory(itemMap, inventory);
+      // Values should be subtracted if needed
+      expect(swordItems[0].value).toBe(0); // no need
+      expect(swordItems[1].value).toBe(0); // Math.max(0, 6 - 180)
+      expect(swordItems[2].value).toBe(0); // Math.max(0, 20 - 47)
+      expect(swordItems[3].value).toBe(47); // Math.max(0, 47 - 0)
+
+      // Checking conversions
+      expect(swordItems[0].converted).toBe(undefined); // should be untouched
+      expect(swordItems[1].converted).toBe(undefined); // should be untouched
+      expect(swordItems[2].converted).toBe(undefined); // should be untouched
+      expect(swordItems[3].converted).toBe(42); // (47-20) // 3 + (180-6) // 9 + 402 // 27
+      // expect(inventory[swordItems[0].name].owned).toBe(19); // 28 - 9 = 19
     });
   });
 });

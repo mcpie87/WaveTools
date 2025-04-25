@@ -120,8 +120,7 @@ export const applyEXPConversion = (
 
   const inventoryItems = expItems.map((name) => inventory[name]);
   if (inventoryItems.some(e => !e)) {
-    // Not enough inventory
-    console.warn("Inventory not defined for EXP conversion");
+    // Inventory does not contain properly defined exp items
     return itemMap;
   }
 
@@ -194,14 +193,14 @@ const synthesize = (
   }
 
   const converted = Math.floor(sourceItem.owned / multiplier);
-
+  targetItem.converted ??= 0;
   if (targetItem.value! >= converted) {
     // We don't have enough
-    targetItem.converted = converted;
+    targetItem.converted += converted;
     sourceItem.owned -= multiplier * converted;
   } else {
     // We have enough, remove .value from inventory
-    targetItem.converted = targetItem.value;
+    targetItem.converted += targetItem.value!;
     sourceItem.owned -= targetItem.value! * multiplier;
   }
 
