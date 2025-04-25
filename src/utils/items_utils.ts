@@ -24,6 +24,7 @@ export function convertCostListToItemList(costList: IItemEntry[], apiItems: IAPI
     }
     const parsedItem = parseItemToItemCard(apiItem);
     parsedItem.value = item.value;
+    parsedItem.needed = item.value;
     results.push(parsedItem);
   }
   return results;
@@ -43,6 +44,7 @@ export function convertRequiredItemMapToItemList(
     }
     const parsedItem = parseItemToItemCard(apiItem);
     parsedItem.value = matValue;
+    parsedItem.needed = matValue;
     results.push(parsedItem);
   }
 

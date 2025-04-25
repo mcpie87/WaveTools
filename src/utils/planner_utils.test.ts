@@ -660,10 +660,10 @@ describe('planner utils test', () => {
     });
 
     test('synthesis - 2nd real world test (convert 2/3/4 to 3/4/5)', () => {
-      swordItems[0].value = 25; // assumes that subtraction was already done
-      swordItems[1].value = 28; // 3*3
-      swordItems[2].value = 88; // 0*9
-      swordItems[3].value = 157; // 1*27
+      swordItems[0].value = 25;
+      swordItems[1].value = 28;
+      swordItems[2].value = 88;
+      swordItems[3].value = 157;
       inventory[swordItems[0].name].owned = 402;
       inventory[swordItems[1].name].owned = 180;
       inventory[swordItems[2].name].owned = 47;
