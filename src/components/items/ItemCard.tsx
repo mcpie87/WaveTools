@@ -34,7 +34,7 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
   }
 
   return (
-    <div className="flex flex-col bg-base-200 rounded-md relative">
+    <div className="flex flex-col bg-base-100 rounded-md relative overflow-hidden">
       {/* Image with colors */}
       <div
         className={classNames(
@@ -54,7 +54,7 @@ export default function ItemCard({ item, width, height, overlay }: ItemCardProps
         {/* Rarity color fade */}
         <div
           className={classNames(
-            "rounded-md absolute inset-0 bg-gradient-to-t via-transparent via-50% to-transparent fadeIn",
+            "absolute inset-0 bg-gradient-to-t via-transparent via-50% to-transparent fadeIn",
             { "from-yellow-300/50": rarity === 5 },
             { "from-purple-600/50": rarity === 4 },
             { "from-blue-500/50": rarity === 3 },
