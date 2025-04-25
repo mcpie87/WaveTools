@@ -690,5 +690,37 @@ describe('planner utils test', () => {
       expect(inventory[swordItems[2].name].owned).toBe(0);
       expect(inventory[swordItems[3].name].owned).toBe(0);
     });
+
+    test('synthesis - 3nd real world test (convert 2/3/4 to 3/4/5)', () => {
+      swordItems[0].value = 0;
+      swordItems[1].value = 0;
+      swordItems[2].value = 20;
+      swordItems[3].value = 47;
+      inventory[swordItems[0].name].owned = 440;
+      inventory[swordItems[1].name].owned = 228;
+      inventory[swordItems[2].name].owned = 57;
+      inventory[swordItems[3].name].owned = 1;
+
+      setItemsBasedOnInventory(itemMap, inventory);
+
+      // Values should be subtracted if needed
+      expect(swordItems[0].value).toBe(0);
+      expect(swordItems[1].value).toBe(0);
+      expect(swordItems[2].value).toBe(0); // Math.max(0, 20 - 57) = 0
+      expect(swordItems[3].value).toBe(46); // Math.max(0, 47 - 1) = 46
+      // Stock after subtraction: [440, 228, 37, 0],
+
+      // Checking conversions
+      expect(swordItems[0].converted).toBe(undefined); // should be untouched
+      expect(swordItems[1].converted).toBe(undefined); // should be untouched
+      expect(swordItems[2].converted).toBe(undefined); // should be untouched
+      expect(swordItems[3].converted).toBe(46); // we have enough for 53
+
+      // Stock after conversion to 4* and 5*: [170, 3, 1, 0],
+      expect(inventory[swordItems[0].name].owned).toBe(197);
+      expect(inventory[swordItems[1].name].owned).toBe(3);
+      expect(inventory[swordItems[2].name].owned).toBe(1);
+      expect(inventory[swordItems[3].name].owned).toBe(0);
+    });
   });
 });

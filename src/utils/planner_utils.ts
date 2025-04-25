@@ -197,16 +197,18 @@ const synthesize = (
     return;
   }
 
-  const converted = Math.floor(sourceItem.owned / multiplier);
+  const maxConverted = Math.floor(sourceItem.owned / multiplier);
   targetItem.converted ??= 0;
-  if (targetItem.value! >= converted) {
+
+  if (targetItem.value! - targetItem.converted! >= maxConverted) {
     // We don't have enough
-    targetItem.converted += converted;
-    sourceItem.owned -= multiplier * converted;
+    targetItem.converted += maxConverted;
+    sourceItem.owned -= multiplier * maxConverted;
   } else {
     // We have enough, remove .value from inventory
-    targetItem.converted += targetItem.value!;
-    sourceItem.owned -= targetItem.value! * multiplier;
+    const converted = targetItem.value! - targetItem.converted!;
+    targetItem.converted += converted;
+    sourceItem.owned -= converted * multiplier;
   }
 
   if (targetItem.value! === targetItem.converted!) {
