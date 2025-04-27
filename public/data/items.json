@@ -9396,7 +9396,7 @@
     "bg_description": "ItemInfo_50000178_BgDescription",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_023_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_023_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_023_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_023_UI.png",
     "rarity": 2
   },
   {
@@ -9406,7 +9406,7 @@
     "bg_description": "ItemInfo_50000179_BgDescription",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_024_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_024_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_024_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_024_UI.png",
     "rarity": 3
   },
   {
@@ -9416,7 +9416,7 @@
     "bg_description": "ItemInfo_50000180_BgDescription",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_025_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_025_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_025_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_025_UI.png",
     "rarity": 4
   },
   {
@@ -9426,7 +9426,7 @@
     "bg_description": "ItemInfo_50000181_BgDescription",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_026_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_026_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_026_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_026_UI.png",
     "rarity": 5
   },
   {
@@ -9821,7 +9821,7 @@
   },
   {
     "id": 51017,
-    "name": "Vault's Tide Selection",
+    "name": "Vault's Monthly Aid",
     "attributes_description": "ItemInfo_51006_AttributesDescription",
     "bg_description": "ItemInfo_51006_BgDescription",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
@@ -10104,9 +10104,9 @@
     "name": "Molded Echo - Crimson Curtain Call I",
     "attributes_description": "ItemInfo_50001105_AttributesDescription",
     "bg_description": "ItemInfo_50001105_BgDescription",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shzxlb_02_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shzxlb_02_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shzxlb_02_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_hkt_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_hkt_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_hkt_01_UI.png",
     "rarity": 4
   },
   {
@@ -10114,9 +10114,9 @@
     "name": "Molded Echo - Crimson Curtain Call II",
     "attributes_description": "ItemInfo_50001106_AttributesDescription",
     "bg_description": "ItemInfo_50001106_BgDescription",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shzxlb_02_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shzxlb_02_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shzxlb_02_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_hkt_02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_hkt_02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_hkt_02_UI.png",
     "rarity": 4
   },
   {
@@ -10124,9 +10124,9 @@
     "name": "Molded Echo - Crimson Curtain Call I",
     "attributes_description": "ItemInfo_50001107_AttributesDescription",
     "bg_description": "ItemInfo_50001107_BgDescription",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shzxlb_02_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shzxlb_02_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shzxlb_02_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_hkt_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_hkt_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_hkt_01_UI.png",
     "rarity": 5
   },
   {
@@ -10134,9 +10134,9 @@
     "name": "Molded Echo - Crimson Curtain Call II",
     "attributes_description": "ItemInfo_50001108_AttributesDescription",
     "bg_description": "ItemInfo_50001108_BgDescription",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shzxlb_02_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shzxlb_02_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shzxlb_02_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_hkt_02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_hkt_02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_hkt_02_UI.png",
     "rarity": 5
   },
   {
@@ -11330,6 +11330,26 @@
     "rarity": 4
   },
   {
+    "id": 71600001,
+    "name": "A Manuscript of Golden Anthem",
+    "attributes_description": "ItemInfo_71600001_AttributesDescription",
+    "bg_description": "ItemInfo_71600001_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Xia03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Xia03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Xia03_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71600002,
+    "name": "A Lithograph With the Sentinel's True Form",
+    "attributes_description": "ItemInfo_71600002_AttributesDescription",
+    "bg_description": "ItemInfo_71600002_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Xia02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Xia02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Xia02_UI.png",
+    "rarity": 5
+  },
+  {
     "id": 70050056,
     "name": "\"Past\"",
     "attributes_description": "ItemInfo_70050056_AttributesDescription",
@@ -11560,6 +11580,16 @@
     "rarity": 4
   },
   {
+    "id": 43,
+    "name": "Popularity",
+    "attributes_description": "ItemInfo_43_AttributesDescription",
+    "bg_description": "ItemInfo_43_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Racehorse01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Racehorse01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Racehorse01_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 71500026,
     "name": "Reveler Captain's Seal",
     "attributes_description": "ItemInfo_71500018_AttributesDescription",
@@ -11611,12 +11641,12 @@
   },
   {
     "id": 71500031,
-    "name": "The Ambition that Lies Hidden",
-    "attributes_description": "ItemInfo_71500021_AttributesDescription",
-    "bg_description": "ItemInfo_71500021_BgDescription",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_23.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_23.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_23.png",
+    "name": "The Wave that Cleanses the World",
+    "attributes_description": "ItemInfo_71500031_AttributesDescription",
+    "bg_description": "ItemInfo_71500031_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_28.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_28.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_28.png",
     "rarity": 5
   },
   {
@@ -11648,6 +11678,26 @@
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_03_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_03_UI.png",
     "rarity": 5
+  },
+  {
+    "id": 36000015,
+    "name": "Modifier",
+    "attributes_description": "ItemInfo_36000015_AttributesDescription",
+    "bg_description": "ItemInfo_36000015_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_18_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_18_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_18_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 44,
+    "name": "Magic Dice",
+    "attributes_description": "ItemInfo_44_AttributesDescription",
+    "bg_description": "ItemInfo_44_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Monopoly01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Monopoly01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Monopoly01_UI.png",
+    "rarity": 4
   },
   {
     "id": 80130001,
@@ -11720,6 +11770,236 @@
     "rarity": 4
   },
   {
+    "id": 80200001,
+    "name": "Special Cube Cookie",
+    "attributes_description": "ItemInfo_80200001_AttributesDescription",
+    "bg_description": "ItemInfo_80200001_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Xia04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Xia04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Xia04_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80200002,
+    "name": "1st Anniversary Commemorative Coin",
+    "attributes_description": "ItemInfo_80200002_AttributesDescription",
+    "bg_description": "ItemInfo_80200002_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Xia06_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Xia06_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Xia06_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80200003,
+    "name": "Forsaken Key",
+    "attributes_description": "ItemInfo_80200003_AttributesDescription",
+    "bg_description": "ItemInfo_80200003_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Rogue01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Rogue01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Rogue01_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80110501,
+    "name": "The Second Departure",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110502,
+    "name": "Behind Gateway Thirty Three",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110503,
+    "name": "Inside Pipe Sixty Six",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110504,
+    "name": "Drowning Five Times Over",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110505,
+    "name": "Seven Pools of Evil",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110506,
+    "name": "Risen After Eight Burials",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110507,
+    "name": "Beyond Ruin Nighty Nine",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110508,
+    "name": "Phantoms of Ten Towers",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110509,
+    "name": "Never-ending Night",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110520,
+    "name": "Heavy is the Desire",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110424,
+    "name": "Eversinging Song",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110425,
+    "name": "When the Bird Glides Across the Sky",
+    "attributes_description": "ItemInfo_80110101_AttributesDescription",
+    "bg_description": "ItemInfo_80110101_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80004001,
+    "name": "Supermassive Birthday Cake (2025)",
+    "attributes_description": "ItemInfo_80004001_AttributesDescription",
+    "bg_description": "ItemInfo_80004001_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_152_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_152_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_152_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 45,
+    "name": "Adventure Log",
+    "attributes_description": "ItemInfo_25_AttributesDescription",
+    "bg_description": "ItemInfo_25_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_03_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050064,
+    "name": "\"Blazing Claw\"",
+    "attributes_description": "ItemInfo_70050064_AttributesDescription",
+    "bg_description": "ItemInfo_70050064_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Xia05_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Xia05_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Xia05_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 10001507,
+    "name": "Zani's Waveband",
+    "attributes_description": "ItemInfo_10001507_AttributesDescription",
+    "bg_description": "ItemInfo_10001407_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1507_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup160/T_IconRup160_Part_1507_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup80/T_IconRup80_Part_1507_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 10001407,
+    "name": "Ciaccona's Waveband",
+    "attributes_description": "ItemInfo_10001407_AttributesDescription",
+    "bg_description": "ItemInfo_10001507_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1407_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup160/T_IconRup160_Part_1407_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup80/T_IconRup80_Part_1407_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 46,
+    "name": "Nightmarket Token",
+    "attributes_description": "ItemInfo_46_AttributesDescription",
+    "bg_description": "ItemInfo_46_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_AnniversaryStore_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_AnniversaryStore_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_AnniversaryStore_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80004002,
+    "name": "[The Stars that Shine For You]",
+    "attributes_description": "ItemInfo_80004002_AttributesDescription",
+    "bg_description": "ItemInfo_80004002_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_153_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_153_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_153_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80004003,
+    "name": "Happie Birthdaie!",
+    "attributes_description": "ItemInfo_80004003_AttributesDescription",
+    "bg_description": "ItemInfo_80004003_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 80130003,
     "name": "Darkness Repeller",
     "attributes_description": "EpithetDesc_Tower_2",
@@ -11758,5 +12038,725 @@
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_02_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_02_UI.png",
     "rarity": 4
+  },
+  {
+    "id": 80200004,
+    "name": "Unanalyzed Awakening Module III",
+    "attributes_description": "ItemInfo_80200004_AttributesDescription",
+    "bg_description": "ItemInfo_80200004_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDBlue.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDBlue.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDBlue.png",
+    "rarity": 1
+  },
+  {
+    "id": 50000106,
+    "name": "Podcast Basic Supply Pack",
+    "attributes_description": "ItemInfo_50000106_AttributesDescription",
+    "bg_description": "ItemInfo_50000106_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass01_UI.png",
+    "rarity": 2
+  },
+  {
+    "id": 50000107,
+    "name": "Podcast Medium Supply Pack",
+    "attributes_description": "ItemInfo_50000107_AttributesDescription",
+    "bg_description": "ItemInfo_50000107_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass02_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 50000108,
+    "name": "Podcast Advanced Supply Pack",
+    "attributes_description": "ItemInfo_50000108_AttributesDescription",
+    "bg_description": "ItemInfo_50000106_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass03_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50000109,
+    "name": "Podcast Premium Supply Pack",
+    "attributes_description": "ItemInfo_50000109_AttributesDescription",
+    "bg_description": "ItemInfo_50000109_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500034,
+    "name": "Reveler Captain's Seal",
+    "attributes_description": "ItemInfo_71500018_AttributesDescription",
+    "bg_description": "ItemInfo_71500018_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_18.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500035,
+    "name": "The Sails that Display Endeavor",
+    "attributes_description": "ItemInfo_71500020_AttributesDescription",
+    "bg_description": "ItemInfo_71500020_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_21.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_21.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_21.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500036,
+    "name": "The Stigma that Signifies Vainglory",
+    "attributes_description": "ItemInfo_71500036_AttributesDescription",
+    "bg_description": "ItemInfo_71500036_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_31.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_31.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_31.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500037,
+    "name": "A Breeze from Faraway Shores",
+    "attributes_description": "ItemInfo_71500037_AttributesDescription",
+    "bg_description": "ItemInfo_71500037_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_30.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_30.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_30.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000110,
+    "name": "Weekly Challenge Supply Pack",
+    "attributes_description": "ItemInfo_50000110_AttributesDescription",
+    "bg_description": "ItemInfo_50000110_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_012_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_012_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_012_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 51026,
+    "name": "Reunion's Tidal Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_052_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_052_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_052_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51027,
+    "name": "Reunion's Tidal Collection",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_053_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_053_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_053_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51028,
+    "name": "Reunion's EXP Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_054_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_054_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_054_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51029,
+    "name": "Reunion's Forgery Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_055_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_055_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_055_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51031,
+    "name": "Reunion's Shell Credit Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_051_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_051_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_051_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 52005,
+    "name": "Returnee's Radiant Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_057_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_057_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_057_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 52006,
+    "name": "Returnee's Radiant Collection",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_058_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_058_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_058_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 52007,
+    "name": "Returnee's Solvent Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_057_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_060_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_060_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 52008,
+    "name": "Returnee's Shell Credit Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_056_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_056_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_056_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 52009,
+    "name": "Returnee's Forgery Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_059_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_059_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_059_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80200005,
+    "name": "Unanalyzed Awakening Module IV",
+    "attributes_description": "ItemInfo_80200005_AttributesDescription",
+    "bg_description": "ItemInfo_80200005_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDPurple.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDPurple.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDPurple.png",
+    "rarity": 1
+  },
+  {
+    "id": 80200006,
+    "name": "Unanalyzed Awakening Module V",
+    "attributes_description": "ItemInfo_80200006_AttributesDescription",
+    "bg_description": "ItemInfo_80200006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDGold.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDGold.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDGold.png",
+    "rarity": 1
+  },
+  {
+    "id": 80200007,
+    "name": "Unanalyzed Awakening Module VI",
+    "attributes_description": "ItemInfo_80200007_AttributesDescription",
+    "bg_description": "ItemInfo_80200007_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDColour.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDColour.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDColour.png",
+    "rarity": 1
+  },
+  {
+    "id": 80001051,
+    "name": "Pasta Bocadillo",
+    "attributes_description": "ItemInfo_80001051_AttributesDescription",
+    "bg_description": "ItemInfo_80001051_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_075_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_075_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_075_UI.png",
+    "rarity": 2
+  },
+  {
+    "id": 80001044,
+    "name": "One-Pot Pasta",
+    "attributes_description": "ItemInfo_80001044_AttributesDescription",
+    "bg_description": "ItemInfo_80001044_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_076_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_076_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_076_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50020,
+    "name": "Outift Voucher - 300 Lunites",
+    "attributes_description": "ItemInfo_50020_AttributesDescription",
+    "bg_description": "ItemInfo_50020_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Discount01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Discount01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Discount01_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 44010033,
+    "name": "Phantom: Nimbus Wraith",
+    "attributes_description": "PhantomItem_60000020_AttributesDescription",
+    "bg_description": "InpuBoxText_empty",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_31044_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_31044_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_31044_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 44010034,
+    "name": "Phantom: Crownless",
+    "attributes_description": "PhantomItem_60000020_AttributesDescription",
+    "bg_description": "InpuBoxText_empty",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_9991_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_9991_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_9991_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 44010035,
+    "name": "Phantom: Nightmare Crownless",
+    "attributes_description": "PhantomItem_60000020_AttributesDescription",
+    "bg_description": "InpuBoxText_empty",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_33018_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_33018_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_33018_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 44010036,
+    "name": "Phantom: Chest Mimic",
+    "attributes_description": "PhantomItem_60000020_AttributesDescription",
+    "bg_description": "InpuBoxText_empty",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_31048_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_31048_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_31048_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70130016,
+    "name": "Picture of the First Cubie Derby",
+    "attributes_description": "ItemInfo_70130016_AttributesDescription",
+    "bg_description": "ItemInfo_70130016_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Racehorse02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Racehorse02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Racehorse02_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80200008,
+    "name": "Unanalyzed Awakening Module I",
+    "attributes_description": "ItemInfo_80200008_AttributesDescription",
+    "bg_description": "ItemInfo_80200008_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDWhite.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDWhite.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDWhite.png",
+    "rarity": 1
+  },
+  {
+    "id": 80200009,
+    "name": "Unanalyzed Awakening Module II",
+    "attributes_description": "ItemInfo_80200009_AttributesDescription",
+    "bg_description": "ItemInfo_80200009_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDGreen.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDGreen.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDGreen.png",
+    "rarity": 1
+  },
+  {
+    "id": 80200010,
+    "name": "Unanalyzed Awakening Module",
+    "attributes_description": "ItemInfo_80200010_AttributesDescription",
+    "bg_description": "ItemInfo_80200007_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDRed.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDRed.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/ImgChipQuality/T_ChipQualityDRed.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130007,
+    "name": "Astral Modulator",
+    "attributes_description": "EpithetDesc_Role_1",
+    "bg_description": "EpithetSourcebriefDesc_Role_1",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130008,
+    "name": "Lark Among Clouds",
+    "attributes_description": "EpithetDesc_Role_2",
+    "bg_description": "EpithetSourcebriefDesc_Role_2",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130009,
+    "name": "Hero Play Hero",
+    "attributes_description": "EpithetDesc_Role_3",
+    "bg_description": "EpithetSourcebriefDesc_Role_3",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130010,
+    "name": "Bloom in Snow",
+    "attributes_description": "EpithetDesc_Role_4",
+    "bg_description": "EpithetSourcebriefDesc_Role_4",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130011,
+    "name": "Crimson Jadeite",
+    "attributes_description": "EpithetDesc_Role_5",
+    "bg_description": "EpithetSourcebriefDesc_Role_5",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130012,
+    "name": "Unhindered Perception",
+    "attributes_description": "EpithetDesc_Role_6",
+    "bg_description": "EpithetSourcebriefDesc_Role_6",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130013,
+    "name": "Leisurely Observer",
+    "attributes_description": "EpithetDesc_Role_7",
+    "bg_description": "EpithetSourcebriefDesc_Role_7",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130014,
+    "name": "Flaming Intellect",
+    "attributes_description": "EpithetDesc_Role_8",
+    "bg_description": "EpithetSourcebriefDesc_Role_8",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130015,
+    "name": "Grand Master",
+    "attributes_description": "EpithetDesc_Role_9",
+    "bg_description": "EpithetSourcebriefDesc_Role_9",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130016,
+    "name": "Market Maker",
+    "attributes_description": "EpithetDesc_Role_10",
+    "bg_description": "EpithetSourcebriefDesc_Role_10",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130017,
+    "name": "Emergent Seedling",
+    "attributes_description": "EpithetDesc_Role_11",
+    "bg_description": "EpithetSourcebriefDesc_Role_11",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130018,
+    "name": "Wooly Warrior",
+    "attributes_description": "EpithetDesc_Role_12",
+    "bg_description": "EpithetSourcebriefDesc_Role_12",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130019,
+    "name": "Fangs in Shadow",
+    "attributes_description": "EpithetDesc_Role_13",
+    "bg_description": "EpithetSourcebriefDesc_Role_13",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130020,
+    "name": "Lion Dancer",
+    "attributes_description": "EpithetDesc_Role_14",
+    "bg_description": "EpithetSourcebriefDesc_Role_14",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130021,
+    "name": "Heart of Clear Mirror",
+    "attributes_description": "EpithetDesc_Role_15",
+    "bg_description": "EpithetSourcebriefDesc_Role_15",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130022,
+    "name": "Loong with the Wind",
+    "attributes_description": "EpithetDesc_Role_16",
+    "bg_description": "EpithetSourcebriefDesc_Role_16",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130023,
+    "name": "Silent Judge",
+    "attributes_description": "EpithetDesc_Role_17",
+    "bg_description": "EpithetSourcebriefDesc_Role_17",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130024,
+    "name": "Chrono Thawbringer",
+    "attributes_description": "EpithetDesc_Role_18",
+    "bg_description": "EpithetSourcebriefDesc_Role_18",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130025,
+    "name": "Eternal Fire",
+    "attributes_description": "EpithetDesc_Role_19",
+    "bg_description": "EpithetSourcebriefDesc_Role_19",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130026,
+    "name": "Vision of Truth",
+    "attributes_description": "EpithetDesc_Role_20",
+    "bg_description": "EpithetSourcebriefDesc_Role_20",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130027,
+    "name": "Ink Dyed Nature",
+    "attributes_description": "EpithetDesc_Role_21",
+    "bg_description": "EpithetSourcebriefDesc_Role_21",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130028,
+    "name": "Stellar Roamer",
+    "attributes_description": "EpithetDesc_Role_22",
+    "bg_description": "EpithetSourcebriefDesc_Role_22",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130029,
+    "name": "Keen Conservator",
+    "attributes_description": "EpithetDesc_Role_23",
+    "bg_description": "EpithetSourcebriefDesc_Role_23",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130030,
+    "name": "Camellya Rouge",
+    "attributes_description": "EpithetDesc_Role_24",
+    "bg_description": "EpithetSourcebriefDesc_Role_24",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130031,
+    "name": "Courier of Dawn",
+    "attributes_description": "EpithetDesc_Role_25",
+    "bg_description": "EpithetSourcebriefDesc_Role_25",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130032,
+    "name": "Opal",
+    "attributes_description": "EpithetDesc_Role_26",
+    "bg_description": "EpithetSourcebriefDesc_Role_26",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130033,
+    "name": "Dancer in a Box",
+    "attributes_description": "EpithetDesc_Role_27",
+    "bg_description": "EpithetSourcebriefDesc_Role_27",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130034,
+    "name": "The Merry Fool",
+    "attributes_description": "EpithetDesc_Role_28",
+    "bg_description": "EpithetSourcebriefDesc_Role_28",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130035,
+    "name": "Envoy of Light",
+    "attributes_description": "EpithetDesc_Role_29",
+    "bg_description": "EpithetSourcebriefDesc_Role_29",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130036,
+    "name": "Diver of Dreams",
+    "attributes_description": "EpithetDesc_Role_30",
+    "bg_description": "EpithetSourcebriefDesc_Role_30",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130037,
+    "name": "Ode to Long Summer",
+    "attributes_description": "EpithetDesc_Role_31",
+    "bg_description": "EpithetSourcebriefDesc_Role_31",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130038,
+    "name": "Simple Corpo",
+    "attributes_description": "EpithetDesc_Role_32",
+    "bg_description": "EpithetSourcebriefDesc_Role_32",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130039,
+    "name": "Havoc Reaper",
+    "attributes_description": "EpithetDesc_Role_33",
+    "bg_description": "EpithetSourcebriefDesc_Role_33",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130040,
+    "name": "The Vanguard Gale",
+    "attributes_description": "EpithetDesc_Role_34",
+    "bg_description": "EpithetSourcebriefDesc_Role_34",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 52010,
+    "name": "Returnee's Forgery Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000203,
+    "name": "Pioneer Podcast Supply Pack",
+    "attributes_description": "ItemInfo_50000203_AttributesDescription",
+    "bg_description": "ItemInfo_50000164_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_003_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_003_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_003_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71600003,
+    "name": "Verses and Rhythms",
+    "attributes_description": "ItemInfo_71600003_AttributesDescription",
+    "bg_description": "ItemInfo_71600003_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Xiakong01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Xiakong01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Xiakong01_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51030,
+    "name": "Reunion's Sealed Tube Aid",
+    "attributes_description": "ItemInfo_51006_AttributesDescription",
+    "bg_description": "ItemInfo_51006_BgDescription",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_061_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_061_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_051_UI.png",
+    "rarity": 5
   }
 ]

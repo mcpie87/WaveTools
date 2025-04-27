@@ -1,0 +1,3865 @@
+[
+  {
+    "id": 7,
+    "type": null,
+    "name": "NO CONTENT",
+    "currency": [
+      3
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 5,
+        "name": "Waveplate",
+        "value": [
+          {
+            "id": 10800,
+            "name": "Crystal Solvent",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Waveplate",
+        "value": [
+          {
+            "id": 6,
+            "name": "Waveplate Crystal",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "type": null,
+    "name": "Weapon Shop",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 41100011,
+        "name": "LF Whisperin Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 41100021,
+        "name": "LF Howler Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 41100031,
+        "name": "Crude Ring",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 41100012,
+        "name": "MF Whisperin Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 41100022,
+        "name": "MF Howler Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 41100032,
+        "name": "Basic Ring",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 43020011,
+        "name": "Inert Metallic Drip",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43020021,
+        "name": "Impure Phlogiston",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43020031,
+        "name": "Lento Helix",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43020041,
+        "name": "Waveworn Residue 210",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43020051,
+        "name": "Cadence Seed",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 21010011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21020011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21030011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21040011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21050011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21010012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21020012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21030012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21040012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21050012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "type": null,
+    "name": "Shifang Pharmacy",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 42100017,
+        "name": "Basic Nutrient Block",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42100013,
+        "name": "Basic Revival Inhaler",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42300060,
+        "name": "Pecok Flower",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42300070,
+        "name": "Belle Poppy",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42300090,
+        "name": "Wintry Bell",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42300030,
+        "name": "Iris",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42300080,
+        "name": "Coriolus",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42300040,
+        "name": "Terraspawn Fungus",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42300050,
+        "name": "Lanternberry",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42310010,
+        "name": "Pearl Leaf",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42310020,
+        "name": "Dewvetch",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42310030,
+        "name": "Noctemint",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42310040,
+        "name": "Honeysuckle",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42310050,
+        "name": "Perilla",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42310060,
+        "name": "Angelica",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42310070,
+        "name": "Lemongrass",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42310080,
+        "name": "Erodorchid",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42300010,
+        "name": "Lotus Seeds",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42310200,
+        "name": "Pavo Plum",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42310210,
+        "name": "Loong's Pearl",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42310220,
+        "name": "Silver Lotus",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80021002,
+        "name": "Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 42300100,
+        "name": "Violet Coral",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "type": null,
+    "name": "Souvenir Store",
+    "currency": [
+      44010025
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 50001,
+        "name": "Lustrous Tide",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 43010003,
+        "name": "Advanced Resonance Potion",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "id": 43020003,
+        "name": "Advanced Energy Core",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "id": 36000003,
+        "name": "Advanced Sealed Tube",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "id": 36000014,
+        "name": "Premium Tuner",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": 80010002,
+        "name": "Perilla Salad Recipe",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 80010017,
+        "name": "Aureate Fried Rice Recipe",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 80010005,
+        "name": "Food Ration Bar Recipe",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 80010013,
+        "name": "Edodes Recipe",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 80010032,
+        "name": "A recipe that details how to make Happiness Tea.",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 80010023,
+        "name": "Caltrop Soup Recipe",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "id": 43020011,
+        "name": "Inert Metallic Drip",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 43020021,
+        "name": "Impure Phlogiston",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 43020041,
+        "name": "Waveworn Residue 210",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 43020031,
+        "name": "Lento Helix",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 43020051,
+        "name": "Cadence Seed",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "type": null,
+    "name": "Mahe's Grocery",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 42400120,
+        "name": "Fish",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 42600010,
+        "name": "Bird Egg",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 42310060,
+        "name": "Angelica",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050004,
+        "name": "Tea",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050006,
+        "name": "Rice",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050007,
+        "name": "Kudzu Root",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050009,
+        "name": "Beans",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80050010,
+        "name": "Vinegar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 80020000,
+        "name": "Hot Pot Base",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4000
+          }
+        ]
+      },
+      {
+        "id": 80020001,
+        "name": "Clear Soup",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4000
+          }
+        ]
+      },
+      {
+        "id": 80020002,
+        "name": "Braising Sauce",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80020003,
+        "name": "Sweet and Sour Sauce",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80020004,
+        "name": "Tofu",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80021006,
+        "name": "Premium Incense Oil",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "id": 80021007,
+        "name": "Premium Gold Incense Oil",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "type": null,
+    "name": "Panhua's Restaurant",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000000,
+        "name": "Jinzhou Skewers",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000001,
+        "name": "Stuffed Flatbread",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000002,
+        "name": "Perilla Salad",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000003,
+        "name": "Spicy Pulled Chicken",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000004,
+        "name": "Loong Whiskers Crisp",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80000012,
+        "name": "Loong Bun",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80000014,
+        "name": "Jinzhou Stew",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80010004,
+        "name": "Loong Whiskers Crisp Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010012,
+        "name": "Loong Bun Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010014,
+        "name": "Jinzhou Stew Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010021,
+        "name": "Star Flakes Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": null,
+    "name": "NO CONTENT",
+    "currency": [
+      3
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 5,
+        "name": "Waveplate",
+        "value": [
+          {
+            "id": 3,
+            "name": "Astrite",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Waveplate",
+        "value": [
+          {
+            "id": 3,
+            "name": "Astrite",
+            "value": 60
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Waveplate",
+        "value": [
+          {
+            "id": 3,
+            "name": "Astrite",
+            "value": 120
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Waveplate",
+        "value": [
+          {
+            "id": 3,
+            "name": "Astrite",
+            "value": 120
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Waveplate",
+        "value": [
+          {
+            "id": 3,
+            "name": "Astrite",
+            "value": 120
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Waveplate",
+        "value": [
+          {
+            "id": 3,
+            "name": "Astrite",
+            "value": 120
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "type": null,
+    "name": "Tiger's Maw Ore",
+    "currency": [
+      42500020
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 50000201,
+        "name": "Originite Weapon Supply Chest",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "id": 43020002,
+        "name": "Medium Energy Core",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 43020003,
+        "name": "Advanced Energy Core",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 43020004,
+        "name": "Premium Energy Core",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 43020012,
+        "name": "Reactive Metallic Drip",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 43020042,
+        "name": "Waveworn Residue 226",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 43020022,
+        "name": "Extracted Phlogiston",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 43020052,
+        "name": "Cadence Bud",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 43020032,
+        "name": "Adagio Helix",
+        "value": [
+          {
+            "id": 42500020,
+            "name": "Lampylumen",
+            "value": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "type": null,
+    "name": "Tiger's Maw Eatery",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000000,
+        "name": "Jinzhou Skewers",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000001,
+        "name": "Stuffed Flatbread",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000002,
+        "name": "Perilla Salad",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000003,
+        "name": "Spicy Pulled Chicken",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000004,
+        "name": "Loong Whiskers Crisp",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80000012,
+        "name": "Loong Bun",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80000014,
+        "name": "Jinzhou Stew",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "type": null,
+    "name": "Yibai Clinic",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 42100017,
+        "name": "Basic Nutrient Block",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42100013,
+        "name": "Basic Revival Inhaler",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42400070,
+        "name": "Phoenix Butterfly",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42400080,
+        "name": "Red Feather Butterfly",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42400090,
+        "name": "Blue Feather Butterfly",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42400100,
+        "name": "Chrysopa",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42400110,
+        "name": "Golden-ringed Dragonfly",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42400130,
+        "name": "Silver-Banded Lizard",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42400140,
+        "name": "Azure Lizard",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42400150,
+        "name": "Green Pit Lizard",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      },
+      {
+        "id": 42400170,
+        "name": "Goldenback Frog",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "type": null,
+    "name": "Souvenir Store",
+    "currency": [
+      44010025
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 43010003,
+        "name": "Advanced Resonance Potion",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 43020003,
+        "name": "Advanced Energy Core",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 36000003,
+        "name": "Advanced Sealed Tube",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 36000014,
+        "name": "Premium Tuner",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": 80010033,
+        "name": "Recipe: Lotus Pastry",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 80010034,
+        "name": "Recipe: Spicy Meat with Pavo Plums",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 80010018,
+        "name": "Lemon-Braised Pork Recipe",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "id": 80010030,
+        "name": "Stuffed Tofu Recipe",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 44010025,
+            "name": "Wood-textured Shard",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "type": null,
+    "name": "Yumyum Haven",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000036,
+        "name": "Plumpcake",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80000037,
+        "name": "Moon Pearl",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80000038,
+        "name": "Moon Brew",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80001001,
+        "name": "Sweet Stuffed Flatbread",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80001035,
+        "name": "Vege Omelette",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80010036,
+        "name": "Plumpcake Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "id": 80010035,
+        "name": "Huanglong Omelette Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Preparation Credits",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "type": null,
+    "name": "Fireworks Store",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 70140025,
+        "name": "Skyshaker",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "type": null,
+    "name": "Wishing Stall",
+    "currency": [
+      15
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 16,
+        "name": "Wish",
+        "value": [
+          {
+            "id": 15,
+            "name": "Operation Fund",
+            "value": 50000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "type": null,
+    "name": "KU-Money Exchange",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 42310230,
+        "name": "Nova",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050004,
+        "name": "Tea",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050006,
+        "name": "Rice",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050007,
+        "name": "Kudzu Root",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050009,
+        "name": "Beans",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050010,
+        "name": "Vinegar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80020000,
+        "name": "Hot Pot Base",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80020001,
+        "name": "Clear Soup",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80020002,
+        "name": "Braising Sauce",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80020003,
+        "name": "Sweet and Sour Sauce",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80020004,
+        "name": "Tofu",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80010040,
+        "name": "Honeysuckle Cake Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010039,
+        "name": "Fisher's Chowder Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010007,
+        "name": "Salted Milk Tea Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "type": null,
+    "name": "Gondola Market",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050010,
+        "name": "Vinegar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050009,
+        "name": "Beans",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601030,
+        "name": "Animal Fat",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601040,
+        "name": "Sea Bunny Meat",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601080,
+        "name": "Bell Crab",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601100,
+        "name": "Sunflare Everlasting",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601110,
+        "name": "Viscum Berry",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601070,
+        "name": "Heliobane Fungia",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601130,
+        "name": "Felicitous Olives",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "type": null,
+    "name": "Rosemary's Apothecary",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 42601010,
+        "name": "Bay Leaf",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601120,
+        "name": "Cassia Bud",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601050,
+        "name": "Fur",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601060,
+        "name": "Goldcrest Scarab",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601090,
+        "name": "Mastic Nuvola",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601150,
+        "name": "Sword Acorus",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601160,
+        "name": "Firecracker Jewelweed",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601140,
+        "name": "Golden Fleece",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80021002,
+        "name": "Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 42100036,
+        "name": "Fusion-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100037,
+        "name": "Aero-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100038,
+        "name": "Electro-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100039,
+        "name": "Glacio-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100040,
+        "name": "Spectro-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100041,
+        "name": "Havoc-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42601170,
+        "name": "Seaside Cendrelis",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "type": null,
+    "name": "Trattoria Margherita",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000048,
+        "name": "Nectarwine",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80000045,
+        "name": "Ragunna Espresso",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80000042,
+        "name": "Pizza Tropicale",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000043,
+        "name": "Triple-Scoop Ice Cream",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000046,
+        "name": "Steak Margherita",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000049,
+        "name": "Daily Panini",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000044,
+        "name": "Nuvola Pasta",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80010048,
+        "name": "Nectarwine Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "id": 80010045,
+        "name": "Ragunna Espresso Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "id": 80010042,
+        "name": "Pizza Tropicale Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010043,
+        "name": "Triple-Scoop Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010046,
+        "name": "Steak Margherita Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010049,
+        "name": "Daily Panini Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "type": null,
+    "name": "Averardo Bank Counter",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 3,
+        "name": "Astrite",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 43010003,
+        "name": "Advanced Resonance Potion",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "id": 43020003,
+        "name": "Advanced Energy Core",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "id": 36000003,
+        "name": "Advanced Sealed Tube",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 50000307,
+        "name": "Advanced Enclosure Tank",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "id": 80010047,
+        "name": "Laurus Salad Recipe",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 150
+          }
+        ]
+      },
+      {
+        "id": 80010050,
+        "name": "Every Flavor Bell Crab Recipe",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 150
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Astrite",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 44010043,
+        "name": "Romance in Farewell Crafting Recipe",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 44010044,
+        "name": "Legend of Drunken Hero Crafting Recipe",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 43020022,
+        "name": "Extracted Phlogiston",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 43020052,
+        "name": "Cadence Bud",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 43020032,
+        "name": "Adagio Helix",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 43020042,
+        "name": "Waveworn Residue 226",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 43020012,
+        "name": "Reactive Metallic Drip",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Astrite",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 43010004,
+        "name": "Premium Resonance Potion",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 43020004,
+        "name": "Premium Energy Core",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 36000004,
+        "name": "Premium Sealed Tube",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 250
+          }
+        ]
+      },
+      {
+        "id": 50000308,
+        "name": "Premium Enclosure Tank",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 120
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 50001201,
+        "name": "Malleable Elite Class Echo V",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 50001202,
+        "name": "Malleable Elite Class Echo VI",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 41100012,
+        "name": "MF Whisperin Core",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "id": 41100022,
+        "name": "MF Howler Core",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "id": 41100032,
+        "name": "Basic Ring",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "id": 41100042,
+        "name": "MF Polygon Core",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "id": 41100052,
+        "name": "MF Tidal Residuum",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "type": null,
+    "name": "Masks & Garments <word>[Masked Reverie]</word>",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 41100041,
+        "name": "LF Polygon Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 41100051,
+        "name": "LF Tidal Residuum",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 41100042,
+        "name": "MF Polygon Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 41100052,
+        "name": "MF Tidal Residuum",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 43020011,
+        "name": "Inert Metallic Drip",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43020021,
+        "name": "Impure Phlogiston",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43020031,
+        "name": "Lento Helix",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43020041,
+        "name": "Waveworn Residue 210",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43020051,
+        "name": "Cadence Seed",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 21010011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21020011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21030011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21040011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21050011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21010012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21020012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21030012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21040012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21050012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "type": null,
+    "name": "Stillwind Sundries",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 50000202,
+        "name": "Poetry and Paean Weapon Chest",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 150
+          }
+        ]
+      },
+      {
+        "id": 41100012,
+        "name": "MF Whisperin Core",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 41100022,
+        "name": "MF Howler Core",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 41100032,
+        "name": "Basic Ring",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 50000088,
+        "name": "Malleable Elite Class Echo I",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 50000089,
+        "name": "Malleable Elite Class Echo II",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 50000084,
+        "name": "Morphable Overlord Class Echo",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 50000085,
+        "name": "Morphable Elite Class Echo",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 50000086,
+        "name": "Morphable Common Class Echo",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 50000088,
+        "name": "Malleable Elite Class Echo I",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 50000089,
+        "name": "Malleable Elite Class Echo II",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 41100042,
+        "name": "MF Polygon Core",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 41100052,
+        "name": "MF Tidal Residuum",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 50000084,
+        "name": "Morphable Overlord Class Echo",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 50000085,
+        "name": "Morphable Elite Class Echo",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 50000086,
+        "name": "Morphable Common Class Echo",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 42601180,
+            "name": "Resonant Calcite",
+            "value": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "type": null,
+    "name": "Burrata Bakery",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000052,
+        "name": "Troupe Strength",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000051,
+        "name": "Baton Bread",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000041,
+        "name": "Pizza Classica",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80000042,
+        "name": "Pizza Tropicale",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 80000044,
+        "name": "Nuvola Pasta",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80010052,
+        "name": "Troupe Strength Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "id": 80010041,
+        "name": "Pizza Classica Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010044,
+        "name": "Nuvola Pasta Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "type": null,
+    "name": "Bouton de Rose",
+    "currency": [
+      27,
+      28
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 32,
+        "name": "\"Sweet Puff\"",
+        "value": [
+          {
+            "id": 27,
+            "name": "Riccioli Fishery Coin",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "name": "Sandworm",
+        "value": [
+          {
+            "id": 27,
+            "name": "Riccioli Fishery Coin",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "id": 71510204,
+        "name": "Rusty Iron Case",
+        "value": [
+          {
+            "id": 27,
+            "name": "Riccioli Fishery Coin",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 43010003,
+        "name": "Advanced Resonance Potion",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "id": 43020003,
+        "name": "Advanced Energy Core",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "id": 36000003,
+        "name": "Advanced Sealed Tube",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": 50001102,
+        "name": "Malleable Elite Class Echo III",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 50001103,
+        "name": "Malleable Elite Class Echo IV",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 80010054,
+        "name": "Every Flavor Bell-less Crab Recipe",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 80010055,
+        "name": "Wine-Brewed Octopus Clam Recipe",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 80010056,
+        "name": "Riccioli Salt Baked Fish Recipe",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 50
+          }
+        ]
+      },
+      {
+        "id": 41100012,
+        "name": "MF Whisperin Core",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 41100022,
+        "name": "MF Howler Core",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 41100032,
+        "name": "Basic Ring",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 41100042,
+        "name": "MF Polygon Core",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 41100052,
+        "name": "MF Tidal Residuum",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": 41100011,
+        "name": "LF Whisperin Core",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 41100021,
+        "name": "LF Howler Core",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 41100031,
+        "name": "Crude Ring",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 41100041,
+        "name": "LF Polygon Core",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 41100051,
+        "name": "LF Tidal Residuum",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 71510204,
+        "name": "Rusty Iron Case",
+        "value": [
+          {
+            "id": 28,
+            "name": "Abyssal Coral",
+            "value": 30
+          }
+        ]
+      }
+    ]
+  }
+]

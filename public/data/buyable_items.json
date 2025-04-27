@@ -3786,5 +3786,19 @@
         "limit": 1
       }
     ]
+  },
+  {
+    "id": 42601170,
+    "itemName": "Seaside Cendrelis",
+    "shops": [
+      {
+        "id": 119,
+        "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
   }
 ]

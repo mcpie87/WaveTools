@@ -1916,7 +1916,23 @@
         "value": 3
       }
     ],
-    "typeId": 3
+    "typeId": 3,
+    "specialtyItem": {
+      "id": 80001044,
+      "name": "One-Pot Pasta",
+      "attributes_description": "Reduces Wall Dash and Swimming STA cost for all Resonators in the team by 35% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Zani's pasta is a rich and flavorful dish, made by layering hearty meat sauce with cheese, sausage, and fragrant herbs before cooking it to perfection.\nAccording to what she said, she first stumbled upon the idea while reheating a takeout meal that had gone cold after a long workday. On a whim, she threw in whatever ingredients she had on hand, and to her surprise, the result was unexpectedly delicious. What began as a quick fix soon turned into a carefully refined recipe.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_076_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_076_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_076_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1507,
+      "name": "Zani",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_38_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -2152,7 +2168,23 @@
         "value": 1
       }
     ],
-    "typeId": 2
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001051,
+      "name": "Pasta Bocadillo",
+      "attributes_description": "Gives 8% Healing Bonus to all Resonators in the team and increases their Max HP by 12% for 15m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "For a wandering bard like Ciaccona, meals on the road are all about striking a balance between taste and convenience.\nOne day, as the campfire crackled to life, she had an idea and took the bread she always carried.\nAs the rich aroma of meat sauce filled the air, seeping into the bread's warm crust, she spread on the final layer of seasoning.\nHowever, there's an unspoken rule. Ragunna's pasta is not to be tampered with. No shortcuts, no twists. Taking a bite of her creation, Ciaccona was lost in her thoughts. \"If I ever get banished, this bread might just be one of the reasons.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_075_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_075_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_075_UI.png",
+      "rarity": 2
+    },
+    "specialtyCook": {
+      "id": 1407,
+      "name": "Ciaccona",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_37_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",

@@ -12790,5 +12790,303 @@
         ]
       }
     ]
+  },
+  {
+    "id": 21040036,
+    "name": "Blazing Justice",
+    "rarity": 5,
+    "weaponType": {
+      "id": 4,
+      "name": "Gauntlets",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorFist.png"
+    },
+    "icon": {
+      "default": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon/T_IconWeapon21040019_UI.png",
+      "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040019_UI.png",
+      "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040019_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          },
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          },
+          {
+            "id": 43020051,
+            "name": "Cadence Seed",
+            "value": 6
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          },
+          {
+            "id": 43020052,
+            "name": "Cadence Bud",
+            "value": 8
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 60000
+          },
+          {
+            "id": 43020053,
+            "name": "Cadence Leaf",
+            "value": 6
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          },
+          {
+            "id": 43020054,
+            "name": "Cadence Blossom",
+            "value": 8
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 120000
+          },
+          {
+            "id": 43020054,
+            "name": "Cadence Blossom",
+            "value": 12
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21030026,
+    "name": "Woodland Aria",
+    "rarity": 5,
+    "weaponType": {
+      "id": 3,
+      "name": "Pistols",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorGun.png"
+    },
+    "icon": {
+      "default": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon/T_IconWeapon21030026_UI.png",
+      "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030026_UI.png",
+      "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030026_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          },
+          {
+            "id": 41100031,
+            "name": "Crude Ring",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          },
+          {
+            "id": 43020021,
+            "name": "Impure Phlogiston",
+            "value": 6
+          },
+          {
+            "id": 41100032,
+            "name": "Basic Ring",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          },
+          {
+            "id": 43020022,
+            "name": "Extracted Phlogiston",
+            "value": 8
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 60000
+          },
+          {
+            "id": 43020023,
+            "name": "Refined Phlogiston",
+            "value": 6
+          },
+          {
+            "id": 41100033,
+            "name": "Improved Ring",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          },
+          {
+            "id": 43020024,
+            "name": "Flawless Phlogiston",
+            "value": 8
+          },
+          {
+            "id": 41100034,
+            "name": "Tailored Ring",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 120000
+          },
+          {
+            "id": 43020024,
+            "name": "Flawless Phlogiston",
+            "value": 12
+          },
+          {
+            "id": 41100034,
+            "name": "Tailored Ring",
+            "value": 8
+          }
+        ]
+      }
+    ]
   }
 ]
