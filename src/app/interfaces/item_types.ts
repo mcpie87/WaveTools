@@ -90,7 +90,7 @@ export enum ItemSpecialty {
 
   // Rinascita
   FIRECRACKER_JEWELWEED = "Firecracker Jewelweed",
-  GOLDEN_FLEEC = "Golden Fleec",
+  GOLDEN_FLEECE = "Golden Fleece",
   SWORD_ACORUS = "Sword Acorus",
   SEASIDE_CENDRELIS = "Seaside Cendrelis",
 }
