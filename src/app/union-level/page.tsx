@@ -8,6 +8,7 @@ import LocalStorageService from "@/services/LocalStorageService";
 import { UnionLevelPageData } from "@/types/unionLevelDataTypes";
 import { useEffect } from "react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Input } from "@/components/ui/input";
 
 const storageService = new LocalStorageService("union_levels");
 
@@ -91,8 +92,8 @@ export default function UnionLevelPage() {
   };
 
   return (
-    <div className="bg-base-200 rounded-md flex flex-col gap-2 w-fit m-auto">
-      <h1>Union Level Page</h1>
+    <div className="bg-base-200 rounded-md flex flex-col gap-2 w-fit m-auto p-2">
+      <h1 className="text-center">Union Level Page</h1>
       <div className="bg-base-200 flex flex-col gap-2">
         <form className="flex flex-col gap-2">
           {[
@@ -102,9 +103,9 @@ export default function UnionLevelPage() {
             ["Refresh Count", "refreshCount", unionLevelData.refreshCount, updateRefreshCount],
             ["Table Steps", "tableSteps", unionLevelData.tableSteps, updateTableSteps],
           ].map(([label, field, value, onChange]) => (
-            <div key={field as string} className="flex flex-row gap-2">
-              <label htmlFor={field as string}>{label as string}</label>
-              <input
+            <div key={field as string} className="flex flex-row gap-2 justify-center items-center">
+              <label className="w-[200px]" htmlFor={field as string}>{label as string}</label>
+              <Input
                 type="number"
                 id={field as string}
                 value={value as number}
