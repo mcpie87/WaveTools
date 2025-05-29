@@ -7,8 +7,8 @@ iteminfo.each do |row|
     new_row = {
         id: row["Id"],
         name: get_textmap_name(row["Name"]),
-        attributes_description: row["AttributesDescription"],
-        bg_description: row["BgDescription"],
+        attributes_description: get_textmap_name(row["AttributesDescription"]),
+        bg_description: get_textmap_name(row["BgDescription"]),
         icon: convert_to_png(row["Icon"]),
         icon_middle: convert_to_png(row["IconMiddle"]),
         icon_small: convert_to_png(row["IconSmall"]),
