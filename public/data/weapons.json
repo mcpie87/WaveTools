@@ -13088,5 +13088,303 @@
         ]
       }
     ]
+  },
+  {
+    "id": 21020056,
+    "name": "Defier's Thorn",
+    "rarity": 5,
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "icon": {
+      "default": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon/T_IconWeapon21020056_UI.png",
+      "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020056_UI.png",
+      "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020056_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          },
+          {
+            "id": 41100021,
+            "name": "LF Howler Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          },
+          {
+            "id": 43020011,
+            "name": "Inert Metallic Drip",
+            "value": 6
+          },
+          {
+            "id": 41100022,
+            "name": "MF Howler Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          },
+          {
+            "id": 43020012,
+            "name": "Reactive Metallic Drip",
+            "value": 8
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 60000
+          },
+          {
+            "id": 43020013,
+            "name": "Polarized Metallic Drip",
+            "value": 6
+          },
+          {
+            "id": 41100023,
+            "name": "HF Howler Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          },
+          {
+            "id": 43020014,
+            "name": "Heterized Metallic Drip",
+            "value": 8
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 120000
+          },
+          {
+            "id": 43020014,
+            "name": "Heterized Metallic Drip",
+            "value": 12
+          },
+          {
+            "id": 41100024,
+            "name": "FF Howler Core",
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21010036,
+    "name": "Wildfire Mark",
+    "rarity": 5,
+    "weaponType": {
+      "id": 1,
+      "name": "Broadblade",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorSword.png"
+    },
+    "icon": {
+      "default": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon/T_IconWeapon21010036_UI.png",
+      "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010036_UI.png",
+      "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010036_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          },
+          {
+            "id": 41100011,
+            "name": "LF Whisperin Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          },
+          {
+            "id": 43020041,
+            "name": "Waveworn Residue 210",
+            "value": 6
+          },
+          {
+            "id": 41100012,
+            "name": "MF Whisperin Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          },
+          {
+            "id": 43020042,
+            "name": "Waveworn Residue 226",
+            "value": 8
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 60000
+          },
+          {
+            "id": 43020043,
+            "name": "Waveworn Residue 235",
+            "value": 6
+          },
+          {
+            "id": 41100013,
+            "name": "HF Whisperin Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          },
+          {
+            "id": 43020044,
+            "name": "Waveworn Residue 239",
+            "value": 8
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 120000
+          },
+          {
+            "id": 43020044,
+            "name": "Waveworn Residue 239",
+            "value": 12
+          },
+          {
+            "id": 41100014,
+            "name": "FF Whisperin Core",
+            "value": 8
+          }
+        ]
+      }
+    ]
   }
 ]

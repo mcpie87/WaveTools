@@ -9,7 +9,10 @@ const nextConfig: NextConfig = {
   assetPrefix: isProduction ? `/${repositoryName}/` : '',
   trailingSlash: true,
   images: {
-    domains: ['raw.githubusercontent.com'],
+    domains: [
+      'raw.githubusercontent.com',
+      'git.encore.moe', // WW assets
+    ],
   }
 };
 
