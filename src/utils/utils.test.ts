@@ -1,6 +1,6 @@
 import { convertToUrl, getKeyFromEnumValue } from "./utils";
 
-const ASSET_URL = "https://raw.githubusercontent.com/alt3ri/WW_Asset/refs/heads/Global/";
+const ASSET_URL = "https://git.encore.moe/alt3ri/WW_Asset/-/raw/Global/";
 
 describe('utils test', () => {
   test('icon url should return correct url', () => {
