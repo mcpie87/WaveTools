@@ -2034,7 +2034,23 @@
         "value": 3
       }
     ],
-    "typeId": 2
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001047,
+      "name": "Knight-Errant's Essentials",
+      "attributes_description": "Grants 34% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Prepared by Cartethyia herself, this Laurus Salad comes packed with extra Viscum Berries, crispy and sweet.\nNow a wandering knight, she's hungry to learn, to grow, and to see the world.\nLet's start with a salad made just for the wandering knight. This time, extra berries included!",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_077_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_077_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_077_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1409,
+      "name": "Cartethyia",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_40_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -2366,5 +2382,267 @@
       }
     ],
     "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10057,
+    "resultItem": {
+      "id": 80000057,
+      "name": "Oaknut Honeycake",
+      "attributes_description": "Reduces Flight STA consumption for all Resonators in the team by 10% for 15m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Add more syrup! No, even more! Until this honeycake is as sweet and warm as a hug! And don't forget to top it with some Oaknuts, the forest's blessings and nature's gift.\nMay you have a sweet day.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_081_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_081_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_081_UI.png",
+      "rarity": 2
+    },
+    "materials": [
+      {
+        "id": 42601200,
+        "name": "Oaknut",
+        "value": 1
+      },
+      {
+        "id": 42600010,
+        "name": "Bird Egg",
+        "value": 1
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 1
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 1
+      }
+    ],
+    "typeId": 3
+  },
+  {
+    "type": "dish",
+    "id": 10058,
+    "resultItem": {
+      "id": 80000058,
+      "name": "Saltimbocca",
+      "attributes_description": "Grants 40% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A traditional Septimont dish made from mashed veal and Bloodleaf Viburnums.\nIt's said that it leaps into your mouth and gives you courage for battle.\nSeptimontians drum and feast before the hunt. They defend their home with blood and flesh.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_083_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_083_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_083_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601230,
+        "name": "Bloodleaf Viburnum",
+        "value": 2
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 42310170,
+        "name": "Gemberry",
+        "value": 2
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10059,
+    "resultItem": {
+      "id": 80000059,
+      "name": "Glory Roast Platter",
+      "attributes_description": "Grants 50% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Skewers, poultry legs, and meat wraps. Now you've got yourself a Glory Roast Platter!\nCome, Hero of Gladiators, Star of the Arena, take this \"glory\" and let's meet at the top!",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_082_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_082_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_082_UI.png",
+      "rarity": 5
+    },
+    "materials": [
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 6
+      },
+      {
+        "id": 42601220,
+        "name": "Bamboo Iris",
+        "value": 4
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": 2
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10060,
+    "resultItem": {
+      "id": 80000060,
+      "name": "Frosted Cream Blizzard",
+      "attributes_description": "Grants 25% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A cup of seemingly ordinary shaved ice. Is it really as ordinary as it looks?\n...Alright, yes. It is absolutely ordinary. But for Septimontians, this simple treat is one of the few chances to truly cool down.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_084_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_084_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_084_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42310070,
+        "name": "Lemongrass",
+        "value": 2
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": 2
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10061,
+    "resultItem": {
+      "id": 80000061,
+      "name": "Solis",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A popular energy drink among Septimont Gladiators.\nDrink this can of Solis, and fight 'til the last breath!",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_086_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_086_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_086_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 3
+      },
+      {
+        "id": 42601110,
+        "name": "Viscum Berry",
+        "value": 6
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001061,
+      "name": "Heartpour",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 34% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Endorsed by Gladiator Star Lupa, it's still a hit across Septimont.\nLightly sweet, refreshingly smooth, and coming in a variety of flavors, it is best enjoyed ice cold.\nFor Lupa, fighting in the arena is an indispensable part of her life. At the breaks of matches, she still takes a sip of this Heartpour, remembering the thrill of the fight and the laughter she shared with her partner during the Agon of Champions.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_078_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_078_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_078_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1207,
+      "name": "Lupa",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_46_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10062,
+    "resultItem": {
+      "id": 80000062,
+      "name": "Bamboo Iris Crisps",
+      "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A local Septimontian Snack made from fried petals of Bamboo Iris. Light and crunchy.\nEach pack holds just a few Bamboo Iris Crisps... and a whole lot of deliciously fragrant air. You won't stop at just one.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_079_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_079_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_079_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601220,
+        "name": "Bamboo Iris",
+        "value": 4
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 2
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10063,
+    "resultItem": {
+      "id": 80000063,
+      "name": "Seasalt Popcorn",
+      "attributes_description": "Grants 10% Healing Bonus to all Resonators in the team and increases their Max HP by 20%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Seasalt Popcorn, your must-have snack for any Agon. Salty, joyful, and healthy! Every bite brings the taste of the sea.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_085_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_085_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_085_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42601210,
+        "name": "Amber Halite",
+        "value": 3
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": 3
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 3
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10064,
+    "resultItem": {
+      "id": 80000064,
+      "name": "Bubbly Buddy",
+      "attributes_description": "Grants 30% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Whether you're watching Agons or catching every clash in the arena, it's there for you.\nZero sugar. Zero calories. Packed with Bloodleaf Viburnums. Let it fire up the arena!",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_080_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_080_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_080_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601230,
+        "name": "Bloodleaf Viburnum",
+        "value": 4
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      }
+    ],
+    "typeId": 1
   }
 ]

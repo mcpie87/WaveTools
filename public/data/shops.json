@@ -2996,6 +2996,105 @@
             "value": 100
           }
         ]
+      },
+      {
+        "id": 43010004,
+        "name": "Premium Resonance Potion",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 43020004,
+        "name": "Premium Energy Core",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 36000004,
+        "name": "Premium Sealed Tube",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 250
+          }
+        ]
+      },
+      {
+        "id": 41100013,
+        "name": "HF Whisperin Core",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "id": 41100023,
+        "name": "HF Howler Core",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "id": 41100033,
+        "name": "Improved Ring",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "id": 41100043,
+        "name": "HF Polygon Core",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "id": 41100053,
+        "name": "HF Tidal Residuum",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 90
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 44010031,
+            "name": "Monnaie",
+            "value": 100
+          }
+        ]
       }
     ]
   },
@@ -3857,6 +3956,450 @@
             "id": 28,
             "name": "Abyssal Coral",
             "value": 30
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "type": null,
+    "name": "Solis Bar",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000057,
+        "name": "Oaknut Honeycake",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80000058,
+        "name": "Saltimbocca",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000060,
+        "name": "Frosted Cream Blizzard",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000062,
+        "name": "Bamboo Iris Crisps",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000061,
+        "name": "Solis",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80000059,
+        "name": "Glory Roast Platter",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 18000
+          }
+        ]
+      },
+      {
+        "id": 80010057,
+        "name": "Oaknut Honeycake Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "id": 80010058,
+        "name": "Saltimbocca Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010060,
+        "name": "Frosted Cream Blizzard Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010062,
+        "name": "Bamboo Iris Crisps Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010063,
+        "name": "Seasalt Popcorn Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "type": null,
+    "name": "Silver Helmet Store",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 42601200,
+        "name": "Oaknut",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601210,
+        "name": "Amber Halite",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601070,
+        "name": "Heliobane Fungia",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601100,
+        "name": "Sunflare Everlasting",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601130,
+        "name": "Felicitous Olives",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601220,
+        "name": "Bamboo Iris",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601230,
+        "name": "Bloodleaf Viburnum",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80021002,
+        "name": "Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 42100036,
+        "name": "Fusion-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100037,
+        "name": "Aero-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100038,
+        "name": "Electro-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100039,
+        "name": "Glacio-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100040,
+        "name": "Spectro-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100041,
+        "name": "Havoc-resistant Spray",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "type": null,
+    "name": "NO CONTENT",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000052,
+        "name": "Troupe Strength",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000051,
+        "name": "Baton Bread",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80000041,
+        "name": "Pizza Classica",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2000,
+    "type": null,
+    "name": "NO CONTENT",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000062,
+        "name": "Bamboo Iris Crisps",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000064,
+        "name": "Bubbly Buddy",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000061,
+        "name": "Solis",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80000063,
+        "name": "Seasalt Popcorn",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
           }
         ]
       }

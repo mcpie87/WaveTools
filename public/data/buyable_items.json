@@ -1740,6 +1740,14 @@
           "Monnaie - 200"
         ],
         "limit": 10
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 200"
+        ],
+        "limit": 10
       }
     ]
   },
@@ -1826,6 +1834,14 @@
           "Monnaie - 100"
         ],
         "limit": 22
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 100"
+        ],
+        "limit": 26
       }
     ]
   },
@@ -2432,6 +2448,14 @@
           "Shell Credit - 3000"
         ],
         "limit": 6
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 6
       }
     ]
   },
@@ -2450,6 +2474,14 @@
       {
         "id": 119,
         "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
         "price": [
           "Shell Credit - 4500"
         ],
@@ -2476,6 +2508,14 @@
           "Shell Credit - 4500"
         ],
         "limit": 3
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
       }
     ]
   },
@@ -2498,6 +2538,14 @@
           "Shell Credit - 9000"
         ],
         "limit": 2
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
       }
     ]
   },
@@ -2516,6 +2564,14 @@
       {
         "id": 119,
         "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
         "price": [
           "Shell Credit - 9000"
         ],
@@ -2940,6 +2996,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
       }
     ]
   },
@@ -2968,6 +3032,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
       }
     ]
   },
@@ -2982,6 +3054,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
       }
     ]
   },
@@ -3278,6 +3358,14 @@
           "Monnaie - 200"
         ],
         "limit": 10
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 200"
+        ],
+        "limit": 10
       }
     ]
   },
@@ -3292,6 +3380,14 @@
           "Monnaie - 250"
         ],
         "limit": 10
+      },
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 250"
+        ],
+        "limit": 12
       }
     ]
   },
@@ -3440,6 +3536,14 @@
           "Shell Credit - 3000"
         ],
         "limit": 20
+      },
+      {
+        "id": 130,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -3454,6 +3558,14 @@
           "Shell Credit - 3000"
         ],
         "limit": 20
+      },
+      {
+        "id": 130,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -3464,6 +3576,14 @@
       {
         "id": 124,
         "shopName": "Burrata Bakery",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 130,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3496,6 +3616,14 @@
           "Shell Credit - 6000"
         ],
         "limit": 20
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -3506,6 +3634,14 @@
       {
         "id": 119,
         "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3524,6 +3660,14 @@
           "Shell Credit - 6000"
         ],
         "limit": 20
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -3534,6 +3678,14 @@
       {
         "id": 119,
         "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3552,6 +3704,14 @@
           "Shell Credit - 6000"
         ],
         "limit": 20
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -3562,6 +3722,14 @@
       {
         "id": 119,
         "shopName": "Rosemary's Apothecary",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3798,6 +3966,330 @@
           "Shell Credit - 3000"
         ],
         "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 80000057,
+    "itemName": "Oaknut Honeycake",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000058,
+    "itemName": "Saltimbocca",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000060,
+    "itemName": "Frosted Cream Blizzard",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42601200,
+    "itemName": "Oaknut",
+    "shops": [
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601210,
+    "itemName": "Amber Halite",
+    "shops": [
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 80000062,
+    "itemName": "Bamboo Iris Crisps",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 2000,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000061,
+    "itemName": "Solis",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 2000,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000059,
+    "itemName": "Glory Roast Platter",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 18000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42601220,
+    "itemName": "Bamboo Iris",
+    "shops": [
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601230,
+    "itemName": "Bloodleaf Viburnum",
+    "shops": [
+      {
+        "id": 129,
+        "shopName": "Silver Helmet Store",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 80000064,
+    "itemName": "Bubbly Buddy",
+    "shops": [
+      {
+        "id": 2000,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000063,
+    "itemName": "Seasalt Popcorn",
+    "shops": [
+      {
+        "id": 2000,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 41100013,
+    "itemName": "HF Whisperin Core",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 90"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 41100023,
+    "itemName": "HF Howler Core",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 90"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 41100033,
+    "itemName": "Improved Ring",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 90"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 41100043,
+    "itemName": "HF Polygon Core",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 90"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 41100053,
+    "itemName": "HF Tidal Residuum",
+    "shops": [
+      {
+        "id": 121,
+        "shopName": "Averardo Bank Counter",
+        "price": [
+          "Monnaie - 90"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 80010057,
+    "itemName": "Oaknut Honeycake Recipe",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 5000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010058,
+    "itemName": "Saltimbocca Recipe",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010060,
+    "itemName": "Frosted Cream Blizzard Recipe",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010062,
+    "itemName": "Bamboo Iris Crisps Recipe",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010063,
+    "itemName": "Seasalt Popcorn Recipe",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Bar",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
       }
     ]
   }
