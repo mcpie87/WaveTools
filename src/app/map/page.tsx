@@ -129,7 +129,7 @@ export default function XYZMap() {
   useEffect(() => {
     async function fetchData() {
       const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      const URL = "https://github.com/Arikatsu/WutheringWaves_Data/raw/refs/heads/2.4/BinData/level_entity/levelentityconfig.json"
+      const URL = "https://raw.githubusercontent.com/Arikatsu/WutheringWaves_Data/refs/heads/2.4/BinData/level_entity/levelentityconfig.json"
       const dataResponse = await fetch(
         process.env.NODE_ENV === "development"
           ? `${basePath}/data/levelentityconfig.json`
