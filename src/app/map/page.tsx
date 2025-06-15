@@ -23,6 +23,7 @@ const convertMarkerToCoord = (marker: APIMarker): IMarker => {
     displayedX: marker.Transform[0].X / 10000,
     displayedY: marker.Transform[0].Y / 10000,
     displayedZ: marker.Transform[0].Z / 10000,
+    category: marker.BlueprintType,
   }
 };
 const convertMarkersToCoords = (markers: APIMarker[]): IMarker[] => markers.map(convertMarkerToCoord);
@@ -98,6 +99,7 @@ interface IMarker {
   z: number;
   name: string;
   description: string;
+  category: string;
   displayedX: number;
   displayedY: number;
   displayedZ: number;
@@ -252,6 +254,23 @@ export default function XYZMap() {
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
   const undefinedCategories = categories.filter(category => !TranslationMap[category[0]]);
 
+  const getCategoryColor = (category: string) => {
+    // Generate a hash from category string
+    let hash = 0;
+    for (let i = 0; i < category.length; i++) {
+      hash = category.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const hue = Math.abs(hash) % 360; // 0-359 hue range
+    return `hsl(${hue}, 70%, 50%)`; // Saturation & lightness fixed
+  };
+
+  const customDivIcon = (label: string, category: string) => L.divIcon({
+    html: `<div class="w-5 h-5 rounded-full text-white text-xs flex items-center justify-center border-2 border-white" style="background-color: ${getCategoryColor(category)}"></div>`,
+    className: '',
+    iconSize: [20, 20],
+    iconAnchor: [10, 10],
+  });
+
   return (
     <div className="flex flex-row">
       <div>
@@ -337,6 +356,7 @@ export default function XYZMap() {
           <Marker
             key={index}
             position={[coord.y, coord.x]}
+            icon={customDivIcon(coord.name, coord.category)}
           >
             <Popup>
               <div>
