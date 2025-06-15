@@ -9,6 +9,9 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { ASSET_URL } from '@/constants/constants';
 import { TranslationMap } from './translationMap';
+import { Toggle } from '@/components/ui/toggle';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Label } from '@/components/ui/label';
 
 const simpleCRS = L.CRS.Simple;
 
@@ -35,7 +38,13 @@ const mapUrl: Record<string, string> = {
   "900": `${prefix}/Image/HHATiles/T_HHATiles_{x}_{y}_UI.png`, // Tethys Deep
   "902": `${prefix}/Image/JKTiles/T_JKTiles_{x}_{y}_UI.png`, // Vault Undergrounds
   "903": `${prefix}/Image/DDTTiles/T_DDTTiles_{x}_{y}_UI.png`, // Avinoleum
-}
+};
+const mapIdToName: Record<number, string> = {
+  "8": "Main",
+  "900": "Tethys Deep",
+  "902": "Vault Undergrounds",
+  "903": "Avinoleum",
+};
 
 function CustomTileLayer({ mapId, tileSize = 256, mapHeightInTiles = 10 }: { mapId: number, tileSize?: number, mapHeightInTiles?: number }) {
   const map = useMap();
@@ -120,7 +129,7 @@ export default function XYZMap() {
   const [selectedMap, setSelectedMap] = useState<number>(8);
   const [selectedPoint, setSelectedPoint] = useState<[number, number, number]>([0, 0, 0]);
   const [radius, setRadius] = useState<number>(50); // displayed in game
-  const selectedMapRef = useRef<HTMLInputElement>(null);
+  const [enableClick, setEnableClick] = useState<boolean>(false);
   const selectedPointXRef = useRef<HTMLInputElement>(null);
   const selectedPointYRef = useRef<HTMLInputElement>(null);
   const selectedPointZRef = useRef<HTMLInputElement>(null);
@@ -242,7 +251,6 @@ export default function XYZMap() {
   }
 
   const updateSettings = () => {
-    setSelectedMap(parseInt(selectedMapRef.current?.value ?? "0"));
     setSelectedPoint([
       parseInt((selectedPointXRef.current?.value ?? 0).toString()),
       parseInt((selectedPointYRef.current?.value ?? 0).toString()),
@@ -272,56 +280,118 @@ export default function XYZMap() {
   });
 
   return (
-    <div className="flex flex-row">
-      <div>
-        <div className="flex flex-row gap-2">
-          <Input
-            id="map-select"
-            type="number"
-            defaultValue={selectedMap}
-            ref={selectedMapRef}
-          />
-          <Button
-            type="submit"
-            onClick={() => { updateSettings() }}
-          >Change map</Button>
+    <div className="h-screen w-screen grid grid-cols-[400px_1fr] grid-rows[auto_1fr]">
+      {/* <!-- Form --> */}
+      <div className="flex flex-col gap-3 p-2 border-b bg-white">
+        <div className="flex flex-row gap-2 justify-center items-center">
+          <Label>Map</Label>
+          <Select
+            value={selectedMap.toString()}
+            onValueChange={(value) => setSelectedMap(parseInt(value as string))}
+          >
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Select map" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                {Object.entries(mapIdToName).map(([key, value]) => (
+                  <SelectItem key={key} value={key}>
+                    {value}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
         </div>
-        <div className="flex flex-row gap-2">
-          <Input
-            id="radius-input"
-            type="number"
-            defaultValue={radius}
-            onChange={(e) => { setRadius(parseInt(e.target.value)) }}
-          />
-          <Button
-            type="submit"
-            onClick={() => { updateSettings() }}
-          >Update</Button>
+        <div className="flex flex-col justify-center items-center gap-2">
+          <Label>Radius</Label>
+          <div className="flex flex-row gap-2 items-center">
+            <Input
+              id="radius-input"
+              type="number"
+              defaultValue={radius}
+              onChange={(e) => { setRadius(parseInt(e.target.value)) }}
+            />
+            <Button
+              type="submit"
+              onClick={() => { updateSettings() }}
+            >Update</Button>
+          </div>
         </div>
-        <div className="flex flex-row gap-2">
-          <Input
-            id="x-input"
-            type="number"
-            defaultValue={selectedPoint[0]}
-            ref={selectedPointXRef}
-          />
-          <Input
-            id="y-input"
-            type="number"
-            defaultValue={selectedPoint[1]}
-            ref={selectedPointYRef}
-          />
-          <Input
-            id="z-input"
-            type="number"
-            defaultValue={selectedPoint[2]}
-            ref={selectedPointZRef}
-          />
-          <Button
-            type="submit"
-            onClick={() => { updateSettings() }}
-          >Update</Button>
+        <div className="flex flex-col justify-center items-center gap-2">
+          <Label>Coords</Label>
+          <div className="flex flex-row gap-2 items-center">
+            <Input
+              id="x-input"
+              type="number"
+              value={selectedPoint[0]}
+              ref={selectedPointXRef}
+            />
+            <Input
+              id="y-input"
+              type="number"
+              value={selectedPoint[1]}
+              ref={selectedPointYRef}
+            />
+            <Input
+              id="z-input"
+              type="number"
+              value={selectedPoint[2]}
+              ref={selectedPointZRef}
+            />
+            <Button
+              type="submit"
+              onClick={() => { updateSettings() }}
+            >Update</Button>
+          </div>
         </div>
+        <Toggle
+          pressed={enableClick}
+          onPressedChange={() => setEnableClick(!enableClick)}
+        >
+          Enable - Click for markers around
+        </Toggle>
+      </div>
+
+
+      {/* <!-- Map --> */}
+      <div className="row-span-2">
+        <MapContainer
+          crs={simpleCRS}
+          center={[0, 0]}
+          zoom={0}
+          minZoom={-10}
+          maxZoom={10}
+          style={{ height: '1200px', width: '100%' }}
+          attributionControl={false}
+        >
+          <CustomTileLayer
+            mapId={selectedMap}
+            tileSize={256}
+          />
+          <ClickHandler onClick={(latlng) => handleMapClick(latlng)} />
+          {displayedMarkers.map((coord, index) => (
+            <Marker
+              key={index}
+              position={[coord.y, coord.x]}
+              icon={customDivIcon(coord.name, coord.category)}
+            >
+              <Popup>
+                <div>
+                  <strong>{coord.name}</strong><br />
+                  <pre>{coord.description}</pre>
+                  X: {coord.displayedX}<br />
+                  Y: {coord.displayedY}<br />
+                  Z: {coord.displayedZ}
+                </div>
+              </Popup>
+            </Marker>
+          ))}
+        </MapContainer>
+      </div>
+
+      {/* <!-- Categories --> */}
+      <div className="overflow-auto whitespace-nowrap p-2 bg-gray-100">
         <div>Defined categories {definedCategories.length}</div>
         {definedCategories.sort((a, b) => TranslationMap[a[0]].name.localeCompare(TranslationMap[b[0]].name)).map(([category, count]) => (
           <div key={category} className="flex flex-row gap-2">
@@ -338,38 +408,7 @@ export default function XYZMap() {
           </div>
         ))}
       </div>
-      <MapContainer
-        crs={simpleCRS}
-        center={[0, 0]}
-        zoom={0}
-        minZoom={-10}
-        maxZoom={10}
-        style={{ height: '1200px', width: '100%' }}
-        attributionControl={false}
-      >
-        <CustomTileLayer
-          mapId={selectedMap}
-          tileSize={256}
-        />
-        <ClickHandler onClick={(latlng) => handleMapClick(latlng)} />
-        {displayedMarkers.map((coord, index) => (
-          <Marker
-            key={index}
-            position={[coord.y, coord.x]}
-            icon={customDivIcon(coord.name, coord.category)}
-          >
-            <Popup>
-              <div>
-                <strong>{coord.name}</strong><br />
-                <pre>{coord.description}</pre>
-                X: {coord.displayedX}<br />
-                Y: {coord.displayedY}<br />
-                Z: {coord.displayedZ}
-              </div>
-            </Popup>
-          </Marker>
-        ))}
-      </MapContainer>
+
     </div >
   );
 };
