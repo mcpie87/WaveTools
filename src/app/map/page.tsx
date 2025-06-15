@@ -235,6 +235,7 @@ export default function XYZMap() {
 
 
   const handleMapClick = (latlng: L.LatLng) => {
+    if (!enableClick) return;
     setSelectedPoint([
       (latlng.lng - 256) / scaleFactor,
       (-latlng.lat) / scaleFactor,
