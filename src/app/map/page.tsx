@@ -216,11 +216,11 @@ export default function XYZMap() {
   console.log("Markers within radius", markersWithinRadius.length, markersWithinRadius);
 
 
-  markers = markersWithinRadius.length > 0 && selectedPoint.join("") !== "000"
+  markers = enableClick
     ? markersWithinRadius
     : markers.filter(entry => visibleCategories[entry.BlueprintType]);
   const displayedMarkers = [
-    ...selectedPoint.join("") === "000" ? [] : [convertMarkerToCoord(displayedPoint)],
+    ...(!enableClick ? [] : [convertMarkerToCoord(displayedPoint)]),
     ...convertMarkersToCoords(markers)
   ];
 
