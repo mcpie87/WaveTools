@@ -140,18 +140,49 @@ export default function XYZMap() {
   useEffect(() => {
     async function fetchData() {
       const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      const URL = "https://raw.githubusercontent.com/Arikatsu/WutheringWaves_Data/refs/heads/2.4/BinData/level_entity/levelentityconfig.json"
+      const URL = "https://raw.githubusercontent.com/Arikatsu/WutheringWaves_Data/refs/heads/2.4/BinData/level_entity/levelentityconfig.json";
+      const cacheName = 'levelentityconfig-cache';
+      const cache = await caches.open(cacheName);
+      const month = 30 * 24 * 60 * 60 * 1000;
+
+      // Check cache with expiration
+      const cachedResponse = await cache.match(URL);
+      if (cachedResponse) {
+        const timestamp = parseInt(cachedResponse.headers.get('x-cache-timestamp') || '0');
+        if (Date.now() - timestamp < month) {
+          const data = await cachedResponse.json();
+          console.log("Cached data", data.length);
+          setData(data);
+          return;
+        }
+        // Delete expired cache
+        await cache.delete(URL);
+      }
+
+      // Fetch and cache
       const dataResponse = await fetch(
         process.env.NODE_ENV === "development"
           ? `${basePath}/data/levelentityconfig.json`
           : URL
       );
-      const data = await dataResponse.json();
-      console.log("Fetched data", data.length);
-      setData(data);
+      if (dataResponse.ok) {
+        const clonedResponse = dataResponse.clone();
+        // Add timestamp header to response
+        const headers = new Headers(clonedResponse.headers);
+        headers.set('x-cache-timestamp', Date.now().toString());
+        const responseWithTimestamp = new Response(clonedResponse.body, {
+          status: clonedResponse.status,
+          statusText: clonedResponse.statusText,
+          headers
+        });
+        await cache.put(URL, responseWithTimestamp);
+        const data = await dataResponse.json();
+        console.log("Fetched data", data.length);
+        setData(data);
+      }
     }
     fetchData();
-  }, [])
+  }, []);
 
   if (data.length === 0) return (<div>You&apos;re downloading a 90MB file of data... Loading...</div>);
   // const isHidden = (marker: APIMarker) => {
