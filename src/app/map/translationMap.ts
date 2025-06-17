@@ -30,13 +30,13 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
     name: "Lampylumen"
   },
   "Quest009": {
-    name: "Monnaie Box 0 ?"
+    name: "Monnaie Box (Big Pot)"
   },
   "Quest010": {
     name: "Monnaie Box 1 ?"
   },
   "branch2.0_Quest012": {
-    name: "Monnaie Box 1.5 ?"
+    name: "Monnaie Box (Chest)"
   },
   "SceneObj1": {
     name: "Monnaie Box 2 ?"
