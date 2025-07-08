@@ -155,4 +155,7 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_026": {
     name: "New Mob",
   },
+  "branch2.4_122_Treasure_2_4_03": {
+    name: "Advanced Trophy Chest",
+  }
 };
