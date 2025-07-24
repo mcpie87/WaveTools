@@ -2,6 +2,7 @@ require 'json'
 require 'csv'
 require 'awesome_print'
 require 'byebug'
+require 'fileutils'
 
 DATAMINE_PATH = "/home/curdy/projects/wuwa/WutheringWaves_Data"
 BINDATA = "BinData"

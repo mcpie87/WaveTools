@@ -2418,7 +2418,23 @@
         "value": 1
       }
     ],
-    "typeId": 3
+    "typeId": 3,
+    "specialtyItem": {
+      "id": 80001057,
+      "name": "Redcurrant Tart",
+      "attributes_description": "Reduces Flight STA consumption for all Resonators in the team by 12% for 15m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A tart drenched in thick, tangy jam that floods every crevice of the pastry, overpowering its sweetness. No one but Phrolova enjoys this zesty flavor, nor does anyone know where the tiny, sour berries even come from.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_087_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_087_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_087_UI.png",
+      "rarity": 2
+    },
+    "specialtyCook": {
+      "id": 1608,
+      "name": "Phrolova",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_41_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",

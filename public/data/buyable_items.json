@@ -170,6 +170,14 @@
           "Monnaie - 30"
         ],
         "limit": 60
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 18"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -336,6 +344,14 @@
           "Abyssal Coral - 16"
         ],
         "limit": 25
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 16"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -382,6 +398,14 @@
           "Abyssal Coral - 16"
         ],
         "limit": 25
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 16"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -420,6 +444,14 @@
           "Abyssal Coral - 20"
         ],
         "limit": 50
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 20"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1226,6 +1258,14 @@
           "Monnaie - 30"
         ],
         "limit": 60
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 18"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1264,6 +1304,14 @@
           "Monnaie - 30"
         ],
         "limit": 60
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 18"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1840,6 +1888,14 @@
         "shopName": "Averardo Bank Counter",
         "price": [
           "Monnaie - 100"
+        ],
+        "limit": 26
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 10"
         ],
         "limit": 26
       }
@@ -2451,7 +2507,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 3000"
         ],
@@ -2481,7 +2537,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 4500"
         ],
@@ -2511,7 +2567,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 4500"
         ],
@@ -2541,7 +2597,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 9000"
         ],
@@ -2571,7 +2627,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 9000"
         ],
@@ -2870,6 +2926,30 @@
           "Monnaie - 400"
         ],
         "limit": 1
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 120"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 120"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 160"
+        ],
+        "limit": 1
       }
     ]
   },
@@ -2999,7 +3079,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 500"
         ],
@@ -3035,7 +3115,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 500"
         ],
@@ -3057,7 +3137,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 500"
         ],
@@ -3440,6 +3520,14 @@
           "Monnaie - 30"
         ],
         "limit": 60
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 18"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -3478,6 +3566,14 @@
           "Monnaie - 30"
         ],
         "limit": 60
+      },
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 18"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -3619,7 +3715,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3641,7 +3737,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3663,7 +3759,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3685,7 +3781,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3707,7 +3803,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3729,7 +3825,7 @@
       },
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 6000"
         ],
@@ -3975,7 +4071,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 4500"
         ],
@@ -3989,7 +4085,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 9000"
         ],
@@ -4003,7 +4099,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 9000"
         ],
@@ -4017,7 +4113,7 @@
     "shops": [
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 500"
         ],
@@ -4031,7 +4127,7 @@
     "shops": [
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 500"
         ],
@@ -4045,7 +4141,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 9000"
         ],
@@ -4067,7 +4163,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 13500"
         ],
@@ -4089,7 +4185,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 18000"
         ],
@@ -4103,7 +4199,7 @@
     "shops": [
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 3000"
         ],
@@ -4117,7 +4213,7 @@
     "shops": [
       {
         "id": 129,
-        "shopName": "Silver Helmet Store",
+        "shopName": "The Silver Helmet",
         "price": [
           "Shell Credit - 3000"
         ],
@@ -4229,7 +4325,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 5000"
         ],
@@ -4243,7 +4339,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 10000"
         ],
@@ -4257,7 +4353,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 10000"
         ],
@@ -4271,7 +4367,7 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 10000"
         ],
@@ -4285,11 +4381,39 @@
     "shops": [
       {
         "id": 128,
-        "shopName": "Solis Bar",
+        "shopName": "Solis Tavern",
         "price": [
           "Shell Credit - 15000"
         ],
         "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42601250,
+    "itemName": "\"Afterlife\"",
+    "shops": [
+      {
+        "id": 129,
+        "shopName": "The Silver Helmet",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 50000110,
+    "itemName": "Weekly Challenge Supply Pack",
+    "shops": [
+      {
+        "id": 131,
+        "shopName": "Steward's Supply Station",
+        "price": [
+          "Sacred Salt - 200"
+        ],
+        "limit": 5
       }
     ]
   }

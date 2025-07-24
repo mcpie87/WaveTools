@@ -9751,7 +9751,7 @@
   },
   {
     "id": 51010,
-    "name": "Vault's Radiant Collection I",
+    "name": "Champion's Radiant Collection I",
     "attributes_description": "",
     "bg_description": "",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_27_UI.png",
@@ -9761,7 +9761,7 @@
   },
   {
     "id": 51011,
-    "name": "Vault's Forging Collection",
+    "name": "Champion's Forging Collection",
     "attributes_description": "",
     "bg_description": "",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_28_UI.png",
@@ -9801,7 +9801,7 @@
   },
   {
     "id": 51015,
-    "name": "Vault's Radiant Collection II",
+    "name": "Champion's Radiant Collection II",
     "attributes_description": "",
     "bg_description": "",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
@@ -9821,7 +9821,7 @@
   },
   {
     "id": 51017,
-    "name": "Vault's Monthly Aid",
+    "name": "Champion's Monthly Aid",
     "attributes_description": "",
     "bg_description": "",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
@@ -9942,7 +9942,7 @@
   {
     "id": 42100037,
     "name": "Aero-resistant Spray",
-    "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Fusion DMG RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
+    "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Aero DMG RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
     "bg_description": "A medication stored in aerosol containers, pressurized through an advanced industrial process. When applied, it forms a damage-resistant layer on the skin that absorbs enemy power to increase the user's RES against a specific type of damage.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_006_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_006_UI.png",
@@ -10262,7 +10262,7 @@
   {
     "id": 71500010,
     "name": "Hunting Lost Flag",
-    "attributes_description": "Every time Resonator deals damage, has their next Heavy Attack DMG Amplified by 4% for 15s, stacking up to 5 times.\n\nThis Token has unlimited uses in Whimpering Wastes.",
+    "attributes_description": "Every time a Resonator deals damage, their next Heavy Attack DMG is Amplified by 4% for 15s, stacking up to 5 times.\n\nThis Token has unlimited uses in Whimpering Wastes.",
     "bg_description": "A flag used by pirate ships hiding within the sea mist.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_10.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_10.png",
@@ -10442,7 +10442,7 @@
   {
     "id": 71500018,
     "name": "Reveler Captain's Seal",
-    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
     "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
@@ -10962,7 +10962,7 @@
   {
     "id": 71500025,
     "name": "Reveler Captain's Seal",
-    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
     "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
@@ -11602,7 +11602,7 @@
   {
     "id": 71500026,
     "name": "Reveler Captain's Seal",
-    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
     "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
@@ -11642,7 +11642,7 @@
   {
     "id": 71500030,
     "name": "Reveler Captain's Seal",
-    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
     "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
@@ -11774,9 +11774,9 @@
     "name": "Above the Stars",
     "attributes_description": "A photo secretly taken by the Plushie Squad. They witnessed your ascending to the top.",
     "bg_description": "A photo secretly taken by the Plushie Squad. They witnessed your ascending to the top.\nYou can zoom in to view the photo.",
-    "icon": "/Game/Aki/UI/UIResources/UiInformation/Image/T_InformationA22.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/UiInformation/Image/T_InformationA22.png",
-    "icon_small": "/Game/Aki/UI/UIResources/UiInformation/Image/T_InformationA22.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_157_b_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_157_b_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_157_b_UI.png",
     "rarity": 4
   },
   {
@@ -12101,28 +12101,28 @@
   },
   {
     "id": 47,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_BabelTower_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_BabelTower_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_BabelTower_UI.png",
+    "name": "Trial Point",
+    "attributes_description": "Can be used to increase your Trial Level.",
+    "bg_description": "The essence of tribulations endured by warriors, which charges up the Banners of Conquest.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_bqdj_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_bqdj01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_bqdj01_UI.png",
     "rarity": 4
   },
   {
     "id": 48,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_BabelTower_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_BabelTower_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_BabelTower_UI.png",
+    "name": "Hunt Point",
+    "attributes_description": "Can be used to increase your Glory Level.",
+    "bg_description": "The essence of bravery shown by warriors, which charges up the Banners of Conquest.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_lssq_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_lssq01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_lssq01_UI.png",
     "rarity": 4
   },
   {
     "id": 71500034,
     "name": "Reveler Captain's Seal",
-    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
     "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
@@ -12158,6 +12158,16 @@
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_30.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_30.png",
     "rarity": 5
+  },
+  {
+    "id": 70140080,
+    "name": "Crimson Baton",
+    "attributes_description": "Phrolova's baton, imbued with part of her Forte.",
+    "bg_description": "A precarious alliance demands deep trust. She handed you her last hope, just to earn a moment of your faith.\nKeep it close. Even from afar, a temporarily allied enemy must remain in your grasp.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_159_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_159_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_159_UI.png",
+    "rarity": 4
   },
   {
     "id": 50000110,
@@ -12301,12 +12311,12 @@
   },
   {
     "id": 50,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_BabelTower_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_BabelTower_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_BabelTower_UI.png",
+    "name": "Challenge Progress",
+    "attributes_description": "Your progress in the \"Banners Never Fall\" event. Unlock bountiful rewards by increasing your progress.",
+    "bg_description": "Valiant warriors, go claim the final victory!",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Progress_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Progress01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Progress01_UI.png",
     "rarity": 4
   },
   {
@@ -12342,7 +12352,7 @@
   {
     "id": 72010035,
     "name": "Token of Radiance",
-    "attributes_description": "A badge earned by completing challenges of Peaks of Prestige. Can be used to redeem rewards from Furius.",
+    "attributes_description": "A badge earned by completing the challenges of Peaks of Prestige. Can be used to redeem rewards in Radiant Selection.",
     "bg_description": "A badge that represents the spirit of the duel. Furius hopes it sparks the fire within challengers during their fights and drives them to seek true glory.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_72010035_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_72010035_UI.png",
@@ -12612,7 +12622,7 @@
   {
     "id": 80130018,
     "name": "Wooly Warrior",
-    "attributes_description": "Encore's paradise is in the land of imagination. Brave Wooly Warriors and their Wolly companions leap from the pages of books to a \"Happily Ever After.\"",
+    "attributes_description": "Encore's paradise is in the land of imagination. Brave Wooly Warriors and their wooly companions leap from the pages of books to a \"Happily Ever After.\"",
     "bg_description": "Fully activate Encore's Resonance Chain",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
@@ -12881,12 +12891,12 @@
   },
   {
     "id": 52,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_BabelTower_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_BabelTower_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_BabelTower_UI.png",
+    "name": "Challenge Progress",
+    "attributes_description": "Your progress in the \"Banners Never Fall\" event. Unlock bountiful rewards by increasing your progress.",
+    "bg_description": "Valiant warriors, go claim the final victory!",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Progress_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Progress01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Progress01_UI.png",
     "rarity": 4
   },
   {
@@ -12951,7 +12961,7 @@
   },
   {
     "id": 54001,
-    "name": "Dawn upon Thorns Set",
+    "name": "\"Dawn upon Thorns\" Set",
     "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
     "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
@@ -13230,9 +13240,29 @@
     "rarity": 5
   },
   {
+    "id": 53,
+    "name": "Dreamland Badge",
+    "attributes_description": "A memento from the Dreamland, used to redeem rewards.",
+    "bg_description": "An exquisite badge once given to guests of Dreamland as a souvenir. The Hocus Pocus on it seems to be ever beckoning guests into a wonderland of boundless surprises.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Pasture03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Pasture03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Pasture03_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 54,
+    "name": "Lost Mirror Piece",
+    "attributes_description": "A shard of mirror showing the reflection of the White Cat. Used to unlock Dream Boon.",
+    "bg_description": "A shard of mirror showing the reflection of the White Cat. But on which side of the mirror does reality lie? Glancing into it feels like delving into a dream.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Pasture04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Pasture04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Pasture04_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 71500038,
     "name": "Reveler Captain's Seal",
-    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
     "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
@@ -13242,7 +13272,7 @@
   {
     "id": 71500039,
     "name": "Whispers from Dim Abyss",
-    "attributes_description": "Grants 60% Fusion DMG Bonus. Casting Resonance Liberation recovers 2 points of Energy. Resonators can hold up to 2 points of Energy.\nWhen Resonators deal Resonance Liberation DMG, 1 point of Energy is consumed to cast AoE attack, dealing 1500% Fusion DMG to nearby targets in total. This effect can be triggered up to once every 2s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "attributes_description": "Grants 25% Fusion DMG Bonus. Casting Resonance Liberation recovers 2 points of Energy. Resonators can hold up to 2 points of Energy.\nWhen Resonators deal Resonance Liberation DMG, 1 point of Energy is consumed to cast AoE attack, dealing 1500% Fusion DMG to nearby targets in total. This effect can be triggered up to once every 2s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
     "bg_description": "\"That unspeakable voice came from beyond the hull. Not even thick timber or thousands of feet of seawater could stop it from drilling into our minds. We tried to resist.\"\n\"But to no avail.\"",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_29.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_29.png",
@@ -13272,8 +13302,8 @@
   {
     "id": 80130041,
     "name": "The Death Defier",
-    "attributes_description": "Divinity whispered in her ear, and she swung her sword Them. Fate had written her script, but she tore the pages shreds.\nShe chose her own path through the storm.",
-    "bg_description": "Fully activate Cartethyia’s Resonance Chain",
+    "attributes_description": "The Divinity spoke whispers in her ears, she swung her sword in reply. Fate has written her a script, she tore the pages to shreds.\nShe has chosen her own path through gale and tide.",
+    "bg_description": "Fully activate Cartethyia's Resonance Chain",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
@@ -13282,8 +13312,8 @@
   {
     "id": 80130042,
     "name": "Lupus Firestar",
-    "attributes_description": "Flames ignite the cheers of in arena, and the wild wolf will tear out the throat of every shadow. She is the brightest star on the field.",
-    "bg_description": "Fully activate Lupa’s Resonance Chain",
+    "attributes_description": "Flames ignite the cheers of the arena, as the wolf tears out the throats of every shadow. She is the brightest star on the field.",
+    "bg_description": "Fully activate Lupa's Resonance Chain",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
@@ -13292,8 +13322,8 @@
   {
     "id": 70050065,
     "name": "The Meditating Blessed Maiden",
-    "attributes_description": "An intact portrait of the Blessed Maiden discovered in the ruins of Avinoleum. You can zoom in to admire it.\n——————————————————————\nThe painting captures the Blessed Maiden's contemplation in the Seminary. Though it has weathered the passage of time, her sacred aura remains undimmed.",
-    "bg_description": "An intact portrait of the Blessed Maiden discovered in the ruins of Avinoleum. You can zoom in to admire it.\n——————————————————————\nThe painting captures the Blessed Maiden's contemplation in the Seminary. Though it has weathered the passage of time, her sacred aura remains undimmed.",
+    "attributes_description": "An intact portrait of the Blessed Maiden discovered in the ruins of Avinoleum. You can zoom in to admire it.",
+    "bg_description": "The painting captures the Blessed Maiden's contemplation in the Seminary. Though it has weathered the passage of time, her sacred aura remains undimmed.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_151_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_151_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_151_UI.png",
@@ -13301,7 +13331,7 @@
   },
   {
     "id": 71250005,
-    "name": "Mirror of Truth",
+    "name": "Copper Mirror of Truth",
     "attributes_description": "A copper mirror given by Buling.",
     "bg_description": "An old copper mirror, simply crafted, with a fox-shaped tassel at its tail.\nIn the tales of Huanglong, mirrors are said to reveal hidden truths, and in certain hands, even legends may reflect reality.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_BronzeMirror_UI.png",
@@ -13372,7 +13402,7 @@
   {
     "id": 50010003,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_15_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_15_UI.png",
@@ -13392,7 +13422,7 @@
   {
     "id": 50020003,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13482,7 +13512,7 @@
   {
     "id": 50030001,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13492,7 +13522,7 @@
   {
     "id": 50030002,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13502,7 +13532,7 @@
   {
     "id": 50030003,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13512,7 +13542,7 @@
   {
     "id": 50030004,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13522,7 +13552,7 @@
   {
     "id": 50030005,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13532,7 +13562,7 @@
   {
     "id": 50030006,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13542,7 +13572,7 @@
   {
     "id": 50030007,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13552,7 +13582,7 @@
   {
     "id": 50030008,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13562,7 +13592,7 @@
   {
     "id": 50030009,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13572,7 +13602,7 @@
   {
     "id": 50030010,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13582,7 +13612,7 @@
   {
     "id": 50030011,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13592,7 +13622,7 @@
   {
     "id": 50030012,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13602,7 +13632,7 @@
   {
     "id": 50030013,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13612,7 +13642,7 @@
   {
     "id": 50030014,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13622,7 +13652,7 @@
   {
     "id": 50030015,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13632,7 +13662,7 @@
   {
     "id": 50030016,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13642,7 +13672,7 @@
   {
     "id": 50030017,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13652,7 +13682,7 @@
   {
     "id": 50030018,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13662,7 +13692,7 @@
   {
     "id": 50030019,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13672,7 +13702,7 @@
   {
     "id": 50030020,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13682,7 +13712,7 @@
   {
     "id": 50030021,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13692,7 +13722,7 @@
   {
     "id": 50030022,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13702,7 +13732,7 @@
   {
     "id": 50030023,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13712,7 +13742,7 @@
   {
     "id": 50030024,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13722,7 +13752,7 @@
   {
     "id": 50030101,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13732,7 +13762,7 @@
   {
     "id": 50030102,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13742,7 +13772,7 @@
   {
     "id": 50030103,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13752,7 +13782,7 @@
   {
     "id": 50030104,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13762,7 +13792,7 @@
   {
     "id": 50030105,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13772,7 +13802,7 @@
   {
     "id": 50030106,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13782,7 +13812,7 @@
   {
     "id": 50030107,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13792,7 +13822,7 @@
   {
     "id": 50030108,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13802,7 +13832,7 @@
   {
     "id": 50030109,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13812,7 +13842,7 @@
   {
     "id": 50030110,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13822,7 +13852,7 @@
   {
     "id": 50030111,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13832,7 +13862,7 @@
   {
     "id": 50030112,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13842,7 +13872,7 @@
   {
     "id": 50030113,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13852,7 +13882,7 @@
   {
     "id": 50030114,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13862,7 +13892,7 @@
   {
     "id": 50030115,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13872,7 +13902,7 @@
   {
     "id": 50030116,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13882,7 +13912,7 @@
   {
     "id": 50030117,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13892,7 +13922,7 @@
   {
     "id": 50030118,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13902,7 +13932,7 @@
   {
     "id": 50030119,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13912,7 +13942,7 @@
   {
     "id": 50030120,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13922,7 +13952,7 @@
   {
     "id": 50030121,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13932,7 +13962,7 @@
   {
     "id": 50030122,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13942,7 +13972,7 @@
   {
     "id": 50030123,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -13952,7 +13982,7 @@
   {
     "id": 50030124,
     "name": "Morphable Echo - Flaming Clawprint",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 30s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Flaming Clawprint.\n\n2pcs Set: Fusion DMG +10%.\n\n5pcs Set: Casting Resonance Liberation increases Fusion DMG of Resonators in the team by 15% and the caster's Resonance Liberation DMG by 20%, lasting for 35s.",
     "bg_description": "The spark in the rift will eventually ignite a blaze...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_16_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_16_UI.png",
@@ -14012,8 +14042,8 @@
   {
     "id": 70050071,
     "name": "Fisalia Knight's Letter",
-    "attributes_description": "A letter found in the underwater ruins beneath Ashen Dragon's Crypt of Septimont. It holds the final words of its master.",
-    "bg_description": "A letter found in the underwater ruins beneath Ashen Dragon's Crypt of Septimont. It holds the final words of its master.",
+    "attributes_description": "A letter found in the underwater ruins near Ashen Dragon's Crypt of Septimont. It holds the final words of its master.",
+    "bg_description": "A letter found in the underwater ruins near Ashen Dragon's Crypt of Septimont. It holds the final words of its master.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Navigation06_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Navigation06_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Navigation06_UI.png",
@@ -14032,6 +14062,256 @@
   {
     "id": 51033,
     "name": "New Voyage Radiant Heavypack",
+    "attributes_description": "",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71260001,
+    "name": "Orchestration Movement I",
+    "attributes_description": "Phrolova composed this melody upon the founding of the Fabricatorium. She blended the music of her past into it, wishing that those dear and near to her might one day play it in the real world.",
+    "bg_description": "Incomplete sheet music, part of the core melody regulating the Fabricatorium of the Deep.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_160_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_160_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_160_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71260002,
+    "name": "Orchestration Movement II",
+    "attributes_description": "Phrolova composed this melody upon the founding of the Fabricatorium. She blended the music of her past into it, wishing that those dear and near to her might one day play it in the real world.",
+    "bg_description": "Incomplete sheet music, part of the core melody regulating the Fabricatorium of the Deep.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_160_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_160_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_160_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71260003,
+    "name": "Orchestration Movement III",
+    "attributes_description": "Phrolova composed this melody upon the founding of the Fabricatorium. She blended the music of her past into it, wishing that those dear and near to her might one day play it in the real world.",
+    "bg_description": "Incomplete sheet music, part of the core melody regulating the Fabricatorium of the Deep.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_160_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_160_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_160_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71260004,
+    "name": "Sacred Salt",
+    "attributes_description": "An item that Butler the Steward of the Order at the Supply Station is collecting and willing to trade for.",
+    "bg_description": "To the Acolytes, Sacred Salt has the ability to cleanse anything untouched by the Sentinel's grace. With its purifying power, sliced bread turns into the Divinity's nurturing meal, ordinary wine becomes holy blood that grants enlightenment...",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_010_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst160/T_IconMst160_010_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst80/T_IconMst80_010_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 44010039,
+    "name": "Phantom: Nightmare Inferno Rider",
+    "attributes_description": "Unlocks the Phantom Appearance of the corresponding Echo.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_33019_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_33019_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_33019_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050066,
+    "name": "Above the Stars",
+    "attributes_description": "A photo secretly taken by the Plushie Squad. They witnessed your ascending to the top.",
+    "bg_description": "A photo secretly taken by the Plushie Squad. They witnessed your ascending to the top.\nYou can zoom in to view the photo.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_157_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_157_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_157_a_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70140081,
+    "name": "Wilting Reverberation",
+    "attributes_description": "A residual fragment of Phrolova's Forte. Though not nearly as strong as her baton, it remains just sufficient for Orchestrating.",
+    "bg_description": "As the blade drove through her chest, everything around her fell silent. Her body was flung away, light as a fallen petal. Tears and the blood bloomed into flowers unnoticed. In their midst, a melody whispered, softly and wistfully, of loss and regrets sunken beneath the sea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_158_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_158_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_158_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110426,
+    "name": "Husk of Broken Dreams",
+    "attributes_description": "A crafted collection of recorded music, which, when given to the Aria Mummer, adds the tracks to their collection list.",
+    "bg_description": "A cherished item among the Rinascita people, it is said to hold music within, crafted by skilled artisans. However, due to internal damage, it no longer fulfills its original purpose.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110427,
+    "name": "Sunken Elegy",
+    "attributes_description": "A crafted collection of recorded music, which, when given to the Aria Mummer, adds the tracks to their collection list.",
+    "bg_description": "A cherished item among the Rinascita people, it is said to hold music within, crafted by skilled artisans. However, due to internal damage, it no longer fulfills its original purpose.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110428,
+    "name": "Radiance Across Sea and Sky",
+    "attributes_description": "A crafted collection of recorded music, which, when given to the Aria Mummer, adds the tracks to their collection list.",
+    "bg_description": "A cherished item among the Rinascita people, it is said to hold music within, crafted by skilled artisans. However, due to internal damage, it no longer fulfills its original purpose.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 41400224,
+    "name": "Truth in Lies",
+    "attributes_description": "Fenrico's drop, used for Resonator Ascension.",
+    "bg_description": "He fumbled forward through formless chaos, barely recalling when the shift in his perception took hold—the day he rose as the Primus, an icy conviction settled in his chest, so cold that it burned in his clenching grip.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_L_019_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_L_019_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_L_019_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 42601240,
+    "name": "Abyss Luminary",
+    "attributes_description": "A material used for Cooking.",
+    "bg_description": "A strange glowing marine life found in the ocean depths.\nThe Rinascita legend has it that the Sentinel left the Abyss Luminaries beneath the waves to guide the souls of the drowned.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_053_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_053_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_053_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601250,
+    "name": "\"Afterlife\"",
+    "attributes_description": "A material used for Resonator Ascension.",
+    "bg_description": "A pure-white lycoris.\nIts petals seem untinted by the vivid scarlet typical of its kind. Or perhaps the colors that were there have long faded. These delicate flowers bloom quietly in darkness. Just like the name they've been given, their unique appearance suggests maybe a whole new world exists beyond the Beyond.\n\"Things unfinished in this life shall wait for the next.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_054_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_054_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_054_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 10001608,
+    "name": "Phrolova's Waveband",
+    "attributes_description": "Can be used to activate Phrolova's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_160802_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_160802_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_160802_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80001057,
+    "name": "Redcurrant Tart",
+    "attributes_description": "Reduces Flight STA consumption for all Resonators in the team by 12% for 15m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "A tart drenched in thick, tangy jam that floods every crevice of the pastry, overpowering its sweetness. No one but Phrolova enjoys this zesty flavor, nor does anyone know where the tiny, sour berries even come from.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_087_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_087_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_087_UI.png",
+    "rarity": 2
+  },
+  {
+    "id": 71500042,
+    "name": "Reveler Captain's Seal",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_18.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500043,
+    "name": "Whispers from Dim Abyss",
+    "attributes_description": "Grants 25% Fusion DMG Bonus. Casting Resonance Liberation recovers 2 points of Energy. Resonators can hold up to 2 points of Energy.\nWhen Resonators deal Resonance Liberation DMG, 1 point of Energy is consumed to cast AoE attack, dealing 1500% Fusion DMG to nearby targets in total. This effect can be triggered up to once every 2s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "\"That unspeakable voice came from beyond the hull. Not even thick timber or thousands of feet of seawater could stop it from drilling into our minds. We tried to resist.\"\n\"But to no avail.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_29.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_29.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_29.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500044,
+    "name": "Hymn to the End",
+    "attributes_description": "Amplifies Heavy Attack DMG and Electro DMG by 50%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "…In the end, only this strange melody echoed across the empty seabed. The first note of a promised world that never came.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_33.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_33.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_33.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500045,
+    "name": "Sail Against the Storm",
+    "attributes_description": "Casting Echo Skill increases Havoc DMG by 20%, stacking up to 2 times. The same Resonator cannot trigger this effect again with the same Echo Skill. At 2 stacks, the Resonator's next instance of damage dealt triggers an AoE attack, dealing 800% Havoc DMG to nearby targets. This effect can be triggered once every 5s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "\"Hoist the sail! This won't be the end. Our legend is just beginning!\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_34.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_34.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_34.png",
+    "rarity": 5
+  },
+  {
+    "id": 71030004,
+    "name": "Dream Imprint",
+    "attributes_description": "An old-style detective's hat, often a symbol of the protagonist in classic mysteries.",
+    "bg_description": "\"No matter how late you show up, you're a detective.\nEverything leaves a trace and a detective must pursue it without end.\"\nThe story is far from over. Someone deep within the Somnoire has entrusted this to you, awaiting the day the story reaches its end.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Rogue02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Rogue02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Rogue02_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 42601260,
+    "name": "Shrimp Meat",
+    "attributes_description": "Meat obtained from shrimps.",
+    "bg_description": "Meat obtained from shrimps, tender and springy. In skilled hands, it can be transformed into exquisite dishes.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_055_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_055_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_055_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 71260005,
+    "name": "Pilgrim's Scriptures",
+    "attributes_description": "A book given to you by the Acolyte of the Sanctuary of Faith.",
+    "bg_description": "According to Acolyte Confere, this book offers the most comprehensive documentation of rites performed by the most devout of the Order. It may be worth studying.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Level_003_1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Level_003_1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Level_003_1_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 56,
+    "name": "Badge of Glory",
+    "attributes_description": "A souvenir badge for travelers in Septimont. Can be used to advance reward progress in Gifts of Glory.",
+    "bg_description": "The Agon Medals are a mark of honor for the people of Septimont. Over time, they have become one of the symbols of the city itself. Inspired by that, this souvenir badge lets travelers carry home a piece of Septimont's fiery spirit. Even far away from Septimont, they can still hear the echo of battle in their hearts.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Morale_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Morale_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Morale_01_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80130044,
+    "name": "The Nevermore",
+    "attributes_description": "The living dwell upon the dark beyond, stubbornly denying the insurmountable divide between life and death.",
+    "bg_description": "Fully activate Phrolova's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 52011,
+    "name": "Returnee's Forgery Aid",
     "attributes_description": "",
     "bg_description": "",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",

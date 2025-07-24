@@ -2012,7 +2012,7 @@
     "resultItem": {
       "id": 42100037,
       "name": "Aero-resistant Spray",
-      "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Fusion DMG RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
+      "attributes_description": "Within 180s, deal DMG to enemies with Negative Statuses to increase Aero DMG RES of all Resonators in the team by 30% for 10s. Only effective on your own Resonators in Co-op Mode.",
       "bg_description": "A medication stored in aerosol containers, pressurized through an advanced industrial process. When applied, it forms a damage-resistant layer on the skin that absorbs enemy power to increase the user's RES against a specific type of damage.",
       "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_006_UI.png",
       "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_006_UI.png",

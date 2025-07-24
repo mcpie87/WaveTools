@@ -3964,7 +3964,7 @@
   {
     "id": 128,
     "type": null,
-    "name": "Solis Bar",
+    "name": "Solis Tavern",
     "currency": [
       2
     ],
@@ -4097,7 +4097,7 @@
   {
     "id": 129,
     "type": null,
-    "name": "Silver Helmet Store",
+    "name": "The Silver Helmet",
     "currency": [
       2
     ],
@@ -4301,6 +4301,17 @@
             "value": 6000
           }
         ]
+      },
+      {
+        "id": 42601250,
+        "name": "\"Afterlife\"",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
       }
     ]
   },
@@ -4400,6 +4411,161 @@
             "id": 2,
             "name": "Shell Credit",
             "value": 13500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "type": null,
+    "name": "Steward's Supply Station",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 3,
+        "name": "Astrite",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 120
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Astrite",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 120
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Astrite",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 160
+          }
+        ]
+      },
+      {
+        "id": 50000110,
+        "name": "Weekly Challenge Supply Pack",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 43010003,
+        "name": "Advanced Resonance Potion",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "id": 43020003,
+        "name": "Advanced Energy Core",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 16
+          }
+        ]
+      },
+      {
+        "id": 36000003,
+        "name": "Advanced Sealed Tube",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": 41100012,
+        "name": "MF Whisperin Core",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 18
+          }
+        ]
+      },
+      {
+        "id": 41100022,
+        "name": "MF Howler Core",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 18
+          }
+        ]
+      },
+      {
+        "id": 41100032,
+        "name": "Basic Ring",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 18
+          }
+        ]
+      },
+      {
+        "id": 41100042,
+        "name": "MF Polygon Core",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 18
+          }
+        ]
+      },
+      {
+        "id": 41100052,
+        "name": "MF Tidal Residuum",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 18
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 71260004,
+            "name": "Sacred Salt",
+            "value": 10
           }
         ]
       }

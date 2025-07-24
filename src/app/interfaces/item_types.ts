@@ -69,6 +69,7 @@ export enum ItemEliteBoss {
   SENTRY_CONSTRUCT = "Platinum Core",
   DRAGON_OF_DIRGE = "Blazing Bone",
   UNFADING_GLORY = "Unfading Glory", // 2.4 boss
+  TRUTH_IN_LIES = "Truth in Lies", // 2.5 boss
 };
 
 export enum ItemSpecialty {
@@ -98,6 +99,9 @@ export enum ItemSpecialty {
   // 2.4
   BAMBOO_IRIS = "Bamboo Iris",
   BLOODLEAF_VIBURNUM = "Bloodleaf Viburnum",
+
+  // 2.5
+  AFTERLIFE = "\"Afterlife\"",
 }
 
 export enum ItemWeapon {
