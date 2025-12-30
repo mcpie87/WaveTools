@@ -38,12 +38,15 @@ const mapUrl: Record<string, string> = {
   "900": `${prefix}/Image/HHATiles/T_HHATiles_{x}_{y}_UI.png`, // Tethys Deep
   "902": `${prefix}/Image/JKTiles/T_JKTiles_{x}_{y}_UI.png`, // Vault Undergrounds
   "903": `${prefix}/Image/DDTTiles/T_DDTTiles_{x}_{y}_UI.png`, // Avinoleum
+  "906": `${prefix}/Image/LHLTiles/T_LHLTiles_{x}_{y}_UI.png`, // Lahai Roi
 };
+
 const mapIdToName: Record<number, string> = {
   "8": "Main",
   "900": "Tethys Deep",
   "902": "Vault Undergrounds",
   "903": "Avinoleum",
+  "906": "Lahai Roi",
 };
 
 function CustomTileLayer({ mapId, tileSize = 256, mapHeightInTiles = 10 }: { mapId: number, tileSize?: number, mapHeightInTiles?: number }) {
@@ -140,8 +143,8 @@ export default function XYZMap() {
   useEffect(() => {
     async function fetchData() {
       const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      const URL = "https://raw.githubusercontent.com/Arikatsu/WutheringWaves_Data/refs/heads/2.4/BinData/level_entity/levelentityconfig.json";
-      const cacheName = 'levelentityconfig-cache';
+      const URL = "https://github.com/Arikatsu/WutheringWaves_Data/raw/refs/heads/3.0/BinData/level_entity/levelentityconfig.json";
+      const cacheName = 'levelentityconfig-cache2';
       const cache = await caches.open(cacheName);
       const month = 30 * 24 * 60 * 60 * 1000;
 
@@ -205,19 +208,12 @@ export default function XYZMap() {
 
   let markers = data
     .filter(entry => entry.MapId === selectedMap)
-  // .filter(entry => entry.BlueprintType === "Gameplay104")
-  // .filter(entry => entry.ComponentsData?.TriggerComponent?.Actions?.filter(action => action.Name === "AdjustPlayerCamera")?.length > 0)
-  // .filter(entry => entry.ComponentsData?.TriggerComponent?.Actions?.filter(action => action.Name === "AdjustPlayerCamera" && action.Params?.Option?.Type === "关卡.Common.镜头调整")?.length > 0)
-  // .filter(entry => entry.IsHidden === true || entry.InSleep === true)
-  // .filter(entry => Object.keys(entry.ComponentsData).length > 0)
-  // .filter(entry => isHidden(entry) === true)
 
   const categoriesCounts: Record<string, number> = {};
   for (const marker of markers) {
     categoriesCounts[marker.BlueprintType] = (categoriesCounts[marker.BlueprintType] || 0) + 1;
   }
   const categories = Object.entries(categoriesCounts).sort((a, b) => a[0].localeCompare(b[0]));
-
   // Need to translate it to ingame value
   const displayedPoint: APIMarker = {
     Transform: [{

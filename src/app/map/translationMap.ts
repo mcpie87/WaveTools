@@ -157,5 +157,15 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   },
   "branch2.4_122_Treasure_2_4_03": {
     name: "Advanced Trophy Chest",
-  }
+  },
+  "Treasure005": { name: "XYZ Chest" },
+  "Treasure008": { name: "XYZ Chest" },
+  "Treasure011": { name: "XYZ Chest" },
+  "branch3.0_693_Treasure_3_1": { name: "XYZ Chest" },
+  "branch3.0_693_Treasure_3_2": { name: "XYZ Chest" },
+  "branch3.0_693_Treasure_3_3": { name: "XYZ Chest" },
+  "branch3.0_693_Treasure_3_5": { name: "XYZ Chest" },
+  "branch3.0_938_Treasure2": { name: "XYZ Chest" },
+  "branch3.0_938_Treasure3": { name: "XYZ Chest" },
+  "branch3.0_938_Treasure4": { name: "XYZ Chest" },
 };
