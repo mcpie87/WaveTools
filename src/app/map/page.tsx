@@ -143,7 +143,8 @@ export default function XYZMap() {
   useEffect(() => {
     async function fetchData() {
       const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      const URL = "https://raw.githubusercontent.com/Arikatsu/WutheringWaves_Data/refs/heads/3.0/BinData/level_entity/levelentityconfig.json";
+      const URL = "https://raw.githubusercontent.com/Arikatsu/WutheringWaves_Data/3.0/BinData/level_entity/levelentityconfig.json";
+
       const cacheName = 'levelentityconfig-cache2';
       const cache = await caches.open(cacheName);
       const month = 30 * 24 * 60 * 60 * 1000;
