@@ -23,7 +23,7 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
     "name": "Standard Supply Chest"
   },
   "branch3.0_693_Treasure_3_3": {
-    "name": "Chest 2"
+    "name": "Advanced Trophy Chest"
   },
   "branch3.0_693_Treasure_3_5": {
     "name": "Chest 2"
@@ -61,6 +61,15 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   },
   "branch3.0_693_Treasure_3_9": {
     "name": "Chest ???"
+  },
+  "branch3.1_40_Gameplay_3_1/VisionSummon4": {
+    "name": "Glohomoth Vision"
+  },
+  "branch3.1_115_Gameplay_3_1/SunSpiritPPV": {
+    "name": "Soliskin Chest"
+  },
+  "Teleport007": {
+    "name": "Teleporter"
   },
 };
 
@@ -224,7 +233,7 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure011": { name: "XYZ Chest" },
   "branch3.0_693_Treasure_3_1": { name: "XYZ Chest" },
   "branch3.0_693_Treasure_3_2": { name: "XYZ Chest" },
-  "branch3.0_693_Treasure_3_3": { name: "XYZ Chest" },
+  "branch3.0_693_Treasure_3_3": { name: "Advanced Trophy Chest" },
   "branch3.0_693_Treasure_3_5": { name: "XYZ Chest" },
   "branch3.0_938_Treasure2": { name: "XYZ Chest" },
   "branch3.0_938_Treasure3": { name: "XYZ Chest" },
