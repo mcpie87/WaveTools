@@ -1,457 +1,446 @@
-'use client'; // Mark as a Client Component in Next.js
+'use client';
+
 import 'leaflet/dist/leaflet.css';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { MapContainer, Marker, Popup, useMap, useMapEvent } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
+
 import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { ASSET_URL } from '@/constants/constants';
-import { FrostlandsTranslationMap, TranslationMap } from './translationMap';
 import { Toggle } from '@/components/ui/toggle';
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 
+import { ASSET_URL } from '@/constants/constants';
+import { FrostlandsTranslationMap, TranslationMap } from './translationMap';
+import { Button } from '@/components/ui/button';
+import LocalStorageService from '@/services/LocalStorageService';
+import { APIMarker, IMarker } from './types';
+import { DbMapData } from '@/types/mapTypes';
+
 const simpleCRS = L.CRS.Simple;
+const scaleFactor = 0.3013;
 
-const scaleFactor = 0.3013
-const convertMarkerToCoord = (marker: APIMarker): IMarker => {
-  return {
-    x: 256 + scaleFactor * (marker.Transform[0].X / 10000),
-    y: -1 * scaleFactor * (marker.Transform[0].Y / 10000),
-    z: marker.Transform[0].Z / 10000,
-    name: marker.BlueprintType,
-    description: JSON.stringify(marker, null, 2),
-    displayedX: marker.Transform[0].X / 10000,
-    displayedY: marker.Transform[0].Y / 10000,
-    displayedZ: marker.Transform[0].Z / 10000,
-    category: marker.BlueprintType,
-  }
-};
-const convertMarkersToCoords = (markers: APIMarker[]): IMarker[] => markers.map(convertMarkerToCoord);
+const storageService = new LocalStorageService("map");
 
+/* ----------------------------- Utils ----------------------------- */
+
+const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<number, boolean>): IMarker => ({
+  x: 256 + scaleFactor * (marker.Transform[0].X / 10000),
+  y: -scaleFactor * (marker.Transform[0].Y / 10000),
+  z: marker.Transform[0].Z / 10000,
+  id: marker.Id,
+  name: marker.BlueprintType,
+  description: JSON.stringify(marker, null, 2),
+  displayedX: marker.Transform[0].X / 10000,
+  displayedY: marker.Transform[0].Y / 10000,
+  displayedZ: marker.Transform[0].Z / 10000,
+  category: marker.BlueprintType,
+  visited: visitedMap[marker.MapId] || false,
+});
 
 const prefix = `${ASSET_URL}UIResources/UiWorldMap/`;
-const mapUrl: Record<string, string> = {
-  "8": `${prefix}/Image/MapTiles/T_MapTiles_{x}_{y}_UI.png`, // Main
-  "900": `${prefix}/Image/HHATiles/T_HHATiles_{x}_{y}_UI.png`, // Tethys Deep
-  "902": `${prefix}/Image/JKTiles/T_JKTiles_{x}_{y}_UI.png`, // Vault Undergrounds
-  "903": `${prefix}/Image/DDTTiles/T_DDTTiles_{x}_{y}_UI.png`, // Avinoleum
-  "906": `${prefix}/Image/LHLTiles/T_LHLTiles_{x}_{y}_UI.png`, // Lahai Roi
+
+const mapUrl: Record<number, string> = {
+  8: `${prefix}/Image/MapTiles/T_MapTiles_{x}_{y}_UI.png`, // Main
+  900: `${prefix}/Image/HHATiles/T_HHATiles_{x}_{y}_UI.png`, // Tethys Deep
+  902: `${prefix}/Image/JKTiles/T_JKTiles_{x}_{y}_UI.png`, // Vault Undergrounds
+  903: `${prefix}/Image/DDTTiles/T_DDTTiles_{x}_{y}_UI.png`, // Avinoleum
+  906: `${prefix}/Image/LHLTiles/T_LHLTiles_{x}_{y}_UI.png`, // Lahai Roi
 };
 
 const mapIdToName: Record<number, string> = {
-  "8": "Main",
-  "900": "Tethys Deep",
-  "902": "Vault Undergrounds",
-  "903": "Avinoleum",
-  "906": "Lahai Roi",
+  8: 'Main',
+  900: 'Tethys Deep',
+  902: 'Vault Undergrounds',
+  903: 'Avinoleum',
+  906: 'Lahai Roi',
 };
 
-function CustomTileLayer({ mapId, tileSize = 256, mapHeightInTiles = 10 }: { mapId: number, tileSize?: number, mapHeightInTiles?: number }) {
+/* --------------------------- Components -------------------------- */
+
+function CustomPopup({
+  marker,
+  toggleVisited,
+  showDescription,
+  visited,
+}: {
+  marker: IMarker;
+  toggleVisited: () => void;
+  showDescription: boolean;
+  visited: boolean;
+}) {
+
+  const title = FrostlandsTranslationMap[marker.category]?.name || TranslationMap[marker.category]?.name || "";
+
+  return (
+    <Popup>
+      <div className="font-bold">{title}{showDescription && ` - ${marker.category}`}</div>
+      <div>
+        X: {parseFloat(marker.x.toFixed(2))}, Y: {parseFloat(marker.y.toFixed(2))}, Z: {parseFloat(marker.z.toFixed(2))}
+      </div>
+      <Button onClick={toggleVisited}>{visited ? "Uncheck" : "Check"}</Button>
+      {showDescription && <pre className="text-xs mt-2">{marker.description}</pre>}
+    </Popup>
+  );
+}
+
+function CustomTileLayer({ mapId }: { mapId: number, tileSize?: number, mapHeightInTiles?: number }) {
   const map = useMap();
 
   useEffect(() => {
     const tileLayer = L.tileLayer('', {
-      tileSize,
+      tileSize: 256,
       noWrap: true,
-      // MapContainer zooms - allows user interaction outside native zoom
-      minZoom: -4,
+      minZoom: -10,
       maxZoom: 10,
-
-      // IMPORTANT: Tells Leaflet tiles ONLY exist at z=0
       minNativeZoom: 0,
       maxNativeZoom: 0,
-
-      // Other options...
-      zoomOffset: 0,
-      // center={[0, 0]} // Usually set on MapContainer
-      // zoom={-10}      // Usually set on MapContainer
-      // minZoom={-10}   // Handled by MapContainer minZoom prop
-      // maxZoom={10}    // Handled by MapContainer maxZoom prop
     });
 
-    tileLayer.getTileUrl = function ({ x, y }) {
-      const url: string = mapUrl[mapId].replace("{x}", x.toString()).replace("{y}", `${-y}`.toString());
-      return url;
-    };
+    tileLayer.getTileUrl = ({ x, y }) =>
+      mapUrl[mapId].replace('{x}', `${x}`).replace('{y}', `${-y}`);
 
     tileLayer.addTo(map);
 
     return () => {
       map.removeLayer(tileLayer);
     };
-  }, [map, mapId, tileSize, mapHeightInTiles]);
+  }, [map, mapId]);
 
   return null;
 }
 
-
-interface APIMarker {
-  Transform: {
-    X: number;
-    Y: number;
-    Z: number;
-  }[];
-  BlueprintType: string;
-  MapId: number;
-  ComponentsData?: {
-    RewardComponent?: {
-      RewardId?: number;
-    }
-  }
-  name?: string;
-  description?: string;
+function ClickHandler({ enabled, onClick }: { enabled: boolean; onClick: (p: L.LatLng) => void }) {
+  useMapEvent('click', e => {
+    if (enabled) onClick(e.latlng);
+  });
+  return null;
 }
 
-interface IMarker {
-  x: number;
-  y: number;
-  z: number;
-  name: string;
-  description: string;
-  category: string;
-  displayedX: number;
-  displayedY: number;
-  displayedZ: number;
+function ControlCard({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="rounded-lg border p-3 space-y-2 bg-white">
+      <h3 className="text-sm font-semibold text-gray-700">{title}</h3>
+      {children}
+    </div>
+  );
 }
 
-// function isInCategory(marker: APIMarker, category: string): boolean {
-//   if (!TranslationMap[category]) return false;
-//   let isValid = true;
-//   const {
-//     rewardId
-//   } = TranslationMap[category];
-//   if (rewardId && rewardId !== marker.ComponentsData?.RewardComponent?.RewardId) isValid = false;
-//   return isValid;
-// }
+/* ----------------------------- Main ------------------------------ */
+
+
 
 export default function XYZMap() {
   const [data, setData] = useState<APIMarker[]>([]);
-  const [selectedMap, setSelectedMap] = useState<number>(8);
-  const [selectedPoint, setSelectedPoint] = useState<[number, number, number]>([0, 0, 0]);
-  const [radius, setRadius] = useState<number>(50); // displayed in game
-  const [enableClick, setEnableClick] = useState<boolean>(false);
-  const selectedPointXRef = useRef<HTMLInputElement>(null);
-  const selectedPointYRef = useRef<HTMLInputElement>(null);
-  const selectedPointZRef = useRef<HTMLInputElement>(null);
-  const [visibleCategories, setVisibleCategories] = useState<Record<string, boolean>>({});
+  const [selectedMap, setSelectedMap] = useState(8);
+  const [coords, setCoords] = useState({ x: 0, y: 0, z: 0 });
+  const [radius, setRadius] = useState(50);
+  const [showDescriptions, setShowDescriptions] = useState(false);
+  const [hideVisited, setHideVisited] = useState(false);
+  const [enableClick, setEnableClick] = useState(false);
+  const [categoryFilter, setCategoryFilter] = useState('');
+  const [dbMapData, setDbMapData] = useState<DbMapData>(() => {
+    return storageService.load() as DbMapData || {
+      visibleCategories: {},
+      visitedMarkers: {},
+    };
+  });
 
-  // Search filter regex
-  // "X":\s*(830).*\n\s*"Y": (690).*,\n\s*"Z": (14).*$
   useEffect(() => {
-    async function fetchData() {
-      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      // 3.1 levelentityconfig.json
-      const URL = "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYJjynAOgE0xzLG7NC35IMYJrq9uTnS4KXpDBO";
+    storageService.save(dbMapData);
+  }, [dbMapData]);
 
-      const cacheName = 'levelentityconfig-cache';
-      const cache = await caches.open(cacheName);
-      const month = 30 * 24 * 60 * 60 * 1000;
+  /* ----------------------------- Data ----------------------------- */
 
-      // Check cache with expiration
-      const cachedResponse = await cache.match(URL);
-      if (cachedResponse) {
-        const timestamp = parseInt(cachedResponse.headers.get('x-cache-timestamp') || '0');
-        if (Date.now() - timestamp < month) {
-          const data = await cachedResponse.json();
-          console.log("Cached data", data.length);
-          setData(data);
-          return;
-        }
-        // Delete expired cache
-        await cache.delete(URL);
+  useEffect(() => {
+    (async () => {
+      const URL =
+        'https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYJjynAOgE0xzLG7NC35IMYJrq9uTnS4KXpDBO';
+
+      const cache = await caches.open('levelentityconfig-cache');
+      const cached = await cache.match(URL);
+
+      if (cached) {
+        setData(await cached.json());
+        return;
       }
 
-      // Fetch and cache
-      const dataResponse = await fetch(
-        process.env.NODE_ENV === "development"
-          ? `${basePath}/data/levelentityconfig.json`
-          : URL
-      );
-      if (dataResponse.ok) {
-        const clonedResponse = dataResponse.clone();
-        // Add timestamp header to response
-        const headers = new Headers(clonedResponse.headers);
-        headers.set('x-cache-timestamp', Date.now().toString());
-        const responseWithTimestamp = new Response(clonedResponse.body, {
-          status: clonedResponse.status,
-          statusText: clonedResponse.statusText,
-          headers
-        });
-        await cache.put(URL, responseWithTimestamp);
-        const data = await dataResponse.json();
-        console.log("Fetched data", data.length);
-        setData(data);
+      const res = await fetch(URL);
+      if (res.ok) {
+        await cache.put(URL, res.clone());
+        setData(await res.json());
       }
-    }
-    fetchData();
+    })();
   }, []);
 
-  if (data.length === 0) return (<div>You&apos;re downloading a 90MB file of data... Loading...</div>);
-  // const isHidden = (marker: APIMarker) => {
-  //   if (Object.keys(marker.ComponentsData).length === 0) return false;
-  //   const { NearbyTrackingComponent, InteractComponent } = marker.ComponentsData;
-  //   if (InteractComponent?.Options) {
-  //     for (const option of InteractComponent.Options) {
-  //       const { Type, Condition } = option;
-  //       if (Type.Type === "Actions") {
-  //         for (const action of Type.Actions) {
-  //           if (action.Name === "EnableNearbyTracking") {
-  //             return true;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  //   return false;
-  // }
+  useEffect(() => {
+    iconCache.current.clear();
+  }, [hideVisited]);
 
-  let markers = data
-    .filter(entry => entry.MapId === selectedMap)
+  /* -------------------------- Computed ---------------------------- */
 
-  const categoriesCounts: Record<string, number> = {};
-  for (const marker of markers) {
-    categoriesCounts[marker.BlueprintType] = (categoriesCounts[marker.BlueprintType] || 0) + 1;
-  }
-  const categories = Object.entries(categoriesCounts).sort((a, b) => a[0].localeCompare(b[0]));
-  // Need to translate it to ingame value
-  const displayedPoint: APIMarker = {
-    Transform: [{
-      X: (10000 * selectedPoint[0]),
-      Y: (10000 * selectedPoint[1]),
-      Z: 10000 * selectedPoint[2],
-    }],
-    name: "Selected point",
-    BlueprintType: "Test Marker",
-    MapId: selectedMap,
-    description: "Selected point",
-  };
+  const markers = useMemo(
+    () => data.filter(m => m.MapId === selectedMap),
+    [data, selectedMap]
+  );
 
-  const markersWithinRadius = markers.filter(marker => (
-    Math.sqrt(
-      Math.pow(marker.Transform[0].X - displayedPoint.Transform[0].X, 2) +
-      Math.pow(marker.Transform[0].Y - displayedPoint.Transform[0].Y, 2) +
-      (
-        displayedPoint.Transform[0].Z !== 0
-          ? Math.pow(marker.Transform[0].Z - displayedPoint.Transform[0].Z, 2)
-          : 0
-      )
-    ) < radius * 10000
-  ));
-  console.log("Selected point", selectedPoint);
-  console.log("Displayed point", displayedPoint);
-  console.log("Markers within radius", markersWithinRadius.length, markersWithinRadius);
+  const categories = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const m of markers) counts[m.BlueprintType] = (counts[m.BlueprintType] ?? 0) + 1;
+    return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]));
+  }, [markers]);
 
+  const selectedPoint: APIMarker = useMemo(() => {
+    return {
+      Transform: [{ X: coords.x * 10000, Y: coords.y * 10000, Z: coords.z * 10000 }],
+      BlueprintType: 'Selected Point',
+      MapId: selectedMap,
+    };
+  }, [coords, selectedMap]);
 
-  markers = enableClick
-    ? markersWithinRadius
-    : markers.filter(entry => visibleCategories[entry.BlueprintType]);
-  const displayedMarkers = [
-    ...(!enableClick ? [] : [convertMarkerToCoord(displayedPoint)]),
-    ...convertMarkersToCoords(markers)
-  ];
+  const markersWithinRadius = useMemo(() => {
+    const cx = selectedPoint.Transform[0].X;
+    const cy = selectedPoint.Transform[0].Y;
+    const cz = selectedPoint.Transform[0].Z;
 
-  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    console.log("handleCheckboxChange", name, value, event.target.checked);
-    setVisibleCategories(prevState => ({
-      ...prevState,
-      [name]: event.target.checked
+    return markers.filter(m => {
+      const dx = m.Transform[0].X - cx;
+      const dy = m.Transform[0].Y - cy;
+      const dz = cz ? m.Transform[0].Z - cz : 0;
+      return Math.sqrt(dx * dx + dy * dy + dz * dz) < radius * 10000;
+    });
+  }, [markers, selectedPoint, radius]);
+
+  const displayedMarkers = useMemo(() => {
+    const base = enableClick ? markersWithinRadius : markers.filter(m => dbMapData.visibleCategories[m.BlueprintType]);
+    return [
+      ...(enableClick ? [convertMarkerToCoord(selectedPoint, dbMapData.visitedMarkers)] : []),
+      ...base.map((m) => convertMarkerToCoord(m, dbMapData.visitedMarkers)),
+    ];
+  }, [markers, markersWithinRadius, dbMapData.visibleCategories, enableClick, selectedPoint, dbMapData.visitedMarkers]);
+
+  const toggleMarkerVisited = (marker: IMarker) => {
+    setDbMapData((prev) => ({
+      ...prev,
+      visitedMarkers: {
+        ...prev.visitedMarkers,
+        [marker.id as number]: !prev.visitedMarkers[marker.id as number],
+      }
     }));
   }
 
-
-  const handleMapClick = (latlng: L.LatLng) => {
-    if (!enableClick) return;
-    setSelectedPoint([
-      (latlng.lng - 256) / scaleFactor,
-      (-latlng.lat) / scaleFactor,
-      0
-    ])
-    console.log("Clicked map coords (Leaflet):", latlng);
+  const toggleCategory = (category: string) => {
+    setDbMapData(prev => ({
+      ...prev,
+      visibleCategories: {
+        ...prev.visibleCategories,
+        [category]: !prev.visibleCategories[category],
+      },
+    }));
   };
 
-  function ClickHandler({ onClick }: { onClick: (latlng: L.LatLng) => void }) {
-    useMapEvent('click', (e) => {
-      onClick(e.latlng);
-    });
-    return null;
+  const clearCategories = () => {
+    setDbMapData(prev => ({
+      ...prev,
+      visibleCategories: {},
+    }));
   }
 
-  const updateSettings = () => {
-    setSelectedPoint([
-      parseInt((selectedPointXRef.current?.value ?? 0).toString()),
-      parseInt((selectedPointYRef.current?.value ?? 0).toString()),
-      parseInt((selectedPointZRef.current?.value ?? 0).toString()),
-      // parseInt(selectedPointZRef.current?.value)
-    ]);
-  }
+  /* --------------------------- Icons ------------------------------ */
+
+  const iconCache = useRef(new Map<string, L.DivIcon>());
+
+  const getIcon = (category: string, visited: boolean) => {
+    const key = `${category}:${visited}:${hideVisited}`;
+
+    // console.log("ICON CACHE", key, iconCache.current.get(key));
+    // console.log("HIDE", hideVisited, visited);
+    console.log("getIcon", key, visited, hideVisited);
+    if (!iconCache.current.has(key)) {
+      const hue =
+        Math.abs([...category].reduce((a, c) => c.charCodeAt(0) + ((a << 5) - a), 0)) % 360;
+
+      let html = '';
+
+      if (visited) {
+        console.log("VISITED IS TRUE");
+        if (hideVisited) {
+          console.log("HIDE VISITED IS TRUE");
+          html = `<div style="display:none"></div>`;
+        } else {
+          console.log("HIDE VISITED IS FALSE");
+          html = `
+        <div class="w-5 h-5 rounded-full border border-white"
+             style="background:hsl(${hue},70%,50%); opacity: 30%;"></div>`;
+        }
+      } else {
+        console.log("VISITED IS FALSE");
+        console.log("HIDE VISITED IS", hideVisited);
+        html = `
+        <div class="w-5 h-5 rounded-full border border-white"
+             style="background:hsl(${hue},70%,50%)"></div>`;
+      }
+
+      console.log("VISITED", visited, "HTML", html, "KEY", key, "HIDE", hideVisited);
+      iconCache.current.set(
+        key,
+        L.divIcon({
+          html,
+          className: '',
+          iconSize: [20, 20],
+          iconAnchor: [10, 10],
+        })
+      );
+    }
+
+    return iconCache.current.get(key)!;
+  };
+
+  /* ----------------------------- UI ------------------------------- */
 
   const frostlandCategories = categories.filter(category => FrostlandsTranslationMap[category[0]]);
-  const definedCategories = categories.filter(category => TranslationMap[category[0]]);
-  const undefinedCategories = categories.filter(category => !TranslationMap[category[0]]);
 
-  const getCategoryColor = (category: string) => {
-    // Generate a hash from category string
-    let hash = 0;
-    for (let i = 0; i < category.length; i++) {
-      hash = category.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    const hue = Math.abs(hash) % 360; // 0-359 hue range
-    return `hsl(${hue}, 70%, 50%)`; // Saturation & lightness fixed
-  };
-
-  const customDivIcon = (label: string, category: string) => L.divIcon({
-    html: `<div class="w-5 h-5 rounded-full text-white text-xs flex items-center justify-center border-2 border-white" style="background-color: ${getCategoryColor(category)}"></div>`,
-    className: '',
-    iconSize: [20, 20],
-    iconAnchor: [10, 10],
-  });
+  if (!data.length) return <div className="p-4">Loading data…</div>;
 
   return (
-    <div className="h-screen w-screen grid grid-cols-[400px_1fr] grid-rows[auto_1fr]">
-      {/* <!-- Form --> */}
-      <div className="flex flex-col gap-3 p-2 border-b bg-white">
-        <div className="flex flex-row gap-2 justify-center items-center">
-          <Label>Map</Label>
-          <Select
-            value={selectedMap.toString()}
-            onValueChange={(value) => setSelectedMap(parseInt(value as string))}
-          >
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Select map" />
+    <div className="h-screen w-screen flex">
+      {/* Left controls */}
+      <aside className="w-[320px] border-r bg-gray-50 p-3 space-y-3 overflow-auto">
+        <ControlCard title="Map">
+          <Select value={String(selectedMap)} onValueChange={v => setSelectedMap(+v)}>
+            <SelectTrigger>
+              <SelectValue />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
-                {Object.entries(mapIdToName).map(([key, value]) => (
-                  <SelectItem key={key} value={key}>
-                    {value}
+                {Object.entries(mapIdToName).map(([id, name]) => (
+                  <SelectItem key={id} value={id}>
+                    {name}
                   </SelectItem>
                 ))}
               </SelectGroup>
             </SelectContent>
           </Select>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-2">
-          <Label>Radius</Label>
-          <div className="flex flex-row gap-2 items-center">
-            <Input
-              id="radius-input"
-              type="number"
-              defaultValue={radius}
-              onChange={(e) => { setRadius(parseInt(e.target.value)) }}
-            />
-            <Button
-              type="submit"
-              onClick={() => { updateSettings() }}
-            >Update</Button>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-2">
+        </ControlCard>
+
+        <ControlCard title="Selection">
           <Label>Coords</Label>
-          <div className="flex flex-row gap-2 items-center">
-            <Input
-              id="x-input"
-              type="number"
-              value={selectedPoint[0]}
-              ref={selectedPointXRef}
-            />
-            <Input
-              id="y-input"
-              type="number"
-              value={selectedPoint[1]}
-              ref={selectedPointYRef}
-            />
-            <Input
-              id="z-input"
-              type="number"
-              value={selectedPoint[2]}
-              ref={selectedPointZRef}
-            />
-            <Button
-              type="submit"
-              onClick={() => { updateSettings() }}
-            >Update</Button>
+          <div className="flex gap-2">
+            {(['x', 'y', 'z'] as const).map(k => (
+              <Input
+                key={k}
+                type="number"
+                value={coords[k]}
+                onChange={e => setCoords(c => ({ ...c, [k]: +e.target.value }))}
+              />
+            ))}
           </div>
-        </div>
-        <Toggle
-          pressed={enableClick}
-          onPressedChange={() => setEnableClick(!enableClick)}
-        >
-          Enable - Click for markers around
-        </Toggle>
-      </div>
 
+          <Label>Radius</Label>
+          <Input type="number" value={radius} onChange={e => setRadius(+e.target.value)} />
 
-      {/* <!-- Map --> */}
-      <div className="row-span-2">
+          <Toggle pressed={enableClick} onPressedChange={setEnableClick}>
+            Click-to-select
+          </Toggle>
+          <Toggle pressed={hideVisited} onPressedChange={setHideVisited}>
+            Hide visited
+          </Toggle>
+          <Toggle pressed={showDescriptions} onPressedChange={setShowDescriptions}>
+            Show descriptions
+          </Toggle>
+          <Button onClick={() => clearCategories()}>Clear Categories</Button>
+        </ControlCard>
+
+        {selectedMap === 8 && (
+          <>
+            <div>Frostland</div>
+            {frostlandCategories.map(([category, count]) => (
+              <label key={category} className="flex items-center gap-2 text-sm">
+                <input
+                  type="checkbox"
+                  checked={!!dbMapData.visibleCategories[category]}
+                  onChange={() => toggleCategory(category)}
+                />
+                <h2>{FrostlandsTranslationMap[category]?.name ? ` (${FrostlandsTranslationMap[category].name})` : ""} {category} ({count})</h2>
+              </label>
+            ))}
+          </>
+        )}
+
+        <Input
+          placeholder="Filter categories…"
+          value={categoryFilter}
+          onChange={e => setCategoryFilter(e.target.value)}
+        />
+
+        <h3 className="text-sm font-semibold text-gray-700">Not defined categories</h3>
+        {categories
+          .filter(([c]) => c.toLowerCase().includes(categoryFilter.toLowerCase()))
+          .map(([c, count]) => (
+            <label key={c} className="flex items-center gap-2 text-sm">
+              <input
+                type="checkbox"
+                checked={!!dbMapData.visibleCategories[c]}
+                onChange={() => toggleCategory(c)}
+              />
+              {c} ({count})
+            </label>
+          ))}
+      </aside>
+
+      {/* Map */}
+      <main className="flex-1 relative">
+        {enableClick && (
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-3 py-1 rounded z-[1000]">
+            Click map to set center
+          </div>
+        )}
         <MapContainer
           crs={simpleCRS}
           center={[0, 0]}
           zoom={0}
           minZoom={-10}
           maxZoom={10}
+          className={enableClick ? 'cursor-crosshair' : 'cursor-grab'}
           style={{ height: '100%', width: '100%' }}
           attributionControl={false}
         >
-          <CustomTileLayer
-            mapId={selectedMap}
-            tileSize={256}
+          <CustomTileLayer mapId={selectedMap} />
+          <ClickHandler
+            enabled={enableClick}
+            onClick={p =>
+              setCoords({
+                x: (p.lng - 256) / scaleFactor,
+                y: -p.lat / scaleFactor,
+                z: 0,
+              })
+            }
           />
-          <ClickHandler onClick={(latlng) => handleMapClick(latlng)} />
-          {displayedMarkers.map((coord, index) => (
+          {displayedMarkers.map((m) => (
             <Marker
-              key={index}
-              position={[coord.y, coord.x]}
-              icon={customDivIcon(coord.name, coord.category)}
+              key={`${m.id}:${dbMapData.visitedMarkers[m.id as number]}:${hideVisited}`}
+              position={[m.y, m.x]}
+              icon={getIcon(m.category, !!dbMapData.visitedMarkers[m.id as number])}
             >
-              <Popup>
-                <div>
-                  <strong>{coord.name}</strong><br />
-                  <pre>{coord.description}</pre>
-                  X: {coord.displayedX}<br />
-                  Y: {coord.displayedY}<br />
-                  Z: {coord.displayedZ}
-                </div>
-              </Popup>
+              <CustomPopup
+                marker={m}
+                toggleVisited={() => toggleMarkerVisited(m)}
+                visited={!!dbMapData.visitedMarkers[m.id as number]}
+                showDescription={showDescriptions}
+              />
             </Marker>
           ))}
         </MapContainer>
-      </div>
-
-      {/* <!-- Categories --> */}
-      <div className="overflow-auto whitespace-nowrap p-2 bg-gray-100">
-        {selectedMap === 8 && (
-          <>
-            <div>Frostland</div>
-            {frostlandCategories.sort((a, b) => FrostlandsTranslationMap[a[0]].name.localeCompare(FrostlandsTranslationMap[b[0]].name)).map(([category, count]) => (
-              <div key={category} className="flex flex-row gap-2">
-                <input type="checkbox" id={category} name={category} value={category} onChange={handleCheckboxChange} checked={visibleCategories[category]} />
-                <h2>{FrostlandsTranslationMap[category]?.name ? ` (${FrostlandsTranslationMap[category].name})` : ""} {category} ({count})</h2>
-              </div>
-            ))}
-          </>
-        )}
-
-        <div>Defined categories {definedCategories.length}</div>
-        {definedCategories.sort((a, b) => TranslationMap[a[0]].name.localeCompare(TranslationMap[b[0]].name)).map(([category, count]) => (
-          <div key={category} className="flex flex-row gap-2">
-            <input type="checkbox" id={category} name={category} value={category} onChange={handleCheckboxChange} checked={visibleCategories[category]} />
-            <h2>{TranslationMap[category]?.name ? ` (${TranslationMap[category].name})` : ""} {category} ({count})</h2>
-          </div>
-        ))}
-
-        <div>Not defined {undefinedCategories.length}</div>
-        {undefinedCategories.map(([category, count]) => (
-          <div key={category} className="flex flex-row">
-            <input type="checkbox" id={category} name={category} value={category} onChange={handleCheckboxChange} checked={visibleCategories[category]} />
-            <h2>{category}{TranslationMap[category]?.name ? ` (${TranslationMap[category].name})` : ""} ({count})</h2>
-          </div>
-        ))}
-      </div>
-
-    </div >
+      </main>
+    </div>
   );
-};
+}
