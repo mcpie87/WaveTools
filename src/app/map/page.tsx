@@ -88,7 +88,9 @@ function CustomPopup({
         X: {parseFloat(marker.x.toFixed(2))}, Y: {parseFloat(marker.y.toFixed(2))}, Z: {parseFloat(marker.z.toFixed(2))}
       </div>
       <Button onClick={toggleVisited}>{visited ? "Uncheck" : "Check"}</Button>
-      {showDescription && <pre className="text-xs mt-2">{marker.description}</pre>}
+      {showDescription && (
+        <pre className="text-xs mt-2 max-h-[300px] overflow-auto">{marker.description}</pre>
+      )}
     </Popup>
   );
 }
