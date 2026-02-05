@@ -5,6 +5,9 @@ interface TranslationMapEntry {
 
 export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.1_199_Gameplay_EFLDJK_Up_3": {
+    "name": "Lahai Tape Grapple"
+  },
+  "branch3.0_41_Gameplay_3_0/Common1": {
     "name": "Lahai Tape"
   },
   "branch3.0_938_Treasure2": {

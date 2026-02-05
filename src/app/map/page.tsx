@@ -85,7 +85,7 @@ function CustomPopup({
     <Popup>
       <div className="font-bold">{title}{showDescription && ` - ${marker.category}`}</div>
       <div>
-        X: {parseFloat(marker.x.toFixed(2))}, Y: {parseFloat(marker.y.toFixed(2))}, Z: {parseFloat(marker.z.toFixed(2))}
+        X: {parseFloat(marker.displayedX.toFixed(2))}, Y: {parseFloat(marker.displayedY.toFixed(2))}, Z: {parseFloat(marker.displayedZ.toFixed(2))}
       </div>
       <Button onClick={toggleVisited}>{visited ? "Uncheck" : "Check"}</Button>
       {showDescription && (
