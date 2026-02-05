@@ -30,16 +30,16 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   },
 
   "branch3.0_693_Treasure_3_11": {
-    "name": "Chest ???"
+    "name": "Standard Supply Chest (2)"
   },
   "branch3.0_693_Treasure_3_12": {
-    "name": "Chest ???"
+    "name": "Basic Supply Chest (2)"
   },
   "branch3.0_693_Treasure_3_13": {
     "name": "Chest ???"
   },
   "branch3.0_693_Treasure_3_14": {
-    "name": "Chest ???"
+    "name": "Advanced Supply Chest (3)"
   },
   "branch3.0_693_Treasure_3_16": {
     "name": "Chest ???"
