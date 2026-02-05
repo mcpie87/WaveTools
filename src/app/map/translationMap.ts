@@ -17,16 +17,50 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
     "name": "Heritage Gold"
   },
   "branch3.0_693_Treasure_3_1": {
-    "name": "Chest 2"
+    "name": "Basic Supply Chest"
   },
   "branch3.0_693_Treasure_3_2": {
-    "name": "Chest 2"
+    "name": "Standard Supply Chest"
   },
   "branch3.0_693_Treasure_3_3": {
     "name": "Chest 2"
   },
   "branch3.0_693_Treasure_3_5": {
     "name": "Chest 2"
+  },
+
+  "branch3.0_693_Treasure_3_11": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_12": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_13": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_14": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_16": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_19": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_4": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_6": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_7": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_8": {
+    "name": "Chest ???"
+  },
+  "branch3.0_693_Treasure_3_9": {
+    "name": "Chest ???"
   },
 };
 
