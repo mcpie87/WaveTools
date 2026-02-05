@@ -8,7 +8,7 @@ import './fixLeafletIcon';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { ASSET_URL } from '@/constants/constants';
-import { TranslationMap } from './translationMap';
+import { FrostlandsTranslationMap, TranslationMap } from './translationMap';
 import { Toggle } from '@/components/ui/toggle';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
@@ -289,6 +289,7 @@ export default function XYZMap() {
     ]);
   }
 
+  const frostlandCategories = categories.filter(category => FrostlandsTranslationMap[category[0]]);
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
   const undefinedCategories = categories.filter(category => !TranslationMap[category[0]]);
 
@@ -422,6 +423,18 @@ export default function XYZMap() {
 
       {/* <!-- Categories --> */}
       <div className="overflow-auto whitespace-nowrap p-2 bg-gray-100">
+        {selectedMap === 8 && (
+          <>
+            <div>Frostland</div>
+            {frostlandCategories.sort((a, b) => FrostlandsTranslationMap[a[0]].name.localeCompare(FrostlandsTranslationMap[b[0]].name)).map(([category, count]) => (
+              <div key={category} className="flex flex-row gap-2">
+                <input type="checkbox" id={category} name={category} value={category} onChange={handleCheckboxChange} checked={visibleCategories[category]} />
+                <h2>{FrostlandsTranslationMap[category]?.name ? ` (${FrostlandsTranslationMap[category].name})` : ""} {category} ({count})</h2>
+              </div>
+            ))}
+          </>
+        )}
+
         <div>Defined categories {definedCategories.length}</div>
         {definedCategories.sort((a, b) => TranslationMap[a[0]].name.localeCompare(TranslationMap[b[0]].name)).map(([category, count]) => (
           <div key={category} className="flex flex-row gap-2">

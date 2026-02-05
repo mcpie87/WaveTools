@@ -3,6 +3,33 @@ interface TranslationMapEntry {
   rewardId?: number;
 }
 
+export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
+  "branch3.1_199_Gameplay_EFLDJK_Up_3": {
+    "name": "Lahai Tape"
+  },
+  "branch3.0_938_Treasure2": {
+    "name": "Heritage Blue"
+  },
+  "branch3.0_938_Treasure3": {
+    "name": "Heritage Purple"
+  },
+  "branch3.0_938_Treasure4": {
+    "name": "Heritage Gold"
+  },
+  "branch3.0_693_Treasure_3_1": {
+    "name": "Chest 2"
+  },
+  "branch3.0_693_Treasure_3_2": {
+    "name": "Chest 2"
+  },
+  "branch3.0_693_Treasure_3_3": {
+    "name": "Chest 2"
+  },
+  "branch3.0_693_Treasure_3_5": {
+    "name": "Chest 2"
+  },
+};
+
 export const TranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure034": {
     name: "Vault Undergrounds Shell Credit",
