@@ -51,7 +51,7 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
     "name": "Chest ???"
   },
   "branch3.0_693_Treasure_3_6": {
-    "name": "Chest ???"
+    "name": "Basic Trophy Chest (2)"
   },
   "branch3.0_693_Treasure_3_7": {
     "name": "Chest ???"
