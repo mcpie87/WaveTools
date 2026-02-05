@@ -57,7 +57,7 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
     "name": "Chest ???"
   },
   "branch3.0_693_Treasure_3_8": {
-    "name": "Chest ???"
+    "name": "Advanced Supply Pack (2)"
   },
   "branch3.0_693_Treasure_3_9": {
     "name": "Chest ???"
