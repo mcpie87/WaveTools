@@ -143,9 +143,10 @@ export default function XYZMap() {
   useEffect(() => {
     async function fetchData() {
       const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      const URL = "https://raw.githubusercontent.com/Arikatsu/WutheringWaves_Data/3.0/BinData/level_entity/levelentityconfig.json";
+      // 3.1 levelentityconfig.json
+      const URL = "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYJjynAOgE0xzLG7NC35IMYJrq9uTnS4KXpDBO";
 
-      const cacheName = 'levelentityconfig-cache2';
+      const cacheName = 'levelentityconfig-cache';
       const cache = await caches.open(cacheName);
       const month = 30 * 24 * 60 * 60 * 1000;
 
@@ -391,7 +392,7 @@ export default function XYZMap() {
           zoom={0}
           minZoom={-10}
           maxZoom={10}
-          style={{ height: '1200px', width: '100%' }}
+          style={{ height: '100%', width: '100%' }}
           attributionControl={false}
         >
           <CustomTileLayer
