@@ -20,7 +20,7 @@ import {
 import { Label } from '@/components/ui/label';
 
 import { ASSET_URL } from '@/constants/constants';
-import { FrostlandsTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
+import { CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
@@ -266,9 +266,6 @@ export default function XYZMap() {
   const getIcon = (category: string, visited: boolean) => {
     const key = `${category}:${visited}:${hideVisited}`;
 
-    // console.log("ICON CACHE", key, iconCache.current.get(key));
-    // console.log("HIDE", hideVisited, visited);
-    console.log("getIcon", key, visited, hideVisited);
     if (!iconCache.current.has(key)) {
       const hue =
         Math.abs([...category].reduce((a, c) => c.charCodeAt(0) + ((a << 5) - a), 0)) % 360;
@@ -276,25 +273,19 @@ export default function XYZMap() {
       let html = '';
 
       if (visited) {
-        console.log("VISITED IS TRUE");
         if (hideVisited) {
-          console.log("HIDE VISITED IS TRUE");
           html = `<div style="display:none"></div>`;
         } else {
-          console.log("HIDE VISITED IS FALSE");
           html = `
         <div class="w-5 h-5 rounded-full border border-white"
              style="background:hsl(${hue},70%,50%); opacity: 30%;"></div>`;
         }
       } else {
-        console.log("VISITED IS FALSE");
-        console.log("HIDE VISITED IS", hideVisited);
         html = `
         <div class="w-5 h-5 rounded-full border border-white"
              style="background:hsl(${hue},70%,50%)"></div>`;
       }
 
-      console.log("VISITED", visited, "HTML", html, "KEY", key, "HIDE", hideVisited);
       iconCache.current.set(
         key,
         L.divIcon({
@@ -312,6 +303,8 @@ export default function XYZMap() {
   /* ----------------------------- UI ------------------------------- */
 
   const frostlandCategories = categories.filter(category => FrostlandsTranslationMap[category[0]]);
+  const monsterCategories = categories.filter(category => MonsterTranslationMap[category[0]]);
+  const collectCategories = categories.filter(category => CollectTranslationMap[category[0]]);
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
 
   if (!data.length) return <div className="p-4">Loading data…</div>;
@@ -380,6 +373,33 @@ export default function XYZMap() {
             ))}
           </>
         )}
+
+        <>
+          <div>Echoes</div>
+          {monsterCategories.map(([category, count]) => (
+            <label key={category} className="flex items-center gap-2 text-sm">
+              <input
+                type="checkbox"
+                checked={!!dbMapData.visibleCategories[category]}
+                onChange={() => toggleCategory(category)}
+              />
+              <h2>{MonsterTranslationMap[category]?.name ? ` (${MonsterTranslationMap[category].name})` : ""} {category} ({count})</h2>
+            </label>
+          ))}
+        </>
+        <>
+          <div>Collect</div>
+          {collectCategories.map(([category, count]) => (
+            <label key={category} className="flex items-center gap-2 text-sm">
+              <input
+                type="checkbox"
+                checked={!!dbMapData.visibleCategories[category]}
+                onChange={() => toggleCategory(category)}
+              />
+              <h2>{CollectTranslationMap[category]?.name ? ` (${CollectTranslationMap[category].name})` : ""} {category} ({count})</h2>
+            </label>
+          ))}
+        </>
         <>
           <div>Defined</div>
           {definedCategories.map(([category, count]) => (
@@ -389,7 +409,7 @@ export default function XYZMap() {
                 checked={!!dbMapData.visibleCategories[category]}
                 onChange={() => toggleCategory(category)}
               />
-              <h2>{FrostlandsTranslationMap[category]?.name ? ` (${FrostlandsTranslationMap[category].name})` : ""} {category} ({count})</h2>
+              <h2>{TranslationMap[category]?.name ? ` (${TranslationMap[category].name})` : ""} {category} ({count})</h2>
             </label>
           ))}
         </>

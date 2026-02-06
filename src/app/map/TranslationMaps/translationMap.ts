@@ -29,7 +29,6 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.0_693_Treasure_3_5": {
     "name": "Tidal Supply Chest (2)"
   },
-
   "branch3.0_693_Treasure_3_11": {
     "name": "Standard Supply Chest (2)"
   },
@@ -77,58 +76,12 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   },
 };
 
-export const TranslationMap: Record<string, TranslationMapEntry> = {
-  "Treasure034": {
-    name: "Vault Undergrounds Shell Credit",
-    rewardId: 1321,
-  },
-  "Gameplay012": {
-    name: "Purple Rinascita Cloud",
-  },
-  "Gameplay102": {
-    name: "Quest?"
-  },
-  "branch2.0_JMXJ_StrongPollution": {
-    name: "Red Rinascita Cloud",
-  },
+export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster001": {
     name: "Vanguard Junrock",
   },
   "Monster002": {
     name: "Fission Junrock",
-  },
-  "Collect504": {
-    name: "Floramber"
-  },
-  "Collect502": {
-    name: "Lampylumen"
-  },
-  "Quest009": {
-    name: "Monnaie Box (Big Pot)"
-  },
-  "Quest010": {
-    name: "Monnaie Box 1 ?"
-  },
-  "branch2.0_Quest012": {
-    name: "Monnaie Box (Chest)"
-  },
-  "SceneObj1": {
-    name: "Monnaie Box 2 ?"
-  },
-  "branch2.0_SceneObj2": {
-    name: "Monnaie Box 3 ?"
-  },
-  "branch2.0_SceneObj3": {
-    name: "Monnaie Box 4 ?"
-  },
-  "Treasure_2_0_05": {
-    name: "Tidal Chest"
-  },
-  "Treasure_LNXT_Update04": {
-    name: "Premium Chest"
-  },
-  "Treasure_LNXT_Update05": {
-    name: "Premium (Tidal) Chest" // name is Premium Chest, it gives Tidal Chest tho
   },
   "branch2.4_Monster_branch2.4_001": {
     name: "Cuddle Wuddle",
@@ -229,6 +182,59 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_026": {
     name: "New Mob",
   },
+};
+
+export const CollectTranslationMap: Record<string, TranslationMapEntry> = {
+  "Collect504": {
+    name: "Floramber"
+  },
+  "Collect502": {
+    name: "Lampylumen"
+  },
+};
+
+export const TranslationMap: Record<string, TranslationMapEntry> = {
+  "Treasure034": {
+    name: "Vault Undergrounds Shell Credit",
+    rewardId: 1321,
+  },
+  "Gameplay012": {
+    name: "Purple Rinascita Cloud",
+  },
+  "Gameplay102": {
+    name: "Quest?"
+  },
+  "branch2.0_JMXJ_StrongPollution": {
+    name: "Red Rinascita Cloud",
+  },
+  "Quest009": {
+    name: "Monnaie Box (Big Pot)"
+  },
+  "Quest010": {
+    name: "Monnaie Box 1 ?"
+  },
+  "branch2.0_Quest012": {
+    name: "Monnaie Box (Chest)"
+  },
+  "SceneObj1": {
+    name: "Monnaie Box 2 ?"
+  },
+  "branch2.0_SceneObj2": {
+    name: "Monnaie Box 3 ?"
+  },
+  "branch2.0_SceneObj3": {
+    name: "Monnaie Box 4 ?"
+  },
+  "Treasure_2_0_05": {
+    name: "Tidal Chest"
+  },
+  "Treasure_LNXT_Update04": {
+    name: "Premium Chest"
+  },
+  "Treasure_LNXT_Update05": {
+    name: "Premium (Tidal) Chest" // name is Premium Chest, it gives Tidal Chest tho
+  },
+
   "branch2.4_122_Treasure_2_4_03": {
     name: "Advanced Trophy Chest",
   },
