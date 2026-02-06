@@ -80,7 +80,7 @@ export const SeptimontTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_122_Treasure_2_4_03": { name: "Chest ??? 6" },
   "branch2.4_122_Treasure_2_4_04": { name: "Chest ??? 7" },
   "branch2.4_122_Treasure_2_4_05": { name: "Chest ??? 8" },
-  "Treasure_2_0_01": { name: "Chest ??? 9" },
+  "Treasure_2_0_01": { name: "Basic Supply Chest" },
   "Treasure_2_0_02": { name: "Standard Supply Chest" },
   "Treasure_2_0_03": { name: "Advanced Supply Chest" },
   "Treasure_2_0_04": { name: "Chest ??? 12" },
