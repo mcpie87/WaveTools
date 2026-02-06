@@ -158,6 +158,7 @@ export default function XYZMap() {
   const [hideVisited, setHideVisited] = useState(false);
   const [enableClick, setEnableClick] = useState(false);
   const [categoryFilter, setCategoryFilter] = useState('');
+  const [showSettings, setShowSettings] = useState(true);
   const [dbMapData, setDbMapData] = useState<DbMapData>(() => {
     return storageService.load() as DbMapData || {
       visibleCategories: {},
@@ -322,111 +323,121 @@ export default function XYZMap() {
   if (!data.length) return <div className="p-4">Loading data…</div>;
 
   return (
-    <div className="h-screen w-screen flex">
+    <div className="h-screen w-screen flex relative">
       {/* Left controls */}
-      <aside className="w-[320px] border-r bg-gray-50 p-3 space-y-3 overflow-auto">
-        <ControlCard title="Map">
-          <Select value={String(selectedMap)} onValueChange={v => setSelectedMap(+v)}>
-            <SelectTrigger>
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectGroup>
-                {Object.entries(mapIdToName).map(([id, name]) => (
-                  <SelectItem key={id} value={id}>
-                    {name}
-                  </SelectItem>
-                ))}
-              </SelectGroup>
-            </SelectContent>
-          </Select>
-        </ControlCard>
+      {!showSettings && (
+        <aside className="absolute top-2 left-2 z-10 border-r bg-gray-50">
+          <Button variant="outline" className="w-[320px] absolute " onClick={() => setShowSettings(true)}>
+            Show Settings
+          </Button>
+        </aside>
+      )}
+      {showSettings && (
+        <aside className="w-[320px] absolute top-2 left-2 z-10 border-r bg-gray-50 p-3 space-y-3 overflow-scroll bottom-2">
+          <Button variant="outline" className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
+          <ControlCard title="Map">
+            <Select value={String(selectedMap)} onValueChange={v => setSelectedMap(+v)}>
+              <SelectTrigger>
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup>
+                  {Object.entries(mapIdToName).map(([id, name]) => (
+                    <SelectItem key={id} value={id}>
+                      {name}
+                    </SelectItem>
+                  ))}
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+          </ControlCard>
 
-        <ControlCard title="Selection">
-          <Label>Coords</Label>
-          <div className="flex gap-2">
-            {(['x', 'y', 'z'] as const).map(k => (
-              <Input
-                key={k}
-                type="number"
-                value={coords[k]}
-                onChange={e => setCoords(c => ({ ...c, [k]: +e.target.value }))}
-              />
-            ))}
-          </div>
+          <ControlCard title="Selection">
+            <Label>Coords</Label>
+            <div className="flex gap-2">
+              {(['x', 'y', 'z'] as const).map(k => (
+                <Input
+                  key={k}
+                  type="number"
+                  value={coords[k]}
+                  onChange={e => setCoords(c => ({ ...c, [k]: +e.target.value }))}
+                />
+              ))}
+            </div>
 
-          <Label>Radius</Label>
-          <Input type="number" value={radius} onChange={e => setRadius(+e.target.value)} />
+            <Label>Radius</Label>
+            <Input type="number" value={radius} onChange={e => setRadius(+e.target.value)} />
 
-          <Toggle pressed={enableClick} onPressedChange={setEnableClick}>
-            Click-to-select
-          </Toggle>
-          <Toggle pressed={hideVisited} onPressedChange={setHideVisited}>
-            Hide visited
-          </Toggle>
-          <Toggle pressed={showDescriptions} onPressedChange={setShowDescriptions}>
-            Show descriptions
-          </Toggle>
-          <Button onClick={() => clearCategories()}>Clear Categories</Button>
-        </ControlCard>
+            <Toggle pressed={enableClick} onPressedChange={setEnableClick}>
+              Click-to-select
+            </Toggle>
+            <Toggle pressed={hideVisited} onPressedChange={setHideVisited}>
+              Hide visited
+            </Toggle>
+            <Toggle pressed={showDescriptions} onPressedChange={setShowDescriptions}>
+              Show descriptions
+            </Toggle>
+            <Button onClick={() => clearCategories()}>Clear Categories</Button>
+          </ControlCard>
 
-        {([
-          ["Frostland", frostlandCategories, FrostlandsTranslationMap],
-          ["Septimont", septimontCategories, SeptimontTranslationMap],
-          ["Echoes", monsterCategories, MonsterTranslationMap],
-          ["Collect", collectCategories, CollectTranslationMap],
-          ["Casket", casketCategories, CasketTranslationMap],
-          ["Teleporter", teleporterCategories, TeleporterTranslationMap],
-          ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap],
-          ["Defined", definedCategories, TranslationMap],
-        ] as const).map(([title, categories, translationMap]) => (
-          <>
-            {categories.length > 0 && (
-              <div key={title as string}>
-                <div>{title as string}</div>
-                {categories.sort((a, b) => translationMap[a[0]]?.name.localeCompare(translationMap[b[0]]?.name) || 0).map(([category, count]) => (
-                  <label key={category} className="flex items-center gap-2 text-sm">
-                    <input
-                      type="checkbox"
-                      checked={!!dbMapData.visibleCategories[category]}
-                      onChange={() => toggleCategory(category)}
-                    />
-                    <h2>{
-                      showDescriptions
-                        ? ("(" + translationMap[category].name + ") " + category)
-                        : translationMap[category].name
-                    } ({count})</h2>
-                  </label>
-                ))}
-              </div>
-            )
-            }
-          </>
-        ))}
-
-        <Input
-          placeholder="Filter categories…"
-          value={categoryFilter}
-          onChange={e => setCategoryFilter(e.target.value)}
-        />
-
-        <h3 className="text-sm font-semibold text-gray-700">Not defined categories</h3>
-        {categories
-          .filter(([c]) => c.toLowerCase().includes(categoryFilter.toLowerCase()))
-          .map(([c, count]) => (
-            <label key={c} className="flex items-center gap-2 text-sm">
-              <input
-                type="checkbox"
-                checked={!!dbMapData.visibleCategories[c]}
-                onChange={() => toggleCategory(c)}
-              />
-              {c} ({count})
-            </label>
+          {([
+            ["Frostland", frostlandCategories, FrostlandsTranslationMap],
+            ["Septimont", septimontCategories, SeptimontTranslationMap],
+            ["Echoes", monsterCategories, MonsterTranslationMap],
+            ["Collect", collectCategories, CollectTranslationMap],
+            ["Casket", casketCategories, CasketTranslationMap],
+            ["Teleporter", teleporterCategories, TeleporterTranslationMap],
+            ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap],
+            ["Defined", definedCategories, TranslationMap],
+          ] as const).map(([title, categories, translationMap]) => (
+            <>
+              {categories.length > 0 && (
+                <div key={title as string}>
+                  <div>{title as string}</div>
+                  {categories.sort((a, b) => translationMap[a[0]]?.name.localeCompare(translationMap[b[0]]?.name) || 0).map(([category, count]) => (
+                    <label key={category} className="flex items-center gap-2 text-sm">
+                      <input
+                        type="checkbox"
+                        checked={!!dbMapData.visibleCategories[category]}
+                        onChange={() => toggleCategory(category)}
+                      />
+                      <h2>{
+                        showDescriptions
+                          ? ("(" + translationMap[category].name + ") " + category)
+                          : translationMap[category].name
+                      } ({count})</h2>
+                    </label>
+                  ))}
+                </div>
+              )
+              }
+            </>
           ))}
-      </aside>
+
+          <Input
+            placeholder="Filter categories…"
+            value={categoryFilter}
+            onChange={e => setCategoryFilter(e.target.value)}
+          />
+
+          <h3 className="text-sm font-semibold text-gray-700">Not defined categories</h3>
+          {categories
+            .filter(([c]) => c.toLowerCase().includes(categoryFilter.toLowerCase()))
+            .map(([c, count]) => (
+              <label key={c} className="flex items-center gap-2 text-sm">
+                <input
+                  type="checkbox"
+                  checked={!!dbMapData.visibleCategories[c]}
+                  onChange={() => toggleCategory(c)}
+                />
+                {c} ({count})
+              </label>
+            ))}
+        </aside>
+      )}
 
       {/* Map */}
-      <main className="flex-1 relative">
+      <main className="flex-1 relative z-0">
         {enableClick && (
           <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-3 py-1 rounded z-[1000]">
             Click map to set center
