@@ -57,7 +57,7 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
     "name": "Advanced Supply Pack (2)"
   },
   "branch3.0_693_Treasure_3_9": {
-    "name": "Chest ???"
+    "name": "Premium Supply Chest (2)"
   },
   "branch3.1_40_Gameplay_3_1/VisionSummon4": {
     "name": "Glohomoth Vision"
@@ -66,7 +66,7 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
     "name": "Soliskin Chest"
   },
   "branch3.0_13_Treasure_2_0_03": {
-    "name": "Standard Supply Chest (Huanglong)"
+    "name": "Standard Supply Chest (Rinascita)"
   },
 };
 
@@ -79,9 +79,9 @@ export const CasketTranslationMap: Record<string, TranslationMapEntry> = {
 };
 
 export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = {
-  "branch3.0_938_Treasure2": { name: "Heritage Blue" },
-  "branch3.0_938_Treasure3": { name: "Heritage Purple" },
-  "branch3.0_938_Treasure4": { name: "Heritage Gold" },
+  "branch3.0_938_Treasure2": { name: "Tidal Heritage (Blue)" },
+  "branch3.0_938_Treasure3": { name: "Tidal Heritage (Purple)" },
+  "branch3.0_938_Treasure4": { name: "Tidal Heritage (Gold)" },
   "Treasure005": { name: "Tidal Heritage (Blue)" },
   "Treasure008": { name: "Tidal Heritage (Purple)" },
   "Treasure011": { name: "Tidal Heritage (Gold)" },

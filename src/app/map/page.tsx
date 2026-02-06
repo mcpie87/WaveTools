@@ -79,7 +79,14 @@ function CustomPopup({
   visited: boolean;
 }) {
 
-  const title = FrostlandsTranslationMap[marker.category]?.name || TranslationMap[marker.category]?.name || "";
+  const title = FrostlandsTranslationMap[marker.category]?.name
+    || TranslationMap[marker.category]?.name
+    || CasketTranslationMap[marker.category]?.name
+    || TidalHeritageTranslationMap[marker.category]?.name
+    || MonsterTranslationMap[marker.category]?.name
+    || CollectTranslationMap[marker.category]?.name
+    || TeleporterTranslationMap[marker.category]?.name
+    || "";
 
   return (
     <Popup>
