@@ -20,7 +20,7 @@ import {
 import { Label } from '@/components/ui/label';
 
 import { ASSET_URL } from '@/constants/constants';
-import { FrostlandsTranslationMap, TranslationMap } from './translationMap';
+import { FrostlandsTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
@@ -312,6 +312,7 @@ export default function XYZMap() {
   /* ----------------------------- UI ------------------------------- */
 
   const frostlandCategories = categories.filter(category => FrostlandsTranslationMap[category[0]]);
+  const definedCategories = categories.filter(category => TranslationMap[category[0]]);
 
   if (!data.length) return <div className="p-4">Loading data…</div>;
 
@@ -364,7 +365,7 @@ export default function XYZMap() {
           <Button onClick={() => clearCategories()}>Clear Categories</Button>
         </ControlCard>
 
-        {selectedMap === 8 && (
+        {[8, 906].includes(selectedMap) && (
           <>
             <div>Frostland</div>
             {frostlandCategories.map(([category, count]) => (
@@ -379,6 +380,19 @@ export default function XYZMap() {
             ))}
           </>
         )}
+        <>
+          <div>Defined</div>
+          {definedCategories.map(([category, count]) => (
+            <label key={category} className="flex items-center gap-2 text-sm">
+              <input
+                type="checkbox"
+                checked={!!dbMapData.visibleCategories[category]}
+                onChange={() => toggleCategory(category)}
+              />
+              <h2>{FrostlandsTranslationMap[category]?.name ? ` (${FrostlandsTranslationMap[category].name})` : ""} {category} ({count})</h2>
+            </label>
+          ))}
+        </>
 
         <Input
           placeholder="Filter categories…"

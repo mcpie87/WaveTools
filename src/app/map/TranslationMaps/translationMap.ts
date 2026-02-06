@@ -1,7 +1,5 @@
-interface TranslationMapEntry {
-  name: string;
-  rewardId?: number;
-}
+import { TranslationMapEntry } from "./TranslationMapInterface";
+
 
 export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.1_199_Gameplay_EFLDJK_Up_3": {
