@@ -20,7 +20,7 @@ import {
 import { Label } from '@/components/ui/label';
 
 import { ASSET_URL } from '@/constants/constants';
-import { CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
+import { CasketTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
@@ -305,6 +305,9 @@ export default function XYZMap() {
   const frostlandCategories = categories.filter(category => FrostlandsTranslationMap[category[0]]);
   const monsterCategories = categories.filter(category => MonsterTranslationMap[category[0]]);
   const collectCategories = categories.filter(category => CollectTranslationMap[category[0]]);
+  const tidalHeritageCategories = categories.filter(category => TidalHeritageTranslationMap[category[0]]);
+  const casketCategories = categories.filter(category => CasketTranslationMap[category[0]]);
+  const teleporterCategories = categories.filter(category => TeleporterTranslationMap[category[0]]);
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
 
   if (!data.length) return <div className="p-4">Loading data…</div>;
@@ -358,61 +361,38 @@ export default function XYZMap() {
           <Button onClick={() => clearCategories()}>Clear Categories</Button>
         </ControlCard>
 
-        {[8, 906].includes(selectedMap) && (
+        {([
+          ["Frostland", frostlandCategories, FrostlandsTranslationMap],
+          ["Echoes", monsterCategories, MonsterTranslationMap],
+          ["Collect", collectCategories, CollectTranslationMap],
+          ["Casket", casketCategories, CasketTranslationMap],
+          ["Teleporter", teleporterCategories, TeleporterTranslationMap],
+          ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap],
+          ["Defined", definedCategories, TranslationMap],
+        ] as const).map(([title, categories, translationMap]) => (
           <>
-            <div>Frostland</div>
-            {frostlandCategories.map(([category, count]) => (
-              <label key={category} className="flex items-center gap-2 text-sm">
-                <input
-                  type="checkbox"
-                  checked={!!dbMapData.visibleCategories[category]}
-                  onChange={() => toggleCategory(category)}
-                />
-                <h2>{FrostlandsTranslationMap[category]?.name ? ` (${FrostlandsTranslationMap[category].name})` : ""} {(showDescriptions ? category : "") + " "}({count})</h2>
-              </label>
-            ))}
+            {categories.length > 0 && (
+              <div key={title as string}>
+                <div>{title as string}</div>
+                {categories.map(([category, count]) => (
+                  <label key={category} className="flex items-center gap-2 text-sm">
+                    <input
+                      type="checkbox"
+                      checked={!!dbMapData.visibleCategories[category]}
+                      onChange={() => toggleCategory(category)}
+                    />
+                    <h2>{
+                      showDescriptions
+                        ? ("(" + translationMap[category].name + ") " + category)
+                        : translationMap[category].name
+                    } ({count})</h2>
+                  </label>
+                ))}
+              </div>
+            )
+            }
           </>
-        )}
-
-        <>
-          <div>Echoes</div>
-          {monsterCategories.map(([category, count]) => (
-            <label key={category} className="flex items-center gap-2 text-sm">
-              <input
-                type="checkbox"
-                checked={!!dbMapData.visibleCategories[category]}
-                onChange={() => toggleCategory(category)}
-              />
-              <h2>{MonsterTranslationMap[category]?.name ? ` (${MonsterTranslationMap[category].name})` : ""} {(showDescriptions ? category : "") + " "}({count})</h2>
-            </label>
-          ))}
-        </>
-        <>
-          <div>Collect</div>
-          {collectCategories.map(([category, count]) => (
-            <label key={category} className="flex items-center gap-2 text-sm">
-              <input
-                type="checkbox"
-                checked={!!dbMapData.visibleCategories[category]}
-                onChange={() => toggleCategory(category)}
-              />
-              <h2>{CollectTranslationMap[category]?.name ? ` (${CollectTranslationMap[category].name})` : ""} {(showDescriptions ? category : "") + " "}({count})</h2>
-            </label>
-          ))}
-        </>
-        <>
-          <div>Defined</div>
-          {definedCategories.map(([category, count]) => (
-            <label key={category} className="flex items-center gap-2 text-sm">
-              <input
-                type="checkbox"
-                checked={!!dbMapData.visibleCategories[category]}
-                onChange={() => toggleCategory(category)}
-              />
-              <h2>{TranslationMap[category]?.name ? ` (${TranslationMap[category].name})` : ""} {(showDescriptions ? category : "") + " "}({count})</h2>
-            </label>
-          ))}
-        </>
+        ))}
 
         <Input
           placeholder="Filter categories…"

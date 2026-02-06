@@ -5,9 +5,6 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.1_199_Gameplay_EFLDJK_Up_3": {
     "name": "Lahai Tape Grapple"
   },
-  "branch3.0_41_Gameplay_3_0/Common1": {
-    "name": "Lahai Tape"
-  },
   "branch3.0_938_Treasure2": {
     "name": "Heritage Blue"
   },
@@ -71,9 +68,23 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.0_13_Treasure_2_0_03": {
     "name": "Standard Supply Chest (Huanglong)"
   },
-  "Teleport007": {
-    "name": "Teleporter"
-  },
+};
+
+export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
+  "Teleport007": { name: "Teleporter" },
+};
+
+export const CasketTranslationMap: Record<string, TranslationMapEntry> = {
+  "branch3.0_41_Gameplay_3_0/Common1": { name: "Lahai Tape" },
+};
+
+export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = {
+  "branch3.0_938_Treasure2": { name: "Heritage Blue" },
+  "branch3.0_938_Treasure3": { name: "Heritage Purple" },
+  "branch3.0_938_Treasure4": { name: "Heritage Gold" },
+  "Treasure005": { name: "Tidal Heritage (Blue)" },
+  "Treasure008": { name: "Tidal Heritage (Purple)" },
+  "Treasure011": { name: "Tidal Heritage (Gold)" },
 };
 
 export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
@@ -238,9 +249,6 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_122_Treasure_2_4_03": {
     name: "Advanced Trophy Chest",
   },
-  "Treasure005": { name: "XYZ Chest" },
-  "Treasure008": { name: "XYZ Chest" },
-  "Treasure011": { name: "XYZ Chest" },
   "branch3.0_693_Treasure_3_1": { name: "XYZ Chest" },
   "branch3.0_693_Treasure_3_2": { name: "XYZ Chest" },
   "branch3.0_693_Treasure_3_3": { name: "Advanced Trophy Chest" },
