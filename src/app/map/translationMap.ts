@@ -71,6 +71,9 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.1_115_Gameplay_3_1/SunSpiritPPV": {
     "name": "Soliskin Chest"
   },
+  "branch3.0_13_Treasure_2_0_03": {
+    "name": "Standard Supply Chest (Huanglong)"
+  },
   "Teleport007": {
     "name": "Teleporter"
   },
