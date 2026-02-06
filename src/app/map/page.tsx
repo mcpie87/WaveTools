@@ -54,6 +54,7 @@ const mapUrl: Record<number, string> = {
   900: `${prefix}/Image/HHATiles/T_HHATiles_{x}_{y}_UI.png`, // Tethys Deep
   902: `${prefix}/Image/JKTiles/T_JKTiles_{x}_{y}_UI.png`, // Vault Undergrounds
   903: `${prefix}/Image/DDTTiles/T_DDTTiles_{x}_{y}_UI.png`, // Avinoleum
+  905: `${prefix}/Image/YHSYCTiles/T_YHSYCTiles_{x}_{y}_UI.png`, // Fabricatorium of the Deep
   906: `${prefix}/Image/LHLTiles/T_LHLTiles_{x}_{y}_UI.png`, // Lahai Roi
 };
 
@@ -62,6 +63,7 @@ const mapIdToName: Record<number, string> = {
   900: 'Tethys Deep',
   902: 'Vault Undergrounds',
   903: 'Avinoleum',
+  905: 'Fabricatorium of the Deep',
   906: 'Lahai Roi',
 };
 
@@ -444,6 +446,7 @@ export default function XYZMap() {
           </div>
         )}
         <MapContainer
+          key={selectedMap}
           crs={simpleCRS}
           center={[0, 0]}
           zoom={0}
