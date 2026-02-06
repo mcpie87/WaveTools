@@ -87,7 +87,7 @@ export const SeptimontTranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure_2_0_05": { name: "Chest ??? 13" },
   "Treasure_LNXT_Lock01": { name: "Chest ??? 14" },
   "Treasure_LNXT_Lock02": { name: "Chest ??? 15" },
-  "Treasure_LNXT_Lock03": { name: "Chest ??? 16" },
+  "Treasure_LNXT_Lock03": { name: "Advanced Supply Chest" },
   "Treasure_LNXT_Lock04": { name: "Chest ??? 17" },
   "Treasure_LNXT_Lock05": { name: "Chest ??? 18" },
   "Treasure_LNXT_Update01": { name: "Chest ??? 19" },
