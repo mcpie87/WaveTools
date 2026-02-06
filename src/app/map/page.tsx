@@ -27,7 +27,7 @@ import { APIMarker, IMarker } from './types';
 import { DbMapData } from '@/types/mapTypes';
 
 const simpleCRS = L.CRS.Simple;
-const scaleFactor = 0.3013;
+const scaleFactor = 0.30118;
 
 const storageService = new LocalStorageService("map");
 
