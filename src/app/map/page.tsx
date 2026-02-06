@@ -374,7 +374,7 @@ export default function XYZMap() {
             {categories.length > 0 && (
               <div key={title as string}>
                 <div>{title as string}</div>
-                {categories.map(([category, count]) => (
+                {categories.sort((a, b) => translationMap[a[0]]?.name.localeCompare(translationMap[b[0]]?.name) || 0).map(([category, count]) => (
                   <label key={category} className="flex items-center gap-2 text-sm">
                     <input
                       type="checkbox"
