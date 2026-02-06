@@ -70,6 +70,34 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   },
 };
 
+export const SeptimontTranslationMap: Record<string, TranslationMapEntry> = {
+  "branch2.4_109_Gameplay_2_4QQ1": { "name": "Casket" },
+  "branch2.0_Treasure1": { name: "Chest ??? 1" },
+  "branch2.0_Treasure2": { name: "Chest ??? 2" },
+  "branch2.0_Treasure3": { name: "Chest ??? 3" },
+  "branch2.4_122_Treasure_2_4_01": { name: "Chest ??? 4" },
+  "branch2.4_122_Treasure_2_4_02": { name: "Chest ??? 5" },
+  "branch2.4_122_Treasure_2_4_03": { name: "Chest ??? 6" },
+  "branch2.4_122_Treasure_2_4_04": { name: "Chest ??? 7" },
+  "branch2.4_122_Treasure_2_4_05": { name: "Chest ??? 8" },
+  "Treasure_2_0_01": { name: "Chest ??? 9" },
+  "Treasure_2_0_02": { name: "Chest ??? 10" },
+  "Treasure_2_0_03": { name: "Chest ??? 11" },
+  "Treasure_2_0_04": { name: "Chest ??? 12" },
+  "Treasure_2_0_05": { name: "Chest ??? 13" },
+  "Treasure_LNXT_Lock01": { name: "Chest ??? 14" },
+  "Treasure_LNXT_Lock02": { name: "Chest ??? 15" },
+  "Treasure_LNXT_Lock03": { name: "Chest ??? 16" },
+  "Treasure_LNXT_Lock04": { name: "Chest ??? 17" },
+  "Treasure_LNXT_Lock05": { name: "Chest ??? 18" },
+  "Treasure_LNXT_Update01": { name: "Chest ??? 19" },
+  "Treasure_LNXT_Update02": { name: "Chest ??? 20" },
+  "Treasure_LNXT_Update03": { name: "Chest ??? 21" },
+  "Treasure_LNXT_Update04": { name: "Chest ??? 22" },
+  "Treasure_LNXT_Update05": { name: "Chest ??? 23" },
+  "Treasure034": { name: "Chest ??? 24" },
+};
+
 export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
   "Teleport007": { name: "Teleporter" },
 };

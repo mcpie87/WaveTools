@@ -20,7 +20,7 @@ import {
 import { Label } from '@/components/ui/label';
 
 import { ASSET_URL } from '@/constants/constants';
-import { CasketTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
+import { CasketTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, SeptimontTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
@@ -80,6 +80,7 @@ function CustomPopup({
 }) {
 
   const title = FrostlandsTranslationMap[marker.category]?.name
+    || SeptimontTranslationMap[marker.category]?.name
     || TranslationMap[marker.category]?.name
     || CasketTranslationMap[marker.category]?.name
     || TidalHeritageTranslationMap[marker.category]?.name
@@ -310,6 +311,7 @@ export default function XYZMap() {
   /* ----------------------------- UI ------------------------------- */
 
   const frostlandCategories = categories.filter(category => FrostlandsTranslationMap[category[0]]);
+  const septimontCategories = categories.filter(category => SeptimontTranslationMap[category[0]]);
   const monsterCategories = categories.filter(category => MonsterTranslationMap[category[0]]);
   const collectCategories = categories.filter(category => CollectTranslationMap[category[0]]);
   const tidalHeritageCategories = categories.filter(category => TidalHeritageTranslationMap[category[0]]);
@@ -370,6 +372,7 @@ export default function XYZMap() {
 
         {([
           ["Frostland", frostlandCategories, FrostlandsTranslationMap],
+          ["Septimont", septimontCategories, SeptimontTranslationMap],
           ["Echoes", monsterCategories, MonsterTranslationMap],
           ["Collect", collectCategories, CollectTranslationMap],
           ["Casket", casketCategories, CasketTranslationMap],
