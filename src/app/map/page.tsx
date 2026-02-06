@@ -368,7 +368,7 @@ export default function XYZMap() {
                   checked={!!dbMapData.visibleCategories[category]}
                   onChange={() => toggleCategory(category)}
                 />
-                <h2>{FrostlandsTranslationMap[category]?.name ? ` (${FrostlandsTranslationMap[category].name})` : ""} {category} ({count})</h2>
+                <h2>{FrostlandsTranslationMap[category]?.name ? ` (${FrostlandsTranslationMap[category].name})` : ""} {(showDescriptions ? category : "") + " "}({count})</h2>
               </label>
             ))}
           </>
@@ -383,7 +383,7 @@ export default function XYZMap() {
                 checked={!!dbMapData.visibleCategories[category]}
                 onChange={() => toggleCategory(category)}
               />
-              <h2>{MonsterTranslationMap[category]?.name ? ` (${MonsterTranslationMap[category].name})` : ""} {category} ({count})</h2>
+              <h2>{MonsterTranslationMap[category]?.name ? ` (${MonsterTranslationMap[category].name})` : ""} {(showDescriptions ? category : "") + " "}({count})</h2>
             </label>
           ))}
         </>
@@ -396,7 +396,7 @@ export default function XYZMap() {
                 checked={!!dbMapData.visibleCategories[category]}
                 onChange={() => toggleCategory(category)}
               />
-              <h2>{CollectTranslationMap[category]?.name ? ` (${CollectTranslationMap[category].name})` : ""} {category} ({count})</h2>
+              <h2>{CollectTranslationMap[category]?.name ? ` (${CollectTranslationMap[category].name})` : ""} {(showDescriptions ? category : "") + " "}({count})</h2>
             </label>
           ))}
         </>
@@ -409,7 +409,7 @@ export default function XYZMap() {
                 checked={!!dbMapData.visibleCategories[category]}
                 onChange={() => toggleCategory(category)}
               />
-              <h2>{TranslationMap[category]?.name ? ` (${TranslationMap[category].name})` : ""} {category} ({count})</h2>
+              <h2>{TranslationMap[category]?.name ? ` (${TranslationMap[category].name})` : ""} {(showDescriptions ? category : "") + " "}({count})</h2>
             </label>
           ))}
         </>
