@@ -223,12 +223,14 @@ export default function XYZMap() {
   }, [markers, selectedPoint, radius]);
 
   const displayedMarkers = useMemo(() => {
-    const base = enableClick ? markersWithinRadius : markers.filter(m => dbMapData.visibleCategories[m.BlueprintType]);
+    const base = enableClick
+      ? markersWithinRadius
+      : markers.filter(m => dbMapData.visibleCategories[m.BlueprintType] && (!hideVisited || !dbMapData.visitedMarkers[m.Id as number]));
     return [
       ...(enableClick ? [convertMarkerToCoord(selectedPoint, dbMapData.visitedMarkers)] : []),
       ...base.map((m) => convertMarkerToCoord(m, dbMapData.visitedMarkers)),
     ];
-  }, [markers, markersWithinRadius, dbMapData.visibleCategories, enableClick, selectedPoint, dbMapData.visitedMarkers]);
+  }, [markers, markersWithinRadius, dbMapData.visibleCategories, hideVisited, enableClick, selectedPoint, dbMapData.visitedMarkers]);
 
   const toggleMarkerVisited = (marker: IMarker) => {
     setDbMapData((prev) => ({
