@@ -92,8 +92,6 @@
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border;
@@ -101,4 +99,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.leaflet-popup-content-wrapper {
+  background: var(--base-100) !important;
+  color: var(--text-primary) !important;
 }

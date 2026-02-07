@@ -2,8 +2,8 @@
 
 import 'leaflet/dist/leaflet.css';
 
-import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { MapContainer, Marker, Popup, useMap, useMapEvent } from 'react-leaflet';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { MapContainer, Marker, useMap, useMapEvent } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
@@ -19,92 +19,22 @@ import {
 } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 
-import { ASSET_URL } from '@/constants/constants';
 import { CasketTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, SeptimontTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
 import { DbMapData } from '@/types/mapTypes';
+import { loadBlueprintTranslations } from './BlueprintTranslationService';
+import { convertMarkerToCoord, mapIdToName, mapUrl, scaleFactor } from './mapUtils';
+import { CategoryPaneComponent } from './Components/CategoryPaneComponent';
+import { CustomPopup } from './Components/CustomPopup';
 
 const simpleCRS = L.CRS.Simple;
-const scaleFactor = 0.30118;
+
 
 const storageService = new LocalStorageService("map");
 
-/* ----------------------------- Utils ----------------------------- */
-
-const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<number, boolean>): IMarker => ({
-  x: 256 + scaleFactor * (marker.Transform[0].X / 10000),
-  y: -scaleFactor * (marker.Transform[0].Y / 10000),
-  z: marker.Transform[0].Z / 10000,
-  id: marker.Id,
-  name: marker.BlueprintType,
-  description: JSON.stringify(marker, null, 2),
-  displayedX: marker.Transform[0].X / 10000,
-  displayedY: marker.Transform[0].Y / 10000,
-  displayedZ: marker.Transform[0].Z / 10000,
-  category: marker.BlueprintType,
-  visited: visitedMap[marker.MapId] || false,
-});
-
-const prefix = `${ASSET_URL}UIResources/UiWorldMap/`;
-
-const mapUrl: Record<number, string> = {
-  8: `${prefix}/Image/MapTiles/T_MapTiles_{x}_{y}_UI.png`, // Main
-  900: `${prefix}/Image/HHATiles/T_HHATiles_{x}_{y}_UI.png`, // Tethys Deep
-  902: `${prefix}/Image/JKTiles/T_JKTiles_{x}_{y}_UI.png`, // Vault Undergrounds
-  903: `${prefix}/Image/DDTTiles/T_DDTTiles_{x}_{y}_UI.png`, // Avinoleum
-  905: `${prefix}/Image/YHSYCTiles/T_YHSYCTiles_{x}_{y}_UI.png`, // Fabricatorium of the Deep
-  906: `${prefix}/Image/LHLTiles/T_LHLTiles_{x}_{y}_UI.png`, // Lahai Roi
-};
-
-const mapIdToName: Record<number, string> = {
-  8: 'Main',
-  900: 'Tethys Deep',
-  902: 'Vault Undergrounds',
-  903: 'Avinoleum',
-  905: 'Fabricatorium of the Deep',
-  906: 'Lahai Roi',
-};
-
 /* --------------------------- Components -------------------------- */
-
-function CustomPopup({
-  marker,
-  toggleVisited,
-  showDescription,
-  visited,
-}: {
-  marker: IMarker;
-  toggleVisited: () => void;
-  showDescription: boolean;
-  visited: boolean;
-}) {
-
-  const title = FrostlandsTranslationMap[marker.category]?.name
-    || SeptimontTranslationMap[marker.category]?.name
-    || TranslationMap[marker.category]?.name
-    || CasketTranslationMap[marker.category]?.name
-    || TidalHeritageTranslationMap[marker.category]?.name
-    || MonsterTranslationMap[marker.category]?.name
-    || CollectTranslationMap[marker.category]?.name
-    || TeleporterTranslationMap[marker.category]?.name
-    || "";
-
-  return (
-    <Popup>
-      <div className="font-bold">{title}{showDescription && ` - ${marker.category}`}</div>
-      <div>
-        X: {parseFloat(marker.displayedX.toFixed(2))}, Y: {parseFloat(marker.displayedY.toFixed(2))}, Z: {parseFloat(marker.displayedZ.toFixed(2))}
-      </div>
-      <Button onClick={toggleVisited}>{visited ? "Uncheck" : "Check"}</Button>
-      {showDescription && (
-        <pre className="text-xs mt-2 max-h-[300px] overflow-auto">{marker.description}</pre>
-      )}
-    </Popup>
-  );
-}
-
 function CustomTileLayer({ mapId }: { mapId: number, tileSize?: number, mapHeightInTiles?: number }) {
   const map = useMap();
 
@@ -138,18 +68,7 @@ function ClickHandler({ enabled, onClick }: { enabled: boolean; onClick: (p: L.L
   return null;
 }
 
-function ControlCard({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div className="rounded-lg border p-3 space-y-2 bg-white">
-      <h3 className="text-sm font-semibold text-gray-700">{title}</h3>
-      {children}
-    </div>
-  );
-}
-
 /* ----------------------------- Main ------------------------------ */
-
-
 
 export default function XYZMap() {
   const [data, setData] = useState<APIMarker[]>([]);
@@ -167,6 +86,13 @@ export default function XYZMap() {
       visitedMarkers: {},
     };
   });
+
+  const [translationsReady, setTranslationsReady] = useState(false);
+
+  useEffect(() => {
+    loadBlueprintTranslations().then(() => setTranslationsReady(true));
+  }, []);
+
 
   useEffect(() => {
     storageService.save(dbMapData);
@@ -274,42 +200,36 @@ export default function XYZMap() {
 
   const iconCache = useRef(new Map<string, L.DivIcon>());
 
-  const getIcon = (category: string, visited: boolean) => {
+  const getIcon = useCallback((category: string, visited: boolean) => {
     const key = `${category}:${visited}:${hideVisited}`;
 
-    if (!iconCache.current.has(key)) {
-      const hue =
-        Math.abs([...category].reduce((a, c) => c.charCodeAt(0) + ((a << 5) - a), 0)) % 360;
-
-      let html = '';
-
-      if (visited) {
-        if (hideVisited) {
-          html = `<div style="display:none"></div>`;
-        } else {
-          html = `
-        <div class="w-5 h-5 rounded-full border border-white"
-             style="background:hsl(${hue},70%,50%); opacity: 30%;"></div>`;
-        }
-      } else {
-        html = `
-        <div class="w-5 h-5 rounded-full border border-white"
-             style="background:hsl(${hue},70%,50%)"></div>`;
-      }
-
-      iconCache.current.set(
-        key,
-        L.divIcon({
-          html,
-          className: '',
-          iconSize: [20, 20],
-          iconAnchor: [10, 10],
-        })
-      );
+    if (iconCache.current.has(key)) {
+      return iconCache.current.get(key)!;
     }
 
-    return iconCache.current.get(key)!;
-  };
+    const hue = Math.abs([...category].reduce((a, c) => c.charCodeAt(0) + ((a << 5) - a), 0)) % 360;
+
+    let html = '';
+    if (visited) {
+      if (hideVisited) {
+        html = `<div style="display:none"></div>`;
+      } else {
+        html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%); opacity: 30%;"></div>`;
+      }
+    } else {
+      html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%)"></div>`;
+    }
+
+    const icon = L.divIcon({
+      html,
+      className: '',
+      iconSize: [20, 20],
+      iconAnchor: [10, 10],
+    });
+
+    iconCache.current.set(key, icon);
+    return icon;
+  }, [hideVisited]);
 
   /* ----------------------------- UI ------------------------------- */
 
@@ -322,22 +242,43 @@ export default function XYZMap() {
   const teleporterCategories = categories.filter(category => TeleporterTranslationMap[category[0]]);
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
 
+
+  const markerComponents = useMemo(() => {
+    return displayedMarkers.map((m) => (
+      <Marker
+        key={`${m.id}:${dbMapData.visitedMarkers[m.id as number]}:${hideVisited}`}
+        position={[m.y, m.x]}
+        icon={getIcon(m.category, !!dbMapData.visitedMarkers[m.id as number])}
+      >
+        <CustomPopup
+          marker={m}
+          toggleVisited={() => toggleMarkerVisited(m)}
+          visited={!!dbMapData.visitedMarkers[m.id as number]}
+          showDescription={showDescriptions}
+        />
+      </Marker>
+    ));
+  }, [displayedMarkers, dbMapData.visitedMarkers, hideVisited, showDescriptions, getIcon]);
+
   if (!data.length) return <div className="p-4">Loading data…</div>;
 
+  if (!translationsReady) return <div>Loading translations…</div>;
   return (
     <div className="h-screen w-screen flex relative">
       {/* Left controls */}
       {!showSettings && (
-        <aside className="absolute top-2 left-2 z-10 border-r bg-gray-50">
+        <aside className="absolute top-2 left-2 z-10 border-r">
           <Button variant="outline" className="w-[320px] absolute " onClick={() => setShowSettings(true)}>
             Show Settings
           </Button>
         </aside>
       )}
       {showSettings && (
-        <aside className="w-[320px] absolute top-2 left-2 z-10 border-r bg-gray-50 p-3 space-y-3 overflow-scroll bottom-2">
+        <aside className="w-[320px] absolute top-2 left-2 z-10 border-r p-3 space-y-3 overflow-scroll bottom-2 bg-base-100">
           <Button variant="outline" className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
-          <ControlCard title="Map">
+
+          <div className="rounded-lg border p-3 space-y-2 bg-base-200">
+            <h3 className="text-sm font-semibold">Map</h3>
             <Select value={String(selectedMap)} onValueChange={v => setSelectedMap(+v)}>
               <SelectTrigger>
                 <SelectValue />
@@ -352,9 +293,10 @@ export default function XYZMap() {
                 </SelectGroup>
               </SelectContent>
             </Select>
-          </ControlCard>
+          </div>
 
-          <ControlCard title="Selection">
+          <div className="rounded-lg border p-3 space-y-2 bg-base-200">
+            <h3 className="text-sm font-semibold">Selection</h3>
             <Label>Coords</Label>
             <div className="flex gap-2">
               {(['x', 'y', 'z'] as const).map(k => (
@@ -380,7 +322,7 @@ export default function XYZMap() {
               Show descriptions
             </Toggle>
             <Button onClick={() => clearCategories()}>Clear Categories</Button>
-          </ControlCard>
+          </div>
 
           {([
             ["Frostland", frostlandCategories, FrostlandsTranslationMap],
@@ -394,47 +336,37 @@ export default function XYZMap() {
           ] as const).map(([title, categories, translationMap]) => (
             <>
               {categories.length > 0 && (
-                <div key={title as string}>
-                  <div>{title as string}</div>
-                  {categories.sort((a, b) => translationMap[a[0]]?.name.localeCompare(translationMap[b[0]]?.name) || 0).map(([category, count]) => (
-                    <label key={category} className="flex items-center gap-2 text-sm">
-                      <input
-                        type="checkbox"
-                        checked={!!dbMapData.visibleCategories[category]}
-                        onChange={() => toggleCategory(category)}
-                      />
-                      <h2>{
-                        showDescriptions
-                          ? ("(" + translationMap[category].name + ") " + category)
-                          : translationMap[category].name
-                      } ({count})</h2>
-                    </label>
-                  ))}
-                </div>
-              )
-              }
+                <CategoryPaneComponent
+                  key={title}
+                  title={title}
+                  categories={categories}
+                  translationMap={translationMap}
+                  toggleCategory={toggleCategory}
+                  showDescriptions={showDescriptions}
+                  dbMapData={dbMapData}
+                />
+              )}
             </>
+
           ))}
 
-          <Input
-            placeholder="Filter categories…"
-            value={categoryFilter}
-            onChange={e => setCategoryFilter(e.target.value)}
-          />
+          {showDescriptions && (
+            <Input
+              placeholder="Filter categories…"
+              value={categoryFilter}
+              onChange={e => setCategoryFilter(e.target.value)}
+            />
+          )}
 
-          <h3 className="text-sm font-semibold text-gray-700">Not defined categories</h3>
-          {categories
-            .filter(([c]) => c.toLowerCase().includes(categoryFilter.toLowerCase()))
-            .map(([c, count]) => (
-              <label key={c} className="flex items-center gap-2 text-sm">
-                <input
-                  type="checkbox"
-                  checked={!!dbMapData.visibleCategories[c]}
-                  onChange={() => toggleCategory(c)}
-                />
-                {c} ({count})
-              </label>
-            ))}
+          {showDescriptions && (
+            <CategoryPaneComponent
+              title="Not defined categories"
+              categories={categories.filter(([c]) => c.toLowerCase().includes(categoryFilter.toLowerCase()))}
+              toggleCategory={toggleCategory}
+              showDescriptions={showDescriptions}
+              dbMapData={dbMapData}
+            />
+          )}
         </aside>
       )}
 
@@ -467,20 +399,7 @@ export default function XYZMap() {
               })
             }
           />
-          {displayedMarkers.map((m) => (
-            <Marker
-              key={`${m.id}:${dbMapData.visitedMarkers[m.id as number]}:${hideVisited}`}
-              position={[m.y, m.x]}
-              icon={getIcon(m.category, !!dbMapData.visitedMarkers[m.id as number])}
-            >
-              <CustomPopup
-                marker={m}
-                toggleVisited={() => toggleMarkerVisited(m)}
-                visited={!!dbMapData.visitedMarkers[m.id as number]}
-                showDescription={showDescriptions}
-              />
-            </Marker>
-          ))}
+          {markerComponents}
         </MapContainer>
       </main>
     </div>

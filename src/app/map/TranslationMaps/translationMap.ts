@@ -96,6 +96,7 @@ export const SeptimontTranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure_LNXT_Update04": { name: "Chest ??? 22" },
   "Treasure_LNXT_Update05": { name: "Chest ??? 23" },
   "Treasure034": { name: "Chest ??? 24" },
+  "branch2.5_Slots": { name: "Triptych Chest" },
 };
 
 export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
