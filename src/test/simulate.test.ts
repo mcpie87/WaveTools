@@ -3,10 +3,10 @@ import {
   substatsDisplayOrder,
   substatsDict,
   substatValues,
-  substatChances,
   calculateProbabilityOfDesiredSubstats,
   SubstatEntry,
-  SubstatName
+  SubstatName,
+  getSubstatChances
 } from "@/app/echo-simulation/services/simulate";
 
 const SUBSTATS: Substats[] = [
@@ -50,8 +50,7 @@ describe('simulate function', () => {
 
   test('each substat should have chances and sum should be ~1', () => {
     for (const substat of SUBSTATS) {
-      const rolls = substatValues[substat];
-      const chances = substatChances[rolls.length];
+      const chances = getSubstatChances(substat);
       expect(chances).not.toBeNull();
       for (let i = 0; i < chances.length; ++i) {
         expect(chances[i]).toBeGreaterThan(0);
@@ -146,7 +145,7 @@ describe('simulate function', () => {
           5,
           false
         );
-        const possibleChances = substatChances[substatValues[substat].length];
+        const possibleChances = getSubstatChances(substat);
 
         const substatChance = calculateSubstatNameChance(new Set(startSubstats), substat);
         const totalRollChance = possibleChances.reduce((acc, e) => acc + e, 0);
@@ -169,7 +168,7 @@ describe('simulate function', () => {
     ];
     // we start from 1 (+5), end at 5 (+25)
     const pickedSubstats = new Set<SubstatName>();
-    const possibleRollChances = substatChances[substatValues[desiredSubstat].length];
+    const possibleRollChances = getSubstatChances(desiredSubstat);
     for (let i = 1; i <= 5; ++i) {
       for (let j = 0; j < possibleRollChances.length; ++j) {
         const substatChance = calculateSubstatNameChance(pickedSubstats, desiredSubstat);
@@ -210,7 +209,7 @@ describe('simulate function', () => {
       let totalChance = 0;
       for (const desiredSubstat of desiredSubstats) {
         const substatChance = calculateSubstatNameChance(pickedSubstats, desiredSubstat.name);
-        const possibleRollChances = substatChances[substatValues[desiredSubstat.name].length];
+        const possibleRollChances = getSubstatChances(desiredSubstat.name);
         const totalRollChance = possibleRollChances.reduce((acc, e) => acc + e, 0);
         let cumRollChance = 0;
         for (const [idx, rollValue] of substatValues[desiredSubstat.name].entries()) {

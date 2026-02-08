@@ -58,11 +58,35 @@ export const substatValues: Record<SubstatName, SubstatValue[]> = {
   [Substats.Liberation_DMG]: [0.064, 0.071, 0.079, 0.086, 0.094, 0.101, 0.109, 0.116],
 };
 
-// taken from wiki page
-export const substatChances: Record<number, SubstatValue[]> = {
-  4: [0.1243, 0.4621, 0.3857, 0.0279],
-  8: [0.0739, 0.069, 0.2072, 0.2490, 0.1823, 0.1360, 0.0534, 0.0293],
-};
+// taken from Wuwa DG discord data / wiki
+export const getSubstatChances = (substat: SubstatName): SubstatValue[] => {
+  const substatValues = {
+    flatValues: [0.0953, 0.4916, 0.3822, 0.0309],
+    critValues: [0.2292, 0.2207, 0.2403, 0.0878, 0.0724, 0.0784, 0.0371, 0.0341],
+    nonCritValues: [0.0707, 0.0769, 0.1928, 0.2459, 0.1784, 0.1486, 0.0600, 0.0266],
+  };
+
+  switch (substat) {
+    case Substats.FlatATK:
+    case Substats.FlatDEF:
+      return substatValues.flatValues;
+    case Substats.CDMG:
+    case Substats.CR:
+      return substatValues.critValues;
+    case Substats.FlatHP:
+    case Substats.DEF:
+    case Substats.ATK:
+    case Substats.HP:
+    case Substats.Basic_DMG:
+    case Substats.Heavy_DMG:
+    case Substats.Skill_DMG:
+    case Substats.Liberation_DMG:
+    case Substats.ER:
+      return substatValues.nonCritValues;
+    default:
+      return [];
+  }
+}
 
 export const UPGRADE_COST: Record<string, UpgradeCost> = {
   "+0": { tuners: 0, exp: 0 },
@@ -110,7 +134,7 @@ function calculateSubstatNameChance(
 
 function calculateSubstatRollChance(desiredSubstat: SubstatEntry): number {
   const possibleRolls = substatValues[desiredSubstat.name];
-  const rollProbabilities = substatChances[possibleRolls.length];
+  const rollProbabilities = getSubstatChances(desiredSubstat.name);
   const totalProbability = rollProbabilities.reduce((sum, prob) => sum + prob, 0);
   const cumulativeProbability = possibleRolls.reduce((sum, value, idx) =>
     value >= desiredSubstat.value ? sum + rollProbabilities[idx] : sum, 0);
