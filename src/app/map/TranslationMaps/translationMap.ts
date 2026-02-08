@@ -27,9 +27,6 @@ export const ChestTranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure018": { name: "Standard Supply Chest" },
   "Treasure020": { name: "Advanced Supply Chest" },
   "Treasure_huodong1": { name: "Premium Supply Chest" },
-  "branch2.0_Treasure1": { name: "Tidal Heritage (Blue)" },
-  "branch2.0_Treasure2": { name: "Tidal Heritage (Purple)" },
-  "branch2.0_Treasure3": { name: "Tidal Heritage (Gold)" },
   "branch2.4_122_Treasure_2_4_01": { name: "Basic Trophy Chest" },
   "branch2.4_122_Treasure_2_4_02": { name: "Standard Trophy Chest" },
   "branch2.4_122_Treasure_2_4_03": { name: "Advanced Trophy Chest" },
@@ -54,19 +51,19 @@ export const ChestTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.0_693_Treasure_3_1": { name: "Basic Supply Chest" },
   "branch3.0_693_Treasure_3_2": { name: "Standard Supply Chest" },
   "branch3.0_693_Treasure_3_3": { name: "Advanced Supply Pack" },
-  "branch3.0_693_Treasure_3_5": { name: "Tidal Supply Chest (2)" },
-  "branch3.0_693_Treasure_3_11": { name: "Standard Supply Chest (2)" },
-  "branch3.0_693_Treasure_3_12": { name: "Basic Supply Chest (2)" },
+  "branch3.0_693_Treasure_3_5": { name: "Tidal Supply Chest" },
+  "branch3.0_693_Treasure_3_11": { name: "Standard Supply Chest" },
+  "branch3.0_693_Treasure_3_12": { name: "Basic Supply Chest" },
   "branch3.0_693_Treasure_3_13": { name: "Tidal Chest" },
   "branch3.0_693_Treasure_3_14": { name: "Advanced Supply Pack" },
   "branch3.0_693_Treasure_3_16": { name: "Standard Supply Chest" },
   "branch3.0_693_Treasure_3_19": { name: "Advanced Supply Pack" },
   "branch3.0_693_Treasure_3_4": { name: "Premium Supply Chest" },
-  "branch3.0_693_Treasure_3_6": { name: "Basic Supply Chest (2)" },
-  "branch3.0_693_Treasure_3_7": { name: "Standard Supply Chest (3)" },
+  "branch3.0_693_Treasure_3_6": { name: "Basic Supply Chest" },
+  "branch3.0_693_Treasure_3_7": { name: "Standard Supply Chest" },
   "branch3.0_693_Treasure_3_8": { name: "Advanced Supply Pack" },
-  "branch3.0_693_Treasure_3_9": { name: "Premium Supply Chest (2)" },
-  "branch3.0_13_Treasure_2_0_03": { name: "Standard Supply Chest (Rinascita)" },
+  "branch3.0_693_Treasure_3_9": { name: "Premium Supply Chest" },
+  "branch3.0_13_Treasure_2_0_03": { name: "Standard Supply Chest" },
 };
 
 export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
@@ -104,16 +101,19 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
 };
 
 export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = {
-  "branch3.0_938_Treasure2": { name: "Tidal Heritage (Blue)" },
-  "branch3.0_938_Treasure3": { name: "Tidal Heritage (Purple)" },
-  "branch3.0_938_Treasure4": { name: "Tidal Heritage (Gold)" },
-  "Treasure005": { name: "Tidal Heritage (Blue)" },
-  "Treasure008": { name: "Tidal Heritage (Purple)" },
-  "Treasure011": { name: "Tidal Heritage (Gold)" },
   "Treasure_huodong2": { name: "Tidal Heritage (???)" },
   "Treasure_huodong3": { name: "Tidal Heritage (???)" },
   "Treasure_huodong4": { name: "Tidal Heritage (???)" },
   "Treasure_huodong5": { name: "Tidal Heritage (???)" },
+  "Treasure005": { name: "Tidal Heritage (Blue)" },
+  "Treasure008": { name: "Tidal Heritage (Purple)" },
+  "Treasure011": { name: "Tidal Heritage (Gold)" },
+  "branch2.0_Treasure1": { name: "Tidal Heritage (Blue)" },
+  "branch2.0_Treasure2": { name: "Tidal Heritage (Purple)" },
+  "branch2.0_Treasure3": { name: "Tidal Heritage (Gold)" },
+  "branch3.0_938_Treasure2": { name: "Tidal Heritage (Blue)" },
+  "branch3.0_938_Treasure3": { name: "Tidal Heritage (Purple)" },
+  "branch3.0_938_Treasure4": { name: "Tidal Heritage (Gold)" },
 };
 
 export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {

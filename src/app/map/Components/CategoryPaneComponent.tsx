@@ -3,6 +3,101 @@ import { TranslationMapEntry } from "../TranslationMaps/TranslationMapInterface"
 import { translateBlueprint } from "../BlueprintTranslationService";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import clsx from "clsx";
+
+interface CategoryPaneGroupComponentProps {
+  groupName: string;
+  categories: [string, number][];
+  showDescriptions: boolean;
+  toggleCategory: (category: string) => void;
+  toggleCategories?: (categories: string[], value: boolean) => void;
+  dbMapData: DbMapData;
+};
+const CategoryPaneGroupComponent = ({
+  groupName,
+  categories,
+  showDescriptions,
+  toggleCategory,
+  toggleCategories,
+  dbMapData,
+}: CategoryPaneGroupComponentProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const totalCount = categories.reduce((sum, [, c]) => sum + c, 0);
+  const allChecked = categories.every(([t]) => dbMapData.visibleCategories[t]);
+  const someChecked = categories.some(([t]) => dbMapData.visibleCategories[t]);
+
+  return (
+    <>
+      <button
+        className={clsx(
+          "flex flex-col pl-1 text-left rounded-md hover:bg-base-300 transition-colors",
+          allChecked ? "bg-base-300" : (someChecked ? "bg-base-200" : "")
+        )}
+        onClick={() => {
+          if (!toggleCategories) {
+            toggleCategory(groupName);
+            return;
+          }
+          if (allChecked) {
+            toggleCategories?.(categories.map(([t]) => t), false);
+          } else {
+            toggleCategories?.(categories.map(([t]) => t), true);
+          }
+        }}
+      >
+        {/* Title */}
+        <div
+          className="flex flex-row items-center justify-between p-1 w-full"
+        >
+          <div>{groupName}</div>
+          <div className="flex flex-row gap-2 items-center">
+            <div>({totalCount})</div>
+            {toggleCategories && (
+              <Button className="flex" onClick={(e) => {
+                e.stopPropagation();
+                setIsOpen(!isOpen)
+              }}>
+                {isOpen ? "−" : "+"}
+              </Button>
+            )}
+          </div>
+        </div>
+        {/* Translation if showDescriptions */}
+        {showDescriptions && !toggleCategories && (
+          <div className="text-xs text-gray-600 font-semibold">
+            Translation: {translateBlueprint(groupName)}
+          </div>
+        )}
+      </button>
+      {isOpen && toggleCategories && (
+        categories.map(([category, count]) => (
+          <button
+            key={category}
+            className="flex flex-col flex-wrap items-center justify-between gap-2 text-xs font-mono hover:bg-base-300 transition-colors"
+            onClick={() => toggleCategory(category)}
+          >
+            <div className="flex w-full justify-between">
+              <div className="flex flex-row gap-2">
+                <input type="checkbox" key={category} checked={!!dbMapData.visibleCategories[category]} />
+                <div className="flex flex-col">
+                  <span className="text-xs font-mono text-gray-400">{category}</span>
+                  {showDescriptions && (
+                    <span className="text-xs text-gray-600">
+                      Translation: {translateBlueprint(category)}
+                    </span>
+                  )}
+                </div>
+              </div>
+              <div className="flex flex-wrap align-center justify-between">({count})</div>
+            </div>
+          </button>
+        ))
+      )
+      }
+    </>
+  );
+};
 
 interface CategoryPaneComponentProps {
   title: string;
@@ -28,21 +123,29 @@ export const CategoryPaneComponent = ({
 }: CategoryPaneComponentProps) => {
   if (!categories.length) return null;
 
-  const sortedCategories = translationMap
-    ? categories.sort((a, b) =>
-      (translationMap[a[0]]?.name ?? a[0]).localeCompare(
-        translationMap[b[0]]?.name ?? b[0]
-      )
-    )
-    : categories.sort((a, b) => a[0].localeCompare(b[0]));
+  const groups = new Map<string, [string, number][]>();
+  if (toggleCategories) {
+    for (const [blueprintType, count] of categories) {
+      const displayName = translationMap?.[blueprintType]?.name ?? blueprintType;
+      if (!groups.has(displayName)) groups.set(displayName, []);
+      groups.get(displayName)!.push([blueprintType, count]);
+    }
+  }
+  else {
+    for (const [blueprintType, count] of categories) {
+      groups.set(blueprintType, [[blueprintType, count]]);
+    }
+  }
 
+  const sortedGroupNames = [...groups.keys()].sort((a, b) => a.localeCompare(b));
   const toggledCount = categories.filter(c => dbMapData.visibleCategories[c[0]]).length;
 
   return (
     <div className="mb-4">
+      {/* Title */}
       <button
         onClick={() => toggleDisplayedCategoryGroup(title, !isOpen)}
-        className="flex items-center justify-between align-center gap-2 text-sm font-semibold mb-2 w-full text-left hover:text-primary transition-colors"
+        className="flex items-center justify-between gap-2 text-sm font-semibold mb-2 w-full text-left hover:text-primary transition-colors"
       >
         <div className="flex items-center gap-1">
           {isOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
@@ -59,42 +162,26 @@ export const CategoryPaneComponent = ({
               toggleCategories(categories.map(c => c[0]), !toggledCount);
             }}
           >
-            {toggledCount === categories.length ? "Uncheck all" : "Check all"}
+            {toggledCount > 0 ? "Uncheck all" : "Check all"}
           </Button>
         )}
       </button>
 
+      {/* Groups */}
       {isOpen && (
-        <div className="grid grid-cols-1 gap-2 pl-6">
-          {sortedCategories.map(([category, count]) => (
-            <label
-              key={category}
-              className="flex items-center justify-between p-2 bg-base-200 rounded-md hover:bg-base-300 transition-colors"
-            >
-              <div className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  checked={!!dbMapData.visibleCategories[category]}
-                  onChange={() => toggleCategory(category)}
-                  className="w-4 h-4 rounded border-gray-400 accent-blue-500"
-                />
-                <div className="flex flex-col">
-                  <span className="text-sm">
-                    {translationMap?.[category]?.name ?? category}
-                  </span>
-                  {showDescriptions && (
-                    <div className="text-xs mt-0.5">
-                      <div>
-                        BlueprintType: <span className="font-mono">{category}</span>
-                      </div>
-                      <div>Translation: {translateBlueprint(category)}</div>
-                    </div>
-                  )}
-                </div>
-              </div>
-              <div className="text-sm text-gray-600 font-semibold">({count})</div>
-            </label>
-          ))}
+        <div className="grid grid-cols-1 gap-2 pl-1">
+          {sortedGroupNames.map((groupName) => (
+            <CategoryPaneGroupComponent
+              key={groupName}
+              groupName={groupName}
+              categories={groups.get(groupName)!}
+              showDescriptions={showDescriptions}
+              toggleCategory={toggleCategory}
+              toggleCategories={toggleCategories}
+              dbMapData={dbMapData}
+            />
+          )
+          )}
         </div>
       )}
     </div>
