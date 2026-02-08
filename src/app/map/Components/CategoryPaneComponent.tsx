@@ -32,7 +32,7 @@ const CategoryPaneGroupComponent = ({
     <>
       <button
         className={clsx(
-          "flex flex-col pl-1 text-left rounded-md hover:bg-base-300 transition-colors",
+          "flex flex-col p-1 pl-2 text-left rounded-md hover:bg-base-300 transition-colors",
           allChecked ? "bg-base-300" : (someChecked ? "bg-base-200" : "")
         )}
         onClick={() => {
