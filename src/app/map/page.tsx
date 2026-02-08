@@ -20,7 +20,7 @@ import {
 } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 
-import { AnimalTranslationMap, CasketTranslationMap, ChestTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, PuzzleTranslationMap, SpecialtyTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap, UnionTranslationMap } from './TranslationMaps/translationMap';
+import { AnimalTranslationMap, CasketTranslationMap, ChestTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, NPCMobsTranslationMap, PuzzleTranslationMap, SpecialtyTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap, UnionTranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
@@ -259,9 +259,8 @@ export default function XYZMap() {
         width: 32px;
         height: 32px;
         border-radius: 50%;
-        border: 2px solid rgba(0,0,0,0.2);
-        background-color: rgba(0,0,0,0.2);
-        box-shadow: 0 0 4px rgba(0,0,0,0.5);
+        border: 2px solid #aaa;
+        background-color: #333;
         overflow: hidden;
         opacity: ${opacity};
         display: flex;
@@ -311,6 +310,7 @@ export default function XYZMap() {
   const teleporterCategories = categories.filter(category => TeleporterTranslationMap[category[0]]);
   const monsterCategories = categories.filter(category => MonsterTranslationMap[category[0]]);
   const specialtyCategories = categories.filter(category => SpecialtyTranslationMap[category[0]]);
+  const npcMonsterCategories = categories.filter(category => NPCMobsTranslationMap[category[0]]);
   const animalCategories = categories.filter(category => AnimalTranslationMap[category[0]]);
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
 
@@ -324,6 +324,7 @@ export default function XYZMap() {
     !MonsterTranslationMap[category[0]] &&
     !TranslationMap[category[0]] &&
     !SpecialtyTranslationMap[category[0]] &&
+    !NPCMobsTranslationMap[category[0]] &&
     !AnimalTranslationMap[category[0]] &&
     !PuzzleTranslationMap[category[0]]
   );
@@ -424,6 +425,7 @@ export default function XYZMap() {
             ["Puzzles", puzzleCategories, PuzzleTranslationMap],
             ["Specialties", specialtyCategories, SpecialtyTranslationMap],
             ["Echoes", monsterCategories, MonsterTranslationMap],
+            ["NPC Monsters", npcMonsterCategories, NPCMobsTranslationMap],
             ["Collect", collectCategories, CollectTranslationMap],
             ["Animals", animalCategories, AnimalTranslationMap],
             ["Defined", definedCategories, TranslationMap],

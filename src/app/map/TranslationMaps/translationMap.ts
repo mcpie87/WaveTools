@@ -67,13 +67,13 @@ export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
   "Teleport003": { name: "Resonance Nexus" },
   "Teleport008": { name: "Resonance Nexus" },
   "Teleport3": { name: "Resonance Nexus" },
-  "branch2.2_14_Teleport4": { name: "Resonance Nexus" },
   "branch2.4_143_Gameplay_2_4QQ1": { name: "Resonance Nexus" },
   "branch3.0_693_Gameplay_3_0/Common1": { name: "Resonance Nexus" },
 
   "Teleport001": { name: "Resonance Beacon" },
   "Teleport2": { name: "Resonance Beacon" },
   "branch2.0_Teleport6": { name: "Resonance Beacon" },
+  "branch2.2_14_Teleport4": { name: "Resonance Beacon" }, // TL shows Nexus - it's a Beacon
   "branch2.4_143_Gameplay_2_4QQ2": { name: "Resonance Beacon" },
   "branch3.0_693_Gameplay_3_0/Common2": { name: "Resonance Beacon" },
 };
@@ -119,6 +119,11 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster034": { name: "Glacio Prism" },
   "Monster043": { name: "Roseshroom" },
   "Monster058": { name: "Hoartoise" },
+  "Monster_branch1.3_007": { name: "Hoochief" },
+  "Monster050": { name: "Hoochief" },
+  "Monster128": { name: "Hoochief" },
+  "Monster140": { name: "Hoochief" },
+  "Monster141": { name: "Hoochief" },
   "branch2.4_Monster_branch2.4_001": { name: "Torn Cuddle Wuddle" },
   "branch2.4_Monster_branch2.4_002": { name: "Torn Lottie Lost" },
   "branch2.4_Monster_branch2.4_003": { name: "Torn Hocus Pocus" },
@@ -185,24 +190,15 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_017": {
     name: "Havoc Drake",
   },
-  "Monster_branch2.4_018": {
-    name: "Lightcrest Gladiator",
-  },
-  "Monster_branch2.4_019": {
-    name: "Frostcrest Gladiator",
-  },
+
   "Monster_branch2.4_020": {
     name: "???",
   },
-  "Monster_branch2.4_021": {
-    name: "Flamecrest Gladiator",
-  },
+
   "Monster_branch2.4_022": {
     name: "???",
   },
-  "Monster_branch2.4_023": {
-    name: "Galecrest Gladiator",
-  },
+
   "Monster_branch2.4_024": {
     name: "Pilgrim's Shell",
   },
@@ -212,6 +208,14 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_026": {
     name: "Lioness of Glory",
   },
+};
+
+export const NPCMobsTranslationMap: Record<string, TranslationMapEntry> = {
+  "Monster_branch2.4_010": { name: "Lightcrest Gladiator" },
+  "Monster_branch2.4_023": { name: "Galecrest Gladiator" },
+  "Monster_branch2.4_021": { name: "Flamecrest Gladiator" },
+  "Monster_branch2.4_018": { name: "Lightcrest Gladiator" },
+  "Monster_branch2.4_019": { name: "Frostcrest Gladiator" },
 };
 
 export const AnimalTranslationMap: Record<string, TranslationMapEntry> = {
@@ -315,5 +319,6 @@ export const UnionTranslationMap: Record<string, TranslationMapEntry> = [
   AnimalTranslationMap,
   PuzzleTranslationMap,
   SpecialtyTranslationMap,
+  NPCMobsTranslationMap,
   TranslationMap,
 ].reduce((acc, map) => ({ ...acc, ...map }), {});
