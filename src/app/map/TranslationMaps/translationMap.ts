@@ -21,7 +21,7 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
     "name": "Standard Supply Chest"
   },
   "branch3.0_693_Treasure_3_3": {
-    "name": "Advanced Trophy Chest"
+    "name": "Advanced Supply Pack"
   },
   "branch3.0_693_Treasure_3_5": {
     "name": "Tidal Supply Chest (2)"
@@ -36,10 +36,10 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
     "name": "Tidal Chest"
   },
   "branch3.0_693_Treasure_3_14": {
-    "name": "Advanced Supply Chest (3)"
+    "name": "Advanced Supply Pack"
   },
   "branch3.0_693_Treasure_3_16": {
-    "name": "Chest ???"
+    "name": "Standard Supply Chest"
   },
   "branch3.0_693_Treasure_3_19": {
     "name": "Advanced Supply Pack"
@@ -54,7 +54,7 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
     "name": "Standard Supply Chest (3)"
   },
   "branch3.0_693_Treasure_3_8": {
-    "name": "Advanced Supply Pack (2)"
+    "name": "Advanced Supply Pack"
   },
   "branch3.0_693_Treasure_3_9": {
     "name": "Premium Supply Chest (2)"
@@ -72,29 +72,29 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
 
 export const SeptimontTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_109_Gameplay_2_4QQ1": { "name": "Casket" },
-  "branch2.0_Treasure1": { name: "Chest ??? 1" },
+  "branch2.0_Treasure1": { name: "Tidal Heritage (Blue)" },
   "branch2.0_Treasure2": { name: "Tidal Heritage (Purple)" },
   "branch2.0_Treasure3": { name: "Tidal Heritage (Gold)" },
-  "branch2.4_122_Treasure_2_4_01": { name: "Chest ??? 4" },
-  "branch2.4_122_Treasure_2_4_02": { name: "Chest ??? 5" },
-  "branch2.4_122_Treasure_2_4_03": { name: "Chest ??? 6" },
-  "branch2.4_122_Treasure_2_4_04": { name: "Chest ??? 7" },
-  "branch2.4_122_Treasure_2_4_05": { name: "Chest ??? 8" },
+  "branch2.4_122_Treasure_2_4_01": { name: "Basic Trophy Chest" },
+  "branch2.4_122_Treasure_2_4_02": { name: "Standard Trophy Chest" },
+  "branch2.4_122_Treasure_2_4_03": { name: "Advanced Trophy Chest" },
+  "branch2.4_122_Treasure_2_4_04": { name: "Premium Trophy Chest" },
+  "branch2.4_122_Treasure_2_4_05": { name: "Lustrous Trophy Chest" },
   "Treasure_2_0_01": { name: "Basic Supply Chest" },
   "Treasure_2_0_02": { name: "Standard Supply Chest" },
   "Treasure_2_0_03": { name: "Advanced Supply Chest" },
   "Treasure_2_0_04": { name: "Premium Supply Chest" },
   "Treasure_2_0_05": { name: "Tidal Supply Chest" },
-  "Treasure_LNXT_Lock01": { name: "Chest ??? 14" },
-  "Treasure_LNXT_Lock02": { name: "Chest ??? 15" },
+  "Treasure_LNXT_Lock01": { name: "Basic Supply Chest" },
+  "Treasure_LNXT_Lock02": { name: "Standard Supply Chest" },
   "Treasure_LNXT_Lock03": { name: "Advanced Supply Chest" },
-  "Treasure_LNXT_Lock04": { name: "Chest ??? 17" },
-  "Treasure_LNXT_Lock05": { name: "Chest ??? 18" },
+  "Treasure_LNXT_Lock04": { name: "Premium Supply Chest" },
+  "Treasure_LNXT_Lock05": { name: "Tidal Supply Chest" },
   "Treasure_LNXT_Update01": { name: "Basic Supply Chest" },
   "Treasure_LNXT_Update02": { name: "Standard Supply Chest" },
   "Treasure_LNXT_Update03": { name: "Advanced Supply Chest" },
-  "Treasure_LNXT_Update04": { name: "Chest ??? 22" },
-  "Treasure_LNXT_Update05": { name: "Chest ??? 23" },
+  "Treasure_LNXT_Update04": { name: "Premium Supply Chest" },
+  "Treasure_LNXT_Update05": { name: "(Tidal) Premium Supply Chest" },
   "Treasure034": { name: "Chest ??? 24" },
   "branch2.5_Slots": { name: "Triptych Chest" },
 };
@@ -123,8 +123,17 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster002": {
     name: "Fission Junrock",
   },
+  "Monster019": {
+    name: "Baby Roseshroom",
+  },
+  "Monster043": {
+    name: "Roseshroom",
+  },
+  "Monster058": {
+    name: "Hoartoise",
+  },
   "branch2.4_Monster_branch2.4_001": {
-    name: "Cuddle Wuddle",
+    name: "Torn Cuddle Wuddle",
   },
   "branch2.4_Monster_branch2.4_002": {
     name: "Torn Lottie Lost",
@@ -139,13 +148,13 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
     name: "Devotee's Flesh",
   },
   "branch2.4_Monster_branch2.4_008": {
-    name: "New Mob",
+    name: "Frostcrest Gladiator",
   },
   "branch2.4_Monster_branch2.4_009": {
-    name: "New Mob",
+    name: "???",
   },
   "branch2.4_Monster_branch2.4_010": {
-    name: "New Mob",
+    name: "???",
   },
   "branch2.4_Monster_branch2.4_032": {
     name: "Pilgrim's Shell",
@@ -175,52 +184,52 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
     name: "New Mob",
   },
   "Monster_branch2.4_01": {
-    name: "New Mob",
+    name: "Kelpie",
   },
   "Monster_branch2.4_010": {
-    name: "New Mob",
+    name: "Lightcrest Gladiator",
   },
   "Monster_branch2.4_011": {
-    name: "New Mob",
+    name: "Flamecrest Gladiator",
   },
   "Monster_Branch2.4_012": {
-    name: "New Mob",
+    name: "Lioness of Glory",
   },
   "Monster_Branch2.4_015": {
-    name: "New Mob",
+    name: "Fusion Drake",
   },
   "Monster_Branch2.4_016": {
-    name: "New Mob",
+    name: "Spectro Drake",
   },
   "Monster_Branch2.4_017": {
-    name: "New Mob",
+    name: "Havoc Drake",
   },
   "Monster_branch2.4_018": {
-    name: "New Mob",
+    name: "Lightcrest Gladiator",
   },
   "Monster_branch2.4_019": {
-    name: "New Mob",
+    name: "Frostcrest Gladiator",
   },
   "Monster_branch2.4_020": {
-    name: "New Mob",
+    name: "???",
   },
   "Monster_branch2.4_021": {
-    name: "New Mob",
+    name: "Flamecrest Gladiator",
   },
   "Monster_branch2.4_022": {
-    name: "New Mob",
+    name: "???",
   },
   "Monster_branch2.4_023": {
-    name: "New Mob",
+    name: "Galecrest Gladiator",
   },
   "Monster_branch2.4_024": {
-    name: "New Mob",
+    name: "Pilgrim's Shell",
   },
   "Monster_branch2.4_025": {
-    name: "New Mob",
+    name: "Kerasaur",
   },
   "Monster_Branch2.4_026": {
-    name: "New Mob",
+    name: "Lioness of Glory",
   },
 };
 
@@ -278,11 +287,4 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_122_Treasure_2_4_03": {
     name: "Advanced Trophy Chest",
   },
-  "branch3.0_693_Treasure_3_1": { name: "XYZ Chest" },
-  "branch3.0_693_Treasure_3_2": { name: "XYZ Chest" },
-  "branch3.0_693_Treasure_3_3": { name: "Advanced Trophy Chest" },
-  "branch3.0_693_Treasure_3_5": { name: "XYZ Chest" },
-  "branch3.0_938_Treasure2": { name: "XYZ Chest" },
-  "branch3.0_938_Treasure3": { name: "XYZ Chest" },
-  "branch3.0_938_Treasure4": { name: "XYZ Chest" },
 };
