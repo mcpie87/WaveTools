@@ -5,10 +5,6 @@ export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.1_40_Gameplay_3_1/VisionSummon4": {
     "name": "Glohomoth Vision"
   },
-  "branch3.1_115_Gameplay_3_1/SunSpiritPPV": {
-    "name": "Soliskin Chest"
-  },
-
 };
 
 export const ChestTranslationMap: Record<string, TranslationMapEntry> = {
@@ -98,6 +94,7 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.5_41_Gameplay1": { name: "Orchestration Altar" },
   "branch2.5_Slots": { name: "Triptych Chest" },
   "branch3.0_135_Gameplay513": { name: "Bike Challenge" },
+  "branch3.1_115_Gameplay_3_1/SunSpiritPPV": { name: "Soliskin Chest" },
 };
 
 export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = {

@@ -29,6 +29,7 @@ import { loadBlueprintTranslations, translateBlueprint } from './BlueprintTransl
 import { convertMarkerToCoord, mapIdToName, mapUrl, scaleFactor } from './mapUtils';
 import { CategoryPaneComponent } from './Components/CategoryPaneComponent';
 import { CustomPopup } from './Components/CustomPopup';
+import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
 
 const simpleCRS = L.CRS.Simple;
 
@@ -241,24 +242,36 @@ export default function XYZMap() {
       return iconCache.current.get(key)!;
     }
 
-    const hue = Math.abs([...category].reduce((a, c) => c.charCodeAt(0) + ((a << 5) - a), 0)) % 360;
-
     let html = '';
-    if (visited) {
-      if (hideVisited) {
-        html = `<div style="display:none"></div>`;
-      } else {
-        html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%); opacity: 30%;"></div>`;
-      }
+    let iconSize = [20, 20];
+    let iconAnchor = [10, 10];
+    const worldmapIconUrl = getWorldmapIcon(UnionTranslationMap[category]?.name ?? category);
+    if (worldmapIconUrl) {
+      // worldmap icon exists
+      const opacityStyle = visited && !hideVisited ? 'opacity:0.3;' : '';
+      const displayStyle = hideVisited && visited ? 'display:none;' : '';
+      html = `<img src="${worldmapIconUrl}" class="w-10 h-10" style="${opacityStyle}${displayStyle}" />`;
+      iconSize = [40, 40];
+      iconAnchor = [20, 20];
     } else {
-      html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%)"></div>`;
+      // fallback colored circle
+      const hue = Math.abs([...category].reduce((a, c) => c.charCodeAt(0) + ((a << 5) - a), 0)) % 360;
+      if (visited) {
+        if (hideVisited) {
+          html = `<div style="display:none"></div>`;
+        } else {
+          html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%); opacity:0.3;"></div>`;
+        }
+      } else {
+        html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%)"></div>`;
+      }
     }
 
     const icon = L.divIcon({
       html,
       className: '',
-      iconSize: [20, 20],
-      iconAnchor: [10, 10],
+      iconSize: iconSize as L.PointExpression,
+      iconAnchor: iconAnchor as L.PointExpression,
     });
 
     iconCache.current.set(key, icon);
