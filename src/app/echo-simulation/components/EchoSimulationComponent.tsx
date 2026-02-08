@@ -12,6 +12,7 @@ function EchoSimulationComponent() {
   const [desiredSubstats, setDesiredSubstats] = useState<SubstatEntry[]>([]);
   const [calculateTime, setCalculateTime] = useState<number>(0);
   const [rows, setRows] = useState<JSX.Element[]>([]);
+  const [assumeRefund, setAssumeRefund] = useState<boolean>(false);
   const [showResults, setShowResults] = useState<boolean>(false);
   const [checkForAny, setCheckForAny] = useState<boolean>(false);
   const calculate = async (e: React.FormEvent) => {
@@ -25,7 +26,8 @@ function EchoSimulationComponent() {
     const rows = GenerateResultsRows(
       startSubstats,
       desiredSubstats,
-      checkForAny
+      checkForAny,
+      assumeRefund,
     );
     setRows(rows);
     const end = performance.now();
@@ -56,6 +58,18 @@ function EchoSimulationComponent() {
               />
               <span className="text-sm">
                 Look for any?
+              </span>
+            </label>
+            <label className="flex items-center space-x-2">
+              <input
+                id="assumeRefund"
+                type="checkbox"
+                className="text-sm"
+                checked={assumeRefund}
+                onChange={(e) => setAssumeRefund(Boolean(e.target.checked))}
+              />
+              <span className="text-sm">
+                Assume refund?
               </span>
             </label>
           </div>

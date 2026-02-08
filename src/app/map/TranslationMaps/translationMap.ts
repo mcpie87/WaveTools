@@ -229,7 +229,7 @@ export const CollectTranslationMap: Record<string, TranslationMapEntry> = {
   "Collect101": { name: "Pearl Leaf" },
   "Collect106": { name: "Angelica" },
   "Collect109": { name: "Waterlamp" },
-  "Collect112": { name: "Chromshell" },
+  "Collect112": { name: "Chromeshell" },
   "Collect113": { name: "Dripsnail" },
   "Collect115": { name: "Cliffrecluse" },
   "Collect116": { name: "Umbragricus" },
@@ -239,6 +239,36 @@ export const CollectTranslationMap: Record<string, TranslationMapEntry> = {
   "Collect503": { name: "Indigoite" },
   "Collect504": { name: "Floramber" },
   "Collect601": { name: "Bird Egg" },
+};
+
+export const SpecialtyTranslationMap: Record<string, TranslationMapEntry> = {
+  "Collect003": { name: "Iris" },
+  "Collect004": { name: "Terraspawn Fungus" },
+  "Collect005": { name: "Lanternberry" },
+  "Collect006": { name: "Pecok Flower" },
+  "Collect008": { name: "Coriolus" },
+  "Collect009": { name: "Wintry Bell" },
+  "Collect010": { name: "Violet Coral" },
+  "Collect007": { name: "Belle Poppy" },
+
+  "Collect_CXS08": { name: "Loong's Pearl" },
+  "Collect_CXS09": { name: "Loong's Pearl" },
+  "Collect_CXS03": { name: "Pavo Plum" },
+  "Collect_CXS04": { name: "Pavo Plum" },
+  "Collect_CXS05": { name: "Pavo Plum" },
+  "Collect_CXS06": { name: "Pavo Plum" },
+
+  "Collect605": { name: "Nova" },
+
+  "branch2.0_Collect209_1": { name: "Golden Fleece" },
+  "branch2.0_Collect207": { name: "Firecracker Jewelweed" },
+  "branch2.0_Collect208": { name: "Sword Acorus" },
+
+  "branch2.4_Collect242": { name: "Bamboo Iris" },
+  "branch2.4_Collect243": { name: "Bloodleaf Viburnum" },
+
+  "branch3.1_693_Collect_3_4": { name: "Moss Amber" },
+  "branch3.1_693_Collect_3_9": { name: "Moss Amber" },
 };
 
 export const TranslationMap: Record<string, TranslationMapEntry> = {
@@ -287,5 +317,6 @@ export const UnionTranslationMap: Record<string, TranslationMapEntry> = [
   CollectTranslationMap,
   AnimalTranslationMap,
   PuzzleTranslationMap,
+  SpecialtyTranslationMap,
   TranslationMap,
 ].reduce((acc, map) => ({ ...acc, ...map }), {});

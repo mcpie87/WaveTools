@@ -9,7 +9,8 @@ import { formatNumber, formatPercent } from "@/utils/utils";
 export const GenerateResultsRows = (
   startSubstats: SubstatEntry[],
   desiredSubstats: SubstatEntry[],
-  checkForAny: boolean
+  checkForAny: boolean,
+  assumeRefund: boolean,
 ): React.JSX.Element[] => {
   const results: { [key: number]: number } = {};
   const trimmedStartSubstats: SubstatEntry[] = startSubstats.filter(e => e.name);
@@ -31,8 +32,8 @@ export const GenerateResultsRows = (
     const displayedLevel = "+" + (5 * Number(k));
     const displayedStartLevel = "+" + (5 * startLevel);
     const expectedAttempts = 1 / chanceToHit;
-    const expectedTuners = expectedAttempts * (UPGRADE_COST[displayedLevel].tuners - UPGRADE_COST[displayedStartLevel].tuners);
-    const expectedExperience = expectedAttempts * (UPGRADE_COST[displayedLevel].exp - UPGRADE_COST[displayedStartLevel].exp);
+    const expectedTuners = (assumeRefund ? 0.7 : 1) * expectedAttempts * (UPGRADE_COST[displayedLevel].tuners - UPGRADE_COST[displayedStartLevel].tuners);
+    const expectedExperience = (assumeRefund ? 0.25 : 1) * expectedAttempts * (UPGRADE_COST[displayedLevel].exp - UPGRADE_COST[displayedStartLevel].exp);
 
     const waveplateCost = 60;
     const waveplateTunerReward = 20;

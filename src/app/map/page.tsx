@@ -20,7 +20,7 @@ import {
 } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 
-import { AnimalTranslationMap, CasketTranslationMap, ChestTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, PuzzleTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap, UnionTranslationMap } from './TranslationMaps/translationMap';
+import { AnimalTranslationMap, CasketTranslationMap, ChestTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, PuzzleTranslationMap, SpecialtyTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap, UnionTranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
@@ -267,6 +267,7 @@ export default function XYZMap() {
   const puzzleCategories = categories.filter(category => PuzzleTranslationMap[category[0]]);
   const teleporterCategories = categories.filter(category => TeleporterTranslationMap[category[0]]);
   const monsterCategories = categories.filter(category => MonsterTranslationMap[category[0]]);
+  const specialtyCategories = categories.filter(category => SpecialtyTranslationMap[category[0]]);
   const animalCategories = categories.filter(category => AnimalTranslationMap[category[0]]);
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
 
@@ -279,6 +280,7 @@ export default function XYZMap() {
     !TeleporterTranslationMap[category[0]] &&
     !MonsterTranslationMap[category[0]] &&
     !TranslationMap[category[0]] &&
+    !SpecialtyTranslationMap[category[0]] &&
     !AnimalTranslationMap[category[0]] &&
     !PuzzleTranslationMap[category[0]]
   );
@@ -377,6 +379,7 @@ export default function XYZMap() {
             ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap],
             ["Chests", chestCategories, ChestTranslationMap],
             ["Puzzles", puzzleCategories, PuzzleTranslationMap],
+            ["Specialties", specialtyCategories, SpecialtyTranslationMap],
             ["Echoes", monsterCategories, MonsterTranslationMap],
             ["Collect", collectCategories, CollectTranslationMap],
             ["Animals", animalCategories, AnimalTranslationMap],
