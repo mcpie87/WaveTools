@@ -17,18 +17,17 @@ export default function Header() {
                         </Button>
 
                         <Button asChild>
-                            <Link href="/map">
-                                Map
-                            </Link>
-                        </Button>
-
-                        <Button asChild>
                             <Link href="/items">
                                 Items
                             </Link>
                         </Button>
                     </>
                 )}
+                <Button asChild>
+                    <Link href="/map">
+                        Map
+                    </Link>
+                </Button>
                 <Button asChild>
                     <Link href="/union-level">
                         Union Level
