@@ -2,7 +2,6 @@ import { DbMapData } from "@/types/mapTypes";
 import { TranslationMapEntry } from "../TranslationMaps/TranslationMapInterface";
 import { translateBlueprint } from "../BlueprintTranslationService";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 interface CategoryPaneComponentProps {
@@ -11,8 +10,10 @@ interface CategoryPaneComponentProps {
   translationMap?: Record<string, TranslationMapEntry>;
   toggleCategory: (category: string) => void;
   toggleCategories?: (categories: string[], value: boolean) => void;
+  toggleDisplayedCategoryGroup: (categoryGroup: string, value: boolean) => void;
   showDescriptions: boolean;
   dbMapData: DbMapData;
+  isOpen: boolean;
 }
 export const CategoryPaneComponent = ({
   title,
@@ -20,12 +21,11 @@ export const CategoryPaneComponent = ({
   translationMap,
   toggleCategory,
   toggleCategories,
+  toggleDisplayedCategoryGroup,
   showDescriptions,
   dbMapData,
+  isOpen,
 }: CategoryPaneComponentProps) => {
-
-  const [isOpen, setIsOpen] = useState(true);
-
   if (!categories.length) return null;
 
   const sortedCategories = translationMap
@@ -41,7 +41,7 @@ export const CategoryPaneComponent = ({
   return (
     <div className="mb-4">
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => toggleDisplayedCategoryGroup(title, !isOpen)}
         className="flex items-center justify-between align-center gap-2 text-sm font-semibold mb-2 w-full text-left hover:text-primary transition-colors"
       >
         <div className="flex items-center">

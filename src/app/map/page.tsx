@@ -20,7 +20,7 @@ import {
 } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 
-import { CasketTranslationMap, ChestTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
+import { AnimalTranslationMap, CasketTranslationMap, ChestTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, PuzzleTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap, UnionTranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
@@ -82,13 +82,16 @@ export default function XYZMap() {
   const [categoryFilter, setCategoryFilter] = useState('');
   const [showSettings, setShowSettings] = useState(true);
   const [dbMapData, setDbMapData] = useState<DbMapData>(() => {
-    return storageService.load() as DbMapData || {
-      visibleCategories: {},
-      visitedMarkers: {},
+    const loaded = storageService.load() as Partial<DbMapData> | null;
+
+    return {
+      visibleCategories: loaded?.visibleCategories ?? {},
+      visitedMarkers: loaded?.visitedMarkers ?? {},
+      displayedCategoryGroups: loaded?.displayedCategoryGroups ?? {},
     };
   });
   const [translationsReady, setTranslationsReady] = useState(false);
-  const [categoryFilterDebounced] = useDebounce(categoryFilter, 2000);
+  const [categoryFilterDebounced] = useDebounce(categoryFilter, 300);
 
   useEffect(() => {
     loadBlueprintTranslations().then(() => setTranslationsReady(true));
@@ -209,6 +212,16 @@ export default function XYZMap() {
     }));
   }
 
+  const toggleDisplayedCategoryGroup = (categoryGroup: string, value: boolean) => {
+    setDbMapData(prev => ({
+      ...prev,
+      displayedCategoryGroups: {
+        ...prev.displayedCategoryGroups,
+        [categoryGroup]: value,
+      },
+    }));
+  }
+
   /* --------------------------- Icons ------------------------------ */
 
   const iconCache = useRef(new Map<string, L.DivIcon>());
@@ -251,8 +264,10 @@ export default function XYZMap() {
   const collectCategories = categories.filter(category => CollectTranslationMap[category[0]]);
   const tidalHeritageCategories = categories.filter(category => TidalHeritageTranslationMap[category[0]]);
   const casketCategories = categories.filter(category => CasketTranslationMap[category[0]]);
+  const puzzleCategories = categories.filter(category => PuzzleTranslationMap[category[0]]);
   const teleporterCategories = categories.filter(category => TeleporterTranslationMap[category[0]]);
   const monsterCategories = categories.filter(category => MonsterTranslationMap[category[0]]);
+  const animalCategories = categories.filter(category => AnimalTranslationMap[category[0]]);
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
 
   const undefinedCategories = categories.filter(category =>
@@ -263,7 +278,9 @@ export default function XYZMap() {
     !CasketTranslationMap[category[0]] &&
     !TeleporterTranslationMap[category[0]] &&
     !MonsterTranslationMap[category[0]] &&
-    !TranslationMap[category[0]]
+    !TranslationMap[category[0]] &&
+    !AnimalTranslationMap[category[0]] &&
+    !PuzzleTranslationMap[category[0]]
   );
 
   const markerComponents = useMemo(() => {
@@ -300,7 +317,7 @@ export default function XYZMap() {
         <aside className="w-[320px] absolute top-2 left-2 z-10 border-r p-3 space-y-3 overflow-scroll bottom-2 bg-base-100">
           <Button variant="outline" className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
 
-          <div className="rounded-lg border p-3 space-y-2 bg-base-200">
+          <div className="rounded-lg border p-3 space-y-2 bg-base-100">
             <h3 className="text-sm font-semibold">Map</h3>
             <Select value={String(selectedMap)} onValueChange={v => setSelectedMap(+v)}>
               <SelectTrigger>
@@ -318,7 +335,7 @@ export default function XYZMap() {
             </Select>
           </div>
 
-          <div className="rounded-lg border p-3 space-y-2 bg-base-200">
+          <div className="rounded-lg border p-3 space-y-2 bg-base-100">
             <h3 className="text-sm font-semibold">Selection</h3>
             <Label>Coords</Label>
             <div className="flex gap-2">
@@ -359,8 +376,10 @@ export default function XYZMap() {
             ["Casket", casketCategories, CasketTranslationMap],
             ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap],
             ["Chests", chestCategories, ChestTranslationMap],
+            ["Puzzles", puzzleCategories, PuzzleTranslationMap],
             ["Echoes", monsterCategories, MonsterTranslationMap],
             ["Collect", collectCategories, CollectTranslationMap],
+            ["Animals", animalCategories, AnimalTranslationMap],
             ["Defined", definedCategories, TranslationMap],
           ] as const).map(([title, categories, translationMap]) => (
             <>
@@ -372,13 +391,16 @@ export default function XYZMap() {
                     [
                       c.toLowerCase(),
                       translateBlueprint(c).toLowerCase(),
+                      UnionTranslationMap[c]?.name.toLowerCase() ?? '',
                     ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
                   )}
                   translationMap={translationMap}
                   toggleCategory={toggleCategory}
                   toggleCategories={toggleCategories}
+                  toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
                   showDescriptions={showDescriptions}
                   dbMapData={dbMapData}
+                  isOpen={dbMapData.displayedCategoryGroups[title]}
                 />
               )}
             </>
@@ -397,6 +419,8 @@ export default function XYZMap() {
                 )
               }
               toggleCategory={toggleCategory}
+              toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
+              isOpen={dbMapData.displayedCategoryGroups['Not defined categories']}
               showDescriptions={showDescriptions}
               dbMapData={dbMapData}
             />
