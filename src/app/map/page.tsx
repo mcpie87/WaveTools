@@ -3,6 +3,7 @@
 import 'leaflet/dist/leaflet.css';
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useDebounce } from 'use-debounce';
 import { MapContainer, Marker, useMap, useMapEvent } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
@@ -24,7 +25,7 @@ import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
 import { DbMapData } from '@/types/mapTypes';
-import { loadBlueprintTranslations } from './BlueprintTranslationService';
+import { loadBlueprintTranslations, translateBlueprint } from './BlueprintTranslationService';
 import { convertMarkerToCoord, mapIdToName, mapUrl, scaleFactor } from './mapUtils';
 import { CategoryPaneComponent } from './Components/CategoryPaneComponent';
 import { CustomPopup } from './Components/CustomPopup';
@@ -86,8 +87,8 @@ export default function XYZMap() {
       visitedMarkers: {},
     };
   });
-
   const [translationsReady, setTranslationsReady] = useState(false);
+  const [categoryFilterDebounced] = useDebounce(categoryFilter, 2000);
 
   useEffect(() => {
     loadBlueprintTranslations().then(() => setTranslationsReady(true));
@@ -324,6 +325,12 @@ export default function XYZMap() {
             <Button onClick={() => clearCategories()}>Clear Categories</Button>
           </div>
 
+          <Input
+            placeholder="Filter categories…"
+            value={categoryFilter}
+            onChange={e => setCategoryFilter(e.target.value)}
+          />
+
           {([
             ["Frostland", frostlandCategories, FrostlandsTranslationMap],
             ["Septimont", septimontCategories, SeptimontTranslationMap],
@@ -339,7 +346,12 @@ export default function XYZMap() {
                 <CategoryPaneComponent
                   key={title}
                   title={title}
-                  categories={categories}
+                  categories={categories.filter(([c]) =>
+                    [
+                      c.toLowerCase(),
+                      translateBlueprint(c).toLowerCase(),
+                    ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
+                  )}
                   translationMap={translationMap}
                   toggleCategory={toggleCategory}
                   showDescriptions={showDescriptions}
@@ -351,17 +363,16 @@ export default function XYZMap() {
           ))}
 
           {showDescriptions && (
-            <Input
-              placeholder="Filter categories…"
-              value={categoryFilter}
-              onChange={e => setCategoryFilter(e.target.value)}
-            />
-          )}
-
-          {showDescriptions && (
             <CategoryPaneComponent
               title="Not defined categories"
-              categories={categories.filter(([c]) => c.toLowerCase().includes(categoryFilter.toLowerCase()))}
+              categories={
+                categories.filter(([c]) =>
+                  [
+                    c.toLowerCase(),
+                    translateBlueprint(c).toLowerCase(),
+                  ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
+                )
+              }
               toggleCategory={toggleCategory}
               showDescriptions={showDescriptions}
               dbMapData={dbMapData}
