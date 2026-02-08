@@ -53,7 +53,7 @@ const CategoryPaneGroupComponent = ({
         <div className="flex flex-row items-center justify-between w-full text-xs">
           <Image
             src={getWorldmapIcon(groupName) ?? ""}
-            className="w-6 h-6 mr-2"
+            className="w-6 h-6 mr-2 bg-gray-800 rounded-md"
             alt={groupName}
             width={20}
             height={20}

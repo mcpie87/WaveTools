@@ -42,22 +42,21 @@ export const ChestTranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure_LNXT_Update02": { name: "Standard Supply Chest" },
   "Treasure_LNXT_Update03": { name: "Advanced Supply Chest" },
   "Treasure_LNXT_Update04": { name: "Premium Supply Chest" },
-  "Treasure_LNXT_Update05": { name: "(Tidal) Premium Supply Chest" },
-  "Treasure034": { name: "Chest ??? 24" },
+  "Treasure_LNXT_Update05": { name: "Tidal Supply Chest" },
   "branch3.0_693_Treasure_3_1": { name: "Basic Supply Chest" },
   "branch3.0_693_Treasure_3_2": { name: "Standard Supply Chest" },
-  "branch3.0_693_Treasure_3_3": { name: "Advanced Supply Pack" },
+  "branch3.0_693_Treasure_3_3": { name: "Advanced Supply Chest" },
   "branch3.0_693_Treasure_3_5": { name: "Tidal Supply Chest" },
   "branch3.0_693_Treasure_3_11": { name: "Standard Supply Chest" },
   "branch3.0_693_Treasure_3_12": { name: "Basic Supply Chest" },
-  "branch3.0_693_Treasure_3_13": { name: "Tidal Chest" },
-  "branch3.0_693_Treasure_3_14": { name: "Advanced Supply Pack" },
+  "branch3.0_693_Treasure_3_13": { name: "Tidal Supply Chest" },
+  "branch3.0_693_Treasure_3_14": { name: "Advanced Supply Chest" },
   "branch3.0_693_Treasure_3_16": { name: "Standard Supply Chest" },
-  "branch3.0_693_Treasure_3_19": { name: "Advanced Supply Pack" },
+  "branch3.0_693_Treasure_3_19": { name: "Advanced Supply Chest" },
   "branch3.0_693_Treasure_3_4": { name: "Premium Supply Chest" },
   "branch3.0_693_Treasure_3_6": { name: "Basic Supply Chest" },
   "branch3.0_693_Treasure_3_7": { name: "Standard Supply Chest" },
-  "branch3.0_693_Treasure_3_8": { name: "Advanced Supply Pack" },
+  "branch3.0_693_Treasure_3_8": { name: "Advanced Supply Chest" },
   "branch3.0_693_Treasure_3_9": { name: "Premium Supply Chest" },
   "branch3.0_13_Treasure_2_0_03": { name: "Standard Supply Chest" },
 };
@@ -83,8 +82,8 @@ export const CasketTranslationMap: Record<string, TranslationMapEntry> = {
   "Gameplay021": { name: "Sonance Casket" },
   "Gameplay_CXS_4": { name: "Windchimer" },
   "Gameplay_CXS_14": { name: "Windchimer" },
-  "Gameplay7": { name: "Rinascita Casket" },
-  "branch2.4_109_Gameplay_2_4QQ1": { name: "Septimont Casket" },
+  "Gameplay7": { name: "Sonance Casket: Ragunna" },
+  "branch2.4_109_Gameplay_2_4QQ1": { name: "Sonance Casket: Septimont" },
   "branch3.0_41_Gameplay_3_0/Common1": { name: "Lahai Tape" },
 };
 
@@ -269,10 +268,11 @@ export const SpecialtyTranslationMap: Record<string, TranslationMapEntry> = {
 };
 
 export const TranslationMap: Record<string, TranslationMapEntry> = {
-  "Treasure034": {
-    name: "Vault Undergrounds Shell Credit",
-    rewardId: 1321,
-  },
+  "Treasure034": { name: "Interact ???" },
+  // "Treasure034": {
+  //   name: "Vault Undergrounds Shell Credit",
+  //   rewardId: 1321,
+  // },
   "Gameplay012": {
     name: "Purple Rinascita Cloud",
   },
