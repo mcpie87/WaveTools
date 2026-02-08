@@ -8,7 +8,7 @@ import clsx from "clsx";
 
 interface CategoryPaneGroupComponentProps {
   groupName: string;
-  categories: [string, number][];
+  categories: [string, number, number][];
   showDescriptions: boolean;
   toggleCategory: (category: string) => void;
   toggleCategories?: (categories: string[], value: boolean) => void;
@@ -23,6 +23,7 @@ const CategoryPaneGroupComponent = ({
   dbMapData,
 }: CategoryPaneGroupComponentProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const totalVisited = categories.reduce((sum, [, , v]) => sum + v, 0);
   const totalCount = categories.reduce((sum, [, c]) => sum + c, 0);
   const allChecked = categories.every(([t]) => dbMapData.visibleCategories[t]);
   const someChecked = categories.some(([t]) => dbMapData.visibleCategories[t]);
@@ -47,12 +48,12 @@ const CategoryPaneGroupComponent = ({
         }}
       >
         {/* Title */}
-        <div className="flex flex-row items-center justify-between p-1 w-full text-sm">
+        <div className="flex flex-row items-center justify-between w-full text-xs">
           <div>{groupName}</div>
           <div className="flex flex-row gap-2 items-center">
-            <div>({totalCount})</div>
+            <div className="font-lightmono">({totalVisited}/{totalCount})</div>
             {toggleCategories && (
-              <Button className="flex" onClick={(e) => {
+              <Button className="flex p-1 h-6 w-6" onClick={(e) => {
                 e.stopPropagation();
                 setIsOpen(!isOpen)
               }}>
@@ -63,13 +64,13 @@ const CategoryPaneGroupComponent = ({
         </div>
         {/* Translation if showDescriptions */}
         {showDescriptions && !toggleCategories && (
-          <div className="text-xs text-gray-600 font-semibold">
+          <div className="text-xs text-gray-500 font-semibold">
             Translation: {translateBlueprint(groupName)}
           </div>
         )}
       </button>
       {isOpen && toggleCategories && (
-        categories.map(([category, count]) => (
+        categories.map(([category, totalCount, visitedCount]) => (
           <button
             key={category}
             className="flex flex-col flex-wrap items-center justify-between gap-2 text-xs font-mono hover:bg-base-300 transition-colors"
@@ -79,7 +80,7 @@ const CategoryPaneGroupComponent = ({
               <div className="flex flex-row gap-2">
                 <input type="checkbox" key={category} checked={!!dbMapData.visibleCategories[category]} />
                 <div className="flex flex-col text-xs font-mono">
-                  <span className="font-mono text-gray-400">{category}</span>
+                  <span className="font-mono text-gray-500">{category}</span>
                   {showDescriptions && (
                     <span className="text-gray-600">
                       Translation: {translateBlueprint(category)}
@@ -87,7 +88,7 @@ const CategoryPaneGroupComponent = ({
                   )}
                 </div>
               </div>
-              <div className="flex flex-wrap align-center justify-between">({count})</div>
+              <div className="flex flex-wrap align-center justify-between">({visitedCount}/{totalCount})</div>
             </div>
           </button>
         ))
@@ -99,7 +100,7 @@ const CategoryPaneGroupComponent = ({
 
 interface CategoryPaneComponentProps {
   title: string;
-  categories: [string, number][];
+  categories: [string, number, number][];
   translationMap?: Record<string, TranslationMapEntry>;
   toggleCategory: (category: string) => void;
   toggleCategories?: (categories: string[], value: boolean) => void;
@@ -121,17 +122,17 @@ export const CategoryPaneComponent = ({
 }: CategoryPaneComponentProps) => {
   if (!categories.length) return null;
 
-  const groups = new Map<string, [string, number][]>();
+  const groups = new Map<string, [string, number, number][]>();
   if (toggleCategories) {
-    for (const [blueprintType, count] of categories) {
+    for (const [blueprintType, totalCount, visitedCount] of categories) {
       const displayName = translationMap?.[blueprintType]?.name ?? blueprintType;
       if (!groups.has(displayName)) groups.set(displayName, []);
-      groups.get(displayName)!.push([blueprintType, count]);
+      groups.get(displayName)!.push([blueprintType, totalCount, visitedCount]);
     }
   }
   else {
-    for (const [blueprintType, count] of categories) {
-      groups.set(blueprintType, [[blueprintType, count]]);
+    for (const [blueprintType, totalCount, visitedCount] of categories) {
+      groups.set(blueprintType, [[blueprintType, totalCount, visitedCount]]);
     }
   }
 

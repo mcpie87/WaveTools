@@ -136,11 +136,19 @@ export default function XYZMap() {
     [data, selectedMap]
   );
 
-  const categories = useMemo(() => {
-    const counts: Record<string, number> = {};
-    for (const m of markers) counts[m.BlueprintType] = (counts[m.BlueprintType] ?? 0) + 1;
-    return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]));
-  }, [markers]);
+  const categories: Array<[string, number, number]> = useMemo(() => {
+    const totals: Record<string, number> = {};
+    const visited: Record<string, number> = {};
+    for (const m of markers) {
+      totals[m.BlueprintType] = (totals[m.BlueprintType] ?? 0) + 1;
+      visited[m.BlueprintType] = (visited[m.BlueprintType] ?? 0) + (dbMapData.visitedMarkers[m.Id as number] ? 1 : 0);
+    }
+    const counts: Record<string, [number, number]> = {};
+    for (const m of markers) {
+      counts[m.BlueprintType] = [totals[m.BlueprintType], visited[m.BlueprintType]];
+    }
+    return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0])).map(([k, v]) => [k, v[0], v[1]]);
+  }, [markers, dbMapData.visitedMarkers]);
 
   const selectedPoint: APIMarker = useMemo(() => {
     return {
@@ -390,7 +398,7 @@ export default function XYZMap() {
                 <CategoryPaneComponent
                   key={title}
                   title={title}
-                  categories={categories.filter(([c]) =>
+                  categories={categories.filter(([c, ,]) =>
                     [
                       c.toLowerCase(),
                       translateBlueprint(c).toLowerCase(),
