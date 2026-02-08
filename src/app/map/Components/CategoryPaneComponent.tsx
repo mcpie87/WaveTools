@@ -5,6 +5,8 @@ import { ChevronDown, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import clsx from "clsx";
+import { getWorldmapIcon } from "../TranslationMaps/worldmapIconMap";
+import Image from "next/image";
 
 interface CategoryPaneGroupComponentProps {
   groupName: string;
@@ -49,6 +51,13 @@ const CategoryPaneGroupComponent = ({
       >
         {/* Title */}
         <div className="flex flex-row items-center justify-between w-full text-xs">
+          <Image
+            src={getWorldmapIcon(groupName) ?? ""}
+            className="w-6 h-6 mr-2"
+            alt={groupName}
+            width={20}
+            height={20}
+          />
           <div>{groupName}</div>
           <div className="flex flex-row gap-2 items-center">
             <div className="font-lightmono">({totalVisited}/{totalCount})</div>

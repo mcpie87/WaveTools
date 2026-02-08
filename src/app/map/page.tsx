@@ -243,16 +243,37 @@ export default function XYZMap() {
     }
 
     let html = '';
-    let iconSize = [20, 20];
-    let iconAnchor = [10, 10];
+    let iconSize: L.PointExpression = [20, 20];
+    let iconAnchor: L.PointExpression = [10, 10];
+
     const worldmapIconUrl = getWorldmapIcon(UnionTranslationMap[category]?.name ?? category);
+
     if (worldmapIconUrl) {
-      // worldmap icon exists
-      const opacityStyle = visited && !hideVisited ? 'opacity:0.3;' : '';
-      const displayStyle = hideVisited && visited ? 'display:none;' : '';
-      html = `<img src="${worldmapIconUrl}" class="w-10 h-10" style="${opacityStyle}${displayStyle}" />`;
-      iconSize = [40, 40];
-      iconAnchor = [20, 20];
+      // worldmap icon exists — style it nicely
+      const opacity = visited && !hideVisited ? 0.3 : 1;
+      const display = hideVisited && visited ? 'none' : 'inline-block';
+
+      html = `
+      <div style="
+        display: ${display};
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 2px solid rgba(0,0,0,0.2);
+        background-color: rgba(0,0,0,0.2);
+        box-shadow: 0 0 4px rgba(0,0,0,0.5);
+        overflow: hidden;
+        opacity: ${opacity};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      ">
+        <img src="${worldmapIconUrl}" style="width:32px; height:32px; object-fit:contain;" />
+      </div>
+    `;
+
+      iconSize = [32, 32];
+      iconAnchor = [16, 16];
     } else {
       // fallback colored circle
       const hue = Math.abs([...category].reduce((a, c) => c.charCodeAt(0) + ((a << 5) - a), 0)) % 360;
@@ -270,13 +291,14 @@ export default function XYZMap() {
     const icon = L.divIcon({
       html,
       className: '',
-      iconSize: iconSize as L.PointExpression,
-      iconAnchor: iconAnchor as L.PointExpression,
+      iconSize,
+      iconAnchor,
     });
 
     iconCache.current.set(key, icon);
     return icon;
   }, [hideVisited]);
+
 
   /* ----------------------------- UI ------------------------------- */
 
