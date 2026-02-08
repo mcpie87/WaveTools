@@ -2,9 +2,6 @@ import { TranslationMapEntry } from "./TranslationMapInterface";
 
 
 export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
-  "branch3.1_199_Gameplay_EFLDJK_Up_3": {
-    "name": "Lahai Tape Grapple"
-  },
   "branch3.1_40_Gameplay_3_1/VisionSummon4": {
     "name": "Glohomoth Vision"
   },
@@ -90,8 +87,17 @@ export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
 };
 
 export const CasketTranslationMap: Record<string, TranslationMapEntry> = {
-  "branch2.4_109_Gameplay_2_4QQ1": { "name": "Casket" },
+  "Gameplay021": { name: "Sonance Casket" },
+  "Gameplay_CXS_4": { name: "Windchimer" },
+  "Gameplay_CXS_14": { name: "Windchimer" },
+  "Gameplay7": { name: "Rinascita Casket" },
+  "branch2.4_109_Gameplay_2_4QQ1": { name: "Septimont Casket" },
   "branch3.0_41_Gameplay_3_0/Common1": { name: "Lahai Tape" },
+};
+
+export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
+  "Gameplay111": { name: "Mutterfly" },
+  "Animal032": { name: "Blobfly" },
 };
 
 export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = {
@@ -110,24 +116,13 @@ export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = 
 export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster001": { name: "Vanguard Junrock" },
   "Monster002": { name: "Fission Junrock" },
-  "Monster019": {
-    name: "Baby Roseshroom",
-  },
-  "Monster043": {
-    name: "Roseshroom",
-  },
-  "Monster058": {
-    name: "Hoartoise",
-  },
-  "branch2.4_Monster_branch2.4_001": {
-    name: "Torn Cuddle Wuddle",
-  },
-  "branch2.4_Monster_branch2.4_002": {
-    name: "Torn Lottie Lost",
-  },
-  "branch2.4_Monster_branch2.4_003": {
-    name: "Torn Hocus Pocus",
-  },
+  "Monster019": { name: "Baby Roseshroom" },
+  "Monster034": { name: "Glacio Prism" },
+  "Monster043": { name: "Roseshroom" },
+  "Monster058": { name: "Hoartoise" },
+  "branch2.4_Monster_branch2.4_001": { name: "Torn Cuddle Wuddle" },
+  "branch2.4_Monster_branch2.4_002": { name: "Torn Lottie Lost" },
+  "branch2.4_Monster_branch2.4_003": { name: "Torn Hocus Pocus" },
   "branch2.4_Monster_branch2.4_004": {
     name: "Torn Diggy Duggy",
   },
@@ -220,13 +215,27 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   },
 };
 
+export const AnimalTranslationMap: Record<string, TranslationMapEntry> = {
+  "Animal004": { name: "Gray Crested Gull" },
+  "Animal017": { name: "Red Feather Butterfly" },
+  "Animal018": { name: "Blue Feather Butterfly" },
+  "Animal028": { name: "Green Pit Lizard" },
+};
+
 export const CollectTranslationMap: Record<string, TranslationMapEntry> = {
-  "Collect504": {
-    name: "Floramber"
-  },
-  "Collect502": {
-    name: "Lampylumen"
-  },
+  "Collect101": { name: "Pearl Leaf" },
+  "Collect106": { name: "Angelica" },
+  "Collect109": { name: "Waterlamp" },
+  "Collect112": { name: "Chromshell" },
+  "Collect113": { name: "Dripsnail" },
+  "Collect115": { name: "Cliffrecluse" },
+  "Collect116": { name: "Umbragricus" },
+  "Collect117": { name: "Gemberry" },
+  "Collect501": { name: "Scarletthorn" },
+  "Collect502": { name: "Lampylumen" },
+  "Collect503": { name: "Indigoite" },
+  "Collect504": { name: "Floramber" },
+  "Collect601": { name: "Bird Egg" },
 };
 
 export const TranslationMap: Record<string, TranslationMapEntry> = {
@@ -261,4 +270,19 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.0_SceneObj3": {
     name: "Monnaie Box 4 ?"
   },
+  "SceneObj002": { name: "Wooden Box" },
+  "SceneObj005": { name: "Tree Trunk" },
 };
+
+export const UnionTranslationMap: Record<string, TranslationMapEntry> = [
+  FrostlandsTranslationMap,
+  ChestTranslationMap,
+  TeleporterTranslationMap,
+  CasketTranslationMap,
+  TidalHeritageTranslationMap,
+  MonsterTranslationMap,
+  CollectTranslationMap,
+  AnimalTranslationMap,
+  PuzzleTranslationMap,
+  TranslationMap,
+].reduce((acc, map) => ({ ...acc, ...map }), {});
