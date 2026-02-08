@@ -112,9 +112,11 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
 
   // 3.0
   "branch3.0_135_Gameplay513": { name: "Bike Challenge" },
+  "branch3.1_115_Gameplay513": { name: "Smartprint Cube" },
+  "branch3.0_939_NPC420085": { name: "Soliskin" },
 
   // 3.1
-  "branch3.1_115_Gameplay_3_1/SunSpiritPPV": { name: "Soliskin Chest" },
+  "branch3.1_115_Gameplay_3_1/SunSpiritPPV": { name: "Soliskin Guide" },
 };
 export const PuzzleDisplayOrder = [
   "Mutterfly",
@@ -153,7 +155,7 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_001": { name: "Lioness of Glory" },
   "Monster_branch2.4_020": { name: "???" },
   "Monster_branch2.4_022": { name: "???" },
-  "branch3.1_115_Monster_006": { name: "Exoswarm encased in ice" },
+  "branch3.1_115_Monster_006": { name: "Glommoth" },
 };
 export const MonsterDisplayOrder = [
 ];
@@ -162,7 +164,6 @@ export const Echo4CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_012": { name: "Lioness of Glory" },
   "Monster_Branch2.4_026": { name: "Lioness of Glory" },
   "Monster_branch2.4_01": { name: "Kelpie" },
-  "Monster_Branch2.4_006": { name: "Hologram: Nightmare: Kelpie" },
 
   // 3.0
   "Monster_Branch3.0_043": { name: "Hyvatia" },
@@ -263,6 +264,7 @@ export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_003": { name: "Spectro Drake" },
   "Monster_Branch2.4_004": { name: "Havoc Drake" },
   "Monster_Branch2.4_005": { name: "Glacio Drake" },
+  "Monster_Branch2.4_006": { name: "Aero Drake" },
   "Monster_Branch2.4_007": { name: "Electro Drake" },
   "Monster_Branch2.4_015": { name: "Fusion Drake" },
   "Monster_Branch2.4_016": { name: "Spectro Drake" },

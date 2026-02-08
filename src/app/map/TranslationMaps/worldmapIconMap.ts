@@ -10,7 +10,12 @@ const GameAssetIcons: Record<string, string> = {
   "Sonance Casket: Septimont": "Image/IconMst80/T_IconMst80_008_UI.png",
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
 
+  "Flying Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
   "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_61_UI.png",
+  "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
+  "Smartprint Cube": "Atlas/WorldMapIcon/SP_IconMap_Play_54_UI.png",
+  "Soliskin": "Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+  "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
 
   /* Specialties */
   "Bamboo Iris": "Image/IconC80/T_IconC80_bianzhuhua_UI.png",
@@ -21,7 +26,8 @@ const GameAssetIcons: Record<string, string> = {
   "Golden Fleece": "Image/IconC80/T_IconC80_045_UI.png",
 
   // 3.1
-  "Moss Amber": "Image/IconC80/T_IconC80_072_UI.png",
+  "Moss Amber": "Image/IconC/T_IconC_072_UI.png",
+
 
   /* NPC Monsters */
   "Frostcrest Gladiator": "Image/IconMonsterHead/T_IconMonsterHead_32039_UI.png",
@@ -162,6 +168,12 @@ const GameAssetIcons: Record<string, string> = {
   "Devotee's Flesh": "Image/IconMonsterHead/T_IconMonsterHead_31061_UI.png",
 
   // 3.0
+  "Tremor Warrior": "Image/IconMonsterHead/T_IconMonsterHead_31074_UI.png",
+  "Frostbite Coleoid": "Image/IconMonsterHead/T_IconMonsterHead_32057_UI.png",
+  "Windlash Coleoid": "Image/IconMonsterHead/T_IconMonsterHead_32058_UI.png",
+  "Ironhoof": "Image/IconMonsterHead/T_IconMonsterHead_32053_UI.png",
+  "Spacetrek Explorer": "Image/IconMonsterHead/T_IconMonsterHead_32054_UI.png",
+  "Twin Nova: Nebulous Cannon": "Image/IconMonsterHead/T_IconMonsterHead_32049_UI.png",
 
   // 3.1
   "Sabercat Reaver": "Image/IconMonsterHead/T_IconMonsterHead_32055_UI.png",
@@ -170,6 +182,7 @@ const GameAssetIcons: Record<string, string> = {
   "Sabercat Prowler": "Image/IconMonsterHead/T_IconMonsterHead_32056_UI.png",
   "Shadow Stepper": "Image/IconMonsterHead/T_IconMonsterHead_31084_UI.png",
   "Iceglint Dancer": "Image/IconMonsterHead/T_IconMonsterHead_31083_UI.png",
+
 };
 
 const CustomIcons: Record<string, string> = {

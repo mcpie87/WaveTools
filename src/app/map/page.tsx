@@ -175,11 +175,12 @@ export default function XYZMap() {
   const displayedMarkers = useMemo(() => {
     const base = enableClick
       ? markersWithinRadius
-      : markers.filter(m => dbMapData.visibleCategories[m.BlueprintType] && (!hideVisited || !dbMapData.visitedMarkers[m.Id as number]));
+      : markers.filter(m => dbMapData.visibleCategories[m.BlueprintType]);
     return [
       ...(enableClick ? [convertMarkerToCoord(selectedPoint, dbMapData.visitedMarkers)] : []),
-      ...base.map((m) => convertMarkerToCoord(m, dbMapData.visitedMarkers)),
-    ];
+      ...base.map((m) => convertMarkerToCoord(m, dbMapData.visitedMarkers))
+        .filter(m => !hideVisited || !dbMapData.visitedMarkers[m.id as number]),
+    ]
   }, [markers, markersWithinRadius, dbMapData.visibleCategories, hideVisited, enableClick, selectedPoint, dbMapData.visitedMarkers]);
 
   const toggleMarkerVisited = (marker: IMarker) => {
