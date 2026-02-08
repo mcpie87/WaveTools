@@ -51,7 +51,6 @@ export const ChestTranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure_LNXT_Update04": { name: "Premium Supply Chest" },
   "Treasure_LNXT_Update05": { name: "(Tidal) Premium Supply Chest" },
   "Treasure034": { name: "Chest ??? 24" },
-  "branch2.5_Slots": { name: "Triptych Chest" },
   "branch3.0_693_Treasure_3_1": { name: "Basic Supply Chest" },
   "branch3.0_693_Treasure_3_2": { name: "Standard Supply Chest" },
   "branch3.0_693_Treasure_3_3": { name: "Advanced Supply Pack" },
@@ -99,6 +98,9 @@ export const CasketTranslationMap: Record<string, TranslationMapEntry> = {
 export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "Gameplay111": { name: "Mutterfly" },
   "Animal032": { name: "Blobfly" },
+  "branch2.5_41_Gameplay1": { name: "Orchestration Altar" },
+  "branch2.5_Slots": { name: "Triptych Chest" },
+  "branch3.0_135_Gameplay513": { name: "Bike Challenge" },
 };
 
 export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = {
