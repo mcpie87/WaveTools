@@ -110,6 +110,9 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.5_41_Gameplay1": { name: "Orchestration Altar" },
   "branch2.5_Slots": { name: "Triptych Chest" },
 
+  // 2.6
+  "branch2.6_35_Gameplay640": { name: "Dreams of Cintercide" },
+
   // 3.0
   "branch3.0_135_Gameplay513": { name: "Bike Challenge" },
   "branch3.1_115_Gameplay513": { name: "Smartprint Cube" },
@@ -124,6 +127,7 @@ export const PuzzleDisplayOrder = [
   "Flying Challenge",
   "Orchestration Altar",
   "Triptych Chest",
+  "branch2.6_35_Gameplay640",
   "Bike Challenge",
   "Soliskin Chest",
 ];

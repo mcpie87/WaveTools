@@ -4,18 +4,21 @@ const GameAssetIcons: Record<string, string> = {
   "Resonance Nexus": "Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
   "Resonance Beacon": "Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
 
+  /* Caskets */
   "Sonance Casket": "Image/IconMst160/T_IconMst160_006_UI.png",
   "Windchimer": "Image/IconMst80/T_IconMst80_007_UI.png",
   "Sonance Casket: Ragunna": "Image/IconMst80/T_IconMst80_008_UI.png",
   "Sonance Casket: Septimont": "Image/IconMst80/T_IconMst80_008_UI.png",
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
 
+  /* Puzzles */
+  "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
   "Flying Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
+  "Dreams of Cintercide": "Atlas/WorldMapIcon/SP_IconMap_Play_48_UI.png",
   "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_61_UI.png",
-  "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
   "Smartprint Cube": "Atlas/WorldMapIcon/SP_IconMap_Play_54_UI.png",
   "Soliskin": "Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
-  "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+  "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
 
   /* Specialties */
   "Bamboo Iris": "Image/IconC80/T_IconC80_bianzhuhua_UI.png",
