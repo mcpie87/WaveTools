@@ -47,9 +47,7 @@ const CategoryPaneGroupComponent = ({
         }}
       >
         {/* Title */}
-        <div
-          className="flex flex-row items-center justify-between p-1 w-full"
-        >
+        <div className="flex flex-row items-center justify-between p-1 w-full text-sm">
           <div>{groupName}</div>
           <div className="flex flex-row gap-2 items-center">
             <div>({totalCount})</div>
@@ -80,10 +78,10 @@ const CategoryPaneGroupComponent = ({
             <div className="flex w-full justify-between">
               <div className="flex flex-row gap-2">
                 <input type="checkbox" key={category} checked={!!dbMapData.visibleCategories[category]} />
-                <div className="flex flex-col">
-                  <span className="text-xs font-mono text-gray-400">{category}</span>
+                <div className="flex flex-col text-xs font-mono">
+                  <span className="font-mono text-gray-400">{category}</span>
                   {showDescriptions && (
-                    <span className="text-xs text-gray-600">
+                    <span className="text-gray-600">
                       Translation: {translateBlueprint(category)}
                     </span>
                   )}
