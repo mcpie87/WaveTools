@@ -112,6 +112,7 @@ const CategoryPaneGroupComponent = ({
 interface CategoryPaneComponentProps {
   title: string;
   categories: [string, number, number][];
+  displayOrder?: string[];
   translationMap?: Record<string, TranslationMapEntry>;
   toggleCategory: (category: string) => void;
   toggleCategories?: (categories: string[], value: boolean) => void;
@@ -123,6 +124,7 @@ interface CategoryPaneComponentProps {
 export const CategoryPaneComponent = ({
   title,
   categories,
+  displayOrder,
   translationMap,
   toggleCategory,
   toggleCategories,
@@ -147,8 +149,15 @@ export const CategoryPaneComponent = ({
     }
   }
 
-  const sortedGroupNames = [...groups.keys()].sort((a, b) => a.localeCompare(b));
+  const sortedGroupNames = [...groups.keys()].sort((a, b) => {
+    if (displayOrder === undefined) return a.localeCompare(b);
+
+    return (displayOrder.includes(a) ? displayOrder.indexOf(a) : Infinity) -
+      (displayOrder.includes(b) ? displayOrder.indexOf(b) : Infinity) ||
+      a.localeCompare(b)
+  });
   const toggledCount = categories.filter(c => dbMapData.visibleCategories[c[0]]).length;
+
 
   return (
     <div className="mb-4">

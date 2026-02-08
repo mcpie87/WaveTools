@@ -20,7 +20,7 @@ import {
 } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 
-import { AnimalTranslationMap, CasketTranslationMap, ChestTranslationMap, CollectTranslationMap, Echo1CostTranslationMap, Echo3CostTranslationMap, Echo4CostTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, NPCMobsTranslationMap, PuzzleTranslationMap, SpecialtyTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap, UnionTranslationMap } from './TranslationMaps/translationMap';
+import { AnimalDisplayOrder, AnimalTranslationMap, CasketDisplayOrder, CasketTranslationMap, ChestDisplayOrder, ChestTranslationMap, CollectDisplayOrder, CollectTranslationMap, Echo1CostDisplayOrder, Echo1CostTranslationMap, Echo3CostDisplayOrder, Echo3CostTranslationMap, Echo4CostDisplayOrder, Echo4CostTranslationMap, MonsterDisplayOrder, MonsterTranslationMap, NPCMobsDisplayOrder, NPCMobsTranslationMap, PuzzleDisplayOrder, PuzzleTranslationMap, SpecialtyDisplayOrder, SpecialtyTranslationMap, TeleporterDisplayOrder, TeleporterTranslationMap, TidalHeritageDisplayOrder, TidalHeritageTranslationMap, TranslationDisplayOrder, TranslationMap, UnionTranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
@@ -300,8 +300,6 @@ export default function XYZMap() {
 
 
   /* ----------------------------- UI ------------------------------- */
-
-  const frostlandCategories = categories.filter(category => FrostlandsTranslationMap[category[0]]);
   const chestCategories = categories.filter(category => ChestTranslationMap[category[0]]);
   const collectCategories = categories.filter(category => CollectTranslationMap[category[0]]);
   const tidalHeritageCategories = categories.filter(category => TidalHeritageTranslationMap[category[0]]);
@@ -318,7 +316,6 @@ export default function XYZMap() {
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
 
   const undefinedCategories = categories.filter(category =>
-    !FrostlandsTranslationMap[category[0]] &&
     !ChestTranslationMap[category[0]] &&
     !CollectTranslationMap[category[0]] &&
     !TidalHeritageTranslationMap[category[0]] &&
@@ -423,22 +420,21 @@ export default function XYZMap() {
           />
 
           {([
-            ["Teleporter", teleporterCategories, TeleporterTranslationMap],
-            ["Frostland", frostlandCategories, FrostlandsTranslationMap],
-            ["Casket", casketCategories, CasketTranslationMap],
-            ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap],
-            ["Chests", chestCategories, ChestTranslationMap],
-            ["Puzzles", puzzleCategories, PuzzleTranslationMap],
-            ["Specialties", specialtyCategories, SpecialtyTranslationMap],
-            ["Echoes", monsterCategories, MonsterTranslationMap],
-            ["Echo (4-Cost)", echo4CostCategories, Echo4CostTranslationMap],
-            ["Echoes (3-Cost)", echo3CostCategories, Echo3CostTranslationMap],
-            ["Echoes (1-Cost)", echo1CostCategories, Echo1CostTranslationMap],
-            ["NPC Monsters", npcMonsterCategories, NPCMobsTranslationMap],
-            ["Collect", collectCategories, CollectTranslationMap],
-            ["Animals", animalCategories, AnimalTranslationMap],
-            ["Defined", definedCategories, TranslationMap],
-          ] as const).map(([title, categories, translationMap]) => (
+            ["Teleporter", teleporterCategories, TeleporterTranslationMap, TeleporterDisplayOrder],
+            ["Casket", casketCategories, CasketTranslationMap, CasketDisplayOrder],
+            ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap, TidalHeritageDisplayOrder],
+            ["Chests", chestCategories, ChestTranslationMap, ChestDisplayOrder],
+            ["Puzzles", puzzleCategories, PuzzleTranslationMap, PuzzleDisplayOrder],
+            ["Specialties", specialtyCategories, SpecialtyTranslationMap, SpecialtyDisplayOrder],
+            ["Echoes", monsterCategories, MonsterTranslationMap, MonsterDisplayOrder],
+            ["Echo (4-Cost)", echo4CostCategories, Echo4CostTranslationMap, Echo4CostDisplayOrder],
+            ["Echoes (3-Cost)", echo3CostCategories, Echo3CostTranslationMap, Echo3CostDisplayOrder],
+            ["Echoes (1-Cost)", echo1CostCategories, Echo1CostTranslationMap, Echo1CostDisplayOrder],
+            ["NPC Monsters", npcMonsterCategories, NPCMobsTranslationMap, NPCMobsDisplayOrder],
+            ["Collect", collectCategories, CollectTranslationMap, CollectDisplayOrder],
+            ["Animals", animalCategories, AnimalTranslationMap, AnimalDisplayOrder],
+            ["Defined", definedCategories, TranslationMap, TranslationDisplayOrder],
+          ] as const).map(([title, categories, translationMap, displayOrder]) => (
             <>
               {categories.length > 0 && (
                 <CategoryPaneComponent
@@ -451,6 +447,7 @@ export default function XYZMap() {
                       UnionTranslationMap[c]?.name.toLowerCase() ?? '',
                     ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
                   )}
+                  displayOrder={displayOrder}
                   translationMap={translationMap}
                   toggleCategory={toggleCategory}
                   toggleCategories={toggleCategories}

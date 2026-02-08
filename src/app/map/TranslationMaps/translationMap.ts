@@ -1,11 +1,5 @@
+import { ItemSpecialty } from "@/app/interfaces/item_types";
 import { TranslationMapEntry } from "./TranslationMapInterface";
-
-
-export const FrostlandsTranslationMap: Record<string, TranslationMapEntry> = {
-  "branch3.1_40_Gameplay_3_1/VisionSummon4": {
-    "name": "Glohomoth Vision"
-  },
-};
 
 export const ChestTranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure001": { name: "Basic Supply Chest" },
@@ -60,6 +54,13 @@ export const ChestTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.0_693_Treasure_3_9": { name: "Premium Supply Chest" },
   "branch3.0_13_Treasure_2_0_03": { name: "Standard Supply Chest" },
 };
+export const ChestDisplayOrder = [
+  "Basic Supply Chest",
+  "Standard Supply Chest",
+  "Advanced Supply Chest",
+  "Premium Supply Chest",
+  "Tidal Supply Chest",
+];
 
 export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
   "Teleport007": { name: "Teleporter" },
@@ -77,6 +78,10 @@ export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_143_Gameplay_2_4QQ2": { name: "Resonance Beacon" },
   "branch3.0_693_Gameplay_3_0/Common2": { name: "Resonance Beacon" },
 };
+export const TeleporterDisplayOrder = [
+  "Resonance Nexus",
+  "Resonance Beacon",
+];
 
 export const CasketTranslationMap: Record<string, TranslationMapEntry> = {
   "Gameplay021": { name: "Sonance Casket" },
@@ -86,15 +91,40 @@ export const CasketTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_109_Gameplay_2_4QQ1": { name: "Sonance Casket: Septimont" },
   "branch3.0_41_Gameplay_3_0/Common1": { name: "Lahai Tape" },
 };
+export const CasketDisplayOrder = [
+  "Sonance Casket",
+  "Windchimer",
+  "Sonance Casket: Ragunna",
+  "Sonance Casket: Septimont",
+  "Lahai Tape",
+];
 
 export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
+  // 1.0
   "Gameplay111": { name: "Mutterfly" },
   "Animal032": { name: "Blobfly" },
+
+  // 2.0
+  "Gameplay_LNXT_Flying": { name: "Flying Challenge" },
+  // 2.5
   "branch2.5_41_Gameplay1": { name: "Orchestration Altar" },
   "branch2.5_Slots": { name: "Triptych Chest" },
+
+  // 3.0
   "branch3.0_135_Gameplay513": { name: "Bike Challenge" },
+
+  // 3.1
   "branch3.1_115_Gameplay_3_1/SunSpiritPPV": { name: "Soliskin Chest" },
 };
+export const PuzzleDisplayOrder = [
+  "Mutterfly",
+  "Blobfly",
+  "Flying Challenge",
+  "Orchestration Altar",
+  "Triptych Chest",
+  "Bike Challenge",
+  "Soliskin Chest",
+];
 
 export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure_huodong2": { name: "Tidal Heritage (???)" },
@@ -111,6 +141,11 @@ export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = 
   "branch3.0_938_Treasure3": { name: "Tidal Heritage (Purple)" },
   "branch3.0_938_Treasure4": { name: "Tidal Heritage (Gold)" },
 };
+export const TidalHeritageDisplayOrder = [
+  "Tidal Heritage (Blue)",
+  "Tidal Heritage (Purple)",
+  "Tidal Heritage (Gold)",
+];
 
 export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_Monster_branch2.4_009": { name: "???" },
@@ -120,13 +155,21 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_branch2.4_022": { name: "???" },
   "branch3.1_115_Monster_006": { name: "Exoswarm encased in ice" },
 };
+export const MonsterDisplayOrder = [
+];
 
 export const Echo4CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_012": { name: "Lioness of Glory" },
   "Monster_Branch2.4_026": { name: "Lioness of Glory" },
   "Monster_branch2.4_01": { name: "Kelpie" },
   "Monster_Branch2.4_006": { name: "Hologram: Nightmare: Kelpie" },
+
+  // 3.0
+  "Monster_Branch3.0_043": { name: "Hyvatia" },
+  "Monster_Branch3.0_001": { name: "Hyvatia" },
 };
+export const Echo4CostDisplayOrder = [
+];
 
 export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster031": { name: "Violet-Feathered Heron" },
@@ -160,17 +203,39 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.6_016": { name: "Corrosaurus" },
   "branch2.6_667_Monster_Branch2.6_003": { name: "Corrosaurus" },
 
+  // 3.0 old
+  "Monster_Branch3.0_064": { name: "Chasm Guardian" },
+  "Monster_Branch3.0_067": { name: "Tambourinist" },
+  "Monster_Branch3.0_066": { name: "Flautist" },
+  "Monster_Branch3.0_065": { name: "Rocksteady Guardian" },
+  // 3.0 new
+  "Monster_Branch3.0_015": { name: "Flora Reindeer" },
+  "Monster_Branch3.0_014": { name: "Ironhoof" },
+  "Monster_Branch3.0_053": { name: "Ironhoof" },
+  "Monster_Branch3.0_054": { name: "Flora Reindeer" },
+  "Monster_Branch3.0_016": { name: "Flora Reindeer" },
+  "Monster_Branch3.0_055": { name: "Flora Reindeer" },
+  "Monster_Branch3.0_048": { name: "Spacetrek Explorer" },
+  "Monster_Branch3.0_004": { name: "Frostbite Coleoid" },
+  "Monster_Branch3.0_002": { name: "Windlash Coleoid" },
+  "Monster_Branch3.0_049": { name: "Twin Nova: Nebulous Cannon" },
+  "branch3.0_3_Monster": { name: "Twin Nova: Nebulous Cannon" },
+  "branch3.0_678_Monster_monster3_2": { name: "Spacetrek Explorer" },
+
   // 3.1?
   "branch3.1_658_Monster_monster3_3": { name: "Kronablight" },
   "branch3.1_658_Monster_monster3_2": { name: "Kronaclaw" },
   "branch3.0_678_Monster_monster3_1": { name: "Sabercat Prowler" },
   "branch3.0_678_Monster_monster3_3": { name: "Sabercat Reaver" },
 };
+export const Echo3CostDisplayOrder = [
+];
 
 export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> = {
   // 1.0
   "Monster001": { name: "Vanguard Junrock" },
   "Monster002": { name: "Fission Junrock" },
+  "Monster003": { name: "Electro Predator" },
   "Monster010": { name: "Glacio Predator" },
   "Monster011": { name: "Aero Predator" },
   "Monster014": { name: "Cruisewing" },
@@ -203,10 +268,26 @@ export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_016": { name: "Spectro Drake" },
   "Monster_Branch2.4_017": { name: "Havoc Drake" },
 
+  // 3.0
+  "Monster_Branch3.0_047": { name: "Havoc Warrior" },
+  "Monster_Branch3.0_063": { name: "Electro Predator" },
+  "Monster_Branch3.0_062": { name: "Aero Predator" },
+
+  "Monster_Branch3.0_007": { name: "Tremor Warrior" },
+  "Monster_Branch3.0_010": { name: "Flora Drone" },
+  "Monster_Branch3.0_058": { name: "Flora Drone" },
+  "Monster_Branch3.0_005": { name: "Zip Zap" },
+  "Monster_Branch3.0_009": { name: "Mining Drone" },
+  "Monster_Branch3.0_057": { name: "Mining Drone" },
+  "Monster_Branch3.0_008": { name: "Geospider S4" },
+  "Monster_Branch3.0_056": { name: "Geospider S4" },
+
   // 3.1?
   "branch3.1_243_Monster_Branch3.0_007": { name: "Iceglint Dancer" },
   "branch3.1_243_Monster_Branch3.0_006": { name: "Shadow Stepper" },
 };
+export const Echo1CostDisplayOrder = [
+];
 
 export const NPCMobsTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_branch2.4_010": { name: "Lightcrest Gladiator" },
@@ -222,7 +303,13 @@ export const NPCMobsTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.6_177_Monster_monster2_6/Kahara5": { name: "Flamecrest Gladiator" },
   "branch2.6_177_Monster_monster2_6/Kahara6": { name: "Galecrest Gladiator" },
   "Monster_Branch2.6_005": { name: "Lightcrest Gladiator" },
+
+  // 3.0
+  "Monster_Branch3.0_011": { name: "Royan Man" },
+  "Monster_Branch3.0_012": { name: "Royan Woman" },
 };
+export const NPCMobsDisplayOrder = [
+];
 
 export const AnimalTranslationMap: Record<string, TranslationMapEntry> = {
   "Animal004": { name: "Gray Crested Gull" },
@@ -230,6 +317,8 @@ export const AnimalTranslationMap: Record<string, TranslationMapEntry> = {
   "Animal018": { name: "Blue Feather Butterfly" },
   "Animal028": { name: "Green Pit Lizard" },
 };
+export const AnimalDisplayOrder = [
+];
 
 export const CollectTranslationMap: Record<string, TranslationMapEntry> = {
   "Collect101": { name: "Pearl Leaf" },
@@ -246,6 +335,8 @@ export const CollectTranslationMap: Record<string, TranslationMapEntry> = {
   "Collect504": { name: "Floramber" },
   "Collect601": { name: "Bird Egg" },
 };
+export const CollectDisplayOrder = [
+];
 
 export const SpecialtyTranslationMap: Record<string, TranslationMapEntry> = {
   "Collect003": { name: "Iris" },
@@ -276,6 +367,39 @@ export const SpecialtyTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.1_693_Collect_3_4": { name: "Moss Amber" },
   "branch3.1_693_Collect_3_9": { name: "Moss Amber" },
 };
+export const SpecialtyDisplayOrder = [
+  // Huanglong
+  ItemSpecialty.BELLE_POPPY,
+  ItemSpecialty.CORIOLUS,
+  ItemSpecialty.IRIS,
+  ItemSpecialty.LANTERNBERRY,
+  ItemSpecialty.PECOK_FLOWER,
+  ItemSpecialty.TERRASPAWN_FUNGUS,
+  ItemSpecialty.VIOLET_CORAL,
+  ItemSpecialty.WINTRY_BELL,
+
+  // Mt. Firmament
+  ItemSpecialty.LOONGS_PEARL,
+  ItemSpecialty.PAVO_PLUM,
+
+  // Black Shores
+  ItemSpecialty.NOVA,
+
+  // Rinascita
+  ItemSpecialty.FIRECRACKER_JEWELWEED,
+  ItemSpecialty.GOLDEN_FLEECE,
+  ItemSpecialty.SWORD_ACORUS,
+  ItemSpecialty.SEASIDE_CENDRELIS,
+
+  // 2.4
+  ItemSpecialty.BAMBOO_IRIS,
+  ItemSpecialty.BLOODLEAF_VIBURNUM,
+
+  // 2.5
+  ItemSpecialty.AFTERLIFE,
+  // 3.1
+  ItemSpecialty.MOSS_AMBER,
+];
 
 export const TranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure034": { name: "Interact ???" },
@@ -312,10 +436,12 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   },
   "SceneObj002": { name: "Wooden Box" },
   "SceneObj005": { name: "Tree Trunk" },
+  "branch3.1_40_Gameplay_3_1/VisionSummon4": { name: "Glohomoth Vision" },
 };
+export const TranslationDisplayOrder = [
+];
 
 export const UnionTranslationMap: Record<string, TranslationMapEntry> = [
-  FrostlandsTranslationMap,
   ChestTranslationMap,
   TeleporterTranslationMap,
   CasketTranslationMap,

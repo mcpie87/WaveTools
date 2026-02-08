@@ -102,6 +102,9 @@ export enum ItemSpecialty {
 
   // 2.5
   AFTERLIFE = "\"Afterlife\"",
+
+  // 3.1
+  MOSS_AMBER = "Moss Amber",
 }
 
 export enum ItemWeapon {
