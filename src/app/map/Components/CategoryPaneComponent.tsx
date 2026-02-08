@@ -44,9 +44,12 @@ export const CategoryPaneComponent = ({
         onClick={() => toggleDisplayedCategoryGroup(title, !isOpen)}
         className="flex items-center justify-between align-center gap-2 text-sm font-semibold mb-2 w-full text-left hover:text-primary transition-colors"
       >
-        <div className="flex items-center">
+        <div className="flex items-center gap-1">
           {isOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
-          {title}
+          {showDescriptions && (
+            <div>({categories.length})</div>
+          )}
+          <span>{title}</span>
         </div>
         {isOpen && toggleCategories && (
           <Button

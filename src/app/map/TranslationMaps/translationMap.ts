@@ -73,10 +73,11 @@ export const ChestTranslationMap: Record<string, TranslationMapEntry> = {
 export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
   "Teleport007": { name: "Teleporter" },
 
-  "branch2.4_143_Gameplay_2_4QQ1": { name: "Resonance Nexus" },
   "Teleport003": { name: "Resonance Nexus" },
   "Teleport008": { name: "Resonance Nexus" },
   "Teleport3": { name: "Resonance Nexus" },
+  "branch2.2_14_Teleport4": { name: "Resonance Nexus" },
+  "branch2.4_143_Gameplay_2_4QQ1": { name: "Resonance Nexus" },
   "branch3.0_693_Gameplay_3_0/Common1": { name: "Resonance Nexus" },
 
   "Teleport001": { name: "Resonance Beacon" },
