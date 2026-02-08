@@ -20,7 +20,7 @@ import {
 } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 
-import { CasketTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, SeptimontTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
+import { CasketTranslationMap, ChestTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap } from './TranslationMaps/translationMap';
 import { Button } from '@/components/ui/button';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
@@ -189,6 +189,18 @@ export default function XYZMap() {
       },
     }));
   };
+  const toggleCategories = (categories: string[], value: boolean) => {
+    setDbMapData(prev => ({
+      ...prev,
+      visibleCategories: {
+        ...prev.visibleCategories,
+        ...categories.reduce((acc, category) => ({
+          ...acc,
+          [category]: value,
+        }), {}),
+      },
+    }));
+  };
 
   const clearCategories = () => {
     setDbMapData(prev => ({
@@ -235,14 +247,24 @@ export default function XYZMap() {
   /* ----------------------------- UI ------------------------------- */
 
   const frostlandCategories = categories.filter(category => FrostlandsTranslationMap[category[0]]);
-  const septimontCategories = categories.filter(category => SeptimontTranslationMap[category[0]]);
-  const monsterCategories = categories.filter(category => MonsterTranslationMap[category[0]]);
+  const chestCategories = categories.filter(category => ChestTranslationMap[category[0]]);
   const collectCategories = categories.filter(category => CollectTranslationMap[category[0]]);
   const tidalHeritageCategories = categories.filter(category => TidalHeritageTranslationMap[category[0]]);
   const casketCategories = categories.filter(category => CasketTranslationMap[category[0]]);
   const teleporterCategories = categories.filter(category => TeleporterTranslationMap[category[0]]);
+  const monsterCategories = categories.filter(category => MonsterTranslationMap[category[0]]);
   const definedCategories = categories.filter(category => TranslationMap[category[0]]);
 
+  const undefinedCategories = categories.filter(category =>
+    !FrostlandsTranslationMap[category[0]] &&
+    !ChestTranslationMap[category[0]] &&
+    !CollectTranslationMap[category[0]] &&
+    !TidalHeritageTranslationMap[category[0]] &&
+    !CasketTranslationMap[category[0]] &&
+    !TeleporterTranslationMap[category[0]] &&
+    !MonsterTranslationMap[category[0]] &&
+    !TranslationMap[category[0]]
+  );
 
   const markerComponents = useMemo(() => {
     return displayedMarkers.map((m) => (
@@ -332,13 +354,13 @@ export default function XYZMap() {
           />
 
           {([
+            ["Teleporter", teleporterCategories, TeleporterTranslationMap],
             ["Frostland", frostlandCategories, FrostlandsTranslationMap],
-            ["Septimont", septimontCategories, SeptimontTranslationMap],
+            ["Casket", casketCategories, CasketTranslationMap],
+            ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap],
+            ["Chests", chestCategories, ChestTranslationMap],
             ["Echoes", monsterCategories, MonsterTranslationMap],
             ["Collect", collectCategories, CollectTranslationMap],
-            ["Casket", casketCategories, CasketTranslationMap],
-            ["Teleporter", teleporterCategories, TeleporterTranslationMap],
-            ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap],
             ["Defined", definedCategories, TranslationMap],
           ] as const).map(([title, categories, translationMap]) => (
             <>
@@ -354,6 +376,7 @@ export default function XYZMap() {
                   )}
                   translationMap={translationMap}
                   toggleCategory={toggleCategory}
+                  toggleCategories={toggleCategories}
                   showDescriptions={showDescriptions}
                   dbMapData={dbMapData}
                 />
@@ -366,7 +389,7 @@ export default function XYZMap() {
             <CategoryPaneComponent
               title="Not defined categories"
               categories={
-                categories.filter(([c]) =>
+                undefinedCategories.filter(([c]) =>
                   [
                     c.toLowerCase(),
                     translateBlueprint(c).toLowerCase(),

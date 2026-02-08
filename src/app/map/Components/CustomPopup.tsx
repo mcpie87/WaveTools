@@ -2,7 +2,7 @@ import { translateBlueprint } from "../BlueprintTranslationService";
 import { IMarker } from "../types";
 import { Button } from "@/components/ui/button";
 import { Popup } from "react-leaflet";
-import { CasketTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, SeptimontTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap } from "../TranslationMaps/translationMap";
+import { CasketTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, ChestTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap } from "../TranslationMaps/translationMap";
 
 interface CustomPopupProps {
   marker: IMarker;
@@ -20,7 +20,7 @@ export function CustomPopup({
 
   const title =
     FrostlandsTranslationMap[marker.category]?.name ??
-    SeptimontTranslationMap[marker.category]?.name ??
+    ChestTranslationMap[marker.category]?.name ??
     TranslationMap[marker.category]?.name ??
     CasketTranslationMap[marker.category]?.name ??
     TidalHeritageTranslationMap[marker.category]?.name ??
