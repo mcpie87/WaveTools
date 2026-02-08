@@ -125,8 +125,11 @@ const GameAssetIcons: Record<string, string> = {
   "Fae Ignis": "Image/IconMonsterHead/T_IconMonsterHead_31043_UI.png",
   "Nimbus Wraith": "Image/IconMonsterHead/T_IconMonsterHead_31044_UI.png",
   "Hocus Pocus": "Image/IconMonsterHead/T_IconMonsterHead_31045_UI.png",
+  "Torn Hocus Pocus": "Image/IconMonsterHead/T_IconMonsterHead_31045_UI.png",
   "Lottie Lost": "Image/IconMonsterHead/T_IconMonsterHead_31046_UI.png",
+  "Torn Lottie Lost": "Image/IconMonsterHead/T_IconMonsterHead_31046_UI.png",
   "Diggy Duggy": "Image/IconMonsterHead/T_IconMonsterHead_31047_UI.png",
+  "Torn Diggy Duggy": "Image/IconMonsterHead/T_IconMonsterHead_31047_UI.png",
   "Chest Mimic": "Image/IconMonsterHead/T_IconMonsterHead_31048_UI.png",
   "Questless Knight": "Image/IconMonsterHead/T_IconMonsterHead_32022_UI.png",
   "Diurnus Knight": "Image/IconMonsterHead/T_IconMonsterHead_32023_UI.png",
@@ -137,6 +140,7 @@ const GameAssetIcons: Record<string, string> = {
   "Chop Chop": "Image/IconMonsterHead/T_IconMonsterHead_32028_UI.png",
   "Vitreum Dancer": "Image/IconMonsterHead/T_IconMonsterHead_32029_UI.png",
   "Cuddle Wuddle": "Image/IconMonsterHead/T_IconMonsterHead_32030_UI.png",
+  "Torn Cuddle Wuddle": "Image/IconMonsterHead/T_IconMonsterHead_32030_UI.png",
   "Lorelei": "Image/IconMonsterHead/T_IconMonsterHead_33011_UI.png",
   "Sentry Construct": "Image/IconMonsterHead/T_IconMonsterHead_33012_UI.png",
   "Dragon of Dirge": "Image/IconMonsterHead/T_IconMonsterHead_33013_UI.png",
@@ -152,6 +156,20 @@ const GameAssetIcons: Record<string, string> = {
   "Phantom: Vitreum Dancer": "Image/IconMonsterHead/T_IconMonsterHead_SG_32029_UI.png",
   "Phantom: Questless Knight": "Image/IconMonsterHead/T_IconMonsterHead_SG_32022_UI.png",
   "Phantom: Sentry Construct": "Image/IconMonsterHead/T_IconMonsterHead_SG_33009_UI.png",
+  "Kerasaur": "Image/IconMonsterHead/T_IconMonsterHead_31062_UI.png",
+  "Corrosaurus": "Image/IconMonsterHead/T_IconMonsterHead_32044_UI.png",
+  "Pilgrim's Shell": "Image/IconMonsterHead/T_IconMonsterHead_32034_UI.png",
+  "Devotee's Flesh": "Image/IconMonsterHead/T_IconMonsterHead_31061_UI.png",
+
+  // 3.0
+
+  // 3.1
+  "Sabercat Reaver": "Image/IconMonsterHead/T_IconMonsterHead_32055_UI.png",
+  "Kronaclaw": "Image/IconMonsterHead/T_IconMonsterHead_32060_UI.png",
+  "Kronablight": "Image/IconMonsterHead/T_IconMonsterHead_32059_UI.png",
+  "Sabercat Prowler": "Image/IconMonsterHead/T_IconMonsterHead_32056_UI.png",
+  "Shadow Stepper": "Image/IconMonsterHead/T_IconMonsterHead_31084_UI.png",
+  "Iceglint Dancer": "Image/IconMonsterHead/T_IconMonsterHead_31083_UI.png",
 };
 
 const CustomIcons: Record<string, string> = {

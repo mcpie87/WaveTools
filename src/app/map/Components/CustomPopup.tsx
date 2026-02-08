@@ -2,7 +2,7 @@ import { translateBlueprint } from "../BlueprintTranslationService";
 import { IMarker } from "../types";
 import { Button } from "@/components/ui/button";
 import { Popup } from "react-leaflet";
-import { CasketTranslationMap, CollectTranslationMap, FrostlandsTranslationMap, MonsterTranslationMap, ChestTranslationMap, TeleporterTranslationMap, TidalHeritageTranslationMap, TranslationMap, AnimalTranslationMap, PuzzleTranslationMap, SpecialtyTranslationMap, NPCMobsTranslationMap } from "../TranslationMaps/translationMap";
+import { getTranslationMapName } from "../TranslationMaps/translationMap";
 
 interface CustomPopupProps {
   marker: IMarker;
@@ -18,20 +18,7 @@ export function CustomPopup({
 }: CustomPopupProps) {
   const translation = translateBlueprint(marker.category); // synchronous
 
-  const title =
-    FrostlandsTranslationMap[marker.category]?.name ??
-    ChestTranslationMap[marker.category]?.name ??
-    TranslationMap[marker.category]?.name ??
-    CasketTranslationMap[marker.category]?.name ??
-    TidalHeritageTranslationMap[marker.category]?.name ??
-    MonsterTranslationMap[marker.category]?.name ??
-    CollectTranslationMap[marker.category]?.name ??
-    TeleporterTranslationMap[marker.category]?.name ??
-    AnimalTranslationMap[marker.category]?.name ??
-    PuzzleTranslationMap[marker.category]?.name ??
-    SpecialtyTranslationMap[marker.category]?.name ??
-    NPCMobsTranslationMap[marker.category]?.name ??
-    "";
+  const title = getTranslationMapName(marker.category);
 
   return (
     <Popup>

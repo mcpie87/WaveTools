@@ -113,109 +113,115 @@ export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = 
 };
 
 export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
-  "Monster001": { name: "Vanguard Junrock" },
-  "Monster002": { name: "Fission Junrock" },
-  "Monster019": { name: "Baby Roseshroom" },
-  "Monster034": { name: "Glacio Prism" },
+  "branch2.4_Monster_branch2.4_009": { name: "???" },
+  "branch2.4_Monster_branch2.4_010": { name: "???" },
+  "Monster_Branch2.4_001": { name: "Lioness of Glory" },
+  "Monster_branch2.4_020": { name: "???" },
+  "Monster_branch2.4_022": { name: "???" },
+  "branch3.1_115_Monster_006": { name: "Exoswarm encased in ice" },
+};
+
+export const Echo4CostTranslationMap: Record<string, TranslationMapEntry> = {
+  "Monster_Branch2.4_012": { name: "Lioness of Glory" },
+  "Monster_Branch2.4_026": { name: "Lioness of Glory" },
+  "Monster_branch2.4_01": { name: "Kelpie" },
+  "Monster_Branch2.4_006": { name: "Hologram: Nightmare: Kelpie" },
+};
+
+export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
+  "Monster031": { name: "Violet-Feathered Heron" },
+  "Monster032": { name: "Cyan-Feathered Heron" },
   "Monster043": { name: "Roseshroom" },
-  "Monster058": { name: "Hoartoise" },
-  "Monster_branch1.3_007": { name: "Hoochief" },
   "Monster050": { name: "Hoochief" },
   "Monster128": { name: "Hoochief" },
   "Monster140": { name: "Hoochief" },
   "Monster141": { name: "Hoochief" },
+  "Monster_branch1.3_007": { name: "Hoochief" },
+
+  // 2.0
+  "Monster_branch2.0_009": { name: "Cuddle Wuddle" },
+  "branch2.0_Monster_branch2.0_031": { name: "Abyssal Mercator" },
+  "branch2.0_Monster188": { name: "Questless Knight" },
+  "branch2.0_Monster189": { name: "Diurnus Knight" },
+  "branch2.0_Monster190": { name: "Nocturnus Knight" },
+
+
+  // 2.4
   "branch2.4_Monster_branch2.4_001": { name: "Torn Cuddle Wuddle" },
+  "Monster_branch2.4_025": { name: "Kerasaur" },
+  "branch2.6_Monster_77069": { name: "Kerasaur" },
+  "branch2.4_656_Monster_77078": { name: "Kerasaur" },
+  "branch2.4_Monster_77069": { name: "Kerasaur" },
+  "Monster_branch2.4_024": { name: "Pilgrim's Shell" },
+  "branch2.4_Monster_branch2.4_032": { name: "Pilgrim's Shell" },
+
+  // 2.5?
+  "Monster_Branch2.6_002": { name: "Corrosaurus" },
+  "Monster_Branch2.6_016": { name: "Corrosaurus" },
+  "branch2.6_667_Monster_Branch2.6_003": { name: "Corrosaurus" },
+
+  // 3.1?
+  "branch3.1_658_Monster_monster3_3": { name: "Kronablight" },
+  "branch3.1_658_Monster_monster3_2": { name: "Kronaclaw" },
+  "branch3.0_678_Monster_monster3_1": { name: "Sabercat Prowler" },
+  "branch3.0_678_Monster_monster3_3": { name: "Sabercat Reaver" },
+};
+
+export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> = {
+  // 1.0
+  "Monster001": { name: "Vanguard Junrock" },
+  "Monster002": { name: "Fission Junrock" },
+  "Monster010": { name: "Glacio Predator" },
+  "Monster011": { name: "Aero Predator" },
+  "Monster014": { name: "Cruisewing" },
+  "Monster015": { name: "Sabyr Boar" },
+  "Monster016": { name: "Gulpuff" },
+  "Monster017": { name: "Excarat" },
+  "Monster019": { name: "Baby Roseshroom" },
+  "Monster030": { name: "Chirpuff" },
+  "Monster034": { name: "Glacio Prism" },
+  "Monster058": { name: "Hoartoise" },
+  "branch2.6_177_Monster_monster2_6/Kahara16": { name: "Fusion Warrior" },
+
+  // 2.0
+  "Monster_branch2.0_011": { name: "Diggy Duggy" },
+  "Monster_branch2.0_023": { name: "Lottie Lost" },
+  "branch2.0_Monster191": { name: "Chest Mimic" },
+
+  // 2.4
   "branch2.4_Monster_branch2.4_002": { name: "Torn Lottie Lost" },
   "branch2.4_Monster_branch2.4_003": { name: "Torn Hocus Pocus" },
-  "branch2.4_Monster_branch2.4_004": {
-    name: "Torn Diggy Duggy",
-  },
-  "branch2.4_Monster_branch2.4_005": {
-    name: "Devotee's Flesh",
-  },
-  "branch2.4_Monster_branch2.4_008": {
-    name: "Frostcrest Gladiator",
-  },
-  "branch2.4_Monster_branch2.4_009": {
-    name: "???",
-  },
-  "branch2.4_Monster_branch2.4_010": {
-    name: "???",
-  },
-  "branch2.4_Monster_branch2.4_032": {
-    name: "Pilgrim's Shell",
-  },
-  "Monster_Branch2.4_001": {
-    name: "New Mob",
-  },
-  "Monster_Branch2.4_002": {
-    name: "Fusion Drake",
-  },
-  "Monster_Branch2.4_003": {
-    name: "Spectro Drake",
-  },
-  "Monster_Branch2.4_004": {
-    name: "Havoc Drake",
-  },
-  "Monster_Branch2.4_005": {
-    name: "New Mob",
-  },
-  "Monster_Branch2.4_006": {
-    name: "Hologram: Nightmare: Kelpie",
-  },
-  "Monster_Branch2.4_007": {
-    name: "New Mob",
-  },
-  "Monster_branch2.4_009": {
-    name: "New Mob",
-  },
-  "Monster_branch2.4_01": {
-    name: "Kelpie",
-  },
-  "Monster_branch2.4_010": {
-    name: "Lightcrest Gladiator",
-  },
-  "Monster_branch2.4_011": {
-    name: "Flamecrest Gladiator",
-  },
-  "Monster_Branch2.4_012": {
-    name: "Lioness of Glory",
-  },
-  "Monster_Branch2.4_015": {
-    name: "Fusion Drake",
-  },
-  "Monster_Branch2.4_016": {
-    name: "Spectro Drake",
-  },
-  "Monster_Branch2.4_017": {
-    name: "Havoc Drake",
-  },
+  "branch2.4_Monster_branch2.4_004": { name: "Torn Diggy Duggy" },
+  "branch2.4_Monster_branch2.4_005": { name: "Devotee's Flesh" },
 
-  "Monster_branch2.4_020": {
-    name: "???",
-  },
+  "Monster_Branch2.4_002": { name: "Fusion Drake" },
+  "Monster_Branch2.4_003": { name: "Spectro Drake" },
+  "Monster_Branch2.4_004": { name: "Havoc Drake" },
+  "Monster_Branch2.4_005": { name: "Glacio Drake" },
+  "Monster_Branch2.4_007": { name: "Electro Drake" },
+  "Monster_Branch2.4_015": { name: "Fusion Drake" },
+  "Monster_Branch2.4_016": { name: "Spectro Drake" },
+  "Monster_Branch2.4_017": { name: "Havoc Drake" },
 
-  "Monster_branch2.4_022": {
-    name: "???",
-  },
-
-  "Monster_branch2.4_024": {
-    name: "Pilgrim's Shell",
-  },
-  "Monster_branch2.4_025": {
-    name: "Kerasaur",
-  },
-  "Monster_Branch2.4_026": {
-    name: "Lioness of Glory",
-  },
+  // 3.1?
+  "branch3.1_243_Monster_Branch3.0_007": { name: "Iceglint Dancer" },
+  "branch3.1_243_Monster_Branch3.0_006": { name: "Shadow Stepper" },
 };
 
 export const NPCMobsTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_branch2.4_010": { name: "Lightcrest Gladiator" },
-  "Monster_branch2.4_023": { name: "Galecrest Gladiator" },
-  "Monster_branch2.4_021": { name: "Flamecrest Gladiator" },
+  "Monster_branch2.4_011": { name: "Flamecrest Gladiator" },
   "Monster_branch2.4_018": { name: "Lightcrest Gladiator" },
   "Monster_branch2.4_019": { name: "Frostcrest Gladiator" },
+  "Monster_branch2.4_021": { name: "Flamecrest Gladiator" },
+  "Monster_branch2.4_023": { name: "Galecrest Gladiator" },
+  "Monster_branch2.4_009": { name: "Galecrest Gladiator" },
+  "branch2.4_Monster_branch2.4_008": { name: "Frostcrest Gladiator" },
+  "branch2.6_177_Monster_monster2_6/Kahara1": { name: "Lightcrest Gladiator" },
+  "branch2.6_177_Monster_monster2_6/Kahara2": { name: "Frostcrest Gladiator" },
+  "branch2.6_177_Monster_monster2_6/Kahara5": { name: "Flamecrest Gladiator" },
+  "branch2.6_177_Monster_monster2_6/Kahara6": { name: "Galecrest Gladiator" },
+  "Monster_Branch2.6_005": { name: "Lightcrest Gladiator" },
 };
 
 export const AnimalTranslationMap: Record<string, TranslationMapEntry> = {
@@ -319,6 +325,13 @@ export const UnionTranslationMap: Record<string, TranslationMapEntry> = [
   AnimalTranslationMap,
   PuzzleTranslationMap,
   SpecialtyTranslationMap,
+  Echo4CostTranslationMap,
+  Echo3CostTranslationMap,
+  Echo1CostTranslationMap,
   NPCMobsTranslationMap,
   TranslationMap,
 ].reduce((acc, map) => ({ ...acc, ...map }), {});
+
+export const getTranslationMapName = (category: string): string => {
+  return UnionTranslationMap[category]?.name ?? "";
+}
