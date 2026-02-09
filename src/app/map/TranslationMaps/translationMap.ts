@@ -138,9 +138,13 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
 
   // 2.0
   "Gameplay_LNXT_Flying": { name: "Flying Challenge" },
+  "Gameplay_SoundDesign2": { name: "Musicfly" },
+  "branch2.0_Gameplay172": { name: "Fratelli" },
+  "branch2.0_Gameplay_Dungeon3": { name: "Dream Patrol" }, // For some reason counted x2
 
   // 2.4
   "branch2.4_143_Gameplay_2_4QQ4": { name: "Simulation Training Device" },
+  "branch2.4_157_Gameplay_Dungeon1": { name: "Dream Patrol" }, // For some reason counted x2
 
   // 2.5
   "branch2.5_41_Gameplay1": { name: "Orchestration Altar" },
@@ -224,6 +228,10 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
 
   // 2.0
   "Monster_branch2.0_009": { name: "Cuddle Wuddle" },
+  "branch2.0_Monster_branch2.0_038": { name: "Cuddle Wuddle" },
+  "Monster_branch2.0_041": { name: "Cuddle Wuddle" },
+  "TsEntity_拂风水畔拍照任务_大布偶画匠": { name: "Cuddle Wuddle" },
+  "branch2.3_165_Monster_branch2.0_010": { name: "Cuddle Wuddle" },
   "branch2.0_Monster_branch2.0_031": { name: "Abyssal Mercator" },
   "branch2.0_Monster188": { name: "Questless Knight" },
   "branch2.0_Monster189": { name: "Diurnus Knight" },

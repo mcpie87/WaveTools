@@ -14,6 +14,8 @@ const GameAssetIcons: Record<string, string> = {
   /* Puzzles */
   "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
   "Flying Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
+  "Musicfly": "/Atlas/WorldMapIcon/SP_IconMap_Play_22_UI.png",
+  "Dream Patrol": "Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
   "Dreams of Cintercide": "Atlas/WorldMapIcon/SP_IconMap_Play_48_UI.png",
   "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_61_UI.png",
   "Smartprint Cube": "Atlas/WorldMapIcon/SP_IconMap_Play_54_UI.png",
