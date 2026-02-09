@@ -179,6 +179,7 @@ const GameAssetIcons: Record<string, string> = {
   "Ironhoof": "Image/IconMonsterHead/T_IconMonsterHead_32053_UI.png",
   "Spacetrek Explorer": "Image/IconMonsterHead/T_IconMonsterHead_32054_UI.png",
   "Twin Nova: Nebulous Cannon": "Image/IconMonsterHead/T_IconMonsterHead_32049_UI.png",
+  "Geospider S4": "Image/IconMonsterHead/T_IconMonsterHead_31079_UI.png",
 
   // 3.1
   "Sabercat Reaver": "Image/IconMonsterHead/T_IconMonsterHead_32055_UI.png",
@@ -187,6 +188,7 @@ const GameAssetIcons: Record<string, string> = {
   "Sabercat Prowler": "Image/IconMonsterHead/T_IconMonsterHead_32056_UI.png",
   "Shadow Stepper": "Image/IconMonsterHead/T_IconMonsterHead_31084_UI.png",
   "Iceglint Dancer": "Image/IconMonsterHead/T_IconMonsterHead_31083_UI.png",
+  "Glommoth": "Image/IconMonsterHead/T_IconMonsterHead_32061_UI.png",
 
 };
 
