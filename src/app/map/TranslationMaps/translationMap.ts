@@ -53,6 +53,33 @@ export const ChestTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.0_693_Treasure_3_8": { name: "Advanced Supply Chest" },
   "branch3.0_693_Treasure_3_9": { name: "Premium Supply Chest" },
   "branch3.0_13_Treasure_2_0_03": { name: "Standard Supply Chest" },
+
+  // Not on main maps as of 3.1
+  "Treasure_LNXT_Hide01": { name: "Basic Supply Chest" },
+  "Treasure_LNXT_Hide02": { name: "Standard Supply Chest" },
+  "Treasure_LNXT_Hide03": { name: "Advanced Supply Chest" },
+  "Treasure_LNXT_Hide04": { name: "Premium Supply Chest" },
+  "Treasure_LNXT_Hide05": { name: "Tidal Supply Chest" },
+  "Treasure002": { name: "Tidal Heritage (???)" },
+  "Treasure017": { name: "Inspect" },
+  "Treasure019": { name: "Basic Supply Chest" },
+  "Treasure021": { name: "Premium Supply Chest" },
+  "Treasure022": { name: "Basic Supply Chest" },
+  "Treasure023": { name: "Standard Supply Chest" },
+  "Treasure024": { name: "Advanced Supply Chest" },
+  "Treasure025": { name: "Premium Supply Chest" },
+  "Treasure026": { name: "Basic Supply Chest" },
+  "Treasure027": { name: "Standard Supply Chest" },
+  "Treasure028": { name: "Advanced Supply Chest" },
+  "Treasure035": { name: "Investigate" },
+  "Treasure036": { name: "Investigate" },
+  "branch2.0_Treasure_2_0_06": { name: "Advanced Supply Chest" },
+  "branch2.0_Treasure_2_0_07": { name: "Tidal Supply Chest" },
+  "branch2.0_Treasure_2_0_08": { name: "Standard Supply Chest" },
+  "branch2.3_151_Treasure_LNXT_Lock03": { name: "Standard Supply Chest" },
+  "branch2.4_151_Treasure_LNXT_Hide02": { name: "Basic Supply Chest" },
+  "branch2.4_151_Treasure_LNXT_Hide04": { name: "Advanced Supply Chest" },
+  "branch2.4_151_Treasure_LNXT_Hide05": { name: "Premium Supply Chest" },
 };
 export const ChestDisplayOrder = [
   "Basic Supply Chest",
@@ -103,9 +130,18 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   // 1.0
   "Gameplay111": { name: "Mutterfly" },
   "Animal032": { name: "Blobfly" },
+  "Gameplay381": { name: "Hovering Magnetite" },
+  "Gameplay200": { name: "Simulation Training Device" },
+
+  // 1.1
+  "Gameplay207": { name: "Tactical Hologram: Ski" },
 
   // 2.0
   "Gameplay_LNXT_Flying": { name: "Flying Challenge" },
+
+  // 2.4
+  "branch2.4_143_Gameplay_2_4QQ4": { name: "Simulation Training Device" },
+
   // 2.5
   "branch2.5_41_Gameplay1": { name: "Orchestration Altar" },
   "branch2.5_Slots": { name: "Triptych Chest" },
