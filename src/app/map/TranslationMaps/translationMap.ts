@@ -143,6 +143,7 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.0_Gameplay_Dungeon3": { name: "Dream Patrol" }, // For some reason counted x2
 
   // 2.4
+  "branch2.4_143_Gameplay_2_4QQ11": { name: "Flying Challenge" },
   "branch2.4_143_Gameplay_2_4QQ4": { name: "Simulation Training Device" },
   "branch2.4_157_Gameplay_Dungeon1": { name: "Dream Patrol" }, // For some reason counted x2
 
