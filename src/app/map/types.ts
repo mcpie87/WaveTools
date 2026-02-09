@@ -3,6 +3,8 @@ export interface APIMarker {
   BlueprintType: string;
   MapId: number;
   Id?: number;
+  AreaId?: number;
+  EntityId?: number;
   ComponentsData?: {
     RewardComponent?: { RewardId?: number };
   };
@@ -15,6 +17,7 @@ export interface IMarker {
   y: number;
   z: number;
   id?: number;
+  areaId: number;
   name: string;
   description: string;
   category: string;

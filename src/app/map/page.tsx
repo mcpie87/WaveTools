@@ -30,6 +30,7 @@ import { convertMarkerToCoord, mapIdToName, mapUrl, scaleFactor } from './mapUti
 import { CategoryPaneComponent } from './Components/CategoryPaneComponent';
 import { CustomPopup } from './Components/CustomPopup';
 import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
+import { ASSET_URL } from '@/constants/constants';
 
 const simpleCRS = L.CRS.Simple;
 
@@ -63,6 +64,50 @@ function CustomTileLayer({ mapId }: { mapId: number, tileSize?: number, mapHeigh
   return null;
 }
 
+function AreaTileLayer({ areaId, areaLayers }: { areaId: number, areaLayers: Record<number, APIAreaLayer> }) {
+  const map = useMap();
+
+  useEffect(() => {
+    const area = areaLayers[areaId];
+    if (!area) return;
+
+    const tileLayer = L.tileLayer('', {
+      tileSize: 256,
+      noWrap: true,
+      minZoom: -10,
+      maxZoom: 10,
+      minNativeZoom: 0,
+      maxNativeZoom: 0,
+      zIndex: 500,        // above base tiles
+      opacity: 0.85,      // optional, but usually nice
+    });
+
+    tileLayer.getTileUrl = ({ x, y }) => {
+      const tileX = x;
+      const tileY = -y;
+
+      console.log("Fetchin tile", tileX, tileY, area);
+      const entry = Object.entries(area.mapTiles).find(([key]) =>
+        key.includes(`_${tileX}_${tileY}_`)
+      );
+      console.log("Found", entry);
+
+      if (!entry) return '';
+
+      return ASSET_URL + entry[1].replace(/^\/Game\/Aki\/UI\//, '');
+    };
+
+    tileLayer.addTo(map);
+
+    return () => {
+      map.removeLayer(tileLayer);
+    };
+  }, [map, areaId, areaLayers]);
+
+  return null;
+}
+
+
 function ClickHandler({ enabled, onClick }: { enabled: boolean; onClick: (p: L.LatLng) => void }) {
   useMapEvent('click', e => {
     if (enabled) onClick(e.latlng);
@@ -72,8 +117,16 @@ function ClickHandler({ enabled, onClick }: { enabled: boolean; onClick: (p: L.L
 
 /* ----------------------------- Main ------------------------------ */
 
+interface APIAreaLayer {
+  mapId: number;
+  areaId: number;
+  mapTiles: Record<string, string>;
+}
+
 export default function XYZMap() {
   const [data, setData] = useState<APIMarker[]>([]);
+  const [layersData, setLayersData] = useState<APIAreaLayer[]>([]);
+  const [activeAreaId, setActiveAreaId] = useState<number | null>(null);
   const [selectedMap, setSelectedMap] = useState(8);
   const [coords, setCoords] = useState({ x: 0, y: 0, z: 0 });
   const [radius, setRadius] = useState(50);
@@ -125,6 +178,32 @@ export default function XYZMap() {
       }
     })();
   }, []);
+
+  useEffect(() => {
+    (async () => {
+      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+      const URL = `${basePath}/data/map_tiles.json`;
+
+      const cache = await caches.open('area-layers-cache');
+      const cached = await cache.match(URL);
+
+      if (cached) {
+        setLayersData(await cached.json());
+        return;
+      }
+
+      const res = await fetch(URL);
+      if (res.ok) {
+        await cache.put(URL, res.clone());
+        setLayersData(await res.json());
+      }
+    })();
+  }, []);
+
+  const areaLayers: Record<number, APIAreaLayer> = {};
+  layersData.forEach(l => {
+    areaLayers[l.areaId] = l;
+  });
 
   useEffect(() => {
     iconCache.current.clear();
@@ -339,6 +418,13 @@ export default function XYZMap() {
         key={`${m.id}:${dbMapData.visitedMarkers[m.id as number]}:${hideVisited}`}
         position={[m.y, m.x]}
         icon={getIcon(m.category, !!dbMapData.visitedMarkers[m.id as number])}
+        eventHandlers={{
+          click: () => {
+            if (m.areaId !== activeAreaId) {
+              setActiveAreaId(m.areaId);
+            }
+          }
+        }}
       >
         <CustomPopup
           marker={m}
@@ -348,8 +434,9 @@ export default function XYZMap() {
         />
       </Marker>
     ));
-  }, [displayedMarkers, dbMapData.visitedMarkers, hideVisited, showDescriptions, getIcon]);
+  }, [displayedMarkers, dbMapData.visitedMarkers, hideVisited, showDescriptions, getIcon, activeAreaId]);
 
+  console.log("LAYERS!", selectedMap, activeAreaId, areaLayers);
   if (!data.length) return <div className="p-4">Loading data…</div>;
 
   if (!translationsReady) return <div>Loading translations…</div>;
@@ -502,6 +589,9 @@ export default function XYZMap() {
           attributionControl={false}
         >
           <CustomTileLayer mapId={selectedMap} />
+          {activeAreaId !== null && (
+            <AreaTileLayer areaId={activeAreaId} areaLayers={areaLayers} />
+          )}
           <ClickHandler
             enabled={enableClick}
             onClick={p =>

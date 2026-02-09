@@ -20,11 +20,11 @@ WEAPON_TYPE = {
 }
 
 def convert_to_png(path)
-    directory = File.dirname(path)
-    filename = File.basename(path)
-    filename = filename.gsub(/\b(\w+)(?:\W+\1\b)+/, '\1')
-    
-    return "#{directory}/#{filename}.png"
+  directory = File.dirname(path)
+  filename  = File.basename(path)
+  filename = filename.sub(/\A(.+)\.\1\z/, '\1')
+
+  "#{directory}/#{filename}.png"
 end
 
 def parse_iteminfo(item)
