@@ -88,19 +88,17 @@ function AreaTileLayer({ areaId, areaLayers }: { areaId: number, areaLayers: Map
       maxZoom: 10,
       minNativeZoom: 0,
       maxNativeZoom: 0,
-      zIndex: 500,        // above base tiles
-      opacity: 0.85,      // optional, but usually nice
+      zIndex: 500,
+      opacity: 0.85,
     });
 
     tileLayer.getTileUrl = ({ x, y }) => {
       const tileX = x;
       const tileY = -y;
 
-      console.log("Fetchin tile", tileX, tileY, area);
       const entry = Object.entries(area.mapTiles).find(([key]) =>
         key.includes(`_${tileX}_${tileY}_`)
       );
-      console.log("Found", entry);
 
       if (!entry) return '';
 
@@ -167,6 +165,13 @@ export default function XYZMap() {
   }, [dbMapData]);
 
   /* ----------------------------- Data ----------------------------- */
+  useEffect(() => {
+    // Tile caching
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  }, []);
+
 
   useEffect(() => {
     (async () => {
