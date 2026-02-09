@@ -168,7 +168,9 @@ export default function XYZMap() {
   useEffect(() => {
     // Tile caching
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js');
+      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+      const swUrl = `${basePath}/sw.js`;
+      navigator.serviceWorker.register(swUrl);
     }
   }, []);
 
