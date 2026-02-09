@@ -201,7 +201,6 @@ export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_001": { name: "Lioness of Glory" },
   "Monster_branch2.4_020": { name: "???" },
   "Monster_branch2.4_022": { name: "???" },
-  "branch3.1_115_Monster_006": { name: "Glommoth" },
 };
 export const MonsterDisplayOrder = [
 ];
@@ -278,6 +277,8 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.1_658_Monster_monster3_2": { name: "Kronaclaw" },
   "branch3.0_678_Monster_monster3_1": { name: "Sabercat Prowler" },
   "branch3.0_678_Monster_monster3_3": { name: "Sabercat Reaver" },
+  "branch3.1_115_Monster_006": { name: "Glommoth" },
+  "branch3.1_Monster_005": { name: "Glommoth" },
 };
 export const Echo3CostDisplayOrder = [
 ];
