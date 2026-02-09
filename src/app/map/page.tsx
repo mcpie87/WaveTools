@@ -38,8 +38,9 @@ const simpleCRS = L.CRS.Simple;
 const storageService = new LocalStorageService("map");
 
 /* --------------------------- Components -------------------------- */
-function CustomTileLayer({ mapId }: { mapId: number, tileSize?: number, mapHeightInTiles?: number }) {
+function CustomTileLayer({ mapId, shouldDim }: { mapId: number; shouldDim: boolean }) {
   const map = useMap();
+  const layerRef = useRef<L.TileLayer | null>(null);
 
   useEffect(() => {
     const tileLayer = L.tileLayer('', {
@@ -49,26 +50,35 @@ function CustomTileLayer({ mapId }: { mapId: number, tileSize?: number, mapHeigh
       maxZoom: 10,
       minNativeZoom: 0,
       maxNativeZoom: 0,
+      opacity: 1,
     });
 
     tileLayer.getTileUrl = ({ x, y }) =>
       mapUrl[mapId].replace('{x}', `${x}`).replace('{y}', `${-y}`);
 
     tileLayer.addTo(map);
+    layerRef.current = tileLayer;
 
     return () => {
       map.removeLayer(tileLayer);
     };
   }, [map, mapId]);
 
+  useEffect(() => {
+    if (layerRef.current) {
+      layerRef.current.setOpacity(shouldDim ? 0.5 : 1);
+    }
+  }, [shouldDim]);
+
   return null;
 }
 
-function AreaTileLayer({ areaId, areaLayers }: { areaId: number, areaLayers: Record<number, APIAreaLayer> }) {
+
+function AreaTileLayer({ areaId, areaLayers }: { areaId: number, areaLayers: Map<number, APIAreaLayer> }) {
   const map = useMap();
 
   useEffect(() => {
-    const area = areaLayers[areaId];
+    const area = areaLayers.get(areaId);
     if (!area) return;
 
     const tileLayer = L.tileLayer('', {
@@ -200,9 +210,9 @@ export default function XYZMap() {
     })();
   }, []);
 
-  const areaLayers: Record<number, APIAreaLayer> = {};
+  const areaLayers: Map<number, APIAreaLayer> = new Map();
   layersData.forEach(l => {
-    areaLayers[l.areaId] = l;
+    areaLayers.set(l.areaId, l);
   });
 
   useEffect(() => {
@@ -436,7 +446,6 @@ export default function XYZMap() {
     ));
   }, [displayedMarkers, dbMapData.visitedMarkers, hideVisited, showDescriptions, getIcon, activeAreaId]);
 
-  console.log("LAYERS!", selectedMap, activeAreaId, areaLayers);
   if (!data.length) return <div className="p-4">Loading data…</div>;
 
   if (!translationsReady) return <div>Loading translations…</div>;
@@ -585,10 +594,14 @@ export default function XYZMap() {
           minZoom={-10}
           maxZoom={10}
           className={enableClick ? 'cursor-crosshair' : 'cursor-grab'}
-          style={{ height: '100%', width: '100%' }}
+          style={{
+            height: '100%',
+            width: '100%',
+            backgroundColor: '#111',
+          }}
           attributionControl={false}
         >
-          <CustomTileLayer mapId={selectedMap} />
+          <CustomTileLayer mapId={selectedMap} shouldDim={activeAreaId !== null && areaLayers.has(activeAreaId)} />
           {activeAreaId !== null && (
             <AreaTileLayer areaId={activeAreaId} areaLayers={areaLayers} />
           )}
