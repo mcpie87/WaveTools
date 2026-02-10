@@ -1,5 +1,5 @@
-import { IItemEntry } from "../interfaces/api_interfaces";
-import { IItem } from "../interfaces/item";
+import { IItemEntry } from "@/app/interfaces/api_interfaces";
+import { IItem } from "@/app/interfaces/item";
 
 export const enum ERecipeType {
   synthesis = "synthesis",

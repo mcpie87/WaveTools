@@ -3,7 +3,7 @@
 import { useData } from "@/context/DataContext";
 import { convertCostListToItemList } from "@/utils/items_utils";
 import { useEffect, useState } from "react";
-import { IAPIItem } from "../interfaces/api_interfaces";
+import { IAPIItem } from "@/app/interfaces/api_interfaces";
 // import { FixedSizeList, ListChildComponentProps } from "react-window";
 import { EDishType, ERecipeType, IAPIRecipeFormula, IItemToShops, IRecipeFormula, IRecipeItem } from "./RecipeTypes";
 import { RecipeRowComponent } from "./components/RecipeRowComponent";

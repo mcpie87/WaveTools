@@ -19,7 +19,7 @@ import { AddWeaponForm } from '@/components/PlannerForm/AddWeaponForm';
 import { WeaponStateDBEntry } from '@/types/weaponTypes';
 import { WeaponForm } from '@/components/PlannerForm/WeaponForm';
 import { getPlannerDBSize, getPlannerItems } from '@/utils/planner_utils';
-import { IResonatorPlanner, IWeaponPlanner } from '../interfaces/planner_item';
+import { IResonatorPlanner, IWeaponPlanner } from '@/app/interfaces/planner_item';
 import { Button } from '@/components/ui/button';
 import { PlannerFormProvider } from '@/providers/PlannerFormProvider';
 import { PlannerFormType, usePlannerFormContext } from '@/context/PlannerFormContext';
