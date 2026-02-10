@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import React, { useState } from "react";
+import { useDebounce } from 'use-debounce';
 import { AnimalDisplayOrder, AnimalTranslationMap, CasketDisplayOrder, CasketTranslationMap, ChestDisplayOrder, ChestTranslationMap, CollectDisplayOrder, CollectTranslationMap, Echo1CostDisplayOrder, Echo1CostTranslationMap, Echo3CostDisplayOrder, Echo3CostTranslationMap, Echo4CostDisplayOrder, Echo4CostTranslationMap, MonsterDisplayOrder, MonsterTranslationMap, NPCMobsDisplayOrder, NPCMobsTranslationMap, PuzzleDisplayOrder, PuzzleTranslationMap, SpecialtyDisplayOrder, SpecialtyTranslationMap, TeleporterDisplayOrder, TeleporterTranslationMap, TidalHeritageDisplayOrder, TidalHeritageTranslationMap, TranslationDisplayOrder, TranslationMap, UnionTranslationMap } from '../TranslationMaps/translationMap';
 import { mapIdToName } from "../mapUtils";
 import { Label } from "@/components/ui/label";
@@ -30,8 +31,6 @@ interface MapSettingsComponentProps {
   toggleCategories: (categories: string[], value: boolean) => void;
   toggleDisplayedCategoryGroup: (categoryGroup: string, value: boolean) => void;
   categories: Array<[string, number, number]>;
-  categoryFilter: string;
-  setCategoryFilter: (filter: string) => void;
 }
 export const MapSettingsComponent = ({
   selectedMap,
@@ -52,12 +51,11 @@ export const MapSettingsComponent = ({
   toggleCategories,
   toggleDisplayedCategoryGroup,
   categories,
-  categoryFilter,
-  setCategoryFilter,
 }: MapSettingsComponentProps) => {
   const [showSettings, setShowSettings] = useState(true);
+  const [categoryFilter, setCategoryFilter] = useState('');
 
-  const [categoryFilterDebounced] = useState(categoryFilter);
+  const [categoryFilterDebounced] = useDebounce(categoryFilter, 300);
 
   const chestCategories = categories.filter(c => ChestTranslationMap[c[0]]);
   const collectCategories = categories.filter(c => CollectTranslationMap[c[0]]);
@@ -113,17 +111,16 @@ export const MapSettingsComponent = ({
       {/* Left controls */}
       {!showSettings && (
         <aside className="absolute top-2 left-2 z-10 border-r">
-          <Button variant="outline" className="w-[320px] absolute " onClick={() => setShowSettings(true)}>
+          <Button className="w-[320px] absolute " onClick={() => setShowSettings(true)}>
             Show Settings
           </Button>
         </aside>
       )}
       {showSettings && (
-        <aside className="w-[320px] absolute top-4 left-4 z-10 border-r p-3 space-y-3 max-h-[calc(100vh-2rem)] overflow-scroll bg-base-100">
-          <Button variant="outline" className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
+        <aside className="w-[320px] absolute top-4 left-4 z-10 border-r p-3 space-y-3 max-h-[calc(100vh-2rem)] overflow-auto bg-base-100">
+          <Button className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
 
-          <div className="rounded-lg border p-3 space-y-2 bg-base-100">
-            <h3 className="text-sm font-semibold">Map</h3>
+          <div className="rounded-lg border p-3 space-y-2 bg-base-200">
             <Select value={String(selectedMap)} onValueChange={v => setSelectedMap(+v)}>
               <SelectTrigger>
                 <SelectValue />
@@ -140,7 +137,7 @@ export const MapSettingsComponent = ({
             </Select>
           </div>
 
-          <div className="rounded-lg border p-3 space-y-2 bg-base-100">
+          <div className="rounded-lg border p-3 space-y-2 bg-base-200">
             <h3 className="text-sm font-semibold">Selection</h3>
             <Label>Coords</Label>
             <div className="flex gap-2">
@@ -157,16 +154,18 @@ export const MapSettingsComponent = ({
             <Label>Radius</Label>
             <Input type="number" value={radius} onChange={e => setRadius(+e.target.value)} />
 
-            <Toggle pressed={enableClick} onPressedChange={setEnableClick}>
-              Click-to-select
-            </Toggle>
-            <Toggle pressed={hideVisited} onPressedChange={setHideVisited}>
-              Hide visited
-            </Toggle>
-            <Toggle pressed={showDescriptions} onPressedChange={setShowDescriptions}>
-              Show descriptions
-            </Toggle>
-            <Button onClick={() => clearCategories()}>Clear Categories</Button>
+            <div className="flex flex-col gap-2">
+              <Toggle pressed={enableClick} onPressedChange={setEnableClick}>
+                Click to Investigate
+              </Toggle>
+              <Toggle pressed={hideVisited} onPressedChange={setHideVisited}>
+                Hide visited
+              </Toggle>
+              <Toggle pressed={showDescriptions} onPressedChange={setShowDescriptions}>
+                Show descriptions
+              </Toggle>
+              <Button onClick={() => clearCategories()}>Clear Categories</Button>
+            </div>
           </div>
 
           <Input

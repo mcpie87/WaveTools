@@ -8,6 +8,7 @@
   --base-100: 255 255 255; /* rgb(255, 255, 255) */
   --base-200: 245 245 245; /* rgb(245, 245, 245) */
   --base-300: 229 229 229; /* rgb(229, 229, 229) */
+  --base-400: 200 200 200; /*rgb(200, 200, 200) */
 }
 
 .dark {
@@ -16,6 +17,7 @@
   --base-100: 30 30 30; /* rgb(30, 30, 30) */
   --base-200: 42 42 42; /* rgb(42, 42, 42) */
   --base-300: 59 59 59; /* rgb(59, 59, 59) */
+  --base-400: 80 80 80; /* rgb(80, 80, 80) */
 }
 
 @layer components {
@@ -96,11 +98,14 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    background: rgb(var(--base-100));
+    color: rgb(var(--text-primary));
+    border-color: rgb(var(--base-300));
   }
 }
 
 .leaflet-popup-content-wrapper {
-  background: var(--base-100) !important;
+  background: rgb(var(--base-200)) !important;
   color: var(--text-primary) !important;
+  /* opacity: 1 !important; */
 }

@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect } from 'react';
 import Image from 'next/image';
 import { convertToUrl, getRarityClass } from '@/utils/utils';
 import { ModalComponent } from '@/components/PlannerForm/ModalComponent';
+import { Input } from '@/components/ui/input';
 
 interface Item {
   id: number;
@@ -93,7 +94,7 @@ export default function ItemList() {
   return (
     <div className="w-full">
       <div className="mb-6 space-y-4">
-        <input
+        <Input
           type="text"
           placeholder="Search items..."
           value={searchQuery}
@@ -101,7 +102,7 @@ export default function ItemList() {
             setCurrentPage(1);
             setSearchQuery(e.target.value);
           }}
-          className="w-full px-4 py-2 bg-[rgb(var(--base-200))] text-[rgb(var(--text-primary))] rounded-lg border border-[rgb(var(--base-300))] focus:outline-none focus:ring-2 focus:ring-[rgb(var(--base-300))]"
+          className="w-full px-4 py-2 bg-base-200 text-primary rounded-lg border border-base-300 focus:outline-none focus:ring-2 focus:ring-base-300"
         />
 
         <div className="flex gap-2 flex-wrap">

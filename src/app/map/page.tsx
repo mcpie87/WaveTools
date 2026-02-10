@@ -130,7 +130,6 @@ export default function XYZMap() {
 
   const [showDescriptions, setShowDescriptions] = useState(false);
   const [hideVisited, setHideVisited] = useState(false);
-  const [categoryFilter, setCategoryFilter] = useState('');
 
   const [dbMapData, setDbMapData] = useState<DbMapData>(() => {
     const loaded = storageService.load() as Partial<DbMapData> | null;
@@ -434,8 +433,6 @@ export default function XYZMap() {
         toggleCategories={toggleCategories}
         toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
         categories={categories}
-        categoryFilter={categoryFilter}
-        setCategoryFilter={setCategoryFilter}
       />
 
       {/* Map */}
@@ -452,6 +449,7 @@ export default function XYZMap() {
           zoom={0}
           minZoom={-10}
           maxZoom={10}
+          zoomControl={false}
           className={enableClick ? 'cursor-crosshair' : 'cursor-grab'}
           style={{
             height: '100%',

@@ -23,9 +23,9 @@ export default function AppLayout({
         <CharacterProvider>
           <WeaponProvider>
             <InventoryProvider>
-              <div className="mx-auto">
+              <div className="min-h-screen flex flex-col">
                 <Header />
-                <main className="mt-6 ml-6 mr-6">{children}</main>
+                <main className="m-6 flex-1">{children}</main>
                 <Footer />
               </div>
             </InventoryProvider>

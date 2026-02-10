@@ -6,6 +6,7 @@ import { GenerateResultsRows } from "./GenerateResultsRows";
 import SubstatsSelector from "./SubstatsSelector";
 import { Table, TableBody, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+import { Toggle } from "@/components/ui/toggle";
 
 function EchoSimulationComponent() {
   const [startSubstats, setStartSubstats] = useState<SubstatEntry[]>([]);
@@ -45,33 +46,21 @@ function EchoSimulationComponent() {
             selectedSubstatsSetter={setStartSubstats}
           />
         </div>
-        <div className="flex-col">
-          <div className="flex flex-row gap-4">
+        <div className="flex flex-col">
+          <div className="flex flex-row gap-4 items-center p-2">
             <h3>Desired subs</h3>
-            <label className="flex items-center space-x-2">
-              <input
-                id="checkForAny"
-                type="checkbox"
-                className="text-sm"
-                checked={checkForAny}
-                onChange={(e) => setCheckForAny(Boolean(e.target.checked))}
-              />
-              <span className="text-sm">
-                Look for any?
-              </span>
-            </label>
-            <label className="flex items-center space-x-2">
-              <input
-                id="assumeRefund"
-                type="checkbox"
-                className="text-sm"
-                checked={assumeRefund}
-                onChange={(e) => setAssumeRefund(Boolean(e.target.checked))}
-              />
-              <span className="text-sm">
-                Assume refund?
-              </span>
-            </label>
+            <Toggle
+              pressed={checkForAny}
+              onPressedChange={() => setCheckForAny(!checkForAny)}
+            >
+              Look for any?
+            </Toggle>
+            <Toggle
+              pressed={assumeRefund}
+              onPressedChange={() => setAssumeRefund(!assumeRefund)}
+            >
+              Assume refund?
+            </Toggle>
           </div>
           <SubstatsSelector
             selectedSubstats={desiredSubstats}
@@ -82,7 +71,7 @@ function EchoSimulationComponent() {
         <Button type="submit">Calculate</Button>
       </form>
       {showResults &&
-        <div>
+        <div className="bg-base-300 p-5 m-5 rounded-md">
           <p>Time spent [ms]: {calculateTime || ""}</p>
           <Table>
             <TableHeader>

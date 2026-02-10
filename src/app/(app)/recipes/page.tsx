@@ -4,69 +4,10 @@ import { useData } from "@/context/DataContext";
 import { convertCostListToItemList } from "@/utils/items_utils";
 import { useEffect, useState } from "react";
 import { IAPIItem } from "@/app/interfaces/api_interfaces";
-// import { FixedSizeList, ListChildComponentProps } from "react-window";
 import { EDishType, ERecipeType, IAPIRecipeFormula, IItemToShops, IRecipeFormula, IRecipeItem } from "./RecipeTypes";
 import { RecipeRowComponent } from "./components/RecipeRowComponent";
 import { Toggle } from "@/components/ui/toggle";
 import { Input } from "@/components/ui/input";
-
-// const VirtualizedRecipeList = ({
-//   filteredFormulas,
-//   baseFilteredFormulas,
-// }: {
-//   filteredFormulas: IRecipeFormula[];
-//   baseFilteredFormulas: IRecipeFormula[];
-// }) => {
-//   const containerRef = useRef<HTMLDivElement>(null);
-//   const [dimensions, setDimensions] = useState({ height: 0, width: 0 });
-
-//   useEffect(() => {
-//     const updateDimensions = () => {
-//       if (containerRef.current) {
-//         const { height, width } = containerRef.current.getBoundingClientRect();
-//         setDimensions({ height, width });
-//       }
-//     };
-
-//     updateDimensions(); // Initial measurement
-//     window.addEventListener("resize", updateDimensions); // Update on resize
-//     return () => window.removeEventListener("resize", updateDimensions);
-//   }, []);
-
-//   const RecipeRow = ({ index, style, data }: ListChildComponentProps) => {
-//     const { filteredFormulas, baseFilteredFormulas } = data;
-//     const item = filteredFormulas[index];
-//     return (
-//       <div style={style} className="flex">
-//         <RecipeRowComponent
-//           key={item.id}
-//           item={item}
-//           baseFilteredFormulas={baseFilteredFormulas}
-//         />
-//       </div>
-//     );
-//   };
-
-//   return (
-//     <div
-//       ref={containerRef}
-//       className="flex flex-col justify-center m-auto gap-4 w-[800px] h-[calc(100vh-150px)]"
-//     >
-//       {dimensions.height > 0 && dimensions.width > 0 && (
-//         <FixedSizeList
-//           height={1080} // Matches container height
-//           width={1000}   // Matches container width (up to 800px)
-//           itemCount={filteredFormulas.length}
-//           itemSize={60} // Adjust based on your RecipeRowComponent height
-//           itemData={{ filteredFormulas, baseFilteredFormulas }}
-//         >
-//           {RecipeRow}
-//         </FixedSizeList>
-//       )}
-//     </div>
-//   );
-// };
-
 
 const getCheapestShop = (itemName: string, shops: Record<string, IItemToShops>) => {
   const itemToShop = shops[itemName];
@@ -271,18 +212,21 @@ export default function RecipesPage() {
     setDisplayedPage(page);
   }
   return (
-    <div>
-      <div className="flex flex-col justify-center items-center gap-2">
-
+    <div className="w-full">
+      <div className="space-y-4">
         <div className="flex flex-row gap-2 justify-center items-center">
           <div className="flex whitespace-nowrap">
             {totalResults} results
           </div>
           <Input
             type="text"
+            placeholder="Search items..."
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search..."
+            onChange={(e) => {
+              setPage(0);
+              setSearchQuery(e.target.value);
+            }}
+            className="w-full px-4 py-2 bg-[rgb(var(--base-200))] text-[rgb(var(--text-primary))] rounded-lg border border-[rgb(var(--base-300))] focus:outline-none focus:ring-2 focus:ring-[rgb(var(--base-300))]"
           />
         </div>
         {totalPages > 1 && (
@@ -307,16 +251,14 @@ export default function RecipesPage() {
             <Toggle pressed={displayedCategory.has(ERecipeType.processed)} onPressedChange={() => setCategory(ERecipeType.processed)}>Processed</Toggle>
           </div>
         </div>
-        <div className="flex flex-row gap-2">
-          <div className="flex flex-row gap-1">
-            {/* Displayed Rarity */}
-            <Toggle pressed={displayedRarity.size === 0} onPressedChange={() => toggleRarity(null)}>All</Toggle>
-            <Toggle pressed={displayedRarity.has(1)} onPressedChange={() => toggleRarity(1)}>1*</Toggle>
-            <Toggle pressed={displayedRarity.has(2)} onPressedChange={() => toggleRarity(2)}>2*</Toggle>
-            <Toggle pressed={displayedRarity.has(3)} onPressedChange={() => toggleRarity(3)}>3*</Toggle>
-            <Toggle pressed={displayedRarity.has(4)} onPressedChange={() => toggleRarity(4)}>4*</Toggle>
-            <Toggle pressed={displayedRarity.has(5)} onPressedChange={() => toggleRarity(5)}>5*</Toggle>
-          </div>
+        <div className="flex gap-2 flex-wrap">
+          {/* Displayed Rarity */}
+          <Toggle pressed={displayedRarity.size === 0} onPressedChange={() => toggleRarity(null)}>All</Toggle>
+          <Toggle pressed={displayedRarity.has(1)} onPressedChange={() => toggleRarity(1)}>1*</Toggle>
+          <Toggle pressed={displayedRarity.has(2)} onPressedChange={() => toggleRarity(2)}>2*</Toggle>
+          <Toggle pressed={displayedRarity.has(3)} onPressedChange={() => toggleRarity(3)}>3*</Toggle>
+          <Toggle pressed={displayedRarity.has(4)} onPressedChange={() => toggleRarity(4)}>4*</Toggle>
+          <Toggle pressed={displayedRarity.has(5)} onPressedChange={() => toggleRarity(5)}>5*</Toggle>
         </div>
         {(displayedCategory.has(ERecipeType.dish) || !displayedCategory.size) && (
           <div className="flex flex-row gap-2">

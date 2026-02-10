@@ -34,19 +34,21 @@ export default function Header({ collapsible = false }: { collapsible?: boolean 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-14 items-center justify-between">
             {/* Title */}
-            <h1 className="text-xl font-bold">
-              WaveTools
-            </h1>
+            <NavButton href="/">
+              <h1 className="text-xl font-bold">
+                WaveTools
+              </h1>
+            </NavButton>
 
             {/* Desktop Nav + controls */}
             <div className="hidden md:flex items-center gap-4 pr-14">
               <nav className="flex items-center gap-1.5">
-                {process.env.NODE_ENV === "development" && (
+                {/* {process.env.NODE_ENV === "development" && (
                   <>
                     <NavButton href="/">Home</NavButton>
-                    <NavButton href="/items">Items</NavButton>
                   </>
-                )}
+                )} */}
+                <NavButton href="/items">Items</NavButton>
                 <NavButton href="/map">Map</NavButton>
                 <NavButton href="/union-level">Union Level</NavButton>
                 <NavButton href="/recipes">Recipes</NavButton>
@@ -77,12 +79,11 @@ export default function Header({ collapsible = false }: { collapsible?: boolean 
           {/* Mobile menu dropdown */}
           {mobileMenuOpen && (
             <nav className="md:hidden py-4 flex flex-col gap-2">
-              {process.env.NODE_ENV === "development" && (
+              {/* {process.env.NODE_ENV === "development" && (
                 <>
-                  <MobileNavButton href="/" onClick={() => setMobileMenuOpen(false)}>Home</MobileNavButton>
-                  <MobileNavButton href="/items" onClick={() => setMobileMenuOpen(false)}>Items</MobileNavButton>
                 </>
-              )}
+              )} */}
+              <MobileNavButton href="/items" onClick={() => setMobileMenuOpen(false)}>Items</MobileNavButton>
               <MobileNavButton href="/map" onClick={() => setMobileMenuOpen(false)}>Map</MobileNavButton>
               <MobileNavButton href="/union-level" onClick={() => setMobileMenuOpen(false)}>Union Level</MobileNavButton>
               <MobileNavButton href="/recipes" onClick={() => setMobileMenuOpen(false)}>Recipes</MobileNavButton>
