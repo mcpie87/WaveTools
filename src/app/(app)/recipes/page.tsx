@@ -214,6 +214,7 @@ export default function RecipesPage() {
   return (
     <div className="w-full">
       <div className="space-y-4">
+        {/* Search bar */}
         <div className="flex flex-row gap-2 justify-center items-center">
           <div className="flex whitespace-nowrap">
             {totalResults} results
@@ -229,6 +230,7 @@ export default function RecipesPage() {
             className="w-full px-4 py-2 bg-[rgb(var(--base-200))] text-[rgb(var(--text-primary))] rounded-lg border border-[rgb(var(--base-300))] focus:outline-none focus:ring-2 focus:ring-[rgb(var(--base-300))]"
           />
         </div>
+        {/* Page navigation */}
         {totalPages > 1 && (
           <div className="flex flex-row gap-2 justify-center">
             {Array.from({ length: totalPages }).map((_, idx) => (
@@ -242,6 +244,7 @@ export default function RecipesPage() {
             ))}
           </div>
         )}
+        {/* Category filter */}
         <div className="flex flex-row gap-2">
           <div className="flex flex-row gap-1">
             {/* Displayed Category */}
@@ -283,7 +286,7 @@ export default function RecipesPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center m-auto gap-4 w-[800px]">
+      <div className="grid grid-cols-2">
         {/* <VirtualizedRecipeList
           filteredFormulas={filteredFormulas}
           baseFilteredFormulas={baseFilteredFormulas}

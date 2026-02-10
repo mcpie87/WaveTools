@@ -10,24 +10,37 @@ interface RecipeRowComponentProps {
   item: IRecipeFormula;
   baseFilteredFormulas: IRecipeFormula[];
 }
+
 export const RecipeRowComponent = ({
   item,
   baseFilteredFormulas,
 }: RecipeRowComponentProps) => {
   return (
-    <div key={item.id} className="max-w-4xl mx-auto p-2">
-      <div className="flex flex-col gap-1 bg-base-200 p-2 rounded-md border">
-        <div className="flex flex-row">
-          <ItemCard item={item.resultItem} width={64} height={64} />
-          <div>
-            <h2>{item.resultItem.name}</h2>
-            <p>{item.resultItem.attributes_description}</p>
+    <div className="p-2">
+      <div className="bg-base-200 border rounded-lg p-3 flex flex-col gap-3">
+
+        {/* Header */}
+        <div className="flex flex-row gap-2 items-center">
+          <div className="w-30">
+            <ItemCard item={item.resultItem} width={64} height={64} />
+          </div>
+          <div className="flex flex-col">
+            <h2 className="font-semibold leading-tight">
+              {item.resultItem.name}
+            </h2>
+            <p className="text-sm opacity-80">
+              {item.resultItem.attributes_description}
+            </p>
           </div>
         </div>
-        {/* <p>BgDesc: {item.resultItem.bg_description}</p> */}
-        <div className="flex flex-row justify-center">
+
+        {/* Materials */}
+        <div className="flex gap-2">
           {item.materials.map((material) => (
-            <div key={material.id} className="border flex flex-row">
+            <div
+              key={material.id}
+              className="border rounded-md bg-base-100 p-1"
+            >
               <MaterialComponent
                 material={material}
                 baseFilteredFormulas={baseFilteredFormulas}
@@ -35,28 +48,37 @@ export const RecipeRowComponent = ({
             </div>
           ))}
         </div>
+
+        {/* Specialty */}
         {item.specialtyCook && item.specialtyItem && (
-          <div className="flex flex-row">
-            <ItemCard item={item.specialtyItem} width={64} height={64} />
-            <div className="flex flex-col">
-              <div>{item.specialtyItem.name}</div>
-              <div className="flex flex-row">
+          <div className="border-t pt-3 flex gap-3">
+            <div className="w-30">
+              <ItemCard item={item.specialtyItem} width={64} height={64} />
+            </div>
+            <div className="flex flex-col gap-1">
+              <div className="font-medium">
+                {item.specialtyItem.name}
+              </div>
+
+              <div className="flex items-center gap-2 text-sm opacity-90">
                 <Image
-                  className="w-[24px] h-[24px]"
-                  src={convertToUrl(item.specialtyCook?.icon)}
-                  alt={item.specialtyCook?.name}
+                  src={convertToUrl(item.specialtyCook.icon)}
+                  alt={item.specialtyCook.name}
                   width={24}
                   height={24}
+                  className="rounded"
                 />
-                <div className="flex flex-col">
-                  <span>{item.specialtyCook.name} Special</span>
-                </div>
+                <span>{item.specialtyCook.name} Special</span>
               </div>
-              <div>{item.specialtyItem?.attributes_description}</div>
+
+              <div className="text-sm opacity-80">
+                {item.specialtyItem.attributes_description}
+              </div>
             </div>
           </div>
         )}
+
       </div>
     </div>
-  )
-}
+  );
+};
