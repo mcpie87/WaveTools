@@ -1350,7 +1350,7 @@
       "id": 42100026,
       "name": "Supersonic Solvent",
       "attributes_description": "Reduces Echo Skill Cooldown of a selected Resonator in the team by 30% for 180s. Only effective on your own Resonators in Co-op Mode.",
-      "bg_description": "A solid solvent made using a special process allows the user to use Echo Forte more frequently.\n“I run faster after taking this, which means I must have gotten lighter, which means I have gotten thinner... So does it mean it's also a weight-loss product?”",
+      "bg_description": "A solid solvent made using a special process allows the user to use Echo Skill more frequently.\n“I run faster after taking this, which means I must have gotten lighter, which means I have gotten thinner... So does it mean it's also a weight-loss product?”",
       "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_025_UI.png",
       "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_025_UI.png",
       "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_025_UI.png",
@@ -1379,7 +1379,7 @@
       "id": 42100027,
       "name": "Trainer Solvent",
       "attributes_description": "Increases Echo Skill DMG of all Resonators in the team by 40% for 180s. Only effective on your own Resonators in Co-op Mode.",
-      "bg_description": "A solid solvent created using a special process that boosts the Echo Forte you cast.\nSaid to be invented by a self-proclaimed aspiring Echo Training Master.",
+      "bg_description": "A solid solvent created using a special process that boosts the Echo Skill you cast.\nSaid to be invented by a self-proclaimed aspiring Echo Training Master.",
       "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_026_UI.png",
       "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_026_UI.png",
       "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_026_UI.png",
@@ -2294,5 +2294,784 @@
       }
     ],
     "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 148,
+    "resultItem": {
+      "id": 42100042,
+      "name": "Abyssal Solvent",
+      "attributes_description": "Increases Echo Skill DMG by 50% for all Resonators in the team for 180s. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A solid solvent made using a special process that imparts healing effects.\nAllegedly invented by someone after going to Rinascita. Apparently, they really wanted to become a Master Echo Trainer.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_042_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_042_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_042_UI.png",
+      "rarity": 5
+    },
+    "name": "Abyssal Solvent",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601240,
+        "name": "Abyss Luminary",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 223,
+    "resultItem": {
+      "id": 43021054,
+      "name": "FF Waveworn Shard",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Gauntlets Resonators.",
+      "bg_description": "A radial-cracked Waveworn residue. It maintains a breathtakingly stable equilibrium. As a critical material for advanced technologies, it is subject to the strictest trade restrictions worldwide.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_008_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_008_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_008_4_UI.png",
+      "rarity": 5
+    },
+    "name": "FF Waveworn Shard",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43021053,
+        "name": "HF Waveworn Shard",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 224,
+    "resultItem": {
+      "id": 43021053,
+      "name": "HF Waveworn Shard",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Gauntlets Resonators.",
+      "bg_description": "A radial-cracked Waveworn residue. It maintains a delicate equilibrium and, after centrifugation, its concentrated product becomes widely useful.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_008_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_008_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_008_3_UI.png",
+      "rarity": 4
+    },
+    "name": "HF Waveworn Shard",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43021052,
+        "name": "MF Waveworn Shard",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 225,
+    "resultItem": {
+      "id": 43021052,
+      "name": "MF Waveworn Shard",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Gauntlets Resonators.",
+      "bg_description": "A radial-cracked Waveworn residue. It remains stable and, with the proper absorber, the contained Remnant Energy may still be extracted.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_008_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_008_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_008_2_UI.png",
+      "rarity": 3
+    },
+    "name": "MF Waveworn Shard",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43021051,
+        "name": "LF Waveworn Shard",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 226,
+    "resultItem": {
+      "id": 43021044,
+      "name": "FF Carved Crystal",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Broadblade Resonators.",
+      "bg_description": "A chipped crystal of Waveworn residue. It maintains a breathtakingly stable equilibrium. As a critical material for advanced technologies, it is subject to the strictest trade restrictions worldwide.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_011_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_011_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_011_4_UI.png",
+      "rarity": 5
+    },
+    "name": "FF Carved Crystal",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43021043,
+        "name": "HF Carved Crystal",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 227,
+    "resultItem": {
+      "id": 43021043,
+      "name": "HF Carved Crystal",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Broadblade Resonators.",
+      "bg_description": "A chipped crystal of Waveworn residue. It maintains a delicate equilibrium and, after centrifugation, its concentrated product becomes widely useful.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_011_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_011_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_011_3_UI.png",
+      "rarity": 4
+    },
+    "name": "HF Carved Crystal",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43021042,
+        "name": "MF Carved Crystal",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 228,
+    "resultItem": {
+      "id": 43021042,
+      "name": "MF Carved Crystal",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Broadblade Resonators.",
+      "bg_description": "A chipped crystal of Waveworn residue. It remains stable and, with the proper absorber, the contained Remnant Energy may still be extracted.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_011_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_011_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_011_2_UI.png",
+      "rarity": 3
+    },
+    "name": "MF Carved Crystal",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43021041,
+        "name": "LF Carved Crystal",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 229,
+    "resultItem": {
+      "id": 43021034,
+      "name": "Melodic String",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Rectifier Resonators.",
+      "bg_description": "Interwoven yet balanced, this Resonance Cord is as harmonious as a song that no one has ever written. Perhaps it is more a subject for aesthetics than science.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_012_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_012_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_012_4_UI.png",
+      "rarity": 5
+    },
+    "name": "Melodic String",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43021033,
+        "name": "Solidified String",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 230,
+    "resultItem": {
+      "id": 43021033,
+      "name": "Solidified String",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Rectifier Resonators.",
+      "bg_description": "Complete and solidified, this Resonance Cord captures the paradox of motion and stillness that fascinates researchers. Its secrets, however, remain unsolved.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_012_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_012_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_012_3_UI.png",
+      "rarity": 4
+    },
+    "name": "Solidified String",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43021032,
+        "name": "Broken String",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 231,
+    "resultItem": {
+      "id": 43021032,
+      "name": "Broken String",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Rectifier Resonators.",
+      "bg_description": "Intermittent and incomplete, this Resonance Cord contains stored tonal energy that can be extracted by researchers, yet its content remains indecipherable.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_012_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_012_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_012_2_UI.png",
+      "rarity": 3
+    },
+    "name": "Broken String",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43021031,
+        "name": "Spliced String",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 232,
+    "resultItem": {
+      "id": 43021024,
+      "name": "Reverb Combustor",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Pistols Resonators.",
+      "bg_description": "Rsembling a bullet, this metal is virtually flawless in purity. Some Resonators hesitate to use it as Ascension Material, preferring to have it crafted into unique ornaments by skilled artisans.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_009_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_009_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_009_4_UI.png",
+      "rarity": 5
+    },
+    "name": "Reverb Combustor",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43021023,
+        "name": "Remnant Combustor",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 233,
+    "resultItem": {
+      "id": 43021023,
+      "name": "Remnant Combustor",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Pistols Resonators.",
+      "bg_description": "Resembling a bullet, this metal has its impurities almost removed after repeated purification. Beyond its practical applications, its exquisite and unusual form makes it a highly sought-after collectible.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_009_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_009_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_009_3_UI.png",
+      "rarity": 4
+    },
+    "name": "Remnant Combustor",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43021022,
+        "name": "Aftertune Combustor",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 234,
+    "resultItem": {
+      "id": 43021022,
+      "name": "Aftertune Combustor",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Pistols Resonators.",
+      "bg_description": "Resembling a solidified bullet, this metal has undergone quenching, greatly reducing impurities. Even non-specialists can discern the differences between various grades.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_009_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_009_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_009_2_UI.png",
+      "rarity": 3
+    },
+    "name": "Aftertune Combustor",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43021021,
+        "name": "Incomplete Combustor",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 235,
+    "resultItem": {
+      "id": 43021014,
+      "name": "Layered Wing Polarizer",
+      "attributes_description": "A premium material used for Weapon Ascension and Skill Upgrade for Sword Resonators.",
+      "bg_description": "A solidified metallic shard, resembling a fused cluster of butterfly wings. Microscopic analysis of a few samples reveals their highly intricate internal structure, which appears more like that of a living organism than an inorganic material.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_010_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_010_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_010_4_UI.png",
+      "rarity": 5
+    },
+    "name": "Layered Wing Polarizer",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 43021013,
+        "name": "Polywing Polarizer",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 236,
+    "resultItem": {
+      "id": 43021013,
+      "name": "Polywing Polarizer",
+      "attributes_description": "An advanced material used for Weapon Ascension and Skill Upgrade for Sword Resonators.",
+      "bg_description": "A triple-winged metallic shard, exhibiting an unusual radiance. This material forms under extremely rare conditions, and its transformation patterns remain largely unexplored by current scientific research.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_010_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_010_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_010_3_UI.png",
+      "rarity": 4
+    },
+    "name": "Polywing Polarizer",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 43021012,
+        "name": "Monowing Polarizer",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 237,
+    "resultItem": {
+      "id": 43021012,
+      "name": "Monowing Polarizer",
+      "attributes_description": "A medium material used for Weapon Ascension and Skill Upgrade for Sword Resonators.",
+      "bg_description": "A metallic shard, resembling a pair of butterfly wings, its surface glimmers like Tacetites. Due to its reactive nature, careful storage is required after collection to prevent loss of its frequency energy.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_010_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_010_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_010_2_UI.png",
+      "rarity": 3
+    },
+    "name": "Monowing Polarizer",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 43021011,
+        "name": "Broken Wing Polarizer",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 238,
+    "resultItem": {
+      "id": 41100064,
+      "name": "FF Exoswarm Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "Unique flower-shaped Tacet Core, resembling a fully bloomed blossom. Found only in the most dangerous areas ravaged by Void Storms. Legend has it that when a Void Storm sweeps across Lahai-Roi, this kind of Tacet Core may be seen entwined around the body of the strongest Exoswarm.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_024_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_024_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_024_UI.png",
+      "rarity": 5
+    },
+    "name": "FF Exoswarm Core",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41100063,
+        "name": "HF Exoswarm Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 239,
+    "resultItem": {
+      "id": 41100063,
+      "name": "HF Exoswarm Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "Stable flower-shaped Tacet Core, resembling a budding blossom. Occasionally found in areas with frequent Void Storm occurrences.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_023_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_023_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_023_UI.png",
+      "rarity": 4
+    },
+    "name": "HF Exoswarm Core",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41100062,
+        "name": "MF Exoswarm Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 240,
+    "resultItem": {
+      "id": 41100062,
+      "name": "MF Exoswarm Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "Standard flower-shaped Tacet Core, resembling a wilting blossom. Often recovered from Exoswarm corrupted by Void Storms.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_022_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_022_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_022_UI.png",
+      "rarity": 3
+    },
+    "name": "MF Exoswarm Core",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41100061,
+        "name": "LF Exoswarm Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 241,
+    "resultItem": {
+      "id": 41100074,
+      "name": "FF Mech Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "Special triangle Tacet Cord, exhibiting the most resilient structure, retaining complete frequency even under intense energy shock. Legend has it that when a Void Storm sweeps across Lahai-Roi, this kind of Tacet Cord can control even the most powerful mech humanity has ever built.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_028_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_028_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_028_UI.png",
+      "rarity": 5
+    },
+    "name": "FF Mech Core",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41100073,
+        "name": "HF Mech Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 242,
+    "resultItem": {
+      "id": 41100073,
+      "name": "HF Mech Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "Stable triangle Tacet Cord, with a strong, enduring structure. Occasionally found in areas with frequent Void Storm occurrences.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_027_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_027_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_027_UI.png",
+      "rarity": 4
+    },
+    "name": "HF Mech Core",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41100072,
+        "name": "MF Mech Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 243,
+    "resultItem": {
+      "id": 41100072,
+      "name": "MF Mech Core",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "Standard triangle Tacet Cord, on the brink of shattering. Commonly found in areas ravaged by Void Storms.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconWup/T_IconWup_026_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconWup160/T_IconWup160_026_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconWup80/T_IconWup80_026_UI.png",
+      "rarity": 3
+    },
+    "name": "MF Mech Core",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41100071,
+        "name": "LF Mech Core",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 244,
+    "resultItem": {
+      "id": 41100084,
+      "name": "Intact Exoswarm Pendant",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A relatively intact pendant. It was a traditional Royan accessory used by the Roya to bind scattered Exoswarm components together, symbolizing connection. Among the Royan Outcasts, however, the Exoswarm are seen not as companions but as prey. They hunt the Exoswarm and take the pendants from other Roya as trophies of their victories.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_007_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_007_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_007_4_UI.png",
+      "rarity": 5
+    },
+    "name": "Intact Exoswarm Pendant",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41100083,
+        "name": "Chipped Exoswarm Pendant",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 245,
+    "resultItem": {
+      "id": 41100083,
+      "name": "Chipped Exoswarm Pendant",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A slightly worn pendant. It was a traditional Royan accessory used by the Roya to bind scattered Exoswarm components together, symbolizing connection. Among the Royan Outcasts, however, the Exoswarm are seen not as companions but as prey. They hunt the Exoswarm and take the pendants from other Roya as trophies of their victories.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_007_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_007_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_007_3_UI.png",
+      "rarity": 4
+    },
+    "name": "Chipped Exoswarm Pendant",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41100082,
+        "name": "Worn Exoswarm Pendant",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 246,
+    "resultItem": {
+      "id": 41100082,
+      "name": "Worn Exoswarm Pendant",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A worn pendant. It was a traditional Royan accessory used by the Roya to bind scattered Exoswarm components together, symbolizing connection. Among the Royan Outcasts, however, the Exoswarm are seen not as companions but as prey. They hunt the Exoswarm and take the pendants from other Roya as trophies of their victories.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_007_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_007_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_007_2_UI.png",
+      "rarity": 3
+    },
+    "name": "Worn Exoswarm Pendant",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41100081,
+        "name": "Fractured Exoswarm Pendant",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 149,
+    "resultItem": {
+      "id": 42100043,
+      "name": "Fusion Interference Potion",
+      "attributes_description": "Within 180s, all Resonators in the team deal 40% more Fusion DMG for 10s after dealing damage to enemies under Tune Rupture - Interfered or Tune Strain - Interfered. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "An oral potion formulated by the Resonator Nursing Unit of Startorch Academy. Its core ingredient is synthesized from unique Laihai-Roi materials. Shake well before use to temporarily enhance the Tune Disruption ability of a specified Attribute.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_047_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_047_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_047_UI.png",
+      "rarity": 4
+    },
+    "name": "Fusion Interference Potion",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601320,
+        "name": "Pine Cone",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 150,
+    "resultItem": {
+      "id": 42100044,
+      "name": "Aero Interference Potion",
+      "attributes_description": "Within 180s, all Resonators in the team deal 40% more Aero DMG for 10s after dealing damage to enemies under Tune Rupture - Interfered or Tune Strain- Interfered. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "An oral potion formulated by the Resonator Nursing Unit of Startorch Academy. Its core ingredient is synthesized from unique Laihai-Roi materials. Shake well before use to temporarily enhance the Tune Disruption ability of a specified Attribute.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_046_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_046_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_046_UI.png",
+      "rarity": 4
+    },
+    "name": "Aero Interference Potion",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601350,
+        "name": "Fern Spore",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 151,
+    "resultItem": {
+      "id": 42100045,
+      "name": "Electro Interference Potion",
+      "attributes_description": "Within 180s, all Resonators in the team deal 40% more Electro DMG for 10s after dealing damage to enemies under Tune Rupture - Interfered or Tune Strain - Interfered. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "An oral potion formulated by the Resonator Nursing Unit of Startorch Academy. Its core ingredient is synthesized from unique Laihai-Roi materials. Shake well before use to temporarily enhance the Tune Disruption ability of a specified Attribute.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_044_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_044_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_044_UI.png",
+      "rarity": 4
+    },
+    "name": "Electro Interference Potion",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601340,
+        "name": "Dusk Honeypot",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 152,
+    "resultItem": {
+      "id": 42100046,
+      "name": "Glacio Interference Potion",
+      "attributes_description": "Within 180s, all Resonators in the team deal 40% more Glacio DMG for 10s after dealing damage to enemies under Tune Rupture - Interfered or Tune Strain - Interfered. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "An oral potion formulated by the Resonator Nursing Unit of Startorch Academy. Its core ingredient is synthesized from unique Laihai-Roi materials. Shake well before use to temporarily enhance the Tune Disruption ability of a specified Attribute.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_043_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_043_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_043_UI.png",
+      "rarity": 4
+    },
+    "name": "Glacio Interference Potion",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601370,
+        "name": "Jade Wood",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 153,
+    "resultItem": {
+      "id": 42100047,
+      "name": "Spectro Interference Potion",
+      "attributes_description": "Within 180s, all Resonators in the team deal 40% more Spectro DMG for 10s after dealing damage to enemies under Tune Rupture - Interfered or Tune Strain - Interfered. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "An oral potion formulated by the Resonator Nursing Unit of Startorch Academy. Its core ingredient is synthesized from unique Laihai-Roi materials. Shake well before use to temporarily enhance the Tune Disruption ability of a specified Attribute.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_048_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_048_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_048_UI.png",
+      "rarity": 4
+    },
+    "name": "Spectro Interference Potion",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601360,
+        "name": "Cradle Lichen",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 154,
+    "resultItem": {
+      "id": 42100048,
+      "name": "Havoc Interference Potion",
+      "attributes_description": "Within 180s, all Resonators in the team deal 40% more Havoc DMG for 10s after dealing damage to enemies under Tune Rupture - Interfered or Tune Strain - Interfered. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "An oral potion formulated by the Resonator Nursing Unit of Startorch Academy. Its core ingredient is synthesized from unique Laihai-Roi materials. Shake well before use to temporarily enhance the Tune Disruption ability of a specified Attribute.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_045_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_045_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_045_UI.png",
+      "rarity": 4
+    },
+    "name": "Havoc Interference Potion",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": 3
+      },
+      {
+        "id": 42601410,
+        "name": "Luxite",
+        "value": 3
+      }
+    ],
+    "formulaType": 1
   }
 ]

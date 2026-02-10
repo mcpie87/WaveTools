@@ -696,7 +696,7 @@
       },
       {
         "id": 80010032,
-        "name": "A recipe that details how to make Happiness Tea.",
+        "name": "Happiness Tea Recipe",
         "value": [
           {
             "id": 44010025,
@@ -1188,6 +1188,17 @@
             "id": 2,
             "name": "Shell Credit",
             "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010028,
+        "name": "Chili Sauce Tofu Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
           }
         ]
       }
@@ -2099,6 +2110,17 @@
             "id": 2,
             "name": "Shell Credit",
             "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 42601310,
+        "name": "Summer Flower",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
           }
         ]
       }
@@ -4091,6 +4113,39 @@
             "value": 15000
           }
         ]
+      },
+      {
+        "id": 80010065,
+        "name": "Marinated Olives Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010066,
+        "name": "Blooming Bread Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010067,
+        "name": "Laurel Shrimp in Nimbus Reduction Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
       }
     ]
   },
@@ -4310,6 +4365,50 @@
             "id": 2,
             "name": "Shell Credit",
             "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601300,
+        "name": "Luminous Calendula",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601290,
+        "name": "Sliverglow Bloom",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601280,
+        "name": "Stone Rose",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42100042,
+        "name": "Abyssal Solvent",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
           }
         ]
       }
@@ -4566,6 +4665,1012 @@
             "id": 71260004,
             "name": "Sacred Salt",
             "value": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "type": null,
+    "name": "NO CONTENT",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 3,
+        "name": "Astrite",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 43010003,
+        "name": "Advanced Resonance Potion",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "id": 43020003,
+        "name": "Advanced Energy Core",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "id": 36000003,
+        "name": "Advanced Sealed Tube",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 50000418,
+        "name": "Advanced Enclosure Tank - Lahai-Roi",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "id": 80010068,
+        "name": "Skelecanth Tartare Recipe",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 150
+          }
+        ]
+      },
+      {
+        "id": 80010069,
+        "name": "Lichen Salad Recipe",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 150
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Astrite",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 43021022,
+        "name": "Aftertune Combustor",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 43021052,
+        "name": "MF Waveworn Shard",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 43021032,
+        "name": "Broken String",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 43021042,
+        "name": "MF Carved Crystal",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 43021012,
+        "name": "Monowing Polarizer",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 180
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Astrite",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 400
+          }
+        ]
+      },
+      {
+        "id": 43010004,
+        "name": "Premium Resonance Potion",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 43020004,
+        "name": "Premium Energy Core",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "id": 36000004,
+        "name": "Premium Sealed Tube",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 250
+          }
+        ]
+      },
+      {
+        "id": 50000419,
+        "name": "Premium Enclosure Tank - Lahai-Roi",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 120
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 100
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "type": null,
+    "name": "NO CONTENT",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 42601320,
+        "name": "Pine Cone",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601340,
+        "name": "Dusk Honeypot",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601350,
+        "name": "Fern Spore",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601360,
+        "name": "Cradle Lichen",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601370,
+        "name": "Jade Wood",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601380,
+        "name": "Gemini Spore",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601390,
+        "name": "Rimewisp",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601400,
+        "name": "Arithmetic Shell",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80021002,
+        "name": "Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 42100043,
+        "name": "Fusion Interference Potion",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100044,
+        "name": "Aero Interference Potion",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100045,
+        "name": "Electro Interference Potion",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100046,
+        "name": "Glacio Interference Potion",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100047,
+        "name": "Spectro Interference Potion",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42100048,
+        "name": "Havoc Interference Potion",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 6000
+          }
+        ]
+      },
+      {
+        "id": 42601420,
+        "name": "Moss Amber",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601430,
+        "name": "Edelschnee",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "type": null,
+    "name": "NO CONTENT",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050010,
+        "name": "Vinegar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80050009,
+        "name": "Beans",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601030,
+        "name": "Animal Fat",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80000072,
+        "name": "Smoked Meat Stew",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80000073,
+        "name": "Grilled Fern Spore",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000075,
+        "name": "\"Crack & Bolt\" Fish Jar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80000078,
+        "name": "Lahai-Roi Special Plant Milk",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80010072,
+        "name": "Smoked Meat Stew Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010073,
+        "name": "Grilled Fern Spore Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010075,
+        "name": "\"Crack & Bolt\" Fish Jar Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010078,
+        "name": "Lahai-Roi Special Plant Milk Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "type": null,
+    "name": "NO CONTENT",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000076,
+        "name": "\"Munchie-More\" Bun",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80000077,
+        "name": "Complete Nutrition Squeezy Jelly",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000080,
+        "name": "Instant Wakeup Energy Gel Sachet",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000081,
+        "name": "Midnight Wonder Cup Noodles",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80010076,
+        "name": "\"Munchie-More\" Bun Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010077,
+        "name": "Complete Nutrition Squeezy Jelly Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010080,
+        "name": "Instant Wakeup Energy Gel Sachet Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010081,
+        "name": "Midnight Wonder Cup Noodles Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "type": null,
+    "name": "NO CONTENT",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 43021051,
+        "name": "LF Waveworn Shard",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 21010011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 41100061,
+        "name": "LF Exoswarm Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 41100071,
+        "name": "LF Mech Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 41100081,
+        "name": "Fractured Exoswarm Pendant",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 41100062,
+        "name": "MF Exoswarm Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 41100072,
+        "name": "MF Mech Core",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 41100082,
+        "name": "Worn Exoswarm Pendant",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 43021011,
+        "name": "Broken Wing Polarizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43021021,
+        "name": "Incomplete Combustor",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43021031,
+        "name": "Spliced String",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43021041,
+        "name": "LF Carved Crystal",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 21020011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21030011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21040011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21050011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21010012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21020012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21030012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21040012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21050012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
           }
         ]
       }
