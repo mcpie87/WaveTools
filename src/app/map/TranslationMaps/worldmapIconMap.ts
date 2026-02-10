@@ -1,3 +1,4 @@
+import { ItemSpecialty } from "@/app/interfaces/item_types";
 import { ASSET_URL } from "@/constants/constants";
 
 const GameAssetIcons: Record<string, string> = {
@@ -23,15 +24,39 @@ const GameAssetIcons: Record<string, string> = {
   "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
 
   /* Specialties */
-  "Bamboo Iris": "Image/IconC80/T_IconC80_bianzhuhua_UI.png",
-  "Belle Poppy": "Image/IconRup80/T_IconRup80_SM_Gat_29A_UI.png",
-  "Bloodleaf Viburnum": "Image/IconC80/T_IconC80_xueyejiami_UI.png",
-  "Coriolus": "Image/IconRup80/T_IconRup80_SM_Gat_30A_UI.png",
-  "Iris": "Image/IconRup80/T_IconRup80_SM_Gat_33A_UI.png",
-  "Golden Fleece": "Image/IconC80/T_IconC80_045_UI.png",
-
+  // 1.0
+  [ItemSpecialty.BELLE_POPPY]: "Image/IconRup80/T_IconRup80_SM_Gat_29A_UI.png",
+  [ItemSpecialty.CORIOLUS]: "Image/IconRup80/T_IconRup80_SM_Gat_30A_UI.png",
+  [ItemSpecialty.IRIS]: "Image/IconRup80/T_IconRup80_SM_Gat_33A_UI.png",
+  [ItemSpecialty.LANTERNBERRY]: "Image/IconC80/T_IconC80_denglongguo_UI.png",
+  [ItemSpecialty.PECOK_FLOWER]: "Image/IconRup80/T_IconRup80_SM_Gat_18A_UI.png",
+  [ItemSpecialty.TERRASPAWN_FUNGUS]: "Image/IconC80/T_IconC80_HuiYanGu_UI.png",
+  [ItemSpecialty.VIOLET_CORAL]: "Image/IconC80/T_IconC80_Sep_061_UI.png",
+  [ItemSpecialty.WINTRY_BELL]: "Image/IconRup80/T_IconRup80_SM_Gat_31A_UI.png",
+  // 1.1
+  [ItemSpecialty.LOONGS_PEARL]: "Image/IconC80/T_IconC80_030_UI.png",
+  [ItemSpecialty.PAVO_PLUM]: "Image/IconC80/T_IconC80_029_UI.png",
+  // 1.3
+  [ItemSpecialty.NOVA]: "Image/IconTask80/T_IconTask80_Task_084_UI.png",
+  // 2.0
+  [ItemSpecialty.GOLDEN_FLEECE]: "Image/IconC80/T_IconC80_045_UI.png",
+  [ItemSpecialty.FIRECRACKER_JEWELWEED]: "Image/IconC80/T_IconC80_043_UI.png",
+  [ItemSpecialty.SWORD_ACORUS]: "Image/IconC80/T_IconC80_044_UI.png",
+  // 2.2
+  [ItemSpecialty.SEASIDE_CENDRELIS]: "Image/IconTask80/T_IconTask80_Task_144_UI.png",
+  // 2.4
+  [ItemSpecialty.BAMBOO_IRIS]: "Image/IconC80/T_IconC80_bianzhuhua_UI.png",
+  [ItemSpecialty.BLOODLEAF_VIBURNUM]: "Image/IconC80/T_IconC80_xueyejiami_UI.png",
+  // 2.5
+  [ItemSpecialty.AFTERLIFE]: "Image/IconC/T_IconC_054_UI.png",
+  // 2.8
+  [ItemSpecialty.SUMMER_FLOWER]: "Image/IconC/T_IconC_055_UI.png",
+  // 3.0
+  [ItemSpecialty.RIMEWISP]: "Image/IconC/T_IconC_067_UI.png",
+  [ItemSpecialty.GEMINI_SPORE]: "Image/IconC/T_IconC_066_UI.png",
+  [ItemSpecialty.ARITHMETIC_SHELL]: "Image/IconC/T_IconC_063_UI.png",
   // 3.1
-  "Moss Amber": "Image/IconC/T_IconC_072_UI.png",
+  [ItemSpecialty.MOSS_AMBER]: "Image/IconC/T_IconC_072_UI.png",
 
 
   /* NPC Monsters */
@@ -190,6 +215,18 @@ const GameAssetIcons: Record<string, string> = {
   "Iceglint Dancer": "Image/IconMonsterHead/T_IconMonsterHead_31083_UI.png",
   "Glommoth": "Image/IconMonsterHead/T_IconMonsterHead_32061_UI.png",
 
+
+  /* Ores */
+  // 1.0
+  "Floramber": "Image/IconC80/T_IconC80_SM_Gat_19A_UI.png",
+  "Scarletthorn": "Image/IconC80/T_IconC80_SM_Gat_22A_UI.png",
+  "Lampylumen": "Image/IconC80/T_IconC80_SM_Gat_21A_UI.png",
+  "Indigoite": "Image/IconC80/T_IconC80_SM_Gat_20A_UI.png",
+  // 1.1
+  "Fluorite": "Image/IconC80/T_IconC80_032_UI.png",
+  // 2.0
+  "Fool's Gold": "Image/IconC80/T_IconC80_047_UI.png",
+  "Resonant Calcite": "Image/IconC80/T_IconC80_046_UI.png",
 };
 
 const CustomIcons: Record<string, string> = {

@@ -73,38 +73,65 @@ export enum ItemEliteBoss {
 };
 
 export enum ItemSpecialty {
-  // Jinzhou
-  BELLE_POPPY = "Belle Poppy",
-  CORIOLUS = "Coriolus",
+  // 1.0 Huanglong
   IRIS = "Iris",
+  TERRASPAWN_FUNGUS = "Terraspawn Fungus",
   LANTERNBERRY = "Lanternberry",
   PECOK_FLOWER = "Pecok Flower",
-  TERRASPAWN_FUNGUS = "Terraspawn Fungus",
-  VIOLET_CORAL = "Violet Coral",
+  BELLE_POPPY = "Belle Poppy",
+  CORIOLUS = "Coriolus",
   WINTRY_BELL = "Wintry Bell",
-
-  // Mt. Firmament
+  VIOLET_CORAL = "Violet Coral",
+  // 1.1 Mt. Firmament
   LOONGS_PEARL = "Loong's Pearl",
   PAVO_PLUM = "Pavo Plum",
-
-  // Black Shores
+  // 1.3 Black Shores
   NOVA = "Nova",
-
-  // Rinascita
-  FIRECRACKER_JEWELWEED = "Firecracker Jewelweed",
+  // 2.0 Rinascita
   GOLDEN_FLEECE = "Golden Fleece",
+  FIRECRACKER_JEWELWEED = "Firecracker Jewelweed",
   SWORD_ACORUS = "Sword Acorus",
+  // 2.2 Avinoleum
   SEASIDE_CENDRELIS = "Seaside Cendrelis",
-
-  // 2.4
+  // 2.4 Septimont
   BAMBOO_IRIS = "Bamboo Iris",
   BLOODLEAF_VIBURNUM = "Bloodleaf Viburnum",
-
-  // 2.5
+  // 2.5 Fabricatorium
   AFTERLIFE = "\"Afterlife\"",
-
-  // 3.1
+  // 2.8 Honami
+  SUMMER_FLOWER = "Summer Flower",
+  // 3.0 Lahai Roi
+  RIMEWISP = "Rimewisp",
+  GEMINI_SPORE = "Gemini Spore",
+  ARITHMETIC_SHELL = "Arithmetic Shell",
+  // 3.1 Frostlands
   MOSS_AMBER = "Moss Amber",
+}
+
+export enum ItemCasket {
+  // 1.0
+  SONANCE_CASKET = "Sonance Casket",
+  // 1.1
+  WINDCHIMER = "Windchimer",
+  // 2.0
+  SONANCE_RINASCITA = "Sonance Casket: Ragunna",
+  // 2.4
+  SONANCE_SEPTIMONT = "Sonance Casket: Septimont",
+  // 3.0
+  LAHAI_TAPE = "Lahai Tape",
+}
+
+export enum ItemOre {
+  // 1.0
+  FLORAMBER = "Floramber",
+  SCARLETTHORN = "Scarletthorn",
+  LAMPYLUMEN = "Lampylumen",
+  INDIGOITE = "Indigoite",
+  // 1.1
+  FLUORITE = "Fluorite",
+  // 2.0
+  FOOLS_GOLD = "Fool's Gold",
+  RESONANT_CALCITE = "Resonant Calcite",
 }
 
 export enum ItemWeapon {

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { convertToUrl, getRarityClass } from '@/utils/utils';
 import { ModalComponent } from '@/components/PlannerForm/ModalComponent';
 import { Input } from '@/components/ui/input';
+import { useDebounce } from 'use-debounce';
 
 interface Item {
   id: number;
@@ -22,6 +23,7 @@ export default function ItemList() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [debouncedSearchQuery] = useDebounce(searchQuery, 200);
   const [selectedRarity, setSelectedRarity] = useState<number | 'all'>('all');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 50;
@@ -57,12 +59,12 @@ export default function ItemList() {
 
   const filteredItems = useMemo(() => {
     return items.filter((item) => {
-      const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.attributes_description.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchesSearch = item.name.toLowerCase().includes(debouncedSearchQuery.toLowerCase()) ||
+        item.attributes_description.toLowerCase().includes(debouncedSearchQuery.toLowerCase());
       const matchesRarity = selectedRarity === 'all' || item.rarity === selectedRarity;
       return matchesSearch && matchesRarity;
     });
-  }, [items, searchQuery, selectedRarity]);
+  }, [items, debouncedSearchQuery, selectedRarity]);
 
   const paginatedItems = useMemo(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;

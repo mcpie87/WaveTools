@@ -1,0 +1,49 @@
+import { TranslationMapEntry } from "./TranslationMapInterface";
+
+export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
+  // 1.0
+  "Gameplay111": { name: "Mutterfly" },
+  "Animal032": { name: "Blobfly" },
+  "Gameplay381": { name: "Hovering Magnetite" },
+  "Gameplay200": { name: "Simulation Training Device" },
+
+  // 1.1
+  "Gameplay207": { name: "Tactical Hologram: Ski" },
+
+  // 2.0
+  "Gameplay_LNXT_Flying": { name: "Flying Challenge" },
+  "Gameplay_SoundDesign2": { name: "Musicfly" },
+  "branch2.0_Gameplay172": { name: "Fratelli" },
+  "branch2.0_Gameplay_Dungeon3": { name: "Dream Patrol" }, // For some reason counted x2
+
+  // 2.4
+  "branch2.4_143_Gameplay_2_4QQ11": { name: "Flying Challenge" },
+  "branch2.4_143_Gameplay_2_4QQ4": { name: "Simulation Training Device" },
+  "branch2.4_157_Gameplay_Dungeon1": { name: "Dream Patrol" }, // For some reason counted x2
+  "branch2.4_143_Gameplay_2_4QQ14": { name: "Hero's Rend" },
+
+  // 2.5
+  "branch2.5_41_Gameplay1": { name: "Orchestration Altar" },
+  "branch2.5_Slots": { name: "Triptych Chest" },
+
+  // 2.6
+  "branch2.6_35_Gameplay640": { name: "Dreams of Cintercide" },
+
+  // 3.0
+  "branch3.0_135_Gameplay513": { name: "Bike Challenge" },
+  "branch3.1_115_Gameplay513": { name: "Smartprint Cube" },
+  "branch3.0_939_NPC420085": { name: "Soliskin" },
+
+  // 3.1
+  "branch3.1_115_Gameplay_3_1/SunSpiritPPV": { name: "Soliskin Guide" },
+};
+export const PuzzleDisplayOrder = [
+  "Mutterfly",
+  "Blobfly",
+  "Flying Challenge",
+  "Orchestration Altar",
+  "Triptych Chest",
+  "branch2.6_35_Gameplay640",
+  "Bike Challenge",
+  "Soliskin Chest",
+];

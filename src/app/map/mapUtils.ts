@@ -27,13 +27,16 @@ export const mapUrl: Record<number, string> = {
   903: `${prefix}/Image/DDTTiles/T_DDTTiles_{x}_{y}_UI.png`, // Avinoleum
   905: `${prefix}/Image/YHSYCTiles/T_YHSYCTiles_{x}_{y}_UI.png`, // Fabricatorium of the Deep
   906: `${prefix}/Image/LHLTiles/T_LHLTiles_{x}_{y}_UI.png`, // Lahai Roi
+  // 907: `${prefix}/Image/SUIBOTiles/T_SUIBOTiles_{x}_{y}_UI.png`, // Honami City - war area
+  910: `${prefix}/Image/CAFETiles/T_CAFETiles_{x}_{y}_UI.png`, // Honami City
 };
 
-export const mapIdToName: Record<number, string> = {
-  8: 'Main',
-  900: 'Tethys Deep',
-  902: 'Vault Undergrounds',
-  903: 'Avinoleum',
-  905: 'Fabricatorium of the Deep',
-  906: 'Lahai Roi',
-};
+export const mapIdToName: Map<number, string> = new Map([
+  [8, 'Solaris-3'],
+  [900, 'Tethys Deep'],
+  [902, 'Vault Undergrounds'],
+  [903, 'Avinoleum'],
+  [905, 'Fabricatorium of the Deep'],
+  [910, 'Honami City'],
+  [906, 'Lahai Roi'],
+]);

@@ -3,14 +3,18 @@ import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import React, { useState } from "react";
 import { useDebounce } from 'use-debounce';
-import { AnimalDisplayOrder, AnimalTranslationMap, CasketDisplayOrder, CasketTranslationMap, ChestDisplayOrder, ChestTranslationMap, CollectDisplayOrder, CollectTranslationMap, Echo1CostDisplayOrder, Echo1CostTranslationMap, Echo3CostDisplayOrder, Echo3CostTranslationMap, Echo4CostDisplayOrder, Echo4CostTranslationMap, MonsterDisplayOrder, MonsterTranslationMap, NPCMobsDisplayOrder, NPCMobsTranslationMap, PuzzleDisplayOrder, PuzzleTranslationMap, SpecialtyDisplayOrder, SpecialtyTranslationMap, TeleporterDisplayOrder, TeleporterTranslationMap, TidalHeritageDisplayOrder, TidalHeritageTranslationMap, TranslationDisplayOrder, TranslationMap, UnionTranslationMap } from '../TranslationMaps/translationMap';
+import {
+  displayedCategories,
+  UnionTranslationMap
+} from '../TranslationMaps/translationMap';
+
 import { mapIdToName } from "../mapUtils";
-import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Toggle } from "@/components/ui/toggle";
 import { CategoryPaneComponent } from "./CategoryPaneComponent";
 import { translateBlueprint } from "../BlueprintTranslationService";
 import { DbMapData } from "@/types/mapTypes";
+import { DevModeSettingsComponent } from "./DevModeSettingsComponent";
 
 interface MapSettingsComponentProps {
   selectedMap: number;
@@ -57,54 +61,9 @@ export const MapSettingsComponent = ({
 
   const [categoryFilterDebounced] = useDebounce(categoryFilter, 300);
 
-  const chestCategories = categories.filter(c => ChestTranslationMap[c[0]]);
-  const collectCategories = categories.filter(c => CollectTranslationMap[c[0]]);
-  const tidalHeritageCategories = categories.filter(c => TidalHeritageTranslationMap[c[0]]);
-  const casketCategories = categories.filter(c => CasketTranslationMap[c[0]]);
-  const puzzleCategories = categories.filter(c => PuzzleTranslationMap[c[0]]);
-  const teleporterCategories = categories.filter(c => TeleporterTranslationMap[c[0]]);
-  const monsterCategories = categories.filter(c => MonsterTranslationMap[c[0]]);
-  const specialtyCategories = categories.filter(c => SpecialtyTranslationMap[c[0]]);
-  const echo4CostCategories = categories.filter(c => Echo4CostTranslationMap[c[0]]);
-  const echo3CostCategories = categories.filter(c => Echo3CostTranslationMap[c[0]]);
-  const echo1CostCategories = categories.filter(c => Echo1CostTranslationMap[c[0]]);
-  const npcMonsterCategories = categories.filter(c => NPCMobsTranslationMap[c[0]]);
-  const animalCategories = categories.filter(c => AnimalTranslationMap[c[0]]);
-  const definedCategories = categories.filter(c => TranslationMap[c[0]]);
-
   const undefinedCategories = categories.filter(category =>
-    !ChestTranslationMap[category[0]] &&
-    !CollectTranslationMap[category[0]] &&
-    !TidalHeritageTranslationMap[category[0]] &&
-    !CasketTranslationMap[category[0]] &&
-    !TeleporterTranslationMap[category[0]] &&
-    !MonsterTranslationMap[category[0]] &&
-    !TranslationMap[category[0]] &&
-    !SpecialtyTranslationMap[category[0]] &&
-    !Echo4CostTranslationMap[category[0]] &&
-    !Echo3CostTranslationMap[category[0]] &&
-    !Echo1CostTranslationMap[category[0]] &&
-    !NPCMobsTranslationMap[category[0]] &&
-    !AnimalTranslationMap[category[0]] &&
-    !PuzzleTranslationMap[category[0]]
-  );
-
-  const categoryGroups = [
-    ["Teleporter", teleporterCategories, TeleporterTranslationMap, TeleporterDisplayOrder],
-    ["Casket", casketCategories, CasketTranslationMap, CasketDisplayOrder],
-    ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap, TidalHeritageDisplayOrder],
-    ["Chests", chestCategories, ChestTranslationMap, ChestDisplayOrder],
-    ["Puzzles", puzzleCategories, PuzzleTranslationMap, PuzzleDisplayOrder],
-    ["Specialties", specialtyCategories, SpecialtyTranslationMap, SpecialtyDisplayOrder],
-    ["Echoes", monsterCategories, MonsterTranslationMap, MonsterDisplayOrder],
-    ["Echo (4-Cost)", echo4CostCategories, Echo4CostTranslationMap, Echo4CostDisplayOrder],
-    ["Echoes (3-Cost)", echo3CostCategories, Echo3CostTranslationMap, Echo3CostDisplayOrder],
-    ["Echoes (1-Cost)", echo1CostCategories, Echo1CostTranslationMap, Echo1CostDisplayOrder],
-    ["NPC Monsters", npcMonsterCategories, NPCMobsTranslationMap, NPCMobsDisplayOrder],
-    ["Collect", collectCategories, CollectTranslationMap, CollectDisplayOrder],
-    ["Animals", animalCategories, AnimalTranslationMap, AnimalDisplayOrder],
-    ["Defined", definedCategories, TranslationMap, TranslationDisplayOrder],
-  ] as const;
+    !displayedCategories.every(c => c[1][category[0]])
+  )
 
   return (
     <>
@@ -117,7 +76,7 @@ export const MapSettingsComponent = ({
         </aside>
       )}
       {showSettings && (
-        <aside className="w-[320px] absolute top-4 left-4 z-10 border-r p-3 space-y-3 max-h-[calc(100vh-2rem)] overflow-auto bg-base-100">
+        <aside className="w-[320px] absolute rounded-xl top-4 left-4 z-10 border-r p-3 space-y-3 max-h-[calc(100vh-2rem)] overflow-auto bg-base-100">
           <Button className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
 
           <div className="rounded-lg border p-3 space-y-2 bg-base-200">
@@ -127,8 +86,8 @@ export const MapSettingsComponent = ({
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  {Object.entries(mapIdToName).map(([id, name]) => (
-                    <SelectItem key={id} value={id}>
+                  {[...mapIdToName].map(([id, name]) => (
+                    <SelectItem key={id} value={String(id)}>
                       {name}
                     </SelectItem>
                   ))}
@@ -137,32 +96,22 @@ export const MapSettingsComponent = ({
             </Select>
           </div>
 
+          <DevModeSettingsComponent
+            coords={coords}
+            setCoords={setCoords}
+            showDescriptions={showDescriptions}
+            setShowDescriptions={setShowDescriptions}
+            radius={radius}
+            setRadius={setRadius}
+            enableClick={enableClick}
+            setEnableClick={setEnableClick}
+          />
+
           <div className="rounded-lg border p-3 space-y-2 bg-base-200">
-            <h3 className="text-sm font-semibold">Selection</h3>
-            <Label>Coords</Label>
-            <div className="flex gap-2">
-              {(['x', 'y', 'z'] as const).map(k => (
-                <Input
-                  key={k}
-                  type="number"
-                  value={coords[k]}
-                  onChange={e => setCoords(c => ({ ...c, [k]: +e.target.value }))}
-                />
-              ))}
-            </div>
-
-            <Label>Radius</Label>
-            <Input type="number" value={radius} onChange={e => setRadius(+e.target.value)} />
-
+            <h3 className="text-sm font-semibold">Settings</h3>
             <div className="flex flex-col gap-2">
-              <Toggle pressed={enableClick} onPressedChange={setEnableClick}>
-                Click to Investigate
-              </Toggle>
               <Toggle pressed={hideVisited} onPressedChange={setHideVisited}>
                 Hide visited
-              </Toggle>
-              <Toggle pressed={showDescriptions} onPressedChange={setShowDescriptions}>
-                Show descriptions
               </Toggle>
               <Button onClick={() => clearCategories()}>Clear Categories</Button>
             </div>
@@ -174,43 +123,51 @@ export const MapSettingsComponent = ({
             onChange={e => setCategoryFilter(e.target.value)}
           />
 
-          {(categoryGroups).map(([title, categories, translationMap, displayOrder]) => (
-            <>
-              {categories.length > 0 && (
-                <CategoryPaneComponent
-                  key={title}
-                  title={title}
-                  categories={categories.filter(([c, ,]) =>
-                    [
-                      c.toLowerCase(),
-                      translateBlueprint(c).toLowerCase(),
-                      UnionTranslationMap[c]?.name.toLowerCase() ?? '',
-                    ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
+          {(displayedCategories).map(([title, translationMap, displayOrder]) => {
+            {
+              const filteredCategories = categories
+                .filter(c => translationMap[c[0]])
+                .filter(([c, ,]) =>
+                  [
+                    c.toLowerCase(),
+                    translateBlueprint(c).toLowerCase(),
+                    UnionTranslationMap[c]?.name.toLowerCase() ?? '',
+                  ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
+                )
+              return (
+                <>
+                  {filteredCategories.length > 0 && (
+                    <CategoryPaneComponent
+                      key={title}
+                      title={title}
+                      categories={filteredCategories}
+                      displayOrder={displayOrder}
+                      translationMap={translationMap}
+                      toggleCategory={toggleCategory}
+                      toggleCategories={toggleCategories}
+                      toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
+                      showDescriptions={showDescriptions}
+                      dbMapData={dbMapData}
+                      isOpen={dbMapData.displayedCategoryGroups[title]}
+                    />
                   )}
-                  displayOrder={displayOrder}
-                  translationMap={translationMap}
-                  toggleCategory={toggleCategory}
-                  toggleCategories={toggleCategories}
-                  toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
-                  showDescriptions={showDescriptions}
-                  dbMapData={dbMapData}
-                  isOpen={dbMapData.displayedCategoryGroups[title]}
-                />
-              )}
-            </>
-
-          ))}
+                </>
+              )
+            }
+          })}
 
           {showDescriptions && (
             <CategoryPaneComponent
               title="Not defined categories"
               categories={
-                undefinedCategories.filter(([c]) =>
-                  [
-                    c.toLowerCase(),
-                    translateBlueprint(c).toLowerCase(),
-                  ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
-                )
+                undefinedCategories
+                  .filter(c => !displayedCategories.some(d => d[1][c[0]]))
+                  .filter(([c]) =>
+                    [
+                      c.toLowerCase(),
+                      translateBlueprint(c).toLowerCase(),
+                    ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
+                  )
               }
               toggleCategory={toggleCategory}
               toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
