@@ -3,20 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --text-primary: #1e1e1e;
-  --text-secondary: #4b5563;
-  --base-100: #ffffff;
-  --base-200: #f5f5f5;
-  --base-300: #e5e5e5;
+  --text-primary: 30 30 30; /* rgb(30, 30, 30) */
+  --text-secondary: 75 85 99; /* rgb(75, 85, 99) */
+  --base-100: 255 255 255; /* rgb(255, 255, 255) */
+  --base-200: 245 245 245; /* rgb(245, 245, 245) */
+  --base-300: 229 229 229; /* rgb(229, 229, 229) */
 }
 
-/* Dark Theme */
 .dark {
-  --text-primary: #f1f1f1;
-  --text-secondary: #aaa;
-  --base-100: #1e1e1e;
-  --base-200: #2a2a2a;
-  --base-300: #3b3b3b;
+  --text-primary: 241 241 241; /* rgb(241, 241, 241) */
+  --text-secondary: 170 170 170; /* rgb(170, 170, 170) */
+  --base-100: 30 30 30; /* rgb(30, 30, 30) */
+  --base-200: 42 42 42; /* rgb(42, 42, 42) */
+  --base-300: 59 59 59; /* rgb(59, 59, 59) */
 }
 
 @layer components {

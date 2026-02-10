@@ -1,4 +1,4 @@
-import { Substats } from "@/app/echo-simulation/data/enums";
+import { Substats } from "@/app/(app)/echo-simulation/data/enums";
 import {
   substatsDisplayOrder,
   substatsDict,
@@ -7,7 +7,7 @@ import {
   SubstatEntry,
   SubstatName,
   getSubstatChances
-} from "@/app/echo-simulation/services/simulate";
+} from "@/app/(app)/echo-simulation/services/simulate";
 
 const SUBSTATS: Substats[] = [
   Substats.FlatATK,

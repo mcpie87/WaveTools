@@ -3,34 +3,20 @@
 import 'leaflet/dist/leaflet.css';
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useDebounce } from 'use-debounce';
 import { MapContainer, Marker, useMap, useMapEvent } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
-import { Input } from '@/components/ui/input';
-import { Toggle } from '@/components/ui/toggle';
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import { Label } from '@/components/ui/label';
-
-import { AnimalDisplayOrder, AnimalTranslationMap, CasketDisplayOrder, CasketTranslationMap, ChestDisplayOrder, ChestTranslationMap, CollectDisplayOrder, CollectTranslationMap, Echo1CostDisplayOrder, Echo1CostTranslationMap, Echo3CostDisplayOrder, Echo3CostTranslationMap, Echo4CostDisplayOrder, Echo4CostTranslationMap, MonsterDisplayOrder, MonsterTranslationMap, NPCMobsDisplayOrder, NPCMobsTranslationMap, PuzzleDisplayOrder, PuzzleTranslationMap, SpecialtyDisplayOrder, SpecialtyTranslationMap, TeleporterDisplayOrder, TeleporterTranslationMap, TidalHeritageDisplayOrder, TidalHeritageTranslationMap, TranslationDisplayOrder, TranslationMap, UnionTranslationMap } from './TranslationMaps/translationMap';
-import { Button } from '@/components/ui/button';
+import { UnionTranslationMap } from './TranslationMaps/translationMap';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
 import { DbMapData } from '@/types/mapTypes';
-import { loadBlueprintTranslations, translateBlueprint } from './BlueprintTranslationService';
-import { convertMarkerToCoord, mapIdToName, mapUrl, scaleFactor } from './mapUtils';
-import { CategoryPaneComponent } from './Components/CategoryPaneComponent';
+import { loadBlueprintTranslations } from './BlueprintTranslationService';
+import { convertMarkerToCoord, mapUrl, scaleFactor } from './mapUtils';
 import { CustomPopup } from './Components/CustomPopup';
 import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
 import { ASSET_URL } from '@/constants/constants';
+import { MapSettingsComponent } from './Components/MapSettingsComponent';
 
 const simpleCRS = L.CRS.Simple;
 
@@ -134,15 +120,18 @@ interface APIAreaLayer {
 export default function XYZMap() {
   const [data, setData] = useState<APIMarker[]>([]);
   const [layersData, setLayersData] = useState<APIAreaLayer[]>([]);
+
   const [activeAreaId, setActiveAreaId] = useState<number | null>(null);
   const [selectedMap, setSelectedMap] = useState(8);
+
+  const [enableClick, setEnableClick] = useState(false);
   const [coords, setCoords] = useState({ x: 0, y: 0, z: 0 });
   const [radius, setRadius] = useState(50);
+
   const [showDescriptions, setShowDescriptions] = useState(false);
   const [hideVisited, setHideVisited] = useState(false);
-  const [enableClick, setEnableClick] = useState(false);
   const [categoryFilter, setCategoryFilter] = useState('');
-  const [showSettings, setShowSettings] = useState(true);
+
   const [dbMapData, setDbMapData] = useState<DbMapData>(() => {
     const loaded = storageService.load() as Partial<DbMapData> | null;
 
@@ -153,7 +142,6 @@ export default function XYZMap() {
     };
   });
   const [translationsReady, setTranslationsReady] = useState(false);
-  const [categoryFilterDebounced] = useDebounce(categoryFilter, 300);
 
   useEffect(() => {
     loadBlueprintTranslations().then(() => setTranslationsReady(true));
@@ -397,38 +385,6 @@ export default function XYZMap() {
 
 
   /* ----------------------------- UI ------------------------------- */
-  const chestCategories = categories.filter(category => ChestTranslationMap[category[0]]);
-  const collectCategories = categories.filter(category => CollectTranslationMap[category[0]]);
-  const tidalHeritageCategories = categories.filter(category => TidalHeritageTranslationMap[category[0]]);
-  const casketCategories = categories.filter(category => CasketTranslationMap[category[0]]);
-  const puzzleCategories = categories.filter(category => PuzzleTranslationMap[category[0]]);
-  const teleporterCategories = categories.filter(category => TeleporterTranslationMap[category[0]]);
-  const monsterCategories = categories.filter(category => MonsterTranslationMap[category[0]]);
-  const specialtyCategories = categories.filter(category => SpecialtyTranslationMap[category[0]]);
-  const echo4CostCategories = categories.filter(category => Echo4CostTranslationMap[category[0]]);
-  const echo3CostCategories = categories.filter(category => Echo3CostTranslationMap[category[0]]);
-  const echo1CostCategories = categories.filter(category => Echo1CostTranslationMap[category[0]]);
-  const npcMonsterCategories = categories.filter(category => NPCMobsTranslationMap[category[0]]);
-  const animalCategories = categories.filter(category => AnimalTranslationMap[category[0]]);
-  const definedCategories = categories.filter(category => TranslationMap[category[0]]);
-
-  const undefinedCategories = categories.filter(category =>
-    !ChestTranslationMap[category[0]] &&
-    !CollectTranslationMap[category[0]] &&
-    !TidalHeritageTranslationMap[category[0]] &&
-    !CasketTranslationMap[category[0]] &&
-    !TeleporterTranslationMap[category[0]] &&
-    !MonsterTranslationMap[category[0]] &&
-    !TranslationMap[category[0]] &&
-    !SpecialtyTranslationMap[category[0]] &&
-    !Echo4CostTranslationMap[category[0]] &&
-    !Echo3CostTranslationMap[category[0]] &&
-    !Echo1CostTranslationMap[category[0]] &&
-    !NPCMobsTranslationMap[category[0]] &&
-    !AnimalTranslationMap[category[0]] &&
-    !PuzzleTranslationMap[category[0]]
-  );
-
   const markerComponents = useMemo(() => {
     return displayedMarkers.map((m) => (
       <Marker
@@ -459,132 +415,28 @@ export default function XYZMap() {
   return (
     <div className="h-screen w-screen flex relative">
       {/* Left controls */}
-      {!showSettings && (
-        <aside className="absolute top-2 left-2 z-10 border-r">
-          <Button variant="outline" className="w-[320px] absolute " onClick={() => setShowSettings(true)}>
-            Show Settings
-          </Button>
-        </aside>
-      )}
-      {showSettings && (
-        <aside className="w-[320px] absolute top-2 left-2 z-10 border-r p-3 space-y-3 overflow-scroll bottom-2 bg-base-100">
-          <Button variant="outline" className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
-
-          <div className="rounded-lg border p-3 space-y-2 bg-base-100">
-            <h3 className="text-sm font-semibold">Map</h3>
-            <Select value={String(selectedMap)} onValueChange={v => setSelectedMap(+v)}>
-              <SelectTrigger>
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  {Object.entries(mapIdToName).map(([id, name]) => (
-                    <SelectItem key={id} value={id}>
-                      {name}
-                    </SelectItem>
-                  ))}
-                </SelectGroup>
-              </SelectContent>
-            </Select>
-          </div>
-
-          <div className="rounded-lg border p-3 space-y-2 bg-base-100">
-            <h3 className="text-sm font-semibold">Selection</h3>
-            <Label>Coords</Label>
-            <div className="flex gap-2">
-              {(['x', 'y', 'z'] as const).map(k => (
-                <Input
-                  key={k}
-                  type="number"
-                  value={coords[k]}
-                  onChange={e => setCoords(c => ({ ...c, [k]: +e.target.value }))}
-                />
-              ))}
-            </div>
-
-            <Label>Radius</Label>
-            <Input type="number" value={radius} onChange={e => setRadius(+e.target.value)} />
-
-            <Toggle pressed={enableClick} onPressedChange={setEnableClick}>
-              Click-to-select
-            </Toggle>
-            <Toggle pressed={hideVisited} onPressedChange={setHideVisited}>
-              Hide visited
-            </Toggle>
-            <Toggle pressed={showDescriptions} onPressedChange={setShowDescriptions}>
-              Show descriptions
-            </Toggle>
-            <Button onClick={() => clearCategories()}>Clear Categories</Button>
-          </div>
-
-          <Input
-            placeholder="Filter categories…"
-            value={categoryFilter}
-            onChange={e => setCategoryFilter(e.target.value)}
-          />
-
-          {([
-            ["Teleporter", teleporterCategories, TeleporterTranslationMap, TeleporterDisplayOrder],
-            ["Casket", casketCategories, CasketTranslationMap, CasketDisplayOrder],
-            ["Tidal Heritage", tidalHeritageCategories, TidalHeritageTranslationMap, TidalHeritageDisplayOrder],
-            ["Chests", chestCategories, ChestTranslationMap, ChestDisplayOrder],
-            ["Puzzles", puzzleCategories, PuzzleTranslationMap, PuzzleDisplayOrder],
-            ["Specialties", specialtyCategories, SpecialtyTranslationMap, SpecialtyDisplayOrder],
-            ["Echoes", monsterCategories, MonsterTranslationMap, MonsterDisplayOrder],
-            ["Echo (4-Cost)", echo4CostCategories, Echo4CostTranslationMap, Echo4CostDisplayOrder],
-            ["Echoes (3-Cost)", echo3CostCategories, Echo3CostTranslationMap, Echo3CostDisplayOrder],
-            ["Echoes (1-Cost)", echo1CostCategories, Echo1CostTranslationMap, Echo1CostDisplayOrder],
-            ["NPC Monsters", npcMonsterCategories, NPCMobsTranslationMap, NPCMobsDisplayOrder],
-            ["Collect", collectCategories, CollectTranslationMap, CollectDisplayOrder],
-            ["Animals", animalCategories, AnimalTranslationMap, AnimalDisplayOrder],
-            ["Defined", definedCategories, TranslationMap, TranslationDisplayOrder],
-          ] as const).map(([title, categories, translationMap, displayOrder]) => (
-            <>
-              {categories.length > 0 && (
-                <CategoryPaneComponent
-                  key={title}
-                  title={title}
-                  categories={categories.filter(([c, ,]) =>
-                    [
-                      c.toLowerCase(),
-                      translateBlueprint(c).toLowerCase(),
-                      UnionTranslationMap[c]?.name.toLowerCase() ?? '',
-                    ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
-                  )}
-                  displayOrder={displayOrder}
-                  translationMap={translationMap}
-                  toggleCategory={toggleCategory}
-                  toggleCategories={toggleCategories}
-                  toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
-                  showDescriptions={showDescriptions}
-                  dbMapData={dbMapData}
-                  isOpen={dbMapData.displayedCategoryGroups[title]}
-                />
-              )}
-            </>
-
-          ))}
-
-          {showDescriptions && (
-            <CategoryPaneComponent
-              title="Not defined categories"
-              categories={
-                undefinedCategories.filter(([c]) =>
-                  [
-                    c.toLowerCase(),
-                    translateBlueprint(c).toLowerCase(),
-                  ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
-                )
-              }
-              toggleCategory={toggleCategory}
-              toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
-              isOpen={dbMapData.displayedCategoryGroups['Not defined categories']}
-              showDescriptions={showDescriptions}
-              dbMapData={dbMapData}
-            />
-          )}
-        </aside>
-      )}
+      <MapSettingsComponent
+        selectedMap={selectedMap}
+        setSelectedMap={setSelectedMap}
+        coords={coords}
+        setCoords={setCoords}
+        radius={radius}
+        setRadius={setRadius}
+        enableClick={enableClick}
+        setEnableClick={setEnableClick}
+        hideVisited={hideVisited}
+        setHideVisited={setHideVisited}
+        showDescriptions={showDescriptions}
+        setShowDescriptions={setShowDescriptions}
+        clearCategories={clearCategories}
+        dbMapData={dbMapData}
+        toggleCategory={toggleCategory}
+        toggleCategories={toggleCategories}
+        toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
+        categories={categories}
+        categoryFilter={categoryFilter}
+        setCategoryFilter={setCategoryFilter}
+      />
 
       {/* Map */}
       <main className="flex-1 relative z-0">

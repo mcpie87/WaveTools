@@ -1,0 +1,37 @@
+import type { Metadata } from "next";
+import { CharacterProvider } from "@/providers/CharacterProvider";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { DataProvider } from "@/providers/DataProvider";
+import { InventoryProvider } from "@/providers/InventoryProvider";
+import { WeaponProvider } from "@/providers/WeaponProvider";
+import { ClientInit } from "@/components/ClientInit";
+
+export const metadata: Metadata = {
+  title: "WaveTools",
+  description: "Echo simulator and others",
+};
+
+export default function AppLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <ClientInit>
+      <DataProvider>
+        <CharacterProvider>
+          <WeaponProvider>
+            <InventoryProvider>
+              <div className="mx-auto">
+                <Header />
+                <main className="mt-6 ml-6 mr-6">{children}</main>
+                <Footer />
+              </div>
+            </InventoryProvider>
+          </WeaponProvider>
+        </CharacterProvider>
+      </DataProvider>
+    </ClientInit>
+  );
+}

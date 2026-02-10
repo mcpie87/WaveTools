@@ -14,7 +14,7 @@ export const ModalComponent = ({ show, children, onClose, onReturn }: ModalCompo
 
   return (
     <div
-      className="z-50 fixed inset-0 bg-black bg-opacity-50 flex justify-center items-start overflow-y-auto"
+      className="pt-12 z-50 fixed inset-0 bg-black bg-opacity-50 flex justify-center items-start overflow-y-auto"
       onClick={onClose}
     >
       <div
