@@ -258,6 +258,7 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch3.0_067": { name: "Tambourinist" },
   "Monster_Branch3.0_066": { name: "Flautist" },
   "Monster_Branch3.0_065": { name: "Rocksteady Guardian" },
+
   // 3.0 new
   "Monster_Branch3.0_015": { name: "Flora Reindeer" },
   "Monster_Branch3.0_014": { name: "Ironhoof" },
@@ -271,10 +272,14 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch3.0_049": { name: "Twin Nova: Nebulous Cannon" },
   "branch3.0_3_Monster": { name: "Twin Nova: Nebulous Cannon" },
   "branch3.0_678_Monster_monster3_2": { name: "Spacetrek Explorer" },
+  "branch3.0_2_Monster": { name: "Twin Nova: Void Revenant" },
 
   // 3.1?
   "branch3.1_658_Monster_monster3_3": { name: "Kronablight" },
   "branch3.1_658_Monster_monster3_2": { name: "Kronaclaw" },
+  "Monster_branch3.1_014": { name: "Kronaclaw" },
+  "Monster_branch3.1_015": { name: "Kronablight" },
+  "TsEntity_生态动物_冠顶械隼": { name: "Kronablight" },
   "branch3.0_678_Monster_monster3_1": { name: "Sabercat Prowler" },
   "branch3.0_678_Monster_monster3_3": { name: "Sabercat Reaver" },
   "branch3.1_115_Monster_006": { name: "Glommoth" },
