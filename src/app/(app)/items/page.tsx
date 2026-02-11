@@ -42,7 +42,8 @@ export default function ItemList() {
   };
 
   useEffect(() => {
-    fetch('/data/items.json')
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+    fetch(`${basePath}/data/items_minified.json`)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch items');
         return res.json();
