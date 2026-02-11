@@ -17,6 +17,7 @@ import { CustomPopup } from './Components/CustomPopup';
 import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
 import { ASSET_URL } from '@/constants/constants';
 import { MapSettingsComponent } from './Components/MapSettingsComponent';
+import { isDevelopment } from '@/utils/utils';
 
 const simpleCRS = L.CRS.Simple;
 
@@ -322,7 +323,7 @@ export default function XYZMap() {
   const getIcon = useCallback((category: string, visited: boolean) => {
     const key = `${category}:${visited}:${hideVisited}`;
 
-    if (iconCache.current.has(key)) {
+    if (!isDevelopment() && iconCache.current.has(key)) {
       return iconCache.current.get(key)!;
     }
 

@@ -3,6 +3,8 @@ import { IMarker } from "../types";
 import { Button } from "@/components/ui/button";
 import { Popup } from "react-leaflet";
 import { getTranslationMapName } from "../TranslationMaps/translationMap";
+// import { getWorldmapIcon } from "../TranslationMaps/worldmapIconMap";
+// import Image from "next/image";
 
 interface CustomPopupProps {
   marker: IMarker;
@@ -19,11 +21,23 @@ export function CustomPopup({
   const translation = translateBlueprint(marker.category); // synchronous
 
   const title = getTranslationMapName(marker.category);
+  // const icon = getWorldmapIcon(title);
 
   return (
     <Popup>
       <div className="flex flex-col gap-2">
         <div className="font-bold">{title}{showDescription && ` - ${marker.category}`}</div>
+        {/* {icon && (
+          <div className="border">
+            <Image
+              src={icon}
+              height={64}
+              width={64}
+              alt={title}
+              className="w-16 h-16"
+            />
+          </div>
+        )} */}
         {showDescription && (
           <div className="text-xs italic mb-2">
             Translation: {translation}

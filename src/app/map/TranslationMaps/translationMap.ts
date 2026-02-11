@@ -12,6 +12,7 @@ import { Echo3CostDisplayOrder, Echo3CostTranslationMap } from "./Echo3Costs";
 import { Echo1CostDisplayOrder, Echo1CostTranslationMap } from "./Echo1Costs";
 import { NPCMobsDisplayOrder, NPCMobsTranslationMap } from "./NPCMobs";
 import { OreDisplayOrder, OreTranslationMap } from "./Ores";
+import { MiscellaneousDisplayOrder, MiscellaneousTranslationMap } from "./Miscellaneous";
 
 export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_Monster_branch2.4_009": { name: "???" },
@@ -226,6 +227,7 @@ export const displayedCategories = [
   ["Plants", PlantTranslationMap, PlantDisplayOrder],
   ["Ores", OreTranslationMap, OreDisplayOrder],
   ["Animals", AnimalTranslationMap, AnimalDisplayOrder],
+  ["Miscellaneous", MiscellaneousTranslationMap, MiscellaneousDisplayOrder],
   ["Unassigned", TranslationMap, TranslationDisplayOrder],
 ] as const;
 
