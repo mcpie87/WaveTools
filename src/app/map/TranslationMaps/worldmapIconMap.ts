@@ -1,4 +1,4 @@
-import { ItemSpecialty } from "@/app/interfaces/item_types";
+import { ItemOre, ItemPlant, ItemSpecialty } from "@/app/interfaces/item_types";
 import { ASSET_URL } from "@/constants/constants";
 
 const GameAssetIcons: Record<string, string> = {
@@ -218,15 +218,65 @@ const GameAssetIcons: Record<string, string> = {
 
   /* Ores */
   // 1.0
-  "Floramber": "Image/IconC80/T_IconC80_SM_Gat_19A_UI.png",
-  "Scarletthorn": "Image/IconC80/T_IconC80_SM_Gat_22A_UI.png",
-  "Lampylumen": "Image/IconC80/T_IconC80_SM_Gat_21A_UI.png",
-  "Indigoite": "Image/IconC80/T_IconC80_SM_Gat_20A_UI.png",
+  [ItemOre.FLORAMBER]: "Image/IconC80/T_IconC80_SM_Gat_19A_UI.png",
+  [ItemOre.SCARLETTHORN]: "Image/IconC80/T_IconC80_SM_Gat_22A_UI.png",
+  [ItemOre.LAMPYLUMEN]: "Image/IconC80/T_IconC80_SM_Gat_21A_UI.png",
+  [ItemOre.INDIGOITE]: "Image/IconC80/T_IconC80_SM_Gat_20A_UI.png",
   // 1.1
-  "Fluorite": "Image/IconC80/T_IconC80_032_UI.png",
+  [ItemOre.FLUORITE]: "Image/IconC80/T_IconC80_032_UI.png",
   // 2.0
-  "Fool's Gold": "Image/IconC80/T_IconC80_047_UI.png",
-  "Resonant Calcite": "Image/IconC80/T_IconC80_046_UI.png",
+  [ItemOre.FOOLS_GOLD]: "Image/IconC80/T_IconC80_047_UI.png",
+  [ItemOre.RESONANT_CALCITE]: "Image/IconC80/T_IconC80_046_UI.png",
+  // 3.0
+  [ItemOre.LUXITE]: "Image/IconC/T_IconC_069_UI.png",
+  // 3.1
+  [ItemOre.METEORIC_IRON]: "Image/IconC/T_IconC_073_UI.png",
+
+
+  /* Plants */
+  [ItemPlant.CLIMBING_FIG]: "Image/IconRup80/T_IconRup80_SM_Gat_23A_UI.png",
+  [ItemPlant.BITTBERRY]: "Image/IconRup80/T_IconRup80_SM_Gat_32A_UI.png",
+  [ItemPlant.DEWVETCH]: "Image/IconC80/T_IconC80_SM_Gat_08A_UI.png",
+  [ItemPlant.PEARL_LEAF]: "Image/IconC80/T_IconC80_SM_Gat_06A_UI.png",
+  [ItemPlant.NOCTEMINT]: "Image/IconC80/T_IconC80_SM_Gat_09A_UI.png",
+  [ItemPlant.CALTROP]: "Image/IconC80/T_IconC80_Com_004_1_UI.png",
+  [ItemPlant.PERILLA]: "Image/IconC80/T_IconC80_SM_Gat_01B_UI.png",
+  [ItemPlant.HONEYSUCKLE]: "Image/IconC80/T_IconC80_SM_Gat_10A_UI.png",
+  [ItemPlant.ANGELICA]: "Image/IconC80/T_IconC80_SM_Gat_07A_UI.png",
+  [ItemPlant.LEMONGRASS]: "Image/IconC80/T_IconC80_SM_Gat_25A_UI.png",
+  [ItemPlant.ERODORCHID]: "Image/IconC80/T_IconC80_fuguyoulan_UI.png",
+  [ItemPlant.WATERLAMP]: "Image/IconC80/T_IconC80_SM_Gat_01A_UI.png",
+  [ItemPlant.BUNNYWORT]: "Image/IconC80/T_IconC80_yuezao_UI.png",
+  [ItemPlant.CHROMESHELL]: "Image/IconC80/T_IconC80_SM_Gat_26A_UI.png", // Verified
+  [ItemPlant.DRIPSNAIL]: "Image/IconC80/T_IconC80_SM_Gat_27A_UI.png",
+  [ItemPlant.CLIFFRECLUSE]: "Image/IconC80/T_IconC80_SM_Gat_12A_UI.png",
+  [ItemPlant.UMBRAGRICUS]: "Image/IconC80/T_IconC80_SM_Gat_13A_UI.png",
+  [ItemPlant.GEMBERRY]: "Image/IconC80/T_IconC80_SM_Gat_14A_UI.png",
+  [ItemPlant.EDODES]: "Image/IconC80/T_IconC80_SM_Gat_15A_UI.png",
+  [ItemPlant.VIOLA]: "Image/IconC80/T_IconC80_SM_Gat_24A_UI.png",
+  [ItemPlant.BIRD_EGG]: "Image/IconC80/T_IconC80_niaodan_UI.png",
+  [ItemPlant.GLOOM_SLOUGH]: "Image/IconC80/T_IconC80_SM_Gat_28A_UI.png",
+  [ItemPlant.SILVER_LOTUS]: "Image/IconC80/T_IconC80_031_UI.png",
+  [ItemPlant.MASTIC_NUVOLA]: "Image/IconC80/T_IconC80_037_UI.png",
+  [ItemPlant.SEA_FLYTRAP]: "Image/IconTask80/T_IconTask80_Task_085_UI.png",
+  [ItemPlant.VISCUM_BERRY]: "Image/IconC80/T_IconC80_038_UI.png",
+  [ItemPlant.SUNFLARE_EVERLASTING]: "Image/IconC80/T_IconC80_036_UI.png",
+  [ItemPlant.FELICIOUS_OLIVES]: "Image/IconC80/T_IconC80_042_UI.png",
+  [ItemPlant.RAW_MEAT]: "Image/IconC80/T_IconC80_Sep_071_UI.png",
+  [ItemPlant.HELIOBANE_FUNGIA]: "Image/IconC80/T_IconC80_041_UI.png",
+  [ItemPlant.GOLDCREST_SCARAB]: "Image/IconC80/T_IconC80_039_UI.png",
+  [ItemPlant.AMBER_HALITE]: "Image/IconC80/T_IconC80_yanhaipo_UI.png",
+  [ItemPlant.FOWL_MEAT]: "Image/IconC80/T_IconC80_SM_Gat_29A_UI.png",
+  [ItemPlant.OAKNUT]: "Image/IconC80/T_IconC80_limuguo_UI.png",
+  [ItemPlant.EDELSCHNEE]: "Image/IconC/T_IconC_074_UI.png",
+  [ItemPlant.FROSTWORT]: "Image/IconC/T_IconC_070_UI.png",
+  [ItemPlant.STONE_ROSE]: "Image/IconC/T_IconC_056_UI.png",
+  [ItemPlant.FOXTAIL_KELP]: "Image/IconC/T_IconC_071_UI.png",
+  [ItemPlant.LUMINOUS_CALENDULA]: "Image/IconC/T_IconC_058_UI.png",
+  [ItemPlant.LOTUS_SEEDS]: "Image/IconC80/T_IconC80_Sep_021_UI.png", // Verified
+
+  /* Miscellaneous */
+  "Weapon": "Image/IconWeapon/T_IconWeapon21020011_UI.png",
 };
 
 const CustomIcons: Record<string, string> = {

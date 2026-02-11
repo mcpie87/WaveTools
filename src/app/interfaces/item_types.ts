@@ -132,6 +132,64 @@ export enum ItemOre {
   // 2.0
   FOOLS_GOLD = "Fool's Gold",
   RESONANT_CALCITE = "Resonant Calcite",
+  // 3.0
+  LUXITE = "Luxite",
+  // 3.1
+  METEORIC_IRON = "Meteoric Iron",
+}
+
+export enum ItemPlant {
+  // 1.0
+  LOTUS_SEEDS = "Lotus Seeds",
+  CLIMBING_FIG = "Climbing Fig",
+  BITTBERRY = "Bittberry",
+  PEARL_LEAF = "Pearl Leaf",
+  DEWVETCH = "Dewvetch",
+  NOCTEMINT = "Noctemint",
+  HONEYSUCKLE = "Honeysuckle",
+  PERILLA = "Perilla",
+  ANGELICA = "Angelica",
+  LEMONGRASS = "Lemongrass",
+  ERODORCHID = "Erodorchid",
+  WATERLAMP = "Waterlamp",
+  BUNNYWORT = "Bunnywort",
+  CALTROP = "Caltrop",
+  CHROMESHELL = "Chromeshell",
+  DRIPSNAIL = "Dripsnail",
+  CLIFFRECLUSE = "Cliffrecluse",
+  UMBRAGRICUS = "Umbragricus",
+  GEMBERRY = "Gemberry",
+  EDODES = "Edodes",
+  VIOLA = "Viola",
+  GLOOM_SLOUGH = "Gloom Slough",
+
+  // 1.1
+  BIRD_EGG = "Bird Egg",
+
+  // 2.0
+  SILVER_LOTUS = "Silver Lotus",
+
+  // 2.2
+  MASTIC_NUVOLA = "Mastic Nuvola",
+  SEA_FLYTRAP = "Sea Flytrap",
+
+  // 2.4
+  VISCUM_BERRY = "Viscum Berry",
+  SUNFLARE_EVERLASTING = "Sunflare Everlasting",
+  FELICIOUS_OLIVES = "Felicitous Olives",
+  LAURUS_SPROUTS = "Laurus Sprouts",
+
+  RAW_MEAT = "Raw Meat",
+  FOWL_MEAT = "Fowl Meat",
+  HELIOBANE_FUNGIA = "Heliobane Fungia",
+  GOLDCREST_SCARAB = "Goldcrest Scarab",
+  AMBER_HALITE = "Amber Halite",
+  OAKNUT = "Oaknut",
+  EDELSCHNEE = "Edelschnee",
+  FROSTWORT = "Frostwort",
+  STONE_ROSE = "Stone Rose",
+  FOXTAIL_KELP = "Foxtail Kelp",
+  LUMINOUS_CALENDULA = "Luminous Calendar",
 }
 
 export enum ItemWeapon {
