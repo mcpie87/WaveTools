@@ -30,6 +30,7 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.6_35_Gameplay640": { name: "Dreams of Cintercide" },
 
   // 3.0
+  "branch3.0_692_Gameplay_MotorZhongDuan": { name: "Bike Challenge" }, // stationary one
   "branch3.0_135_Gameplay513": { name: "Bike Challenge" },
   "branch3.1_115_Gameplay513": { name: "Smartprint Cube" },
   "branch3.0_939_NPC420085": { name: "Soliskin" },
