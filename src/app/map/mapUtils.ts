@@ -1,4 +1,4 @@
-import { ASSET_URL } from "@/constants/constants";
+
 import { APIMarker, IMarker } from "./types";
 
 export const scaleFactor = 0.30118;
@@ -18,17 +18,23 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<numbe
   visited: visitedMap[marker.MapId] || false,
 });
 
-const prefix = `${ASSET_URL}UIResources/UiWorldMap/`;
+
+const MAP_TILES_URL = "https://raw.githubusercontent.com/mcpie87/wuwa-map-tiles/refs/heads/master";
+const prefix = MAP_TILES_URL;
+// ? `${MAP_TILES_URL}` //'/map_tiles/'
+// : `${ASSET_URL}UIResources/UiWorldMap/Image`;
+
+const format = 'webp';
 
 export const mapUrl: Record<number, string> = {
-  8: `${prefix}/Image/MapTiles/T_MapTiles_{x}_{y}_UI.png`, // Main
-  900: `${prefix}/Image/HHATiles/T_HHATiles_{x}_{y}_UI.png`, // Tethys Deep
-  902: `${prefix}/Image/JKTiles/T_JKTiles_{x}_{y}_UI.png`, // Vault Undergrounds
-  903: `${prefix}/Image/DDTTiles/T_DDTTiles_{x}_{y}_UI.png`, // Avinoleum
-  905: `${prefix}/Image/YHSYCTiles/T_YHSYCTiles_{x}_{y}_UI.png`, // Fabricatorium of the Deep
-  906: `${prefix}/Image/LHLTiles/T_LHLTiles_{x}_{y}_UI.png`, // Lahai Roi
-  // 907: `${prefix}/Image/SUIBOTiles/T_SUIBOTiles_{x}_{y}_UI.png`, // Honami City - war area
-  910: `${prefix}/Image/CAFETiles/T_CAFETiles_{x}_{y}_UI.png`, // Honami City
+  8: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`, // Main
+  900: `${prefix}/HHATiles/T_HHATiles_{x}_{y}_UI.${format}`, // Tethys Deep
+  902: `${prefix}/JKTiles/T_JKTiles_{x}_{y}_UI.${format}`, // Vault Undergrounds
+  903: `${prefix}/DDTTiles/T_DDTTiles_{x}_{y}_UI.${format}`, // Avinoleum
+  905: `${prefix}/YHSYCTiles/T_YHSYCTiles_{x}_{y}_UI.${format}`, // Fabricatorium of the Deep
+  906: `${prefix}/LHLTiles/T_LHLTiles_{x}_{y}_UI.${format}`, // Lahai Roi
+  // 907: `${prefix}/SUIBOTiles/T_SUIBOTiles_{x}_{y}_UI.${format}`, // Honami City - war area
+  910: `${prefix}/CAFETiles/T_CAFETiles_{x}_{y}_UI.${format}`, // Honami City
 };
 
 export const mapIdToName: Map<number, string> = new Map([
