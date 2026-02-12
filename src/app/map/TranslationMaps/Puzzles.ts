@@ -8,6 +8,7 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "Gameplay200": { name: "Simulation Training Device" },
   "Gameplay003": { name: "Fragile Rock" },
   "Gameplay004": { name: "Fissured Ledge" },
+  "Gameplay055": { name: "Shooting Challenge" },
 
   // 1.1
   "Gameplay207": { name: "Tactical Hologram: Ski" },

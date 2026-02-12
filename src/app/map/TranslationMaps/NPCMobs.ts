@@ -1,6 +1,10 @@
 import { TranslationMapEntry } from "./TranslationMapInterface";
 
 export const NPCMobsTranslationMap: Record<string, TranslationMapEntry> = {
+  "Monster023": { name: "Exile Commoner" },
+  "Monster024": { name: "Exile Commoner" },
+  "Monster025": { name: "Exile Commoner" },
+  "Monster028": { name: "Exile Commoner" },
   "Monster_branch2.4_010": { name: "Lightcrest Gladiator" },
   "Monster_branch2.4_011": { name: "Flamecrest Gladiator" },
   "Monster_branch2.4_018": { name: "Lightcrest Gladiator" },

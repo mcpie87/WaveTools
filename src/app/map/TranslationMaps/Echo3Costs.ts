@@ -81,10 +81,13 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster032": { name: Echo3Cost.CYAN_FEATHERED_HERON },
   "Monster043": { name: Echo3Cost.ROSESHROOM },
   "Monster050": { name: Echo3Cost.HOOCHIEF },
+  "Monster051": { name: Echo3Cost.SPEARBACK },
   "Monster128": { name: Echo3Cost.HOOCHIEF },
   "Monster140": { name: Echo3Cost.HOOCHIEF },
   "Monster141": { name: Echo3Cost.HOOCHIEF },
   "Monster_branch1.3_007": { name: Echo3Cost.HOOCHIEF },
+  "Monster054": { name: Echo3Cost.CARAPACE },
+  "Monster049": { name: Echo3Cost.HAVOC_DREADMANE },
 
   // 2.0
   "Monster_branch2.0_009": { name: Echo3Cost.CUDDLE_WUDDLE },

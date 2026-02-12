@@ -208,6 +208,7 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   "SceneObj002": { name: "Wooden Box" },
   "SceneObj005": { name: "Tree Trunk" },
   "branch3.1_40_Gameplay_3_1/VisionSummon4": { name: "Glohomoth Vision" },
+  "Treasure031": { name: "Scavenger's Backpack" },
 };
 export const TranslationDisplayOrder = [
 ];

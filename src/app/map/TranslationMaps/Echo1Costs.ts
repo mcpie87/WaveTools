@@ -5,6 +5,7 @@ export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster001": { name: "Vanguard Junrock" },
   "Monster002": { name: "Fission Junrock" },
   "Monster003": { name: "Electro Predator" },
+  "Monster004": { name: "Fusion Warrior" },
   "Monster010": { name: "Glacio Predator" },
   "Monster011": { name: "Aero Predator" },
   "Monster014": { name: "Cruisewing" },
