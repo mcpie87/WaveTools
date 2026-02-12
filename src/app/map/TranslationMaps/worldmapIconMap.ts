@@ -2,8 +2,10 @@ import { ItemOre, ItemPlant, ItemSpecialty } from "@/app/interfaces/item_types";
 import { ASSET_URL } from "@/constants/constants";
 
 const GameAssetIcons: Record<string, string> = {
+  /* Teleporters */
   "Resonance Nexus": "Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
   "Resonance Beacon": "Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+  "Mechascout": "Atlas/WorldMapIcon/SP_IconMap_Play_56_UI.png",
 
   /* Caskets */
   "Sonance Casket": "Image/IconMst160/T_IconMst160_006_UI.png",

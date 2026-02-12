@@ -32,6 +32,7 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   // 3.0
   "branch3.0_692_Gameplay_MotorZhongDuan": { name: "Bike Challenge" }, // stationary one
   "branch3.0_135_Gameplay513": { name: "Bike Challenge" },
+  "branch2.8_41_Gameplay_3_0/RollBlock5": { name: "Smartprint Cube" },
   "branch3.1_115_Gameplay513": { name: "Smartprint Cube" },
   "branch3.0_939_NPC420085": { name: "Soliskin" },
 

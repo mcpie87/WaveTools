@@ -15,8 +15,11 @@ export const TeleporterTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.2_14_Teleport4": { name: "Resonance Beacon" }, // TL shows Nexus - it's a Beacon
   "branch2.4_143_Gameplay_2_4QQ2": { name: "Resonance Beacon" },
   "branch3.0_693_Gameplay_3_0/Common2": { name: "Resonance Beacon" },
+
+  "branch2.8_41_Gameplay_3_0/Common1": { name: "Mechascout" },
 };
 export const TeleporterDisplayOrder = [
   "Resonance Nexus",
   "Resonance Beacon",
+  "Mechascout"
 ];
