@@ -6,6 +6,8 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "Animal032": { name: "Blobfly" },
   "Gameplay381": { name: "Hovering Magnetite" },
   "Gameplay200": { name: "Simulation Training Device" },
+  "Gameplay003": { name: "Fragile Rock" },
+  "Gameplay004": { name: "Fissured Ledge" },
 
   // 1.1
   "Gameplay207": { name: "Tactical Hologram: Ski" },
@@ -35,6 +37,7 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.8_41_Gameplay_3_0/RollBlock5": { name: "Smartprint Cube" },
   "branch3.1_115_Gameplay513": { name: "Smartprint Cube" },
   "branch3.0_939_NPC420085": { name: "Soliskin" },
+  "branch3.0_40_Gameplay_3_0/VisionSummon11": { name: "Geospider Projection" },
 
   // 3.1
   "branch3.1_115_Gameplay_3_1/SunSpiritPPV": { name: "Soliskin Guide" },
