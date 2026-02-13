@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, ChevronUp, X } from "lucide-react";
 import clsx from "clsx";
 import DarkModeToggle from "./DarkModeToggle";
+import { GAME_VERSION } from "@/constants/constants";
 
 export default function Header({ collapsible = false }: { collapsible?: boolean }) {
   const [isOpen, setIsOpen] = useState(!collapsible);
@@ -16,7 +17,7 @@ export default function Header({ collapsible = false }: { collapsible?: boolean 
       {collapsible && (
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="fixed top-3 right-3 z-[1001] p-2 rounded-lg bg-base-300/80 backdrop-blur-md shadow-md hover:bg-base-200"
+          className="fixed top-3 right-3 z-40 p-2 rounded-lg bg-base-300/80 backdrop-blur-md shadow-md hover:bg-base-200"
           aria-label={isOpen ? "Collapse header" : "Expand header"}
         >
           {isOpen ? <ChevronUp className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -26,7 +27,7 @@ export default function Header({ collapsible = false }: { collapsible?: boolean 
       {/* Full header – slides up/down as one unit */}
       <header
         className={clsx(
-          "top-0 left-0 right-0 z-[1000] bg-base-300/80 backdrop-blur-md shadow-sm transition-all duration-300",
+          "top-0 left-0 right-0 z-30 bg-base-300/80 backdrop-blur-md shadow-sm transition-all duration-300",
           collapsible ? "absolute" : "block",
           isOpen ? "translate-y-0" : "-translate-y-full"
         )}
@@ -36,7 +37,7 @@ export default function Header({ collapsible = false }: { collapsible?: boolean 
             {/* Title */}
             <NavButton href="/">
               <h1 className="text-xl font-bold">
-                WaveTools
+                WaveTools - {GAME_VERSION}
               </h1>
             </NavButton>
 

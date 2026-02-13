@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import { DataProvider } from "@/providers/DataProvider";
 import { InventoryProvider } from "@/providers/InventoryProvider";
 import { WeaponProvider } from "@/providers/WeaponProvider";
-import { ClientInit } from "@/components/ClientInit";
 
 export const metadata: Metadata = {
   title: "WaveTools",
@@ -18,20 +17,18 @@ export default function AppLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClientInit>
-      <DataProvider>
-        <CharacterProvider>
-          <WeaponProvider>
-            <InventoryProvider>
-              <div className="min-h-screen flex flex-col">
-                <Header />
-                <main className="m-6 flex-1">{children}</main>
-                <Footer />
-              </div>
-            </InventoryProvider>
-          </WeaponProvider>
-        </CharacterProvider>
-      </DataProvider>
-    </ClientInit>
+    <DataProvider>
+      <CharacterProvider>
+        <WeaponProvider>
+          <InventoryProvider>
+            <div className="min-h-screen flex flex-col">
+              <Header />
+              <main className="m-6 flex-1">{children}</main>
+              <Footer />
+            </div>
+          </InventoryProvider>
+        </WeaponProvider>
+      </CharacterProvider>
+    </DataProvider>
   );
 }
