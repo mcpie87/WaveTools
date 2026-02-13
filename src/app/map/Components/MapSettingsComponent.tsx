@@ -8,7 +8,7 @@ import {
   UnionTranslationMap
 } from '../TranslationMaps/translationMap';
 
-import { mapIdToName } from "../mapUtils";
+import { mapConfigs, MapName } from "../mapUtils";
 import { Input } from "@/components/ui/input";
 import { Toggle } from "@/components/ui/toggle";
 import { CategoryPaneComponent } from "./CategoryPaneComponent";
@@ -17,8 +17,8 @@ import { DbMapData } from "@/types/mapTypes";
 import { DevModeSettingsComponent } from "./DevModeSettingsComponent";
 
 interface MapSettingsComponentProps {
-  selectedMap: number;
-  setSelectedMap: (id: number) => void;
+  selectedMap: MapName;
+  setSelectedMap: (id: MapName) => void;
   coords: { x: number; y: number; z: number };
   setCoords: (coords: React.SetStateAction<{ x: number; y: number; z: number }>) => void;
   radius: number;
@@ -80,14 +80,14 @@ export const MapSettingsComponent = ({
           <Button className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
 
           <div className="rounded-lg border p-3 space-y-2 bg-base-200">
-            <Select value={String(selectedMap)} onValueChange={v => setSelectedMap(+v)}>
+            <Select value={selectedMap} onValueChange={v => setSelectedMap(v as MapName)}>
               <SelectTrigger>
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
-                  {[...mapIdToName].map(([id, name]) => (
-                    <SelectItem key={id} value={String(id)}>
+                  {Object.keys(mapConfigs).map((name) => (
+                    <SelectItem key={name} value={name}>
                       {name}
                     </SelectItem>
                   ))}
