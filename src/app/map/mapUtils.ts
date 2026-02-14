@@ -37,7 +37,7 @@ export const getMapCenter = (mapName: MapName): L.LatLngExpression => {
   ]
 }
 
-export const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<number, boolean>): IMarker => ({
+export const convertMarkerToCoord = (marker: APIMarker, visitedMap: Set<number>): IMarker => ({
   ...translateGameToMap({
     x: marker.Transform[0].X,
     y: marker.Transform[0].Y,
@@ -45,13 +45,14 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<numbe
   }),
   id: marker.Id,
   areaId: marker.AreaId!,
+  entityId: marker.EntityId,
   name: marker.BlueprintType,
   description: JSON.stringify(marker, null, 2),
   displayedX: marker.Transform[0].X / 10000,
   displayedY: marker.Transform[0].Y / 10000,
   displayedZ: marker.Transform[0].Z / 10000,
   category: marker.BlueprintType,
-  visited: visitedMap[marker.MapId] || false,
+  visited: visitedMap.has(marker.EntityId as number) || false,
 });
 
 
@@ -61,8 +62,6 @@ const prefix = MAP_TILES_URL;
 // : `${ASSET_URL}UIResources/UiWorldMap/Image`;
 
 const format = 'webp';
-
-
 export enum MapName {
   SOLARIS_3 = "Solaris-3",
   RINASCITA = "Rinascita",

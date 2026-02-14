@@ -15,7 +15,7 @@ import { loadBlueprintTranslations } from './BlueprintTranslationService';
 import { convertMarkerToCoord, getMapCenter, isGameCoordInGameBounds, mapConfigs, MapName, scaleFactor, TILE_SIZE } from './mapUtils';
 import { CustomPopup } from './Components/CustomPopup';
 import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
-import { ASSET_URL } from '@/constants/constants';
+import { ASSET_URL, LEVEL_ENTITY_CONFIG_URL } from '@/constants/constants';
 import { MapSettingsComponent } from './Components/MapSettingsComponent';
 import { isDevelopment } from '@/utils/utils';
 
@@ -145,9 +145,13 @@ export default function XYZMap() {
   const [dbMapData, setDbMapData] = useState<DbMapData>(() => {
     const loaded = storageService.load() as Partial<DbMapData> | null;
 
+    console.log("loaded", loaded, typeof loaded);
+    console.log("loaded", loaded?.visitedMarkers);
+    console.log("loaded set", new Set(loaded?.visitedMarkers));
+
     return {
       visibleCategories: loaded?.visibleCategories ?? {},
-      visitedMarkers: loaded?.visitedMarkers ?? {},
+      visitedMarkers: new Set(loaded?.visitedMarkers ?? []),
       displayedCategoryGroups: loaded?.displayedCategoryGroups ?? {},
     };
   });
@@ -159,7 +163,9 @@ export default function XYZMap() {
 
 
   useEffect(() => {
-    storageService.save(dbMapData);
+    storageService.save(
+      dbMapData
+    );
   }, [dbMapData]);
 
   /* ----------------------------- Data ----------------------------- */
@@ -175,8 +181,7 @@ export default function XYZMap() {
 
   useEffect(() => {
     (async () => {
-      const URL =
-        'https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYJjynAOgE0xzLG7NC35IMYJrq9uTnS4KXpDBO';
+      const URL = LEVEL_ENTITY_CONFIG_URL["3.1"];
 
       const cache = await caches.open('levelentityconfig-cache');
       const cached = await cache.match(URL);
@@ -238,7 +243,7 @@ export default function XYZMap() {
     const visited: Record<string, number> = {};
     for (const m of markers) {
       totals[m.BlueprintType] = (totals[m.BlueprintType] ?? 0) + 1;
-      visited[m.BlueprintType] = (visited[m.BlueprintType] ?? 0) + (dbMapData.visitedMarkers[m.Id as number] ? 1 : 0);
+      visited[m.BlueprintType] = (visited[m.BlueprintType] ?? 0) + (dbMapData.visitedMarkers.has(m.EntityId as number) ? 1 : 0);
     }
     const counts: Record<string, [number, number]> = {};
     for (const m of markers) {
@@ -275,18 +280,25 @@ export default function XYZMap() {
     return [
       ...(enableClick ? [convertMarkerToCoord(selectedPoint, dbMapData.visitedMarkers)] : []),
       ...base.map((m) => convertMarkerToCoord(m, dbMapData.visitedMarkers))
-        .filter(m => !hideVisited || !dbMapData.visitedMarkers[m.id as number]),
+        .filter(m => !hideVisited || !dbMapData.visitedMarkers.has(m.entityId as number)),
     ]
   }, [markers, markersWithinRadius, dbMapData.visibleCategories, hideVisited, enableClick, selectedPoint, dbMapData.visitedMarkers]);
 
   const toggleMarkerVisited = (marker: IMarker) => {
-    setDbMapData((prev) => ({
-      ...prev,
-      visitedMarkers: {
-        ...prev.visitedMarkers,
-        [marker.id as number]: !prev.visitedMarkers[marker.id as number],
+    if (marker.entityId === undefined) return;
+
+    setDbMapData((prev) => {
+      const updatedVisited = new Set([...prev.visitedMarkers]);
+      if (updatedVisited.has(marker.entityId as number)) {
+        updatedVisited.delete(marker.entityId as number);
+      } else {
+        updatedVisited.add(marker.entityId as number);
       }
-    }));
+      return {
+        ...prev,
+        visitedMarkers: updatedVisited,
+      };
+    });
   }
 
   const toggleCategory = (category: string) => {
@@ -400,9 +412,9 @@ export default function XYZMap() {
   const markerComponents = useMemo(() => {
     return displayedMarkers.map((m) => (
       <Marker
-        key={`${m.id}:${dbMapData.visitedMarkers[m.id as number]}:${hideVisited}`}
+        key={`${m.id}:${dbMapData.visitedMarkers.has(m.entityId as number)}:${hideVisited}`}
         position={[m.y, m.x]}
-        icon={getIcon(m.category, !!dbMapData.visitedMarkers[m.id as number])}
+        icon={getIcon(m.category, !!dbMapData.visitedMarkers.has(m.entityId as number))}
         eventHandlers={{
           click: () => {
             if (m.areaId !== activeAreaId) {
@@ -414,7 +426,7 @@ export default function XYZMap() {
         <CustomPopup
           marker={m}
           toggleVisited={() => toggleMarkerVisited(m)}
-          visited={!!dbMapData.visitedMarkers[m.id as number]}
+          visited={dbMapData.visitedMarkers.has(m.entityId as number)}
           showDescription={showDescriptions}
         />
       </Marker>
@@ -458,6 +470,7 @@ export default function XYZMap() {
         <MapContainer
           key={selectedMap}
           crs={simpleCRS}
+          preferCanvas={true}
           center={getMapCenter(selectedMap)}
           zoom={0}
           minZoom={-10}

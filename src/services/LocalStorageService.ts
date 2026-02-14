@@ -43,7 +43,14 @@ class LocalStorageService {
     if (!this.isBrowser()) {
       return;
     }
-    localStorage.setItem(this.key, JSON.stringify(data));
+
+    const serialized = JSON.stringify(data, (_key, value) => {
+      if (value instanceof Set) {
+        return [...value];
+      }
+      return value;
+    });
+    localStorage.setItem(this.key, serialized);
   }
 
   clear() {
