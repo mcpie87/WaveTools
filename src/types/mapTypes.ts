@@ -1,5 +1,5 @@
 export interface DbMapData {
   visibleCategories: Record<string, boolean>,
-  visitedMarkers: Record<number, boolean>,
+  visitedMarkers: Set<number>, // Record<number, boolean>,
   displayedCategoryGroups: Record<string, boolean>,
 }
