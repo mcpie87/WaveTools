@@ -22,6 +22,7 @@ const config: Config = {
 				'base-100': 'rgb(var(--base-100) / <alpha-value>)',
 				'base-200': 'rgb(var(--base-200) / <alpha-value>)',
 				'base-300': 'rgb(var(--base-300) / <alpha-value>)',
+				'base-400': 'rgb(var(--base-400) / <alpha-value>)',
 				'static-base-light-100': '#dddddd',
 				'static-base-dark-100': '#333333',
 				'static-text-primary': '#000000',
