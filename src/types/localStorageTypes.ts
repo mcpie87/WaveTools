@@ -6,6 +6,7 @@ import { WeaponDBSchema } from "./weaponTypes";
 
 export const LOCAL_STORAGE_SCHEMA_VERSION = "3.0";
 export enum LocalStorageKey {
+  THEME = "theme",
   SCHEMA_VERSION = "schema_version",
   RESONATORS = "resonators",
   WEAPONS = "weapons",

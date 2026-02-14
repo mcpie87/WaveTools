@@ -192,6 +192,22 @@ export enum ItemPlant {
   LUMINOUS_CALENDULA = "Luminous Calendar",
 }
 
+export enum ItemAnimal {
+  PHOENIX_BUTTERFLY = "Phoenix Butterfly",
+  RED_FEATHER_BUTTERFLY = "Red Feather Butterfly",
+  BLUE_FEATHER_BUTTERFLY = "Blue Feather Butterfly",
+
+  SILVER_BANDED_LIZARD = "Silver-Banded Lizard",
+  GREEN_PIT_LIZARD = "Green Pit Lizard",
+  AZURE_LIZARD = "Azure Lizard",
+
+  BLACK_STRIPED_FROG = "Black-Striped Frog",
+  GOLDENBACK_FROG = "Goldenback Frog",
+
+  CHRYSOPA = "Chrysopa",
+  GOLDEN_RINGED_CHRYSOPA = "Golden-ringed Dragonfly",
+}
+
 export enum ItemWeapon {
   PISTOL_RARITY_5 = "Flawless Phlogiston",
   PISTOL_RARITY_4 = "Refined Phlogiston",
