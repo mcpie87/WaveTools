@@ -30,6 +30,10 @@ export const __ALL_MAPS__ = "__ALL_MAPS__" as const;
 export const __ALL_MAPS_BUT_DEFINED__ = "__ALL_MAPS_BUT_DEFINED__" as const;
 export const __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__ = "__ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__" as const;
 export const __ALL_MAPS_BUT_TEST_DUNGEON__ = "__ALL_MAPS_BUT_TEST_DUNGEON__" as const;
+export const __ALL_MAPS_BUT_DUNGEONS_AND_TEST__ = "__ALL_MAPS_BUT_DUNGEONS_AND_TEST__" as const;
+export const __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__ = "__ALL_MAPS_BUT_WORLD_MAP_AND_TEST__" as const;
+export const __WORLD_MAPS__ = "__WORLD_MAPS__" as const;
+export const __DUNGEONS_ONLY__ = "__DUNGEONS_ONLY__" as const;
 
 export const isCustomMapSelected = (selectedMap: SelectedMap) => {
   return ([
@@ -37,6 +41,10 @@ export const isCustomMapSelected = (selectedMap: SelectedMap) => {
     __ALL_MAPS_BUT_DEFINED__,
     __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__,
     __ALL_MAPS_BUT_TEST_DUNGEON__,
+    __ALL_MAPS_BUT_DUNGEONS_AND_TEST__,
+    __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__,
+    __WORLD_MAPS__,
+    __DUNGEONS_ONLY__,
   ] as SelectedMap[]).includes(selectedMap);
 }
 
@@ -105,8 +113,13 @@ export enum MapName {
 // dig in instancedungeon.json for translations
 export enum MainStoryDungeonName {
   GRAND_LIBRARY = "(Jinhsi) Grand Library",
+  WARBLADE_FROM_ABOVE = "(Dreamless) Warblade From Above",
   BLACK_SHORES_STELLAR_MATRIX = "(Shorekeeper) Black Shores Stellar Matrix",
   RINASCITA_AVERARDO_VAULT = "(Carlotta) Averardo Vault",
+  RINASCITA_AVERARDO_UNDERGROUNDS_TOWER = "(Zani+Phoebe) Abandoned Tower",
+  // Timestamp for below https://www.youtube.com/watch?v=431EyYmXbtA&t=1381s
+  FABRICATORIUM_PHROLOVA = "(Fabricatorium) The Lost Beyond",
+  IUNO_CHAOS = "(Iuno) Chaos Dungeon",
   // aka leviathan dungeon during galbrena release
   SEPTIMONT_PLANE_OF_THE_DARK_TIDE = "(Septimont) Plane of the Dark Tide",
 }
@@ -114,16 +127,23 @@ export enum StoryDungeonName {
   STORY_JIYAN = "Jiyan",
   STORY_YINLIN = "Yinlin",
   STORY_LINGYANG = "Lingyang",
+  STORY_ZHEZHI = "Zhezhi",
   STORY_CHANGLI = "Changli",
   STORY_ENCORE_PART_1 = "Encore Part 1",
   STORY_ENCORE_PART_2 = "Encore Part 2",
   STORY_CAMELLYA = "Camellya",
   STORY_CARLOTTA = "Carlotta",
+  STORY_ROCCIA = "Roccia",
   STORY_ZANI = "Zani",
   STORY_CANTARELLA = "Cantarella",
 }
 export enum SonoroDungeonName {
+  // 1.0
+  WILL_OF_FLAT_HORIZON = "Will of the Flat Horizon",
   CONFIGURATIONAL_TRUTH = "Configurational Truth",
+  // 1.1
+  OFFERING_SITE = "Offering Site",
+  // 2.0
   THE_PRISONED_SONG = "The Prisoned Song",
   COMMAND_RISE = "Command Rise",
   TWILIGHT_RISE = "Twilight Rise",
@@ -138,6 +158,13 @@ export enum TestDungeonName {
   TEST_DUNGEON_6 = "Test ??? 4",
   TEST_DUNGEON_7 = "Test ??? 5",
   TEST_DUNGEON_8 = "Test ??? 6",
+  TEST_DUNGEON_9 = "Test ??? 7",
+  VEHICLE_TEST = "Vehicle Test",
+  TD_INTERACTION_TEST = "TD Interaction Test",
+  STORY_JIYAN = "Jiyan Test ?",
+  AUTOMATION_SAMPLE_TEST = "Automation Sample Test",
+  TASK_CONFIGURATION_TEST_MAP = "Task Configuration Test Map",
+  YANGYANG_TEST_DUNGEON = "Yangyang Test Dungeon",
 }
 
 export type UnionMapName = MapName | StoryDungeonName | SonoroDungeonName | TestDungeonName;
@@ -212,20 +239,34 @@ export const mainStoryDungeonMapConfigs: Record<string, MapConfig> = {
     // Shows 1/4/0/0 but real value is 1/3/0/0
     mapId: 49,
   },
+  [MainStoryDungeonName.WARBLADE_FROM_ABOVE]: {
+    mapId: 1504,
+  },
   [MainStoryDungeonName.BLACK_SHORES_STELLAR_MATRIX]: {
     mapId: 1510, // 1006 - extremely fake values? yet translation is misleading
   },
   [MainStoryDungeonName.RINASCITA_AVERARDO_VAULT]: {
     mapId: 1511,
   },
+  [MainStoryDungeonName.RINASCITA_AVERARDO_UNDERGROUNDS_TOWER]: {
+    mapId: 1509,
+  },
   [MainStoryDungeonName.SEPTIMONT_PLANE_OF_THE_DARK_TIDE]: {
     mapId: 1518,
+  },
+  [MainStoryDungeonName.IUNO_CHAOS]: {
+    // Quest: Iuno hand holding dungeon
+    mapId: 1532,
+  },
+  [MainStoryDungeonName.FABRICATORIUM_PHROLOVA]: {
+    // Quest: ???
+    mapId: 2513,
   },
 };
 
 export const storyDungeonMapConfigs: Record<string, MapConfig> = {
   [StoryDungeonName.STORY_JIYAN]: {
-    mapId: 92,
+    mapId: 91,
   },
   [StoryDungeonName.STORY_YINLIN]: {
     // Shows 1/1/1/1
@@ -234,6 +275,9 @@ export const storyDungeonMapConfigs: Record<string, MapConfig> = {
   },
   [StoryDungeonName.STORY_LINGYANG]: {
     mapId: 94,
+  },
+  [StoryDungeonName.STORY_ZHEZHI]: {
+    mapId: 1002,
   },
   [StoryDungeonName.STORY_CHANGLI]: {
     mapId: 1001,
@@ -247,12 +291,15 @@ export const storyDungeonMapConfigs: Record<string, MapConfig> = {
   [StoryDungeonName.STORY_CAMELLYA]: {
     mapId: 1006,
   },
-  [StoryDungeonName.STORY_ZANI]: {
-    mapId: 1013,
-  },
   [StoryDungeonName.STORY_CARLOTTA]: {
     // https://www.youtube.com/watch?v=-y8a32-8k64
     mapId: 1003,
+  },
+  [StoryDungeonName.STORY_ROCCIA]: {
+    mapId: 1004,
+  },
+  [StoryDungeonName.STORY_ZANI]: {
+    mapId: 1013,
   },
   [StoryDungeonName.STORY_CANTARELLA]: {
     mapId: 1010,
@@ -260,11 +307,25 @@ export const storyDungeonMapConfigs: Record<string, MapConfig> = {
 };
 
 export const sonoroDungeonMapConfigs: Record<string, MapConfig> = {
+  // 1.0
+  [SonoroDungeonName.WILL_OF_FLAT_HORIZON]: {
+    // Will of the Flat Horizon (no quest)
+    // https://www.youtube.com/watch?v=dMwew7Nf9VQ
+    mapId: 2002,
+  },
   [SonoroDungeonName.CONFIGURATIONAL_TRUTH]: {
     // Sonoro in Huanglong (no quest)
     // https://www.youtube.com/watch?v=w9NM31mgCoA
     mapId: 6001,
   },
+
+  // 1.1
+  [SonoroDungeonName.OFFERING_SITE]: {
+    mapId: 1508,
+  },
+
+
+  // 2.0
   [SonoroDungeonName.THE_PRISONED_SONG]: {
     // Quests Hymn of the Sea of Clouds
     // https://www.youtube.com/watch?v=UhmwG26LQyk
@@ -312,6 +373,28 @@ export const testDungeonMapConfigs: Record<string, MapConfig> = {
   },
   [TestDungeonName.TEST_DUNGEON_8]: {
     mapId: 80, // "Id": "InstanceDungeon_8002_MapName", "Content": "rogue-Demo",
+  },
+  [TestDungeonName.VEHICLE_TEST]: {
+    // No translations at all
+    mapId: 104,
+  },
+  [TestDungeonName.TD_INTERACTION_TEST]: {
+    mapId: 31, // "Id": "InstanceDungeon_31_MapName", "Content": "TD - Interaction Test",
+  },
+  [TestDungeonName.TEST_DUNGEON_9]: {
+    mapId: 44, // "Id": "InstanceDungeon_44_MapName", "Content": "TD-组件测试",
+  },
+  [TestDungeonName.STORY_JIYAN]: {
+    mapId: 92,
+  },
+  [TestDungeonName.AUTOMATION_SAMPLE_TEST]: {
+    mapId: 110, // "Id": "InstanceDungeon_110_MapName","Content": "Automation Sample Test Map",
+  },
+  [TestDungeonName.TASK_CONFIGURATION_TEST_MAP]: {
+    mapId: 102, // "Id": "InstanceDungeon_102_MapName", "Content": "Task Configuration Test Map",
+  },
+  [TestDungeonName.YANGYANG_TEST_DUNGEON]: {
+    mapId: 4901, // "Id": "InstanceDungeon_4901_MapName", "Content": "test Yangyang 战斗CE",
   },
 };
 

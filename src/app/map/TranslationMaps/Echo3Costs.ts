@@ -93,6 +93,10 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster039": { name: Echo3Cost.TAMBOURINIST },
   "Monster037": { name: Echo3Cost.STONEWALL_BRACER },
   "Monster040": { name: Echo3Cost.ROCKSTEADY_GUARDIAN },
+  "branch2.6_177_Monster_monster2_6/BetweenTheChaos21": { name: Echo3Cost.CHASM_GUARDIAN },
+
+  // 1.1
+  "Monster126": { name: Echo3Cost.LIGHTCRUSHER },
 
   // 2.0
   "Monster_branch2.0_009": { name: Echo3Cost.CUDDLE_WUDDLE },
@@ -108,6 +112,10 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.0_Monster_branch2.0_032": { name: Echo3Cost.ABYSSAL_PATRICIUS },
   "branch2.0_Monster_branch2.0_033": { name: Echo3Cost.ABYSSAL_PATRICIUS },
   "branch2.0_Monster_branch2.0_034": { name: Echo3Cost.ABYSSAL_GLADIUS },
+  "branch2.6_177_Monster_monster2_6/BetweenTheChaos18": { name: Echo3Cost.ABYSSAL_GLADIUS },
+
+  // 2.3
+  "Monster_Branch2.2_006": { name: Echo3Cost.CAPITANEUS },
 
 
   // 2.4
@@ -118,6 +126,8 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_Monster_77069": { name: Echo3Cost.KERASAUR },
   "Monster_branch2.4_024": { name: "Pilgrim's Shell" },
   "branch2.4_Monster_branch2.4_032": { name: "Pilgrim's Shell" },
+  "branch2.6_177_Monster_monster2_6/BetweenTheChaos20": { name: "Phantom: Capitaneus" },
+  "branch2.6_177_Monster_monster2_6/BetweenTheChaos19": { name: "Abyssal Mercator" },
 
   // 2.5?
   "Monster_Branch2.6_002": { name: Echo3Cost.CORROSAURUS },

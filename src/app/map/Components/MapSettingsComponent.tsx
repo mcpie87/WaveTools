@@ -8,7 +8,7 @@ import {
   UnionTranslationMap
 } from '../TranslationMaps/translationMap';
 
-import { __ALL_MAPS__, __ALL_MAPS_BUT_DEFINED__, __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__, __ALL_MAPS_BUT_TEST_DUNGEON__, mainStoryDungeonMapConfigs, mapConfigs, sonoroDungeonMapConfigs, storyDungeonMapConfigs, testDungeonMapConfigs } from "../mapUtils";
+import { __ALL_MAPS__, __ALL_MAPS_BUT_DEFINED__, __ALL_MAPS_BUT_DUNGEONS_AND_TEST__, __ALL_MAPS_BUT_TEST_DUNGEON__, __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__, __DUNGEONS_ONLY__, __WORLD_MAPS__, mainStoryDungeonMapConfigs, mapConfigs, sonoroDungeonMapConfigs, storyDungeonMapConfigs, testDungeonMapConfigs } from "../mapUtils";
 import { Input } from "@/components/ui/input";
 import { Toggle } from "@/components/ui/toggle";
 import { CategoryPaneComponent } from "./CategoryPaneComponent";
@@ -77,8 +77,11 @@ export const MapSettingsComponent = ({
     if (showDungeonMaps && showDescriptions) {
       const adminItems = [
         { value: __ALL_MAPS__, label: "EVERYTHING" },
+        { value: __WORLD_MAPS__, label: "WORLD MAPS" },
+        { value: __DUNGEONS_ONLY__, label: "DUNGEONS ONLY" },
         { value: __ALL_MAPS_BUT_DEFINED__, label: "EVERYTHING BUT DEFINED" },
-        { value: __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__, label: "EVERYTHING BUT DEFINED AND TEST DUNGEON" },
+        { value: __ALL_MAPS_BUT_DUNGEONS_AND_TEST__, label: "EVERYTHING BUT DUNGEONS AND TEST" },
+        { value: __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__, label: "EVERYTHING BUT WORLD MAP AND TEST" },
         { value: __ALL_MAPS_BUT_TEST_DUNGEON__, label: "EVERYTHING BUT TEST DUNGEON" },
       ];
       adminItems.forEach(i => options.push({ ...i, group: 'Admin' }));

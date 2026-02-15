@@ -15,14 +15,21 @@ const GameAssetIcons: Record<string, string> = {
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
 
   /* Puzzles */
+  // 2.0
   "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
   "Flying Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
   "Musicfly": "/Atlas/WorldMapIcon/SP_IconMap_Play_22_UI.png",
   "Dream Patrol": "Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
+  // 2.4
   "Dreams of Cintercide": "Atlas/WorldMapIcon/SP_IconMap_Play_48_UI.png",
+  // 2.5
+  "Triptych Chest": "Atlas/WorldMapIcon/SP_IconMap_Play_45_UI.png",
+  "Orchestration Altar": "Atlas/WorldMapIcon/SP_IconMap_Play_44_UI.png",
+  // 3.0
   "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_61_UI.png",
   "Smartprint Cube": "Atlas/WorldMapIcon/SP_IconMap_Play_54_UI.png",
   "Soliskin": "Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+  // 3.1
   "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
 
   /* Specialties */
@@ -202,6 +209,19 @@ const GameAssetIcons: Record<string, string> = {
   "Corrosaurus": "Image/IconMonsterHead/T_IconMonsterHead_32044_UI.png",
   "Pilgrim's Shell": "Image/IconMonsterHead/T_IconMonsterHead_32034_UI.png",
   "Devotee's Flesh": "Image/IconMonsterHead/T_IconMonsterHead_31061_UI.png",
+
+  // 2.1
+  "Golden Junrock": "Image/IconMonsterHead/T_IconMonsterHead_31049_UI.png",
+  // 2.3
+  "Sacerdos": "Image/IconMonsterHead/T_IconMonsterHead_31054_UI.png",
+  "La Guardia": "Image/IconMonsterHead/T_IconMonsterHead_31052_UI.png",
+  "Capitaneus": "Image/IconMonsterHead/T_IconMonsterHead_32033_UI.png",
+  "Sagittario": "Image/IconMonsterHead/T_IconMonsterHead_31053_UI.png",
+  // 2.4
+  "Glacio Drake": "Image/IconMonsterHead/T_IconMonsterHead_31057_UI.png",
+  "Fusion Drake": "Image/IconMonsterHead/T_IconMonsterHead_31058_UI.png",
+  "Spectro Drake": "Image/IconMonsterHead/T_IconMonsterHead_31059_UI.png",
+  "Phantom: Capitaneus": "Image/IconMonsterGoods/T_IconMonsterGoods_32033_1_UI.png",
 
   // 3.0
   "Tremor Warrior": "Image/IconMonsterHead/T_IconMonsterHead_31074_UI.png",

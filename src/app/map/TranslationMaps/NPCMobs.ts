@@ -22,6 +22,7 @@ export const NPCMobsTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.6_177_Monster_monster2_6/Kahara1": { name: "Lightcrest Gladiator" },
   "branch2.6_177_Monster_monster2_6/Kahara2": { name: "Frostcrest Gladiator" },
   "branch2.6_177_Monster_monster2_6/Kahara5": { name: "Flamecrest Gladiator" },
+  "Monster_Branch2.6_008": { name: "Flamecrest Gladiator" },
   "branch2.6_177_Monster_monster2_6/Kahara6": { name: "Galecrest Gladiator" },
   "Monster_Branch2.6_005": { name: "Lightcrest Gladiator" },
 

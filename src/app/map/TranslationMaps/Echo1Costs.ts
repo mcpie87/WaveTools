@@ -23,6 +23,8 @@ export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster053": { name: "Fusion Dreadmane" },
   "Monster005": { name: "Havoc Warrior" },
   "branch2.6_177_Monster_monster2_6/Kahara16": { name: "Fusion Warrior" },
+  "branch2.6_177_Monster_monster2_6/BetweenTheChaos17": { name: "Havoc Warrior" },
+  "Monster146": { name: "Hooscamp Clapperclaw" },
 
   // 1.1
   "Monster119": { name: "Clang Bang" },
@@ -36,6 +38,13 @@ export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_branch2.0_013": { name: "Chop Chop: Rightless" },
   "Monster_branch2.0_014": { name: "Chop Chop: Leftless" },
   "Monster_branch2.0_015": { name: "Chop Chop: Headless" },
+
+  // 2.1
+  "branch2.6_177_Monster_monster2_6/BetweenTheChaos15": { name: "Golden Junrock" },
+
+  // 2.3
+  "Monster_Branch2.2_001": { name: "Sagittario" },
+  "Monster_Branch2.2_002": { name: "La Guardia" },
 
   // 2.4
   "branch2.4_Monster_branch2.4_002": { name: "Torn Lottie Lost" },
@@ -52,6 +61,9 @@ export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_Branch2.4_015": { name: "Fusion Drake" },
   "Monster_Branch2.4_016": { name: "Spectro Drake" },
   "Monster_Branch2.4_017": { name: "Havoc Drake" },
+  "branch2.6_177_Monster_monster2_6/BetweenTheChaos10": { name: "Glacio Drake" },
+  "branch2.6_177_Monster_monster2_6/BetweenTheChaos12": { name: "Fusion Drake" },
+  "branch2.6_177_Monster_monster2_6/BetweenTheChaos9": { name: "Spectro Drake" },
 
   // 3.0
   "Monster_Branch3.0_047": { name: "Havoc Warrior" },
