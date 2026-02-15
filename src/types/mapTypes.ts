@@ -6,6 +6,12 @@ export interface DbMapData {
   displayedCategoryGroups: Record<string, boolean>,
 }
 
+export interface APIAreaLayer {
+  mapId: number;
+  areaId: number;
+  mapTiles: Record<string, string>;
+}
+
 export type SelectedMap = MapName
   | MainStoryDungeonName
   | StoryDungeonName

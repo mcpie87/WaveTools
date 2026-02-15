@@ -1,5 +1,6 @@
 import { SelectedMap } from "@/types/mapTypes";
 import { APIMarker, IMarker } from "./types";
+import L from 'leaflet';
 
 export const scaleFactor = 0.30118;
 export const TILE_SIZE = 256;
@@ -46,6 +47,16 @@ export const isCustomMapSelected = (selectedMap: SelectedMap) => {
     __WORLD_MAPS__,
     __DUNGEONS_ONLY__,
   ] as SelectedMap[]).includes(selectedMap);
+}
+
+export const getBounds = (mapName: UnionMapName, padding = 0) => {
+  const config = unionMapConfigs[mapName];
+  if (!config?.bounds) return undefined;
+  const { bounds } = config;
+  return L.latLngBounds(
+    L.latLng((bounds[0][0] - padding) * TILE_SIZE, (bounds[1][0] - padding) * TILE_SIZE),
+    L.latLng((bounds[0][1] + padding) * TILE_SIZE, (bounds[1][1] + padding) * TILE_SIZE)
+  );
 }
 
 export const isGameCoordInGameBounds = (mapName: SelectedMap, x: number, y: number) => {

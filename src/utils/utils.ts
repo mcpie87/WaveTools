@@ -1,5 +1,9 @@
 import { ASSET_URL } from "@/constants/constants";
 
+export function assertUnreachable(x: never): never {
+  throw new Error("Unhandled case: " + JSON.stringify(x));
+}
+
 export const isDevelopment = () => process.env.NODE_ENV === "development";
 
 export function convertToUrl(path: string): string {

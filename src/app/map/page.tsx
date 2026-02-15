@@ -2,119 +2,31 @@
 
 import 'leaflet/dist/leaflet.css';
 
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { MapContainer, Marker, useMap, useMapEvent } from 'react-leaflet';
+import React, { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
+import { MapContainer, Marker, useMapEvent } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
 import { UnionTranslationMap } from './TranslationMaps/translationMap';
-import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
-import { DbMapData, SelectedMap } from '@/types/mapTypes';
+import { APIAreaLayer, SelectedMap } from '@/types/mapTypes';
 import { loadBlueprintTranslations } from './BlueprintTranslationService';
-import { convertMarkerToCoord, getMapCenter, isCustomMapSelected, mapConfigs, MapName, scaleFactor, TILE_SIZE, unionMapConfigs, UnionMapName } from './mapUtils';
+import { convertMarkerToCoord, getBounds, getMapCenter, isCustomMapSelected, mapConfigs, MapName, scaleFactor, TILE_SIZE, unionMapConfigs, UnionMapName } from './mapUtils';
 import { CustomPopup } from './Components/CustomPopup';
 import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
-import { ASSET_URL } from '@/constants/constants';
 import { MapSettingsComponent } from './Components/MapSettingsComponent';
 import { isDevelopment } from '@/utils/utils';
 import { useFilteredMarkers } from './hooks/useFilteredMarkers';
+import { CustomTileLayer } from './MapLayers/CustomTileLayer';
+import { AreaTileLayer } from './MapLayers/AreaTileLayer';
+import { mapStorageService } from './services/mapStorageService';
+import { initMapState, mapReducer } from './state/map.reducer';
+import { isMarkerVisited } from './state/map.selectors';
+import { bulkSetCategoryVisibleAction, clearCategoriesVisibilityAction, setCategoryGroupVisibleAction, toggleCategoryVisibleAction, toggleMarkerVisitedAction } from './state/map.actions';
 
 const simpleCRS = L.CRS.Simple;
 
-const storageService = new LocalStorageService("map");
-
-const getBounds = (mapName: UnionMapName, padding = 0) => {
-  const config = unionMapConfigs[mapName];
-  if (!config?.bounds) return undefined;
-  const { bounds } = config;
-  return L.latLngBounds(
-    L.latLng((bounds[0][0] - padding) * TILE_SIZE, (bounds[1][0] - padding) * TILE_SIZE),
-    L.latLng((bounds[0][1] + padding) * TILE_SIZE, (bounds[1][1] + padding) * TILE_SIZE)
-  );
-}
-
 /* --------------------------- Components -------------------------- */
-function CustomTileLayer({ mapName, url, shouldDim }: { mapName: MapName; url: string; shouldDim: boolean }) {
-  const map = useMap();
-  const layerRef = useRef<L.TileLayer | null>(null);
-
-  useEffect(() => {
-    const tileLayer = L.tileLayer('', {
-      tileSize: TILE_SIZE,
-      noWrap: true,
-      minZoom: -10,
-      bounds: getBounds(mapName),
-      maxZoom: 10,
-      minNativeZoom: 0,
-      maxNativeZoom: 0,
-      opacity: 1,
-    });
-
-
-    tileLayer.getTileUrl = ({ x, y }) =>
-      url.replace('{x}', `${x}`).replace('{y}', `${-y}`);
-
-    tileLayer.addTo(map);
-    layerRef.current = tileLayer;
-
-    return () => {
-      map.removeLayer(tileLayer);
-    };
-  }, [map, mapName, url]);
-
-  useEffect(() => {
-    if (layerRef.current) {
-      layerRef.current.setOpacity(shouldDim ? 0.5 : 1);
-    }
-  }, [shouldDim]);
-
-  return null;
-}
-
-
-function AreaTileLayer({ areaId, areaLayers }: { areaId: number, areaLayers: Map<number, APIAreaLayer> }) {
-  const map = useMap();
-
-  useEffect(() => {
-    const area = areaLayers.get(areaId);
-    if (!area) return;
-
-    const tileLayer = L.tileLayer('', {
-      tileSize: 256,
-      noWrap: true,
-      minZoom: -10,
-      maxZoom: 10,
-      minNativeZoom: 0,
-      maxNativeZoom: 0,
-      zIndex: 500,
-      opacity: 0.85,
-    });
-
-    tileLayer.getTileUrl = ({ x, y }) => {
-      const tileX = x;
-      const tileY = -y;
-
-      const entry = Object.entries(area.mapTiles).find(([key]) =>
-        key.includes(`_${tileX}_${tileY}_`)
-      );
-
-      if (!entry) return '';
-
-      return ASSET_URL + entry[1].replace(/^\/Game\/Aki\/UI\//, '');
-    };
-
-    tileLayer.addTo(map);
-
-    return () => {
-      map.removeLayer(tileLayer);
-    };
-  }, [map, areaId, areaLayers]);
-
-  return null;
-}
-
-
 function ClickHandler({ enabled, onClick }: { enabled: boolean; onClick: (p: L.LatLng) => void }) {
   useMapEvent('click', e => {
     if (enabled) onClick(e.latlng);
@@ -123,12 +35,6 @@ function ClickHandler({ enabled, onClick }: { enabled: boolean; onClick: (p: L.L
 }
 
 /* ----------------------------- Main ------------------------------ */
-
-interface APIAreaLayer {
-  mapId: number;
-  areaId: number;
-  mapTiles: Record<string, string>;
-}
 
 export default function XYZMap() {
   const [data, setData] = useState<APIMarker[]>([]);
@@ -145,15 +51,7 @@ export default function XYZMap() {
   const [showDescriptions, setShowDescriptions] = useState(false);
   const [hideVisited, setHideVisited] = useState(false);
 
-  const [dbMapData, setDbMapData] = useState<DbMapData>(() => {
-    const loaded = storageService.load() as Partial<DbMapData> | null;
-
-    return {
-      visibleCategories: loaded?.visibleCategories ?? {},
-      visitedMarkers: loaded?.visitedMarkers ?? {},
-      displayedCategoryGroups: loaded?.displayedCategoryGroups ?? {},
-    };
-  });
+  const [dbMapData, dispatch] = useReducer(mapReducer, initMapState());
   const [translationsReady, setTranslationsReady] = useState(false);
 
   useEffect(() => {
@@ -162,7 +60,7 @@ export default function XYZMap() {
 
 
   useEffect(() => {
-    storageService.save(dbMapData);
+    mapStorageService.save(dbMapData);
   }, [dbMapData]);
 
   /* ----------------------------- Data ----------------------------- */
@@ -236,13 +134,16 @@ export default function XYZMap() {
     const visited: Record<string, number> = {};
     for (const m of markers) {
       totals[m.BlueprintType] = (totals[m.BlueprintType] ?? 0) + 1;
-      visited[m.BlueprintType] = (visited[m.BlueprintType] ?? 0) + (dbMapData.visitedMarkers[m.Id as number] ? 1 : 0);
+      visited[m.BlueprintType] =
+        (visited[m.BlueprintType] ?? 0) +
+        (isMarkerVisited(dbMapData, m.Id as number) ? 1 : 0);
     }
     const counts: Record<string, [number, number]> = {};
     for (const m of markers) {
       counts[m.BlueprintType] = [totals[m.BlueprintType], visited[m.BlueprintType]];
     }
     return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0])).map(([k, v]) => [k, v[0], v[1]]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [markers, dbMapData.visitedMarkers]);
 
   const selectedPoint: APIMarker = useMemo(() => {
@@ -278,52 +179,22 @@ export default function XYZMap() {
   }, [markers, markersWithinRadius, dbMapData.visibleCategories, hideVisited, enableClick, selectedPoint, dbMapData.visitedMarkers]);
 
   const toggleMarkerVisited = (marker: IMarker) => {
-    setDbMapData((prev) => ({
-      ...prev,
-      visitedMarkers: {
-        ...prev.visitedMarkers,
-        [marker.id as number]: !prev.visitedMarkers[marker.id as number],
-      }
-    }));
+    dispatch(toggleMarkerVisitedAction(marker.id as number));
   }
 
   const toggleCategory = (category: string) => {
-    setDbMapData(prev => ({
-      ...prev,
-      visibleCategories: {
-        ...prev.visibleCategories,
-        [category]: !prev.visibleCategories[category],
-      },
-    }));
+    dispatch(toggleCategoryVisibleAction(category));
   };
   const toggleCategories = (categories: string[], value: boolean) => {
-    setDbMapData(prev => ({
-      ...prev,
-      visibleCategories: {
-        ...prev.visibleCategories,
-        ...categories.reduce((acc, category) => ({
-          ...acc,
-          [category]: value,
-        }), {}),
-      },
-    }));
+    dispatch(bulkSetCategoryVisibleAction(categories, value));
   };
 
   const clearCategories = () => {
-    setDbMapData(prev => ({
-      ...prev,
-      visibleCategories: {},
-    }));
+    dispatch(clearCategoriesVisibilityAction());
   }
 
   const toggleDisplayedCategoryGroup = (categoryGroup: string, value: boolean) => {
-    setDbMapData(prev => ({
-      ...prev,
-      displayedCategoryGroups: {
-        ...prev.displayedCategoryGroups,
-        [categoryGroup]: value,
-      },
-    }));
+    dispatch(setCategoryGroupVisibleAction(categoryGroup, value));
   }
 
   /* --------------------------- Icons ------------------------------ */
