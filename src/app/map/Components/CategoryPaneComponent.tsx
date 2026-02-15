@@ -52,7 +52,7 @@ const CategoryPaneGroupComponent = ({
         {/* Title */}
         <div className="flex flex-row items-center justify-between w-full text-xs">
           {toggleCategories && (
-            <div className="w-6 h-6 mr-2 bg-gray-800 rounded-md">
+            <div className="w-6 h-6 mr-2 bg-gray-800 rounded-md flex items-center justify-center">
               {getWorldmapIcon(groupName) && (
                 <Image
                   src={getWorldmapIcon(groupName) ?? ""}

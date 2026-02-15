@@ -27,16 +27,29 @@ export const getGameBounds = (mapName: UnionMapName) => {
   ]
 }
 export const __ALL_MAPS__ = "__ALL_MAPS__" as const;
-export const isGameCoordInGameBounds = (mapName: SelectedMap, x: number, y: number) => {
-  if (mapName === __ALL_MAPS__) return true;
+export const __ALL_MAPS_BUT_DEFINED__ = "__ALL_MAPS_BUT_DEFINED__" as const;
+export const __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__ = "__ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__" as const;
+export const __ALL_MAPS_BUT_TEST_DUNGEON__ = "__ALL_MAPS_BUT_TEST_DUNGEON__" as const;
 
-  const bounds = getGameBounds(mapName);
+export const isCustomMapSelected = (selectedMap: SelectedMap) => {
+  return ([
+    __ALL_MAPS__,
+    __ALL_MAPS_BUT_DEFINED__,
+    __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__,
+    __ALL_MAPS_BUT_TEST_DUNGEON__,
+  ] as SelectedMap[]).includes(selectedMap);
+}
+
+export const isGameCoordInGameBounds = (mapName: SelectedMap, x: number, y: number) => {
+  if (isCustomMapSelected(mapName)) return true;
+
+  const bounds = getGameBounds(mapName as UnionMapName);
   if (!bounds) return true;
   // y is REVERSED due to map translation
   return bounds[0][1] <= y && y <= bounds[0][0] && bounds[1][0] <= x && x <= bounds[1][1];
 }
 export const getMapCenter = (mapName: SelectedMap): L.LatLngExpression => {
-  if (mapName === __ALL_MAPS__) return [0, 0];
+  if (isCustomMapSelected(mapName)) return [0, 0];
 
   const config = mapConfigs[mapName];
   if (!config?.bounds) return [0, 0];
@@ -89,11 +102,45 @@ export enum MapName {
   ROYA_FROSTLANDS = "Roya Frostlands",
 }
 
-export enum DungeonName {
-  STORY_ZANI = "Zani's Story Dungeon (Black Alley)",
+// dig in instancedungeon.json for translations
+export enum MainStoryDungeonName {
+  GRAND_LIBRARY = "(Jinhsi) Grand Library",
+  BLACK_SHORES_STELLAR_MATRIX = "(Shorekeeper) Black Shores Stellar Matrix",
+  RINASCITA_AVERARDO_VAULT = "(Carlotta) Averardo Vault",
+  // aka leviathan dungeon during galbrena release
+  SEPTIMONT_PLANE_OF_THE_DARK_TIDE = "(Septimont) Plane of the Dark Tide",
+}
+export enum StoryDungeonName {
+  STORY_JIYAN = "Jiyan",
+  STORY_YINLIN = "Yinlin",
+  STORY_LINGYANG = "Lingyang",
+  STORY_CHANGLI = "Changli",
+  STORY_ENCORE_PART_1 = "Encore Part 1",
+  STORY_ENCORE_PART_2 = "Encore Part 2",
+  STORY_CAMELLYA = "Camellya",
+  STORY_CARLOTTA = "Carlotta",
+  STORY_ZANI = "Zani",
+  STORY_CANTARELLA = "Cantarella",
+}
+export enum SonoroDungeonName {
+  CONFIGURATIONAL_TRUTH = "Configurational Truth",
+  THE_PRISONED_SONG = "The Prisoned Song",
+  COMMAND_RISE = "Command Rise",
+  TWILIGHT_RISE = "Twilight Rise",
+  RESOUNDING_RISE = "Resounding Rise",
+}
+export enum TestDungeonName {
+  TEST_DUNGEON = "Game Test Dungeon",
+  TEST_DUNGEON_2 = "World Test Map",
+  TEST_DUNGEON_3 = "Test ??? 1",
+  TEST_DUNGEON_4 = "Test ??? 2",
+  TEST_DUNGEON_5 = "Test ??? 3",
+  TEST_DUNGEON_6 = "Test ??? 4",
+  TEST_DUNGEON_7 = "Test ??? 5",
+  TEST_DUNGEON_8 = "Test ??? 6",
 }
 
-export type UnionMapName = MapName | DungeonName;
+export type UnionMapName = MapName | StoryDungeonName | SonoroDungeonName | TestDungeonName;
 
 export interface MapConfig {
   mapId: number;
@@ -160,13 +207,118 @@ export const mapConfigs: Record<string, MapConfig> = {
   },
 } as const;
 
-export const dungeonMapConfigs: Record<string, MapConfig> = {
-  [DungeonName.STORY_ZANI]: {
+export const mainStoryDungeonMapConfigs: Record<string, MapConfig> = {
+  [MainStoryDungeonName.GRAND_LIBRARY]: {
+    // Shows 1/4/0/0 but real value is 1/3/0/0
+    mapId: 49,
+  },
+  [MainStoryDungeonName.BLACK_SHORES_STELLAR_MATRIX]: {
+    mapId: 1510, // 1006 - extremely fake values? yet translation is misleading
+  },
+  [MainStoryDungeonName.RINASCITA_AVERARDO_VAULT]: {
+    mapId: 1511,
+  },
+  [MainStoryDungeonName.SEPTIMONT_PLANE_OF_THE_DARK_TIDE]: {
+    mapId: 1518,
+  },
+};
+
+export const storyDungeonMapConfigs: Record<string, MapConfig> = {
+  [StoryDungeonName.STORY_JIYAN]: {
+    mapId: 92,
+  },
+  [StoryDungeonName.STORY_YINLIN]: {
+    // Shows 1/1/1/1
+    // but real value is 1/0/0/1
+    mapId: 95,
+  },
+  [StoryDungeonName.STORY_LINGYANG]: {
+    mapId: 94,
+  },
+  [StoryDungeonName.STORY_CHANGLI]: {
+    mapId: 1001,
+  },
+  [StoryDungeonName.STORY_ENCORE_PART_1]: {
+    mapId: 1007,
+  },
+  [StoryDungeonName.STORY_ENCORE_PART_2]: {
+    mapId: 1008,
+  },
+  [StoryDungeonName.STORY_CAMELLYA]: {
+    mapId: 1006,
+  },
+  [StoryDungeonName.STORY_ZANI]: {
     mapId: 1013,
-  }
-}
+  },
+  [StoryDungeonName.STORY_CARLOTTA]: {
+    // https://www.youtube.com/watch?v=-y8a32-8k64
+    mapId: 1003,
+  },
+  [StoryDungeonName.STORY_CANTARELLA]: {
+    mapId: 1010,
+  },
+};
+
+export const sonoroDungeonMapConfigs: Record<string, MapConfig> = {
+  [SonoroDungeonName.CONFIGURATIONAL_TRUTH]: {
+    // Sonoro in Huanglong (no quest)
+    // https://www.youtube.com/watch?v=w9NM31mgCoA
+    mapId: 6001,
+  },
+  [SonoroDungeonName.THE_PRISONED_SONG]: {
+    // Quests Hymn of the Sea of Clouds
+    // https://www.youtube.com/watch?v=UhmwG26LQyk
+    mapId: 6003,
+  },
+  [SonoroDungeonName.COMMAND_RISE]: {
+    // Quest: The Command Rise
+    // https://www.youtube.com/watch?v=AJPJz4J-HB8
+    mapId: 2505,
+  },
+  [SonoroDungeonName.TWILIGHT_RISE]: {
+    // Quest: Twilight Rise
+    mapId: 2507,
+  },
+  [SonoroDungeonName.RESOUNDING_RISE]: {
+    // Quest: Resounding Rise
+    mapId: 2508,
+  },
+};
+
+export const testDungeonMapConfigs: Record<string, MapConfig> = {
+  [TestDungeonName.TEST_DUNGEON]: {
+    mapId: 37,
+  },
+  [TestDungeonName.TEST_DUNGEON_2]: {
+    mapId: 100, // This is pretty much the DEV environment - A LOT of things here
+  },
+  [TestDungeonName.TEST_DUNGEON_3]: {
+    mapId: 77, // "Id": "InstanceDungeon_77_MapName", "Content": "test 副本 Function 展示",
+  },
+  [TestDungeonName.TEST_DUNGEON_4]: {
+    mapId: 32, // "Id": "InstanceDungeon_32_MapName", "Content": "TD - Missions Test",
+  },
+  [TestDungeonName.TEST_DUNGEON_5]: {
+    // "EntranceEntities": [
+    //   { "DungeonId": 100, "EntranceEntityId": 610000070 }
+    // ],
+    mapId: 2501, // "Id": "InstanceDungeon_2501_MapName", "Content": "World Domain Sample",
+  },
+  [TestDungeonName.TEST_DUNGEON_6]: {
+    mapId: 41, // "Id": "InstanceDungeon_41_MapName", "Content": "POS测试副本",
+  },
+  [TestDungeonName.TEST_DUNGEON_7]: {
+    mapId: 8001, // "Id": "InstanceDungeon_8001_MapName", "Content": "rogue-Demo",
+  },
+  [TestDungeonName.TEST_DUNGEON_8]: {
+    mapId: 80, // "Id": "InstanceDungeon_8002_MapName", "Content": "rogue-Demo",
+  },
+};
 
 export const unionMapConfigs: Record<string, MapConfig> = {
   ...mapConfigs,
-  ...dungeonMapConfigs,
+  ...mainStoryDungeonMapConfigs,
+  ...storyDungeonMapConfigs,
+  ...sonoroDungeonMapConfigs,
+  ...testDungeonMapConfigs,
 };

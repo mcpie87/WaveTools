@@ -12,12 +12,13 @@ import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
 import { DbMapData, SelectedMap } from '@/types/mapTypes';
 import { loadBlueprintTranslations } from './BlueprintTranslationService';
-import { __ALL_MAPS__, convertMarkerToCoord, getMapCenter, isGameCoordInGameBounds, mapConfigs, MapName, scaleFactor, TILE_SIZE, unionMapConfigs, UnionMapName } from './mapUtils';
+import { convertMarkerToCoord, getMapCenter, isCustomMapSelected, mapConfigs, MapName, scaleFactor, TILE_SIZE, unionMapConfigs, UnionMapName } from './mapUtils';
 import { CustomPopup } from './Components/CustomPopup';
 import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
 import { ASSET_URL } from '@/constants/constants';
 import { MapSettingsComponent } from './Components/MapSettingsComponent';
 import { isDevelopment } from '@/utils/utils';
+import { useFilteredMarkers } from './hooks/useFilteredMarkers';
 
 const simpleCRS = L.CRS.Simple;
 
@@ -228,12 +229,7 @@ export default function XYZMap() {
 
   /* -------------------------- Computed ---------------------------- */
 
-  const markers = useMemo(
-    () => data
-      .filter(m => (selectedMapId === null && (selectedMap === __ALL_MAPS__ || m.MapId === unionMapConfigs[selectedMap].mapId)) || m.MapId === selectedMapId)
-      .filter(m => isGameCoordInGameBounds(selectedMap, m.Transform[0].X, m.Transform[0].Y)),
-    [data, selectedMap, selectedMapId]
-  );
+  const markers = useFilteredMarkers(data, selectedMap, selectedMapId);
 
   const categories: Array<[string, number, number]> = useMemo(() => {
     const totals: Record<string, number> = {};
@@ -473,10 +469,10 @@ export default function XYZMap() {
             width: '100%',
             backgroundColor: '#111',
           }}
-          maxBounds={selectedMap === __ALL_MAPS__ ? undefined : getBounds(selectedMap, 4)}
+          maxBounds={isCustomMapSelected(selectedMap) ? undefined : getBounds(selectedMap as UnionMapName, 4)}
           attributionControl={false}
         >
-          {selectedMap !== __ALL_MAPS__ && unionMapConfigs[selectedMap]?.url && selectedMapId === null && (
+          {unionMapConfigs[selectedMap]?.url && selectedMapId === null && (
             <CustomTileLayer
               mapName={selectedMap as MapName}
               url={unionMapConfigs[selectedMap].url}

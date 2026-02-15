@@ -1,14 +1,14 @@
 'use client';
 import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import React, { Fragment, useState } from "react";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
+import React, { Fragment, useMemo, useState } from "react";
 import { useDebounce } from 'use-debounce';
 import {
   displayedCategories,
   UnionTranslationMap
 } from '../TranslationMaps/translationMap';
 
-import { __ALL_MAPS__, dungeonMapConfigs, mapConfigs } from "../mapUtils";
+import { __ALL_MAPS__, __ALL_MAPS_BUT_DEFINED__, __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__, __ALL_MAPS_BUT_TEST_DUNGEON__, mainStoryDungeonMapConfigs, mapConfigs, sonoroDungeonMapConfigs, storyDungeonMapConfigs, testDungeonMapConfigs } from "../mapUtils";
 import { Input } from "@/components/ui/input";
 import { Toggle } from "@/components/ui/toggle";
 import { CategoryPaneComponent } from "./CategoryPaneComponent";
@@ -70,6 +70,44 @@ export const MapSettingsComponent = ({
     !displayedCategories.every(c => c[1][category[0]])
   )
 
+  const mapOptions = useMemo(() => {
+    const options: { value: string; label: string; group: string }[] = [];
+
+    // Admin/Debug Options
+    if (showDungeonMaps && showDescriptions) {
+      const adminItems = [
+        { value: __ALL_MAPS__, label: "EVERYTHING" },
+        { value: __ALL_MAPS_BUT_DEFINED__, label: "EVERYTHING BUT DEFINED" },
+        { value: __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__, label: "EVERYTHING BUT DEFINED AND TEST DUNGEON" },
+        { value: __ALL_MAPS_BUT_TEST_DUNGEON__, label: "EVERYTHING BUT TEST DUNGEON" },
+      ];
+      adminItems.forEach(i => options.push({ ...i, group: 'Admin' }));
+    }
+
+    // Standard Maps
+    Object.keys(mapConfigs).forEach(name =>
+      options.push({ value: name, label: name, group: 'Standard' })
+    );
+
+    // Dungeon Maps
+    if (showDungeonMaps) {
+      Object.keys(mainStoryDungeonMapConfigs).forEach(name =>
+        options.push({ value: name, label: name, group: 'Main Story Dungeon' })
+      );
+      Object.keys(storyDungeonMapConfigs).forEach(name =>
+        options.push({ value: name, label: name, group: 'Story Dungeon' })
+      );
+      Object.keys(sonoroDungeonMapConfigs).forEach(name =>
+        options.push({ value: name, label: name, group: 'Sonoro Dungeon' })
+      );
+      Object.keys(testDungeonMapConfigs).forEach(name =>
+        options.push({ value: name, label: name, group: 'Test Dungeon' })
+      );
+    }
+
+    return options;
+  }, [showDungeonMaps, showDescriptions]);
+
   return (
     <>
       {/* Left controls */}
@@ -85,28 +123,63 @@ export const MapSettingsComponent = ({
           <Button className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
 
           <div className="rounded-lg border p-3 space-y-2 bg-base-200">
-            <Select value={selectedMap} onValueChange={v => setSelectedMap(v as SelectedMap)}>
+            <Select value={selectedMap} onValueChange={v => { setSelectedMap(v as SelectedMap); setSelectedMapId(null); }}>
               <SelectTrigger>
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
+                {/* Admin Section */}
+                {showDungeonMaps && showDescriptions && (
+                  <SelectGroup>
+                    <SelectLabel className="text-xs opacity-50">Debug</SelectLabel>
+                    {mapOptions.filter(o => o.group === 'Admin').map(opt => (
+                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                    ))}
+                  </SelectGroup>
+                )}
+
                 <SelectGroup>
-                  {showDungeonMaps && showDescriptions && (
-                    <SelectItem key="__ALL_MAPS__" value={__ALL_MAPS__}>
-                      EVERYTHING
-                    </SelectItem>
-                  )}
-                  {Object.keys(mapConfigs).map((name) => (
-                    <SelectItem key={name} value={name}>
-                      {name}
-                    </SelectItem>
-                  ))}
-                  {showDungeonMaps && Object.keys(dungeonMapConfigs).map((name) => (
-                    <SelectItem key={name} value={name}>
-                      {name}
-                    </SelectItem>
+                  <SelectLabel className="text-xs opacity-50">World Maps</SelectLabel>
+                  {mapOptions.filter(o => o.group === 'Standard').map(opt => (
+                    <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
                   ))}
                 </SelectGroup>
+
+                {showDungeonMaps && (
+                  <SelectGroup>
+                    <SelectLabel className="text-xs opacity-50">Main Story</SelectLabel>
+                    {mapOptions.filter(o => o.group === 'Main Story Dungeon').map(opt => (
+                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                    ))}
+                  </SelectGroup>
+                )}
+
+                {showDungeonMaps && (
+                  <SelectGroup>
+                    <SelectLabel className="text-xs opacity-50">Story</SelectLabel>
+                    {mapOptions.filter(o => o.group === 'Story Dungeon').map(opt => (
+                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                    ))}
+                  </SelectGroup>
+                )}
+
+                {showDungeonMaps && (
+                  <SelectGroup>
+                    <SelectLabel className="text-xs opacity-50">Sonoro</SelectLabel>
+                    {mapOptions.filter(o => o.group === 'Sonoro Dungeon').map(opt => (
+                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                    ))}
+                  </SelectGroup>
+                )}
+
+                {showDungeonMaps && (
+                  <SelectGroup>
+                    <SelectLabel className="text-xs opacity-50">Test</SelectLabel>
+                    {mapOptions.filter(o => o.group === 'Test Dungeon').map(opt => (
+                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                    ))}
+                  </SelectGroup>
+                )}
               </SelectContent>
             </Select>
           </div>
@@ -188,7 +261,7 @@ export const MapSettingsComponent = ({
                   )
               }
               toggleCategory={toggleCategory}
-              toggleCategories={(showDescriptions && dungeonMapConfigs[selectedMap]) || selectedMapId !== null ? toggleCategories : undefined}
+              toggleCategories={(showDescriptions && !mapConfigs[selectedMap]) || selectedMapId !== null ? toggleCategories : undefined}
               toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
               isOpen={dbMapData.displayedCategoryGroups['Not defined categories']}
               showDescriptions={showDescriptions}
