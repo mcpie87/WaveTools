@@ -1,24 +1,24 @@
 'use client';
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { useDebounce } from 'use-debounce';
 import {
   displayedCategories,
   UnionTranslationMap
 } from '../TranslationMaps/translationMap';
 
-import { mapConfigs, MapName } from "../mapUtils";
+import { __ALL_MAPS__, dungeonMapConfigs, mapConfigs } from "../mapUtils";
 import { Input } from "@/components/ui/input";
 import { Toggle } from "@/components/ui/toggle";
 import { CategoryPaneComponent } from "./CategoryPaneComponent";
 import { translateBlueprint } from "../BlueprintTranslationService";
-import { DbMapData } from "@/types/mapTypes";
+import { DbMapData, SelectedMap } from "@/types/mapTypes";
 import { DevModeSettingsComponent } from "./DevModeSettingsComponent";
 
 interface MapSettingsComponentProps {
-  selectedMap: MapName;
-  setSelectedMap: (id: MapName) => void;
+  selectedMap: SelectedMap;
+  setSelectedMap: (id: SelectedMap) => void;
   coords: { x: number; y: number; z: number };
   setCoords: (coords: React.SetStateAction<{ x: number; y: number; z: number }>) => void;
   radius: number;
@@ -35,6 +35,8 @@ interface MapSettingsComponentProps {
   toggleCategories: (categories: string[], value: boolean) => void;
   toggleDisplayedCategoryGroup: (categoryGroup: string, value: boolean) => void;
   categories: Array<[string, number, number]>;
+  selectedMapId: number | null;
+  setSelectedMapId: (id: number | null) => void;
 }
 export const MapSettingsComponent = ({
   selectedMap,
@@ -55,8 +57,11 @@ export const MapSettingsComponent = ({
   toggleCategories,
   toggleDisplayedCategoryGroup,
   categories,
+  selectedMapId,
+  setSelectedMapId,
 }: MapSettingsComponentProps) => {
   const [showSettings, setShowSettings] = useState(true);
+  const [showDungeonMaps, setShowDungeonMaps] = useState(false);
   const [categoryFilter, setCategoryFilter] = useState('');
 
   const [categoryFilterDebounced] = useDebounce(categoryFilter, 300);
@@ -80,13 +85,23 @@ export const MapSettingsComponent = ({
           <Button className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
 
           <div className="rounded-lg border p-3 space-y-2 bg-base-200">
-            <Select value={selectedMap} onValueChange={v => setSelectedMap(v as MapName)}>
+            <Select value={selectedMap} onValueChange={v => setSelectedMap(v as SelectedMap)}>
               <SelectTrigger>
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
+                  {showDungeonMaps && showDescriptions && (
+                    <SelectItem key="__ALL_MAPS__" value={__ALL_MAPS__}>
+                      EVERYTHING
+                    </SelectItem>
+                  )}
                   {Object.keys(mapConfigs).map((name) => (
+                    <SelectItem key={name} value={name}>
+                      {name}
+                    </SelectItem>
+                  ))}
+                  {showDungeonMaps && Object.keys(dungeonMapConfigs).map((name) => (
                     <SelectItem key={name} value={name}>
                       {name}
                     </SelectItem>
@@ -105,6 +120,9 @@ export const MapSettingsComponent = ({
             setRadius={setRadius}
             enableClick={enableClick}
             setEnableClick={setEnableClick}
+            showDungeonMaps={showDungeonMaps}
+            setShowDungeonMaps={setShowDungeonMaps}
+            setSelectedMapId={setSelectedMapId}
           />
 
           <div className="rounded-lg border p-3 space-y-2 bg-base-200">
@@ -135,7 +153,7 @@ export const MapSettingsComponent = ({
                   ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
                 )
               return (
-                <>
+                <Fragment key={title}>
                   {filteredCategories.length > 0 && (
                     <CategoryPaneComponent
                       key={title}
@@ -151,7 +169,7 @@ export const MapSettingsComponent = ({
                       isOpen={dbMapData.displayedCategoryGroups[title]}
                     />
                   )}
-                </>
+                </Fragment>
               )
             }
           })}
@@ -170,6 +188,7 @@ export const MapSettingsComponent = ({
                   )
               }
               toggleCategory={toggleCategory}
+              toggleCategories={(showDescriptions && dungeonMapConfigs[selectedMap]) || selectedMapId !== null ? toggleCategories : undefined}
               toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
               isOpen={dbMapData.displayedCategoryGroups['Not defined categories']}
               showDescriptions={showDescriptions}

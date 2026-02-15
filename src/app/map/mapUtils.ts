@@ -1,3 +1,4 @@
+import { SelectedMap } from "@/types/mapTypes";
 import { APIMarker, IMarker } from "./types";
 
 export const scaleFactor = 0.30118;
@@ -17,20 +18,31 @@ const translateMapToGameY = (y: number) => -y * 10000 / scaleFactor;
 //   y: translateMapToGameY(y),
 //   z: z * 10000,
 // });
-export const getGameBounds = (mapName: MapName) => {
-  const { bounds } = mapConfigs[mapName];
+export const getGameBounds = (mapName: UnionMapName) => {
+  const { bounds } = unionMapConfigs[mapName];
+  if (!bounds) return undefined;
   return [
     [translateMapToGameY(bounds[0][0] * TILE_SIZE), translateMapToGameY(bounds[0][1] * TILE_SIZE)],
     [translateMapToGameX(bounds[1][0] * TILE_SIZE), translateMapToGameX(bounds[1][1] * TILE_SIZE)],
   ]
 }
-export const isGameCoordInGameBounds = (mapName: MapName, x: number, y: number) => {
+export const __ALL_MAPS__ = "__ALL_MAPS__" as const;
+export const isGameCoordInGameBounds = (mapName: SelectedMap, x: number, y: number) => {
+  if (mapName === __ALL_MAPS__) return true;
+
   const bounds = getGameBounds(mapName);
+  if (!bounds) return true;
   // y is REVERSED due to map translation
   return bounds[0][1] <= y && y <= bounds[0][0] && bounds[1][0] <= x && x <= bounds[1][1];
 }
-export const getMapCenter = (mapName: MapName): L.LatLngExpression => {
-  const bounds = mapConfigs[mapName].bounds;
+export const getMapCenter = (mapName: SelectedMap): L.LatLngExpression => {
+  if (mapName === __ALL_MAPS__) return [0, 0];
+
+  const config = mapConfigs[mapName];
+  if (!config?.bounds) return [0, 0];
+
+  const { bounds } = config;
+
   return [
     (bounds[0][0] + bounds[0][1]) * (TILE_SIZE) / 2,
     (bounds[1][0] + bounds[1][1]) * (TILE_SIZE) / 2
@@ -77,10 +89,16 @@ export enum MapName {
   ROYA_FROSTLANDS = "Roya Frostlands",
 }
 
+export enum DungeonName {
+  STORY_ZANI = "Zani's Story Dungeon (Black Alley)",
+}
+
+export type UnionMapName = MapName | DungeonName;
+
 export interface MapConfig {
   mapId: number;
-  bounds: number[][];
-  url: string;
+  bounds?: number[][];
+  url?: string;
 }
 // bounds is [minY, maxY], [minX, maxX]
 // keep in mind, game inverts Y
@@ -141,3 +159,14 @@ export const mapConfigs: Record<string, MapConfig> = {
     url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
   },
 } as const;
+
+export const dungeonMapConfigs: Record<string, MapConfig> = {
+  [DungeonName.STORY_ZANI]: {
+    mapId: 1013,
+  }
+}
+
+export const unionMapConfigs: Record<string, MapConfig> = {
+  ...mapConfigs,
+  ...dungeonMapConfigs,
+};

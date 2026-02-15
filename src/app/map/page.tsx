@@ -10,9 +10,9 @@ import './fixLeafletIcon';
 import { UnionTranslationMap } from './TranslationMaps/translationMap';
 import LocalStorageService from '@/services/LocalStorageService';
 import { APIMarker, IMarker } from './types';
-import { DbMapData } from '@/types/mapTypes';
+import { DbMapData, SelectedMap } from '@/types/mapTypes';
 import { loadBlueprintTranslations } from './BlueprintTranslationService';
-import { convertMarkerToCoord, getMapCenter, isGameCoordInGameBounds, mapConfigs, MapName, scaleFactor, TILE_SIZE } from './mapUtils';
+import { __ALL_MAPS__, convertMarkerToCoord, getMapCenter, isGameCoordInGameBounds, mapConfigs, MapName, scaleFactor, TILE_SIZE, unionMapConfigs, UnionMapName } from './mapUtils';
 import { CustomPopup } from './Components/CustomPopup';
 import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
 import { ASSET_URL } from '@/constants/constants';
@@ -23,8 +23,10 @@ const simpleCRS = L.CRS.Simple;
 
 const storageService = new LocalStorageService("map");
 
-const getBounds = (mapName: MapName, padding = 0) => {
-  const { bounds } = mapConfigs[mapName];
+const getBounds = (mapName: UnionMapName, padding = 0) => {
+  const config = unionMapConfigs[mapName];
+  if (!config?.bounds) return undefined;
+  const { bounds } = config;
   return L.latLngBounds(
     L.latLng((bounds[0][0] - padding) * TILE_SIZE, (bounds[1][0] - padding) * TILE_SIZE),
     L.latLng((bounds[0][1] + padding) * TILE_SIZE, (bounds[1][1] + padding) * TILE_SIZE)
@@ -32,12 +34,11 @@ const getBounds = (mapName: MapName, padding = 0) => {
 }
 
 /* --------------------------- Components -------------------------- */
-function CustomTileLayer({ mapName, shouldDim }: { mapName: MapName; shouldDim: boolean }) {
+function CustomTileLayer({ mapName, url, shouldDim }: { mapName: MapName; url: string; shouldDim: boolean }) {
   const map = useMap();
   const layerRef = useRef<L.TileLayer | null>(null);
 
   useEffect(() => {
-    const { url } = mapConfigs[mapName];
     const tileLayer = L.tileLayer('', {
       tileSize: TILE_SIZE,
       noWrap: true,
@@ -59,7 +60,7 @@ function CustomTileLayer({ mapName, shouldDim }: { mapName: MapName; shouldDim: 
     return () => {
       map.removeLayer(tileLayer);
     };
-  }, [map, mapName]);
+  }, [map, mapName, url]);
 
   useEffect(() => {
     if (layerRef.current) {
@@ -133,7 +134,8 @@ export default function XYZMap() {
   const [layersData, setLayersData] = useState<APIAreaLayer[]>([]);
 
   const [activeAreaId, setActiveAreaId] = useState<number | null>(null);
-  const [selectedMap, setSelectedMap] = useState(MapName.SOLARIS_3);
+  const [selectedMap, setSelectedMap] = useState<SelectedMap>(MapName.SOLARIS_3);
+  const [selectedMapId, setSelectedMapId] = useState<number | null>(null);
 
   const [enableClick, setEnableClick] = useState(false);
   const [coords, setCoords] = useState({ x: 0, y: 0, z: 0 });
@@ -228,9 +230,9 @@ export default function XYZMap() {
 
   const markers = useMemo(
     () => data
-      .filter(m => m.MapId === mapConfigs[selectedMap].mapId)
+      .filter(m => (selectedMapId === null && (selectedMap === __ALL_MAPS__ || m.MapId === unionMapConfigs[selectedMap].mapId)) || m.MapId === selectedMapId)
       .filter(m => isGameCoordInGameBounds(selectedMap, m.Transform[0].X, m.Transform[0].Y)),
-    [data, selectedMap]
+    [data, selectedMap, selectedMapId]
   );
 
   const categories: Array<[string, number, number]> = useMemo(() => {
@@ -251,7 +253,7 @@ export default function XYZMap() {
     return {
       Transform: [{ X: coords.x * 10000, Y: coords.y * 10000, Z: coords.z * 10000 }],
       BlueprintType: 'Selected Point',
-      MapId: mapConfigs[selectedMap].mapId,
+      MapId: mapConfigs[selectedMap]?.mapId ?? -1,
     };
   }, [coords, selectedMap]);
 
@@ -446,6 +448,8 @@ export default function XYZMap() {
         toggleCategories={toggleCategories}
         toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
         categories={categories}
+        selectedMapId={selectedMapId}
+        setSelectedMapId={setSelectedMapId}
       />
 
       {/* Map */}
@@ -469,10 +473,16 @@ export default function XYZMap() {
             width: '100%',
             backgroundColor: '#111',
           }}
-          maxBounds={getBounds(selectedMap, 4)}
+          maxBounds={selectedMap === __ALL_MAPS__ ? undefined : getBounds(selectedMap, 4)}
           attributionControl={false}
         >
-          <CustomTileLayer mapName={selectedMap} shouldDim={activeAreaId !== null && areaLayers.has(activeAreaId)} />
+          {selectedMap !== __ALL_MAPS__ && unionMapConfigs[selectedMap]?.url && selectedMapId === null && (
+            <CustomTileLayer
+              mapName={selectedMap as MapName}
+              url={unionMapConfigs[selectedMap].url}
+              shouldDim={activeAreaId !== null && areaLayers.has(activeAreaId)}
+            />
+          )}
           {activeAreaId !== null && (
             <AreaTileLayer areaId={activeAreaId} areaLayers={areaLayers} />
           )}
