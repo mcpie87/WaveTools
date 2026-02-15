@@ -16,12 +16,26 @@ export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster030": { name: "Chirpuff" },
   "Monster034": { name: "Glacio Prism" },
   "Monster058": { name: "Hoartoise" },
+  "Monster008": { name: "Whiff Whaff" },
+  "Monster006": { name: "Snip Snap" },
+  "Monster007": { name: "Zig Zag" },
+  "Monster009": { name: "Tick Tack" },
+  "Monster053": { name: "Fusion Dreadmane" },
+  "Monster005": { name: "Havoc Warrior" },
   "branch2.6_177_Monster_monster2_6/Kahara16": { name: "Fusion Warrior" },
+
+  // 1.1
+  "Monster119": { name: "Clang Bang" },
 
   // 2.0
   "Monster_branch2.0_011": { name: "Diggy Duggy" },
   "Monster_branch2.0_023": { name: "Lottie Lost" },
   "branch2.0_Monster191": { name: "Chest Mimic" },
+  "Monster181": { name: "Nimbus Wraith" },
+  "Monster186": { name: "Fae Ignis" },
+  "Monster_branch2.0_013": { name: "Chop Chop: Rightless" },
+  "Monster_branch2.0_014": { name: "Chop Chop: Leftless" },
+  "Monster_branch2.0_015": { name: "Chop Chop: Headless" },
 
   // 2.4
   "branch2.4_Monster_branch2.4_002": { name: "Torn Lottie Lost" },

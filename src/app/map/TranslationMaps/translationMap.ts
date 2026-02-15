@@ -211,6 +211,7 @@ export const TranslationMap: Record<string, TranslationMapEntry> = {
   "Treasure031": { name: "Scavenger's Backpack" },
   "Gameplay603": { name: "Inspect" }, // lahai roi some quest stuff
   "branch3.0_169_Gameplay_3_0/Common3": { name: "Route Constructor" }, // 10 correct, 1 is missing (nothing in there)
+  "Gameplay626": { name: "Gondola" },
 };
 export const TranslationDisplayOrder = [
 ];

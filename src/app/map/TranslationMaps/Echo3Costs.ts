@@ -88,6 +88,11 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "Monster_branch1.3_007": { name: Echo3Cost.HOOCHIEF },
   "Monster054": { name: Echo3Cost.CARAPACE },
   "Monster049": { name: Echo3Cost.HAVOC_DREADMANE },
+  "Monster038": { name: Echo3Cost.FLAUTIST },
+  "Monster041": { name: Echo3Cost.CHASM_GUARDIAN },
+  "Monster039": { name: Echo3Cost.TAMBOURINIST },
+  "Monster037": { name: Echo3Cost.STONEWALL_BRACER },
+  "Monster040": { name: Echo3Cost.ROCKSTEADY_GUARDIAN },
 
   // 2.0
   "Monster_branch2.0_009": { name: Echo3Cost.CUDDLE_WUDDLE },
@@ -99,6 +104,10 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.0_Monster188": { name: Echo3Cost.QUESTLESS_KNIGHT },
   "branch2.0_Monster189": { name: Echo3Cost.DIURNUS_KNIGHT },
   "branch2.0_Monster190": { name: Echo3Cost.NOCTURNUS_KNIGHT },
+  "Monster059": { name: Echo3Cost.VITREUM_DANCER },
+  "branch2.0_Monster_branch2.0_032": { name: Echo3Cost.ABYSSAL_PATRICIUS },
+  "branch2.0_Monster_branch2.0_033": { name: Echo3Cost.ABYSSAL_PATRICIUS },
+  "branch2.0_Monster_branch2.0_034": { name: Echo3Cost.ABYSSAL_GLADIUS },
 
 
   // 2.4

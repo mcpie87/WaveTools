@@ -62,6 +62,10 @@ const GameAssetIcons: Record<string, string> = {
 
 
   /* NPC Monsters */
+  // 1.0
+  "Exile Commoner": "Image/IconMonsterHead/T_IconMonsterHead_977_UI.png",
+
+  // 2.4
   "Frostcrest Gladiator": "Image/IconMonsterHead/T_IconMonsterHead_32039_UI.png",
   "Flamecrest Gladiator": "Image/IconMonsterHead/T_IconMonsterHead_32036_UI.png",
   "Galecrest Gladiator": "Image/IconMonsterHead/T_IconMonsterHead_32037_UI.png",
