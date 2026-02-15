@@ -2,15 +2,13 @@
 
 import 'leaflet/dist/leaflet.css';
 
-import React, { useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import { MapContainer, Marker, useMapEvent } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
 import { UnionTranslationMap } from './TranslationMaps/translationMap';
 import { APIMarker, IMarker } from './types';
-import { APIAreaLayer, SelectedMap } from '@/types/mapTypes';
-import { loadBlueprintTranslations } from './BlueprintTranslationService';
 import { convertMarkerToCoord, getBounds, getMapCenter, isCustomMapSelected, mapConfigs, MapName, scaleFactor, TILE_SIZE, unionMapConfigs, UnionMapName } from './mapUtils';
 import { CustomPopup } from './Components/CustomPopup';
 import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
@@ -19,10 +17,9 @@ import { isDevelopment } from '@/utils/utils';
 import { useFilteredMarkers } from './hooks/useFilteredMarkers';
 import { CustomTileLayer } from './MapLayers/CustomTileLayer';
 import { AreaTileLayer } from './MapLayers/AreaTileLayer';
-import { mapStorageService } from './services/mapStorageService';
-import { initMapState, mapReducer } from './state/map.reducer';
 import { isMarkerVisited } from './state/map.selectors';
 import { bulkSetCategoryVisibleAction, clearCategoriesVisibilityAction, setCategoryGroupVisibleAction, toggleCategoryVisibleAction, toggleMarkerVisitedAction } from './state/map.actions';
+import { useMapLogic } from './hooks/useMapLogic';
 
 const simpleCRS = L.CRS.Simple;
 
@@ -34,98 +31,38 @@ function ClickHandler({ enabled, onClick }: { enabled: boolean; onClick: (p: L.L
   return null;
 }
 
-/* ----------------------------- Main ------------------------------ */
-
 export default function XYZMap() {
-  const [data, setData] = useState<APIMarker[]>([]);
-  const [layersData, setLayersData] = useState<APIAreaLayer[]>([]);
+  const {
+    data,
+    translationsReady,
+    dbMapData,
+    dispatch,
+    areaLayers,
+    ui
+  } = useMapLogic();
+  const {
+    activeAreaId,
+    setActiveAreaId,
+    selectedMap,
+    setSelectedMap,
+    selectedMapId,
+    setSelectedMapId,
+    enableClick,
+    setEnableClick,
+    coords,
+    setCoords,
+    radius,
+    setRadius,
+    showDescriptions,
+    setShowDescriptions,
+    hideVisited,
+    setHideVisited
+  } = ui;
 
-  const [activeAreaId, setActiveAreaId] = useState<number | null>(null);
-  const [selectedMap, setSelectedMap] = useState<SelectedMap>(MapName.SOLARIS_3);
-  const [selectedMapId, setSelectedMapId] = useState<number | null>(null);
-
-  const [enableClick, setEnableClick] = useState(false);
-  const [coords, setCoords] = useState({ x: 0, y: 0, z: 0 });
-  const [radius, setRadius] = useState(50);
-
-  const [showDescriptions, setShowDescriptions] = useState(false);
-  const [hideVisited, setHideVisited] = useState(false);
-
-  const [dbMapData, dispatch] = useReducer(mapReducer, initMapState());
-  const [translationsReady, setTranslationsReady] = useState(false);
-
-  useEffect(() => {
-    loadBlueprintTranslations().then(() => setTranslationsReady(true));
-  }, []);
-
-
-  useEffect(() => {
-    mapStorageService.save(dbMapData);
-  }, [dbMapData]);
-
-  /* ----------------------------- Data ----------------------------- */
-  useEffect(() => {
-    // Tile caching
-    if ('serviceWorker' in navigator) {
-      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      const swUrl = `${basePath}/sw.js`;
-      navigator.serviceWorker.register(swUrl);
-    }
-  }, []);
-
-
-  useEffect(() => {
-    (async () => {
-      const URL =
-        'https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYJjynAOgE0xzLG7NC35IMYJrq9uTnS4KXpDBO';
-
-      const cache = await caches.open('levelentityconfig-cache');
-      const cached = await cache.match(URL);
-
-      if (cached) {
-        setData(await cached.json());
-        return;
-      }
-
-      const res = await fetch(URL);
-      if (res.ok) {
-        await cache.put(URL, res.clone());
-        setData(await res.json());
-      }
-    })();
-  }, []);
-
-  useEffect(() => {
-    (async () => {
-      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      const URL = `${basePath}/data/map_tiles.json`;
-
-      const cache = await caches.open('area-layers-cache');
-      const cached = await cache.match(URL);
-
-      if (cached) {
-        setLayersData(await cached.json());
-        return;
-      }
-
-      const res = await fetch(URL);
-      if (res.ok) {
-        await cache.put(URL, res.clone());
-        setLayersData(await res.json());
-      }
-    })();
-  }, []);
-
-  const areaLayers: Map<number, APIAreaLayer> = new Map();
-  layersData.forEach(l => {
-    areaLayers.set(l.areaId, l);
-  });
-
+  const iconCache = useRef(new Map<string, L.DivIcon>());
   useEffect(() => {
     iconCache.current.clear();
   }, [hideVisited]);
-
-  /* -------------------------- Computed ---------------------------- */
 
   const markers = useFilteredMarkers(data, selectedMap, selectedMapId);
 
@@ -178,28 +115,26 @@ export default function XYZMap() {
     ]
   }, [markers, markersWithinRadius, dbMapData.visibleCategories, hideVisited, enableClick, selectedPoint, dbMapData.visitedMarkers]);
 
-  const toggleMarkerVisited = (marker: IMarker) => {
+  const toggleMarkerVisited = useCallback((marker: IMarker) => {
     dispatch(toggleMarkerVisitedAction(marker.id as number));
-  }
+  }, [dispatch]);
 
-  const toggleCategory = (category: string) => {
+  const toggleCategory = useCallback((category: string) => {
     dispatch(toggleCategoryVisibleAction(category));
-  };
-  const toggleCategories = (categories: string[], value: boolean) => {
+  }, [dispatch]);
+  const toggleCategories = useCallback((categories: string[], value: boolean) => {
     dispatch(bulkSetCategoryVisibleAction(categories, value));
-  };
+  }, [dispatch]);
 
-  const clearCategories = () => {
+  const clearCategories = useCallback(() => {
     dispatch(clearCategoriesVisibilityAction());
-  }
+  }, [dispatch]);
 
-  const toggleDisplayedCategoryGroup = (categoryGroup: string, value: boolean) => {
+  const toggleDisplayedCategoryGroup = useCallback((categoryGroup: string, value: boolean) => {
     dispatch(setCategoryGroupVisibleAction(categoryGroup, value));
-  }
+  }, [dispatch]);
 
   /* --------------------------- Icons ------------------------------ */
-
-  const iconCache = useRef(new Map<string, L.DivIcon>());
 
   const getIcon = useCallback((category: string, visited: boolean) => {
     const key = `${category}:${visited}:${hideVisited}`;
@@ -288,7 +223,16 @@ export default function XYZMap() {
         />
       </Marker>
     ));
-  }, [displayedMarkers, dbMapData.visitedMarkers, hideVisited, showDescriptions, getIcon, activeAreaId]);
+  }, [
+    displayedMarkers,
+    dbMapData.visitedMarkers,
+    showDescriptions,
+    getIcon,
+    activeAreaId,
+    setActiveAreaId,
+    hideVisited,
+    toggleMarkerVisited
+  ]);
 
   if (!data.length) return <div className="p-4">Loading data…</div>;
 
