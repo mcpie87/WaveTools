@@ -36,7 +36,8 @@ export const MarkerLayer = ({
   const getIcon = useCallback((category: string, visited: boolean) => {
     const key = `${category}:${visited}:${hideVisited}`;
 
-    if (!isDevelopment() && iconCache.current.has(key)) {
+    // if (!isDevelopment() && iconCache.current.has(key)) {
+    if (iconCache.current.has(key)) {
       return iconCache.current.get(key)!;
     }
 
@@ -96,9 +97,13 @@ export const MarkerLayer = ({
     return icon;
   }, [hideVisited]);
 
-  const handleMarkerClick = (areaId: number | null) => {
+  const handleMarkerClick = useCallback((areaId: number | null) => {
     if (areaId !== activeAreaId) setActiveAreaId(areaId);
-  };
+  }, [activeAreaId, setActiveAreaId]);
+
+  const handleToggleMarkerVisited = useCallback((marker: IMarker) => {
+    toggleMarkerVisited(marker);
+  }, [toggleMarkerVisited]);
 
   return visibleMarkers.map((m) => (
     <SingleMarker
@@ -108,8 +113,8 @@ export const MarkerLayer = ({
       visited={!!dbMapData.visitedMarkers[m.id as number]}
       showDescriptions={showDescriptions}
       icon={getIcon(m.category, !!dbMapData.visitedMarkers[m.id as number])}
-      toggleMarkerVisited={toggleMarkerVisited}
-      onMarkerClick={() => handleMarkerClick(m.areaId)}
+      toggleMarkerVisited={handleToggleMarkerVisited}
+      onMarkerClick={handleMarkerClick}
     />
   ));
 };

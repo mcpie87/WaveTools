@@ -9,7 +9,7 @@ interface SingleMarkerProps {
   showDescriptions: boolean;
   icon: L.DivIcon;
   toggleMarkerVisited: (marker: IMarker) => void;
-  onMarkerClick: () => void;
+  onMarkerClick: (areaId: number | null) => void;
 }
 export const SingleMarkerComponent = ({
   marker, visited, showDescriptions, icon, toggleMarkerVisited, onMarkerClick,
@@ -19,7 +19,7 @@ export const SingleMarkerComponent = ({
       position={[marker.y, marker.x]}
       icon={icon}
       eventHandlers={{
-        click: onMarkerClick
+        click: () => onMarkerClick(marker.areaId)
       }}
     >
       <CustomPopup
