@@ -1,40 +1,36 @@
 import { useMap } from "react-leaflet";
-import { getBounds, MapName, TILE_SIZE } from "../mapUtils";
+import { getBounds, mapConfigs, MapName, TILE_SIZE } from "../mapUtils";
 import { useEffect, useRef } from "react";
-import L from 'leaflet';
+import { PMTileLayer } from "@/services/tiles";
 
-export function CustomTileLayer({ mapName, url, shouldDim }: { mapName: MapName; url: string; shouldDim: boolean }) {
+interface CustomTileLayerProps {
+  mapName: MapName;
+  shouldDim: boolean;
+}
+export function CustomTileLayer({ mapName, shouldDim }: CustomTileLayerProps) {
   const map = useMap();
-  const layerRef = useRef<L.TileLayer | null>(null);
+  const layerRef = useRef<PMTileLayer | null>(null);
 
   useEffect(() => {
-    const tileLayer = L.tileLayer('', {
+    const { url } = mapConfigs[mapName];
+    if (!url) return;
+    const tileLayer = new PMTileLayer(url, {
       tileSize: TILE_SIZE,
       noWrap: true,
       minZoom: -10,
-      bounds: getBounds(mapName),
       maxZoom: 10,
       minNativeZoom: 0,
       maxNativeZoom: 0,
+      bounds: getBounds(mapName),
       opacity: 1,
     });
-
-
-    tileLayer.getTileUrl = ({ x, y }) =>
-      url.replace('{x}', `${x}`).replace('{y}', `${-y}`);
-
     tileLayer.addTo(map);
     layerRef.current = tileLayer;
-
-    return () => {
-      map.removeLayer(tileLayer);
-    };
-  }, [map, mapName, url]);
+    return () => { map.removeLayer(tileLayer); };
+  }, [map, mapName]);
 
   useEffect(() => {
-    if (layerRef.current) {
-      layerRef.current.setOpacity(shouldDim ? 0.5 : 1);
-    }
+    layerRef.current?.setOpacity(shouldDim ? 0.5 : 1);
   }, [shouldDim]);
 
   return null;

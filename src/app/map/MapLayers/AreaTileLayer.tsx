@@ -1,8 +1,7 @@
 import { useMap } from "react-leaflet";
 import { useEffect } from "react";
-import L from 'leaflet';
-import { ASSET_URL } from "@/constants/constants";
 import { APIAreaLayer } from "@/types/mapTypes";
+import { PMTileLayer } from "@/services/tiles";
 
 export function AreaTileLayer({ areaId, areaLayers }: { areaId: number, areaLayers: Map<number, APIAreaLayer> }) {
   const map = useMap();
@@ -10,8 +9,15 @@ export function AreaTileLayer({ areaId, areaLayers }: { areaId: number, areaLaye
   useEffect(() => {
     const area = areaLayers.get(areaId);
     if (!area) return;
+    const { mapTiles } = area;
+    let areaLayerURL: string | undefined;
+    for (const key in mapTiles) {
+      areaLayerURL = mapTiles[key];
+      break;
+    }
+    if (!areaLayerURL) return;
 
-    const tileLayer = L.tileLayer('', {
+    const tileLayer = new PMTileLayer(areaLayerURL, {
       tileSize: 256,
       noWrap: true,
       minZoom: -10,
@@ -21,19 +27,6 @@ export function AreaTileLayer({ areaId, areaLayers }: { areaId: number, areaLaye
       zIndex: 500,
       opacity: 0.85,
     });
-
-    tileLayer.getTileUrl = ({ x, y }) => {
-      const tileX = x;
-      const tileY = -y;
-
-      const entry = Object.entries(area.mapTiles).find(([key]) =>
-        key.includes(`_${tileX}_${tileY}_`)
-      );
-
-      if (!entry) return '';
-
-      return ASSET_URL + entry[1].replace(/^\/Game\/Aki\/UI\//, '');
-    };
 
     tileLayer.addTo(map);
 

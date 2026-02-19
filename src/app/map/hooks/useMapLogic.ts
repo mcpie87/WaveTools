@@ -5,10 +5,13 @@ import { MapName } from "../mapUtils";
 import { loadBlueprintTranslations } from "../BlueprintTranslationService";
 import { mapStorageService } from "../services/mapStorageService";
 import { initMapState, mapReducer } from "../state/map.reducer";
+import { ensureManifest } from "@/services/tiles/manifest";
 
 export function useMapLogic() {
   const [data, setData] = useState<APIMarker[]>([]);
   const [layersData, setLayersData] = useState<APIAreaLayer[]>([]);
+  const [manifestReady, setManifestReady] = useState(false);
+
   const [translationsReady, setTranslationsReady] = useState(false);
   const [selectedMap, setSelectedMap] = useState<SelectedMap>(MapName.SOLARIS_3);
   const [activeAreaId, setActiveAreaId] = useState<number | null>(null);
@@ -36,6 +39,10 @@ export function useMapLogic() {
   useEffect(() => {
     mapStorageService.save(dbMapData);
   }, [dbMapData]);
+
+  useEffect(() => {
+    ensureManifest().then(() => setManifestReady(true));
+  }, []);
 
   useEffect(() => {
     (async () => {
@@ -111,6 +118,7 @@ export function useMapLogic() {
     data,
     translationsReady,
     dbMapData,
+    manifestReady,
     dispatch,
     areaLayers,
     ui

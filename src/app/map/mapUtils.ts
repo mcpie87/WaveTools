@@ -240,7 +240,7 @@ export const mapConfigs: Record<string, MapConfig> = {
   },
   [MapName.ROYA_FROSTLANDS]: {
     mapId: 8,
-    bounds: [[4, 14], [-5, 3]],
+    bounds: [[4, 11], [-3, 3]],
     url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
   },
 } as const;

@@ -3,7 +3,7 @@
 import 'leaflet/dist/leaflet.css';
 
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
-import { MapContainer, Marker, useMapEvent } from 'react-leaflet';
+import { MapContainer, Marker } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
@@ -20,20 +20,17 @@ import { AreaTileLayer } from './MapLayers/AreaTileLayer';
 import { isMarkerVisited } from './state/map.selectors';
 import { bulkSetCategoryVisibleAction, clearCategoriesVisibilityAction, setCategoryGroupVisibleAction, toggleCategoryVisibleAction, toggleMarkerVisitedAction } from './state/map.actions';
 import { useMapLogic } from './hooks/useMapLogic';
+import { MapClickHandler } from './handlers/MapClickHandler';
 
 const simpleCRS = L.CRS.Simple;
 
 /* --------------------------- Components -------------------------- */
-function ClickHandler({ enabled, onClick }: { enabled: boolean; onClick: (p: L.LatLng) => void }) {
-  useMapEvent('click', e => {
-    if (enabled) onClick(e.latlng);
-  });
-  return null;
-}
+
 
 export default function XYZMap() {
   const {
     data,
+    manifestReady,
     translationsReady,
     dbMapData,
     dispatch,
@@ -234,7 +231,7 @@ export default function XYZMap() {
     toggleMarkerVisited
   ]);
 
-  if (!data.length) return <div className="p-4">Loading data…</div>;
+  if (!data.length || !manifestReady) return <div className="p-4">Loading data…</div>;
 
   if (!translationsReady) return <div>Loading translations…</div>;
   return (
@@ -284,20 +281,19 @@ export default function XYZMap() {
             width: '100%',
             backgroundColor: '#111',
           }}
-          maxBounds={isCustomMapSelected(selectedMap) ? undefined : getBounds(selectedMap as UnionMapName, 4)}
+          maxBounds={isCustomMapSelected(selectedMap) ? undefined : getBounds(selectedMap as UnionMapName, 5)}
           attributionControl={false}
         >
           {unionMapConfigs[selectedMap]?.url && selectedMapId === null && (
             <CustomTileLayer
               mapName={selectedMap as MapName}
-              url={unionMapConfigs[selectedMap].url}
               shouldDim={activeAreaId !== null && areaLayers.has(activeAreaId)}
             />
           )}
           {activeAreaId !== null && (
             <AreaTileLayer areaId={activeAreaId} areaLayers={areaLayers} />
           )}
-          <ClickHandler
+          <MapClickHandler
             enabled={enableClick}
             onClick={p =>
               setCoords({

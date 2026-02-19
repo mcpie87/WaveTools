@@ -6,9 +6,13 @@ from pathlib import Path
 import re
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
+# comment for author or anyone working with NAS and WSL
+# if working with NAS on WSL, mount it
+# sudo mount -t drvfs Z: /mnt/z   
+
 # CONFIG
 INPUT_DIR = Path("/mnt/z/projects/WW_Asset/UIResources/UiWorldMap/Image")
-OUTPUT_DIR = Path("./output/map_tiles")
+OUTPUT_DIR = Path("./map_tiles")
 CACHE_FILE = Path("./conversion_cache.json")
 PATTERN = r"T_.*_-?[0-9]+_-?[0-9]+_"
 QUALITY = 90
