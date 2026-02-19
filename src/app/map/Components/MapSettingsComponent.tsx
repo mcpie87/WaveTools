@@ -15,6 +15,7 @@ import { CategoryPaneComponent } from "./CategoryPaneComponent";
 import { translateBlueprint } from "../BlueprintTranslationService";
 import { DbMapData, SelectedMap } from "@/types/mapTypes";
 import { DevModeSettingsComponent } from "./DevModeSettingsComponent";
+import { BackupManager } from "@/components/BackupComponent";
 
 interface MapSettingsComponentProps {
   selectedMap: SelectedMap;
@@ -203,7 +204,9 @@ export const MapSettingsComponent = ({
 
           <div className="rounded-lg border p-3 space-y-2 bg-base-200">
             <h3 className="text-sm font-semibold">Settings</h3>
+
             <div className="flex flex-col gap-2">
+              <BackupManager />
               <Toggle pressed={hideVisited} onPressedChange={setHideVisited}>
                 Hide visited
               </Toggle>

@@ -1,5 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 public/assets
+public/map_tiles
+scripts/map_tiles
+*.pmtiles
+*.mbtiles
 
 # dependencies
 /node_modules
@@ -42,3 +46,4 @@ yarn-error.log*
 next-env.d.ts
 scripts/datamine_extractor/.byebug_history
 scripts/datamine_extractor/out
+scripts/output/map_tiles/CAFETiles/T_CAFETiles_0_0_UI.webp
