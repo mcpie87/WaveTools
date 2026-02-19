@@ -2,18 +2,14 @@
 
 import 'leaflet/dist/leaflet.css';
 
-import React, { useCallback, useEffect, useMemo, useRef } from 'react';
-import { MapContainer, Marker } from 'react-leaflet';
+import React, { useCallback, useMemo } from 'react';
+import { MapContainer } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
-import { UnionTranslationMap } from './TranslationMaps/translationMap';
 import { APIMarker, IMarker } from './types';
-import { convertMarkerToCoord, getBounds, getMapCenter, isCustomMapSelected, mapConfigs, MapName, scaleFactor, TILE_SIZE, unionMapConfigs, UnionMapName } from './mapUtils';
-import { CustomPopup } from './Components/CustomPopup';
-import { getWorldmapIcon } from './TranslationMaps/worldmapIconMap';
+import { getBounds, getMapCenter, isCustomMapSelected, mapConfigs, MapName, scaleFactor, TILE_SIZE, unionMapConfigs, UnionMapName } from './mapUtils';
 import { MapSettingsComponent } from './Components/MapSettingsComponent';
-import { isDevelopment } from '@/utils/utils';
 import { useFilteredMarkers } from './hooks/useFilteredMarkers';
 import { CustomTileLayer } from './MapLayers/CustomTileLayer';
 import { AreaTileLayer } from './MapLayers/AreaTileLayer';
@@ -21,6 +17,9 @@ import { isMarkerVisited } from './state/map.selectors';
 import { bulkSetCategoryVisibleAction, clearCategoriesVisibilityAction, setCategoryGroupVisibleAction, toggleCategoryVisibleAction, toggleMarkerVisitedAction } from './state/map.actions';
 import { useMapLogic } from './hooks/useMapLogic';
 import { MapClickHandler } from './handlers/MapClickHandler';
+import { MarkerLayer } from './MapLayers/MarkerLayer';
+import { useMapCategoryStats } from './hooks/useMapCategoryStats';
+import { useDisplayedMarkers } from './hooks/useDisplayedMarkers';
 
 const simpleCRS = L.CRS.Simple;
 
@@ -55,29 +54,12 @@ export default function XYZMap() {
     setHideVisited
   } = ui;
 
-  const iconCache = useRef(new Map<string, L.DivIcon>());
-  useEffect(() => {
-    iconCache.current.clear();
-  }, [hideVisited]);
-
   const markers = useFilteredMarkers(data, selectedMap, selectedMapId);
-
-  const categories: Array<[string, number, number]> = useMemo(() => {
-    const totals: Record<string, number> = {};
-    const visited: Record<string, number> = {};
-    for (const m of markers) {
-      totals[m.BlueprintType] = (totals[m.BlueprintType] ?? 0) + 1;
-      visited[m.BlueprintType] =
-        (visited[m.BlueprintType] ?? 0) +
-        (isMarkerVisited(dbMapData, m.Id as number) ? 1 : 0);
-    }
-    const counts: Record<string, [number, number]> = {};
-    for (const m of markers) {
-      counts[m.BlueprintType] = [totals[m.BlueprintType], visited[m.BlueprintType]];
-    }
-    return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0])).map(([k, v]) => [k, v[0], v[1]]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [markers, dbMapData.visitedMarkers]);
+  const categories: Array<[string, number, number]> = useMapCategoryStats(
+    markers,
+    dbMapData,
+    isMarkerVisited
+  )
 
   const selectedPoint: APIMarker = useMemo(() => {
     return {
@@ -100,16 +82,14 @@ export default function XYZMap() {
     });
   }, [markers, selectedPoint, radius]);
 
-  const displayedMarkers = useMemo(() => {
-    const base = enableClick
-      ? markersWithinRadius
-      : markers.filter(m => dbMapData.visibleCategories[m.BlueprintType]);
-    return [
-      ...(enableClick ? [convertMarkerToCoord(selectedPoint, dbMapData.visitedMarkers)] : []),
-      ...base.map((m) => convertMarkerToCoord(m, dbMapData.visitedMarkers))
-        .filter(m => !hideVisited || !dbMapData.visitedMarkers[m.id as number]),
-    ]
-  }, [markers, markersWithinRadius, dbMapData.visibleCategories, hideVisited, enableClick, selectedPoint, dbMapData.visitedMarkers]);
+  const displayedMarkers = useDisplayedMarkers(
+    markers,
+    markersWithinRadius,
+    dbMapData,
+    enableClick,
+    selectedPoint,
+    hideVisited
+  );
 
   const toggleMarkerVisited = useCallback((marker: IMarker) => {
     dispatch(toggleMarkerVisitedAction(marker.id as number));
@@ -118,6 +98,7 @@ export default function XYZMap() {
   const toggleCategory = useCallback((category: string) => {
     dispatch(toggleCategoryVisibleAction(category));
   }, [dispatch]);
+
   const toggleCategories = useCallback((categories: string[], value: boolean) => {
     dispatch(bulkSetCategoryVisibleAction(categories, value));
   }, [dispatch]);
@@ -130,105 +111,6 @@ export default function XYZMap() {
     dispatch(setCategoryGroupVisibleAction(categoryGroup, value));
   }, [dispatch]);
 
-  /* --------------------------- Icons ------------------------------ */
-
-  const getIcon = useCallback((category: string, visited: boolean) => {
-    const key = `${category}:${visited}:${hideVisited}`;
-
-    if (!isDevelopment() && iconCache.current.has(key)) {
-      return iconCache.current.get(key)!;
-    }
-
-    let html = '';
-    let iconSize: L.PointExpression = [20, 20];
-    let iconAnchor: L.PointExpression = [10, 10];
-
-    const worldmapIconUrl = getWorldmapIcon(UnionTranslationMap[category]?.name ?? category);
-
-    if (worldmapIconUrl) {
-      // worldmap icon exists — style it nicely
-      const opacity = visited && !hideVisited ? 0.3 : 1;
-      const display = hideVisited && visited ? 'none' : 'inline-block';
-
-      html = `
-      <div style="
-        display: ${display};
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        border: 2px solid #aaa;
-        background-color: #333;
-        overflow: hidden;
-        opacity: ${opacity};
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      ">
-        <img src="${worldmapIconUrl}" style="width:32px; height:32px; object-fit:contain;" />
-      </div>
-    `;
-
-      iconSize = [32, 32];
-      iconAnchor = [16, 16];
-    } else {
-      // fallback colored circle
-      const hue = Math.abs([...category].reduce((a, c) => c.charCodeAt(0) + ((a << 5) - a), 0)) % 360;
-      if (visited) {
-        if (hideVisited) {
-          html = `<div style="display:none"></div>`;
-        } else {
-          html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%); opacity:0.3;"></div>`;
-        }
-      } else {
-        html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%)"></div>`;
-      }
-    }
-
-    const icon = L.divIcon({
-      html,
-      className: '',
-      iconSize,
-      iconAnchor,
-    });
-
-    iconCache.current.set(key, icon);
-    return icon;
-  }, [hideVisited]);
-
-
-  /* ----------------------------- UI ------------------------------- */
-  const markerComponents = useMemo(() => {
-    return displayedMarkers.map((m) => (
-      <Marker
-        key={`${m.id}:${dbMapData.visitedMarkers[m.id as number]}:${hideVisited}`}
-        position={[m.y, m.x]}
-        icon={getIcon(m.category, !!dbMapData.visitedMarkers[m.id as number])}
-        eventHandlers={{
-          click: () => {
-            if (m.areaId !== activeAreaId) {
-              setActiveAreaId(m.areaId);
-            }
-          }
-        }}
-      >
-        <CustomPopup
-          marker={m}
-          toggleVisited={() => toggleMarkerVisited(m)}
-          visited={!!dbMapData.visitedMarkers[m.id as number]}
-          showDescription={showDescriptions}
-        />
-      </Marker>
-    ));
-  }, [
-    displayedMarkers,
-    dbMapData.visitedMarkers,
-    showDescriptions,
-    getIcon,
-    activeAreaId,
-    setActiveAreaId,
-    hideVisited,
-    toggleMarkerVisited
-  ]);
 
   if (!ready.entities || !ready.manifest) return <div className="p-4">Loading data…</div>;
   if (!ready.translations) return <div>Loading translations…</div>;
@@ -302,7 +184,15 @@ export default function XYZMap() {
               })
             }
           />
-          {markerComponents}
+          <MarkerLayer
+            markers={displayedMarkers}
+            dbMapData={dbMapData}
+            hideVisited={hideVisited}
+            showDescriptions={showDescriptions}
+            activeAreaId={activeAreaId}
+            setActiveAreaId={setActiveAreaId}
+            toggleMarkerVisited={toggleMarkerVisited}
+          />
         </MapContainer>
       </main>
     </div>
