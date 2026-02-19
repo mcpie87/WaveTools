@@ -30,9 +30,8 @@ const simpleCRS = L.CRS.Simple;
 export default function XYZMap() {
   const {
     data,
-    manifestReady,
-    translationsReady,
     dbMapData,
+    ready,
     dispatch,
     areaLayers,
     ui
@@ -231,9 +230,9 @@ export default function XYZMap() {
     toggleMarkerVisited
   ]);
 
-  if (!data.length || !manifestReady) return <div className="p-4">Loading data…</div>;
+  if (!ready.entities || !ready.manifest) return <div className="p-4">Loading data…</div>;
+  if (!ready.translations) return <div>Loading translations…</div>;
 
-  if (!translationsReady) return <div>Loading translations…</div>;
   return (
     <div className="h-screen w-screen flex relative">
       {/* Left controls */}
