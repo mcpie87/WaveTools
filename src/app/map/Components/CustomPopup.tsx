@@ -24,7 +24,7 @@ export function CustomPopup({
   // const icon = getWorldmapIcon(title);
 
   return (
-    <Popup>
+    <Popup autoPan={false}>
       <div className="flex flex-col gap-2">
         <div className="font-bold">{title}{showDescription && ` - ${marker.category}`}</div>
         {/* {icon && (

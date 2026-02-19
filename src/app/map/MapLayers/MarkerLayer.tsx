@@ -6,6 +6,7 @@ import { IMarker } from "../types";
 import L from "leaflet";
 import { DbMapData } from "@/types/mapTypes";
 import { SingleMarker } from "./components/SingleMarker";
+import { useMapViewBounds } from "../hooks/useMapViewBounds";
 
 interface MarkerLayerProps {
   markers: IMarker[];
@@ -20,10 +21,17 @@ export const MarkerLayer = ({
   markers, dbMapData, hideVisited, showDescriptions,
   activeAreaId, setActiveAreaId, toggleMarkerVisited,
 }: MarkerLayerProps) => {
+  const viewBounds = useMapViewBounds();
+
   const iconCache = useRef(new Map<string, L.DivIcon>());
   useEffect(() => {
     iconCache.current.clear();
   }, [hideVisited]);
+
+  const visibleMarkers = markers.filter(m =>
+    viewBounds.contains([m.y, m.x]) &&
+    !(hideVisited && m.visited)
+  );
 
   const getIcon = useCallback((category: string, visited: boolean) => {
     const key = `${category}:${visited}:${hideVisited}`;
@@ -92,7 +100,7 @@ export const MarkerLayer = ({
     if (areaId !== activeAreaId) setActiveAreaId(areaId);
   };
 
-  return markers.map((m) => (
+  return visibleMarkers.map((m) => (
     <SingleMarker
       // key={`${m.id}:${dbMapData.visitedMarkers[m.id as number]}:${hideVisited}`}
       key={`${m.id}`}
