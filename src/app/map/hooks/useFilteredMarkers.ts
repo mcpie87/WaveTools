@@ -17,7 +17,6 @@ import {
   storyDungeonMapConfigs,
   testDungeonMapConfigs,
   unionMapConfigs,
-  UnionMapName,
 } from "../mapUtils";
 
 const definedMapIds = new Set(Object.values(unionMapConfigs).map(c => c.mapId));
@@ -58,13 +57,8 @@ export function useFilteredMarkers(
     for (const [mapId, tree] of indexes.spatial) {
       if (!matchesMapId(mapId)) continue;
 
-      // resolve the map name for this mapId to get its game bounds
-      const mapName = Object.entries(unionMapConfigs).find(
-        ([, config]) => config.mapId === mapId
-      )?.[0] as UnionMapName | undefined;
-
-      if (mapName) {
-        const gameBounds = getGameBounds(mapName);
+      if (selectedMap) {
+        const gameBounds = getGameBounds(selectedMap);
         if (gameBounds) {
           // y is reversed — bounds[0][1] is min, bounds[0][0] is max
           const bbox: BBox = {

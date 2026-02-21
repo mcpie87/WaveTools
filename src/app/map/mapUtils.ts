@@ -19,7 +19,7 @@ const translateMapToGameY = (y: number) => -y * 10000 / scaleFactor;
 //   y: translateMapToGameY(y),
 //   z: z * 10000,
 // });
-export const getGameBounds = (mapName: UnionMapName) => {
+export const getGameBounds = (mapName: SelectedMap) => {
   const { bounds } = unionMapConfigs[mapName];
   if (!bounds) return undefined;
   return [
@@ -62,7 +62,7 @@ export const getBounds = (mapName: UnionMapName, padding = 0) => {
 export const isGameCoordInGameBounds = (mapName: SelectedMap, x: number, y: number) => {
   if (isCustomMapSelected(mapName)) return true;
 
-  const bounds = getGameBounds(mapName as UnionMapName);
+  const bounds = getGameBounds(mapName);
   if (!bounds) return true;
   // y is REVERSED due to map translation
   return bounds[0][1] <= y && y <= bounds[0][0] && bounds[1][0] <= x && x <= bounds[1][1];
