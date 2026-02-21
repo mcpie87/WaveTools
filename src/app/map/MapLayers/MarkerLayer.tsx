@@ -1,5 +1,4 @@
-import { isDevelopment } from "@/utils/utils";
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useMemo, useRef } from "react";
 import { getWorldmapIcon } from "../TranslationMaps/worldmapIconMap";
 import { UnionTranslationMap } from "../TranslationMaps/translationMap";
 import { IMarker } from "../types";
@@ -7,6 +6,7 @@ import L from "leaflet";
 import { DbMapData } from "@/types/mapTypes";
 import { SingleMarker } from "./components/SingleMarker";
 import { useMapViewBounds } from "../hooks/useMapViewBounds";
+import RBush from "rbush";
 
 interface MarkerLayerProps {
   markers: IMarker[];
@@ -22,16 +22,31 @@ export const MarkerLayer = ({
   activeAreaId, setActiveAreaId, toggleMarkerVisited,
 }: MarkerLayerProps) => {
   const viewBounds = useMapViewBounds();
+  const spatialIndex = useMemo(() => {
+    const tree = new RBush<{ minX: number; minY: number; maxX: number; maxY: number; marker: IMarker }>();
+    tree.load(markers.map(m => ({
+      minX: m.x, maxX: m.x,
+      minY: m.y, maxY: m.y,
+      marker: m,
+    })));
+    return tree;
+  }, [markers]);
 
   const iconCache = useRef(new Map<string, L.DivIcon>());
   useEffect(() => {
     iconCache.current.clear();
   }, [hideVisited]);
 
-  const visibleMarkers = markers.filter(m =>
-    viewBounds.contains([m.y, m.x]) &&
-    !(hideVisited && m.visited)
-  );
+  const visibleMarkers = useMemo(() => {
+    const sw = viewBounds.getSouthWest();
+    const ne = viewBounds.getNorthEast();
+    return spatialIndex.search({
+      minX: sw.lng, minY: sw.lat,
+      maxX: ne.lng, maxY: ne.lat,
+    })
+      .map(n => n.marker)
+      .filter(m => !(hideVisited && m.visited));
+  }, [spatialIndex, viewBounds, hideVisited]);
 
   const getIcon = useCallback((category: string, visited: boolean) => {
     const key = `${category}:${visited}:${hideVisited}`;

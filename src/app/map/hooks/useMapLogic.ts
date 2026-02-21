@@ -6,7 +6,7 @@ import { useMapUI } from "./useMapUI";
 import { useMapData } from "./useMapData";
 
 export function useMapLogic() {
-  const { data, layersData, ready } = useMapData();
+  const { indexes, layersData, ready } = useMapData();
   const ui = useMapUI();
   const [dbMapData, dispatch] = useReducer(mapReducer, initMapState());
 
@@ -29,7 +29,7 @@ export function useMapLogic() {
   }, [layersData]);
 
   return {
-    data,
+    indexes,
     ready,
     dbMapData,
     dispatch,

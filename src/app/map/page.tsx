@@ -28,7 +28,7 @@ const simpleCRS = L.CRS.Simple;
 
 export default function XYZMap() {
   const {
-    data,
+    indexes,
     dbMapData,
     ready,
     dispatch,
@@ -54,7 +54,7 @@ export default function XYZMap() {
     setHideVisited
   } = ui;
 
-  const markers = useFilteredMarkers(data, selectedMap, selectedMapId);
+  const markers = useFilteredMarkers(indexes, selectedMap, selectedMapId);
   const categories: Array<[string, number, number]> = useMapCategoryStats(
     markers,
     dbMapData,

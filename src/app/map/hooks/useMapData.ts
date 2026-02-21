@@ -3,11 +3,60 @@ import { ensureManifest } from "@/services/tiles/manifest";
 import { loadBlueprintTranslations } from "../BlueprintTranslationService";
 import { APIMarker } from "../types";
 import { APIAreaLayer } from "@/types/mapTypes";
+import RBush from "rbush";
 
 const ENTITIES_URL = 'https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYJjynAOgE0xzLG7NC35IMYJrq9uTnS4KXpDBO';
 
+export interface MarkerNode {
+  minX: number;
+  minY: number;
+  maxX: number;
+  maxY: number;
+  marker: APIMarker;
+}
+
+export interface MarkerIndexes {
+  spatial: Map<number, RBush<MarkerNode>>;
+  byBlueprint: Map<string, APIMarker[]>;
+  byMapId: Map<number, APIMarker[]>;
+}
+
+function buildIndexes(raw: APIMarker[]): MarkerIndexes {
+  const spatial = new Map<number, RBush<MarkerNode>>();
+  const byBlueprint = new Map<string, APIMarker[]>();
+  const byMapId = new Map<number, APIMarker[]>();
+
+  const spatialBatch = new Map<number, MarkerNode[]>();
+
+  for (const marker of raw) {
+    const x = marker.Transform[0].X;
+    const y = marker.Transform[0].Y;
+    const { MapId, BlueprintType } = marker;
+
+    // spatial batch
+    if (!spatialBatch.has(MapId)) spatialBatch.set(MapId, []);
+    spatialBatch.get(MapId)!.push({ minX: x, minY: y, maxX: x, maxY: y, marker });
+
+    // byMapId
+    if (!byMapId.has(MapId)) byMapId.set(MapId, []);
+    byMapId.get(MapId)!.push(marker);
+
+    // byBlueprint
+    if (!byBlueprint.has(BlueprintType)) byBlueprint.set(BlueprintType, []);
+    byBlueprint.get(BlueprintType)!.push(marker);
+  }
+
+  for (const [mapId, nodes] of spatialBatch) {
+    const tree = new RBush<MarkerNode>();
+    tree.load(nodes);
+    spatial.set(mapId, tree);
+  }
+
+  return { spatial, byBlueprint, byMapId };
+}
+
 export function useMapData() {
-  const [data, setData] = useState<APIMarker[]>([]);
+  const [indexes, setIndexes] = useState<MarkerIndexes | null>(null);
   const [layersData, setLayersData] = useState<APIAreaLayer[]>([]);
   const [ready, setReady] = useState({
     manifest: false,
@@ -15,7 +64,6 @@ export function useMapData() {
     entities: false,
   });
 
-  // manifest + translations in parallel
   useEffect(() => {
     Promise.all([
       ensureManifest().then(() => setReady(r => ({ ...r, manifest: true }))),
@@ -23,30 +71,24 @@ export function useMapData() {
     ]);
   }, []);
 
-  // entities — migrate from Cache API to IDB
   useEffect(() => {
     (async () => {
-      const URL = ENTITIES_URL;
-
       const cache = await caches.open('levelentityconfig-cache');
-      const cached = await cache.match(URL);
+      const cached = await cache.match(ENTITIES_URL);
 
-      if (cached) {
-        setData(await cached.json());
-        setReady(r => ({ ...r, entities: true }));
-        return;
-      }
+      const raw: APIMarker[] = cached
+        ? await cached.json()
+        : await (async () => {
+          const res = await fetch(ENTITIES_URL);
+          if (res.ok) await cache.put(ENTITIES_URL, res.clone());
+          return res.json();
+        })();
 
-      const res = await fetch(URL);
-      if (res.ok) {
-        await cache.put(URL, res.clone());
-        setData(await res.json());
-      }
+      setIndexes(buildIndexes(raw));
       setReady(r => ({ ...r, entities: true }));
     })();
   }, []);
 
-  // area layers — keep as-is, small file
   useEffect(() => {
     (async () => {
       const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -59,5 +101,5 @@ export function useMapData() {
     })();
   }, []);
 
-  return { data, layersData, ready };
+  return { indexes, layersData, ready };
 }
