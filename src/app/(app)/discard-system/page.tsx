@@ -1,16 +1,14 @@
 'use client';
 
-import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog";
+import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { SONATAS } from "@/constants/sonatas";
 import LocalStorageService from "@/services/LocalStorageService";
 import { DbDiscardSystem, EchoCost, MainStat, MainStat1Cost, MainStat3Cost, MainStat4Cost, SonataKey } from "@/types/discardSystemTypes";
 import { LocalStorageKey } from "@/types/localStorageTypes";
-import { convertToUrl } from "@/utils/utils";
-import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
-import { useDebounce } from "use-debounce";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { SonataRow } from "./components/SonataRow";
 
 const storageService = new LocalStorageService(LocalStorageKey.ECHO_DISCARD_SYSTEM);
 
@@ -41,26 +39,10 @@ const initDb = (): DbDiscardSystem => {
 };
 
 
-const CommentInput = ({ value, onCommit }: { value: string; onCommit: (val: string) => void }) => {
-  const [localValue, setLocalValue] = useState(value);
-  const [debouncedValue] = useDebounce(localValue, 500);
 
-  useEffect(() => {
-    onCommit(debouncedValue);
-  }, [debouncedValue, onCommit]);
-
-  return (
-    <Input
-      type="text"
-      placeholder="Comment"
-      value={localValue}
-      onChange={(e) => setLocalValue(e.target.value)}
-      className="min-w-48"
-    />
-  );
-};
 
 export default function DiscardSystem() {
+  const [pendingAction, setPendingAction] = useState<'reset' | 'selectAll' | null>(null);
   const [sonataDb, setSonataDb] = useState<DbDiscardSystem>(() => {
     return (storageService.load() as DbDiscardSystem) ?? initDb();
   });
@@ -75,24 +57,15 @@ export default function DiscardSystem() {
     );
   }, []);
 
-  const toggle = (sonata: SonataKey, cost: EchoCost, stat: MainStat) => {
+  const toggle = useCallback((sonata: SonataKey, cost: EchoCost, stat: MainStat) => {
     setSonataDb(prev => {
       const existing = prev[sonata]?.[cost] as Set<MainStat> | undefined;
       const newSet = new Set(existing);
-      if (newSet.has(stat)) {
-        newSet.delete(stat);
-      } else {
-        newSet.add(stat as never);
-      }
-      return {
-        ...prev,
-        [sonata]: {
-          ...prev[sonata],
-          [cost]: newSet,
-        },
-      };
+      if (newSet.has(stat)) newSet.delete(stat);
+      else newSet.add(stat as never);
+      return { ...prev, [sonata]: { ...prev[sonata], [cost]: newSet } };
     });
-  };
+  }, []);
 
   const handleCommentChange = useMemo(() => {
     const cache: Partial<Record<SonataKey, (val: string) => void>> = {};
@@ -127,10 +100,35 @@ export default function DiscardSystem() {
     return totals;
   }, [sonataDb, allStats]);
 
+  const handleReset = () => setPendingAction('reset');
+  const handleSelectAll = () => setPendingAction('selectAll');
+
+  const handleConfirm = () => {
+    if (pendingAction === 'reset') {
+      setSonataDb(initDb());
+    } else if (pendingAction === 'selectAll') {
+      setSonataDb(prev =>
+        Object.fromEntries(
+          Object.keys(SONATAS).map(key => [
+            key,
+            {
+              ...prev[key as SonataKey],
+              [EchoCost.COST1]: new Set(MAIN_STATS[EchoCost.COST1]),
+              [EchoCost.COST3]: new Set(MAIN_STATS[EchoCost.COST3]),
+              [EchoCost.COST4]: new Set(MAIN_STATS[EchoCost.COST4]),
+            },
+          ])
+        ) as DbDiscardSystem
+      );
+    }
+    setPendingAction(null);
+  };
+
   return (
     <div className="p-6 overflow-x-auto">
       <h1 className="text-xl font-semibold mb-4">Discard System</h1>
-
+      <Button onClick={handleReset}>Reset</Button>
+      <Button onClick={handleSelectAll}>Select All</Button>
       <Table className="border-collapse text-sm">
         <TableHeader>
           <TableRow>
@@ -159,41 +157,16 @@ export default function DiscardSystem() {
 
         <TableBody>
           {Object.entries(SONATAS).map(([key, { name, icon }]) => (
-            <TableRow key={key}>
-              <TableCell className="border">
-                <Image
-                  className="min-w-5"
-                  src={convertToUrl(icon)}
-                  alt={name}
-                  width={20}
-                  height={20}
-                />
-              </TableCell>
-              <TableCell className="border px-3 py-1 whitespace-nowrap">
-                {name}
-              </TableCell>
-
-              {allStats.map(({ cost, stat }) => {
-                const isChecked = !!sonataDb[key as SonataKey]?.[cost]?.has(stat as never);
-
-                return (
-                  <TableCell key={`${cost}_${stat}`} className="border text-center px-2 py-1">
-                    <Checkbox
-                      checked={isChecked}
-                      onCheckedChange={() => toggle(key as SonataKey, cost, stat)}
-                      className="mx-auto"
-                    />
-                  </TableCell>
-                );
-              })}
-
-              <TableCell className="min-w-48">
-                <CommentInput
-                  value={sonataDb[key as SonataKey]?.comment ?? ''}
-                  onCommit={handleCommentChange(key as SonataKey)}
-                />
-              </TableCell>
-            </TableRow>
+            <SonataRow
+              key={key}
+              sonataKey={key as SonataKey}
+              name={name}
+              icon={icon}
+              allStats={allStats}
+              sonataData={sonataDb[key as SonataKey]}
+              onToggle={toggle}
+              onCommentChange={handleCommentChange(key as SonataKey)}
+            />
           ))}
 
           <TableRow className="font-semibold">
@@ -209,6 +182,25 @@ export default function DiscardSystem() {
           </TableRow>
         </TableBody>
       </Table>
+
+      <AlertDialog open={pendingAction !== null} onOpenChange={open => !open && setPendingAction(null)}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>
+              {pendingAction === 'reset' ? 'Reset all selections?' : 'Select everything?'}
+            </AlertDialogTitle>
+            <AlertDialogDescription>
+              {pendingAction === 'reset'
+                ? 'This will clear all checkboxes and comments. This action cannot be undone.'
+                : 'This will check every checkbox across all sonatas and costs.'}
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
+            <AlertDialogAction onClick={handleConfirm}>Confirm</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 }
