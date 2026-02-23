@@ -1,6 +1,7 @@
 'use client';
 
 import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { SONATAS } from "@/constants/sonatas";
 import LocalStorageService from "@/services/LocalStorageService";
@@ -9,6 +10,7 @@ import { LocalStorageKey } from "@/types/localStorageTypes";
 import { convertToUrl } from "@/utils/utils";
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
+import { useDebounce } from "use-debounce";
 
 const storageService = new LocalStorageService(LocalStorageKey.ECHO_DISCARD_SYSTEM);
 
@@ -36,6 +38,26 @@ const initDb = (): DbDiscardSystem => {
       },
     ])
   ) as DbDiscardSystem;
+};
+
+
+const CommentInput = ({ value, onCommit }: { value: string; onCommit: (val: string) => void }) => {
+  const [localValue, setLocalValue] = useState(value);
+  const [debouncedValue] = useDebounce(localValue, 500);
+
+  useEffect(() => {
+    onCommit(debouncedValue);
+  }, [debouncedValue, onCommit]);
+
+  return (
+    <Input
+      type="text"
+      placeholder="Comment"
+      value={localValue}
+      onChange={(e) => setLocalValue(e.target.value)}
+      className="min-w-48"
+    />
+  );
 };
 
 export default function DiscardSystem() {
@@ -71,6 +93,24 @@ export default function DiscardSystem() {
       };
     });
   };
+
+  const handleCommentChange = useMemo(() => {
+    const cache: Partial<Record<SonataKey, (val: string) => void>> = {};
+    return (sonataKey: SonataKey) => {
+      if (!cache[sonataKey]) {
+        cache[sonataKey] = (value: string) => {
+          setSonataDb(prev => ({
+            ...prev,
+            [sonataKey]: {
+              ...prev[sonataKey],
+              comment: value,
+            },
+          }));
+        };
+      }
+      return cache[sonataKey]!;
+    };
+  }, []);
 
   const columnTotals = useMemo(() => {
     const totals: Record<string, number> = {};
@@ -146,6 +186,13 @@ export default function DiscardSystem() {
                   </TableCell>
                 );
               })}
+
+              <TableCell className="min-w-48">
+                <CommentInput
+                  value={sonataDb[key as SonataKey]?.comment ?? ''}
+                  onCommit={handleCommentChange(key as SonataKey)}
+                />
+              </TableCell>
             </TableRow>
           ))}
 

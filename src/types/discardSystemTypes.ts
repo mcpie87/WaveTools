@@ -12,9 +12,10 @@ export enum EchoCost {
 
 export type DbDiscardSystem = {
   [key in SonataKey]: {
-    [EchoCost.COST1]: Set<MainStat1Cost>
-    [EchoCost.COST3]: Set<MainStat3Cost>
-    [EchoCost.COST4]: Set<MainStat4Cost>
+    [EchoCost.COST1]: Set<MainStat1Cost>,
+    [EchoCost.COST3]: Set<MainStat3Cost>,
+    [EchoCost.COST4]: Set<MainStat4Cost>,
+    comment?: string,
   }
 }
 
