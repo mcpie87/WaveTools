@@ -112,6 +112,7 @@ export const Echo3CostTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.0_Monster_branch2.0_032": { name: Echo3Cost.ABYSSAL_PATRICIUS },
   "branch2.0_Monster_branch2.0_033": { name: Echo3Cost.ABYSSAL_PATRICIUS },
   "branch2.0_Monster_branch2.0_034": { name: Echo3Cost.ABYSSAL_GLADIUS },
+  "Monster_branch2.0_007": { name: Echo3Cost.ABYSSAL_PATRICIUS },
   "branch2.6_177_Monster_monster2_6/BetweenTheChaos18": { name: Echo3Cost.ABYSSAL_GLADIUS },
 
   // 2.3

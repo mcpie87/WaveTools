@@ -49,6 +49,7 @@ export default function Header({ collapsible = false }: { collapsible?: boolean 
                     <NavButton href="/">Home</NavButton>
                   </>
                 )} */}
+                <NavButton href="/discard-system">Echo Discard</NavButton>
                 <NavButton href="/items">Items</NavButton>
                 <NavButton href="/map">Map</NavButton>
                 <NavButton href="/union-level">Union Level</NavButton>
@@ -84,6 +85,7 @@ export default function Header({ collapsible = false }: { collapsible?: boolean 
                 <>
                 </>
               )} */}
+              <MobileNavButton href="/discard-system" onClick={() => setMobileMenuOpen(false)}>Echo Discard</MobileNavButton>
               <MobileNavButton href="/items" onClick={() => setMobileMenuOpen(false)}>Items</MobileNavButton>
               <MobileNavButton href="/map" onClick={() => setMobileMenuOpen(false)}>Map</MobileNavButton>
               <MobileNavButton href="/union-level" onClick={() => setMobileMenuOpen(false)}>Union Level</MobileNavButton>

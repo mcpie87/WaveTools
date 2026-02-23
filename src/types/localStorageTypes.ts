@@ -1,3 +1,4 @@
+import { DbDiscardSystem } from "./discardSystemTypes";
 import { InventoryDBSchema } from "./inventoryTypes";
 import { DbMapData } from "./mapTypes";
 import { ResonatorDBSchema } from "./resonatorTypes";
@@ -13,6 +14,7 @@ export enum LocalStorageKey {
   INVENTORY = "inventory",
   LEVEL = "level",
   MAP = "map",
+  ECHO_DISCARD_SYSTEM = "echo_discard_system",
 }
 
 
@@ -21,4 +23,5 @@ export type LocalStorageData = string
   | WeaponDBSchema
   | InventoryDBSchema
   | UnionLevelPageData
-  | DbMapData;
+  | DbMapData
+  | DbDiscardSystem;

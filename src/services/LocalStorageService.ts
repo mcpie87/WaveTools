@@ -20,18 +20,17 @@ class LocalStorageService {
   }
 
   private loadRaw(): LocalStorageData | null {
-    if (!this.isBrowser()) {
-      return null;
-    }
+    if (!this.isBrowser()) return null;
     const rawData = localStorage.getItem(this.key);
-    if (!rawData) {
-      return null;
-    }
-
+    if (!rawData) return null;
     try {
-      return JSON.parse(rawData);
+      return JSON.parse(rawData, (_key, value) => {
+        if (value?.__type === 'Set') return new Set(value.values);
+        if (value?.__type === 'Map') return new Map(value.values);
+        return value;
+      });
     } catch {
-      return rawData;
+      return null;
     }
   }
 
@@ -40,10 +39,15 @@ class LocalStorageService {
   }
 
   save(data: LocalStorageData) {
-    if (!this.isBrowser()) {
-      return;
-    }
-    localStorage.setItem(this.key, JSON.stringify(data));
+    if (!this.isBrowser()) return;
+    localStorage.setItem(
+      this.key,
+      JSON.stringify(data, (_key, value) => {
+        if (value instanceof Set) return { __type: 'Set', values: [...value] };
+        if (value instanceof Map) return { __type: 'Map', values: [...value] };
+        return value;
+      })
+    );
   }
 
   clear() {
