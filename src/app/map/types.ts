@@ -7,6 +7,10 @@ export interface APIMarker {
   EntityId?: number;
   ComponentsData?: {
     RewardComponent?: { RewardId?: number };
+    InteractComponent?: {
+      InteractIcon?: string;
+      Options?: { Icon?: string }[];
+    };
   };
   name?: string;
   description?: string;

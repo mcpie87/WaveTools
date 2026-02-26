@@ -20,6 +20,8 @@ const translateMapToGameY = (y: number) => -y * 10000 / scaleFactor;
 //   z: z * 10000,
 // });
 export const getGameBounds = (mapName: SelectedMap) => {
+  const config = unionMapConfigs[mapName];
+  if (!config?.bounds) return undefined;
   const { bounds } = unionMapConfigs[mapName];
   if (!bounds) return undefined;
   return [
@@ -119,6 +121,7 @@ export enum MapName {
   HONAMI_CITY = "Honami City",
   LAHAI_ROI = "Lahai Roi",
   ROYA_FROSTLANDS = "Roya Frostlands",
+  OVERWORLD = "Overworld",
 }
 
 // dig in instancedungeon.json for translations
@@ -241,6 +244,11 @@ export const mapConfigs: Record<string, MapConfig> = {
   [MapName.ROYA_FROSTLANDS]: {
     mapId: 8,
     bounds: [[4, 11], [-3, 3]],
+    url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
+  },
+  [MapName.OVERWORLD]: {
+    mapId: 8,
+    bounds: [[-18, 11], [-3, 18]],
     url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
   },
 } as const;

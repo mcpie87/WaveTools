@@ -1,4 +1,18 @@
+import { APIMarker } from "../types";
 import { TranslationMapEntry } from "./TranslationMapInterface";
+
+export interface QueryCategory {
+  name: string;
+  query: (marker: APIMarker) => boolean;
+}
+
+export const QueryCategories: Record<string, QueryCategory> = {
+  "QUERY_BvbEntrance": {
+    name: "Peaks of Prestige",
+    query: (m) => m.ComponentsData?.InteractComponent?.InteractIcon === "BvbEntrance"
+      || (m.ComponentsData?.InteractComponent?.Options?.some(o => o.Icon === "BvbEntrance") ?? false),
+  },
+};
 
 export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   // 1.0
@@ -43,6 +57,9 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
 
   // 3.1
   "branch3.1_115_Gameplay_3_1/SunSpiritPPV": { name: "Soliskin Guide" },
+
+  // Query categories
+  "QUERY_BvbEntrance": { name: "Peaks of Prestige" },
 };
 export const PuzzleDisplayOrder = [
   "Mutterfly",

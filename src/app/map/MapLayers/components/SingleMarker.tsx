@@ -35,7 +35,9 @@ export const SingleMarkerComponent = ({
 SingleMarkerComponent.displayName = "SingleMarker";
 
 const areEqual = (prev: SingleMarkerProps, next: SingleMarkerProps) => {
-  return prev.marker.id === next.marker.id && prev.visited === next.visited;
+  return prev.marker.id === next.marker.id
+    && prev.visited === next.visited
+    && prev.showDescriptions === next.showDescriptions;
 };
 
 export const SingleMarker = React.memo(SingleMarkerComponent, areEqual);

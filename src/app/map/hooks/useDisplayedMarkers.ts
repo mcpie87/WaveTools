@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { convertMarkerToCoord } from "../mapUtils";
 import { APIMarker, IMarker } from "../types";
 import { DbMapData } from "@/types/mapTypes";
+import { QueryCategories } from "../TranslationMaps/Puzzles";
 
 export function useDisplayedMarkers(
   markers: APIMarker[],
@@ -12,9 +13,21 @@ export function useDisplayedMarkers(
   hideVisited: boolean,
 ): IMarker[] {
   return useMemo(() => {
+    const isVisible = (m: APIMarker): boolean => {
+      // existing BlueprintType-based check
+      if (dbMapData.visibleCategories[m.BlueprintType]) return true;
+
+      // query-based categories
+      for (const [key, category] of Object.entries(QueryCategories)) {
+        if (dbMapData.visibleCategories[key] && category.query(m)) return true;
+      }
+
+      return false;
+    };
+
     const base = enableClick
       ? markersWithinRadius
-      : markers.filter(m => dbMapData.visibleCategories[m.BlueprintType]);
+      : markers.filter(isVisible);
     return [
       ...(enableClick ? [convertMarkerToCoord(selectedPoint, dbMapData.visitedMarkers)] : []),
       ...base.map((m) => convertMarkerToCoord(m, dbMapData.visitedMarkers))
