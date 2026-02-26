@@ -12,6 +12,16 @@ export const QueryCategories: Record<string, QueryCategory> = {
     query: (m) => m.ComponentsData?.InteractComponent?.InteractIcon === "BvbEntrance"
       || (m.ComponentsData?.InteractComponent?.Options?.some(o => o.Icon === "BvbEntrance") ?? false),
   },
+  "QUERY_BvbInteract": {
+    name: "Peaks of Prestige",
+    query: (m) => m.ComponentsData?.InteractComponent?.InteractIcon === "BvbInteract"
+      || (m.ComponentsData?.InteractComponent?.Options?.some(o => o.Icon === "BvbInteract") ?? false),
+  },
+  "QUERY_InteractIcon": {
+    name: "Interact Icon",
+    query: (m) => m.ComponentsData?.InteractComponent?.InteractIcon !== undefined
+      || (m.ComponentsData?.InteractComponent?.Options?.some(o => o.Icon !== undefined) ?? false),
+  },
 };
 
 export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
@@ -60,6 +70,8 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
 
   // Query categories
   "QUERY_BvbEntrance": { name: "Peaks of Prestige" },
+  "QUERY_BvbInteract": { name: "Peaks of Prestige" },
+  "QUERY_InteractIcon": { name: "Interact Icon" },
 };
 export const PuzzleDisplayOrder = [
   "Mutterfly",
