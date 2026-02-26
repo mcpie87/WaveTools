@@ -24,7 +24,7 @@ export function useMapCategoryStats(
 
     // Query-based categories
     for (const [key, qcat] of Object.entries(QueryCategories)) {
-      const matching = markers.filter(qcat.query);
+      const matching = markers.filter((m) => m.ComponentsData && qcat.query(m.ComponentsData));
       if (matching.length === 0) continue;
       const visited = matching.filter(m => isMarkerVisited(dbMapData, m.Id as number)).length;
       counts[key] = [matching.length, visited];

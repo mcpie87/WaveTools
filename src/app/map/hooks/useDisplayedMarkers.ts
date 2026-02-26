@@ -19,7 +19,7 @@ export function useDisplayedMarkers(
 
       // query-based categories
       for (const [key, category] of Object.entries(QueryCategories)) {
-        if (dbMapData.visibleCategories[key] && category.query(m)) return true;
+        if (dbMapData.visibleCategories[key] && m.ComponentsData && category.query(m.ComponentsData)) return true;
       }
 
       return false;

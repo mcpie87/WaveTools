@@ -1,6 +1,6 @@
 import { TranslationMapEntry } from "./TranslationMapInterface";
 import { ChestDisplayOrder, ChestTranslationMap } from "./Chests";
-import { PuzzleDisplayOrder, PuzzleTranslationMap } from "./Puzzles";
+import { PuzzleDisplayOrder, PuzzleTranslationMap, QueryCategories } from "./Puzzles";
 import { AnimalDisplayOrder, AnimalTranslationMap } from "./Animals";
 import { TidalHeritageDisplayOrder, TidalHeritageTranslationMap } from "./TidalHeritages";
 import { TeleporterDisplayOrder, TeleporterTranslationMap } from "./Teleporters";
@@ -13,6 +13,7 @@ import { Echo1CostDisplayOrder, Echo1CostTranslationMap } from "./Echo1Costs";
 import { NPCMobsDisplayOrder, NPCMobsTranslationMap } from "./NPCMobs";
 import { OreDisplayOrder, OreTranslationMap } from "./Ores";
 import { MiscellaneousDisplayOrder, MiscellaneousTranslationMap } from "./Miscellaneous";
+import { IMarker } from "../types";
 
 export const MonsterTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.4_Monster_branch2.4_009": { name: "???" },
@@ -240,6 +241,13 @@ export const UnionTranslationMap: Record<string, TranslationMapEntry> =
     .map(e => e[1])
     .reduce((acc, map) => ({ ...acc, ...map }), {});
 
-export const getTranslationMapName = (category: string): string => {
-  return UnionTranslationMap[category]?.name ?? "";
+
+export const getTranslationMapName = (marker: IMarker): string => {
+  const categoryTranslation = UnionTranslationMap[marker.category]?.name;
+  const queryCategory = marker.metadata
+    ? Object.entries(QueryCategories)
+      .find(([, qcat]) => qcat.query(marker.metadata!))?.[0]
+    : undefined;
+  const queryTranslation = queryCategory ? UnionTranslationMap[queryCategory]?.name : undefined;
+  return queryTranslation ?? categoryTranslation ?? "";
 }

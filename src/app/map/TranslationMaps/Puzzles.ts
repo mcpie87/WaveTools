@@ -1,26 +1,26 @@
-import { APIMarker } from "../types";
+import { ComponentsData } from "../types";
 import { TranslationMapEntry } from "./TranslationMapInterface";
 
 export interface QueryCategory {
   name: string;
-  query: (marker: APIMarker) => boolean;
+  query: (metadata: ComponentsData) => boolean;
 }
 
 export const QueryCategories: Record<string, QueryCategory> = {
   "QUERY_BvbEntrance": {
     name: "Peaks of Prestige",
-    query: (m) => m.ComponentsData?.InteractComponent?.InteractIcon === "BvbEntrance"
-      || (m.ComponentsData?.InteractComponent?.Options?.some(o => o.Icon === "BvbEntrance") ?? false),
+    query: (m) => m?.InteractComponent?.InteractIcon === "BvbEntrance"
+      || (m?.InteractComponent?.Options?.some(o => o.Icon === "BvbEntrance") ?? false),
   },
   "QUERY_BvbInteract": {
     name: "Peaks of Prestige",
-    query: (m) => m.ComponentsData?.InteractComponent?.InteractIcon === "BvbInteract"
-      || (m.ComponentsData?.InteractComponent?.Options?.some(o => o.Icon === "BvbInteract") ?? false),
+    query: (m) => m?.InteractComponent?.InteractIcon === "BvbInteract"
+      || (m?.InteractComponent?.Options?.some(o => o.Icon === "BvbInteract") ?? false),
   },
   "QUERY_InteractIcon": {
     name: "Interact Icon",
-    query: (m) => m.ComponentsData?.InteractComponent?.InteractIcon !== undefined
-      || (m.ComponentsData?.InteractComponent?.Options?.some(o => o.Icon !== undefined) ?? false),
+    query: (m) => m?.InteractComponent?.InteractIcon !== undefined
+      || (m?.InteractComponent?.Options?.some(o => o.Icon !== undefined) ?? false),
   },
 };
 

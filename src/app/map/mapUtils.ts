@@ -93,6 +93,7 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<numbe
   areaId: marker.AreaId!,
   name: marker.BlueprintType,
   description: JSON.stringify(marker, null, 2),
+  metadata: marker.ComponentsData,
   displayedX: marker.Transform[0].X / 10000,
   displayedY: marker.Transform[0].Y / 10000,
   displayedZ: marker.Transform[0].Z / 10000,

@@ -20,7 +20,7 @@ export function CustomPopup({
 }: CustomPopupProps) {
   const translation = translateBlueprint(marker.category); // synchronous
 
-  const title = getTranslationMapName(marker.category);
+  const title = getTranslationMapName(marker);
   // const icon = getWorldmapIcon(title);
 
   return (

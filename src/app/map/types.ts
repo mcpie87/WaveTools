@@ -1,3 +1,10 @@
+export interface ComponentsData {
+  RewardComponent?: { RewardId?: number };
+  InteractComponent?: {
+    InteractIcon?: string;
+    Options?: { Icon?: string }[];
+  };
+}
 export interface APIMarker {
   Transform: { X: number; Y: number; Z: number }[];
   BlueprintType: string;
@@ -5,13 +12,7 @@ export interface APIMarker {
   Id?: number;
   AreaId?: number;
   EntityId?: number;
-  ComponentsData?: {
-    RewardComponent?: { RewardId?: number };
-    InteractComponent?: {
-      InteractIcon?: string;
-      Options?: { Icon?: string }[];
-    };
-  };
+  ComponentsData?: ComponentsData;
   name?: string;
   description?: string;
 }
@@ -24,6 +25,7 @@ export interface IMarker {
   areaId: number;
   name: string;
   description: string;
+  metadata?: ComponentsData;
   category: string;
   displayedX: number;
   displayedY: number;
