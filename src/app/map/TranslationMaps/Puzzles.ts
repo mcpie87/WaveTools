@@ -36,12 +36,14 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
 
   // 1.1
   "Gameplay207": { name: "Tactical Hologram: Ski" },
+  "Monster139": { name: "Frostbug" },
 
   // 2.0
   "Gameplay_LNXT_Flying": { name: "Flying Challenge" },
   "Gameplay_SoundDesign2": { name: "Musicfly" },
   "branch2.0_Gameplay172": { name: "Fratelli" },
   "branch2.0_Gameplay_Dungeon3": { name: "Dream Patrol" }, // For some reason counted x2
+  "Gameplay8": { name: "Overflowing Palette" },
 
   // 2.4
   "branch2.4_143_Gameplay_2_4QQ11": { name: "Flying Challenge" },

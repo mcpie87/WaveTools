@@ -1,5 +1,9 @@
 import { ItemOre, ItemPlant, ItemSpecialty } from "@/app/interfaces/item_types";
 import { ASSET_URL } from "@/constants/constants";
+import { Echo4Cost } from "./Echo4Costs";
+import { Echo3Cost } from "./Echo3Costs";
+import { Echo1Cost } from "./Echo1Costs";
+import { NPCMobs } from "./NPCMobs";
 
 const GameAssetIcons: Record<string, string> = {
   /* Teleporters */
@@ -20,6 +24,7 @@ const GameAssetIcons: Record<string, string> = {
   "Flying Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
   "Musicfly": "/Atlas/WorldMapIcon/SP_IconMap_Play_22_UI.png",
   "Dream Patrol": "Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
+  "Overflowing Palette": "Atlas/WorldMapIcon/SP_IconMap_Play_18_UI.png",
   // 2.4
   "Dreams of Cintercide": "Atlas/WorldMapIcon/SP_IconMap_Play_48_UI.png",
   // 2.5
@@ -67,10 +72,14 @@ const GameAssetIcons: Record<string, string> = {
   // 3.1
   [ItemSpecialty.MOSS_AMBER]: "Image/IconC/T_IconC_072_UI.png",
 
-
-  /* NPC Monsters */
+  /* ======================================================================= */
+  /*                            NPC Monsters                                 */
   // 1.0
   "Exile Commoner": "Image/IconMonsterHead/T_IconMonsterHead_977_UI.png",
+  "Fractsidus Executioner": "Image/IconMonsterHead/T_IconMonsterHead_975_UI.png",
+  "Fractsidus Thruster": "Image/IconMonsterHead/T_IconMonsterHead_972_UI.png",
+  "Fractsidus Cannoneer": "Image/IconMonsterHead/T_IconMonsterHead_974_UI.png",
+  "Fractsidus Gunmaster": "Image/IconMonsterHead/T_IconMonsterHead_973_UI.png",
 
   // 2.4
   "Frostcrest Gladiator": "Image/IconMonsterHead/T_IconMonsterHead_32039_UI.png",
@@ -79,6 +88,13 @@ const GameAssetIcons: Record<string, string> = {
   "Lightcrest Gladiator": "Image/IconMonsterHead/T_IconMonsterHead_32038_UI.png",
   "Thundercrest Gladiator": "Image/IconMonsterHead/T_IconMonsterHead_32040_UI.png",
   "Abysscrest Gladiator": "Image/IconMonsterHead/T_IconMonsterHead_32041_UI.png",
+
+  // 2.5 ?
+  "Fractsidus Inspector": "Image/IconMonsterHead/T_IconMonsterHead_32042_UI.png",
+
+  // 3.0
+  "Royan Man": "Image/IconMonsterHead/T_IconMonsterHead_31080_UI.png",
+  "Royan Woman": "Image/IconMonsterHead/T_IconMonsterHead_31081_UI.png",
 
   /* Echoes */
   "Vanguard Junrock": "Image/IconMonsterHead/T_IconMonsterHead_015_UI.png",
@@ -125,7 +141,6 @@ const GameAssetIcons: Record<string, string> = {
   "Carapace": "Image/IconMonsterHead/T_IconMonsterHead_970_UI.png",
   "Exile Leader": "Image/IconMonsterHead/T_IconMonsterHead_979_UI.png",
   "Exile Technician": "Image/IconMonsterHead/T_IconMonsterHead_978_UI.png",
-  "Fractsidus Executioner": "Image/IconMonsterHead/T_IconMonsterHead_975_UI.png",
   "Inferno Rider": "Image/IconMonsterHead/T_IconMonsterHead_325_UI.png",
   "Impermanence Heron": "Image/IconMonsterHead/T_IconMonsterHead_995_UI.png",
   "Lampylumen Myriad": "Image/IconMonsterHead/T_IconMonsterHead_994_UI.png",
@@ -133,10 +148,7 @@ const GameAssetIcons: Record<string, string> = {
   "Mourning Aix": "Image/IconMonsterHead/T_IconMonsterHead_997_UI.png",
   "Bell-Borne Geochelone": "Image/IconMonsterHead/T_IconMonsterHead_992_UI.png",
   "Hoochief Menace": "Image/IconMonsterHead/T_IconMonsterHead_1005_UI.png",
-  "Fractsidus Thruster": "Image/IconMonsterHead/T_IconMonsterHead_972_UI.png",
   "Hooscamp Clapperclaw": "Image/IconMonsterHead/T_IconMonsterHead_1005_UI.png",
-  "Fractsidus Cannoneer": "Image/IconMonsterHead/T_IconMonsterHead_974_UI.png",
-  "Fractsidus Gunmaster": "Image/IconMonsterHead/T_IconMonsterHead_973_UI.png",
   "Traffic Illuminator": "Image/IconMonsterHead/T_IconMonsterHead_1000_UI.png",
   "Clang Bang": "Image/IconMonsterHead/T_IconMonsterHead_1001_UI.png",
   "Autopuppet Scout": "Image/IconMonsterHead/T_IconMonsterHead_1003_UI.png",
@@ -205,41 +217,88 @@ const GameAssetIcons: Record<string, string> = {
   "Phantom: Vitreum Dancer": "Image/IconMonsterHead/T_IconMonsterHead_SG_32029_UI.png",
   "Phantom: Questless Knight": "Image/IconMonsterHead/T_IconMonsterHead_SG_32022_UI.png",
   "Phantom: Sentry Construct": "Image/IconMonsterHead/T_IconMonsterHead_SG_33009_UI.png",
-  "Kerasaur": "Image/IconMonsterHead/T_IconMonsterHead_31062_UI.png",
-  "Corrosaurus": "Image/IconMonsterHead/T_IconMonsterHead_32044_UI.png",
-  "Pilgrim's Shell": "Image/IconMonsterHead/T_IconMonsterHead_32034_UI.png",
-  "Devotee's Flesh": "Image/IconMonsterHead/T_IconMonsterHead_31061_UI.png",
 
   // 2.1
-  "Golden Junrock": "Image/IconMonsterHead/T_IconMonsterHead_31049_UI.png",
+  [Echo1Cost.GOLDEN_JUNROCK]: "Image/IconMonsterHead/T_IconMonsterHead_31049_UI.png",
+  [Echo1Cost.CALCIFIED_JUNROCK]: "Image/IconMonsterHead/T_IconMonsterHead_31050_UI.png",
+  [Echo1Cost.AERO_PRISM]: "Image/IconMonsterHead/T_IconMonsterHead_31051_UI.webp",
+  [Echo3Cost.HURRICLAW]: "Image/IconMonsterHead/T_IconMonsterHead_32032_UI.png",
+  [Echo3Cost.RAGE_AGAINST_THE_STATUE]: "Image/IconMonsterHead/T_IconMonsterHead_32031_UI.png",
+  // 2.2
+  [Echo3Cost.PHANTOM_CAPITANEUS]: "Image/IconMonsterHead/T_IconMonsterHead_32033_1_UI.png",
+  [Echo1Cost.ELECTRO_DRAKE]: "Image/IconMonsterHead/T_IconMonsterHead_31056_UI.png",
+  [Echo1Cost.SACERDOS]: "Image/IconMonsterHead/T_IconMonsterHead_31054_UI.png",
+  [Echo1Cost.LA_GUARDIA]: "Image/IconMonsterHead/T_IconMonsterHead_31052_UI.png",
+  [Echo3Cost.CAPITANEUS]: "Image/IconMonsterHead/T_IconMonsterHead_32033_UI.png",
+  [Echo1Cost.SAGITTARIO]: "Image/IconMonsterHead/T_IconMonsterHead_31053_UI.png",
+  [Echo1Cost.GLACIO_DRAKE]: "Image/IconMonsterHead/T_IconMonsterHead_31057_UI.png",
+  [Echo1Cost.AERO_DRAKE]: "Image/IconMonsterHead/T_IconMonsterHead_31055_UI.png",
+  [Echo4Cost.NIGHTMARE_LAMPYLUMEN_MYRIAD]: "Image/IconMonsterHead/T_IconMonsterHead_34013_UI.png",
   // 2.3
-  "Sacerdos": "Image/IconMonsterHead/T_IconMonsterHead_31054_UI.png",
-  "La Guardia": "Image/IconMonsterHead/T_IconMonsterHead_31052_UI.png",
-  "Capitaneus": "Image/IconMonsterHead/T_IconMonsterHead_32033_UI.png",
-  "Sagittario": "Image/IconMonsterHead/T_IconMonsterHead_31053_UI.png",
+  [Echo4Cost.FLEURDELYS]: "Image/IconMonsterHead/T_IconMonsterHead_34012_UI.png",
   // 2.4
-  "Glacio Drake": "Image/IconMonsterHead/T_IconMonsterHead_31057_UI.png",
-  "Fusion Drake": "Image/IconMonsterHead/T_IconMonsterHead_31058_UI.png",
-  "Spectro Drake": "Image/IconMonsterHead/T_IconMonsterHead_31059_UI.png",
-  "Phantom: Capitaneus": "Image/IconMonsterGoods/T_IconMonsterGoods_32033_1_UI.png",
+  [Echo4Cost.NIGHTMARE_KELPIE]: "Image/IconMonsterHead/T_IconMonsterHead_33021_UI.png",
+  [Echo4Cost.LIONESS_OF_GLORY]: "Image/IconMonsterHead/T_IconMonsterHead_33022_UI.png",
+  [Echo3Cost.KERASAUR]: "Image/IconMonsterHead/T_IconMonsterHead_31062_UI.png",
+  [Echo3Cost.CORROSAURUS]: "Image/IconMonsterHead/T_IconMonsterHead_32044_UI.png",
+  [Echo3Cost.PILGRIMS_SHELL]: "Image/IconMonsterHead/T_IconMonsterHead_32034_UI.png",
+  [Echo1Cost.FUSION_DRAKE]: "Image/IconMonsterHead/T_IconMonsterHead_31058_UI.png",
+  [Echo1Cost.DEVOTEE_FLESH]: "Image/IconMonsterHead/T_IconMonsterHead_31061_UI.png",
+  [Echo1Cost.SPECTRO_DRAKE]: "Image/IconMonsterHead/T_IconMonsterHead_31059_UI.png",
+  [Echo1Cost.HAVOC_DRAKE]: "Image/IconMonsterHead/T_IconMonsterHead_31060_UI.png",
+
+  // 2.5
+  [Echo4Cost.FENRICO]: "Image/IconMonsterHead/T_IconMonsterHead_34015_UI.png",
+  [Echo3Cost.NIGHTMARE_TAMBOURINIST]: "Image/IconMonsterHead/T_IconMonsterHead_32043_UI.png",
+  [Echo1Cost.NIGHTMARE_GLACIO_PREDATOR]: "Image/IconMonsterHead/T_IconMonsterHead_31064_UI.png",
+  [Echo1Cost.NIGHTMARE_HAVOC_WARRIOR]: "Image/IconMonsterHead/T_IconMonsterHead_31063_UI.png",
+  [NPCMobs.ABYSSAL_GUNMASTER]: "Image/IconMonsterHead/T_IconMonsterHead_32035_UI.png",
+
+  // 2.6
+  [Echo4Cost.LADY_OF_THE_SEA]: "Image/IconMonsterHead/T_IconMonsterHead_34018_UI.png",
+  [Echo3Cost.NIGHTMARE_CYAN_FEATHERED_HERON]: "Image/IconMonsterHead/T_IconMonsterHead_32046_UI.png",
+  [Echo3Cost.NIGHTMARE_VIOLET_FEATHERED_HERON]: "Image/IconMonsterHead/T_IconMonsterHead_32045_UI.png",
+  [Echo1Cost.NIGHTMARE_GULPUFF]: "Image/IconMonsterHead/T_IconMonsterHead_31067_UI.png",
+  [Echo1Cost.NIGHTMARE_ELECTRO_PREDATOR]: "Image/IconMonsterHead/T_IconMonsterHead_31065_UI.png",
+  [Echo1Cost.NIGHTMARE_AERO_PREDATOR]: "Image/IconMonsterHead/T_IconMonsterHead_31066_UI.png",
+  [Echo1Cost.NIGHTMARE_CHIRPUFF]: "Image/IconMonsterHead/T_IconMonsterHead_31068_UI.png",
+
+  // 2.7
+  [Echo4Cost.FALSE_SOVEREIGN]: "Image/IconMonsterHead/T_IconMonsterHead_34017_UI.png",
+  [Echo4Cost.THRENODIAN_LEVIATHAN]: "Image/IconMonsterHead/T_IconMonsterHead_34020_UI.png",
+  [Echo3Cost.NIGHTMARE_VIRIDBLADE_SAURIAN]: "Image/IconMonsterHead/T_IconMonsterHead_32047_UI.png",
+  [Echo1Cost.NIGHTMARE_BABY_ROSESHROOM]: "Image/IconMonsterHead/T_IconMonsterHead_31073_UI.png",
+  [Echo1Cost.NIGHTMARE_BABY_VIRIDBLAZE_SAURIAN]: "Image/IconMonsterHead/T_IconMonsterHead_31072_UI.png",
+
+  // 2.8
+  [Echo3Cost.NIGHTMARE_ROSESHROOM]: "Image/IconMonsterHead/T_IconMonsterHead_32048_UI.png",
+  [Echo1Cost.NIGHTMARE_TICK_TACK]: "Image/IconMonsterHead/T_IconMonsterHead_31075_UI.png",
+  [Echo1Cost.NIGHTMARE_DWARF_CASSOWARY]: "Image/IconMonsterHead/T_IconMonsterHead_31076_UI.png",
 
   // 3.0
-  "Tremor Warrior": "Image/IconMonsterHead/T_IconMonsterHead_31074_UI.png",
-  "Frostbite Coleoid": "Image/IconMonsterHead/T_IconMonsterHead_32057_UI.png",
-  "Windlash Coleoid": "Image/IconMonsterHead/T_IconMonsterHead_32058_UI.png",
-  "Ironhoof": "Image/IconMonsterHead/T_IconMonsterHead_32053_UI.png",
-  "Spacetrek Explorer": "Image/IconMonsterHead/T_IconMonsterHead_32054_UI.png",
-  "Twin Nova: Nebulous Cannon": "Image/IconMonsterHead/T_IconMonsterHead_32049_UI.png",
-  "Geospider S4": "Image/IconMonsterHead/T_IconMonsterHead_31079_UI.png",
+  [Echo4Cost.REACTOR_HUSK]: "Image/IconMonsterHead/T_IconMonsterHead_34022_UI.png",
+  [Echo3Cost.FROSTBITE_COLEOID]: "Image/IconMonsterHead/T_IconMonsterHead_32057_UI.png",
+  [Echo3Cost.WINDLASH_COLEOID]: "Image/IconMonsterHead/T_IconMonsterHead_32058_UI.png",
+  [Echo3Cost.IRONHOOF]: "Image/IconMonsterHead/T_IconMonsterHead_32053_UI.png",
+  [Echo3Cost.SPACETREK_EXPLORER]: "Image/IconMonsterHead/T_IconMonsterHead_32054_UI.png",
+  [Echo3Cost.TWIN_NOVA_NEBULOUS_CANNON]: "Image/IconMonsterHead/T_IconMonsterHead_32049_UI.png",
+  [Echo3Cost.FLORA_REINDEER]: "Image/IconMonsterHead/T_IconMonsterHead_32051_UI.png",
+  [Echo1Cost.TREMOR_WARRIOR]: "Image/IconMonsterHead/T_IconMonsterHead_31074_UI.png",
+  [Echo1Cost.GEOSPIDER_S4]: "Image/IconMonsterHead/T_IconMonsterHead_31079_UI.png",
+  [Echo1Cost.FLORA_DRONE]: "Image/IconMonsterHead/T_IconMonsterHead_31077_UI.png",
+  [Echo1Cost.MINING_DRONE]: "Image/IconMonsterHead/T_IconMonsterHead_31078_UI.png",
+  [Echo1Cost.ZIP_ZAP]: "Image/IconMonsterHead/T_IconMonsterHead_31082_UI.png",
 
   // 3.1
-  "Sabercat Reaver": "Image/IconMonsterHead/T_IconMonsterHead_32055_UI.png",
-  "Kronaclaw": "Image/IconMonsterHead/T_IconMonsterHead_32060_UI.png",
-  "Kronablight": "Image/IconMonsterHead/T_IconMonsterHead_32059_UI.png",
-  "Sabercat Prowler": "Image/IconMonsterHead/T_IconMonsterHead_32056_UI.png",
-  "Shadow Stepper": "Image/IconMonsterHead/T_IconMonsterHead_31084_UI.png",
-  "Iceglint Dancer": "Image/IconMonsterHead/T_IconMonsterHead_31083_UI.png",
-  "Glommoth": "Image/IconMonsterHead/T_IconMonsterHead_32061_UI.png",
+  [Echo4Cost.NAMELESS_EXPLORER]: "Image/IconMonsterHead/T_IconMonsterHead_34026_UI.png",
+  [Echo4Cost.SIGILLUM]: "Image/IconMonsterHead/T_IconMonsterHead_34025_0_UI.png",
+  [Echo3Cost.SABERCAT_REAVER]: "Image/IconMonsterHead/T_IconMonsterHead_32055_UI.png",
+  [Echo3Cost.KRONACLAW]: "Image/IconMonsterHead/T_IconMonsterHead_32060_UI.png",
+  [Echo3Cost.KRONABLIGHT]: "Image/IconMonsterHead/T_IconMonsterHead_32059_UI.png",
+  [Echo3Cost.SABERCAT_PROWLER]: "Image/IconMonsterHead/T_IconMonsterHead_32056_UI.png",
+  [Echo3Cost.GLOMMOTH]: "Image/IconMonsterHead/T_IconMonsterHead_32061_UI.png",
+  [Echo1Cost.SHADOW_STEPPER]: "Image/IconMonsterHead/T_IconMonsterHead_31084_UI.png",
+  [Echo1Cost.ICEGLINT_DANCER]: "Image/IconMonsterHead/T_IconMonsterHead_31083_UI.png",
 
 
   /* Ores */
@@ -316,6 +375,7 @@ const CustomIcons: Record<string, string> = {
   "Tidal Heritage (Gold)": "Tidal_Heritage_Gold.webp",
   "Mutterfly": "Mutterfly.png",
   "Blobfly": "Blobfly.webp",
+  "Frostbug": "Frostbug.webp",
 };
 
 export const getWorldmapIcon = (name: string): string | null => {
