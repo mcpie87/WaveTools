@@ -221,7 +221,7 @@ const GameAssetIcons: Record<string, string> = {
   // 2.1
   [Echo1Cost.GOLDEN_JUNROCK]: "Image/IconMonsterHead/T_IconMonsterHead_31049_UI.png",
   [Echo1Cost.CALCIFIED_JUNROCK]: "Image/IconMonsterHead/T_IconMonsterHead_31050_UI.png",
-  [Echo1Cost.AERO_PRISM]: "Image/IconMonsterHead/T_IconMonsterHead_31051_UI.webp",
+  [Echo1Cost.AERO_PRISM]: "Image/IconMonsterHead/T_IconMonsterHead_31051_UI.png",
   [Echo3Cost.HURRICLAW]: "Image/IconMonsterHead/T_IconMonsterHead_32032_UI.png",
   [Echo3Cost.RAGE_AGAINST_THE_STATUE]: "Image/IconMonsterHead/T_IconMonsterHead_32031_UI.png",
   // 2.2
