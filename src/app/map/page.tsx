@@ -109,7 +109,7 @@ export default function XYZMap() {
     dbMapData,
     enableClick,
     selectedPoint,
-    hideVisited
+    hideVisited,
   );
 
   if (!ready.entities || !ready.manifest) return <div className="p-4">Loading data…</div>;

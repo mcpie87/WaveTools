@@ -12,6 +12,15 @@ export interface APIAreaLayer {
   mapTiles: Record<string, string>;
 }
 
+export interface APIMapMark {
+  id: number;
+  mapId: number;
+  relativeId: number;
+  entityConfigId: number;
+  icon: string;
+  title: string;
+}
+
 export type SelectedMap = MapName
   | MainStoryDungeonName
   | StoryDungeonName

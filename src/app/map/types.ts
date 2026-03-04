@@ -1,8 +1,27 @@
+import { APIMapMark } from "@/types/mapTypes";
+
 export interface ComponentsData {
   RewardComponent?: { RewardId?: number };
   InteractComponent?: {
     InteractIcon?: string;
-    Options?: { Icon?: string }[];
+    Options?: {
+      Icon?: string;
+      Type?: {
+        Type: string;
+        Actions?: {
+          Name: string;
+          Params?: {
+            SystemOption?: {
+              Type: string;
+              UnlockOption?: {
+                Type: string;
+                Id: number;
+              };
+            };
+          };
+        }[];
+      };
+    }[];
   };
 }
 export interface APIMarker {
@@ -22,10 +41,12 @@ export interface IMarker {
   y: number;
   z: number;
   id?: number;
+  entityId: number;
   areaId: number;
   name: string;
   description: string;
   metadata?: ComponentsData;
+  mapMark?: APIMapMark;
   category: string;
   displayedX: number;
   displayedY: number;

@@ -22,11 +22,14 @@ const GameAssetIcons: Record<string, string> = {
   // 2.0
   "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
   "Flying Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
-  "Musicfly": "/Atlas/WorldMapIcon/SP_IconMap_Play_22_UI.png",
+  "Musicfly": "Atlas/WorldMapIcon/SP_IconMap_Play_22_UI.png",
   "Dream Patrol": "Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
   "Overflowing Palette": "Atlas/WorldMapIcon/SP_IconMap_Play_18_UI.png",
   // 2.4
   "Dreams of Cintercide": "Atlas/WorldMapIcon/SP_IconMap_Play_48_UI.png",
+  "Peaks of Prestige": "Atlas/WorldMapIcon/SP_IconMap_Play_58_UI.png",
+  "Hero's Rend": "Atlas/WorldMapIcon/SP_IconMap_Play_40_UI.png",
+
   // 2.5
   "Triptych Chest": "Atlas/WorldMapIcon/SP_IconMap_Play_45_UI.png",
   "Orchestration Altar": "Atlas/WorldMapIcon/SP_IconMap_Play_44_UI.png",

@@ -4,6 +4,7 @@ import { loadBlueprintTranslations } from "../BlueprintTranslationService";
 import { APIMarker } from "../types";
 import { APIAreaLayer } from "@/types/mapTypes";
 import RBush from "rbush";
+import { mapMarksData } from "../data/map_marks";
 
 const ENTITIES_URL = 'https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYJjynAOgE0xzLG7NC35IMYJrq9uTnS4KXpDBO';
 
@@ -101,5 +102,5 @@ export function useMapData() {
     })();
   }, []);
 
-  return { indexes, layersData, ready };
+  return { indexes, layersData, mapMarksData, ready };
 }

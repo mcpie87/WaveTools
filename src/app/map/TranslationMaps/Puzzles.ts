@@ -22,6 +22,17 @@ export const QueryCategories: Record<string, QueryCategory> = {
     query: (m) => m?.InteractComponent?.InteractIcon !== undefined
       || (m?.InteractComponent?.Options?.some(o => o.Icon !== undefined) ?? false),
   },
+  "QUERY_Scenery": {
+    name: "Scenery",
+    query: (m) => (
+      m?.InteractComponent?.Options
+        ?.some(option => {
+          if (option.Type?.Type !== "Actions") return false;
+          const action = option.Type?.Actions?.find(a => a.Name === "UnlockSystemItem");
+          return action?.Params?.SystemOption?.Type === "AtlasSystem";
+        }) ?? false
+    ),
+  }
 };
 
 export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
@@ -74,6 +85,7 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "QUERY_BvbEntrance": { name: "Peaks of Prestige" },
   "QUERY_BvbInteract": { name: "Peaks of Prestige" },
   "QUERY_InteractIcon": { name: "Interact Icon" },
+  "QUERY_Scenery": { name: "Scenery" },
 };
 export const PuzzleDisplayOrder = [
   "Mutterfly",
