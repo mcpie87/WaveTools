@@ -2,68 +2,86 @@
 
 import 'leaflet/dist/leaflet.css';
 
-import React, { useCallback, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { MapContainer } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
-import { APIMarker, IMarker } from './types';
-import { getBounds, getMapCenter, isCustomMapSelected, mapConfigs, MapName, scaleFactor, TILE_SIZE, unionMapConfigs, UnionMapName } from './mapUtils';
+import { APIMarker } from './types';
+import {
+  getBounds,
+  getMapCenter,
+  isCustomMapSelected,
+  mapConfigs,
+  MapName,
+  scaleFactor,
+  TILE_SIZE,
+  unionMapConfigs,
+  UnionMapName,
+} from './mapUtils';
 import { MapSettingsComponent } from './Components/MapSettingsComponent';
 import { useFilteredMarkers } from './hooks/useFilteredMarkers';
 import { CustomTileLayer } from './MapLayers/CustomTileLayer';
 import { AreaTileLayer } from './MapLayers/AreaTileLayer';
 import { isMarkerVisited } from './state/map.selectors';
-import { bulkSetCategoryVisibleAction, clearCategoriesVisibilityAction, setCategoryGroupVisibleAction, toggleCategoryVisibleAction, toggleMarkerVisitedAction } from './state/map.actions';
 import { useMapLogic } from './hooks/useMapLogic';
 import { MapClickHandler } from './handlers/MapClickHandler';
 import { MarkerLayer } from './MapLayers/MarkerLayer';
 import { useMapCategoryStats } from './hooks/useMapCategoryStats';
 import { useDisplayedMarkers } from './hooks/useDisplayedMarkers';
+import { useMapStore } from './state/mapStore';
 
 const simpleCRS = L.CRS.Simple;
 
-/* --------------------------- Components -------------------------- */
-
-
 export default function XYZMap() {
-  const {
-    indexes,
-    dbMapData,
-    ready,
-    dispatch,
-    areaLayers,
-    ui
-  } = useMapLogic();
-  const {
-    activeAreaId,
-    setActiveAreaId,
-    selectedMap,
-    setSelectedMap,
-    selectedMapId,
-    setSelectedMapId,
-    enableClick,
-    setEnableClick,
-    coords,
-    setCoords,
-    radius,
-    setRadius,
-    showDescriptions,
-    setShowDescriptions,
-    hideVisited,
-    setHideVisited
-  } = ui;
+  const { indexes, ready, areaLayers } = useMapLogic();
+
+  // Use Zustand store for UI state
+  const selectedMap = useMapStore((state) => state.selectedMap);
+  const setSelectedMap = useMapStore((state) => state.setSelectedMap);
+  const activeAreaId = useMapStore((state) => state.activeAreaId);
+  const selectedMapId = useMapStore((state) => state.selectedMapId);
+  const setSelectedMapId = useMapStore((state) => state.setSelectedMapId);
+  const enableClick = useMapStore((state) => state.enableClick);
+  const setEnableClick = useMapStore((state) => state.setEnableClick);
+  const coords = useMapStore((state) => state.coords);
+  const setCoords = useMapStore((state) => state.setCoords);
+  const radius = useMapStore((state) => state.radius);
+  const setRadius = useMapStore((state) => state.setRadius);
+  const showDescriptions = useMapStore((state) => state.showDescriptions);
+  const setShowDescriptions = useMapStore((state) => state.setShowDescriptions);
+  const hideVisited = useMapStore((state) => state.hideVisited);
+  const setHideVisited = useMapStore((state) => state.setHideVisited);
+
+  // DB state and actions
+  const dbMapData = useMapStore((state) => state.dbMapData);
+  const toggleCategory = useMapStore((state) => state.toggleCategoryVisibility);
+  const toggleCategories = useMapStore(
+    (state) => state.bulkSetCategoryVisibility
+  );
+  const clearCategories = useMapStore(
+    (state) => state.clearCategoriesVisibility
+  );
+  const toggleDisplayedCategoryGroup = useMapStore(
+    (state) => state.setCategoryGroupVisibility
+  );
 
   const markers = useFilteredMarkers(indexes, selectedMap, selectedMapId);
   const categories: Array<[string, number, number]> = useMapCategoryStats(
     markers,
     dbMapData,
     isMarkerVisited
-  )
+  );
 
   const selectedPoint: APIMarker = useMemo(() => {
     return {
-      Transform: [{ X: coords.x * 10000, Y: coords.y * 10000, Z: coords.z * 10000 }],
+      Transform: [
+        {
+          X: coords.x * 10000,
+          Y: coords.y * 10000,
+          Z: coords.z * 10000,
+        },
+      ],
       BlueprintType: 'Selected Point',
       MapId: mapConfigs[selectedMap]?.mapId ?? -1,
     };
@@ -74,7 +92,7 @@ export default function XYZMap() {
     const cy = selectedPoint.Transform[0].Y;
     const cz = selectedPoint.Transform[0].Z;
 
-    return markers.filter(m => {
+    return markers.filter((m) => {
       const dx = m.Transform[0].X - cx;
       const dy = m.Transform[0].Y - cy;
       const dz = cz ? m.Transform[0].Z - cz : 0;
@@ -90,27 +108,6 @@ export default function XYZMap() {
     selectedPoint,
     hideVisited
   );
-
-  const toggleMarkerVisited = useCallback((marker: IMarker) => {
-    dispatch(toggleMarkerVisitedAction(marker.id as number));
-  }, [dispatch]);
-
-  const toggleCategory = useCallback((category: string) => {
-    dispatch(toggleCategoryVisibleAction(category));
-  }, [dispatch]);
-
-  const toggleCategories = useCallback((categories: string[], value: boolean) => {
-    dispatch(bulkSetCategoryVisibleAction(categories, value));
-  }, [dispatch]);
-
-  const clearCategories = useCallback(() => {
-    dispatch(clearCategoriesVisibilityAction());
-  }, [dispatch]);
-
-  const toggleDisplayedCategoryGroup = useCallback((categoryGroup: string, value: boolean) => {
-    dispatch(setCategoryGroupVisibleAction(categoryGroup, value));
-  }, [dispatch]);
-
 
   if (!ready.entities || !ready.manifest) return <div className="p-4">Loading data…</div>;
   if (!ready.translations) return <div>Loading translations…</div>;
@@ -153,7 +150,7 @@ export default function XYZMap() {
           crs={simpleCRS}
           center={getMapCenter(selectedMap)}
           zoom={0}
-          minZoom={-10}
+          minZoom={-3}
           maxZoom={10}
           zoomControl={false}
           className={enableClick ? 'cursor-crosshair' : 'cursor-grab'}
@@ -162,7 +159,11 @@ export default function XYZMap() {
             width: '100%',
             backgroundColor: '#111',
           }}
-          maxBounds={isCustomMapSelected(selectedMap) ? undefined : getBounds(selectedMap as UnionMapName, 5)}
+          maxBounds={
+            isCustomMapSelected(selectedMap)
+              ? undefined
+              : getBounds(selectedMap as UnionMapName, 5)
+          }
           attributionControl={false}
         >
           {unionMapConfigs[selectedMap]?.url && selectedMapId === null && (
@@ -176,7 +177,7 @@ export default function XYZMap() {
           )}
           <MapClickHandler
             enabled={enableClick}
-            onClick={p =>
+            onClick={(p) =>
               setCoords({
                 x: (p.lng - TILE_SIZE) / scaleFactor,
                 y: -p.lat / scaleFactor,
@@ -184,15 +185,7 @@ export default function XYZMap() {
               })
             }
           />
-          <MarkerLayer
-            markers={displayedMarkers}
-            dbMapData={dbMapData}
-            hideVisited={hideVisited}
-            showDescriptions={showDescriptions}
-            activeAreaId={activeAreaId}
-            setActiveAreaId={setActiveAreaId}
-            toggleMarkerVisited={toggleMarkerVisited}
-          />
+          <MarkerLayer markers={displayedMarkers} />
         </MapContainer>
       </main>
     </div>

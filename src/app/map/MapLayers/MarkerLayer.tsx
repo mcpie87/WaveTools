@@ -3,24 +3,17 @@ import { getWorldmapIcon } from "../TranslationMaps/worldmapIconMap";
 import { UnionTranslationMap } from "../TranslationMaps/translationMap";
 import { IMarker } from "../types";
 import L from "leaflet";
-import { DbMapData } from "@/types/mapTypes";
 import { SingleMarker } from "./components/SingleMarker";
 import { useVisibleMarkers } from "./hooks/useVisibleMarkers";
+import { useMapStore } from "../state/mapStore";
 
 interface MarkerLayerProps {
   markers: IMarker[];
-  dbMapData: DbMapData;
-  hideVisited: boolean;
-  showDescriptions: boolean;
-  activeAreaId: number | null;
-  setActiveAreaId: (id: number | null) => void;
-  toggleMarkerVisited: (marker: IMarker) => void;
 }
-export const MarkerLayer = ({
-  markers, dbMapData, hideVisited, showDescriptions,
-  activeAreaId, setActiveAreaId, toggleMarkerVisited,
-}: MarkerLayerProps) => {
+export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
   const visibleMarkers = useVisibleMarkers(markers);
+  const hideVisited = useMapStore((state) => state.hideVisited);
+
   console.log("[MarkerLayer] Markers:", markers.length);
   console.log("[MarkerLayer] Visible markers:", visibleMarkers.length);
 
@@ -42,10 +35,11 @@ export const MarkerLayer = ({
     let iconSize: L.PointExpression = [20, 20];
     let iconAnchor: L.PointExpression = [10, 10];
 
-    const worldmapIconUrl = getWorldmapIcon(UnionTranslationMap[category]?.name ?? category);
+    const worldmapIconUrl = getWorldmapIcon(
+      UnionTranslationMap[category]?.name ?? category
+    );
 
     if (worldmapIconUrl) {
-      // worldmap icon exists — style it nicely
       const opacity = visited && !hideVisited ? 0.3 : 1;
       const display = hideVisited && visited ? 'none' : 'inline-block';
 
@@ -71,7 +65,13 @@ export const MarkerLayer = ({
       iconAnchor = [16, 16];
     } else {
       // fallback colored circle
-      const hue = Math.abs([...category].reduce((a, c) => c.charCodeAt(0) + ((a << 5) - a), 0)) % 360;
+      const hue =
+        Math.abs(
+          [...category].reduce(
+            (a, c) => c.charCodeAt(0) + ((a << 5) - a),
+            0
+          )
+        ) % 360;
       if (visited) {
         if (hideVisited) {
           html = `<div style="display:none"></div>`;
@@ -94,24 +94,7 @@ export const MarkerLayer = ({
     return icon;
   }, [hideVisited]);
 
-  const handleMarkerClick = useCallback((areaId: number | null) => {
-    if (areaId !== activeAreaId) setActiveAreaId(areaId);
-  }, [activeAreaId, setActiveAreaId]);
-
-  const handleToggleMarkerVisited = useCallback((marker: IMarker) => {
-    toggleMarkerVisited(marker);
-  }, [toggleMarkerVisited]);
-
   return visibleMarkers.map((m) => (
-    <SingleMarker
-      // key={`${m.id}:${dbMapData.visitedMarkers[m.id as number]}:${hideVisited}`}
-      key={`${m.id}`}
-      marker={m}
-      visited={!!dbMapData.visitedMarkers[m.id as number]}
-      showDescriptions={showDescriptions}
-      icon={getIcon(m.category, !!dbMapData.visitedMarkers[m.id as number])}
-      toggleMarkerVisited={handleToggleMarkerVisited}
-      onMarkerClick={handleMarkerClick}
-    />
+    <SingleMarker key={`${m.id}`} marker={m} getIcon={getIcon} />
   ));
 };

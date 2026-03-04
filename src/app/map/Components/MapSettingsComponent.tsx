@@ -21,7 +21,7 @@ interface MapSettingsComponentProps {
   selectedMap: SelectedMap;
   setSelectedMap: (id: SelectedMap) => void;
   coords: { x: number; y: number; z: number };
-  setCoords: (coords: React.SetStateAction<{ x: number; y: number; z: number }>) => void;
+  setCoords: (coords: { x: number; y: number; z: number }) => void;
   radius: number;
   setRadius: (radius: number) => void;
   enableClick: boolean;

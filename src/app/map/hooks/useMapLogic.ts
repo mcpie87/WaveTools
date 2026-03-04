@@ -1,14 +1,10 @@
-import { APIAreaLayer } from "@/types/mapTypes";
-import { useEffect, useMemo, useReducer } from "react";
-import { mapStorageService } from "../services/mapStorageService";
-import { initMapState, mapReducer } from "../state/map.reducer";
-import { useMapUI } from "./useMapUI";
+import { useEffect } from "react";
 import { useMapData } from "./useMapData";
+import { useMapStore } from "../state/mapStore";
 
 export function useMapLogic() {
   const { indexes, layersData, ready } = useMapData();
-  const ui = useMapUI();
-  const [dbMapData, dispatch] = useReducer(mapReducer, initMapState());
+  const dbMapData = useMapStore((state) => state.dbMapData);
 
   useEffect(() => {
     // Tile caching
@@ -18,22 +14,12 @@ export function useMapLogic() {
     }
   }, []);
 
-  useEffect(() => {
-    mapStorageService.save(dbMapData);
-  }, [dbMapData]);
-
-  const areaLayers = useMemo(() => {
-    const map = new Map<number, APIAreaLayer>();
-    layersData.forEach(l => map.set(l.areaId, l));
-    return map;
-  }, [layersData]);
+  const areaLayers = new Map(layersData.map((l) => [l.areaId, l]));
 
   return {
     indexes,
     ready,
-    dbMapData,
-    dispatch,
+    dbMapData, // For backward compatibility in page.tsx if needed, but should be removed eventually
     areaLayers,
-    ui
-  }
+  };
 }

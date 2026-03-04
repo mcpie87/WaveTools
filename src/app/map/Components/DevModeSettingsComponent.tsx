@@ -6,7 +6,7 @@ import { useState } from "react";
 
 interface DevModeSettingsComponentProps {
   coords: { x: number; y: number; z: number };
-  setCoords: (coords: React.SetStateAction<{ x: number; y: number; z: number }>) => void;
+  setCoords: (coords: { x: number; y: number; z: number }) => void;
   radius: number;
   setRadius: (radius: number) => void;
   showDescriptions: boolean;
@@ -54,7 +54,7 @@ export const DevModeSettingsComponent = ({
                     key={k}
                     type="number"
                     value={coords[k]}
-                    onChange={e => setCoords(c => ({ ...c, [k]: +e.target.value }))}
+                    onChange={e => setCoords({ ...coords, [k]: +e.target.value })}
                   />
                 ))}
               </div>
