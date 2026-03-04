@@ -16,6 +16,8 @@ import { translateBlueprint } from "../BlueprintTranslationService";
 import { DbMapData, SelectedMap } from "@/types/mapTypes";
 import { DevModeSettingsComponent } from "./DevModeSettingsComponent";
 import { BackupManager } from "@/components/BackupComponent";
+import { useMapStore } from "../state/mapStore";
+
 
 interface MapSettingsComponentProps {
   selectedMap: SelectedMap;
@@ -108,174 +110,191 @@ export const MapSettingsComponent = ({
         options.push({ value: name, label: name, group: 'Test Dungeon' })
       );
     }
-
     return options;
   }, [showDungeonMaps, showDescriptions]);
+
+  const multiSelectMode = useMapStore((state) => state.multiSelectMode);
+  const setMultiSelectMode = useMapStore((state) => state.setMultiSelectMode);
 
   return (
     <>
       {/* Left controls */}
-      {!showSettings && (
-        <aside className="absolute top-2 left-2 z-10 border-r">
-          <Button className="w-[320px] absolute " onClick={() => setShowSettings(true)}>
+      <aside className="w-[320px] rounded-xl border-r p-3 flex flex-col gap-3 max-h-[calc(100vh-2rem)] bg-base-100 overflow-hidden">
+        {!showSettings && (
+          <Button className="w-full shrink-0" onClick={() => setShowSettings(true)}>
             Show Settings
           </Button>
-        </aside>
-      )}
-      {showSettings && (
-        <aside className="w-[320px] absolute rounded-xl top-4 left-4 z-10 border-r p-3 space-y-3 max-h-[calc(100vh-2rem)] overflow-auto bg-base-100">
-          <Button className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
+        )}
+        {showSettings && (
+          <>
+            <div className="flex flex-col gap-3 shrink-0">
+              <Button className="w-full" onClick={() => setShowSettings(false)}>Hide Settings</Button>
 
-          <div className="rounded-lg border p-3 space-y-2 bg-base-200">
-            <Select value={selectedMap} onValueChange={v => { setSelectedMap(v as SelectedMap); setSelectedMapId(null); }}>
-              <SelectTrigger>
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                {/* Admin Section */}
-                {showDungeonMaps && showDescriptions && (
-                  <SelectGroup>
-                    <SelectLabel className="text-xs opacity-50">Debug</SelectLabel>
-                    {mapOptions.filter(o => o.group === 'Admin').map(opt => (
-                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
-                    ))}
-                  </SelectGroup>
-                )}
+              <div className="rounded-lg border p-3 space-y-2 bg-base-200">
+                <Select value={selectedMap} onValueChange={v => { setSelectedMap(v as SelectedMap); setSelectedMapId(null); }}>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {/* Admin Section */}
+                    {showDungeonMaps && showDescriptions && (
+                      <SelectGroup>
+                        <SelectLabel className="text-xs opacity-50">Debug</SelectLabel>
+                        {mapOptions.filter(o => o.group === 'Admin').map(opt => (
+                          <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                        ))}
+                      </SelectGroup>
+                    )}
 
-                <SelectGroup>
-                  <SelectLabel className="text-xs opacity-50">World Maps</SelectLabel>
-                  {mapOptions.filter(o => o.group === 'Standard').map(opt => (
-                    <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
-                  ))}
-                </SelectGroup>
+                    <SelectGroup>
+                      <SelectLabel className="text-xs opacity-50">World Maps</SelectLabel>
+                      {mapOptions.filter(o => o.group === 'Standard').map(opt => (
+                        <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                      ))}
+                    </SelectGroup>
 
-                {showDungeonMaps && (
-                  <SelectGroup>
-                    <SelectLabel className="text-xs opacity-50">Main Story</SelectLabel>
-                    {mapOptions.filter(o => o.group === 'Main Story Dungeon').map(opt => (
-                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
-                    ))}
-                  </SelectGroup>
-                )}
+                    {showDungeonMaps && (
+                      <SelectGroup>
+                        <SelectLabel className="text-xs opacity-50">Main Story</SelectLabel>
+                        {mapOptions.filter(o => o.group === 'Main Story Dungeon').map(opt => (
+                          <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                        ))}
+                      </SelectGroup>
+                    )}
 
-                {showDungeonMaps && (
-                  <SelectGroup>
-                    <SelectLabel className="text-xs opacity-50">Story</SelectLabel>
-                    {mapOptions.filter(o => o.group === 'Story Dungeon').map(opt => (
-                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
-                    ))}
-                  </SelectGroup>
-                )}
+                    {showDungeonMaps && (
+                      <SelectGroup>
+                        <SelectLabel className="text-xs opacity-50">Story</SelectLabel>
+                        {mapOptions.filter(o => o.group === 'Story Dungeon').map(opt => (
+                          <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                        ))}
+                      </SelectGroup>
+                    )}
 
-                {showDungeonMaps && (
-                  <SelectGroup>
-                    <SelectLabel className="text-xs opacity-50">Sonoro</SelectLabel>
-                    {mapOptions.filter(o => o.group === 'Sonoro Dungeon').map(opt => (
-                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
-                    ))}
-                  </SelectGroup>
-                )}
+                    {showDungeonMaps && (
+                      <SelectGroup>
+                        <SelectLabel className="text-xs opacity-50">Sonoro</SelectLabel>
+                        {mapOptions.filter(o => o.group === 'Sonoro Dungeon').map(opt => (
+                          <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                        ))}
+                      </SelectGroup>
+                    )}
 
-                {showDungeonMaps && (
-                  <SelectGroup>
-                    <SelectLabel className="text-xs opacity-50">Test</SelectLabel>
-                    {mapOptions.filter(o => o.group === 'Test Dungeon').map(opt => (
-                      <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
-                    ))}
-                  </SelectGroup>
-                )}
-              </SelectContent>
-            </Select>
-          </div>
+                    {showDungeonMaps && (
+                      <SelectGroup>
+                        <SelectLabel className="text-xs opacity-50">Test</SelectLabel>
+                        {mapOptions.filter(o => o.group === 'Test Dungeon').map(opt => (
+                          <SelectItem key={opt.value} value={opt.value}>{opt.label}</SelectItem>
+                        ))}
+                      </SelectGroup>
+                    )}
+                  </SelectContent>
+                </Select>
+              </div>
 
-          <DevModeSettingsComponent
-            coords={coords}
-            setCoords={setCoords}
-            showDescriptions={showDescriptions}
-            setShowDescriptions={setShowDescriptions}
-            radius={radius}
-            setRadius={setRadius}
-            enableClick={enableClick}
-            setEnableClick={setEnableClick}
-            showDungeonMaps={showDungeonMaps}
-            setShowDungeonMaps={setShowDungeonMaps}
-            setSelectedMapId={setSelectedMapId}
-          />
+              <DevModeSettingsComponent
+                coords={coords}
+                setCoords={setCoords}
+                showDescriptions={showDescriptions}
+                setShowDescriptions={setShowDescriptions}
+                radius={radius}
+                setRadius={setRadius}
+                enableClick={enableClick}
+                setEnableClick={setEnableClick}
+                showDungeonMaps={showDungeonMaps}
+                setShowDungeonMaps={setShowDungeonMaps}
+                setSelectedMapId={setSelectedMapId}
+              />
 
-          <div className="rounded-lg border p-3 space-y-2 bg-base-200">
-            <h3 className="text-sm font-semibold">Settings</h3>
+              <div className="rounded-lg border p-3 space-y-2 bg-base-200">
+                <h3 className="text-sm font-semibold">Settings</h3>
 
-            <div className="flex flex-col gap-2">
-              <BackupManager />
-              <Toggle pressed={hideVisited} onPressedChange={setHideVisited}>
-                Hide visited
-              </Toggle>
-              <Button onClick={() => clearCategories()}>Clear Categories</Button>
+                <div className="flex flex-col gap-2">
+                  <BackupManager />
+                  <Toggle
+                    pressed={hideVisited}
+                    onPressedChange={setHideVisited}
+                    className="data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500 border-yellow-500/50"
+                  >
+                    Hide visited
+                  </Toggle>
+                  <Toggle
+                    pressed={multiSelectMode}
+                    onPressedChange={(v) => setMultiSelectMode(v)}
+                    className="data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500 border-yellow-500/50"
+                  >
+                    Multi-select markers
+                  </Toggle>
+                  <Button onClick={() => clearCategories()}>Clear Categories</Button>
+                </div>
+              </div>
+
+              <Input
+                placeholder="Filter categories…"
+                value={categoryFilter}
+                onChange={e => setCategoryFilter(e.target.value)}
+              />
             </div>
-          </div>
 
-          <Input
-            placeholder="Filter categories…"
-            value={categoryFilter}
-            onChange={e => setCategoryFilter(e.target.value)}
-          />
-
-          {(displayedCategories).map(([title, translationMap, displayOrder]) => {
-            {
-              const filteredCategories = categories
-                .filter(c => translationMap[c[0]])
-                .filter(([c, ,]) =>
-                  [
-                    c.toLowerCase(),
-                    translateBlueprint(c).toLowerCase(),
-                    UnionTranslationMap[c]?.name.toLowerCase() ?? '',
-                  ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
-                )
-              return (
-                <Fragment key={title}>
-                  {filteredCategories.length > 0 && (
-                    <CategoryPaneComponent
-                      key={title}
-                      title={title}
-                      categories={filteredCategories}
-                      displayOrder={displayOrder}
-                      translationMap={translationMap}
-                      toggleCategory={toggleCategory}
-                      toggleCategories={toggleCategories}
-                      toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
-                      showDescriptions={showDescriptions}
-                      dbMapData={dbMapData}
-                      isOpen={dbMapData.displayedCategoryGroups[title]}
-                    />
-                  )}
-                </Fragment>
-              )
-            }
-          })}
-
-          {showDescriptions && (
-            <CategoryPaneComponent
-              title="Not defined categories"
-              categories={
-                undefinedCategories
-                  .filter(c => !displayedCategories.some(d => d[1][c[0]]))
-                  .filter(([c]) =>
-                    [
-                      c.toLowerCase(),
-                      translateBlueprint(c).toLowerCase(),
-                    ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
+            <div className="flex-1 overflow-y-auto space-y-3 pr-1 custom-scrollbar">
+              {(displayedCategories).map(([title, translationMap, displayOrder]) => {
+                {
+                  const filteredCategories = categories
+                    .filter(c => translationMap[c[0]])
+                    .filter(([c, ,]) =>
+                      [
+                        c.toLowerCase(),
+                        translateBlueprint(c).toLowerCase(),
+                        UnionTranslationMap[c]?.name.toLowerCase() ?? '',
+                      ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
+                    )
+                  return (
+                    <Fragment key={title}>
+                      {filteredCategories.length > 0 && (
+                        <CategoryPaneComponent
+                          key={title}
+                          title={title}
+                          categories={filteredCategories}
+                          displayOrder={displayOrder}
+                          translationMap={translationMap}
+                          toggleCategory={toggleCategory}
+                          toggleCategories={toggleCategories}
+                          toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
+                          showDescriptions={showDescriptions}
+                          dbMapData={dbMapData}
+                          isOpen={dbMapData.displayedCategoryGroups[title]}
+                        />
+                      )}
+                    </Fragment>
                   )
-              }
-              toggleCategory={toggleCategory}
-              toggleCategories={(showDescriptions && !mapConfigs[selectedMap]) || selectedMapId !== null ? toggleCategories : undefined}
-              toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
-              isOpen={dbMapData.displayedCategoryGroups['Not defined categories']}
-              showDescriptions={showDescriptions}
-              dbMapData={dbMapData}
-            />
-          )}
-        </aside>
-      )}
+                }
+              })}
+
+              {showDescriptions && (
+                <CategoryPaneComponent
+                  title="Not defined categories"
+                  categories={
+                    undefinedCategories
+                      .filter(c => !displayedCategories.some(d => d[1][c[0]]))
+                      .filter(([c]) =>
+                        [
+                          c.toLowerCase(),
+                          translateBlueprint(c).toLowerCase(),
+                        ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
+                      )
+                  }
+                  toggleCategory={toggleCategory}
+                  toggleCategories={(showDescriptions && !mapConfigs[selectedMap]) || selectedMapId !== null ? toggleCategories : undefined}
+                  toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
+                  isOpen={dbMapData.displayedCategoryGroups['Not defined categories']}
+                  showDescriptions={showDescriptions}
+                  dbMapData={dbMapData}
+                />
+              )}
+            </div>
+          </>
+        )}
+      </aside>
     </>
   );
 };

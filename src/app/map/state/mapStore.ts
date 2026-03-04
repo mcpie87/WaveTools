@@ -15,6 +15,7 @@ interface MapState {
   clearCategoriesVisibility: () => void;
   setCategoryGroupVisibility: (categoryGroup: string, value: boolean) => void;
   toggleCategoryGroupVisibility: (categoryGroup: string) => void;
+  bulkSetMarkersVisited: (markerIds: number[], value: boolean) => void;
 
   // UI State
   selectedMap: SelectedMap;
@@ -33,6 +34,18 @@ interface MapState {
   setShowDescriptions: (show: boolean) => void;
   hideVisited: boolean;
   setHideVisited: (hide: boolean) => void;
+
+  // Multi-select state
+  multiSelectMode: boolean;
+  setMultiSelectMode: (enabled: boolean) => void;
+  selectedMarkerIds: Set<number>;
+  toggleMarkerSelected: (markerId: number) => void;
+  clearSelectedMarkers: () => void;
+  selectAllVisibleMarkers: (markerIds: number[]) => void;
+
+  // Map Movement
+  flyToCoord: { lat: number; lng: number } | null;
+  setFlyToCoord: (coord: { lat: number; lng: number } | null) => void;
 }
 
 export const useMapStore = create<MapState>((set) => ({
@@ -151,6 +164,21 @@ export const useMapStore = create<MapState>((set) => ({
     });
   },
 
+  bulkSetMarkersVisited: (markerIds, value) => {
+    set((state) => {
+      const updatedVisited = { ...state.dbMapData.visitedMarkers };
+      for (const id of markerIds) {
+        updatedVisited[id] = value;
+      }
+      const newData = {
+        ...state.dbMapData,
+        visitedMarkers: updatedVisited,
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
   // UI State
   selectedMap: MapName.SOLARIS_3,
   setSelectedMap: (selectedMap) => set({ selectedMap }),
@@ -168,4 +196,26 @@ export const useMapStore = create<MapState>((set) => ({
   setShowDescriptions: (showDescriptions) => set({ showDescriptions }),
   hideVisited: false,
   setHideVisited: (hideVisited) => set({ hideVisited }),
+
+  // Multi-select state
+  multiSelectMode: false,
+  setMultiSelectMode: (enabled) => set({ multiSelectMode: enabled }),
+  selectedMarkerIds: new Set<number>(),
+  toggleMarkerSelected: (markerId) => {
+    set((state) => {
+      const newSet = new Set(state.selectedMarkerIds);
+      if (newSet.has(markerId)) {
+        newSet.delete(markerId);
+      } else {
+        newSet.add(markerId);
+      }
+      return { selectedMarkerIds: newSet };
+    });
+  },
+  clearSelectedMarkers: () => set({ selectedMarkerIds: new Set() }),
+  selectAllVisibleMarkers: (markerIds) => set({ selectedMarkerIds: new Set(markerIds) }),
+
+  // Map Movement
+  flyToCoord: null,
+  setFlyToCoord: (flyToCoord) => set({ flyToCoord }),
 }));

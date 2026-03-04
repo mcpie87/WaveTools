@@ -23,10 +23,9 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
   }, [hideVisited]);
 
 
-  const getIcon = useCallback((category: string, visited: boolean) => {
-    const key = `${category}:${visited}:${hideVisited}`;
+  const getIcon = useCallback((category: string, visited: boolean, selected: boolean) => {
+    const key = `${category}:${visited}:${selected}:${hideVisited}`;
 
-    // if (!isDevelopment() && iconCache.current.has(key)) {
     if (iconCache.current.has(key)) {
       return iconCache.current.get(key)!;
     }
@@ -39,8 +38,11 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
       UnionTranslationMap[category]?.name ?? category
     );
 
+    const ringColor = selected ? 'yellow' : '#aaa';
+    const ringWidth = selected ? '3px' : '2px';
+
     if (worldmapIconUrl) {
-      const opacity = visited && !hideVisited ? 0.3 : 1;
+      const mainOpacity = visited && !hideVisited ? 0.3 : 1;
       const display = hideVisited && visited ? 'none' : 'inline-block';
 
       html = `
@@ -48,16 +50,33 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
           display: ${display};
           width: 32px;
           height: 32px;
-          border-radius: 50%;
-          border: 2px solid #aaa;
-          background-color: #333;
-          overflow: hidden;
-          opacity: ${opacity};
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          position: relative;
+          overflow: visible;
         ">
-          <img src="${worldmapIconUrl}" style="width:32px; height:32px; object-fit:contain;" />
+          <!-- Selection Ring (Always 1.0 opacity) -->
+          <div style="
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: ${ringWidth} solid ${ringColor};
+            z-index: 2;
+            pointer-events: none;
+          "></div>
+          
+          <!-- Marker Body (Transparent if visited) -->
+          <div style="
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background-color: #333;
+            opacity: ${mainOpacity};
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+          ">
+            <img src="${worldmapIconUrl}" style="width:32px; height:32px; object-fit:contain;" />
+          </div>
         </div>
       `;
 
@@ -72,15 +91,38 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
             0
           )
         ) % 360;
-      if (visited) {
-        if (hideVisited) {
-          html = `<div style="display:none"></div>`;
-        } else {
-          html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%); opacity:0.3;"></div>`;
-        }
-      } else {
-        html = `<div class="w-5 h-5 rounded-full border border-white" style="background:hsl(${hue},70%,50%)"></div>`;
-      }
+
+      const display = hideVisited && visited ? 'none' : 'inline-block';
+      const mainOpacity = visited && !hideVisited ? 0.3 : 1;
+      const selectionStyles = selected ? `border: 3px solid #eab308; box-shadow: 0 0 10px #eab308;` : `border: 1px solid white;`;
+
+      html = `
+        <div style="
+          display: ${display};
+          width: 20px;
+          height: 20px;
+          position: relative;
+        ">
+          <!-- Selection Ring -->
+          <div style="
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            ${selectionStyles}
+            z-index: 2;
+          "></div>
+
+          <!-- Marker Body -->
+          <div style="
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: hsl(${hue},70%,50%);
+            opacity: ${mainOpacity};
+            z-index: 1;
+          "></div>
+        </div>
+      `;
     }
 
     const icon = L.divIcon({

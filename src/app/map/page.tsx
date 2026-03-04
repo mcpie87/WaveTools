@@ -30,6 +30,9 @@ import { MarkerLayer } from './MapLayers/MarkerLayer';
 import { useMapCategoryStats } from './hooks/useMapCategoryStats';
 import { useDisplayedMarkers } from './hooks/useDisplayedMarkers';
 import { useMapStore } from './state/mapStore';
+import { MapFlyToHandler } from './handlers/MapFlyToHandler';
+import { MultiSelectToolbar } from './Components/MultiSelectToolbar';
+
 
 const simpleCRS = L.CRS.Simple;
 
@@ -115,28 +118,35 @@ export default function XYZMap() {
   return (
     <div className="h-screen w-screen flex relative">
       {/* Left controls */}
-      <MapSettingsComponent
-        selectedMap={selectedMap}
-        setSelectedMap={setSelectedMap}
-        coords={coords}
-        setCoords={setCoords}
-        radius={radius}
-        setRadius={setRadius}
-        enableClick={enableClick}
-        setEnableClick={setEnableClick}
-        hideVisited={hideVisited}
-        setHideVisited={setHideVisited}
-        showDescriptions={showDescriptions}
-        setShowDescriptions={setShowDescriptions}
-        clearCategories={clearCategories}
-        dbMapData={dbMapData}
-        toggleCategory={toggleCategory}
-        toggleCategories={toggleCategories}
-        toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
-        categories={categories}
-        selectedMapId={selectedMapId}
-        setSelectedMapId={setSelectedMapId}
-      />
+      <div className="absolute top-4 left-4 z-[20] flex items-start gap-4 h-full pointer-events-none">
+        <div className="pointer-events-auto shrink-0 transition-all duration-300">
+          <MapSettingsComponent
+            selectedMap={selectedMap}
+            setSelectedMap={setSelectedMap}
+            coords={coords}
+            setCoords={setCoords}
+            radius={radius}
+            setRadius={setRadius}
+            enableClick={enableClick}
+            setEnableClick={setEnableClick}
+            hideVisited={hideVisited}
+            setHideVisited={setHideVisited}
+            showDescriptions={showDescriptions}
+            setShowDescriptions={setShowDescriptions}
+            clearCategories={clearCategories}
+            dbMapData={dbMapData}
+            toggleCategory={toggleCategory}
+            toggleCategories={toggleCategories}
+            toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
+            categories={categories}
+            selectedMapId={selectedMapId}
+            setSelectedMapId={setSelectedMapId}
+          />
+        </div>
+        <div className="pointer-events-auto transition-all duration-300">
+          <MultiSelectToolbar displayedMarkers={displayedMarkers} />
+        </div>
+      </div>
 
       {/* Map */}
       <main className="flex-1 relative z-0">
@@ -185,6 +195,7 @@ export default function XYZMap() {
               })
             }
           />
+          <MapFlyToHandler />
           <MarkerLayer markers={displayedMarkers} />
         </MapContainer>
       </main>
