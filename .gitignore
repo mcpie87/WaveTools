@@ -4,6 +4,7 @@ public/map_tiles
 public/data
 scripts/map_tiles
 scripts/pmtiles_output
+scripts/MapTiles_*
 *.pmtiles
 *.mbtiles
 
