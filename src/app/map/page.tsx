@@ -3,7 +3,7 @@
 import 'leaflet/dist/leaflet.css';
 
 import React, { useMemo } from 'react';
-import { MapContainer } from 'react-leaflet';
+import { MapContainer, Circle } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
@@ -203,6 +203,19 @@ export default function XYZMap() {
           <MapFlyToHandler />
           <MarkerLayer markers={displayedMarkers} />
           <CursorCoordinates />
+          {enableClick && (
+            <Circle
+              center={[-coords.y * scaleFactor, TILE_SIZE + coords.x * scaleFactor]}
+              radius={radius * scaleFactor}
+              pathOptions={{
+                color: '#eab308',
+                fillColor: '#eab308',
+                fillOpacity: 0.2,
+                weight: 2,
+                dashArray: '8, 12',
+              }}
+            />
+          )}
         </MapContainer>
       </main>
     </div>
