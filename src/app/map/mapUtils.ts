@@ -13,13 +13,13 @@ const translateGameToMap = ({ x, y, z }: { x: number; y: number; z: number }) =>
   y: translateGameToMapY(y),
   z: z / 10000,
 });
-const translateMapToGameX = (x: number) => (x - TILE_SIZE) * 10000 / scaleFactor;
-const translateMapToGameY = (y: number) => -y * 10000 / scaleFactor;
-// const translateMapToGame = ({ x, y, z }: { x: number; y: number; z: number }) => ({
-//   x: translateMapToGameX(x),
-//   y: translateMapToGameY(y),
-//   z: z * 10000,
-// });
+export const translateMapToGameX = (x: number) => (x - TILE_SIZE) * 10000 / scaleFactor;
+export const translateMapToGameY = (y: number) => -y * 10000 / scaleFactor;
+export const translateMapToGame = ({ x, y, z }: { x: number; y: number; z: number }) => ({
+  x: translateMapToGameX(x),
+  y: translateMapToGameY(y),
+  z: z * 10000,
+});
 export const getGameBounds = (mapName: SelectedMap) => {
   const config = unionMapConfigs[mapName];
   if (!config?.bounds) return undefined;

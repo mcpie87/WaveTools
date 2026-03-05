@@ -33,6 +33,7 @@ import { useDisplayedMarkers } from './hooks/useDisplayedMarkers';
 import { useMapStore } from './state/mapStore';
 import { MapFlyToHandler } from './handlers/MapFlyToHandler';
 import { MultiSelectToolbar } from './Components/MultiSelectToolbar';
+import { CursorCoordinates } from './Components/CursorCoordinates';
 
 
 const simpleCRS = L.CRS.Simple;
@@ -201,6 +202,7 @@ export default function XYZMap() {
           />
           <MapFlyToHandler />
           <MarkerLayer markers={displayedMarkers} />
+          <CursorCoordinates />
         </MapContainer>
       </main>
     </div>
