@@ -244,9 +244,9 @@ export const UnionTranslationMap: Record<string, TranslationMapEntry> =
 
 export const getTranslationMapName = (marker: IMarker): string => {
   const categoryTranslation = UnionTranslationMap[marker.category]?.name;
-  const queryCategory = marker.metadata
+  const queryCategory = marker.metadata || marker.mapMark
     ? Object.entries(QueryCategories)
-      .find(([, qcat]) => qcat.query(marker.metadata!))?.[0]
+      .find(([, qcat]) => qcat.query(marker))?.[0]
     : undefined;
   const queryTranslation = queryCategory ? UnionTranslationMap[queryCategory]?.name : undefined;
   return queryTranslation ?? categoryTranslation ?? "";

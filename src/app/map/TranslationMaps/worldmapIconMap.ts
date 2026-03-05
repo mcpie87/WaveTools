@@ -4,11 +4,15 @@ import { Echo4Cost } from "./Echo4Costs";
 import { Echo3Cost } from "./Echo3Costs";
 import { Echo1Cost } from "./Echo1Costs";
 import { NPCMobs } from "./NPCMobs";
+import { getTranslationMapName } from "./translationMap";
+import { convertToUrl } from "@/utils/utils";
+import { IMarker } from "../types";
 
 const GameAssetIcons: Record<string, string> = {
   /* Teleporters */
   "Resonance Nexus": "Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
   "Resonance Beacon": "Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+  "Gondola Platform": "Atlas/WorldMapIcon/SP_IconMap_Ocean_UI.png",
   "Mechascout": "Atlas/WorldMapIcon/SP_IconMap_Play_56_UI.png",
 
   /* Caskets */
@@ -25,6 +29,9 @@ const GameAssetIcons: Record<string, string> = {
   "Musicfly": "Atlas/WorldMapIcon/SP_IconMap_Play_22_UI.png",
   "Dream Patrol": "Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
   "Overflowing Palette": "Atlas/WorldMapIcon/SP_IconMap_Play_18_UI.png",
+  "Fratelli": "Atlas/WorldMapIcon/SP_IconMap_Play_20_UI.png",
+  "Tactical Hologram: Vitreum Dancer": "Atlas/WorldMapIcon/SP_IconMap_Play_17_UI.png",
+  "Echo Challenge: Dancer Hacking": "Atlas/WorldMapIcon/SP_IconMap_Play_31_UI.png",
   // 2.4
   "Dreams of Cintercide": "Atlas/WorldMapIcon/SP_IconMap_Play_48_UI.png",
   "Peaks of Prestige": "Atlas/WorldMapIcon/SP_IconMap_Play_58_UI.png",
@@ -34,9 +41,14 @@ const GameAssetIcons: Record<string, string> = {
   "Triptych Chest": "Atlas/WorldMapIcon/SP_IconMap_Play_45_UI.png",
   "Orchestration Altar": "Atlas/WorldMapIcon/SP_IconMap_Play_44_UI.png",
   // 3.0
-  "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_61_UI.png",
+  "Bike Racing": "Atlas/WorldMapIcon/SP_IconMap_Play_61_UI.png",
   "Smartprint Cube": "Atlas/WorldMapIcon/SP_IconMap_Play_54_UI.png",
   "Soliskin": "Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+  "Hot Spring": "Atlas/WorldMapIcon/SP_IconMap_Play_55_UI.png",
+  "Void Storm": "Atlas/WorldMapIcon/SP_IconMap_Play_49_UI.png",
+  "Route Constructor": "Atlas/WorldMapIcon/SP_IconMap_Activity_Navigation_10_UI.png",
+  "Route Network Blockage": "Atlas/WorldMapIcon/SP_IconMap_Play_59_UI.png",
+  "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
   // 3.1
   "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
 
@@ -391,3 +403,12 @@ export const getWorldmapIcon = (name: string): string | null => {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return `${basePath}/assets/${iconMatch}`;
 };
+
+export const getWorldmapIconFromMarker = (marker: IMarker): string | null => {
+  const name = getTranslationMapName(marker);
+  const icon = getWorldmapIcon(name);
+  if (icon) return icon;
+
+  if (marker.mapMark?.icon) return convertToUrl(marker.mapMark.icon);
+  return null;
+}

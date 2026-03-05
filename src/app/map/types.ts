@@ -28,9 +28,9 @@ export interface APIMarker {
   Transform: { X: number; Y: number; Z: number }[];
   BlueprintType: string;
   MapId: number;
-  Id?: number;
+  Id: number;
   AreaId?: number;
-  EntityId?: number;
+  EntityId: number;
   ComponentsData?: ComponentsData;
   name?: string;
   description?: string;

@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useRef } from "react";
-import { getWorldmapIcon } from "../TranslationMaps/worldmapIconMap";
-import { UnionTranslationMap } from "../TranslationMaps/translationMap";
+import { getWorldmapIconFromMarker } from "../TranslationMaps/worldmapIconMap";
 import { IMarker } from "../types";
 import L from "leaflet";
 import { SingleMarker } from "./components/SingleMarker";
 import { useVisibleMarkers } from "./hooks/useVisibleMarkers";
 import { useMapStore } from "../state/mapStore";
+import { DEV_CONFIG, IS_DEV } from "@/config/dev";
 
 interface MarkerLayerProps {
   markers: IMarker[];
@@ -23,10 +23,11 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
   }, [hideVisited]);
 
 
-  const getIcon = useCallback((category: string, visited: boolean, selected: boolean) => {
-    const key = `${category}:${visited}:${selected}:${hideVisited}`;
+  const getIcon = useCallback((marker: IMarker, visited: boolean, selected: boolean) => {
+    const key = `${marker.category}:${visited}:${selected}:${hideVisited}`;
 
-    if (iconCache.current.has(key)) {
+    const shouldBypassCache = IS_DEV && DEV_CONFIG.map.marker.bypassIconCache;
+    if (!shouldBypassCache && iconCache.current.has(key)) {
       return iconCache.current.get(key)!;
     }
 
@@ -34,9 +35,7 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
     let iconSize: L.PointExpression = [20, 20];
     let iconAnchor: L.PointExpression = [10, 10];
 
-    const worldmapIconUrl = getWorldmapIcon(
-      UnionTranslationMap[category]?.name ?? category
-    );
+    const worldmapIconUrl = getWorldmapIconFromMarker(marker);
 
     const ringColor = selected ? 'yellow' : '#aaa';
     const ringWidth = selected ? '3px' : '2px';
@@ -74,6 +73,7 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
             align-items: center;
             justify-content: center;
             z-index: 1;
+            overflow: hidden;
           ">
             <img src="${worldmapIconUrl}" style="width:32px; height:32px; object-fit:contain;" />
           </div>
@@ -86,7 +86,7 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
       // fallback colored circle
       const hue =
         Math.abs(
-          [...category].reduce(
+          [...marker.category].reduce(
             (a, c) => c.charCodeAt(0) + ((a << 5) - a),
             0
           )

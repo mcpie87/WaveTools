@@ -1,6 +1,6 @@
 import { MarkerIndexes } from "../hooks/useMapData";
 import { SelectedMap } from "@/types/mapTypes";
-import { APIMarker } from "../types";
+import { APIMarker, IMarker } from "../types";
 import { useMemo } from "react";
 import { BBox } from "rbush";
 import {
@@ -10,6 +10,7 @@ import {
   __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__,
   __DUNGEONS_ONLY__,
   __WORLD_MAPS__,
+  convertMarkerToCoord,
   getGameBounds,
   mainStoryDungeonMapConfigs,
   mapConfigs,
@@ -47,7 +48,7 @@ export function useFilteredMarkers(
   indexes: MarkerIndexes | null,
   selectedMap: SelectedMap,
   selectedMapId: number | null,
-): APIMarker[] {
+): IMarker[] {
   return useMemo(() => {
     if (!indexes) return [];
 
@@ -80,6 +81,6 @@ export function useFilteredMarkers(
       }
     }
 
-    return results;
+    return results.map(m => convertMarkerToCoord(m, {}));
   }, [indexes, selectedMap, selectedMapId]);
 }

@@ -7,8 +7,9 @@ import { MapContainer } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
-import { APIMarker } from './types';
+import { APIMarker, IMarker } from './types';
 import {
+  convertMarkerToCoord,
   getBounds,
   getMapCenter,
   isCustomMapSelected,
@@ -76,8 +77,8 @@ export default function XYZMap() {
     isMarkerVisited
   );
 
-  const selectedPoint: APIMarker = useMemo(() => {
-    return {
+  const selectedPoint: IMarker = useMemo(() => {
+    const apiMarker: APIMarker = {
       Transform: [
         {
           X: coords.x * 10000,
@@ -86,22 +87,25 @@ export default function XYZMap() {
         },
       ],
       BlueprintType: 'Selected Point',
+      Id: -1,
+      EntityId: -1,
       MapId: mapConfigs[selectedMap]?.mapId ?? -1,
     };
-  }, [coords, selectedMap]);
+    return convertMarkerToCoord(apiMarker, dbMapData.visitedMarkers);
+  }, [coords, selectedMap, dbMapData.visitedMarkers]);
 
   const markersWithinRadius = useMemo(() => {
-    const cx = selectedPoint.Transform[0].X;
-    const cy = selectedPoint.Transform[0].Y;
-    const cz = selectedPoint.Transform[0].Z;
+    const cx = coords.x * 10000;
+    const cy = coords.y * 10000;
+    const cz = coords.z * 10000;
 
     return markers.filter((m) => {
-      const dx = m.Transform[0].X - cx;
-      const dy = m.Transform[0].Y - cy;
-      const dz = cz ? m.Transform[0].Z - cz : 0;
+      const dx = (m.displayedX * 10000) - cx;
+      const dy = (m.displayedY * 10000) - cy;
+      const dz = cz ? (m.displayedZ * 10000) - cz : 0;
       return Math.sqrt(dx * dx + dy * dy + dz * dz) < radius * 10000;
     });
-  }, [markers, selectedPoint, radius]);
+  }, [markers, coords, radius]);
 
   const displayedMarkers = useDisplayedMarkers(
     markers,
@@ -118,7 +122,7 @@ export default function XYZMap() {
   return (
     <div className="h-screen w-screen flex relative">
       {/* Left controls */}
-      <div className="absolute top-4 left-4 z-[20] flex items-start gap-4 h-full pointer-events-none">
+      <div className="absolute top-4 left-4 z-[20] flex items-start gap-4 pointer-events-none">
         <div className="pointer-events-auto shrink-0 transition-all duration-300">
           <MapSettingsComponent
             selectedMap={selectedMap}

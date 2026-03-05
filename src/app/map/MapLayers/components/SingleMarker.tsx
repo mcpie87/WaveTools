@@ -6,7 +6,7 @@ import { useMapStore } from "../../state/mapStore";
 
 interface SingleMarkerProps {
   marker: IMarker;
-  getIcon: (category: string, visited: boolean, selected: boolean) => L.DivIcon;
+  getIcon: (marker: IMarker, visited: boolean, selected: boolean) => L.DivIcon;
 }
 
 export const SingleMarkerComponent = ({
@@ -27,8 +27,8 @@ export const SingleMarkerComponent = ({
   const toggleMarkerSelected = useMapStore((state) => state.toggleMarkerSelected);
 
   const icon = useMemo(
-    () => getIcon(marker.category, visited, isSelected),
-    [getIcon, marker.category, visited, isSelected]
+    () => getIcon(marker, visited, isSelected),
+    [getIcon, marker, visited, isSelected]
   );
 
   const handleMarkerClick = () => {

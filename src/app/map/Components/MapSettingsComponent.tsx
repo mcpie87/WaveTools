@@ -119,7 +119,7 @@ export const MapSettingsComponent = ({
   return (
     <>
       {/* Left controls */}
-      <aside className="w-[320px] rounded-xl border-r p-3 flex flex-col gap-3 max-h-[calc(100vh-2rem)] bg-base-100 overflow-hidden">
+      <aside className="w-[320px] rounded-xl border-r p-3 flex flex-col gap-3 max-h-[calc(100vh-2rem)] bg-base-100 overflow-y-auto custom-scrollbar">
         {!showSettings && (
           <Button className="w-full shrink-0" onClick={() => setShowSettings(true)}>
             Show Settings
@@ -236,7 +236,7 @@ export const MapSettingsComponent = ({
               />
             </div>
 
-            <div className="flex-1 overflow-y-auto space-y-3 pr-1 custom-scrollbar">
+            <div className="space-y-3 pr-1">
               {(displayedCategories).map(([title, translationMap, displayOrder]) => {
                 {
                   const filteredCategories = categories

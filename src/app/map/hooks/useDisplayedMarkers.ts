@@ -1,25 +1,28 @@
 import { useMemo } from "react";
-import { convertMarkerToCoord } from "../mapUtils";
-import { APIMarker, IMarker } from "../types";
+import { IMarker } from "../types";
 import { DbMapData } from "@/types/mapTypes";
 import { QueryCategories } from "../TranslationMaps/Puzzles";
 
 export function useDisplayedMarkers(
-  markers: APIMarker[],
-  markersWithinRadius: APIMarker[],
+  markers: IMarker[],
+  markersWithinRadius: IMarker[],
   dbMapData: DbMapData,
   enableClick: boolean,
-  selectedPoint: APIMarker,
+  selectedPoint: IMarker,
   hideVisited: boolean,
 ): IMarker[] {
   return useMemo(() => {
-    const isVisible = (m: APIMarker): boolean => {
+    const isVisible = (m: IMarker): boolean => {
+      // if (m.mapMark?.icon) return true;
+
       // existing BlueprintType-based check
-      if (dbMapData.visibleCategories[m.BlueprintType]) return true;
+      if (dbMapData.visibleCategories[m.category]) return true;
 
       // query-based categories
       for (const [key, category] of Object.entries(QueryCategories)) {
-        if (dbMapData.visibleCategories[key] && m.ComponentsData && category.query(m.ComponentsData)) return true;
+        if (dbMapData.visibleCategories[key]) {
+          if (category.query(m)) return true;
+        }
       }
 
       return false;
@@ -28,10 +31,10 @@ export function useDisplayedMarkers(
     const base = enableClick
       ? markersWithinRadius
       : markers.filter(isVisible);
+
     return [
-      ...(enableClick ? [convertMarkerToCoord(selectedPoint, dbMapData.visitedMarkers)] : []),
-      ...base.map((m) => convertMarkerToCoord(m, dbMapData.visitedMarkers))
-        .filter(m => !hideVisited || !dbMapData.visitedMarkers[m.id as number]),
+      ...(enableClick ? [selectedPoint] : []),
+      ...base.filter(m => !hideVisited || !dbMapData.visitedMarkers[m.id as number]),
     ]
   }, [markers, markersWithinRadius, dbMapData.visibleCategories, hideVisited, enableClick, selectedPoint, dbMapData.visitedMarkers]);
 }

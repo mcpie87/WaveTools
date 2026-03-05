@@ -1,6 +1,7 @@
 import { SelectedMap } from "@/types/mapTypes";
 import { APIMarker, IMarker } from "./types";
 import L from 'leaflet';
+import { getMapMark } from "./data/map_marks";
 
 export const scaleFactor = 0.30118;
 export const TILE_SIZE = 256;
@@ -90,15 +91,17 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<numbe
     z: marker.Transform[0].Z,
   }),
   id: marker.Id,
+  entityId: marker.EntityId,
   areaId: marker.AreaId!,
   name: marker.BlueprintType,
   description: JSON.stringify(marker, null, 2),
   metadata: marker.ComponentsData,
+  mapMark: getMapMark(marker.MapId, marker.EntityId),
   displayedX: marker.Transform[0].X / 10000,
   displayedY: marker.Transform[0].Y / 10000,
   displayedZ: marker.Transform[0].Z / 10000,
   category: marker.BlueprintType,
-  visited: visitedMap[marker.MapId] || false,
+  visited: visitedMap[marker.Id] || false,
 });
 
 

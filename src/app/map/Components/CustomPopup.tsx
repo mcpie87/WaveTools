@@ -47,6 +47,11 @@ export function CustomPopup({
           X: {parseFloat(marker.displayedX.toFixed(2))}, Y: {parseFloat(marker.displayedY.toFixed(2))}, Z: {parseFloat(marker.displayedZ.toFixed(2))}
         </div>
         <Button onClick={toggleVisited}>{visited ? "Uncheck" : "Check"}</Button>
+        {showDescription && marker.mapMark && (
+          <div className="text-xs italic mb-2">
+            Map Mark: {marker.mapMark && JSON.stringify(marker.mapMark)}
+          </div>
+        )}
         {showDescription && (
           <pre className="text-xs mt-2 max-h-[300px] overflow-auto">{marker.description}</pre>
         )}
