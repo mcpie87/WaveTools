@@ -97,13 +97,13 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "Gameplay_LNXT_Flying": { name: "Flying Challenge" },
   "Gameplay_SoundDesign2": { name: "Musicfly" },
   // "branch2.0_Gameplay172": { name: "Fratelli" }, // Removed in favor of query based search
-  "branch2.0_Gameplay_Dungeon3": { name: "Dream Patrol" }, // For some reason counted x2
+  // "branch2.0_Gameplay_Dungeon3": { name: "Dream Patrol" }, // For some reason counted x2
   "Gameplay8": { name: "Overflowing Palette" },
 
   // 2.4
   "branch2.4_143_Gameplay_2_4QQ11": { name: "Flying Challenge" },
   "branch2.4_143_Gameplay_2_4QQ4": { name: "Simulation Training Device" },
-  "branch2.4_157_Gameplay_Dungeon1": { name: "Dream Patrol" }, // For some reason counted x2
+  // "branch2.4_157_Gameplay_Dungeon1": { name: "Dream Patrol" }, // For some reason counted x2
   "branch2.4_143_Gameplay_2_4QQ14": { name: "Hero's Rend" },
 
   // 2.5
