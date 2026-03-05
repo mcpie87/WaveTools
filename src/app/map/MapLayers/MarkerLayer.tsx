@@ -24,7 +24,8 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
 
 
   const getIcon = useCallback((marker: IMarker, visited: boolean, selected: boolean) => {
-    const key = `${marker.category}:${visited}:${selected}:${hideVisited}`;
+    const worldmapIconUrl = getWorldmapIconFromMarker(marker);
+    const key = `${marker.category}:${worldmapIconUrl}:${visited}:${selected}:${hideVisited}`;
 
     const shouldBypassCache = IS_DEV && DEV_CONFIG.map.marker.bypassIconCache;
     if (!shouldBypassCache && iconCache.current.has(key)) {
@@ -35,7 +36,6 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
     let iconSize: L.PointExpression = [20, 20];
     let iconAnchor: L.PointExpression = [10, 10];
 
-    const worldmapIconUrl = getWorldmapIconFromMarker(marker);
 
     const ringColor = selected ? 'yellow' : '#aaa';
     const ringWidth = selected ? '3px' : '2px';
