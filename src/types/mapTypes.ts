@@ -21,6 +21,49 @@ export interface APIMapMark {
   title: string;
 }
 
+export interface APIQuestData {
+  id: number;
+  mapId: number;
+  questTypeId: number;
+  chapterId: number;
+  name: string;
+  description: string;
+  trackEntityId: number;
+  typeName: string;
+  chapterName: string;
+}
+
+export interface APILevelPlayData {
+  LevelPlayId: number;
+  Id?: number;
+  Key?: string;
+  TidName: string;
+  LevelPlayEntityId?: number;
+  LevelPlayMark?: string;
+  Reference: string[];
+  Children: string[];
+  Type?: string;
+}
+
+export interface APIQuestData {
+  QuestId: number;
+  Id?: number;
+  Type: string;
+  RegionId: number;
+  RoleId: number;
+  Key: string;
+  TidName: string;
+  TidDesc: string;
+  RewardId: number;
+  ProvideType: string;
+  DistributeType: string;
+  Reference: string[];
+  Children: string[];
+  WeakReference: string[];
+  ActiveActions: unknown;
+  AddInteractOption: unknown;
+}
+
 export type SelectedMap = MapName
   | MainStoryDungeonName
   | StoryDungeonName

@@ -55,7 +55,7 @@ const CategoryPaneGroupComponent = ({
             <div className="w-6 h-6 mr-2 bg-gray-800 rounded-md flex items-center justify-center">
               {getWorldmapIcon(groupName) && (
                 <Image
-                  src={getWorldmapIcon(groupName) ?? ""}
+                  src={getWorldmapIcon(groupName)?.[0] ?? ""}
                   alt={groupName}
                   width={20}
                   height={20}

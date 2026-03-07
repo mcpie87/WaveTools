@@ -65,14 +65,14 @@ def get_textmap_name(id)
     # return nil
 end
 
-def load_file(path, keepArray = false)
+def load_file(path, keepArray = false, key = "Id")
     file = File.open(path)
     json = JSON.load(file)
     # byebug
     return json if keepArray
     # byebug
     json = json.each_with_object({}) do |element, acc|
-        acc[element["Id"]] = element
+        acc[element[key]] = element
     end
 end
 TEXTMAP_JSON = load_file("#{DATAMINE_PATH}/#{TEXTMAPS}/en/multi_text/MultiText.json")

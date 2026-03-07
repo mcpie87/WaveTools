@@ -1,4 +1,4 @@
-import { APIMapMark } from "@/types/mapTypes";
+import { APIMapMark, APIQuestData } from "@/types/mapTypes";
 
 export interface ComponentsData {
   RewardComponent?: { RewardId?: number };
@@ -36,6 +36,19 @@ export interface APIMarker {
   description?: string;
 }
 
+export interface IMarkerReferences {
+  levelData?: {
+    references?: string[];
+    children?: string[];
+  };
+  questData?: {
+    questData?: APIQuestData[];
+    references?: number[];
+    children?: number[];
+    weakReferences?: number[];
+  }
+}
+
 export interface IMarker {
   x: number;
   y: number;
@@ -52,4 +65,6 @@ export interface IMarker {
   displayedY: number;
   displayedZ: number;
   visited: boolean;
+  references?: IMarkerReferences;
+  questData?: APIQuestData;
 }

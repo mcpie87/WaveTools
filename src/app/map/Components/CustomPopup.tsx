@@ -20,36 +20,56 @@ export function CustomPopup({
 }: CustomPopupProps) {
   const translation = translateBlueprint(marker.category); // synchronous
 
-  const title = getTranslationMapName(marker);
-  // const icon = getWorldmapIcon(title);
+  const title = marker.questData?.name || getTranslationMapName(marker);
 
   return (
     <Popup autoPan={false}>
       <div className="flex flex-col gap-2">
-        <div className="font-bold">{title}{showDescription && ` - ${marker.category}`}</div>
-        {/* {icon && (
-          <div className="border">
-            <Image
-              src={icon}
-              height={64}
-              width={64}
-              alt={title}
-              className="w-16 h-16"
-            />
-          </div>
-        )} */}
+        <div className="font-bold flex items-center justify-center">
+          {title}{showDescription && ` - ${marker.category}`}
+        </div>
         {showDescription && (
           <div className="text-xs italic mb-2">
             Translation: {translation}
           </div>
         )}
-        <div>
-          X: {parseFloat(marker.displayedX.toFixed(2))}, Y: {parseFloat(marker.displayedY.toFixed(2))}, Z: {parseFloat(marker.displayedZ.toFixed(2))}
+        {marker.questData && (
+          <div className="text-xs italic mb-2">
+            {marker.questData.description}
+          </div>
+        )}
+        <div className="bg-base-100 px-3 py-1.5 rounded-lg border border-white/20 font-mono flex gap-3">
+          <div className="flex gap-1.5">
+            <span className="opacity-50">X</span>
+            <span>{marker.displayedX.toFixed(2)}</span>
+          </div>
+          <div className="flex gap-1.5">
+            <span className="opacity-50">Y</span>
+            <span>{marker.displayedY.toFixed(2)}</span>
+          </div>
+          <div className="flex gap-1.5">
+            <span className="opacity-50">Z</span>
+            <span>{marker.displayedZ.toFixed(2)}</span>
+          </div>
         </div>
         <Button onClick={toggleVisited}>{visited ? "Uncheck" : "Check"}</Button>
         {showDescription && marker.mapMark && (
           <div className="text-xs italic mb-2">
             Map Mark: {marker.mapMark && JSON.stringify(marker.mapMark)}
+          </div>
+        )}
+        {showDescription && marker.questData && (
+          <div className="text-xs italic mb-2">
+            Quest:
+            <pre>{JSON.stringify(marker.questData, null, 2)}</pre>
+          </div>
+        )}
+        {showDescription && (
+          <div className="text-xs italic mb-2 overflow-scroll max-h-[400px]">
+            References:
+            <pre>
+              {JSON.stringify(marker.references, null, 2)}
+            </pre>
           </div>
         )}
         {showDescription && (

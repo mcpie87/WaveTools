@@ -22,9 +22,10 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
     iconCache.current.clear();
   }, [hideVisited]);
 
-
   const getIcon = useCallback((marker: IMarker, visited: boolean, selected: boolean) => {
-    const worldmapIconUrl = getWorldmapIconFromMarker(marker);
+    const iconData = getWorldmapIconFromMarker(marker);
+    const worldmapIconUrl = iconData?.[0];
+    const ignoreMarkerBg = iconData?.[1];
     const key = `${marker.category}:${worldmapIconUrl}:${visited}:${selected}:${hideVisited}`;
 
     const shouldBypassCache = IS_DEV && DEV_CONFIG.map.marker.bypassIconCache;
@@ -44,7 +45,14 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
       const mainOpacity = visited && !hideVisited ? 0.3 : 1;
       const display = hideVisited && visited ? 'none' : 'inline-block';
 
-      html = `
+      const markerSize = ignoreMarkerBg ? 40 : 32;
+      const markerBody = `
+        <img src="${worldmapIconUrl}" style="width:${markerSize}px; height:${markerSize}px; object-fit:contain;" />
+      `
+
+      html = ignoreMarkerBg
+        ? markerBody
+        : `
         <div style="
           display: ${display};
           width: 32px;
@@ -61,27 +69,26 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
             z-index: 2;
             pointer-events: none;
           "></div>
-          
           <!-- Marker Body (Transparent if visited) -->
-          <div style="
-            position: absolute;
-            inset: 0;
-            border-radius: 50%;
-            background-color: #333;
-            opacity: ${mainOpacity};
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1;
-            overflow: hidden;
-          ">
-            <img src="${worldmapIconUrl}" style="width:32px; height:32px; object-fit:contain;" />
+        <div style="
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          background-color: #333;
+          opacity: ${mainOpacity};
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1;
+          overflow: hidden;
+        ">
+          ${markerBody}
           </div>
         </div>
       `;
 
-      iconSize = [32, 32];
-      iconAnchor = [16, 16];
+      iconSize = [markerSize, markerSize];
+      iconAnchor = [markerSize / 2, markerSize / 2];
     } else {
       // fallback colored circle
       const hue =

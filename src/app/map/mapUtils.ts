@@ -1,7 +1,7 @@
 import { SelectedMap } from "@/types/mapTypes";
 import { APIMarker, IMarker } from "./types";
 import L from 'leaflet';
-import { getMapMark } from "./data/map_marks";
+import { getMapMark, getQuestData } from "./data/map_marks";
 
 export const scaleFactor = 0.30118;
 export const TILE_SIZE = 256;
@@ -102,6 +102,7 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<numbe
   displayedZ: marker.Transform[0].Z / 10000,
   category: marker.BlueprintType,
   visited: visitedMap[marker.Id] || false,
+  questData: getQuestData(`${marker.MapId}-${marker.EntityId}`),
 });
 
 

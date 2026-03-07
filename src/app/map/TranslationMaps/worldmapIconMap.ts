@@ -5,10 +5,14 @@ import { Echo3Cost } from "./Echo3Costs";
 import { Echo1Cost } from "./Echo1Costs";
 import { NPCMobs } from "./NPCMobs";
 import { getTranslationMapName } from "./translationMap";
-import { convertToUrl } from "@/utils/utils";
 import { IMarker } from "../types";
 
-const GameAssetIcons: Record<string, string> = {
+type IconUrl = string;
+type IconRecord = [
+  icon: IconUrl,
+  ignoreMarkerBg: boolean,
+]
+const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   /* Teleporters */
   "Resonance Nexus": "Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
   "Resonance Beacon": "Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
@@ -23,6 +27,7 @@ const GameAssetIcons: Record<string, string> = {
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
 
   /* Puzzles */
+  "Side Quest": ["Atlas/WorldMapIcon/SP_IconMap_Task_02_1_UI.png", true],
   // 2.0
   "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
   "Flying Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
@@ -379,7 +384,7 @@ const GameAssetIcons: Record<string, string> = {
   "Weapon": "Image/IconWeapon/T_IconWeapon21020011_UI.png",
 };
 
-const CustomIcons: Record<string, string> = {
+const CustomIcons: Record<string, IconUrl> = {
   "Basic Supply Chest": "Basic_Supply_Chest.webp",
   "Standard Supply Chest": "Standard_Supply_Chest.webp",
   "Advanced Supply Chest": "Advanced_Supply_Chest.webp",
@@ -393,22 +398,28 @@ const CustomIcons: Record<string, string> = {
   "Frostbug": "Frostbug.webp",
 };
 
-export const getWorldmapIcon = (name: string): string | null => {
+export const getWorldmapIcon = (name: string): IconRecord | null => {
   const gameAssetIcon = GameAssetIcons[name];
-  if (gameAssetIcon) return `${ASSET_URL}UIResources/Common/${gameAssetIcon}`;
+  if (gameAssetIcon) {
+    if (typeof gameAssetIcon === "string") return [`${ASSET_URL}UIResources/Common/${gameAssetIcon}`, false];
+    return [
+      `${ASSET_URL}UIResources/Common/${gameAssetIcon[0]}`,
+      gameAssetIcon[1]
+    ];
+  }
 
   const iconMatch = CustomIcons[name];
   if (!iconMatch) return null;
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  return `${basePath}/assets/${iconMatch}`;
+  return [`${basePath}/assets/${iconMatch}`, false];
 };
 
-export const getWorldmapIconFromMarker = (marker: IMarker): string | null => {
+export const getWorldmapIconFromMarker = (marker: IMarker): IconRecord | null => {
   const name = getTranslationMapName(marker);
   const icon = getWorldmapIcon(name);
   if (icon) return icon;
 
-  if (marker.mapMark?.icon) return convertToUrl(marker.mapMark.icon);
+  // if (marker.mapMark?.icon) return [convertToUrl(marker.mapMark.icon), true];
   return null;
 }

@@ -17,11 +17,11 @@ export const QueryCategories: Record<string, QueryCategory> = {
     query: (m) => m.metadata?.InteractComponent?.InteractIcon === "BvbInteract"
       || (m.metadata?.InteractComponent?.Options?.some(o => o.Icon === "BvbInteract") ?? false),
   },
-  "QUERY_InteractIcon": {
-    name: "Interact Icon",
-    query: (m) => m.metadata?.InteractComponent?.InteractIcon !== undefined
-      || (m.metadata?.InteractComponent?.Options?.some(o => o.Icon !== undefined) ?? false),
-  },
+  // "QUERY_InteractIcon": {
+  //   name: "Interact Icon",
+  //   query: (m) => m.metadata?.InteractComponent?.InteractIcon !== undefined
+  //     || (m.metadata?.InteractComponent?.Options?.some(o => o.Icon !== undefined) ?? false),
+  // },
   "QUERY_Scenery": {
     name: "Scenery",
     query: (m) => (
@@ -76,6 +76,16 @@ export const QueryCategories: Record<string, QueryCategory> = {
   "QUERY_Bike_Racing": {
     name: "Bike Racing",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_61_UI") ?? false,
+  },
+  "QUERY_Quest": {
+    name: "Side Quest",
+    query: (m) => {
+      if (!m.questData) return false;
+      if (m?.questData?.id === undefined) {
+        console.log("MARKER", m);
+      }
+      return m?.questData?.id !== undefined
+    },
   },
 };
 
@@ -141,6 +151,7 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
   "QUERY_Route_Network_Blockage": { name: "Route Network Blockage" },
   "QUERY_Bike_Challenge": { name: "Bike Challenge" },
   "QUERY_Bike_Racing": { name: "Bike Racing" },
+  "QUERY_Quest": { name: "Side Quest" },
 };
 export const PuzzleDisplayOrder = [
   "Mutterfly",

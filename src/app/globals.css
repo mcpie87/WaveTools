@@ -107,5 +107,6 @@
 .leaflet-popup-content-wrapper {
   background: rgb(var(--base-200)) !important;
   color: var(--text-primary) !important;
+  border: solid 1px rgba(255, 255, 255, 0.2) !important;
   /* opacity: 1 !important; */
 }
