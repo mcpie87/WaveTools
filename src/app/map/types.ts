@@ -55,6 +55,7 @@ export interface IMarker {
   z: number;
   id?: number;
   entityId: number;
+  mapId: number;
   areaId: number;
   name: string;
   description: string;

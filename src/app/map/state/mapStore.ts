@@ -2,7 +2,34 @@ import { create } from "zustand";
 import { DbMapData, SelectedMap } from "@/types/mapTypes";
 import { MapName } from "../mapUtils";
 import { mapStorageService } from "../services/mapStorageService";
-import { initMapState } from "./map.reducer";
+import { getTrackingKey, QueryCategories } from "../TranslationMaps/translationMap";
+
+export const defaultMapState: DbMapData = {
+  visibleCategories: {},
+  visitedMarkers: {},
+  displayedCategoryGroups: {},
+};
+
+export function initMapState(): DbMapData {
+  const loaded = mapStorageService.load() as Partial<DbMapData> | null;
+
+  if (!loaded) return defaultMapState;
+
+  return {
+    visibleCategories: {
+      ...defaultMapState.visibleCategories,
+      ...loaded.visibleCategories
+    },
+    visitedMarkers: {
+      ...defaultMapState.visitedMarkers,
+      ...loaded.visitedMarkers
+    },
+    displayedCategoryGroups: {
+      ...defaultMapState.displayedCategoryGroups,
+      ...loaded.displayedCategoryGroups
+    },
+  };
+}
 
 interface MapState {
   // DB Map Data
