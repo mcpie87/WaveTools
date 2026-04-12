@@ -3,6 +3,8 @@ import { __ALL_MAPS__, __ALL_MAPS_BUT_DEFINED__, __ALL_MAPS_BUT_DEFINED_AND_TEST
 export interface DbMapData {
   visibleCategories: Record<string, boolean>,
   visitedMarkers: Record<number, boolean>,
+  // key: e_{mapId}_{entityId}, value: Set of category keys
+  visitedEntities: Record<string, Set<string>>,
   displayedCategoryGroups: Record<string, boolean>,
 }
 

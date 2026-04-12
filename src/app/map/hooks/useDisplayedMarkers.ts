@@ -1,7 +1,8 @@
 import { useMemo } from "react";
 import { IMarker } from "../types";
 import { DbMapData } from "@/types/mapTypes";
-import { QueryCategories } from "../TranslationMaps/translationMap";
+
+import { isMarkerVisible } from "../state/map.selectors";
 
 export function useDisplayedMarkers(
   markers: IMarker[],
@@ -12,25 +13,10 @@ export function useDisplayedMarkers(
   hideVisited: boolean,
 ): IMarker[] {
   return useMemo(() => {
-    const isVisible = (m: IMarker): boolean => {
-      // if (m.mapMark?.icon) return true;
-
-      // existing BlueprintType-based check
-      if (dbMapData.visibleCategories[m.category]) return true;
-
-      // query-based categories
-      for (const [key, category] of Object.entries(QueryCategories)) {
-        if (dbMapData.visibleCategories[key]) {
-          if (category.query(m)) return true;
-        }
-      }
-
-      return false;
-    };
 
     const base = enableClick
       ? markersWithinRadius
-      : markers.filter(isVisible);
+      : markers.filter((m) => isMarkerVisible(dbMapData, m));
 
     return [
       ...(enableClick ? [selectedPoint] : []),

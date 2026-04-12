@@ -52,6 +52,12 @@ export const isCustomMapSelected = (selectedMap: SelectedMap) => {
   ] as SelectedMap[]).includes(selectedMap);
 }
 
+export const getMarkerRealId = (m: IMarker): string => {
+  // Follows game rules, there are duplicates of entityIds in game
+  // on separate maps (eg. quest in septimont + lahai roi)
+  return `e_${m.mapId}_${m.entityId}`;
+}
+
 export const getBounds = (mapName: UnionMapName, padding = 0) => {
   const config = unionMapConfigs[mapName];
   if (!config?.bounds) return undefined;

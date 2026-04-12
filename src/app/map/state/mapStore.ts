@@ -2,12 +2,12 @@ import { create } from "zustand";
 import { DbMapData, SelectedMap } from "@/types/mapTypes";
 import { MapName } from "../mapUtils";
 import { mapStorageService } from "../services/mapStorageService";
-import { getTrackingKey, QueryCategories } from "../TranslationMaps/translationMap";
 
 export const defaultMapState: DbMapData = {
   visibleCategories: {},
   visitedMarkers: {},
   displayedCategoryGroups: {},
+  visitedEntities: {},
 };
 
 export function initMapState(): DbMapData {
@@ -23,6 +23,10 @@ export function initMapState(): DbMapData {
     visitedMarkers: {
       ...defaultMapState.visitedMarkers,
       ...loaded.visitedMarkers
+    },
+    visitedEntities: {
+      ...defaultMapState.visitedEntities,
+      ...loaded.visitedEntities
     },
     displayedCategoryGroups: {
       ...defaultMapState.displayedCategoryGroups,
