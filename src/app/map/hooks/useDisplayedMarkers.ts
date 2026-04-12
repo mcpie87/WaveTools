@@ -13,7 +13,6 @@ export function useDisplayedMarkers(
   hideVisited: boolean,
 ): IMarker[] {
   return useMemo(() => {
-
     const base = enableClick
       ? markersWithinRadius
       : markers.filter((m) => isMarkerVisible(dbMapData, m));
@@ -22,5 +21,5 @@ export function useDisplayedMarkers(
       ...(enableClick ? [selectedPoint] : []),
       ...base.filter(m => !hideVisited || !dbMapData.visitedMarkers[m.id as number]),
     ]
-  }, [markers, markersWithinRadius, dbMapData.visibleCategories, hideVisited, enableClick, selectedPoint, dbMapData.visitedMarkers]);
+  }, [markers, markersWithinRadius, hideVisited, enableClick, selectedPoint, dbMapData]);
 }
