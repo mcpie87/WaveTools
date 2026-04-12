@@ -6,6 +6,7 @@ import { Echo1Cost } from "./Echo1Costs";
 import { NPCMobs } from "./NPCMobs";
 import { getTranslationMapName } from "./translationMap";
 import { IMarker } from "../types";
+import { convertToUrl } from "@/utils/utils";
 
 type IconUrl = string;
 type IconRecord = [
@@ -27,7 +28,10 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
 
   /* Puzzles */
+  "Tacet Field": ["Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png", true],
   "Side Quest": ["Atlas/WorldMapIcon/SP_IconMap_Task_02_1_UI.png", true],
+  "Tutorial Quest": ["Atlas/WorldMapIcon/SP_IconMap_Task_01_1_UI.png", true],
+  "Tactical Hologram": ["Atlas/WorldMapIcon/SP_IconMap_Play_10_UI.png", true],
   // 2.0
   "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
   "Flying Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
@@ -41,10 +45,10 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Dreams of Cintercide": "Atlas/WorldMapIcon/SP_IconMap_Play_48_UI.png",
   "Peaks of Prestige": "Atlas/WorldMapIcon/SP_IconMap_Play_58_UI.png",
   "Hero's Rend": "Atlas/WorldMapIcon/SP_IconMap_Play_40_UI.png",
-
   // 2.5
   "Triptych Chest": "Atlas/WorldMapIcon/SP_IconMap_Play_45_UI.png",
   "Orchestration Altar": "Atlas/WorldMapIcon/SP_IconMap_Play_44_UI.png",
+  "Pipeline Maintenance": "Atlas/WorldMapIcon/SP_IconMap_Play_43_UI.png",
   // 3.0
   "Bike Racing": "Atlas/WorldMapIcon/SP_IconMap_Play_61_UI.png",
   "Smartprint Cube": "Atlas/WorldMapIcon/SP_IconMap_Play_54_UI.png",
@@ -382,6 +386,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
 
   /* Miscellaneous */
   "Weapon": "Image/IconWeapon/T_IconWeapon21020011_UI.png",
+  "Cooking": ["Atlas/WorldMapIcon/SP_IconMap_Shop_06_UI.png", true],
 };
 
 const CustomIcons: Record<string, IconUrl> = {
@@ -420,6 +425,6 @@ export const getWorldmapIconFromMarker = (marker: IMarker): IconRecord | null =>
   const icon = getWorldmapIcon(name);
   if (icon) return icon;
 
-  // if (marker.mapMark?.icon) return [convertToUrl(marker.mapMark.icon), true];
+  if (marker.mapMark?.icon) return [convertToUrl(marker.mapMark.icon), true];
   return null;
 }

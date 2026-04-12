@@ -28,9 +28,10 @@ export enum NPCMobs {
   ROYAN_WOMAN = "Royan Woman",
 
 }
-export const NPCMobsTranslationMapGroups: Record<string, Record<string, string[]>> = {
+export const NPCMobsTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   // 1.0
   [NPCMobs.EXILE_COMMONER]: {
+    key: "NPC_EXILE_COMMONER",
     keys: [
       "Monster012",
       "Monster013",
@@ -49,18 +50,20 @@ export const NPCMobsTranslationMapGroups: Record<string, Record<string, string[]
       "Monster_Branch1.0_003", // probably quest
     ]
   },
-  [NPCMobs.EXILE_LEADER]: { keys: ["Monster055"] },
-  [NPCMobs.EXILE_TECHNICIAN]: { keys: ["Monster056"] },
+  [NPCMobs.EXILE_LEADER]: { key: "NPC_EXILE_LEADER", keys: ["Monster055"] },
+  [NPCMobs.EXILE_TECHNICIAN]: { key: "NPC_EXILE_TECHNICIAN", keys: ["Monster056"] },
   [NPCMobs.FRACTSIDUS_EXECUTIONER]: {
+    key: "NPC_FRACTSIDUS_EXECUTIONER",
     keys: [
       "Monster069",
       "Monster_rogue004",
     ]
   },
-  [NPCMobs.FRACTSIDUS_THRUSTER]: { keys: ["Monster072"] },
-  [NPCMobs.FRACTSIDUS_CANNONEER]: { keys: ["Monster086"] },
-  [NPCMobs.FRACTSIDUS_GUNMASTER]: { keys: ["Monster087"] },
+  [NPCMobs.FRACTSIDUS_THRUSTER]: { key: "NPC_FRACTSIDUS_THRUSTER", keys: ["Monster072"] },
+  [NPCMobs.FRACTSIDUS_CANNONEER]: { key: "NPC_FRACTSIDUS_CANNONEER", keys: ["Monster086"] },
+  [NPCMobs.FRACTSIDUS_GUNMASTER]: { key: "NPC_FRACTSIDUS_GUNMASTER", keys: ["Monster087"] },
   [NPCMobs.SCAR]: {
+    key: "NPC_SCAR",
     keys: [
       "Monster060",
       "Monster065",
@@ -73,6 +76,7 @@ export const NPCMobsTranslationMapGroups: Record<string, Record<string, string[]
 
   // 2.4
   [NPCMobs.GALECREST_GLADIATOR]: {
+    key: "NPC_GALECREST_GLADIATOR",
     keys: [
       "Monster_branch2.4_009",
       "Monster_branch2.4_023",
@@ -80,6 +84,7 @@ export const NPCMobsTranslationMapGroups: Record<string, Record<string, string[]
     ]
   },
   [NPCMobs.LIGHTCREST_GLADIATOR]: {
+    key: "NPC_LIGHTCREST_GLADIATOR",
     keys: [
       "Monster_branch2.4_010",
       "Monster_branch2.4_018",
@@ -89,6 +94,7 @@ export const NPCMobsTranslationMapGroups: Record<string, Record<string, string[]
     ]
   },
   [NPCMobs.FLAMECREST_GLADIATOR]: {
+    key: "NPC_FLAMECREST_GLADIATOR",
     keys: [
       "Monster_branch2.4_011",
       "Monster_branch2.4_021",
@@ -97,21 +103,36 @@ export const NPCMobsTranslationMapGroups: Record<string, Record<string, string[]
     ]
   },
   [NPCMobs.FROSTCREST_GLADIATOR]: {
+    key: "NPC_FROSTCREST_GLADIATOR",
     keys: [
       "Monster_branch2.4_019",
       "branch2.4_Monster_branch2.4_008",
       "branch2.6_177_Monster_monster2_6/Kahara2",
     ]
   },
+  [NPCMobs.THUNDERCREST_GLADIATOR]: {
+    key: "NPC_THUNDERCREST_GLADIATOR",
+    keys: [
+      "branch2.4_Monster_branch2.4_009",
+    ]
+  },
+  [NPCMobs.ABYSSCREST_GLADIATOR]: {
+    key: "NPC_ABYSSCREST_GLADIATOR",
+    keys: [
+      "branch2.4_Monster_branch2.4_010",
+    ]
+  },
 
   // 2.5
   [NPCMobs.FRACTSIDUS_INSPECTOR]: {
+    key: "NPC_FRACTSIDUS_INSPECTOR",
     keys: [
       "Monster_Branch2.5_001",
       "Monster_Branch2.7_0002",
     ]
   },
   [NPCMobs.ABYSSAL_GUNMASTER]: {
+    key: "NPC_ABYSSAL_GUNMASTER",
     keys: [
       "Monster_branch2.5_70160",
     ],
@@ -119,28 +140,28 @@ export const NPCMobsTranslationMapGroups: Record<string, Record<string, string[]
 
   // 3.0
   [NPCMobs.ROYAN_MAN]: {
+    key: "NPC_ROYAN_MAN",
     keys: [
       "Monster_Branch3.0_011",
       "branch3.1_115_Monster_Branch3.1_012",
     ]
   },
   [NPCMobs.ROYAN_WOMAN]: {
+    key: "NPC_ROYAN_WOMAN",
     keys: [
       "Monster_Branch3.0_012",
       "branch3.1_115_Monster_Branch3.1_013",
     ]
   },
-
-  // 3.1
 };
 
 export const NPCMobsTranslationMap: Record<string, TranslationMapEntry> =
   (() => {
     const result: Record<string, TranslationMapEntry> = {};
 
-    for (const [name, { keys }] of Object.entries(NPCMobsTranslationMapGroups)) {
-      for (const key of keys) {
-        result[key] = { name };
+    for (const [name, { key, keys }] of Object.entries(NPCMobsTranslationMapGroups)) {
+      for (const k of keys) {
+        result[k] = { name, key };
       }
     }
 

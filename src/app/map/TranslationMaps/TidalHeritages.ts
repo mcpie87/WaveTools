@@ -1,22 +1,63 @@
 import { TranslationMapEntry } from "./TranslationMapInterface";
 
-export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> = {
-  "Treasure_huodong2": { name: "Tidal Heritage (???)" },
-  "Treasure_huodong3": { name: "Tidal Heritage (???)" },
-  "Treasure_huodong4": { name: "Tidal Heritage (???)" },
-  "Treasure_huodong5": { name: "Tidal Heritage (???)" },
-  "Treasure005": { name: "Tidal Heritage (Blue)" },
-  "Treasure008": { name: "Tidal Heritage (Purple)" },
-  "Treasure011": { name: "Tidal Heritage (Gold)" },
-  "branch2.0_Treasure1": { name: "Tidal Heritage (Blue)" },
-  "branch2.0_Treasure2": { name: "Tidal Heritage (Purple)" },
-  "branch2.0_Treasure3": { name: "Tidal Heritage (Gold)" },
-  "branch3.0_938_Treasure2": { name: "Tidal Heritage (Blue)" },
-  "branch3.0_938_Treasure3": { name: "Tidal Heritage (Purple)" },
-  "branch3.0_938_Treasure4": { name: "Tidal Heritage (Gold)" },
+export enum TidalHeritage {
+  BLUE = "Tidal Heritage (Blue)",
+  PURPLE = "Tidal Heritage (Purple)",
+  GOLD = "Tidal Heritage (Gold)",
+  UNKNOWN = "Tidal Heritage (???)",
+}
+
+const TidalHeritageTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
+  [TidalHeritage.BLUE]: {
+    key: "TIDAL_HERITAGE_BLUE",
+    keys: [
+      "Treasure005",
+      "branch2.0_Treasure1",
+      "branch3.0_938_Treasure2",
+    ]
+  },
+  [TidalHeritage.PURPLE]: {
+    key: "TIDAL_HERITAGE_PURPLE",
+    keys: [
+      "Treasure008",
+      "branch2.0_Treasure2",
+      "branch3.0_938_Treasure3",
+    ]
+  },
+  [TidalHeritage.GOLD]: {
+    key: "TIDAL_HERITAGE_GOLD",
+    keys: [
+      "Treasure011",
+      "branch2.0_Treasure3",
+      "branch3.0_938_Treasure4",
+    ]
+  },
+  [TidalHeritage.UNKNOWN]: {
+    key: "TIDAL_HERITAGE_UNKNOWN",
+    keys: [
+      "Treasure_huodong2",
+      "Treasure_huodong3",
+      "Treasure_huodong4",
+      "Treasure_huodong5",
+    ]
+  },
 };
+
+export const TidalHeritageTranslationMap: Record<string, TranslationMapEntry> =
+  (() => {
+    const result: Record<string, TranslationMapEntry> = {};
+
+    for (const [name, { key, keys }] of Object.entries(TidalHeritageTranslationMapGroups)) {
+      for (const k of keys) {
+        result[k] = { name, key };
+      }
+    }
+
+    return result;
+  })();
+
 export const TidalHeritageDisplayOrder = [
-  "Tidal Heritage (Blue)",
-  "Tidal Heritage (Purple)",
-  "Tidal Heritage (Gold)",
+  TidalHeritage.BLUE,
+  TidalHeritage.PURPLE,
+  TidalHeritage.GOLD,
 ];

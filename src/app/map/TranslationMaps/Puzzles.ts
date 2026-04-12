@@ -1,18 +1,15 @@
-import { IMarker } from "../types";
 import { TranslationMapEntry } from "./TranslationMapInterface";
+import { QueryCategory } from "./types";
 
-export interface QueryCategory {
-  name: string;
-  query: (marker: IMarker) => boolean;
-}
-
-export const QueryCategories: Record<string, QueryCategory> = {
+export const PuzzleQueryCategories: Record<string, QueryCategory> = {
   "QUERY_BvbEntrance": {
+    key: "QUERY_PEAKS_OF_PRESTIGE",
     name: "Peaks of Prestige",
     query: (m) => m.metadata?.InteractComponent?.InteractIcon === "BvbEntrance"
       || (m.metadata?.InteractComponent?.Options?.some(o => o.Icon === "BvbEntrance") ?? false),
   },
   "QUERY_BvbInteract": {
+    key: "QUERY_PEAKS_OF_PRESTIGE",
     name: "Peaks of Prestige",
     query: (m) => m.metadata?.InteractComponent?.InteractIcon === "BvbInteract"
       || (m.metadata?.InteractComponent?.Options?.some(o => o.Icon === "BvbInteract") ?? false),
@@ -23,6 +20,7 @@ export const QueryCategories: Record<string, QueryCategory> = {
   //     || (m.metadata?.InteractComponent?.Options?.some(o => o.Icon !== undefined) ?? false),
   // },
   "QUERY_Scenery": {
+    key: "QUERY_SCENERY",
     name: "Scenery",
     query: (m) => (
       m.metadata?.InteractComponent?.Options
@@ -33,133 +31,256 @@ export const QueryCategories: Record<string, QueryCategory> = {
         }) ?? false
     ),
   },
+  "QUERY_Tacet_Field": {
+    key: "QUERY_TACET_FIELD",
+    name: "Tacet Field",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_WYQ_05_UI") ?? false,
+  },
+  "QUERY_Tactical_Hologram": {
+    key: "QUERY_TACTICAL_HOLOGRAM",
+    name: "Tactical Hologram",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_10_UI") ?? false,
+  },
   "QUERY_Treasure_Spot": {
+    key: "QUERY_TREASURE_SPOT",
     name: "Treasure Spot",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_15_UI") ?? false,
   },
   "QUERY_Fratelli": {
+    key: "QUERY_FRATELLI",
     name: "Fratelli",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_20_UI") ?? false,
   },
   "QUERY_Dream_Patrol": {
+    key: "QUERY_DREAM_PATROL",
     name: "Dream Patrol",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_19_UI") ?? false,
   },
   "QUERY_Tactical_Hologram_Vitreum_Dancer": {
+    key: "QUERY_TACTICAL_HOLOGRAM_VITREUM_DANCER",
     name: "Tactical Hologram: Vitreum Dancer",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_17_UI") ?? false,
   },
   "QUERY_Echo_Challenge_Dancer_Hacking": {
+    key: "QUERY_ECHO_CHALLENGE_DANCER_HACKING",
     name: "Echo Challenge: Dancer Hacking",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_31_UI") ?? false,
   },
+  "QUERY_Pipeline_Maintenance": {
+    key: "QUERY_PIPELINE_MAINTENANCE",
+    name: "Pipeline Maintenance",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_43_UI") ?? false,
+  },
   "QUERY_Hot_Spring": {
+    key: "QUERY_HOT_SPRING",
     name: "Hot Spring",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_55_UI") ?? false,
   },
   "QUERY_Void_Storm": {
+    key: "QUERY_VOID_STORM",
     name: "Void Storm",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_49_UI") ?? false,
   },
   "QUERY_Route_Constructor": {
+    key: "QUERY_ROUTE_CONSTRUCTOR",
     name: "Route Constructor",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Activity_Navigation_10_UI") ?? false,
   },
   "QUERY_Route_Network_Blockage": {
+    key: "QUERY_ROUTE_NETWORK_BLOCKAGE",
     name: "Route Network Blockage",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_59_UI") ?? false,
   },
   "QUERY_Bike_Challenge": {
+    key: "QUERY_BIKE_CHALLENGE",
     name: "Bike Challenge",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_62_UI") ?? false,
   },
   "QUERY_Bike_Racing": {
+    key: "QUERY_BIKE_RACING",
     name: "Bike Racing",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_61_UI") ?? false,
   },
-  "QUERY_Quest": {
+  "QUERY_Side_Quest": {
+    key: "QUERY_SIDE_QUEST",
     name: "Side Quest",
-    query: (m) => {
-      if (!m.questData) return false;
-      if (m?.questData?.id === undefined) {
-        console.log("MARKER", m);
-      }
-      return m?.questData?.id !== undefined
-    },
+    query: (m) => m?.questData?.questTypeId === 2,
+  },
+  "QUERY_Tutorial_Quest": {
+    key: "QUERY_TUTORIAL_QUEST",
+    name: "Tutorial Quest",
+    query: (m) => m?.questData?.questTypeId === 7,
   },
 };
 
-export const PuzzleTranslationMap: Record<string, TranslationMapEntry> = {
+enum Puzzle {
   // 1.0
-  "Gameplay111": { name: "Mutterfly" },
-  "Animal032": { name: "Blobfly" },
-  "Gameplay381": { name: "Hovering Magnetite" },
-  "Gameplay200": { name: "Simulation Training Device" },
-  "Gameplay003": { name: "Fragile Rock" },
-  "Gameplay004": { name: "Fissured Ledge" },
-  "Gameplay055": { name: "Shooting Challenge" },
+  MUTTERFLY = "Mutterfly",
+  BLOBFLY = "Blobfly",
+  HOVERING_MAGNETITE = "Hovering Magnetite",
+  SIMULATION_TRAINING_DEVICE = "Simulation Training Device",
+  FRAGILE_ROCK = "Fragile Rock",
+  FISSURED_LEDGE = "Fissured Ledge",
+  SHOOTING_CHALLENGE = "Shooting Challenge",
 
   // 1.1
-  "Gameplay207": { name: "Tactical Hologram: Ski" },
-  "Monster139": { name: "Frostbug" },
+  TACTICAL_HOLOGRAM_SKI = "Tactical Hologram: Ski",
+  FROSTBUG = "Frostbug",
 
   // 2.0
-  "Gameplay_LNXT_Flying": { name: "Flying Challenge" },
-  "Gameplay_SoundDesign2": { name: "Musicfly" },
-  // "branch2.0_Gameplay172": { name: "Fratelli" }, // Removed in favor of query based search
-  // "branch2.0_Gameplay_Dungeon3": { name: "Dream Patrol" }, // For some reason counted x2
-  "Gameplay8": { name: "Overflowing Palette" },
+  FLYING_CHALLENGE = "Flying Challenge",
+  MUSICFLY = "Musicfly",
+  OVERFLOWING_PALETTE = "Overflowing Palette",
 
   // 2.4
-  "branch2.4_143_Gameplay_2_4QQ11": { name: "Flying Challenge" },
-  "branch2.4_143_Gameplay_2_4QQ4": { name: "Simulation Training Device" },
-  // "branch2.4_157_Gameplay_Dungeon1": { name: "Dream Patrol" }, // For some reason counted x2
-  "branch2.4_143_Gameplay_2_4QQ14": { name: "Hero's Rend" },
+  HERO_REND = "Hero's Rend",
 
   // 2.5
-  "branch2.5_41_Gameplay1": { name: "Orchestration Altar" },
-  "branch2.5_Slots": { name: "Triptych Chest" },
+  ORCHESTRATION_ALTAR = "Orchestration Altar",
+  TRIPTYCH_CHEST = "Triptych Chest",
 
   // 2.6
-  "branch2.6_35_Gameplay640": { name: "Dreams of Cintercide" },
+  DREAMS_OF_CINTERCIDE = "Dreams of Cintercide",
 
   // 3.0
-  "branch3.0_692_Gameplay_MotorZhongDuan": { name: "Bike Challenge" }, // stationary one
-  "branch3.0_135_Gameplay513": { name: "Bike Challenge" },
-  "branch2.8_41_Gameplay_3_0/RollBlock5": { name: "Smartprint Cube" },
-  // DON'T UNCOMMENT - it's a duplicate in 3.1 and does not overlap with mechascout at all
-  // "branch3.1_115_Gameplay513": { name: "Smartprint Cube" },
-  "branch3.0_939_NPC420085": { name: "Soliskin" },
-  "branch3.0_40_Gameplay_3_0/VisionSummon11": { name: "Geospider Projection" },
+  BIKE_CHALLENGE = "Bike Challenge",
+  SMARTPRINT_CUBE = "Smartprint Cube",
+  SOLISKIN = "Soliskin",
+  GEOSPIDER_PROJECTION = "Geospider Projection",
 
   // 3.1
-  "branch3.1_115_Gameplay_3_1/SunSpiritPPV": { name: "Soliskin Guide" },
+  SOLISKIN_GUIDE = "Soliskin Guide",
+}
 
-  // Query categories
-  "QUERY_BvbEntrance": { name: "Peaks of Prestige" },
-  "QUERY_BvbInteract": { name: "Peaks of Prestige" },
-  "QUERY_InteractIcon": { name: "Interact Icon" },
-  "QUERY_Scenery": { name: "Scenery" },
-  "QUERY_Treasure_Spot": { name: "Treasure Spot" },
-  "QUERY_Fratelli": { name: "Fratelli" },
-  "QUERY_Dream_Patrol": { name: "Dream Patrol" },
-  "QUERY_Tactical_Hologram_Vitreum_Dancer": { name: "Tactical Hologram: Vitreum Dancer" },
-  "QUERY_Echo_Challenge_Dancer_Hacking": { name: "Echo Challenge: Dancer Hacking" },
-  "QUERY_Hot_Spring": { name: "Hot Spring" },
-  "QUERY_Void_Storm": { name: "Void Storm" },
-  "QUERY_Route_Constructor": { name: "Route Constructor" },
-  "QUERY_Route_Network_Blockage": { name: "Route Network Blockage" },
-  "QUERY_Bike_Challenge": { name: "Bike Challenge" },
-  "QUERY_Bike_Racing": { name: "Bike Racing" },
-  "QUERY_Quest": { name: "Side Quest" },
+const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
+  // 1.0
+  [Puzzle.MUTTERFLY]: {
+    key: "PUZZLE_MUTTERFLY",
+    keys: ["Gameplay111"]
+  },
+  [Puzzle.BLOBFLY]: {
+    key: "PUZZLE_BLOBFLY",
+    keys: ["Animal032"]
+  },
+  [Puzzle.HOVERING_MAGNETITE]: {
+    key: "PUZZLE_HOVERING_MAGNETITE",
+    keys: ["Gameplay381"]
+  },
+  [Puzzle.SIMULATION_TRAINING_DEVICE]: {
+    key: "PUZZLE_SIMULATION_TRAINING_DEVICE",
+    keys: [
+      "Gameplay200",
+      "branch2.4_143_Gameplay_2_4QQ4"
+    ]
+  },
+  [Puzzle.FRAGILE_ROCK]: {
+    key: "PUZZLE_FRAGILE_ROCK",
+    keys: ["Gameplay003"]
+  },
+  [Puzzle.FISSURED_LEDGE]: {
+    key: "PUZZLE_FISSURED_LEDGE",
+    keys: ["Gameplay004"]
+  },
+  [Puzzle.SHOOTING_CHALLENGE]: {
+    key: "PUZZLE_SHOOTING_CHALLENGE",
+    keys: ["Gameplay055"]
+  },
+
+  // 1.1
+  [Puzzle.TACTICAL_HOLOGRAM_SKI]: {
+    key: "PUZZLE_TACTICAL_HOLOGRAM_SKI",
+    keys: ["Gameplay207"]
+  },
+  [Puzzle.FROSTBUG]: {
+    key: "PUZZLE_FROSTBUG",
+    keys: ["Monster139"]
+  },
+
+  // 2.0
+  [Puzzle.FLYING_CHALLENGE]: {
+    key: "PUZZLE_FLYING_CHALLENGE",
+    keys: [
+      "Gameplay_LNXT_Flying",
+      "branch2.4_143_Gameplay_2_4QQ11",
+    ]
+  },
+  [Puzzle.MUSICFLY]: {
+    key: "PUZZLE_MUSICFLY",
+    keys: ["Gameplay_SoundDesign2"]
+  },
+  [Puzzle.OVERFLOWING_PALETTE]: {
+    key: "PUZZLE_OVERFLOWING_PALETTE",
+    keys: ["Gameplay8"]
+  },
+
+  // 2.4
+  [Puzzle.HERO_REND]: {
+    key: "PUZZLE_HERO_REND",
+    keys: ["branch2.4_143_Gameplay_2_4QQ14"]
+  },
+
+  // 2.5
+  [Puzzle.ORCHESTRATION_ALTAR]: {
+    key: "PUZZLE_ORCHESTRATION_ALTAR",
+    keys: ["branch2.5_41_Gameplay1"]
+  },
+  [Puzzle.TRIPTYCH_CHEST]: {
+    key: "PUZZLE_TRIPTYCH_CHEST",
+    keys: ["branch2.5_Slots"]
+  },
+
+  // 2.6
+  [Puzzle.DREAMS_OF_CINTERCIDE]: {
+    key: "PUZZLE_DREAMS_OF_CINTERCIDE",
+    keys: ["branch2.6_35_Gameplay640"]
+  },
+
+  // 3.0
+  [Puzzle.BIKE_CHALLENGE]: {
+    key: "PUZZLE_BIKE_CHALLENGE",
+    keys: [
+      "branch3.0_692_Gameplay_MotorZhongDuan",
+      "branch3.0_135_Gameplay513",
+    ]
+  },
+  [Puzzle.SMARTPRINT_CUBE]: {
+    key: "PUZZLE_SMARTPRINT_CUBE",
+    keys: ["branch2.8_41_Gameplay_3_0/RollBlock5"]
+  },
+  [Puzzle.SOLISKIN]: {
+    key: "PUZZLE_SOLISKIN",
+    keys: ["branch3.0_939_NPC420085"]
+  },
+  [Puzzle.SOLISKIN_GUIDE]: {
+    key: "PUZZLE_SOLISKIN_GUIDE",
+    keys: ["branch3.1_115_Gameplay_3_1/SunSpiritPPV"]
+  },
+  [Puzzle.GEOSPIDER_PROJECTION]: {
+    key: "PUZZLE_GEOSPIDER_PROJECTION",
+    keys: ["branch3.0_40_Gameplay_3_0/VisionSummon11"]
+  },
 };
+
+export const PuzzleTranslationMap: Record<string, TranslationMapEntry> =
+  (() => {
+    const result: Record<string, TranslationMapEntry> = {};
+
+    for (const [name, { key, keys }] of Object.entries(PuzzleTranslationMapGroups)) {
+      for (const k of keys) {
+        result[k] = { name, key };
+      }
+    }
+
+    return result;
+  })();
+
+
 export const PuzzleDisplayOrder = [
   "Mutterfly",
   "Blobfly",
   "Flying Challenge",
   "Orchestration Altar",
   "Triptych Chest",
-  "branch2.6_35_Gameplay640",
   "Bike Challenge",
   "Soliskin Chest",
   "Treasure Spot",

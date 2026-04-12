@@ -106,11 +106,22 @@ export enum Echo1Cost {
   SHADOW_STEPPER = "Shadow Stepper",
 }
 
-export const Echo1CostTranslationMapGroups: Record<string, Record<string, string[]>> = {
+export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   // 1.0
-  [Echo1Cost.VANGUARD_JUNROCK]: { keys: ["Monster001"] },
-  [Echo1Cost.FISSION_JUNROCK]: { keys: ["Monster002", "Monster079", "Monster_Branch1.1_003"] },
+  [Echo1Cost.VANGUARD_JUNROCK]: {
+    key: "ECHO_VANGUARD_JUNROCK",
+    keys: ["Monster001"]
+  },
+  [Echo1Cost.FISSION_JUNROCK]: {
+    key: "ECHO_FISSION_JUNROCK",
+    keys: [
+      "Monster002",
+      "Monster079",
+      "Monster_Branch1.1_003"
+    ]
+  },
   [Echo1Cost.ELECTRO_PREDATOR]: {
+    key: "ECHO_ELECTRO_PREDATOR",
     keys: [
       "Monster003",
       "Monster_Branch3.0_063",
@@ -118,6 +129,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.FUSION_WARRIOR]: {
+    key: "ECHO_FUSION_WARRIOR",
     keys: [
       "Monster004",
       "branch2.6_177_Monster_monster2_6/Kahara16",
@@ -125,30 +137,83 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
       "Monster_rogue012",
     ]
   },
-  [Echo1Cost.GLACIO_PREDATOR]: { keys: ["Monster010", "branch2.6_177_Monster_monster2_6/Kahara14"] },
+  [Echo1Cost.GLACIO_PREDATOR]: {
+    key: "ECHO_GLACIO_PREDATOR",
+    keys: [
+      "Monster010",
+      "branch2.6_177_Monster_monster2_6/Kahara14"
+    ]
+  },
   [Echo1Cost.AERO_PREDATOR]: {
+    key: "ECHO_AERO_PREDATOR",
     keys: [
       "Monster011",
       "Monster_Branch3.0_062",
       "branch2.6_177_Monster_monster2_6/Kahara15",
     ]
   },
-  [Echo1Cost.CRUISEWING]: { keys: ["Monster014", "Monster_branch1.3_005"] },
-  [Echo1Cost.SABYR_BOAR]: { keys: ["Monster015"] },
-  [Echo1Cost.GULPUFF]: { keys: ["Monster016", "Monster149", "branch2.1_Monster001"] },
-  [Echo1Cost.EXCARAT]: { keys: ["Monster017"] },
-  [Echo1Cost.BABY_ROSESHROOM]: { keys: ["Monster019"] },
-  [Echo1Cost.CHIRPUFF]: { keys: ["Monster030"] },
-  [Echo1Cost.GLACIO_PRISM]: { keys: ["Monster034", "Monster155"] },
-  [Echo1Cost.HOARTOISE]: { keys: ["Monster058"] },
-  [Echo1Cost.WHIFF_WHAFF]: { keys: ["Monster008"] },
-  [Echo1Cost.SNIP_SNAP]: { keys: ["Monster006"] },
-  [Echo1Cost.ZIG_ZAG]: { keys: ["Monster007"] },
-  [Echo1Cost.TICK_TACK]: { keys: ["Monster009", "Monster_F"] },
-  [Echo1Cost.FUSION_PRISM]: { keys: ["Monster154", "Monster033"] },
-  [Echo1Cost.SPECTRO_PRISM]: { keys: ["Monster035"] },
-  [Echo1Cost.FUSION_DREADMANE]: { keys: ["Monster053"] },
+  [Echo1Cost.CRUISEWING]: {
+    key: "ECHO_CRUISEWING",
+    keys: ["Monster014", "Monster_branch1.3_005"]
+  },
+  [Echo1Cost.SABYR_BOAR]: {
+    key: "ECHO_SABYR_BOAR",
+    keys: ["Monster015"]
+  },
+  [Echo1Cost.GULPUFF]: {
+    key: "ECHO_GULPUFF",
+    keys: ["Monster016", "Monster149", "branch2.1_Monster001"]
+  },
+  [Echo1Cost.EXCARAT]: {
+    key: "ECHO_EXCARAT",
+    keys: ["Monster017"]
+  },
+  [Echo1Cost.BABY_ROSESHROOM]: {
+    key: "ECHO_BABY_ROSESHROOM",
+    keys: ["Monster019"]
+  },
+  [Echo1Cost.CHIRPUFF]: {
+    key: "ECHO_CHIRPUFF",
+    keys: ["Monster030"]
+  },
+  [Echo1Cost.GLACIO_PRISM]: {
+    key: "ECHO_GLACIO_PRISM",
+    keys: ["Monster034", "Monster155"]
+  },
+  [Echo1Cost.HOARTOISE]: {
+    key: "ECHO_HOARTOISE",
+    keys: ["Monster058"]
+  },
+  [Echo1Cost.WHIFF_WHAFF]: {
+    key: "ECHO_WHIFF_WHAFF",
+    keys: ["Monster008"]
+  },
+  [Echo1Cost.SNIP_SNAP]: {
+    key: "ECHO_SNIP_SNAP",
+    keys: ["Monster006"]
+  },
+  [Echo1Cost.ZIG_ZAG]: {
+    key: "ECHO_ZIG_ZAG",
+    keys: ["Monster007"]
+  },
+  [Echo1Cost.TICK_TACK]: {
+    key: "ECHO_TICK_TACK",
+    keys: ["Monster009", "Monster_F"]
+  },
+  [Echo1Cost.FUSION_PRISM]: {
+    key: "ECHO_FUSION_PRISM",
+    keys: ["Monster154", "Monster033"]
+  },
+  [Echo1Cost.SPECTRO_PRISM]: {
+    key: "ECHO_SPECTRO_PRISM",
+    keys: ["Monster035"]
+  },
+  [Echo1Cost.FUSION_DREADMANE]: {
+    key: "ECHO_FUSION_DREADMANE",
+    keys: ["Monster053"]
+  },
   [Echo1Cost.HAVOC_WARRIOR]: {
+    key: "ECHO_HAVOC_WARRIOR",
     keys: [
       "Monster005",
       "Monster_Branch3.0_047",
@@ -159,24 +224,58 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
       "Monster_Branch2.8_002",
     ]
   },
-  [Echo1Cost.DIAMONDCLAW]: { keys: ["Monster057", "Monster_Branch1.1_002"] },
-  [Echo1Cost.HOOSCAMP_CLAPPERCLAW]: { keys: ["Monster146", "Monster147"] },
-  [Echo1Cost.HOOSCAMP_FLINGER]: { keys: ["Monster052", "Monster148"] },
-  [Echo1Cost.BABY_VIRIDBLAZE_SAURIAN]: { keys: ["Monster018"] },
-  [Echo1Cost.HAVOC_PRISM]: { keys: ["Monster036"] },
-  [Echo1Cost.PHANTOM_HOARTOISE]: { keys: ["Monster1058"] },
-  [Echo1Cost.TRAFFIC_ILLUMINATOR]: { keys: ["Monster151"] },
+  [Echo1Cost.DIAMONDCLAW]: {
+    key: "ECHO_DIAMONDCLAW",
+    keys: ["Monster057", "Monster_Branch1.1_002"]
+  },
+  [Echo1Cost.HOOSCAMP_CLAPPERCLAW]: {
+    key: "ECHO_HOOSCAMP_CLAPPERCLAW",
+    keys: ["Monster146", "Monster147"]
+  },
+  [Echo1Cost.HOOSCAMP_FLINGER]: {
+    key: "ECHO_HOOSCAMP_FLINGER",
+    keys: ["Monster052", "Monster148"]
+  },
+  [Echo1Cost.BABY_VIRIDBLAZE_SAURIAN]: {
+    key: "ECHO_BABY_VIRIDBLAZE_SAURIAN",
+    keys: ["Monster018"]
+  },
+  [Echo1Cost.HAVOC_PRISM]: {
+    key: "ECHO_HAVOC_PRISM",
+    keys: ["Monster036"]
+  },
+  [Echo1Cost.PHANTOM_HOARTOISE]: {
+    key: "ECHO_PHANTOM_HOARTOISE",
+    keys: ["Monster1058"]
+  },
+  [Echo1Cost.TRAFFIC_ILLUMINATOR]: {
+    key: "ECHO_TRAFFIC_ILLUMINATOR",
+    keys: ["Monster151"]
+  },
 
   // 1.1
-  [Echo1Cost.CLANG_BANG]: { keys: ["Monster119", "Monster120"] },
-  [Echo1Cost.LAVA_LARVA]: { keys: ["Monster118"] },
-  [Echo1Cost.DWARF_CASSOWARY]: { keys: ["Monster127"] },
+  [Echo1Cost.CLANG_BANG]: {
+    key: "ECHO_CLANG_BANG",
+    keys: ["Monster119", "Monster120"]
+  },
+  [Echo1Cost.LAVA_LARVA]: {
+    key: "ECHO_LAVA_LARVA",
+    keys: ["Monster118"]
+  },
+  [Echo1Cost.DWARF_CASSOWARY]: {
+    key: "ECHO_DWARF_CASSOWARY",
+    keys: ["Monster127"]
+  },
 
   // 1.3
-  [Echo1Cost.PHANTOM_GULPUFF]: { keys: ["Monster1148"] },
+  [Echo1Cost.PHANTOM_GULPUFF]: {
+    key: "ECHO_PHANTOM_GULPUFF",
+    keys: ["Monster1148"]
+  },
 
   // 2.0
   [Echo1Cost.DIGGY_DUGGY]: {
+    key: "ECHO_DIGGY_DUGGY",
     keys: [
       "Monster_branch2.0_011",
       "branch2.3_165_Monster_branch2.0_012",
@@ -184,6 +283,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.LOTTIE_LOST]: {
+    key: "ECHO_LOTTIE_LOST",
     keys: [
       "Monster_branch2.0_023",
       "Monster_branch2.0_043",
@@ -191,6 +291,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.HOCUS_POCUS]: {
+    key: "ECHO_HOCUS_POCUS",
     keys: [
       "branch2.0_Monster_branch2.0_035",
       "Monster_branch2.0_022",
@@ -199,20 +300,26 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.CHEST_MIMIC]: {
+    key: "ECHO_CHEST_MIMIC",
     keys: [
       "branch2.0_Monster191",
       "branch2.0_Monster_020",
       "branch2.0_Monster187",
     ]
   },
-  [Echo1Cost.NIMBUS_WRAITH]: { keys: ["Monster181", "Monster_branch2.0_036"] },
+  [Echo1Cost.NIMBUS_WRAITH]: {
+    key: "ECHO_NIMBUS_WRAITH",
+    keys: ["Monster181", "Monster_branch2.0_036"]
+  },
   [Echo1Cost.FAE_IGNIS]: {
+    key: "ECHO_FAE_IGNIS",
     keys: [
       "Monster186",
       "Monster_branch2.0_031",
     ]
   },
   [Echo1Cost.CHOP_CHOP_HEADLESS]: {
+    key: "ECHO_CHOP_CHOP_HEADLESS",
     keys: [
       "Monster_branch2.0_015",
       "Monster_branch2.0_020",
@@ -221,6 +328,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.CHOP_CHOP_LEFTLESS]: {
+    key: "ECHO_CHOP_CHOP_LEFTLESS",
     keys: [
       "Monster_branch2.0_014",
       "Monster_branch2.0_019",
@@ -229,39 +337,56 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.CHOP_CHOP_RIGHTLESS]: {
+    key: "ECHO_CHOP_CHOP_RIGHTLESS",
     keys: [
       "Monster_branch2.0_013",
       "Monster_branch2.0_018",
       "Monster_branch2.0_034",
     ]
   },
-  [Echo1Cost.FROSTSCOURGE_STALKER]: { keys: ["Monster064"] },
-  [Echo1Cost.GALESCOURGE_STALKER]: { keys: ["Monster099"] },
-  [Echo1Cost.VOLTSCOURGE_STALKER]: { keys: ["Monster1"] },
+  [Echo1Cost.FROSTSCOURGE_STALKER]: {
+    key: "ECHO_FROSTSCOURGE_STALKER",
+    keys: ["Monster064"]
+  },
+  [Echo1Cost.GALESCOURGE_STALKER]: {
+    key: "ECHO_GALESCOURGE_STALKER",
+    keys: ["Monster099"]
+  },
+  [Echo1Cost.VOLTSCOURGE_STALKER]: {
+    key: "ECHO_VOLTSCOURGE_STALKER",
+    keys: ["Monster1"]
+  },
 
   // 2.1
   [Echo1Cost.GOLDEN_JUNROCK]: {
+    key: "ECHO_GOLDEN_JUNROCK",
     keys: [
       "Monster_branch2.1_05",
       "branch2.6_177_Monster_monster2_6/BetweenTheChaos15",
     ]
   },
   [Echo1Cost.CALCIFIED_JUNROCK]: {
+    key: "ECHO_CALCIFIED_JUNROCK",
     keys: [
       "Monster_branch2.1_06",
       "branch2.6_177_Monster_monster2_6/BetweenTheChaos16",
     ]
   },
-  [Echo1Cost.AERO_PRISM]: { keys: ["Monster_branch2.1_07"] },
+  [Echo1Cost.AERO_PRISM]: {
+    key: "ECHO_AERO_PRISM",
+    keys: ["Monster_branch2.1_07"]
+  },
 
   // 2.2
   [Echo1Cost.SACERDOS]: {
+    key: "ECHO_SACERDOS",
     keys: [
       "Monster_Branch2.2_019",
       "Monster_Branch2.2_004",
     ]
   },
   [Echo1Cost.SAGITTARIO]: {
+    key: "ECHO_SAGITTARIO",
     keys: [
       "Monster_Branch2.2_018",
       "Monster_Branch2.2_001",
@@ -269,6 +394,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.LA_GUARDIA]: {
+    key: "ECHO_LA_GUARDIA",
     keys: [
       "Monster_Branch2.2_017",
       "Monster_Branch2.2_002",
@@ -277,6 +403,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.GLACIO_DRAKE]: {
+    key: "ECHO_GLACIO_DRAKE",
     keys: [
       "Monster_Branch2.2_020",
       "Monster_Branch2.2_024",
@@ -287,6 +414,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.ELECTRO_DRAKE]: {
+    key: "ECHO_ELECTRO_DRAKE",
     keys: [
       "Monster_Branch2.2_021",
       "Monster_Branch2.2_007",
@@ -296,6 +424,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.AERO_DRAKE]: {
+    key: "ECHO_AERO_DRAKE",
     keys: [
       "Monster_Branch2.2_022",
       "Monster_Branch2.2_008",
@@ -307,10 +436,20 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
   // 2.3
 
   // 2.4
-  [Echo1Cost.TORN_LOTTIE_LOST]: { keys: ["branch2.4_Monster_branch2.4_002"] },
-  [Echo1Cost.TORN_HOCUS_POCUS]: { keys: ["branch2.4_Monster_branch2.4_003"] },
-  [Echo1Cost.TORN_DIGGY_DUGGY]: { keys: ["branch2.4_Monster_branch2.4_004"] },
+  [Echo1Cost.TORN_LOTTIE_LOST]: {
+    key: "ECHO_TORN_LOTTIE_LOST",
+    keys: ["branch2.4_Monster_branch2.4_002"]
+  },
+  [Echo1Cost.TORN_HOCUS_POCUS]: {
+    key: "ECHO_TORN_HOCUS_POCUS",
+    keys: ["branch2.4_Monster_branch2.4_003"]
+  },
+  [Echo1Cost.TORN_DIGGY_DUGGY]: {
+    key: "ECHO_TORN_DIGGY_DUGGY",
+    keys: ["branch2.4_Monster_branch2.4_004"]
+  },
   [Echo1Cost.DEVOTEE_FLESH]: {
+    key: "ECHO_DEVOTEE_FLESH",
     keys: [
       "branch2.4_Monster_branch2.4_005",
       "branch2.6_177_Monster_monster2_6/BetweenTheChaos8",
@@ -318,6 +457,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
   },
 
   [Echo1Cost.FUSION_DRAKE]: {
+    key: "ECHO_FUSION_DRAKE",
     keys: [
       "Monster_Branch2.4_002",
       "Monster_Branch2.4_015",
@@ -326,6 +466,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.SPECTRO_DRAKE]: {
+    key: "ECHO_SPECTRO_DRAKE",
     keys: [
       "Monster_Branch2.4_003",
       "Monster_Branch2.4_016",
@@ -334,6 +475,7 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
     ]
   },
   [Echo1Cost.HAVOC_DRAKE]: {
+    key: "ECHO_HAVOC_DRAKE",
     keys: [
       "Monster_Branch2.4_004",
       "Monster_Branch2.4_017",
@@ -343,33 +485,82 @@ export const Echo1CostTranslationMapGroups: Record<string, Record<string, string
   },
 
   // 2.5
-  [Echo1Cost.NIGHTMARE_GLACIO_PREDATOR]: { keys: ["Monster_Branch2.5_016"] },
-  [Echo1Cost.NIGHTMARE_HAVOC_WARRIOR]: { keys: ["Monster_Branch2.5_015"] },
+  [Echo1Cost.NIGHTMARE_GLACIO_PREDATOR]: {
+    key: "ECHO_NIGHTMARE_GLACIO_PREDATOR",
+    keys: ["Monster_Branch2.5_016"]
+  },
+  [Echo1Cost.NIGHTMARE_HAVOC_WARRIOR]: {
+    key: "ECHO_NIGHTMARE_HAVOC_WARRIOR",
+    keys: ["Monster_Branch2.5_015"]
+  },
 
   // 2.6
-  [Echo1Cost.NIGHTMARE_GULPUFF]: { keys: ["Monster_Branch2.6_013"] },
-  [Echo1Cost.NIGHTMARE_ELECTRO_PREDATOR]: { keys: ["Monster_Branch2.6_011"] },
-  [Echo1Cost.NIGHTMARE_AERO_PREDATOR]: { keys: ["Monster_Branch2.6_012"] },
-  [Echo1Cost.NIGHTMARE_CHIRPUFF]: { keys: ["Monster_Branch2.6_014"] },
+  [Echo1Cost.NIGHTMARE_GULPUFF]: {
+    key: "ECHO_NIGHTMARE_GULPUFF",
+    keys: ["Monster_Branch2.6_013"]
+  },
+  [Echo1Cost.NIGHTMARE_ELECTRO_PREDATOR]: {
+    key: "ECHO_NIGHTMARE_ELECTRO_PREDATOR",
+    keys: ["Monster_Branch2.6_011"]
+  },
+  [Echo1Cost.NIGHTMARE_AERO_PREDATOR]: {
+    key: "ECHO_NIGHTMARE_AERO_PREDATOR",
+    keys: ["Monster_Branch2.6_012"]
+  },
+  [Echo1Cost.NIGHTMARE_CHIRPUFF]: {
+    key: "ECHO_NIGHTMARE_CHIRPUFF",
+    keys: ["Monster_Branch2.6_014"]
+  },
 
   // 2.7
-  [Echo1Cost.NIGHTMARE_BABY_ROSESHROOM]: { keys: ["branch2.7_430_Monster_monster2_8"] },
-  [Echo1Cost.NIGHTMARE_BABY_VIRIDBLAZE_SAURIAN]: { keys: ["branch2.7_430_Monster_monster2_9"] },
+  [Echo1Cost.NIGHTMARE_BABY_ROSESHROOM]: {
+    key: "ECHO_NIGHTMARE_BABY_ROSESHROOM",
+    keys: ["branch2.7_430_Monster_monster2_8"]
+  },
+  [Echo1Cost.NIGHTMARE_BABY_VIRIDBLAZE_SAURIAN]: {
+    key: "ECHO_NIGHTMARE_BABY_VIRIDBLAZE_SAURIAN",
+    keys: ["branch2.7_430_Monster_monster2_9"]
+  },
 
   // 2.8
-  [Echo1Cost.NIGHTMARE_TICK_TACK]: { keys: ["branch2.8_241_Monster_monster2_10"] },
-  [Echo1Cost.NIGHTMARE_DWARF_CASSOWARY]: { keys: ["branch2.8_241_Monster_monster2_9"] },
+  [Echo1Cost.NIGHTMARE_TICK_TACK]: {
+    key: "ECHO_NIGHTMARE_TICK_TACK",
+    keys: ["branch2.8_241_Monster_monster2_10"]
+  },
+  [Echo1Cost.NIGHTMARE_DWARF_CASSOWARY]: {
+    key: "ECHO_NIGHTMARE_DWARF_CASSOWARY",
+    keys: ["branch2.8_241_Monster_monster2_9"]
+  },
 
   // 3.0
-  [Echo1Cost.TREMOR_WARRIOR]: { keys: ["Monster_Branch3.0_007"] },
-  [Echo1Cost.FLORA_DRONE]: { keys: ["Monster_Branch3.0_010", "Monster_Branch3.0_058"] },
-  [Echo1Cost.ZIP_ZAP]: { keys: ["Monster_Branch3.0_005"] },
-  [Echo1Cost.MINING_DRONE]: { keys: ["Monster_Branch3.0_009", "Monster_Branch3.0_057"] },
-  [Echo1Cost.GEOSPIDER_S4]: { keys: ["Monster_Branch3.0_008", "Monster_Branch3.0_056"] },
+  [Echo1Cost.TREMOR_WARRIOR]: {
+    key: "ECHO_TREMOR_WARRIOR",
+    keys: ["Monster_Branch3.0_007"]
+  },
+  [Echo1Cost.FLORA_DRONE]: {
+    key: "ECHO_FLORA_DRONE",
+    keys: ["Monster_Branch3.0_010", "Monster_Branch3.0_058"]
+  },
+  [Echo1Cost.ZIP_ZAP]: {
+    key: "ECHO_ZIP_ZAP",
+    keys: ["Monster_Branch3.0_005"]
+  },
+  [Echo1Cost.MINING_DRONE]: {
+    key: "ECHO_MINING_DRONE",
+    keys: ["Monster_Branch3.0_009", "Monster_Branch3.0_057"]
+  },
+  [Echo1Cost.GEOSPIDER_S4]: {
+    key: "ECHO_GEOSPIDER_S4",
+    keys: ["Monster_Branch3.0_008", "Monster_Branch3.0_056"]
+  },
 
   // 3.1?
-  [Echo1Cost.ICEGLINT_DANCER]: { keys: ["branch3.1_243_Monster_Branch3.0_007"] },
+  [Echo1Cost.ICEGLINT_DANCER]: {
+    key: "ECHO_ICEGLINT_DANCER",
+    keys: ["branch3.1_243_Monster_Branch3.0_007"]
+  },
   [Echo1Cost.SHADOW_STEPPER]: {
+    key: "ECHO_SHADOW_STEPPER",
     keys: [
       "branch3.1_243_Monster_Branch3.0_006",
       "branch3.1_243_Monster_Branch3.0_008",
@@ -381,9 +572,9 @@ export const Echo1CostTranslationMap: Record<string, TranslationMapEntry> =
   (() => {
     const result: Record<string, TranslationMapEntry> = {};
 
-    for (const [name, { keys }] of Object.entries(Echo1CostTranslationMapGroups)) {
-      for (const key of keys) {
-        result[key] = { name };
+    for (const [name, { key, keys }] of Object.entries(Echo1CostTranslationMapGroups)) {
+      for (const k of keys) {
+        result[k] = { name, key };
       }
     }
 
