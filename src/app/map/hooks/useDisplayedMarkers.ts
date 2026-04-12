@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { IMarker } from "../types";
 import { DbMapData } from "@/types/mapTypes";
-import { QueryCategories } from "../TranslationMaps/Puzzles";
+import { QueryCategories } from "../TranslationMaps/translationMap";
 
 export function useDisplayedMarkers(
   markers: IMarker[],
