@@ -7,5 +7,4 @@ export const registerStore = (hydrate: HydrateFn) => {
 
 export const hydrateRegisteredStores = () => {
   registry.forEach((hydrate) => hydrate());
-  registry.clear(); // prevent double hydration
 };

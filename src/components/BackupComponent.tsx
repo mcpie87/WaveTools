@@ -20,6 +20,8 @@ import {
   XCircle,
   DatabaseBackup,
 } from "lucide-react";
+import { runMigrations } from "@/migrations/runMigrations";
+import { hydrateRegisteredStores } from "@/app/map/state/storeRegistry";
 
 export enum LocalStorageKey {
   THEME = "theme",
@@ -29,6 +31,7 @@ export enum LocalStorageKey {
   INVENTORY = "items",
   UNION_LEVELS = "union_levels",
   MAP = "map",
+  VERSION = "version",
 }
 
 const LS_PREFIX = "wave_tools_";
@@ -145,6 +148,11 @@ export function BackupManager() {
 
     try {
       const count = await importBackup(file);
+      
+      // Run migrations and rehydrate stores in the background
+      await runMigrations();
+      hydrateRegisteredStores();
+      
       setImportStatus({ type: "success", count });
     } catch (err) {
       setImportStatus({
@@ -256,7 +264,7 @@ export function BackupManager() {
                 Import successful
               </p>
               <p className="text-muted-foreground">
-                {importStatus.count} keys restored. Refresh the page to apply changes.
+                {importStatus.count} keys restored. Changes have been applied.
               </p>
             </div>
           </div>
