@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   basePath: isProduction ? `/${repositoryName}` : '',
   assetPrefix: isProduction ? `/${repositoryName}/` : '',
   trailingSlash: true,
+  // reactStrictMode: false,
   images: {
     domains: [
       'raw.githubusercontent.com',
