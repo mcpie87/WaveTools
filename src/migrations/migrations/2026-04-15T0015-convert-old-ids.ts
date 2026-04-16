@@ -4,7 +4,8 @@ import { DbMapData } from "@/types/mapTypes";
 
 // This URL will host a pre-computed mapping of:
 // { [oldId: number]: { entityKey: string, categoryKey: string } }
-const MIGRATION_MAPPING_URL = '/data/migration_mapping_3.1.json';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const MIGRATION_MAPPING_URL = `${basePath}/data/migration_mapping_3.1.json`;
 
 const migration: Migration = {
   version: "2026-04-15T00-15",
