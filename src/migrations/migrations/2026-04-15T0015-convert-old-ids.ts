@@ -7,7 +7,7 @@ import { DbMapData } from "@/types/mapTypes";
 const MIGRATION_MAPPING_URL = '/data/migration_mapping_3.1.json';
 
 const migration: Migration = {
-  version: "2026-04-15T00-14",
+  version: "2026-04-15T00-15",
   description: "Convert old marker IDs to mapId_entityId format",
   up: async () => {
     if (typeof window === "undefined") return;
@@ -65,6 +65,7 @@ const migration: Migration = {
     }
 
     if (modified) {
+      localStorage.setItem("wave_tools_map_visited_markers_backup", data.visitedMarkers);
       console.info("Migrated", oldIds.length, "markers to " + Object.keys(data.visitedEntities).length);
       mapStorageService.save(data);
     } else {
