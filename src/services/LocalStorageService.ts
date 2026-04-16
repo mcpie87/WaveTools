@@ -13,7 +13,7 @@ class LocalStorageService {
 
   constructor(key: string, prefix: string = STORAGE_KEY) {
     this.key = `${prefix}_${key}`;
-    console.log(`[LocalStorageService][${this.key}] Construction LocalStorageService data`);
+    console.log(`[LocalStorageService][${this.key}] Construction LocalStorageService`);
   }
 
   private isBrowser(): boolean {

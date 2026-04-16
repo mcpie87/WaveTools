@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { runMigrations } from "@/migrations/runMigrations";
 import { hydrateRegisteredStores } from "@/app/map/state/storeRegistry";
+import { GAME_VERSION } from "@/constants/constants";
 
 export enum LocalStorageKey {
   THEME = "theme",
@@ -35,10 +36,8 @@ export enum LocalStorageKey {
 }
 
 const LS_PREFIX = "wave_tools_";
-const BACKUP_VERSION = 1;
 
 interface BackupFile {
-  version: number;
   exportedAt: string;
   appVersion: string;
   data: Partial<Record<LocalStorageKey, unknown>>;
@@ -51,6 +50,8 @@ type ImportStatus =
   | { type: "loading" };
 
 // ── Backup logic ──────────────────────────────────────────────────────────────
+
+const LEGACY_BACKUP_VERSION = "2025-04-19T14-20";
 
 function exportBackup(): void {
   const data: Partial<Record<LocalStorageKey, unknown>> = {};
@@ -67,9 +68,8 @@ function exportBackup(): void {
   }
 
   const backup: BackupFile = {
-    version: BACKUP_VERSION,
     exportedAt: new Date().toISOString(),
-    appVersion: process.env.NEXT_PUBLIC_APP_VERSION ?? "unknown",
+    appVersion: GAME_VERSION,
     data,
   };
 
@@ -88,13 +88,18 @@ async function importBackup(file: File): Promise<number> {
   const text = await file.text();
   const backup: BackupFile = JSON.parse(text);
 
-  if (!backup.version || !backup.data) {
+  const localVersionRaw = localStorage.getItem(`${LS_PREFIX}${LocalStorageKey.VERSION}`);
+  const localVersion = localVersionRaw ? JSON.parse(localVersionRaw) : "";
+  const fileVersion = (backup?.data?.[LocalStorageKey.VERSION] as string) ?? LEGACY_BACKUP_VERSION;
+
+  console.log("[BackupManager] Importing backup", fileVersion, localVersion);
+  if (!backup.data && !fileVersion) {
     throw new Error("Invalid backup file format.");
   }
 
-  if (backup.version > BACKUP_VERSION) {
+  if (fileVersion > localVersion) {
     throw new Error(
-      `Backup was created with a newer version of WaveTools (v${backup.version}). Please update the app.`
+      `Backup was created with a newer version of WaveTools (v${backup.data[LocalStorageKey.VERSION]}). Please update the app.`
     );
   }
 
@@ -103,11 +108,16 @@ async function importBackup(file: File): Promise<number> {
 
   for (const [key, value] of Object.entries(backup.data)) {
     if (!validKeys.has(key as LocalStorageKey)) continue;
+    console.log(`[BackupManager] Restoring ${fileVersion}`, key, value);
     localStorage.setItem(
       `${LS_PREFIX}${key}`,
-      typeof value === "string" ? value : JSON.stringify(value)
+      JSON.stringify(value)
     );
     count++;
+  }
+  // sanity check for old backups that dont have version
+  if (fileVersion === LEGACY_BACKUP_VERSION) {
+    localStorage.setItem(`${LS_PREFIX}${LocalStorageKey.VERSION}`, JSON.stringify(fileVersion));
   }
 
   return count;
@@ -148,11 +158,11 @@ export function BackupManager() {
 
     try {
       const count = await importBackup(file);
-      
+
       // Run migrations and rehydrate stores in the background
       await runMigrations();
       hydrateRegisteredStores();
-      
+
       setImportStatus({ type: "success", count });
     } catch (err) {
       setImportStatus({
