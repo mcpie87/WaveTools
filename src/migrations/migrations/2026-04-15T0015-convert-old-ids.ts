@@ -66,7 +66,7 @@ const migration: Migration = {
     }
 
     if (modified) {
-      localStorage.setItem("wave_tools_map_visited_markers_backup", data.visitedMarkers);
+      localStorage.setItem("wave_tools_map_visited_markers_backup", JSON.stringify(data.visitedMarkers));
       console.info("Migrated", oldIds.length, "markers to " + Object.keys(data.visitedEntities).length);
       mapStorageService.save(data);
     } else {
