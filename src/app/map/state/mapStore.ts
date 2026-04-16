@@ -7,6 +7,7 @@ import { getMatchedTrackableCategories } from "../TranslationMaps/translationMap
 
 export const defaultMapState: DbMapData = {
   visibleCategories: {},
+  visitedMarkers: {},
   displayedCategoryGroups: {},
   visitedEntities: {},
 };
@@ -20,6 +21,10 @@ export function initMapState(): DbMapData {
     visibleCategories: {
       ...defaultMapState.visibleCategories,
       ...loaded.visibleCategories
+    },
+    visitedMarkers: {
+      ...defaultMapState.visitedMarkers,
+      ...loaded.visitedMarkers
     },
     visitedEntities: {
       ...defaultMapState.visitedEntities,
