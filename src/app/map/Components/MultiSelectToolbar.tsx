@@ -28,7 +28,6 @@ export const MultiSelectToolbar = ({ displayedMarkers }: MultiSelectToolbarProps
   if (!multiSelectMode) return null;
 
   const selectedCount = selectedMarkerIds.size;
-  const selectedArray = Array.from(selectedMarkerIds);
 
   const handleMarkVisited = () => {
     if (selectedCount === 0) return;

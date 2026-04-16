@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { IMarker } from "../types";
 import { DbMapData } from "@/types/mapTypes";
-import { getMatchedTrackableCategories, QueryCategories } from "../TranslationMaps/translationMap";
+import { getMatchedTrackableCategories } from "../TranslationMaps/translationMap";
 import { getMarkerRealId } from "../mapUtils";
 
 export function useMapCategoryStats(
@@ -31,6 +31,5 @@ export function useMapCategoryStats(
     return Object.entries(counts)
       .sort((a, b) => a[0].localeCompare(b[0]))
       .map(([k, v]) => [k, v[0], v[1]]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [markers, dbMapData.visitedEntities]);
 }
