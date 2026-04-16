@@ -5,8 +5,9 @@ import { APIMarker } from "../types";
 import { APIAreaLayer } from "@/types/mapTypes";
 import RBush from "rbush";
 import { mapMarksData } from "../data/map_marks";
+import { GAME_VERSION, LEVEL_ENTITY_CONFIG_URL } from "@/constants/constants";
 
-const ENTITIES_URL = 'https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYJjynAOgE0xzLG7NC35IMYJrq9uTnS4KXpDBO';
+const ENTITIES_URL = LEVEL_ENTITY_CONFIG_URL[GAME_VERSION];
 
 export interface MarkerNode {
   minX: number;

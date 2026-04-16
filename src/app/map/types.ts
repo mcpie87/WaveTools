@@ -65,7 +65,9 @@ export interface IMarker {
   displayedX: number;
   displayedY: number;
   displayedZ: number;
-  visited: boolean;
+  visited?: Set<string>;
   references?: IMarkerReferences;
   questData?: APIQuestData;
+  // for optimization purposes for entity mapping
+  _matchedCategories?: { name: string, key: string, dictKey?: string }[];
 }

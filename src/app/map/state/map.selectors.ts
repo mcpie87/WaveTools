@@ -1,11 +1,7 @@
 import { DbMapData } from "@/types/mapTypes";
 import { IMarker } from "../types";
-import { QueryCategories } from "../TranslationMaps/translationMap";
-
-export const isMarkerVisited = (
-  state: DbMapData,
-  id: number
-) => !!state.visitedMarkers[id];
+import { getMatchedTrackableCategories, getTrackingKey } from "../TranslationMaps/translationMap";
+import { getMarkerRealId } from "../mapUtils";
 
 export const isCategoryVisible = (
   state: DbMapData,
@@ -14,15 +10,35 @@ export const isCategoryVisible = (
 
 export const isMarkerVisible = (
   state: DbMapData,
-  m: IMarker
+  m: IMarker,
+  hideVisited: boolean
 ) => {
-  if (state.visibleCategories[m.category]) return true;
+  const entityKey = getMarkerRealId(m);
+  const visitedSet = state.visitedEntities[entityKey];
 
-  for (const [key, category] of Object.entries(QueryCategories)) {
-    if (state.visibleCategories[key]) {
-      if (category.query(m)) return true;
+  if (state.visibleCategories[m.category]) {
+    const trackingKey = getTrackingKey(m.category);
+    const isVisited = (visitedSet !== undefined && visitedSet.has(trackingKey));
+    if (!hideVisited || !isVisited) return true;
+  }
+
+  const matched = getMatchedTrackableCategories(m);
+  for (let i = 0; i < matched.length; i++) {
+    const match = matched[i];
+    if (match.dictKey && state.visibleCategories[match.dictKey]) {
+      const isVisited = (visitedSet !== undefined && visitedSet.has(match.key));
+      if (!hideVisited || !isVisited) return true;
     }
   }
 
   return false;
+};
+
+export const isMarkerFullyVisited = (state: DbMapData, m: IMarker) => {
+  const entityKey = getMarkerRealId(m);
+  const visitedSet = state.visitedEntities[entityKey];
+  if (!visitedSet) return false;
+
+  const matched = getMatchedTrackableCategories(m);
+  return matched.length > 0 && matched.every(c => visitedSet.has(c.key));
 };

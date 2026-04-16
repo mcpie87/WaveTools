@@ -2,25 +2,26 @@ import { translateBlueprint } from "../BlueprintTranslationService";
 import { IMarker } from "../types";
 import { Button } from "@/components/ui/button";
 import { Popup } from "react-leaflet";
-import { getTranslationMapName } from "../TranslationMaps/translationMap";
-// import { getWorldmapIcon } from "../TranslationMaps/worldmapIconMap";
-// import Image from "next/image";
+import { getTranslationMapName, getMatchedTrackableCategories } from "../TranslationMaps/translationMap";
+import { useMapStore } from "../state/mapStore";
 
 interface CustomPopupProps {
   marker: IMarker;
-  toggleVisited: () => void;
   showDescription: boolean;
-  visited: boolean;
 }
 export function CustomPopup({
   marker,
-  toggleVisited,
   showDescription,
-  visited,
 }: CustomPopupProps) {
   const translation = translateBlueprint(marker.category); // synchronous
 
   const title = marker.questData?.name || getTranslationMapName(marker);
+  const toggleEntityCategoryVisited = useMapStore(s => s.toggleEntityCategoryVisited);
+  const dbMapData = useMapStore(s => s.dbMapData);
+
+  const entityKey = `e_${marker.mapId}_${marker.entityId}`;
+  const visitedSet = dbMapData.visitedEntities[entityKey] || new Set();
+  const matchedCategories = getMatchedTrackableCategories(marker);
 
   return (
     <Popup autoPan={false}>
@@ -52,7 +53,23 @@ export function CustomPopup({
             <span>{marker.displayedZ.toFixed(2)}</span>
           </div>
         </div>
-        <Button onClick={toggleVisited}>{visited ? "Uncheck" : "Check"}</Button>
+
+        {matchedCategories.length > 0 && (
+          <div className="flex flex-col gap-1 w-full mt-2">
+            {matchedCategories.map(cat => {
+              const isVisited = visitedSet.has(cat.key);
+              return (
+                <Button
+                  key={cat.key}
+                  onClick={() => toggleEntityCategoryVisited(marker, cat.key)}
+                >
+                  {isVisited ? "Uncheck" : "Check"}{matchedCategories.length === 1 ? "" : " " + cat.name}
+                </Button>
+              )
+            })}
+          </div>
+        )}
+
         {showDescription && marker.mapMark && (
           <div className="text-xs italic mb-2">
             Map Mark: {marker.mapMark && JSON.stringify(marker.mapMark)}

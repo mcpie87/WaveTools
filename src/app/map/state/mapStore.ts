@@ -1,11 +1,12 @@
 import { create } from "zustand";
 import { DbMapData, SelectedMap } from "@/types/mapTypes";
-import { MapName } from "../mapUtils";
+import { MapName, getMarkerRealId } from "../mapUtils";
 import { mapStorageService } from "../services/mapStorageService";
+import { IMarker } from "../types";
+import { getMatchedTrackableCategories } from "../TranslationMaps/translationMap";
 
 export const defaultMapState: DbMapData = {
   visibleCategories: {},
-  visitedMarkers: {},
   displayedCategoryGroups: {},
   visitedEntities: {},
 };
@@ -19,10 +20,6 @@ export function initMapState(): DbMapData {
     visibleCategories: {
       ...defaultMapState.visibleCategories,
       ...loaded.visibleCategories
-    },
-    visitedMarkers: {
-      ...defaultMapState.visitedMarkers,
-      ...loaded.visitedMarkers
     },
     visitedEntities: {
       ...defaultMapState.visitedEntities,
@@ -38,15 +35,14 @@ export function initMapState(): DbMapData {
 interface MapState {
   // DB Map Data
   dbMapData: DbMapData;
-  setMarkerVisited: (markerId: number, value: boolean) => void;
-  toggleMarkerVisited: (markerId: number) => void;
+  toggleEntityCategoryVisited: (marker: IMarker, categoryKey: string) => void;
   setCategoryVisibility: (category: string, value: boolean) => void;
   toggleCategoryVisibility: (category: string) => void;
   bulkSetCategoryVisibility: (categories: string[], value: boolean) => void;
   clearCategoriesVisibility: () => void;
   setCategoryGroupVisibility: (categoryGroup: string, value: boolean) => void;
   toggleCategoryGroupVisibility: (categoryGroup: string) => void;
-  bulkSetMarkersVisited: (markerIds: number[], value: boolean) => void;
+  bulkSetMarkersVisited: (markers: IMarker[], value: boolean) => void;
 
   // UI State
   selectedMap: SelectedMap;
@@ -83,27 +79,22 @@ export const useMapStore = create<MapState>((set) => ({
   // DB Map Data
   dbMapData: initMapState(),
 
-  setMarkerVisited: (markerId, value) => {
+  toggleEntityCategoryVisited: (marker, categoryKey) => {
     set((state) => {
-      const newData = {
-        ...state.dbMapData,
-        visitedMarkers: {
-          ...state.dbMapData.visitedMarkers,
-          [markerId]: value,
-        },
-      };
-      mapStorageService.save(newData);
-      return { dbMapData: newData };
-    });
-  },
+      const entityKey = getMarkerRealId(marker);
+      const newVisitedParts = new Set(state.dbMapData.visitedEntities[entityKey] || []);
 
-  toggleMarkerVisited: (markerId) => {
-    set((state) => {
+      if (newVisitedParts.has(categoryKey)) {
+        newVisitedParts.delete(categoryKey);
+      } else {
+        newVisitedParts.add(categoryKey);
+      }
+
       const newData = {
         ...state.dbMapData,
-        visitedMarkers: {
-          ...state.dbMapData.visitedMarkers,
-          [markerId]: !state.dbMapData.visitedMarkers[markerId],
+        visitedEntities: {
+          ...state.dbMapData.visitedEntities,
+          [entityKey]: newVisitedParts,
         },
       };
       mapStorageService.save(newData);
@@ -195,15 +186,31 @@ export const useMapStore = create<MapState>((set) => ({
     });
   },
 
-  bulkSetMarkersVisited: (markerIds, value) => {
+  bulkSetMarkersVisited: (markers, value) => {
     set((state) => {
-      const updatedVisited = { ...state.dbMapData.visitedMarkers };
-      for (const id of markerIds) {
-        updatedVisited[id] = value;
+      const updatedVisited = { ...state.dbMapData.visitedEntities };
+      for (const m of markers) {
+        const entityKey = getMarkerRealId(m);
+        const matched = getMatchedTrackableCategories(m);
+        const visitedSet = new Set(updatedVisited[entityKey] || []);
+
+        for (const cat of matched) {
+          if (value) {
+            visitedSet.add(cat.key);
+          } else {
+            visitedSet.delete(cat.key);
+          }
+        }
+
+        if (visitedSet.size === 0) {
+          delete updatedVisited[entityKey];
+        } else {
+          updatedVisited[entityKey] = visitedSet;
+        }
       }
       const newData = {
         ...state.dbMapData,
-        visitedMarkers: updatedVisited,
+        visitedEntities: updatedVisited,
       };
       mapStorageService.save(newData);
       return { dbMapData: newData };

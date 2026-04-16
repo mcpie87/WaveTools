@@ -119,7 +119,8 @@ const ChestTranslationMapGroups: Record<string, { keys: string[]; key: string }>
   [Chest.STANDARD_TROPHY_CHEST]: {
     key: "CHEST_STANDARD_TROPHY_CHEST",  // 2.4 event
     keys: [
-      "branch2.4_122_Treasure_2_4_02"
+      "branch2.4_122_Treasure_2_4_02",
+      "branch3.2_30_Treasure_3_3", // 3.2 event
     ]
   },
   [Chest.ADVANCED_TROPHY_CHEST]: {

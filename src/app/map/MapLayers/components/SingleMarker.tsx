@@ -3,6 +3,7 @@ import { CustomPopup } from "../../Components/CustomPopup";
 import { IMarker } from "../../types";
 import React, { useMemo } from "react";
 import { useMapStore } from "../../state/mapStore";
+import { isMarkerFullyVisited } from "../../state/map.selectors";
 
 interface SingleMarkerProps {
   marker: IMarker;
@@ -13,11 +14,7 @@ export const SingleMarkerComponent = ({
   marker,
   getIcon,
 }: SingleMarkerProps) => {
-  const visited = useMapStore(
-    (state) => !!state.dbMapData.visitedMarkers[marker.id as number]
-  );
   const showDescriptions = useMapStore((state) => state.showDescriptions);
-  const toggleMarkerVisited = useMapStore((state) => state.toggleMarkerVisited);
   const activeAreaId = useMapStore((state) => state.activeAreaId);
   const setActiveAreaId = useMapStore((state) => state.setActiveAreaId);
   const multiSelectMode = useMapStore((state) => state.multiSelectMode);
@@ -26,9 +23,11 @@ export const SingleMarkerComponent = ({
   );
   const toggleMarkerSelected = useMapStore((state) => state.toggleMarkerSelected);
 
+  const isVisited = useMapStore((state) => isMarkerFullyVisited(state.dbMapData, marker));
+
   const icon = useMemo(
-    () => getIcon(marker, visited, isSelected),
-    [getIcon, marker, visited, isSelected]
+    () => getIcon(marker, isVisited, isSelected),
+    [getIcon, marker, isVisited, isSelected]
   );
 
   const handleMarkerClick = () => {
@@ -53,8 +52,6 @@ export const SingleMarkerComponent = ({
       {!multiSelectMode && (
         <CustomPopup
           marker={marker}
-          toggleVisited={() => toggleMarkerVisited(marker.id as number)}
-          visited={visited}
           showDescription={showDescriptions}
         />
       )}

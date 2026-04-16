@@ -271,6 +271,10 @@ export const PuzzleTranslationMap: Record<string, TranslationMapEntry> =
       }
     }
 
+    for (const [qkey, { key, name }] of Object.entries(PuzzleQueryCategories)) {
+      result[qkey] = { name, key };
+    }
+
     return result;
   })();
 

@@ -70,7 +70,7 @@ export const MapSettingsComponent = ({
   const [categoryFilterDebounced] = useDebounce(categoryFilter, 300);
 
   const undefinedCategories = categories.filter(category =>
-    !displayedCategories.every(c => c[1][category[0]])
+    !displayedCategories.some(c => c[1][category[0]])
   )
 
   const mapOptions = useMemo(() => {
@@ -275,7 +275,6 @@ export const MapSettingsComponent = ({
                   title="Not defined categories"
                   categories={
                     undefinedCategories
-                      .filter(c => !displayedCategories.some(d => d[1][c[0]]))
                       .filter(([c]) =>
                         [
                           c.toLowerCase(),

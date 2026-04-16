@@ -52,11 +52,17 @@ export const isCustomMapSelected = (selectedMap: SelectedMap) => {
   ] as SelectedMap[]).includes(selectedMap);
 }
 
-export const getMarkerRealId = (m: IMarker): string => {
-  // Follows game rules, there are duplicates of entityIds in game
-  // on separate maps (eg. quest in septimont + lahai roi)
-  return `e_${m.mapId}_${m.entityId}`;
-}
+export const getMarkerRealId = (m: IMarker | APIMarker): string => {
+  if ('mapId' in m && 'entityId' in m) {
+    return `e_${m.mapId}_${m.entityId}`;
+  }
+
+  if ('MapId' in m && 'EntityId' in m) {
+    return `e_${m.MapId}_${m.EntityId}`;
+  }
+
+  throw new Error('Invalid marker object');
+};
 
 export const getBounds = (mapName: UnionMapName, padding = 0) => {
   const config = unionMapConfigs[mapName];
@@ -90,7 +96,7 @@ export const getMapCenter = (mapName: SelectedMap): L.LatLngExpression => {
   ]
 }
 
-export const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<number, boolean>): IMarker => ({
+export const convertMarkerToCoord = (marker: APIMarker, visitedEntities: Record<string, Set<string>>): IMarker => ({
   ...translateGameToMap({
     x: marker.Transform[0].X,
     y: marker.Transform[0].Y,
@@ -108,7 +114,7 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedMap: Record<numbe
   displayedY: marker.Transform[0].Y / 10000,
   displayedZ: marker.Transform[0].Z / 10000,
   category: marker.BlueprintType,
-  visited: visitedMap[marker.Id] || false,
+  visited: visitedEntities[getMarkerRealId(marker)] ?? false, // pre 3.2 method: visitedMap[marker.Id] || false,
   questData: getQuestData(`${marker.MapId}-${marker.EntityId}`),
 });
 

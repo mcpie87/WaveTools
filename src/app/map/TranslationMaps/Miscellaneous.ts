@@ -2,7 +2,7 @@ import { TranslationMapEntry } from "./TranslationMapInterface"
 
 export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   "Weapon": {
-    key: "WEAPON",
+    key: "MISC_EXILE_WEAPON",
     keys: [
       "Weapon001", // Sniper Rifle
       "Weapon002", // Crowbar
@@ -12,14 +12,14 @@ export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[];
     ]
   },
   "Cooking": {
-    key: "COOKING",
+    key: "MISC_COOKING",
     keys: [
       "SceneObj101",
       "SceneObj100",
     ]
   },
   "Monnaie Box": {
-    key: "MONNAIE_BOX",
+    key: "MISC_MONNAIE_BOX",
     keys: [
       "branch2.0_SceneObj3",
       "branch2.0_SceneObj2",
@@ -42,11 +42,11 @@ export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[];
     keys: ["Treasure031"]
   },
   "Tree Trunk": {
-    key: "TREE_TRUNK",
+    key: "MISC_TREE_TRUNK",
     keys: ["SceneObj005"]
   },
   "Wooden Box": {
-    key: "WOODEN_BOX",
+    key: "MISC_WOODEN_BOX",
     keys: ["SceneObj002"]
   },
   "Gondola": {
@@ -54,7 +54,7 @@ export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[];
     keys: ["Gameplay626"]
   },
   "Floating Container": { // The one found on sea
-    key: "FLOATING_CONTAINER",
+    key: "MISC_FLOATING_CONTAINER",
     keys: ["Quest008"]
   },
 };

@@ -32,12 +32,12 @@ export const MultiSelectToolbar = ({ displayedMarkers }: MultiSelectToolbarProps
 
   const handleMarkVisited = () => {
     if (selectedCount === 0) return;
-    bulkSetMarkersVisited(selectedArray, true);
+    bulkSetMarkersVisited(selectedMarkers, true);
   };
 
   const handleMarkUnvisited = () => {
     if (selectedCount === 0) return;
-    bulkSetMarkersVisited(selectedArray, false);
+    bulkSetMarkersVisited(selectedMarkers, false);
   };
 
   const displayedInGrid = selectedMarkers.slice(0, 30);
@@ -74,7 +74,7 @@ export const MultiSelectToolbar = ({ displayedMarkers }: MultiSelectToolbarProps
               className="w-7 h-7 border-2 bg-[#333] border-primary rounded-full flex items-center justify-center flex-shrink-0 cursor-pointer hover:bg-base-400 transition-colors"
             >
               {iconUrl ? (
-                <Image src={iconUrl} alt="" className="w-5 h-5 object-contain" width={20} height={20} />
+                <Image src={iconUrl[0]} alt="" className="w-5 h-5 object-contain" width={20} height={20} />
               ) : (
                 <div className="w-3 h-3 rounded-full bg-yellow-500/30" />
               )}

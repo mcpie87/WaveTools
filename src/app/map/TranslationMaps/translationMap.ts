@@ -254,3 +254,30 @@ export const getTranslationMapName = (marker: IMarker): string => {
   const queryTranslation = queryCategoryKey ? QueryCategories[queryCategoryKey]?.name : undefined;
   return queryTranslation ?? categoryTranslation ?? "";
 }
+
+const queryCategoryEntries = Object.entries(QueryCategories);
+
+export const getMatchedTrackableCategories = (marker: IMarker): { name: string, key: string, dictKey?: string }[] => {
+  if (marker._matchedCategories) return marker._matchedCategories;
+
+  const matched = [];
+  const baseEntry = UnionTranslationMap[marker.category];
+
+  if (baseEntry) {
+    matched.push({ name: baseEntry.name, key: baseEntry.key, dictKey: marker.category });
+  }
+
+  for (let i = 0; i < queryCategoryEntries.length; i++) {
+    const [dictKey, qcat] = queryCategoryEntries[i];
+    if (qcat.query(marker)) {
+      matched.push({ name: qcat.name, key: qcat.key, dictKey });
+    }
+  }
+
+  if (matched.length === 0) {
+    matched.push({ name: marker.category, key: `__${marker.category}`, dictKey: marker.category });
+  }
+
+  marker._matchedCategories = matched;
+  return matched;
+};

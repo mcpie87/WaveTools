@@ -24,7 +24,6 @@ import { MapSettingsComponent } from './Components/MapSettingsComponent';
 import { useFilteredMarkers } from './hooks/useFilteredMarkers';
 import { CustomTileLayer } from './MapLayers/CustomTileLayer';
 import { AreaTileLayer } from './MapLayers/AreaTileLayer';
-import { isMarkerVisited } from './state/map.selectors';
 import { useMapLogic } from './hooks/useMapLogic';
 import { MapClickHandler } from './handlers/MapClickHandler';
 import { MarkerLayer } from './MapLayers/MarkerLayer';
@@ -74,8 +73,7 @@ export default function XYZMap() {
   const markers = useFilteredMarkers(indexes, selectedMap, selectedMapId);
   const categories: Array<[string, number, number]> = useMapCategoryStats(
     markers,
-    dbMapData,
-    isMarkerVisited
+    dbMapData
   );
 
   const selectedPoint: IMarker = useMemo(() => {
@@ -92,8 +90,8 @@ export default function XYZMap() {
       EntityId: -1,
       MapId: mapConfigs[selectedMap]?.mapId ?? -1,
     };
-    return convertMarkerToCoord(apiMarker, dbMapData.visitedMarkers);
-  }, [coords, selectedMap, dbMapData.visitedMarkers]);
+    return convertMarkerToCoord(apiMarker, dbMapData.visitedEntities);
+  }, [coords, selectedMap, dbMapData.visitedEntities]);
 
   const markersWithinRadius = useMemo(() => {
     const cx = coords.x * 10000;
