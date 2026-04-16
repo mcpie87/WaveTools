@@ -1,11 +1,11 @@
 import { APIMapMark, APIQuestData } from "@/types/mapTypes";
-
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const lookupMap = new Map<number, Map<number, APIMapMark>>();
 const questByEntityId = new Map<string, APIQuestData>();
 const [mapMarksData, questData]: [APIMapMark[], APIQuestData[]] =
   await Promise.all([
-    fetch("/data/map_marks_minified.json").then((r) => r.json()),
-    fetch("/data/quest_types_minified.json").then((r) => r.json()),
+    fetch(`${basePath}/data/map_marks_minified.json`).then((r) => r.json()),
+    fetch(`${basePath}/data/quest_types_minified.json`).then((r) => r.json()),
   ]);
 
 for (const mark of mapMarksData) {
