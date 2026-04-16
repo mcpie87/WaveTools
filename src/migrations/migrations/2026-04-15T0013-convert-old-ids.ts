@@ -7,7 +7,7 @@ import { DbMapData } from "@/types/mapTypes";
 const MIGRATION_MAPPING_URL = '/data/migration_mapping_3.1.json';
 
 const migration: Migration = {
-  version: "2026-04-15T00-12",
+  version: "2026-04-15T00-14",
   description: "Convert old marker IDs to mapId_entityId format",
   up: async () => {
     if (typeof window === "undefined") return;
@@ -32,7 +32,7 @@ const migration: Migration = {
       legacyMap = await res.json();
     } catch (e) {
       console.error("Failed to fetch marker mapping for migration", e);
-      return; // Skip migration if fetch fails
+      throw e;
     }
 
     if (!data.visitedEntities) {
