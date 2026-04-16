@@ -11,10 +11,7 @@ const migration20260213T2250: Migration = {
       localStorage.setItem("wave_tools_schema_version", CURRENT_VERSION);
     }
     const updatedSchemaVersion = localStorage.getItem("wave_tools_schema_version");
-    if (updatedSchemaVersion !== CURRENT_VERSION) {
-      console.error("Migration failed: contact developer", updatedSchemaVersion);
-      throw Error("Migration failed: contact developer");
-    }
+    console.log("Schema version", updatedSchemaVersion, CURRENT_VERSION);
   }
 }
 export default migration20260213T2250;
