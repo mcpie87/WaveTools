@@ -7,16 +7,20 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const MIGRATION_MAPPING_URL = `${basePath}/data/migration_mapping_3.1.json`;
 
 const migration: Migration = {
-  version: "2026-04-15T00-16",
-  description: "Convert old marker IDs to mapId_entityId format",
+  version: "2026-04-16T15-38",
+  description: "Update backed up markers after hydration failure",
   up: async () => {
+    // This is pretty much copy pasted code from previous migration but it uses the backed up key
+    const backupMarkers = JSON.parse(localStorage.getItem(MAP_VISITED_MARKERS_BACKUP_KEY) ?? "{}");
+    if (!backupMarkers) return;
+
     const data = loadMapData();
     // new user so no data
-    if (!data || !data.visitedMarkers) return;
+    if (!data) return;
 
-    const oldIds = Object.keys(data.visitedMarkers)
+    const oldIds = Object.keys(backupMarkers)
       .map(Number)
-      .filter((id) => !isNaN(id) && data.visitedMarkers[id]);
+      .filter((id) => !isNaN(id) && backupMarkers[id]);
     if (oldIds.length === 0) return;
 
     // Fetch the pre-computed mapping.
@@ -54,14 +58,13 @@ const migration: Migration = {
       modified = true;
     }
 
-    const CURRENT_VERSION = "3.2";
+    const CURRENT_VERSION = "3.2.1";
     const schemaVersion = localStorage.getItem("wave_tools_schema_version");
     if (!schemaVersion || schemaVersion < CURRENT_VERSION) {
       localStorage.setItem("wave_tools_schema_version", CURRENT_VERSION);
     }
 
     if (modified) {
-      localStorage.setItem(MAP_VISITED_MARKERS_BACKUP_KEY, JSON.stringify(data.visitedMarkers));
       console.info("Migrated", oldIds.length, "markers to " + Object.keys(data.visitedEntities).length);
       saveMapData(data);
     } else {

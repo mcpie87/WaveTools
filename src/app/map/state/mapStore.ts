@@ -82,7 +82,7 @@ interface MapState {
 }
 
 export const useMapStore = create<MapState>((set) => ({
-  dbMapData: defaultMapState,
+  dbMapData: initMapState(),
 
   hydrate: () => set({ dbMapData: initMapState() }),
 

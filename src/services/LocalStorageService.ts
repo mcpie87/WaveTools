@@ -13,6 +13,7 @@ class LocalStorageService {
 
   constructor(key: string, prefix: string = STORAGE_KEY) {
     this.key = `${prefix}_${key}`;
+    console.log(`[LocalStorageService][${this.key}] Construction LocalStorageService data`);
   }
 
   private isBrowser(): boolean {
@@ -35,10 +36,13 @@ class LocalStorageService {
   }
 
   load(): LocalStorageData | null {
-    return this.loadRaw();
+    const data = this.loadRaw();
+    console.log(`[LocalStorageService][${this.key}] Loading data`, data);
+    return data;
   }
 
   save(data: LocalStorageData) {
+    console.log(`[LocalStorageService][${this.key}] Saving data`, data);
     if (!this.isBrowser()) return;
     localStorage.setItem(
       this.key,

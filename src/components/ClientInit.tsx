@@ -10,16 +10,17 @@ interface ClientInitProps {
 
 export const ClientInit = ({ children }: ClientInitProps) => {
   const [status, setStatus] = useState<'pending' | 'done' | 'error'>('pending');
+  console.log("[ClientInit] Status:", status);
 
   useEffect(() => {
     (async () => {
-      console.log("Running migrations...");
+      console.log("[ClientInit] Running migrations...");
       const result = await runMigrations();
       if (!result) {
         setStatus('error');
         return;
       }
-      console.log("Hydrating registered stores...");
+      console.log("[ClientInit] Hydrating registered stores...");
       hydrateRegisteredStores();
       setStatus('done');
     })();

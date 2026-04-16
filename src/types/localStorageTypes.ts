@@ -5,7 +5,7 @@ import { ResonatorDBSchema } from "./resonatorTypes";
 import { UnionLevelPageData } from "./unionLevelDataTypes";
 import { WeaponDBSchema } from "./weaponTypes";
 
-export const LOCAL_STORAGE_SCHEMA_VERSION = "3.2";
+export const LOCAL_STORAGE_SCHEMA_VERSION = "3.2.1";
 export enum LocalStorageKey {
   THEME = "theme",
   SCHEMA_VERSION = "schema_version",
