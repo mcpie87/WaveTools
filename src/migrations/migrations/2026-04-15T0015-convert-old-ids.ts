@@ -1,6 +1,40 @@
 import { Migration } from "../migrationTypes";
-import { mapStorageService } from "@/app/map/services/mapStorageService";
-import { DbMapData } from "@/types/mapTypes";
+
+interface DbMapData {
+  visibleCategories: Record<string, boolean>;
+  visitedMarkers: Record<number, boolean>;
+  visitedEntities: Record<string, Set<string>>;
+  displayedCategoryGroups: Record<string, boolean>;
+}
+
+const STORAGE_KEY = "wave_tools_map";
+
+function loadMapData(): DbMapData | null {
+  if (typeof window === "undefined" || !window.localStorage) return null;
+  const rawData = localStorage.getItem(STORAGE_KEY);
+  if (!rawData) return null;
+  try {
+    return JSON.parse(rawData, (_key, value) => {
+      if (value?.__type === "Set") return new Set(value.values);
+      if (value?.__type === "Map") return new Map(value.values);
+      return value;
+    });
+  } catch {
+    return null;
+  }
+}
+
+function saveMapData(data: DbMapData) {
+  if (typeof window === "undefined" || !window.localStorage) return;
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify(data, (_key, value) => {
+      if (value instanceof Set) return { __type: "Set", values: [...value] };
+      if (value instanceof Map) return { __type: "Map", values: [...value] };
+      return value;
+    })
+  );
+}
 
 // This URL will host a pre-computed mapping of:
 // { [oldId: number]: { entityKey: string, categoryKey: string } }
@@ -13,15 +47,13 @@ const migration: Migration = {
   up: async () => {
     if (typeof window === "undefined") return;
 
-    /* eslint-disable */
-    const data: any = mapStorageService.load() as DbMapData | null;
+    const data = loadMapData();
     // new user so no data
     if (!data || !data.visitedMarkers) return;
 
     const oldIds = Object.keys(data.visitedMarkers)
       .map(Number)
-      .filter(id => !isNaN(id) && data.visitedMarkers[id]);
-    /* eslint-enable */
+      .filter((id) => !isNaN(id) && data.visitedMarkers[id]);
     if (oldIds.length === 0) return;
 
     // Fetch the pre-computed mapping.
@@ -68,7 +100,7 @@ const migration: Migration = {
     if (modified) {
       localStorage.setItem("wave_tools_map_visited_markers_backup", JSON.stringify(data.visitedMarkers));
       console.info("Migrated", oldIds.length, "markers to " + Object.keys(data.visitedEntities).length);
-      mapStorageService.save(data);
+      saveMapData(data);
     } else {
       console.info("No new markers to migrate");
     }

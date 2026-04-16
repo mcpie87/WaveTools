@@ -4,7 +4,7 @@ import { MapName, getMarkerRealId } from "../mapUtils";
 import { mapStorageService } from "../services/mapStorageService";
 import { IMarker } from "../types";
 import { getMatchedTrackableCategories } from "../TranslationMaps/translationMap";
-
+import { registerStore } from "./storeRegistry";
 export const defaultMapState: DbMapData = {
   visibleCategories: {},
   visitedMarkers: {},
@@ -40,6 +40,7 @@ export function initMapState(): DbMapData {
 interface MapState {
   // DB Map Data
   dbMapData: DbMapData;
+  hydrate: () => void;
   toggleEntityCategoryVisited: (marker: IMarker, categoryKey: string) => void;
   setCategoryVisibility: (category: string, value: boolean) => void;
   toggleCategoryVisibility: (category: string) => void;
@@ -81,8 +82,9 @@ interface MapState {
 }
 
 export const useMapStore = create<MapState>((set) => ({
-  // DB Map Data
-  dbMapData: initMapState(),
+  dbMapData: defaultMapState,
+
+  hydrate: () => set({ dbMapData: initMapState() }),
 
   toggleEntityCategoryVisited: (marker, categoryKey) => {
     set((state) => {
@@ -262,3 +264,5 @@ export const useMapStore = create<MapState>((set) => ({
   flyToCoord: null,
   setFlyToCoord: (flyToCoord) => set({ flyToCoord }),
 }));
+
+registerStore(() => useMapStore.getState().hydrate());
