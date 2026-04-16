@@ -42,7 +42,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const MIGRATION_MAPPING_URL = `${basePath}/data/migration_mapping_3.1.json`;
 
 const migration: Migration = {
-  version: "2026-04-15T00-15",
+  version: "2026-04-15T00-16",
   description: "Convert old marker IDs to mapId_entityId format",
   up: async () => {
     if (typeof window === "undefined") return;
