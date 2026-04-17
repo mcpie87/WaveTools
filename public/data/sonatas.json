@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Freezing Frost",
+    "sortId": 1,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriIce.png"
+  },
+  {
+    "id": 2,
+    "name": "Molten Rift",
+    "sortId": 2,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriFire.png"
+  },
+  {
+    "id": 3,
+    "name": "Void Thunder",
+    "sortId": 3,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriThunder.png"
+  },
+  {
+    "id": 4,
+    "name": "Sierra Gale",
+    "sortId": 4,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriWind.png"
+  },
+  {
+    "id": 5,
+    "name": "Celestial Light",
+    "sortId": 5,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriLight.png"
+  },
+  {
+    "id": 6,
+    "name": "Havoc Eclipse",
+    "sortId": 6,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriDark.png"
+  },
+  {
+    "id": 7,
+    "name": "Rejuvenating Glow",
+    "sortId": 7,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriCure.png"
+  },
+  {
+    "id": 8,
+    "name": "Moonlit Clouds",
+    "sortId": 8,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriCloud.png"
+  },
+  {
+    "id": 9,
+    "name": "Lingering Tunes",
+    "sortId": 9,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriAttack.png"
+  },
+  {
+    "id": 10,
+    "name": "Frosty Resolve",
+    "sortId": 10,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriIceUltimateSkill.png"
+  },
+  {
+    "id": 11,
+    "name": "Eternal Radiance",
+    "sortId": 11,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriLightError.png"
+  },
+  {
+    "id": 12,
+    "name": "Midnight Veil",
+    "sortId": 12,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriDarkAssist.png"
+  },
+  {
+    "id": 13,
+    "name": "Empyrean Anthem",
+    "sortId": 13,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriCooperate.png"
+  },
+  {
+    "id": 14,
+    "name": "Tidebreaking Courage",
+    "sortId": 14,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriEnergy.png"
+  },
+  {
+    "id": 16,
+    "name": "Gusts of Welkin",
+    "sortId": 16,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriWindError.png"
+  },
+  {
+    "id": 17,
+    "name": "Windward Pilgrimage",
+    "sortId": 17,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriWindErrorA.png"
+  },
+  {
+    "id": 18,
+    "name": "Flaming Clawprint",
+    "sortId": 18,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriFireUltimateSkill.png"
+  },
+  {
+    "id": 19,
+    "name": "Dream of the Lost",
+    "sortId": 19,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriDarkVision.png"
+  },
+  {
+    "id": 20,
+    "name": "Crown of Valor",
+    "sortId": 20,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriShield.png"
+  },
+  {
+    "id": 21,
+    "name": "Law of Harmony",
+    "sortId": 21,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriSupport.png"
+  },
+  {
+    "id": 22,
+    "name": "Flamewing's Shadow",
+    "sortId": 22,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriFireA.png"
+  },
+  {
+    "id": 23,
+    "name": "Thread of Severed Fate",
+    "sortId": 23,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriQianXiao.png"
+  },
+  {
+    "id": 24,
+    "name": "Pact of Neonlight Leap",
+    "sortId": 24,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriLightWeakness.png"
+  },
+  {
+    "id": 25,
+    "name": "Halo of Starry Radiance",
+    "sortId": 25,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriCureWeakness.png"
+  },
+  {
+    "id": 26,
+    "name": "Rite of Gilded Revelation",
+    "sortId": 26,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriAttackWeakness.png"
+  },
+  {
+    "id": 27,
+    "name": "Trailblazing Star",
+    "sortId": 27,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriFireA1.png"
+  },
+  {
+    "id": 28,
+    "name": "Chromatic Foam",
+    "sortId": 28,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriFireA2.png"
+  },
+  {
+    "id": 29,
+    "name": "Sound of True Name",
+    "sortId": 29,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriWindVision.png"
+  }
+]

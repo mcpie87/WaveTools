@@ -17840,6 +17840,46 @@
     "rarity": 4
   },
   {
+    "id": 70320000,
+    "name": "Lucilla's Communicator",
+    "attributes_description": "A communicator given to you by Lucilla. It resembles a makeup mirror.",
+    "bg_description": "A communicator given to you by Lucilla. Designed in her personal style, this device is well-suited for covert operations.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_202_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_202_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_202_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70320001,
+    "name": "<i>Startorch Academy Dark Side Investigation Report No. AN25360</i>",
+    "attributes_description": "The digital file of Professor Sevi's personal information.",
+    "bg_description": "The digital file that records Professor Sevi's basic personal information and major achievements.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_209_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_209_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_209_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70320002,
+    "name": "Startorch Prize Medal",
+    "attributes_description": "The Medal of the Startorch Prize established by Startroch Academy.",
+    "bg_description": "The Medal of the Startorch Prize established by Startroch Academy. It is an honor awarded to researchers who have made significant contributions to the advancement of science for the benefit of humanity.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_203_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_203_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_203_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70320003,
+    "name": "The Rabbit's Bow Tie",
+    "attributes_description": "An accessory worn by the strange rabbit.",
+    "bg_description": "An accessory worn by the strange rabbit in the Dark Side. This little pet of the Grand Architect is also the root cause of the Dark Side anomaly.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_204_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_204_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_204_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 50022,
     "name": "Weekly Subscription",
     "attributes_description": "Used to claim login rewards on specific days within 15 days.",
@@ -18292,7 +18332,7 @@
   {
     "id": 50010014,
     "name": "Morphable Echo - Sound of True Name",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sound of Ture Name.\n\n2pcs Set: Aero DMG +10%.\n\n5pcs Set: Dealing Echo Skill DMG to enemies increases the Resonator's Echo Skill Crit. Rate by 20%, and grants 15% Aero DMG Bonus for 5s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sound of True Name.\n\n2pcs Set: Aero DMG +10%.\n\n5pcs Set: Dealing Echo Skill DMG to enemies increases the Resonator's Echo Skill Crit. Rate by 20%, and grants 15% Aero DMG Bonus for 5s.",
     "bg_description": "The footprints in the rift will never fade...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_27_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_27_UI.png",
@@ -18322,7 +18362,7 @@
   {
     "id": 50020014,
     "name": "Morphable Echo - Sound of True Name",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sound of Ture Name.\n\n2pcs Set: Aero DMG +10%.\n\n5pcs Set: Dealing Echo Skill DMG to enemies increases the Resonator's Echo Skill Crit. Rate by 20%, and grants 15% Aero DMG Bonus for 5s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sound of True Name.\n\n2pcs Set: Aero DMG +10%.\n\n5pcs Set: Dealing Echo Skill DMG to enemies increases the Resonator's Echo Skill Crit. Rate by 20%, and grants 15% Aero DMG Bonus for 5s.",
     "bg_description": "The footprints in the rift will never fade...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_27_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_27_UI.png",
@@ -18381,7 +18421,7 @@
   },
   {
     "id": 54004,
-    "name": "Lunar Causality",
+    "name": "Custom Livery: Lunar Causality",
     "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
     "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
@@ -18391,7 +18431,7 @@
   },
   {
     "id": 54005,
-    "name": "Horizon Lookout",
+    "name": "Custom Livery: Horizon Lookout",
     "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
     "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
@@ -18447,6 +18487,16 @@
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 69,
+    "name": "Grand Commander's Blessing",
+    "attributes_description": "A blessing from the Grand Commander. It hones the blade carried by your heart and makes you better prepared for the exam. For a while at least.",
+    "bg_description": "Open it to earn Interim GPA Level EXP that grants Interim GPA Levels effective for the current Exam.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_69_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_69_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_69_UI.png",
     "rarity": 4
   },
   {
@@ -18650,16 +18700,6 @@
     "rarity": 4
   },
   {
-    "id": 80110487,
-    "name": "Vernal Days Dreamed by the Star (Full Ver.)",
-    "attributes_description": "Background music played when the paper plane soars into the sky",
-    "bg_description": "Unlocked after completing Main Quest \"The Star that Voyages Far.\"",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
-    "rarity": 4
-  },
-  {
     "id": 80900004,
     "name": "Fest Decor Collection I",
     "attributes_description": "This collection contains Ragunna Screen, Paradox Orrery, Tentacle Floor Lamp, Tales of the Isles: Latest Collection, Table & Chairs Set - Blazing Sun, and Mixed Fruit Platter.",
@@ -18740,6 +18780,16 @@
     "rarity": 4
   },
   {
+    "id": 80110487,
+    "name": "Vernal Days Dreamed by the Star (Full Ver.)",
+    "attributes_description": "Background music played when the paper plane soars into the sky",
+    "bg_description": "Unlocked after completing Main Quest \"The Star that Voyages Far.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 50031518,
     "name": "Soft Pink Lawn",
     "attributes_description": "A lawn with a soft pink color that evokes the beauty of dreamy, fleeting moments.",
@@ -18797,6 +18847,256 @@
     "icon": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity31/SpringFestival/IconFurniture256/T_FURN_GroupActor_236.png",
     "icon_middle": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity31/SpringFestival/IconFurniture256/T_FURN_GroupActor_236.png",
     "icon_small": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity31/SpringFestival/IconFurniture256/T_FURN_GroupActor_236.png",
+    "rarity": 4
+  },
+  {
+    "id": 70,
+    "name": "Grand Commander's Blessing",
+    "attributes_description": "A blessing from the Grand Commander. It hones the blade carried by your heart and makes you better prepared for the exam. For a while at least.",
+    "bg_description": "Interim GPA Level EXP earned by opening chests. Can grant Interim GPA Level effective for the current Exam.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_lssq_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_lssq01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_lssq01_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71,
+    "name": "Encrypted Data",
+    "attributes_description": "Critical data that's carefully encrypted. Used to exchange for rewards in the Recurring Challenge \"Endstate Matrix.\"",
+    "bg_description": "These data are invaluable relics of countless fallen civilizations. Fractured by the assault on the Matrix and stitched back together by viral corruption, they now drift scattered across the data space… Thankfully, the Spacetrek Collective has the means to restore them.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity32/MowingTower/T_IconA_Act_MowingTowerPoint_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity32/MowingTower/T_IconA160_Act_MowingTowerPoint_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity32/MowingTower/T_IconA80_Act_MowingTowerPoint_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 10001412,
+    "name": "Sigrika's Waveband",
+    "attributes_description": "Can be used to activate Sigrika's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1621_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1621_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1621_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500078,
+    "name": "Reveler Captain's Seal",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_18.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500079,
+    "name": "Torch that Ignites the Lasting Night",
+    "attributes_description": "Total Aero DMG is increased by 35%. Enemies take 30% more total Echo Skill DMG.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Lift your torch higher! Higher still! Until your shadow devours the darkness haunting these walls. Until you become the first to rewrite this long night through the sheer weight of your existence.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_44.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_44.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_44.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500080,
+    "name": "Frostlands Where Barreness Thrives",
+    "attributes_description": "Resonators deal 30% more total DMG to enemies in Tunability - Shifting, Tune Rupture - Interfered, or Tune Strain - Interfered.\nResonators have their Off-Tune Buildup Rate increased by 100%, and Tune Break Boost increased by 50.\nDealing Tune Break DMG grants 30% All-Attribute DMG Bonus to all Resonators in the team, plus an additional 40% Spectro DMG Bonus and 40% Fusion DMG Bonus. This effect lasts for 30s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "\"Such a cold, silent path... How much longer should we endure?\"\n\"Not much longer. Don't let go of my hand. Spring... is just ahead.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_47.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_47.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_47.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500081,
+    "name": "Cradle That Holds the Void",
+    "attributes_description": "Resonators recover additional Ember when they inflict Negative Statuses on enemies, triggered up to once per second.\nResonators in the team gain 50% Glacio DMG Bonus and Spectro DMG Bonus. Enemies take 200% more total Glacio Chafe DMG.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "\"Is this the place where you were first born?\"\nDeep. Repeating. As if about to be submerged. As if about to be… reborn.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_49.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_49.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_49.png",
+    "rarity": 5
+  },
+  {
+    "id": 54006,
+    "name": "VIOLET",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 54007,
+    "name": "QUEEN",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80001074,
+    "name": "Star Crackle",
+    "attributes_description": "Grants 35% Heavy ATK DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Sigrika's take on Fruit Crackle, which she made to satisfy her own tastes. The star-shaped frosted candy is cool, sweet, and refreshing.\nShe didn't follow the recipe to the letter. Instead, she added a dash of \"inspiration\" on a whim.\nThankfully, the result was pretty good.\nSometimes a little inspiration goes a long way.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_25_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_25_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_25_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 71600010,
+    "name": "The Flaming Red in Memory",
+    "attributes_description": "She lingers like a dream, just out of reach. But one day, your paths will cross...",
+    "bg_description": "The Flaming Red in Memory",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Xia02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Xia02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Xia02_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70340007,
+    "name": "Refreshing Waffle",
+    "attributes_description": "Luuk Herssen has his own improved waffle recipe. His version is lighter and less heavily sweetened than the ones in style at the Academy",
+    "bg_description": "Dessert-making is a hobby Luuk Herssen took up amid his busy schedule. Creating treats is similar to conducting experiments. Both involve following a prescribed order, which helps him regain a sense of familiarity he once had. Meanwhile, the comfort of cooking connects him to the vibrant realities of life. Of course, not every attempt is a success. But he chose to present his most successful creation to you, for whom he'll share the very life he has experienced.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_200_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_200_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_200_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130057,
+    "name": "Yogurt, Oranges, and Frosting",
+    "attributes_description": "Pour some yogurt into the answer, draw some oranges in the runes, spread some frosting over the future.\nThere is no right or wrong—a perfect balance of sweet and sour.",
+    "bg_description": "Fully activate Luuk Herssen's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80131007,
+    "name": "Matrix Ranger",
+    "attributes_description": "A limited-time title from Endstate Matrix: Doomsday Cycle. Obtainable at any Challenge Stage and remains active until the end of the current stage.",
+    "bg_description": "You traverse the data world and stave off the all-consuming shadows, while the blissfully ignorant world welcomes a new dawn.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_10a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_10a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_10a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80110488,
+    "name": "To Bright Warm Gold",
+    "attributes_description": "Background music of \"Soar to the Beat.\"",
+    "bg_description": "Complete Main Quest \"Gold Suspended in Shadows\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110489,
+    "name": "Unraveling of a Fantasy",
+    "attributes_description": "Background music of the Mind Dive Arcade.",
+    "bg_description": "Complete Main Quest \"Gold Suspended in Shadows\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110490,
+    "name": "Running Towards Startorch",
+    "attributes_description": "Background music of Rabelle College.",
+    "bg_description": "Complete Main Quest \"Gold Suspended in Shadows\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110491,
+    "name": "Moments of a Joyous Sunrise",
+    "attributes_description": "Background music of the New Solar Celebration.",
+    "bg_description": "Complete Main Quest \"Gold Suspended in Shadows\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110492,
+    "name": "Moments of a Tranquil Sunset",
+    "attributes_description": "Background music of the New Solar Celebration.",
+    "bg_description": "Complete Main Quest \"Gold Suspended in Shadows\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110493,
+    "name": "Shadows on Your Tail",
+    "attributes_description": "Background music of the Academy's Dark Side.",
+    "bg_description": "Complete Main Quest \"Gold Suspended in Shadows\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110494,
+    "name": "Beneath the Vortex",
+    "attributes_description": "Background music of the Academy's Dark Side.",
+    "bg_description": "Complete Main Quest \"Gold Suspended in Shadows\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110495,
+    "name": "A Life of Drama",
+    "attributes_description": "Background music of the Academy's Dark Side.",
+    "bg_description": "Unlocked after completing Main Quest \"Rabbit Reflected in Shades.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70340008,
+    "name": "Paper Black Cat",
+    "attributes_description": "A paper black cat gifted to you by Sigrika, a bit crooked, but very much heartfelt.",
+    "bg_description": "She pressed her feelings into the folds. In each crease is a wordless thank-you.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_211_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_211_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_211_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70350000,
+    "name": "New Solar Celebration Pass",
+    "attributes_description": "An admission pass granting entry to the New Solar Celebration. It also serves as a small keepsake for those who have taken part in the celebration.",
+    "bg_description": "The Exostrider poured forth light and heat from its Reactor Drive, sheltering life from the killing frost. Grateful for this gift, the Roya revered the Reactor Drive as their sun. They took it upon themselves to gather the Exostrider's \"cells,\" making this quiet labor the duty of their tribe.\nNow, their ancient vow is complete. As the new sun rises, they hold the New Solar Celebration, both to mark the renewal and to remind their kin of the purpose that set them on this path.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_208_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_208_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_208_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000182,
+    "name": "Livery Set - Call from Beyond the Stars",
+    "attributes_description": "Open to obtain the expedition motorbike Livery \"Call from Beyond the Stars.\" Used to decorate both the left and right fenders.",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity30/MotoDIY/T_MotoDIYStickerIcon69.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity30/MotoDIY/T_MotoDIYStickerIcon69_160.png",
+    "icon_small": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity30/MotoDIY/T_MotoDIYStickerIcon69_80.png",
     "rarity": 4
   }
 ]

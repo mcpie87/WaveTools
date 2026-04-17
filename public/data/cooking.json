@@ -2883,7 +2883,7 @@
         "value": 3
       }
     ],
-    "typeId": 1
+    "typeId": 3
   },
   {
     "type": "dish",
@@ -2920,7 +2920,7 @@
         "value": 1
       }
     ],
-    "typeId": 1
+    "typeId": 2
   },
   {
     "type": "dish",
@@ -2947,7 +2947,7 @@
         "value": 2
       }
     ],
-    "typeId": 1,
+    "typeId": 3,
     "specialtyItem": {
       "id": 80001070,
       "name": "Super Snowfluff Storm",
@@ -2990,7 +2990,7 @@
         "value": 2
       }
     ],
-    "typeId": 1
+    "typeId": 2
   },
   {
     "type": "dish",
@@ -3092,7 +3092,23 @@
         "value": 3
       }
     ],
-    "typeId": 1
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001074,
+      "name": "Star Crackle",
+      "attributes_description": "Grants 35% Heavy ATK DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Sigrika's take on Fruit Crackle, which she made to satisfy her own tastes. The star-shaped frosted candy is cool, sweet, and refreshing.\nShe didn't follow the recipe to the letter. Instead, she added a dash of \"inspiration\" on a whim.\nThankfully, the result was pretty good.\nSometimes a little inspiration goes a long way.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_25_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_25_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_25_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1412,
+      "name": "Sigrika",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_65_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -3173,7 +3189,7 @@
         "value": 3
       }
     ],
-    "typeId": 1
+    "typeId": 2
   },
   {
     "type": "dish",
@@ -3200,7 +3216,7 @@
         "value": 3
       }
     ],
-    "typeId": 1
+    "typeId": 2
   },
   {
     "type": "dish",
@@ -3317,7 +3333,7 @@
         "value": 3
       }
     ],
-    "typeId": 1,
+    "typeId": 2,
     "specialtyItem": {
       "id": 80001081,
       "name": "Rainbow Wonder Cup Noodles",
@@ -3360,7 +3376,7 @@
         "value": 3
       }
     ],
-    "typeId": 1
+    "typeId": 2
   },
   {
     "type": "dish",
@@ -3424,7 +3440,7 @@
         "value": 2
       }
     ],
-    "typeId": 1
+    "typeId": 2
   },
   {
     "type": "dish",

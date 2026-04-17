@@ -352,6 +352,14 @@
           "Sacred Salt - 16"
         ],
         "limit": 20
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 80"
+        ],
+        "limit": 15
       }
     ]
   },
@@ -406,6 +414,14 @@
           "Sacred Salt - 16"
         ],
         "limit": 20
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 80"
+        ],
+        "limit": 15
       }
     ]
   },
@@ -452,6 +468,14 @@
           "Sacred Salt - 20"
         ],
         "limit": 20
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 100"
+        ],
+        "limit": 15
       }
     ]
   },
@@ -618,6 +642,14 @@
           "Shell Credit - 300"
         ],
         "limit": 20
+      },
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
       }
     ]
   },
@@ -656,6 +688,14 @@
           "Shell Credit - 300"
         ],
         "limit": 20
+      },
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
       }
     ]
   },
@@ -682,6 +722,14 @@
       {
         "id": 118,
         "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 500"
         ],
@@ -724,6 +772,14 @@
           "Shell Credit - 300"
         ],
         "limit": 20
+      },
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
       }
     ]
   },
@@ -784,6 +840,14 @@
           "Shell Credit - 300"
         ],
         "limit": 20
+      },
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
       }
     ]
   },
@@ -1160,6 +1224,14 @@
           "Shell Credit - 300"
         ],
         "limit": 20
+      },
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
       }
     ]
   },
@@ -1190,6 +1262,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
       }
     ]
   },
@@ -1216,6 +1296,14 @@
       {
         "id": 118,
         "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 500"
         ],
@@ -1435,7 +1523,7 @@
   },
   {
     "id": 80010032,
-    "itemName": "A recipe that details how to make Happiness Tea.",
+    "itemName": "Happiness Tea Recipe",
     "shops": [
       {
         "id": 104,
@@ -1540,6 +1628,14 @@
           "Shell Credit - 20000"
         ],
         "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1558,6 +1654,14 @@
       {
         "id": 122,
         "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 20000"
         ],
@@ -1584,6 +1688,14 @@
           "Shell Credit - 20000"
         ],
         "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1606,6 +1718,14 @@
           "Shell Credit - 20000"
         ],
         "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1624,6 +1744,14 @@
       {
         "id": 122,
         "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 20000"
         ],
@@ -1796,6 +1924,14 @@
           "Monnaie - 200"
         ],
         "limit": 10
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 200"
+        ],
+        "limit": 10
       }
     ]
   },
@@ -1898,6 +2034,14 @@
           "Sacred Salt - 10"
         ],
         "limit": 26
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 100"
+        ],
+        "limit": 12
       }
     ]
   },
@@ -2212,6 +2356,14 @@
           "Shell Credit - 40000"
         ],
         "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -2230,6 +2382,14 @@
       {
         "id": 122,
         "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 40000"
         ],
@@ -2256,6 +2416,14 @@
           "Shell Credit - 40000"
         ],
         "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -2278,6 +2446,14 @@
           "Shell Credit - 40000"
         ],
         "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -2296,6 +2472,14 @@
       {
         "id": 122,
         "shopName": "Masks & Garments <word>[Masked Reverie]</word>",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 40000"
         ],
@@ -2512,6 +2696,14 @@
           "Shell Credit - 3000"
         ],
         "limit": 6
+      },
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 6
       }
     ]
   },
@@ -2538,6 +2730,14 @@
       {
         "id": 129,
         "shopName": "The Silver Helmet",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
+      },
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 4500"
         ],
@@ -2572,6 +2772,14 @@
           "Shell Credit - 4500"
         ],
         "limit": 3
+      },
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
       }
     ]
   },
@@ -2602,6 +2810,14 @@
           "Shell Credit - 9000"
         ],
         "limit": 2
+      },
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
       }
     ]
   },
@@ -2628,6 +2844,14 @@
       {
         "id": 129,
         "shopName": "The Silver Helmet",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
+      },
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 9000"
         ],
@@ -2950,6 +3174,30 @@
           "Sacred Salt - 160"
         ],
         "limit": 1
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 400"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 400"
+        ],
+        "limit": 1
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 400"
+        ],
+        "limit": 1
       }
     ]
   },
@@ -3030,6 +3278,14 @@
       {
         "id": 118,
         "shopName": "Gondola Market",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 50
+      },
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
         "price": [
           "Shell Credit - 500"
         ],
@@ -3446,6 +3702,14 @@
           "Monnaie - 200"
         ],
         "limit": 10
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 200"
+        ],
+        "limit": 10
       }
     ]
   },
@@ -3468,6 +3732,14 @@
           "Monnaie - 250"
         ],
         "limit": 12
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 250"
+        ],
+        "limit": 10
       }
     ]
   },
@@ -4414,6 +4686,860 @@
           "Sacred Salt - 200"
         ],
         "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 42601300,
+    "itemName": "Luminous Calendula",
+    "shops": [
+      {
+        "id": 129,
+        "shopName": "The Silver Helmet",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601290,
+    "itemName": "Sliverglow Bloom",
+    "shops": [
+      {
+        "id": 129,
+        "shopName": "The Silver Helmet",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601280,
+    "itemName": "Stone Rose",
+    "shops": [
+      {
+        "id": 129,
+        "shopName": "The Silver Helmet",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 80010065,
+    "itemName": "Marinated Olives Recipe",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Tavern",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010066,
+    "itemName": "Blooming Bread Recipe",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Tavern",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010067,
+    "itemName": "Laurel Shrimp in Nimbus Reduction Recipe",
+    "shops": [
+      {
+        "id": 128,
+        "shopName": "Solis Tavern",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42100042,
+    "itemName": "Abyssal Solvent",
+    "shops": [
+      {
+        "id": 129,
+        "shopName": "The Silver Helmet",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42601310,
+    "itemName": "Summer Flower",
+    "shops": [
+      {
+        "id": 117,
+        "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 80010028,
+    "itemName": "Chili Sauce Tofu Recipe",
+    "shops": [
+      {
+        "id": 108,
+        "shopName": "Panhua's Restaurant",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 43021051,
+    "itemName": "LF Waveworn Shard",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 50000418,
+    "itemName": "Advanced Enclosure Tank - Lahai-Roi",
+    "shops": [
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 40"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80010068,
+    "itemName": "Skelecanth Tartare Recipe",
+    "shops": [
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 150"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010069,
+    "itemName": "Lichen Salad Recipe",
+    "shops": [
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 150"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 43021022,
+    "itemName": "Aftertune Combustor",
+    "shops": [
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 43021052,
+    "itemName": "MF Waveworn Shard",
+    "shops": [
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 43021032,
+    "itemName": "Broken String",
+    "shops": [
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 43021042,
+    "itemName": "MF Carved Crystal",
+    "shops": [
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 43021012,
+    "itemName": "Monowing Polarizer",
+    "shops": [
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 180"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 50000419,
+    "itemName": "Premium Enclosure Tank - Lahai-Roi",
+    "shops": [
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 120"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 42601320,
+    "itemName": "Pine Cone",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601340,
+    "itemName": "Dusk Honeypot",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601350,
+    "itemName": "Fern Spore",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601360,
+    "itemName": "Cradle Lichen",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601370,
+    "itemName": "Jade Wood",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 30
+      }
+    ]
+  },
+  {
+    "id": 42601380,
+    "itemName": "Gemini Spore",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601390,
+    "itemName": "Rimewisp",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601400,
+    "itemName": "Arithmetic Shell",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42100043,
+    "itemName": "Fusion Interference Potion",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100044,
+    "itemName": "Aero Interference Potion",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100045,
+    "itemName": "Electro Interference Potion",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100046,
+    "itemName": "Glacio Interference Potion",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100047,
+    "itemName": "Spectro Interference Potion",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 42100048,
+    "itemName": "Havoc Interference Potion",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 6000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000076,
+    "itemName": "\"Munchie-More\" Bun",
+    "shops": [
+      {
+        "id": 143,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000077,
+    "itemName": "Complete Nutrition Squeezy Jelly",
+    "shops": [
+      {
+        "id": 143,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000080,
+    "itemName": "Instant Wakeup Energy Gel Sachet",
+    "shops": [
+      {
+        "id": 143,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000081,
+    "itemName": "Midnight Wonder Cup Noodles",
+    "shops": [
+      {
+        "id": 143,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80010076,
+    "itemName": "\"Munchie-More\" Bun Recipe",
+    "shops": [
+      {
+        "id": 143,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010077,
+    "itemName": "Complete Nutrition Squeezy Jelly Recipe",
+    "shops": [
+      {
+        "id": 143,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010080,
+    "itemName": "Instant Wakeup Energy Gel Sachet Recipe",
+    "shops": [
+      {
+        "id": 143,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010081,
+    "itemName": "Midnight Wonder Cup Noodles Recipe",
+    "shops": [
+      {
+        "id": 143,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 41100061,
+    "itemName": "LF Exoswarm Core",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 41100071,
+    "itemName": "LF Mech Core",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 41100081,
+    "itemName": "Fractured Exoswarm Pendant",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 41100062,
+    "itemName": "MF Exoswarm Core",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 41100072,
+    "itemName": "MF Mech Core",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 41100082,
+    "itemName": "Worn Exoswarm Pendant",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 43021011,
+    "itemName": "Broken Wing Polarizer",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 43021021,
+    "itemName": "Incomplete Combustor",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 43021031,
+    "itemName": "Spliced String",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 43021041,
+    "itemName": "LF Carved Crystal",
+    "shops": [
+      {
+        "id": 144,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000072,
+    "itemName": "Smoked Meat Stew",
+    "shops": [
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000073,
+    "itemName": "Grilled Fern Spore",
+    "shops": [
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000075,
+    "itemName": "\"Crack & Bolt\" Fish Jar",
+    "shops": [
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80000078,
+    "itemName": "Lahai-Roi Special Plant Milk",
+    "shops": [
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 20
+      }
+    ]
+  },
+  {
+    "id": 80010072,
+    "itemName": "Smoked Meat Stew Recipe",
+    "shops": [
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010073,
+    "itemName": "Grilled Fern Spore Recipe",
+    "shops": [
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010075,
+    "itemName": "\"Crack & Bolt\" Fish Jar Recipe",
+    "shops": [
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010078,
+    "itemName": "Lahai-Roi Special Plant Milk Recipe",
+    "shops": [
+      {
+        "id": 142,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 42601420,
+    "itemName": "Moss Amber",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601430,
+    "itemName": "Edelschnee",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
       }
     ]
   }
