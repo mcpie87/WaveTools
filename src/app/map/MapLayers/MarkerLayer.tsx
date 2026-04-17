@@ -47,7 +47,7 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
 
       const markerSize = ignoreMarkerBg ? 40 : 32;
       const markerBody = `
-        <img src="${worldmapIconUrl}" style="width:${markerSize}px; height:${markerSize}px; object-fit:contain;" />
+        <img src="${worldmapIconUrl}" style="width:${markerSize}px; height:${markerSize}px; ${ignoreMarkerBg ? `opacity:${mainOpacity}; ` : ''}object-fit:contain;" />
       `
 
       html = ignoreMarkerBg
