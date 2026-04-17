@@ -240,7 +240,7 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
     key: "PUZZLE_BIKE_CHALLENGE",
     keys: [
       "branch3.0_692_Gameplay_MotorZhongDuan",
-      "branch3.0_135_Gameplay513",
+      // "branch3.0_135_Gameplay513", // DEPRECATED: 3.2 - query covers it
     ]
   },
   [Puzzle.SMARTPRINT_CUBE]: {
