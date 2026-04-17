@@ -180,6 +180,8 @@ export enum SonoroDungeonName {
   COMMAND_RISE = "Command Rise",
   TWILIGHT_RISE = "Twilight Rise",
   RESOUNDING_RISE = "Resounding Rise",
+  // 3.0
+  SPACETREK_COLLECTIVE = "Spacetrek Collective", // not really sonoro
 }
 export enum TestDungeonName {
   TEST_DUNGEON = "Game Test Dungeon",
@@ -380,6 +382,10 @@ export const sonoroDungeonMapConfigs: Record<string, MapConfig> = {
   [SonoroDungeonName.RESOUNDING_RISE]: {
     // Quest: Resounding Rise
     mapId: 2508,
+  },
+  [SonoroDungeonName.SPACETREK_COLLECTIVE]: {
+    // Quest: Spacetrek Collective
+    mapId: 2516,
   },
 };
 
