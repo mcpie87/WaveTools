@@ -2042,6 +2042,14 @@
           "\"Module\" - 100"
         ],
         "limit": 12
+      },
+      {
+        "id": 140,
+        "shopName": "NO CONTENT",
+        "price": [
+          "\"Module\" - 100"
+        ],
+        "limit": 50
       }
     ]
   },
@@ -5532,6 +5540,34 @@
   {
     "id": 42601430,
     "itemName": "Edelschnee",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601480,
+    "itemName": "Dream of Stars",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601490,
+    "itemName": "Redbell",
     "shops": [
       {
         "id": 141,

@@ -59275,5 +59275,2331 @@
         }
       }
     }
+  },
+  {
+    "id": 1211,
+    "rarity": 5,
+    "name": "Denia",
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "element": {
+      "id": 2,
+      "name": "Fusion",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementFire.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_64_UI.png",
+    "body": "FemaleMS",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_64_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_64_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_64_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 41100071,
+            "name": "LF Mech Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 41400274,
+            "name": "Burning Judgment",
+            "value": 3
+          },
+          {
+            "id": 42601480,
+            "name": "Dream of Stars",
+            "value": 4
+          },
+          {
+            "id": 41100072,
+            "name": "MF Mech Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 41400274,
+            "name": "Burning Judgment",
+            "value": 6
+          },
+          {
+            "id": 42601480,
+            "name": "Dream of Stars",
+            "value": 8
+          },
+          {
+            "id": 41100072,
+            "name": "MF Mech Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 41400274,
+            "name": "Burning Judgment",
+            "value": 9
+          },
+          {
+            "id": 42601480,
+            "name": "Dream of Stars",
+            "value": 12
+          },
+          {
+            "id": 41100073,
+            "name": "HF Mech Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 41400274,
+            "name": "Burning Judgment",
+            "value": 12
+          },
+          {
+            "id": 42601480,
+            "name": "Dream of Stars",
+            "value": 16
+          },
+          {
+            "id": 41100073,
+            "name": "HF Mech Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 41400274,
+            "name": "Burning Judgment",
+            "value": 16
+          },
+          {
+            "id": 42601480,
+            "name": "Dream of Stars",
+            "value": 20
+          },
+          {
+            "id": 41100074,
+            "name": "FF Mech Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talentMaterials": {
+      "normalAttack": {
+        "id": 1005301,
+        "name": "Dreamweaver's Banquet",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 2
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 3
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 2
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 3
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 3
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 5
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 2
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 3
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 6
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceSkill": {
+        "id": 1005302,
+        "name": "Dummy Honey",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 2
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 3
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 2
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 3
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 3
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 5
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 2
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 3
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 6
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceLiberation": {
+        "id": 1005303,
+        "name": "Final Act",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 2
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 3
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 2
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 3
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 3
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 5
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 2
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 3
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 6
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "inherentFirst": {
+        "id": 1005304,
+        "name": "Vestiges of Falsehood",
+        "levels": {
+          "1": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 3
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 10000
+            }
+          ]
+        }
+      },
+      "inherentSecond": {
+        "id": 1005305,
+        "name": "Etched Colors",
+        "levels": {
+          "1": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 3
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 20000
+            }
+          ]
+        }
+      },
+      "intro": {
+        "id": 1005306,
+        "name": "Formal Greetings",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 2
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 3
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 2
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 3
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 3
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 5
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 2
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 3
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 6
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "forte": {
+        "id": 1005307,
+        "name": "\"Flawless\"",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 2
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021031,
+              "name": "Spliced String",
+              "value": 3
+            },
+            {
+              "id": 41100071,
+              "name": "LF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 2
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021032,
+              "name": "Broken String",
+              "value": 3
+            },
+            {
+              "id": 41100072,
+              "name": "MF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 3
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021033,
+              "name": "Solidified String",
+              "value": 5
+            },
+            {
+              "id": 41100073,
+              "name": "HF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 2
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 3
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021034,
+              "name": "Melodic String",
+              "value": 6
+            },
+            {
+              "id": 41100074,
+              "name": "FF Mech Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "outro": {
+        "id": 1005309,
+        "name": "Unfinished Lies",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      },
+      "cooking": {
+        "id": 1005308,
+        "name": "Skillful Cooking",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": 1108,
+    "rarity": 5,
+    "name": "Hiyuki",
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "element": {
+      "id": 1,
+      "name": "Glacio",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElement128/T_IconElementIce.png"
+    },
+    "card": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_67_UI.png",
+    "body": "FemaleXL",
+    "icon": {
+      "circle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHeadCircle256/T_IconRoleHeadCircle256_67_UI.png",
+      "large": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_67_UI.png",
+      "big": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead150/T_IconRoleHead150_67_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 41100061,
+            "name": "LF Exoswarm Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 5000
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 41400284,
+            "name": "Our Choice",
+            "value": 3
+          },
+          {
+            "id": 42601490,
+            "name": "Redbell",
+            "value": 4
+          },
+          {
+            "id": 41100062,
+            "name": "MF Exoswarm Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 41400284,
+            "name": "Our Choice",
+            "value": 6
+          },
+          {
+            "id": 42601490,
+            "name": "Redbell",
+            "value": 8
+          },
+          {
+            "id": 41100062,
+            "name": "MF Exoswarm Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 41400284,
+            "name": "Our Choice",
+            "value": 9
+          },
+          {
+            "id": 42601490,
+            "name": "Redbell",
+            "value": 12
+          },
+          {
+            "id": 41100063,
+            "name": "HF Exoswarm Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 41400284,
+            "name": "Our Choice",
+            "value": 12
+          },
+          {
+            "id": 42601490,
+            "name": "Redbell",
+            "value": 16
+          },
+          {
+            "id": 41100063,
+            "name": "HF Exoswarm Core",
+            "value": 8
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 41400284,
+            "name": "Our Choice",
+            "value": 16
+          },
+          {
+            "id": 42601490,
+            "name": "Redbell",
+            "value": 20
+          },
+          {
+            "id": 41100064,
+            "name": "FF Exoswarm Core",
+            "value": 4
+          },
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          }
+        ]
+      }
+    ],
+    "talentMaterials": {
+      "normalAttack": {
+        "id": 1005201,
+        "name": "Flaming Sakura Blade Art",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 5
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 6
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceSkill": {
+        "id": 1005202,
+        "name": "Frostblight",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 5
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 6
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "resonanceLiberation": {
+        "id": 1005203,
+        "name": "Foreclaiming",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 5
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 6
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "inherentFirst": {
+        "id": 1005204,
+        "name": "Fine Snow",
+        "levels": {
+          "1": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 10000
+            }
+          ]
+        }
+      },
+      "inherentSecond": {
+        "id": 1005205,
+        "name": "Ephemeral Realm",
+        "levels": {
+          "1": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 20000
+            }
+          ]
+        }
+      },
+      "intro": {
+        "id": 1005206,
+        "name": "Frostedge",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 5
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 6
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "forte": {
+        "id": 1005207,
+        "name": "Everfrost Dominion",
+        "levels": {
+          "1": [
+
+          ],
+          "2": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 1500
+            }
+          ],
+          "3": [
+            {
+              "id": 43021011,
+              "name": "Broken Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100061,
+              "name": "LF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 2000
+            }
+          ],
+          "4": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 4500
+            }
+          ],
+          "5": [
+            {
+              "id": 43021012,
+              "name": "Monowing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100062,
+              "name": "MF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 6000
+            }
+          ],
+          "6": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 16000
+            }
+          ],
+          "7": [
+            {
+              "id": 43021013,
+              "name": "Polywing Polarizer",
+              "value": 5
+            },
+            {
+              "id": 41100063,
+              "name": "HF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 30000
+            }
+          ],
+          "8": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 2
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 2
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 50000
+            }
+          ],
+          "9": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 3
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 3
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 70000
+            }
+          ],
+          "10": [
+            {
+              "id": 43021014,
+              "name": "Layered Wing Polarizer",
+              "value": 6
+            },
+            {
+              "id": 41100064,
+              "name": "FF Exoswarm Core",
+              "value": 4
+            },
+            {
+              "id": 41400304,
+              "name": "We Who Question",
+              "value": 1
+            },
+            {
+              "id": 2,
+              "name": "Shell Credit",
+              "value": 100000
+            }
+          ]
+        }
+      },
+      "outro": {
+        "id": 1005209,
+        "name": "Snowlight Blessing",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      },
+      "cooking": {
+        "id": 1005208,
+        "name": "Skillful Cooking",
+        "levels": {
+          "1": [
+
+          ]
+        }
+      }
+    }
   }
 ]

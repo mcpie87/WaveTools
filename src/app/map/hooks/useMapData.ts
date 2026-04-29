@@ -96,7 +96,7 @@ export function useMapData() {
       const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
       const url = `${basePath}/data/map_tiles.json`;
       const cache = await caches.open('area-layers-cache');
-      const cached = await cache.match(url);
+      const cached = await cache.match(url + GAME_VERSION);
       if (cached) { setLayersData(await cached.json()); return; }
       const res = await fetch(url);
       if (res.ok) { await cache.put(url, res.clone()); setLayersData(await res.json()); }

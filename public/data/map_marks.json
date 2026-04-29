@@ -13920,6 +13920,118 @@
     "title": "SkyArk Space Station: Blocked Sector"
   },
   {
+    "id": 3320001,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000128,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3320002,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000091,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3320003,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000103,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3320004,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000116,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3320005,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000089,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320006,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000093,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320007,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000095,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320008,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000130,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320009,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000105,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320010,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000107,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320011,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000114,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320012,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000118,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320013,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000120,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320014,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151000122,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
     "id": 3130001,
     "mapId": 8,
     "relativeId": 2081,
@@ -13976,12 +14088,52 @@
     "title": "Tempest Mephis"
   },
   {
+    "id": 3360001,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Dimmr Plains"
+  },
+  {
     "id": 3210001,
     "mapId": 906,
     "relativeId": 0,
     "entityConfigId": 229800001,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_77_UI.png",
     "title": "Mind Dive Arcade"
+  },
+  {
+    "id": 3360002,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Solisia Landing"
+  },
+  {
+    "id": 3360003,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Sealed Fissure"
+  },
+  {
+    "id": 3360004,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Silent Crag"
+  },
+  {
+    "id": 3360005,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Dimmr Deep"
   },
   {
     "id": 3150214,
@@ -14704,12 +14856,364 @@
     "title": "Platya's Gift"
   },
   {
+    "id": 3380001,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850192,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc010.png",
+    "title": "Royan Rune Mark Point I"
+  },
+  {
+    "id": 3380002,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850193,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc010.png",
+    "title": "Royan Rune Mark Point II"
+  },
+  {
+    "id": 3380003,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850194,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc010.png",
+    "title": "Royan Rune Mark Point III"
+  },
+  {
+    "id": 3380004,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850198,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc007.png",
+    "title": "Free Operative"
+  },
+  {
+    "id": 3380005,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850199,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc007.png",
+    "title": "Free Operative"
+  },
+  {
+    "id": 3380006,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850200,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc007.png",
+    "title": "Free Operative"
+  },
+  {
+    "id": 3380007,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850195,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc011.png",
+    "title": "Team 6"
+  },
+  {
+    "id": 3380008,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850196,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc011.png",
+    "title": "Team 6"
+  },
+  {
+    "id": 3380009,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850197,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc011.png",
+    "title": "Team 6"
+  },
+  {
+    "id": 3380010,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850191,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc005.png",
+    "title": "Team 14"
+  },
+  {
+    "id": 3380011,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850190,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc004.png",
+    "title": "Team 10"
+  },
+  {
+    "id": 3380012,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850201,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc001.png",
+    "title": "Team 22"
+  },
+  {
+    "id": 3380013,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850202,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc006.png",
+    "title": "Team 17"
+  },
+  {
+    "id": 3380014,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850189,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc003.png",
+    "title": "I.R.I.S."
+  },
+  {
+    "id": 3380015,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850203,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc012.png",
+    "title": "Team 4 & Team 9"
+  },
+  {
+    "id": 3380016,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850204,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc012.png",
+    "title": "Team 7"
+  },
+  {
+    "id": 3380017,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850205,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc012.png",
+    "title": "Team 13 & Team 18"
+  },
+  {
+    "id": 3380018,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850209,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc008.png",
+    "title": "Team 8"
+  },
+  {
+    "id": 3380019,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850206,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc013.png",
+    "title": "Team 2"
+  },
+  {
+    "id": 3380020,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850207,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc013.png",
+    "title": "Team 19 & Team 20"
+  },
+  {
+    "id": 3380021,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850208,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/WorldMapIconNpc/SP_IconMapNpc013.png",
+    "title": "Team 3 & Team 5"
+  },
+  {
+    "id": 3340001,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 184850005,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
+    "title": "Voidbane Eldertree - Silent Crag"
+  },
+  {
+    "id": 3340002,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 184850004,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
+    "title": "Voidbane Eldertree - Sealed Fissure"
+  },
+  {
+    "id": 3340003,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 184850006,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
+    "title": "Voidbane Eldertree - Dimmr Deep"
+  },
+  {
+    "id": 3340004,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 184850007,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
+    "title": "Voidbane Eldertree - Solisia Landing"
+  },
+  {
+    "id": 3340005,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 184850008,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_ActivityInfrastructure33_UI.png",
+    "title": "Base Camp"
+  },
+  {
     "id": 3241200,
     "mapId": 906,
     "relativeId": 0,
     "entityConfigId": 228800000,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_24_UI.png",
     "title": "Endstate Matrix"
+  },
+  {
+    "id": 3330001,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850135,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_03_UI.png",
+    "title": "Luuk Herssen's \"Secret Workspace\""
+  },
+  {
+    "id": 3360006,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Dimmr Plains Shaft"
+  },
+  {
+    "id": 3360007,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Base Camp"
+  },
+  {
+    "id": 3360008,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Rustbound Hillside"
+  },
+  {
+    "id": 3360009,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Twilight Woodlands"
+  },
+  {
+    "id": 3360010,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Stalaglow Cavern"
+  },
+  {
+    "id": 3360011,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Nevermore Halls"
+  },
+  {
+    "id": 3360012,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Ceased Court"
+  },
+  {
+    "id": 3360013,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Petalfold Recess"
+  },
+  {
+    "id": 3360014,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Skyrelic Cascade"
+  },
+  {
+    "id": 3360015,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Voidthirst Cradle"
+  },
+  {
+    "id": 3360016,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Ljos Isle"
+  },
+  {
+    "id": 3360017,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Tomorrow's Horizon"
+  },
+  {
+    "id": 3360018,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Frostseize Isle"
+  },
+  {
+    "id": 3360019,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Solvein Heartwood"
+  },
+  {
+    "id": 3350001,
+    "mapId": 909,
+    "relativeId": 151850029,
+    "entityConfigId": 151850087,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Threat Elimination"
+  },
+  {
+    "id": 3350002,
+    "mapId": 909,
+    "relativeId": 151850025,
+    "entityConfigId": 151850127,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Threat Elimination"
+  },
+  {
+    "id": 3350003,
+    "mapId": 909,
+    "relativeId": 151850031,
+    "entityConfigId": 151850111,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Threat Elimination"
   },
   {
     "id": 3280001,
@@ -14806,5 +15310,821 @@
     "entityConfigId": 165800079,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
     "title": "Take a photo at the designated location"
+  },
+  {
+    "id": 5017,
+    "mapId": 909,
+    "relativeId": 316850014,
+    "entityConfigId": 316850013,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png",
+    "title": "Tacet Field: Solisia Landing"
+  },
+  {
+    "id": 3340011,
+    "mapId": 909,
+    "relativeId": 318850014,
+    "entityConfigId": 318850053,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_49_UI.png",
+    "title": "Dimmr Plains - Void Storm Zone I"
+  },
+  {
+    "id": 3340012,
+    "mapId": 909,
+    "relativeId": 318850016,
+    "entityConfigId": 318850054,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_49_UI.png",
+    "title": "Dimmr Plains - Void Storm Zone II"
+  },
+  {
+    "id": 3340013,
+    "mapId": 909,
+    "relativeId": 318850018,
+    "entityConfigId": 318850055,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_49_UI.png",
+    "title": "Dimmr Plains - Void Storm Zone III"
+  },
+  {
+    "id": 3340014,
+    "mapId": 909,
+    "relativeId": 318850020,
+    "entityConfigId": 318850056,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_49_UI.png",
+    "title": "Dimmr Plains - Void Storm Zone IV"
+  },
+  {
+    "id": 3370001,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151850547,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Stalaglow Cavern"
+  },
+  {
+    "id": 3350004,
+    "mapId": 909,
+    "relativeId": 151850027,
+    "entityConfigId": 151850077,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Threat Elimination"
+  },
+  {
+    "id": 3330002,
+    "mapId": 909,
+    "relativeId": 2091,
+    "entityConfigId": 161850063,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMonsterHead_34028_UI.png",
+    "title": "Seed of Illusory Origin"
+  },
+  {
+    "id": 3340100,
+    "mapId": 906,
+    "relativeId": 8003,
+    "entityConfigId": 207850003,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_02_UI.png",
+    "title": "Depths of Illusive Realm: Chromatic Fantasy"
+  },
+  {
+    "id": 3350101,
+    "mapId": 909,
+    "relativeId": 692850000,
+    "entityConfigId": 692850178,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350102,
+    "mapId": 909,
+    "relativeId": 692850001,
+    "entityConfigId": 692850177,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350103,
+    "mapId": 909,
+    "relativeId": 692850002,
+    "entityConfigId": 692850179,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350104,
+    "mapId": 909,
+    "relativeId": 692850007,
+    "entityConfigId": 692850256,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350105,
+    "mapId": 909,
+    "relativeId": 692850006,
+    "entityConfigId": 692850250,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350106,
+    "mapId": 909,
+    "relativeId": 692850005,
+    "entityConfigId": 692850245,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350107,
+    "mapId": 909,
+    "relativeId": 692850004,
+    "entityConfigId": 692850248,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350108,
+    "mapId": 909,
+    "relativeId": 692850010,
+    "entityConfigId": 692850265,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350109,
+    "mapId": 909,
+    "relativeId": 692850009,
+    "entityConfigId": 692850262,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350110,
+    "mapId": 909,
+    "relativeId": 692850011,
+    "entityConfigId": 692850270,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350111,
+    "mapId": 909,
+    "relativeId": 692850008,
+    "entityConfigId": 692850259,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350112,
+    "mapId": 909,
+    "relativeId": 692850003,
+    "entityConfigId": 692850180,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+    "title": "Light Builder"
+  },
+  {
+    "id": 3350201,
+    "mapId": 909,
+    "relativeId": 693850006,
+    "entityConfigId": 693850033,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Route Constructor Racing Challenge I"
+  },
+  {
+    "id": 3350202,
+    "mapId": 909,
+    "relativeId": 693850009,
+    "entityConfigId": 693850142,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Route Constructor Racing Challenge II"
+  },
+  {
+    "id": 3350203,
+    "mapId": 909,
+    "relativeId": 146850020,
+    "entityConfigId": 146850213,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Route Constructor Racing Challenge III"
+  },
+  {
+    "id": 3350204,
+    "mapId": 909,
+    "relativeId": 146850021,
+    "entityConfigId": 146850271,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Route Constructor Racing Challenge IV"
+  },
+  {
+    "id": 3350205,
+    "mapId": 909,
+    "relativeId": 146850022,
+    "entityConfigId": 146850331,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Route Constructor Racing Challenge V"
+  },
+  {
+    "id": 3350206,
+    "mapId": 909,
+    "relativeId": 146850023,
+    "entityConfigId": 146850381,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Route Constructor Racing Challenge VI"
+  },
+  {
+    "id": 3350301,
+    "mapId": 909,
+    "relativeId": 219850005,
+    "entityConfigId": 219850202,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350302,
+    "mapId": 909,
+    "relativeId": 219850006,
+    "entityConfigId": 219850205,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350303,
+    "mapId": 909,
+    "relativeId": 219850007,
+    "entityConfigId": 219850208,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350304,
+    "mapId": 909,
+    "relativeId": 219850008,
+    "entityConfigId": 219850212,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350305,
+    "mapId": 909,
+    "relativeId": 219850009,
+    "entityConfigId": 219850215,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350306,
+    "mapId": 909,
+    "relativeId": 219850010,
+    "entityConfigId": 219850218,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350307,
+    "mapId": 909,
+    "relativeId": 219850011,
+    "entityConfigId": 219850220,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350308,
+    "mapId": 909,
+    "relativeId": 219850012,
+    "entityConfigId": 219850223,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350309,
+    "mapId": 909,
+    "relativeId": 219850013,
+    "entityConfigId": 219850227,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350310,
+    "mapId": 909,
+    "relativeId": 219850014,
+    "entityConfigId": 219850229,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350311,
+    "mapId": 909,
+    "relativeId": 219850015,
+    "entityConfigId": 219850233,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350312,
+    "mapId": 909,
+    "relativeId": 219850016,
+    "entityConfigId": 219850235,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350313,
+    "mapId": 909,
+    "relativeId": 219850017,
+    "entityConfigId": 219850239,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350314,
+    "mapId": 909,
+    "relativeId": 219850018,
+    "entityConfigId": 219850242,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350315,
+    "mapId": 909,
+    "relativeId": 219850019,
+    "entityConfigId": 219850245,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350316,
+    "mapId": 909,
+    "relativeId": 219850020,
+    "entityConfigId": 219850248,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350317,
+    "mapId": 909,
+    "relativeId": 219850021,
+    "entityConfigId": 219850251,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350318,
+    "mapId": 909,
+    "relativeId": 219850022,
+    "entityConfigId": 219850254,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_57_UI.png",
+    "title": "Soliskin"
+  },
+  {
+    "id": 3350401,
+    "mapId": 909,
+    "relativeId": 109850022,
+    "entityConfigId": 109850360,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
+    "title": "Voidmatter Blocks"
+  },
+  {
+    "id": 3350402,
+    "mapId": 909,
+    "relativeId": 109850023,
+    "entityConfigId": 109850361,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
+    "title": "Voidmatter Blocks"
+  },
+  {
+    "id": 3350403,
+    "mapId": 909,
+    "relativeId": 109850024,
+    "entityConfigId": 109850363,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
+    "title": "Voidmatter Blocks"
+  },
+  {
+    "id": 3350404,
+    "mapId": 909,
+    "relativeId": 109850025,
+    "entityConfigId": 109850365,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
+    "title": "Voidmatter Blocks"
+  },
+  {
+    "id": 3350405,
+    "mapId": 909,
+    "relativeId": 109850026,
+    "entityConfigId": 109850367,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_CubeEndless.png",
+    "title": "Voidmatter Blocks"
+  },
+  {
+    "id": 3350501,
+    "mapId": 909,
+    "relativeId": 219000000,
+    "entityConfigId": 219000000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350502,
+    "mapId": 909,
+    "relativeId": 219000005,
+    "entityConfigId": 219000042,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350503,
+    "mapId": 909,
+    "relativeId": 219000006,
+    "entityConfigId": 219000051,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350504,
+    "mapId": 909,
+    "relativeId": 219000007,
+    "entityConfigId": 219000054,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350505,
+    "mapId": 909,
+    "relativeId": 219000008,
+    "entityConfigId": 219000064,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350506,
+    "mapId": 909,
+    "relativeId": 219000010,
+    "entityConfigId": 219000073,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350507,
+    "mapId": 909,
+    "relativeId": 161850010,
+    "entityConfigId": 161850044,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350508,
+    "mapId": 909,
+    "relativeId": 161850011,
+    "entityConfigId": 161850010,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350509,
+    "mapId": 909,
+    "relativeId": 161850012,
+    "entityConfigId": 161850019,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350510,
+    "mapId": 909,
+    "relativeId": 161850013,
+    "entityConfigId": 161850026,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350511,
+    "mapId": 909,
+    "relativeId": 161850014,
+    "entityConfigId": 161850035,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350512,
+    "mapId": 909,
+    "relativeId": 161850015,
+    "entityConfigId": 161850042,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350513,
+    "mapId": 909,
+    "relativeId": 219850023,
+    "entityConfigId": 219850329,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350514,
+    "mapId": 909,
+    "relativeId": 151850037,
+    "entityConfigId": 151850529,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350515,
+    "mapId": 909,
+    "relativeId": 151850038,
+    "entityConfigId": 151850538,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
+    "title": "Treasure Spot: Lahai-Roi"
+  },
+  {
+    "id": 3350601,
+    "mapId": 909,
+    "relativeId": 146850011,
+    "entityConfigId": 146850062,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_69_UI.png",
+    "title": "Motorbike - Flight Track 1"
+  },
+  {
+    "id": 3350602,
+    "mapId": 909,
+    "relativeId": 146850012,
+    "entityConfigId": 146850421,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_69_UI.png",
+    "title": "Motorbike - Flight Track 2"
+  },
+  {
+    "id": 3350603,
+    "mapId": 909,
+    "relativeId": 146850013,
+    "entityConfigId": 146850457,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_69_UI.png",
+    "title": "Motorbike - Flight Track 3"
+  },
+  {
+    "id": 3350604,
+    "mapId": 909,
+    "relativeId": 146850014,
+    "entityConfigId": 146850498,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_69_UI.png",
+    "title": "Motorbike - Flight Track 4"
+  },
+  {
+    "id": 3350605,
+    "mapId": 909,
+    "relativeId": 146850015,
+    "entityConfigId": 146850542,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_69_UI.png",
+    "title": "Motorbike - Flight Track 5"
+  },
+  {
+    "id": 3350801,
+    "mapId": 909,
+    "relativeId": 109850019,
+    "entityConfigId": 109850137,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",
+    "title": "Motorbike - Fixed Track 2"
+  },
+  {
+    "id": 3350802,
+    "mapId": 909,
+    "relativeId": 693850012,
+    "entityConfigId": 693850449,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",
+    "title": "Motorbike - Fixed Track 1"
+  },
+  {
+    "id": 3350901,
+    "mapId": 909,
+    "relativeId": 693850010,
+    "entityConfigId": 109850519,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_73_UI.png",
+    "title": "Motorbike - Stunt Track 1"
+  },
+  {
+    "id": 3350803,
+    "mapId": 909,
+    "relativeId": 161850018,
+    "entityConfigId": 161850317,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",
+    "title": "Motorbike - Fixed Track 3"
+  },
+  {
+    "id": 3310001,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151850128,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_51_UI.png",
+    "title": "Monument of Returning Soliseeds"
+  },
+  {
+    "id": 3310002,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 162850052,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_50_UI.png",
+    "title": "Lahai-Roi: Tape of Last Words Collector"
+  },
+  {
+    "id": 3330003,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 161850036,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_67_UI.png",
+    "title": "Keystone"
+  },
+  {
+    "id": 3350701,
+    "mapId": 909,
+    "relativeId": 151850061,
+    "entityConfigId": 151852661,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_16_UI.png",
+    "title": "A Perfect Day for Flying"
+  },
+  {
+    "id": 3350702,
+    "mapId": 909,
+    "relativeId": 151850062,
+    "entityConfigId": 151852662,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_16_UI.png",
+    "title": "Broken Dimmr Heart"
+  },
+  {
+    "id": 3370002,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 161850230,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Rustbound Hillside"
+  },
+  {
+    "id": 3370003,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 161850306,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Voidthirst Cradle"
+  },
+  {
+    "id": 3370004,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 161850231,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Tomorrow's Horizon"
+  },
+  {
+    "id": 3370005,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 161850233,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Nevermore Halls"
+  },
+  {
+    "id": 3350406,
+    "mapId": 909,
+    "relativeId": 109850034,
+    "entityConfigId": 109850407,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
+    "title": "Voidmatter Blocks"
+  },
+  {
+    "id": 3350407,
+    "mapId": 909,
+    "relativeId": 109850035,
+    "entityConfigId": 109850408,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
+    "title": "Voidmatter Blocks"
+  },
+  {
+    "id": 3350408,
+    "mapId": 909,
+    "relativeId": 109850036,
+    "entityConfigId": 109850409,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
+    "title": "Voidmatter Blocks"
+  },
+  {
+    "id": 3320015,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151853583,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320016,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151853578,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3320017,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 151853580,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3380022,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850214,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_03_UI.png",
+    "title": "Spacetrek Collective Research Institute"
+  },
+  {
+    "id": 3360020,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Keystone"
+  },
+  {
+    "id": 3360021,
+    "mapId": 909,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Endreach Barrens"
+  },
+  {
+    "id": 3380024,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850234,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3380025,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850235,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3380026,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850236,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3380027,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850237,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3380028,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850238,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3380029,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850239,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3380030,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850240,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3380031,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850241,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3380032,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850242,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3380033,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 121850273,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
   }
 ]

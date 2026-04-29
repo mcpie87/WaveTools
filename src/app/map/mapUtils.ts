@@ -140,6 +140,7 @@ export enum MapName {
   LAHAI_ROI = "Lahai Roi",
   ROYA_FROSTLANDS = "Roya Frostlands",
   OVERWORLD = "Overworld",
+  NEW_ZONE = "3.3 New Zone",
 }
 
 // dig in instancedungeon.json for translations
@@ -265,6 +266,11 @@ export const mapConfigs: Record<string, MapConfig> = {
     mapId: 8,
     bounds: [[4, 11], [-3, 3]],
     url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
+  },
+  [MapName.NEW_ZONE]: {
+    mapId: 909,
+    bounds: [[-3, 5], [-2, 5]],
+    url: `${prefix}/AYTiles/T_AYTiles_{x}_{y}_UI.${format}`
   },
   [MapName.OVERWORLD]: {
     mapId: 8,

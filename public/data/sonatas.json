@@ -166,5 +166,17 @@
     "name": "Sound of True Name",
     "sortId": 29,
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriWindVision.png"
+  },
+  {
+    "id": 30,
+    "name": "Wishes of Quiet Snowfall",
+    "sortId": 30,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriIceA1.png"
+  },
+  {
+    "id": 31,
+    "name": "Reel of Spliced Memories",
+    "sortId": 31,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriSupport1.png"
   }
 ]

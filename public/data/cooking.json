@@ -2990,7 +2990,23 @@
         "value": 2
       }
     ],
-    "typeId": 2
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001071,
+      "name": "Splendorous Sweetness",
+      "attributes_description": "Grants 28% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Denia's dessert from a cooking class. She spent most of the session taste-testing, so in the end she went with jam, something easy to prep.\nThe result was extremely sweet, under-marinated, and overcooked. The texture and sweetness never quite came together. But it looked creative and photographed well, so her classmates still gave it decent scores—by a slim margin.\n\"It tastes sweet. It looks nice. That's good enough, right? Hm? Texture and flavor? Sorry, not really following you.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_27_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_27_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_27_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1211,
+      "name": "Denia",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_64_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -3189,7 +3205,23 @@
         "value": 3
       }
     ],
-    "typeId": 2
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001077,
+      "name": "Packaged Red Bean Pudding",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 25%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Red bean pudding that can be easily made at home, a simple homemade dessert. After Hiyuki tweaked the recipe, it now comes in a more convenient package.\nHiyuki doesn't have much of a sweet tooth, but once she became the miko, she quietly visited a dessert shop to learn how to make red bean puddings. \nThe children of Ashinohara came to call it the \"good luck pudding.\" However the story grew, the sweetness itself stayed simple. Almost plain.\nJust as she hoped.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_26_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_26_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_26_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1108,
+      "name": "Hiyuki",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_67_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",

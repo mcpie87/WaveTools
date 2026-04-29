@@ -11,11 +11,11 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 # sudo mount -t drvfs Z: /mnt/z   
 
 # CONFIG
-INPUT_DIR = Path("/mnt/z/projects/WW_Asset/UIResources/UiWorldMap/Image")
+INPUT_DIR = Path("/mnt/z/projects/WW_Asset_Webp/UIResources/UiWorldMap/Image")
 OUTPUT_DIR = Path("./map_tiles")
 CACHE_FILE = Path("./conversion_cache.json")
 PATTERN = r"T_.*_-?[0-9]+_-?[0-9]+_"
-QUALITY = 90
+QUALITY = 80
 MAX_WORKERS = os.cpu_count() or 4  # use all cores
 
 # Load or initialize cache
@@ -30,7 +30,7 @@ else:
     cache = {}
 
 # Find all matching PNGs
-png_files = [p for p in INPUT_DIR.rglob("*.png") if re.match(PATTERN, p.name)]
+png_files = [p for p in INPUT_DIR.rglob("*.webp") if re.match(PATTERN, p.name)]
 print(f"Number of files matching pattern: {len(png_files)}")
 
 def file_size(path: Path) -> int:

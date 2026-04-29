@@ -15860,5 +15860,303 @@
         ]
       }
     ]
+  },
+  {
+    "id": 21050076,
+    "name": "Forged Dwarf Star",
+    "rarity": 5,
+    "weaponType": {
+      "id": 5,
+      "name": "Rectifier",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorMagic.png"
+    },
+    "icon": {
+      "default": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon/T_IconWeapon21050076_UI.png",
+      "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050076_UI.png",
+      "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050076_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          },
+          {
+            "id": 41100061,
+            "name": "LF Exoswarm Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          },
+          {
+            "id": 43021031,
+            "name": "Spliced String",
+            "value": 6
+          },
+          {
+            "id": 41100062,
+            "name": "MF Exoswarm Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          },
+          {
+            "id": 43021032,
+            "name": "Broken String",
+            "value": 8
+          },
+          {
+            "id": 41100063,
+            "name": "HF Exoswarm Core",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 60000
+          },
+          {
+            "id": 43021033,
+            "name": "Solidified String",
+            "value": 6
+          },
+          {
+            "id": 41100063,
+            "name": "HF Exoswarm Core",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          },
+          {
+            "id": 43021034,
+            "name": "Melodic String",
+            "value": 8
+          },
+          {
+            "id": 41100064,
+            "name": "FF Exoswarm Core",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 120000
+          },
+          {
+            "id": 43021034,
+            "name": "Melodic String",
+            "value": 12
+          },
+          {
+            "id": 41100064,
+            "name": "FF Exoswarm Core",
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21020086,
+    "name": "Frostburn",
+    "rarity": 5,
+    "weaponType": {
+      "id": 2,
+      "name": "Sword",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorKnife.png"
+    },
+    "icon": {
+      "default": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon/T_IconWeapon21020086_UI.png",
+      "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020086_UI.png",
+      "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020086_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          },
+          {
+            "id": 41100081,
+            "name": "Fractured Exoswarm Pendant",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          },
+          {
+            "id": 43021011,
+            "name": "Broken Wing Polarizer",
+            "value": 6
+          },
+          {
+            "id": 41100082,
+            "name": "Worn Exoswarm Pendant",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          },
+          {
+            "id": 43021012,
+            "name": "Monowing Polarizer",
+            "value": 8
+          },
+          {
+            "id": 41100083,
+            "name": "Chipped Exoswarm Pendant",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 60000
+          },
+          {
+            "id": 43021013,
+            "name": "Polywing Polarizer",
+            "value": 6
+          },
+          {
+            "id": 41100083,
+            "name": "Chipped Exoswarm Pendant",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          },
+          {
+            "id": 43021014,
+            "name": "Layered Wing Polarizer",
+            "value": 8
+          },
+          {
+            "id": 41100084,
+            "name": "Intact Exoswarm Pendant",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 120000
+          },
+          {
+            "id": 43021014,
+            "name": "Layered Wing Polarizer",
+            "value": 12
+          },
+          {
+            "id": 41100084,
+            "name": "Intact Exoswarm Pendant",
+            "value": 8
+          }
+        ]
+      }
+    ]
   }
 ]

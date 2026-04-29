@@ -3263,7 +3263,7 @@
     "id": 70010057,
     "name": "\"Dream Return Song III: Stone Leaf Tears\"",
     "attributes_description": "The tenth anniversary collector's edition of the storybook \"Stone Leaf Tear\".",
-    "bg_description": "\"He comes back every year, fantasizing her never leaving\" Scripts once won the \"Audience's Choice Award\" in Jinzhou Theater. It tells a story about a couple of childhood sweethearts overcome obstacles to treat strange disease and rescue the whole village. The desolate yet beautiful scene of farewell won over the favor of young boys and girls. Its peripheral product, \"Crystalized Vane\", was once a heat in Jinzhou.",
+    "bg_description": "\"He comes back every year, fantasizing her never leaving\" Scripts once won the \"Audience's Choice Award\" in Jinzhou Theater. It tells a story about a couple of childhood sweethearts overcome obstacles to treat strange disease and rescue the whole village. The desolate yet beautiful scene of farewell won over the favor of young boys and girls. Its peripheral product, \"Crystallized Vane\", was once a heat in Jinzhou.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Level_003_1_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Level_003_1_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Level_003_1_UI.png",
@@ -5953,7 +5953,7 @@
     "id": 80021007,
     "name": "Premium Gold Incense Oil",
     "attributes_description": "An advanced ingredient used to cook special dishes.",
-    "bg_description": "An extremely rare seasoning with an unrivaled aroma that fills your nose once the bottle is uncorked.\nIt is said this seasoning not only enhances the dish's flavor but also, depending on the ingredients used, changes one's perceptions in a particular way.\n \"What do I smell? It smells so good...\"\n \"Oh, I know... It's the aroma of motor oil! The best I've ever smelled!\"\n \"Huh?\"\"",
+    "bg_description": "An extremely rare seasoning with an unrivaled aroma that fills your nose once the bottle is uncorked.\nIt is said this seasoning not only enhances the dish's flavor but also, depending on the ingredients used, changes one's perceptions in a particular way.\n\"What do I smell? It smells so good...\"\n\"Oh, I know... It's the aroma of motor oil! The best I've ever smelled!\"\n\"Huh?\"",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_YJ_038_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_YJ_038_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_YJ_038_UI.png",
@@ -7312,7 +7312,7 @@
   {
     "id": 25,
     "name": "Adventure Log",
-    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" at the Lollo Logistics truck.",
+    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" during the Beyond the Waves event series.",
     "bg_description": "\"If the Pioneer Association is the eyes of civilization, then Lollo Logistics aspires to be the feet that carry humanity forward,\" a Lollo Logistics member remarked during an interview.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_03_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_03_UI.png",
@@ -10482,7 +10482,7 @@
   {
     "id": 41,
     "name": "Adventure Log",
-    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" at the Lollo Logistics truck.",
+    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" during the Beyond the Waves event series.",
     "bg_description": "\"If the Pioneer Association is the eyes of civilization, then Lollo Logistics aspires to be the feet that carry humanity forward,\" a Lollo Logistics member remarked during an interview.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_03_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_03_UI.png",
@@ -11942,7 +11942,7 @@
   {
     "id": 45,
     "name": "Adventure Log",
-    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" at the Lollo Logistics truck.",
+    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" during the Beyond the Waves event series.",
     "bg_description": "\"If the Pioneer Association is the eyes of civilization, then Lollo Logistics aspires to be the feet that carry humanity forward,\" a Lollo Logistics member remarked during an interview.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_03_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_03_UI.png",
@@ -14332,7 +14332,7 @@
   {
     "id": 57,
     "name": "Adventure Log",
-    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" at the Lollo Logistics truck.",
+    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" during the Beyond the Waves event series.",
     "bg_description": "\"If the Pioneer Association is the eyes of civilization, then Lollo Logistics aspires to be the feet that carry humanity forward,\" a Lollo Logistics member remarked during an interview.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_03_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_03_UI.png",
@@ -15592,7 +15592,7 @@
   {
     "id": 62,
     "name": "Adventure Log",
-    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" at the Lollo Logistics truck.",
+    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" during the Beyond the Waves event series.",
     "bg_description": "\"If the Pioneer Association is the eyes of civilization, then Lollo Logistics aspires to be the feet that carry humanity forward,\" a Lollo Logistics member remarked during an interview.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_03_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_03_UI.png",
@@ -17402,7 +17402,7 @@
   {
     "id": 50000211,
     "name": "Voyager's Ascension Supply",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nMoss Amber x1\nEdelschnee x1\nArithmetic Shell x1\nRimewisp x1\nGemini Spore x1\n…",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nDream of Stars x1\nRedbell x1\nForget-Me-Not x1\nMoss Amber x1\nEdelschnee x1\n...",
     "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
@@ -17412,7 +17412,7 @@
   {
     "id": 50000212,
     "name": "Reprise Ascension Supply",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nMoss Amber x1\nEdelschnee x1\nArithmetic Shell x1\nRimewisp x1\nGemini Spore x1\n…",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nDream of Stars x1\nRedbell x1\nForget-Me-Not x1\nMoss Amber x1\nEdelschnee x1\n...",
     "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
@@ -17862,8 +17862,8 @@
   {
     "id": 70320002,
     "name": "Startorch Prize Medal",
-    "attributes_description": "The Medal of the Startorch Prize established by Startroch Academy.",
-    "bg_description": "The Medal of the Startorch Prize established by Startroch Academy. It is an honor awarded to researchers who have made significant contributions to the advancement of science for the benefit of humanity.",
+    "attributes_description": "The Medal of the Startorch Prize established by Startorch Academy.",
+    "bg_description": "The Medal of the Startorch Prize established by Startorch Academy. It is an honor awarded to researchers who have made significant contributions to the advancement of science for the benefit of humanity.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_203_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_203_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_203_UI.png",
@@ -18442,7 +18442,7 @@
   {
     "id": 50000213,
     "name": "Gleaner's Ascension Supply II",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nMoss Amber x1\nEdelschnee x1\nArithmetic Shell x1\nRimewisp x1\nGemini Spore x1\n…",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nDream of Stars x1\nRedbell x1\nForget-Me-Not x1\nMoss Amber x1\nEdelschnee x1\n...",
     "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
@@ -18880,6 +18880,36 @@
     "rarity": 5
   },
   {
+    "id": 44010058,
+    "name": "Phantom: Reactor Husk",
+    "attributes_description": "Unlocks the Phantom Appearance of the corresponding Echo.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_34022_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_34022_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_34022_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 44010059,
+    "name": "Phantom: Kronaclaw",
+    "attributes_description": "Unlocks the Phantom Appearance of the corresponding Echo.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_32060_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_32060_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_32060_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 72,
+    "name": "Spindrift",
+    "attributes_description": "Token for redeeming items in the Bountiful Waves event.",
+    "bg_description": "Though merely the last foam of a wave, it still gleams with an unfading radiance. This is a gift from the tides.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cd_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cd_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cd_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 71500078,
     "name": "Reveler Captain's Seal",
     "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
@@ -18970,6 +19000,16 @@
     "rarity": 5
   },
   {
+    "id": 73,
+    "name": "Aerial Modding Point",
+    "attributes_description": "A digital permit granted by increasing the Modding Level. Used to install functional modules on an expedition motorbike.",
+    "bg_description": "\"A full-on skill-point upgrade system, straight out of the classic RPGs! Now that's what we're talking about!\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_mtdj_05_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_mtdj_05_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_mtdj_05_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 80130057,
     "name": "Yogurt, Oranges, and Frosting",
     "attributes_description": "Pour some yogurt into the answer, draw some oranges in the runes, spread some frosting over the future.\nThere is no right or wrong—a perfect balance of sweet and sour.",
@@ -18980,6 +19020,16 @@
     "rarity": 5
   },
   {
+    "id": 70050078,
+    "name": "NO CONTENT",
+    "attributes_description": "NO CONTENT",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_70050077_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_70050077_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_70050077_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 80131007,
     "name": "Matrix Ranger",
     "attributes_description": "A limited-time title from Endstate Matrix: Doomsday Cycle. Obtainable at any Challenge Stage and remains active until the end of the current stage.",
@@ -18987,6 +19037,106 @@
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_10a_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_10a_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_10a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 74,
+    "name": "2nd Anniversary Coin",
+    "attributes_description": "Commemorative coins given out during the 2nd anniversary event of Second Coming of Solaris.",
+    "bg_description": "The 2nd anniversary of Second Coming of Solaris is a massive collaboration between Startorch Academy and the Spacetrek Collective, with Lollo Logistics and the Pioneer Association joining the bash. As for why Abby's face ended up on the commemorative coin... probably either Abby, or the great Abbowser still lurking somewhere inside Second Coming of Solaris, clearly demanded the spotlight.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Anniversary2ndCelebration01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Anniversary2ndCelebration01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Anniversary2ndCelebration01_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 89500001,
+    "name": "EXP Chip",
+    "attributes_description": "A compact magnetic chip encoded with flight data and combat routines. Used to grant EXP to Persona Pinballs.",
+    "bg_description": "A tiny chip that holds an irresistible pull for any Pinball.\n\"To the far reaches of the galaxy and beyond!\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/CatapultStory/T_IconA_Act_Experience_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/CatapultStory/T_IconA160_Act_Experience_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/CatapultStory/T_IconA80_Act_Experience_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 89500002,
+    "name": "Stardock Voucher",
+    "attributes_description": "The universal currency of the Sonoro Cosmos. Can be exchanged for supplies and rewards at the Stardock Market.",
+    "bg_description": "They say even the most picky person cracks a smile at the sight of this voucher. After all, who could turn down a chance at the next great interstellar adventure?\n\nBut still, if you spend it all at once, you'll be left staring at everyone else's loot while quietly plotting your next great get-rich-quick scheme.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/CatapultStory/T_IconA_Act_StarMoney_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/CatapultStory/T_IconA160_Act_StarMoney_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/CatapultStory/T_IconA80_Act_StarMoney_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80700008,
+    "name": "Type-F Restorative",
+    "attributes_description": "Material used to restore the Voidbane Eldertree in the Silent Crag, obtainable by exploring the Silent Crag.",
+    "bg_description": "Through joint expeditions to the Dimmar Plains, the Research Institute and the Department of Voidmatters have discovered that restorative matter, extracted from minerals and organisms altered by Void Storms, can be used to revive ancient plant life.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/Infrastructure/T_IconA_Infrastructure_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/Infrastructure/T_IconA160_Infrastructure_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/Infrastructure/T_IconA80_Infrastructure_04_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80700009,
+    "name": "Type-S Restorative",
+    "attributes_description": "Material used to restore the Voidbane Eldertree in the Sealed Fissure, obtainable by exploring the Sealed Fissure.",
+    "bg_description": "Through joint expeditions to the Dimmar Plains, the Research Institute and the Department of Voidmatters have discovered that restorative matter, extracted from minerals and organisms altered by Void Storms, can be used to revive ancient plant life.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/Infrastructure/T_IconA_Infrastructure_03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/Infrastructure/T_IconA160_Infrastructure_03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/Infrastructure/T_IconA80_Infrastructure_03_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80700010,
+    "name": "Type-T Restorative",
+    "attributes_description": "Material used to nurture the Voidbane Eldertree in the Dimmr Deep, obtainable by exploring the Dimmr Deep.",
+    "bg_description": "Through joint expeditions to the Dimmar Plains, the Research Institute and the Department of Voidmatters have discovered that restorative matter, extracted from minerals and organisms altered by Void Storms, can be used to revive ancient plant life.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/Infrastructure/T_IconA_Infrastructure_02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/Infrastructure/T_IconA160_Infrastructure_02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/Infrastructure/T_IconA80_Infrastructure_02_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80700011,
+    "name": "Type-Q Restorative",
+    "attributes_description": "Material used to nurture the Voidbane Eldertree in Solisia Landing, obtainable by exploring Solisia Landing.",
+    "bg_description": "Through joint expeditions to the Dimmar Plains, the Research Institute and the Department of Voidmatters have discovered that restorative matter, extracted from minerals and organisms altered by Void Storms, can be used to revive ancient plant life.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/Infrastructure/T_IconA_Infrastructure_05_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/Infrastructure/T_IconA160_Infrastructure_05_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/Infrastructure/T_IconA80_Infrastructure_05_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80700012,
+    "name": "Prism Fruit",
+    "attributes_description": "A reward for restoring the Voidbane Eldertrees. Deliver it to I.R.I.S. at the Base Camp to raise your Base Camp Level.",
+    "bg_description": "The fruit of the Voidbane Eldertree. Its skin, structured like an optical grating, casts dancing rainbows across its surface when struck by light. A treasure for those who study optics, botany, and bionics alike.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_jijian_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_jijian_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_jijian_01_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80700013,
+    "name": "Lumen Coin",
+    "attributes_description": "Event points. Used to exchange for rewards.",
+    "bg_description": "Commemorative coins issued by Startorch Academy to those who contributed to scientific expeditions. Can be collected to exchange for rewards.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/Infrastructure/T_IconA_Infrastructure_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/Infrastructure/T_IconA160_Infrastructure_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/Infrastructure/T_IconA80_Infrastructure_01_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 53008,
+    "name": "Plush Dream",
+    "attributes_description": "Used to unlock a Resonator-specific outfit that grants the designated Resonator a new look.",
+    "bg_description": "Outside the window, the snow comes late in early spring. In that quiet stretch of waiting, the girl slips into a gentle dream.\nIn it, she finds a distant starry sky, warmth in her hands, and the one she has been waiting for, arriving just as promised.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_61_Skin1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_61_Skin1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_61_Skin1_UI.png",
     "rarity": 5
   },
   {
@@ -19070,6 +19220,76 @@
     "rarity": 4
   },
   {
+    "id": 10001108,
+    "name": "Hiyuki's Waveband",
+    "attributes_description": "Can be used to activate Hiyuki's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1623_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1623_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1623_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 10001211,
+    "name": "Denia's Waveband",
+    "attributes_description": "Can be used to activate Denia's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1622_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1622_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1622_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 41400304,
+    "name": "We Who Question",
+    "attributes_description": "Denia's drop, used for Skill Upgrade.",
+    "bg_description": "Aleph-1 is always watching her in the distance.\nIn the nauseating stillness, in every second of her existence, each second etched away, Voidmatter scalds her lungs.\nWhen the delicate facade peels back, all she does is cling to you, questioning this world:\n\"Why do people always look forward to tomorrow?\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_L_026_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_L_026_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_L_026_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 42601480,
+    "name": "Dream of Stars",
+    "attributes_description": "A material used for Resonator Ascension.",
+    "bg_description": "An otherworldly plant that always sprouts out of nowhere. It drinks from the barren walls to yield blossoms as radiant as a thousand stars.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_075_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_075_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_075_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601490,
+    "name": "Redbell",
+    "attributes_description": "A material used for Resonator Ascension.",
+    "bg_description": "A far‑from‑home species that, when mature, bears bell‑shaped crimson fruits. In Ashinohara, these fruits are often consecrated to the divine. Should a soft chime ring out during prayer, know that the divine has heard your plea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_076_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_076_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_076_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 75,
+    "name": "Adventure Log",
+    "attributes_description": "A token earned by submitting exploration reports from various regions. Can be exchanged for \"Adventure Packages\" during the Beyond the Waves event series.",
+    "bg_description": "\"If the Pioneer Association is the eyes of civilization, then Lollo Logistics aspires to be the feet that carry humanity forward,\" a Lollo Logistics member remarked during an interview.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_03_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 76,
+    "name": "Voidmatter Chip",
+    "attributes_description": "Data chips scattered beneath the frostlands, presumed to have been left behind by expedition members. Used as a token for Tracing Progress.",
+    "bg_description": "Data chips scattered beneath the frostlands, their surfaces scarred by the corruption of a Void Storm, like final words left for Solaris by the explorers who never returned. Time does not erase everything. The proof of what once happened, of what was endured, slowly settles alongside those fearless souls.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Theme33_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Theme33_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Theme33_01_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 70340008,
     "name": "Paper Black Cat",
     "attributes_description": "A paper black cat gifted to you by Sigrika, a bit crooked, but very much heartfelt.",
@@ -19090,6 +19310,16 @@
     "rarity": 5
   },
   {
+    "id": 42601500,
+    "name": "Forget-Me-Not",
+    "attributes_description": "A material used for Resonator Ascension.",
+    "bg_description": "Flowers born from the Terminals left behind by fallen members of the Spacetrek Collective, their vines entwining with cold circuits, the final, living blooms of their faded frequencies.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_077_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_077_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_077_UI.png",
+    "rarity": 1
+  },
+  {
     "id": 50000182,
     "name": "Livery Set - Call from Beyond the Stars",
     "attributes_description": "Open to obtain the expedition motorbike Livery \"Call from Beyond the Stars.\" Used to decorate both the left and right fenders.",
@@ -19097,6 +19327,456 @@
     "icon": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity30/MotoDIY/T_MotoDIYStickerIcon69.png",
     "icon_middle": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity30/MotoDIY/T_MotoDIYStickerIcon69_160.png",
     "icon_small": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity30/MotoDIY/T_MotoDIYStickerIcon69_80.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500082,
+    "name": "Reveler Captain's Seal",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_18.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500083,
+    "name": "Silver Shuttle Faring through Dream",
+    "attributes_description": "Enemies take 30% more total Fusion DMG and 100% more total Fusion Burst DMG.\nInflicting Negative Status on the enemies increases ATK by 20% for 5s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "A traveler rides upon the silver shuttle as it drifts across the lake of the heart. The dream stretches on and on, with no end to it.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_45.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_45.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_45.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500084,
+    "name": "Frostlands Where Barreness Thrives",
+    "attributes_description": "Resonators deal 30% more total DMG to enemies in Tunability - Shifting, Tune Rupture - Interfered, or Tune Strain - Interfered.\nResonators have their Off-Tune Buildup Rate increased by 100%, and Tune Break Boost increased by 50.\nDealing Tune Break DMG grants 30% All-Attribute DMG Bonus to all Resonators in the team, plus an additional 40% Spectro DMG Bonus and 40% Fusion DMG Bonus. This effect lasts for 30s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "\"Such a cold, silent path... How much longer should we endure?\"\n\"Not much longer. Don't let go of my hand. Spring... is just ahead.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_47.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_47.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_47.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500085,
+    "name": "The Eye That Gazes into the Abyss",
+    "attributes_description": "Enemies take 50% more total Glacio Chafe DMG.\nInflicting Glacio Chafe on the enemies increases total Glacio DMG by 50% for 5s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Deep within the pupil stands an inverted lighthouse. When you gaze into it, does that black tide gaze into you as well?",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_46.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_46.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_46.png",
+    "rarity": 5
+  },
+  {
+    "id": 50010015,
+    "name": "Morphable Wishes of Quiet Snowfall",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Wishes of Quiet Snowfall.\n2pcs Set: Glacio +10%.\n5pcs Set: Inflicting Glacio Chafe on enemies increases Glacio DMG dealt by 10% for 15s. The Resonator gains the Snowfall effect, which can be triggered once every 25s.\nWhile Snowfall is active:\n- Dealing Resonance Liberation DMG removes Snowfall and increases the Resonator's Crit. Rate by 25% for 6s. Dealing Resonance Liberation DMG again during the effect prolongs its duration by 4s, triggered once every 0.5s, up to 6 times each time Snowfall is removed.\n- Casting Outro Skill removes Snowfall and grants 25% Glacio DMG Bonus to the incoming Resonator for 15s.\nOnly one of the two effects can be triggered each time Snowfall is removed.",
+    "bg_description": "The footprints in the rift will never fade...",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_34_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_34_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_34_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50010016,
+    "name": "Morphable Reel of Spliced Memories",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Reel of Spliced Memories.\n2pcs Set: ATK +10%.\n5pcs Set: Inflicting Tune Rupture - Shifting or Tune Strain - Shifting on enemies increases the Tune Break Boost of Resonators in the team by 20 for 30s. Effects of the same name do not stack.",
+    "bg_description": "The footprints in the rift will never fade...",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_36_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_36_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_36_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50020015,
+    "name": "Morphable Wishes of Quiet Snowfall",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Wishes of Quiet Snowfall.\n2pcs Set: Glacio +10%.\n5pcs Set: Inflicting Glacio Chafe on enemies increases Glacio DMG dealt by 10% for 15s. The Resonator gains the Snowfall effect, which can be triggered once every 25s.\nWhile Snowfall is active:\n- Dealing Resonance Liberation DMG removes Snowfall and increases the Resonator's Crit. Rate by 25% for 6s. Dealing Resonance Liberation DMG again during the effect prolongs its duration by 4s, triggered once every 0.5s, up to 6 times each time Snowfall is removed.\n- Casting Outro Skill removes Snowfall and grants 25% Glacio DMG Bonus to the incoming Resonator for 15s.\nOnly one of the two effects can be triggered each time Snowfall is removed.",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_34_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_34_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_34_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50020016,
+    "name": "Morphable Reel of Spliced Memories",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Reel of Spliced Memories.\n2pcs Set: ATK +10%.\n5pcs Set: Inflicting Tune Rupture - Shifting or Tune Strain - Shifting on enemies increases the Tune Break Boost of Resonators in the team by 20 for 30s. Effects of the same name do not stack.",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_36_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_36_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_36_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71210005,
+    "name": "Aemeath's Cassette",
+    "attributes_description": "The cassette Aemeath once used, still bearing a sticker that was unmistakably hers.",
+    "bg_description": "The cassette Aemeath used during her Academy days, still bearing a sticker that was unmistakably hers.\nShe had left many traces throughout Lahai-Roi. This serves as proof that she existed.\nBack in Voidspace, she pushed it toward you... What was it she was trying to say?",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_216_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_216_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_216_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71210006,
+    "name": "Rune of \"Seek\"",
+    "attributes_description": "A rune Sigrika carved for you.",
+    "bg_description": "A rune Sigrika carved for you. You can feel the warmth of its power flowing gently through your palm.\nIt can help you perceive the Royan rune fragments scattered throughout Lahai-Roi and restore them to their original form.\nBut who was it, and by what means, that used the Royan runes to etch those scattered messages across the plains?",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Runes_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Runes_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Runes_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71190001,
+    "name": "Denia's Birthday Cake",
+    "attributes_description": "A celebratory cake from the Spacetrek Collective. Don't worry—it's 100% free of food security issues.",
+    "bg_description": "An exquisitely crafted orange cake. At Denia's request, the top is encrusted with an array of weird hard candies and dried fruits... leaving one to wonder exactly what kind of flavor profile it has.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_215_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_215_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_215_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71190002,
+    "name": "Denia's Birthday Memento",
+    "attributes_description": "A group photo from Denia's birthday, capturing a side of her rarely seen in the day-to-day: unbridled vitality and passion.",
+    "bg_description": "To her, a day as calm and gentle as this is reason enough to celebrate.\nSo she chooses to spend it with her dearest friends.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_plot_6b_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_plot_6b_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_plot_6b_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71190003,
+    "name": "Denia's Birthday Memento",
+    "attributes_description": "A group photo from Denia's birthday, capturing a side of her rarely seen in the day-to-day: unbridled vitality and passion.",
+    "bg_description": "To her, a day as calm and gentle as this is reason enough to celebrate.\nSo she chooses to spend it with her dearest friends.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_plot_6a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_plot_6a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_plot_6a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80131008,
+    "name": "Supernova Launcher",
+    "attributes_description": "Clear Endless Galaxy Track 10 in the event \"Star Bouncing\"",
+    "bg_description": "When your pinball streaks across the sky at an impossible angle, people usually make a wish.\nBecause for that instant... it really does look like a tiny supernova.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_11_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_11_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_11_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80131009,
+    "name": "Fantasy Weaver",
+    "attributes_description": "Clear \"Depths of Illusive Realm: Chromatic Fantasy\" once with a reward rate of 300% or higher",
+    "bg_description": "As you pass through these distorted dreams, did you see the weaver's true face?",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_Rogue33_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_Rogue33_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_Rogue33_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000117,
+    "name": "Weekly Challenge Supply Pack IV",
+    "attributes_description": "Open to claim a type of advanced skill material of your choice:\n<color=Rare4>We Who Question x1</color>\n<color=Rare4>Gold in Memory x1</color>\n<color=Rare4>Curse of the Abyss x1</color>\n<color=Rare4>When Irises Bloom x1</color>\n<color=Rare4>The Netherworld's Stare x1</color>\n...",
+    "bg_description": "Upon touching the chest, you hear what sounds like a battle hymn.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_068_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack128/T_IconGiftPack128_068_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_068_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500086,
+    "name": "Reveler Captain's Seal",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_18.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500087,
+    "name": "Silver Shuttle Faring through Dream",
+    "attributes_description": "Enemies take 30% more total Fusion DMG and 100% more total Fusion Burst DMG.\nInflicting Negative Status on the enemies increases ATK by 20% for 5s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "A traveler rides upon the silver shuttle as it drifts across the lake of the heart. The dream stretches on and on, with no end to it.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_45.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_45.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_45.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500088,
+    "name": "The Eye That Gazes into the Abyss",
+    "attributes_description": "Enemies take 50% more total Glacio Chafe DMG.\nInflicting Glacio Chafe on the enemies increases total Glacio DMG by 50% for 5s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Deep within the pupil stands an inverted lighthouse. When you gaze into it, does that black tide gaze into you as well?",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_46.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_46.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_46.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500089,
+    "name": "Whispers of an Undying Grudge",
+    "attributes_description": "Total Spectro DMG is increased by 20%. Total Heavy Attack DMG is increased by 40%. Total Resonance Liberation DMG is increased by 40%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "A young man endured twenty years of humiliation and ridicule before finally putting a bullet through his enemy's heart. The melody that had been haunting his ears since his father's death finally fell silent. Twenty years later, his enemy's son ended the whisper tormenting him in the very same way.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_40.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_40.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_40.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000214,
+    "name": "Gleaner's Ascension Supply III",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nDream of Stars x1\nRedbell x1\nForget-Me-Not x1\nMoss Amber x1\nEdelschnee x1\n...",
+    "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cllb_05.png",
+    "rarity": 4
+  },
+  {
+    "id": 54008,
+    "name": "Golden Coffee Ring",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 54009,
+    "name": "Crystal Sky Chassis Set",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000184,
+    "name": "Livery Set - Flowers For You",
+    "attributes_description": "Open to obtain the expedition motorbike Livery \"Flowers For You.\" Full set includes: Left Fender, Right Fender, Front/Rear.",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity30/MotoDIY/T_MotoDIYStickerIcon84.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity30/MotoDIY/T_MotoDIYStickerIcon84_160.png",
+    "icon_small": "/Game/Aki/UI/UIResources/UiActivity/Image/Activity30/MotoDIY/T_MotoDIYStickerIcon84_80.png",
+    "rarity": 4
+  },
+  {
+    "id": 80001077,
+    "name": "Packaged Red Bean Pudding",
+    "attributes_description": "Increases Max HP of all Resonators in the team by 25%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Red bean pudding that can be easily made at home, a simple homemade dessert. After Hiyuki tweaked the recipe, it now comes in a more convenient package.\nHiyuki doesn't have much of a sweet tooth, but once she became the miko, she quietly visited a dessert shop to learn how to make red bean puddings. \nThe children of Ashinohara came to call it the \"good luck pudding.\" However the story grew, the sweetness itself stayed simple. Almost plain.\nJust as she hoped.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_26_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_26_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_26_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80001071,
+    "name": "Splendorous Sweetness",
+    "attributes_description": "Grants 28% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Denia's dessert from a cooking class. She spent most of the session taste-testing, so in the end she went with jam, something easy to prep.\nThe result was extremely sweet, under-marinated, and overcooked. The texture and sweetness never quite came together. But it looked creative and photographed well, so her classmates still gave it decent scores—by a slim margin.\n\"It tastes sweet. It looks nice. That's good enough, right? Hm? Texture and flavor? Sorry, not really following you.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_27_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_27_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_27_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 89500010,
+    "name": "C-Class Tactical ROM Blind Box",
+    "attributes_description": "Open to obtain a random C-Class Tactical ROM.",
+    "bg_description": "Luck is also power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/CatapultStory/T_IconA_Act_CartridgeBox02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/CatapultStory/T_IconA160_Act_CartridgeBox02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/CatapultStory/T_IconA80_Act_CartridgeBox02_UI.png",
+    "rarity": 2
+  },
+  {
+    "id": 89500011,
+    "name": "B-Class Tactical ROM Blind Box",
+    "attributes_description": "Open to obtain a random B-Class Tactical ROM.",
+    "bg_description": "Luck is also power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/CatapultStory/T_IconA_Act_CartridgeBox03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/CatapultStory/T_IconA160_Act_CartridgeBox03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/CatapultStory/T_IconA80_Act_CartridgeBox03_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 89500012,
+    "name": "A-Class Tactical ROM Blind Box",
+    "attributes_description": "Open to obtain a random A-Class Tactical ROM.",
+    "bg_description": "Luck is also power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/CatapultStory/T_IconA_Act_CartridgeBox04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/CatapultStory/T_IconA160_Act_CartridgeBox04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/CatapultStory/T_IconA80_Act_CartridgeBox04_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 89500013,
+    "name": "S-Class Tactical ROM Blind Box",
+    "attributes_description": "Open to obtain a random S-Class Tactical ROM.",
+    "bg_description": "Luck is also power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity33/CatapultStory/T_IconA_Act_CartridgeBox05_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity33/CatapultStory/T_IconA160_Act_CartridgeBox05_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity33/CatapultStory/T_IconA80_Act_CartridgeBox05_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050079,
+    "name": "Safety Charm",
+    "attributes_description": "Similar to an \"Exam Charm,\" this \"mysterious lucky charm\" can be occasionally found in certain places.",
+    "bg_description": "Similar to an \"Exam Charm,\" this \"mysterious lucky charm\" can be occasionally found in certain places. Highly sought after by field personnel, it is said to bless its holder with safety and good fortune. Rumor has it that it really can ward off danger and misfortune.\nHowever, this particular piece appears unfinished. Its slightly misaligned edges suggest it is a work in progress.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_fx_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_fx_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_fx_01_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050080,
+    "name": "Ancient Royan Incised Stone",
+    "attributes_description": "A stone with carvings of portraits and Royan characters.",
+    "bg_description": "On the stone are three animals: a Fluffguin, a Kronapuff, and a Toskr Lemming. They are gathered happily around a Roya girl who is carving statues with a small knife.\n\n\"To my best friends: Fenrir, who loves to dance. Dallas, who loves to eat fish. And Bori, who loves flowers.\nI carve you on this stone, so we can always be together. Forever.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_212_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_212_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_212_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 52013,
+    "name": "Returnee's Forgery Aid",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71210007,
+    "name": "Origami Construct",
+    "attributes_description": "An Origami Construct prepared by Hiyuki. It carries a trace of her frequency and can produce a freezing effect to aid Spacetrek operations in the Dimmr Plains.\n\nDespite its hastily made, somewhat unrefined appearance, it is absolutely reliable.",
+    "bg_description": "An Origami Construct provided by the Spacetrek Collective.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_213_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_213_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_213_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70130017,
+    "name": "Cubie Derby: Championship Keepsake Photo",
+    "attributes_description": "A commemorative photo from the Pioneer Association. Can be enlarged to view the details.",
+    "bg_description": "It was such a heated competition thanks to everyone's endless enthusiasm! As the saying goes, competition comes first… Ahem, I mean, friendship comes first!",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Racehorse03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Racehorse03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Racehorse03_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80110496,
+    "name": "Return Again at the End",
+    "attributes_description": "Background music played when returning to Lahai-Roi.",
+    "bg_description": "Unlocked after completing Main Quest \"Starlights from Yesterdays.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110497,
+    "name": "The Vastness Before Us",
+    "attributes_description": "Background music played when Lahai-Roi returns to peace.",
+    "bg_description": "Unlocked after completing Main Quest \"Starlights from Yesterdays.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110498,
+    "name": "The Watchers",
+    "attributes_description": "Background music played when listening with others to the echoes of the universe.",
+    "bg_description": "Unlocked after completing Main Quest \"Starlights from Yesterdays.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110499,
+    "name": "Homecoming Star from the Unbound",
+    "attributes_description": "Background music played when returning to Voidspace again.",
+    "bg_description": "Unlocked after completing Main Quest \"Starlights from Yesterdays.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110500,
+    "name": "Heart of Lahai-Roi",
+    "attributes_description": "Background music played when confronting Aleph-1 head-on.",
+    "bg_description": "Unlocked after completing Main Quest \"Starlights from Yesterdays.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110521,
+    "name": "When Snow Melts into Spring",
+    "attributes_description": "Backgrond music played when Hiyuki bids farewell to Gyokuro.",
+    "bg_description": "Unlocked after completing Main Quest - Segue \"Wishes in the Bell: Epilogue.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110522,
+    "name": "Lingering Warmth of Dreams",
+    "attributes_description": "Background music played when gazing at the night sky with Denia.",
+    "bg_description": "Unlocked after completing Main Quest - Segue \"Beneath a Melting Night Sky.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110523,
+    "name": "The Last Night in Lahai-Roi",
+    "attributes_description": "Background music played as you listen to Denia's message.",
+    "bg_description": "Unlocked after completing Main Quest - Segue \"Beneath a Melting Night Sky.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110524,
+    "name": "What Awaits Beyond the Radiance",
+    "attributes_description": "Background music played when witnessing the appearance of the Aurora Bridge with Sigrika.",
+    "bg_description": "Unlocked after completing Exploration Quest \"A Perfect Day for Flying.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110525,
+    "name": "First and Last Gift",
+    "attributes_description": "Background music played when Denia leaves.",
+    "bg_description": "Unlocked after completing Main Quest - Segue \"Beneath a Melting Night Sky.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "rarity": 4
   }
 ]

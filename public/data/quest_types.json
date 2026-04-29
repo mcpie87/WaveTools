@@ -911,5 +911,27 @@
     "trackEntityId": 176800017,
     "typeName": "Side Quests",
     "chapterName": "Lahai-Roi: Voices Along the Way"
+  },
+  {
+    "id": 693850000,
+    "mapId": 909,
+    "questTypeId": 2,
+    "chapterId": 3007,
+    "name": "The Memory of Your Eyes",
+    "description": "A researcher in charge of supplies is in trouble and needs help.",
+    "trackEntityId": 693850972,
+    "typeName": "Side Quests",
+    "chapterName": "Lahai-Roi: Voices Along the Way"
+  },
+  {
+    "id": 146850001,
+    "mapId": 909,
+    "questTypeId": 2,
+    "chapterId": 3007,
+    "name": "Ultimate Masterpiece",
+    "description": "You come across a hologram left behind by a researcher. It seems he's inviting you to try out the \"masterpiece\" he's so proud of.",
+    "trackEntityId": 146850014,
+    "typeName": "Side Quests",
+    "chapterName": "Lahai-Roi: Voices Along the Way"
   }
 ]

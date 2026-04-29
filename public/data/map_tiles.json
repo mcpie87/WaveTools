@@ -509,16 +509,16 @@
     "mapId": 906,
     "areaId": 36159,
     "mapTiles": {
-      "T_LHLSubTiles_-5_8_D4RS_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/LHLSubTiles/T_LHLSubTiles_-5_8_D4RS_LAYER1_UI.png",
-      "T_LHLSubTiles_-6_8_D4RS_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/LHLSubTiles/T_LHLSubTiles_-6_8_D4RS_LAYER1_UI.png"
+      "T_LHLSubTiles_-5_8_D4RS_LAYER2_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/LHLSubTiles/T_LHLSubTiles_-5_8_D4RS_LAYER2_UI.png",
+      "T_LHLSubTiles_-6_8_D4RS_LAYER2_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/LHLSubTiles/T_LHLSubTiles_-6_8_D4RS_LAYER2_UI.png"
     }
   },
   {
     "mapId": 906,
     "areaId": 36160,
     "mapTiles": {
-      "T_LHLSubTiles_-5_8_D4RS_LAYER2_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/LHLSubTiles/T_LHLSubTiles_-5_8_D4RS_LAYER2_UI.png",
-      "T_LHLSubTiles_-6_8_D4RS_LAYER2_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/LHLSubTiles/T_LHLSubTiles_-6_8_D4RS_LAYER2_UI.png"
+      "T_LHLSubTiles_-5_8_D4RS_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/LHLSubTiles/T_LHLSubTiles_-5_8_D4RS_LAYER1_UI.png",
+      "T_LHLSubTiles_-6_8_D4RS_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/LHLSubTiles/T_LHLSubTiles_-6_8_D4RS_LAYER1_UI.png"
     }
   },
   {
@@ -589,6 +589,57 @@
       "T_MapSubTiles_1_10_YLZSC_1_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/SubTiles/T_MapSubTiles_1_10_YLZSC_1_LAYER1_UI.png",
       "T_MapSubTiles_2_9_YLZSC_1_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/SubTiles/T_MapSubTiles_2_9_YLZSC_1_LAYER1_UI.png",
       "T_MapSubTiles_2_10_YLZSC_1_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/SubTiles/T_MapSubTiles_2_10_YLZSC_1_LAYER1_UI.png"
+    }
+  },
+  {
+    "mapId": 909,
+    "areaId": 42016,
+    "mapTiles": {
+      "T_AYSubTiles_1_1_DXSD_LAYER4_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/AYSubTiles/T_AYSubTiles_1_1_DXSD_LAYER4_UI.png",
+      "T_AYSubTiles_2_1_DXSD_LAYER4_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/AYSubTiles/T_AYSubTiles_2_1_DXSD_LAYER4_UI.png"
+    }
+  },
+  {
+    "mapId": 909,
+    "areaId": 42009,
+    "mapTiles": {
+      "T_AYSubTiles_1_-1_DXSD_LAYER2_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/AYSubTiles/T_AYSubTiles_1_-1_DXSD_LAYER2_UI.png",
+      "T_AYSubTiles_1_0_DXSD_LAYER2_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/AYSubTiles/T_AYSubTiles_1_0_DXSD_LAYER2_UI.png"
+    }
+  },
+  {
+    "mapId": 909,
+    "areaId": 42010,
+    "mapTiles": {
+      "T_AYSubTiles_0_0_DXSD_LAYER3_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/AYSubTiles/T_AYSubTiles_0_0_DXSD_LAYER3_UI.png"
+    }
+  },
+  {
+    "mapId": 909,
+    "areaId": 42019,
+    "mapTiles": {
+      "T_AYSubTiles_0_1_DNYSYS_LAYER2_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/AYSubTiles/T_AYSubTiles_0_1_DNYSYS_LAYER2_UI.png"
+    }
+  },
+  {
+    "mapId": 909,
+    "areaId": 42020,
+    "mapTiles": {
+      "T_AYSubTiles_0_1_DNYSYS_LAYER3_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/AYSubTiles/T_AYSubTiles_0_1_DNYSYS_LAYER3_UI.png"
+    }
+  },
+  {
+    "mapId": 909,
+    "areaId": 42021,
+    "mapTiles": {
+      "T_AYSubTiles_0_1_DNYSYS_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/AYSubTiles/T_AYSubTiles_0_1_DNYSYS_LAYER1_UI.png"
+    }
+  },
+  {
+    "mapId": 909,
+    "areaId": 42007,
+    "mapTiles": {
+      "T_AYSubTiles_2_0_DXSD_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/AYSubTiles/T_AYSubTiles_2_0_DXSD_LAYER1_UI.png"
     }
   }
 ]

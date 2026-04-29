@@ -4888,6 +4888,17 @@
             "value": 100
           }
         ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 66,
+            "name": "\"Module\"",
+            "value": 100
+          }
+        ]
       }
     ]
   },
@@ -5124,6 +5135,28 @@
       {
         "id": 42601430,
         "name": "Edelschnee",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601480,
+        "name": "Dream of Stars",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601490,
+        "name": "Redbell",
         "value": [
           {
             "id": 2,
