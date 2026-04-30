@@ -39,6 +39,9 @@ export const SpecialtyTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.5_150_Collect245": { key: "SPECIALTY_AFTERLIFE", name: ItemSpecialty.AFTERLIFE },
   "branch2.5_938_Collect244": { key: "SPECIALTY_AFTERLIFE", name: ItemSpecialty.AFTERLIFE },
 
+  // 2.6
+  "branch2.6_41_Collect_QQ2": { key: "SPECIALTY_SLIVERGLOW_BLOOM", name: ItemSpecialty.SLIVERGLOW_BLOOM },
+
   // 2.8
   "branch2.8_Collect_SBS1": { key: "SPECIALTY_SUMMER_FLOWER", name: ItemSpecialty.SUMMER_FLOWER },
 
@@ -50,5 +53,10 @@ export const SpecialtyTranslationMap: Record<string, TranslationMapEntry> = {
   // 3.1
   "branch3.1_693_Collect_3_4": { key: "SPECIALTY_MOSS_AMBER", name: ItemSpecialty.MOSS_AMBER },
   "branch3.1_693_Collect_3_9": { key: "SPECIALTY_MOSS_AMBER", name: ItemSpecialty.MOSS_AMBER },
+
+  // 3.3
+  "branch3.3_151_Collect_SBS3": { key: "SPECIALTY_REDBELL", name: ItemSpecialty.REDBELL },
+  "branch3.3_151_Collect_SBS4": { key: "SPECIALTY_DREAM_OF_STARS", name: ItemSpecialty.DREAM_OF_STARS },
+  "branch3.3_151_Collect_SBS5": { key: "SPECIALTY_FORGET_ME_NOT", name: ItemSpecialty.FORGET_ME_NOT },
 };
 export const SpecialtyDisplayOrder = Object.values(ItemSpecialty);

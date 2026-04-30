@@ -1,5 +1,4 @@
 import { ItemOre, ItemPlant, ItemSpecialty } from "@/app/interfaces/item_types";
-import { ASSET_URL } from "@/constants/constants";
 import { Echo4Cost } from "./Echo4Costs";
 import { Echo3Cost } from "./Echo3Costs";
 import { Echo1Cost } from "./Echo1Costs";
@@ -7,6 +6,7 @@ import { NPCMobs } from "./NPCMobs";
 import { getTranslationMapName } from "./translationMap";
 import { IMarker } from "../types";
 import { convertToUrl } from "@/utils/utils";
+import { Puzzle } from "./Puzzles";
 
 type IconUrl = string;
 type IconRecord = [
@@ -58,8 +58,26 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Route Constructor": "Atlas/WorldMapIcon/SP_IconMap_Activity_Navigation_10_UI.png",
   "Route Network Blockage": "Atlas/WorldMapIcon/SP_IconMap_Play_59_UI.png",
   "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+  "Scenery": "Atlas/TabIcon/SP_IconLookAround.png",
+  [Puzzle.GEOSPIDER_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_31079_UI.png",
   // 3.1
   "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
+  // 3.3
+  "Voidbane Eldertree": "Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
+  "Cave": ["Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png", true],
+  // DEBUG
+  "Debug 1": "Atlas/WorldMapIcon/SP_IconMap_Play_67_UI.png",
+  "Debug 2": "Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",
+  "Debug 3": "Atlas/WorldMapIcon/SP_IconMap_Play_69_UI.png",
+  "Debug 4": "Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
+  "Debug 5": "Atlas/WorldMapIcon/SP_IconMap_Play_71_UI.png",
+  "Debug 6": "Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+  "Debug 7": "Atlas/WorldMapIcon/SP_IconMap_Play_73_UI.png",
+  "Light Builder": "Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
+  "Debug 9": "Atlas/WorldMapIcon/SP_IconMap_Play_75_UI.png",
+  "Debug 10": "Atlas/WorldMapIcon/SP_IconMap_Play_76_UI.png",
+
+
 
   /* Specialties */
   // 1.0
@@ -87,6 +105,8 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [ItemSpecialty.BLOODLEAF_VIBURNUM]: "Image/IconC80/T_IconC80_xueyejiami_UI.png",
   // 2.5
   [ItemSpecialty.AFTERLIFE]: "Image/IconC/T_IconC_054_UI.png",
+  // 2.6
+  [ItemSpecialty.SLIVERGLOW_BLOOM]: "Image/IconC/T_IconC_057_UI.png",
   // 2.8
   [ItemSpecialty.SUMMER_FLOWER]: "Image/IconC/T_IconC_055_UI.png",
   // 3.0
@@ -95,6 +115,10 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [ItemSpecialty.ARITHMETIC_SHELL]: "Image/IconC/T_IconC_063_UI.png",
   // 3.1
   [ItemSpecialty.MOSS_AMBER]: "Image/IconC/T_IconC_072_UI.png",
+  // 3.3
+  [ItemSpecialty.DREAM_OF_STARS]: "Image/IconC/T_IconC_075_UI.png",
+  [ItemSpecialty.REDBELL]: "Image/IconC/T_IconC_076_UI.png",
+  [ItemSpecialty.FORGET_ME_NOT]: "Image/IconC/T_IconC_077_UI.png",
 
   /* ======================================================================= */
   /*                            NPC Monsters                                 */
@@ -407,12 +431,18 @@ const CustomIcons: Record<string, IconUrl> = {
   "Frostbug": "Frostbug.webp",
 };
 
+export const convertPngToWebp = (fileName: string) => fileName.replace(/\.png$/, '.webp');
+
 export const getWorldmapIcon = (name: string): IconRecord | null => {
   const gameAssetIcon = GameAssetIcons[name];
   if (gameAssetIcon) {
-    if (typeof gameAssetIcon === "string") return [`${ASSET_URL}UIResources/Common/${gameAssetIcon}`, false];
+    const prefix = "UIResources/Common/";
+    if (typeof gameAssetIcon === "string") return [
+      convertToUrl(`${prefix}${gameAssetIcon}`),
+      false
+    ];
     return [
-      `${ASSET_URL}UIResources/Common/${gameAssetIcon[0]}`,
+      convertToUrl(`${prefix}${gameAssetIcon[0]}`),
       gameAssetIcon[1]
     ];
   }

@@ -98,6 +98,8 @@ export enum ItemSpecialty {
   BLOODLEAF_VIBURNUM = "Bloodleaf Viburnum",
   // 2.5 Fabricatorium
   AFTERLIFE = "\"Afterlife\"",
+  // 2.6 Septimont further
+  SLIVERGLOW_BLOOM = "Sliverglow Bloom",
   // 2.8 Honami
   SUMMER_FLOWER = "Summer Flower",
   // 3.0 Lahai Roi
@@ -106,6 +108,10 @@ export enum ItemSpecialty {
   ARITHMETIC_SHELL = "Arithmetic Shell",
   // 3.1 Frostlands
   MOSS_AMBER = "Moss Amber",
+  // 3.3 Dimmr Plains
+  REDBELL = "Redbell",
+  DREAM_OF_STARS = "Dream of Stars",
+  FORGET_ME_NOT = "Forget-Me-Not",
 }
 
 export enum ItemCasket {

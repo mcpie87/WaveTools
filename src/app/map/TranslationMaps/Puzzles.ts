@@ -111,9 +111,70 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Tutorial Quest",
     query: (m) => m?.questData?.questTypeId === 7,
   },
+  // 3.3
+  "QUERY_Voidbane_Eldertree": {
+    key: "QUERY_VOIDBANE_ELDERTREE",
+    name: "Voidbane Eldertree",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_70_UI") ?? false,
+  },
+  "QUERY_DEBUG_1": {
+    key: "QUERY_DEBUG_1",
+    name: "Debug 1",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_67_UI") ?? false,
+  },
+  "QUERY_DEBUG_2": {
+    key: "QUERY_DEBUG_2",
+    name: "Debug 2",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_68_UI") ?? false,
+  },
+  "QUERY_DEBUG_3": {
+    key: "QUERY_DEBUG_3",
+    name: "Debug 3",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_69_UI") ?? false,
+  },
+  "QUERY_DEBUG_4": {
+    key: "QUERY_DEBUG_4",
+    name: "Debug 4",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_70_UI") ?? false,
+  },
+  "QUERY_DEBUG_5": {
+    key: "QUERY_DEBUG_5",
+    name: "Debug 5",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_71_UI") ?? false,
+  },
+  "QUERY_DEBUG_6": {
+    key: "QUERY_DEBUG_6",
+    name: "Debug 6",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_72_UI") ?? false,
+  },
+  "QUERY_DEBUG_7": {
+    key: "QUERY_DEBUG_7",
+    name: "Debug 7",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_73_UI") ?? false,
+  },
+  "QUERY_Light_Builder": {
+    key: "QUERY_LIGHT_BUILDER",
+    name: "Light Builder",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_74_UI") ?? false,
+  },
+  "QUERY_DEBUG_9": {
+    key: "QUERY_DEBUG_9",
+    name: "Debug 9",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_75_UI") ?? false,
+  },
+  "QUERY_DEBUG_10": {
+    key: "QUERY_DEBUG_10",
+    name: "Debug 10",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_76_UI") ?? false,
+  },
+  "QUERY_Cave": {
+    key: "QUERY_CAVE",
+    name: "Cave",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Layer_UI") ?? false,
+  },
 };
 
-enum Puzzle {
+export enum Puzzle {
   // 1.0
   MUTTERFLY = "Mutterfly",
   BLOBFLY = "Blobfly",
