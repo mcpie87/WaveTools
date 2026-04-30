@@ -7,7 +7,7 @@ export function assertUnreachable(x: never): never {
 export const isDevelopment = () => process.env.NODE_ENV === "development";
 
 export function convertToUrl(path: string): string {
-  return ASSET_URL + path.trim().replace("/Game/Aki/UI/", "");
+  return (ASSET_URL + path.trim().replace("/Game/Aki/UI/", "")).replace(".png", ".webp");
 }
 
 // returns key value of the selected enum value
