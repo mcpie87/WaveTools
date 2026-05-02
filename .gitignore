@@ -1,10 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 public/assets
 public/map_tiles
-public/data
+public/data/levelentity*
 scripts/map_tiles
 scripts/pmtiles_output
 scripts/MapTiles_*
+scripts/temp_tiles
 *.pmtiles
 *.mbtiles
 
