@@ -117,6 +117,11 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Voidbane Eldertree",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_70_UI") ?? false,
   },
+  "QUERY_Voidmatter_Blocks": {
+    key: "QUERY_VOIDMATTER_BLOCKS",
+    name: "Voidmatter Blocks",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Activity_CubeNor") ?? false,
+  },
   "QUERY_DEBUG_1": {
     key: "QUERY_DEBUG_1",
     name: "Debug 1",
