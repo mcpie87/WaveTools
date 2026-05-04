@@ -65,7 +65,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   // 3.3
   "Voidbane Eldertree": "Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
   "Cave": ["Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png", true],
-  "Voidmatter Blocks": "Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor_UI.png",
+  "Voidmatter Blocks": "Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
   // DEBUG
   "Debug 1": "Atlas/WorldMapIcon/SP_IconMap_Play_67_UI.png",
   "Debug 2": "Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",
