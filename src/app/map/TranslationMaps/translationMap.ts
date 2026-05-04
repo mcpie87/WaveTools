@@ -175,10 +175,6 @@ const TranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
       "Gameplay102",
     ]
   },
-  "Glommoth Vision": {
-    key: "GLOHOMOTH_VISION",
-    keys: ["branch3.1_40_Gameplay_3_1/VisionSummon4"]
-  },
   "Interact ???": {
     key: "INTERACT_UNKNOWN",
     keys: ["Treasure034"]

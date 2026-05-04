@@ -61,6 +61,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
   "Scenery": "Atlas/TabIcon/SP_IconLookAround.png",
   [Puzzle.GEOSPIDER_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_31079_UI.png",
+  [Puzzle.GLOMMOTH_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_32061_UI.png",
   [Puzzle.VOIDWING_MOTH_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_32066_UI.png",
 
   // 3.1

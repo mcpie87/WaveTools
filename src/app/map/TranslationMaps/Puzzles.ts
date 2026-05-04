@@ -217,6 +217,7 @@ export enum Puzzle {
 
   // 3.1
   SOLISKIN_GUIDE = "Soliskin Guide",
+  GLOMMOTH_PROJECTION = "Glommoth Projection",
 
   // 3.3
   VOIDWING_MOTH_PROJECTION = "Voidwing Moth Projection",
@@ -332,6 +333,12 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.GEOSPIDER_PROJECTION]: {
     key: "PUZZLE_GEOSPIDER_PROJECTION",
     keys: ["branch3.0_40_Gameplay_3_0/VisionSummon11"]
+  },
+
+  // 3.1
+  [Puzzle.GLOMMOTH_PROJECTION]: {
+    key: "GLOHOMOTH_VISION", // moved from MISC, DO NOT CHANGE THIS KEY
+    keys: ["branch3.1_40_Gameplay_3_1/VisionSummon4"]
   },
 
   // 3.3
