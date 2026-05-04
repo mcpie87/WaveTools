@@ -15,6 +15,7 @@ import { OreDisplayOrder, OreTranslationMap } from "./Ores";
 import { MiscellaneousDisplayOrder, MiscellaneousTranslationMap } from "./Miscellaneous";
 import { IMarker } from "../types";
 import { QueryCategory } from "./types";
+import { EnemyChallengesDisplayOrder, EnemyChallengesTranslationMap } from "./EnemyChallenges";
 
 const TranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   "Quest ???": {
@@ -214,6 +215,7 @@ export const displayedCategories = [
   ["Chests", ChestTranslationMap, ChestDisplayOrder],
   ["Puzzles", PuzzleTranslationMap, PuzzleDisplayOrder],
   ["Specialties", SpecialtyTranslationMap, SpecialtyDisplayOrder],
+  ["Enemy Challenges", EnemyChallengesTranslationMap, EnemyChallengesDisplayOrder],
   ["Echo (4-Cost)", Echo4CostTranslationMap, Echo4CostDisplayOrder],
   ["Echo (3-Cost)", Echo3CostTranslationMap, Echo3CostDisplayOrder],
   ["Echo (1-Cost)", Echo1CostTranslationMap, Echo1CostDisplayOrder],

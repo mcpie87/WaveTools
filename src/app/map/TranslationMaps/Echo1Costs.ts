@@ -198,7 +198,11 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
   },
   [Echo1Cost.TICK_TACK]: {
     key: "ECHO_TICK_TACK",
-    keys: ["Monster009", "Monster_F"]
+    keys: [
+      "Monster009",
+      "Monster_F",
+      "branch3.3_607_Monster010",
+    ]
   },
   [Echo1Cost.FUSION_PRISM]: {
     key: "ECHO_FUSION_PRISM",

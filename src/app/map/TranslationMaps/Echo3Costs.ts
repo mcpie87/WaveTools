@@ -83,6 +83,9 @@ export enum Echo3Cost {
 
   NIGHTMARE_CYAN_FEATHERED_HERON = "Nightmare: Cyan-Feathered Heron",
   NIGHTMARE_VIRIDBLADE_SAURIAN = "Nightmare: Viridblade Saurian",
+
+  // 3.3
+  VOIDWING_MOTH = "Voidwing Moth",
 }
 
 const Echo3CostTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
@@ -421,8 +424,8 @@ const Echo3CostTranslationMapGroups: Record<string, { keys: string[]; key: strin
       "branch3.0_3_Monster"
     ]
   },
-  [Echo3Cost.TWIN_NOVA_VOID_REVENANT]: {
-    key: "ECHO_TWIN_NOVA_VOID_REVENANT",
+  [Echo3Cost.TWIN_NOVA_COLLAPSAR_BLADE]: {
+    key: "ECHO_TWIN_NOVA_COLLAPSAR_BLADE",
     keys: [
       "branch3.0_2_Monster",
       "Monster_Branch3.0_050",
@@ -457,6 +460,14 @@ const Echo3CostTranslationMapGroups: Record<string, { keys: string[]; key: strin
     keys: [
       "branch3.1_115_Monster_006",
       "branch3.1_Monster_005",
+    ]
+  },
+
+  // 3.3
+  [Echo3Cost.VOIDWING_MOTH]: {
+    key: "ECHO_VOIDWING_MOTH",
+    keys: [
+      "Monster_branch3.3_003",
     ]
   },
 }

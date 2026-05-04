@@ -212,6 +212,7 @@ export enum Puzzle {
   BIKE_CHALLENGE = "Bike Challenge",
   SMARTPRINT_CUBE = "Smartprint Cube",
   SOLISKIN = "Soliskin",
+  SOLISKIN_COLLECT = "Soliskin Collect",
   GEOSPIDER_PROJECTION = "Geospider Projection",
 
   // 3.1
@@ -316,6 +317,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.SOLISKIN]: {
     key: "PUZZLE_SOLISKIN",
     keys: ["branch3.0_939_NPC420085"]
+  },
+  [Puzzle.SOLISKIN_COLLECT]: {
+    key: "PUZZLE_SOLISKIN_COLLECT",
+    keys: ["branch3.0_939_Collect_SBS14"]
   },
   [Puzzle.SOLISKIN_GUIDE]: {
     key: "PUZZLE_SOLISKIN_GUIDE",

@@ -86,6 +86,7 @@ const Echo4CostTranslationMapGroups: Record<string, { keys: string[]; key: strin
     keys: [
       "Monster063",
       "Monster116",
+      "Monster_Branch1.1_020", // 3.3 void storm
     ]
   },
   [Echo4Cost.IMPERMANENCE_HERON]: {

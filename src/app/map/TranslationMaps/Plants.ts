@@ -58,7 +58,6 @@ export const PlantTranslationMap: Record<string, TranslationMapEntry> = {
   "branch2.5_938_Collect245": { key: "PLANT_ABYSS_LUMINARY", name: "Abyss Luminary" },
   "branch2.5_151_Collect246": { key: "PLANT_ABYSS_LUMINARY", name: "Abyss Luminary" },
   "branch2.6_41_Collect_QQ1": { key: "PLANT_LUMINOUS_CALENDULA", name: "Luminous Calendula" },
-  "branch3.0_939_Collect_SBS14": { key: "PLANT_UNKNOWN_14", name: "???" },
   "branch3.0_151_Collect_SBS5": { key: "PLANT_DUSK_HONEYPOT", name: "Dusk Honeypot" },
   "branch3.0_151_Collect_SBS12": { key: "PLANT_WAXWEAVER_WEB", name: "Waxweaver Web" },
   "branch3.0_151_Collect_SBS13": { key: "PLANT_WAXWEAVER_WEB", name: "Waxweaver Web" },

@@ -57,6 +57,10 @@ export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[];
     key: "MISC_FLOATING_CONTAINER",
     keys: ["Quest008"]
   },
+  "Grappling Hook": {
+    key: "GRAPPLING_HOOK",
+    keys: ["branch3.0_135_Gameplay007"]
+  },
 };
 export const MiscellaneousTranslationMap: Record<string, TranslationMapEntry> =
   (() => {
