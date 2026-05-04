@@ -70,6 +70,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Voidbane Eldertree": "Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
   "Cave": ["Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png", true],
   "Voidmatter Blocks": "Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
+  [Puzzle.INVESTIGATE_ASTRITES]: "Image/IconA160/T_IconA160_zcpq_UI.png",
   // DEBUG
   "Debug 1": "Atlas/WorldMapIcon/SP_IconMap_Play_67_UI.png",
   "Motorbike - Fixed Track": "Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",
