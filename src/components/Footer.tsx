@@ -13,7 +13,7 @@ export default function Footer() {
                     GitHub
                 </a>
                 <a
-                    href="https://discord.com/users/198738007388454912"
+                    href="https://discord.gg/CkgUzJdvP"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors"
