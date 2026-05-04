@@ -61,6 +61,8 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
   "Scenery": "Atlas/TabIcon/SP_IconLookAround.png",
   [Puzzle.GEOSPIDER_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_31079_UI.png",
+  [Puzzle.VOIDWING_MOTH_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_32066_UI.png",
+
   // 3.1
   "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
   // 3.3
@@ -351,6 +353,8 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [Echo1Cost.SHADOW_STEPPER]: "Image/IconMonsterHead/T_IconMonsterHead_31084_UI.png",
   [Echo1Cost.ICEGLINT_DANCER]: "Image/IconMonsterHead/T_IconMonsterHead_31083_UI.png",
 
+  // 3.3
+  [Echo3Cost.VOIDWING_MOTH]: "Image/IconMonsterHead/T_IconMonsterHead_32066_UI.png",
 
   /* Ores */
   // 1.0

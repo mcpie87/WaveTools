@@ -217,6 +217,9 @@ export enum Puzzle {
 
   // 3.1
   SOLISKIN_GUIDE = "Soliskin Guide",
+
+  // 3.3
+  VOIDWING_MOTH_PROJECTION = "Voidwing Moth Projection",
 }
 
 const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
@@ -329,6 +332,12 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.GEOSPIDER_PROJECTION]: {
     key: "PUZZLE_GEOSPIDER_PROJECTION",
     keys: ["branch3.0_40_Gameplay_3_0/VisionSummon11"]
+  },
+
+  // 3.3
+  [Puzzle.VOIDWING_MOTH_PROJECTION]: {
+    key: "PUZZLE_VOIDWING_MOTH_PROJECTION",
+    keys: ["branch3.3_109_Gameplay_3_9"]
   },
 };
 
