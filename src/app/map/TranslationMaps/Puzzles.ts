@@ -127,9 +127,9 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Debug 1",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_67_UI") ?? false,
   },
-  "QUERY_DEBUG_2": {
-    key: "QUERY_DEBUG_2",
-    name: "Debug 2",
+  "QUERY_MOTORBIKE_FIXED_TRACK": {
+    key: "QUERY_DEBUG_2", // MOTORBIKE_FIXED_TRACK TODO - migrate
+    name: "Motorbike - Fixed Track",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_68_UI") ?? false,
   },
   "QUERY_DEBUG_3": {

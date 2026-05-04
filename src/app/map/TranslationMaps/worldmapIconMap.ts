@@ -72,7 +72,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Voidmatter Blocks": "Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
   // DEBUG
   "Debug 1": "Atlas/WorldMapIcon/SP_IconMap_Play_67_UI.png",
-  "Debug 2": "Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",
+  "Motorbike - Fixed Track": "Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",
   "Debug 3": "Atlas/WorldMapIcon/SP_IconMap_Play_69_UI.png",
   "Debug 4": "Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
   "Debug 5": "Atlas/WorldMapIcon/SP_IconMap_Play_71_UI.png",
