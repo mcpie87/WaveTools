@@ -60,17 +60,19 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Route Network Blockage": "Atlas/WorldMapIcon/SP_IconMap_Play_59_UI.png",
   "Bike Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
   "Scenery": "Atlas/TabIcon/SP_IconLookAround.png",
+  "Quest Activity": "Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
   [Puzzle.GEOSPIDER_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_31079_UI.png",
-  [Puzzle.GLOMMOTH_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_32061_UI.png",
-  [Puzzle.VOIDWING_MOTH_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_32066_UI.png",
 
   // 3.1
   "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
+  [Puzzle.GLOMMOTH_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_32061_UI.png",
+
   // 3.3
   "Voidbane Eldertree": "Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
   "Cave": ["Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png", true],
   "Voidmatter Blocks": "Atlas/WorldMapIcon/SP_IconMap_Activity_CubeNor.png",
   [Puzzle.INVESTIGATE_ASTRITES]: "Image/IconA160/T_IconA160_zcpq_UI.png",
+  [Puzzle.VOIDWING_MOTH_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_32066_UI.png",
   // DEBUG
   "Debug 1": "Atlas/WorldMapIcon/SP_IconMap_Play_67_UI.png",
   "Motorbike - Fixed Track": "Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",

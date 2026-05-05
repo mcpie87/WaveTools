@@ -180,6 +180,11 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Cave",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Layer_UI") ?? false,
   },
+  "QUERY_QUEST_ACTIVITY": {
+    key: "QUERY_QUEST_ACTIVITY",
+    name: "Quest Activity",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Activity_05_UI") ?? false,
+  }
 };
 
 export enum Puzzle {

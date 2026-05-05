@@ -39,6 +39,11 @@ export function CustomPopup({
             {marker.questData.description}
           </div>
         )}
+        {marker.mapMark && title !== marker.mapMark.title && (
+          <div className="text-xs italic mb-2">
+            {marker.mapMark.title}
+          </div>
+        )}
         <div className="bg-base-100 px-3 py-1.5 rounded-lg border border-white/20 font-mono flex gap-3">
           <div className="flex gap-1.5">
             <span className="opacity-50">X</span>
