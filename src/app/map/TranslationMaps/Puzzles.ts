@@ -1,6 +1,54 @@
 import { TranslationMapEntry } from "./TranslationMapInterface";
 import { QueryCategory } from "./types";
 
+
+export enum Puzzle {
+  // 1.0
+  MUTTERFLY = "Mutterfly",
+  BLOBFLY = "Blobfly",
+  HOVERING_MAGNETITE = "Hovering Magnetite",
+  SIMULATION_TRAINING_DEVICE = "Simulation Training Device",
+  FRAGILE_ROCK = "Fragile Rock",
+  FISSURED_LEDGE = "Fissured Ledge",
+  SHOOTING_CHALLENGE = "Shooting Challenge",
+
+  // 1.1
+  TACTICAL_HOLOGRAM_SKI = "Tactical Hologram: Ski",
+  FROSTBUG = "Frostbug",
+
+  // 2.0
+  FLYING_CHALLENGE = "Flying Challenge",
+  MUSICFLY = "Musicfly",
+  OVERFLOWING_PALETTE = "Overflowing Palette",
+
+  // 2.4
+  HERO_REND = "Hero's Rend",
+
+  // 2.5
+  ORCHESTRATION_ALTAR = "Orchestration Altar",
+  TRIPTYCH_CHEST = "Triptych Chest",
+
+  // 2.6
+  DREAMS_OF_CINTERCIDE = "Dreams of Cintercide",
+
+  // 3.0
+  BIKE_CHALLENGE = "Bike Challenge",
+  SMARTPRINT_CUBE = "Smartprint Cube",
+  SOLISKIN = "Soliskin",
+  SOLISKIN_COLLECT = "Soliskin Collect",
+  GEOSPIDER_PROJECTION = "Geospider Projection",
+
+  // 3.1
+  SOLISKIN_GUIDE = "Soliskin Guide",
+  GLOMMOTH_PROJECTION = "Glommoth Projection",
+
+  // 3.3
+  VOIDWING_MOTH_PROJECTION = "Voidwing Moth Projection",
+  INVESTIGATE_ASTRITES = "Astrites - Investigate",
+  MOTORBIKE_STUNT_TRACK = "Motorbike - Stunt Track",
+  MOTORBIKE_FLIGHT_TRACK = "Motorbike - Flight Track",
+}
+
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
   "QUERY_BvbEntrance": {
     key: "QUERY_PEAKS_OF_PRESTIGE",
@@ -130,9 +178,9 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Motorbike - Fixed Track",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_68_UI") ?? false,
   },
-  "QUERY_DEBUG_3": {
+  "QUERY_MOTORBIKE_FLIGHT_TRACK": {
     key: "QUERY_DEBUG_3",
-    name: "Debug 3",
+    name: Puzzle.MOTORBIKE_FLIGHT_TRACK,
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_69_UI") ?? false,
   },
   "QUERY_DEBUG_4": {
@@ -150,9 +198,9 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Debug 6",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_72_UI") ?? false,
   },
-  "QUERY_DEBUG_7": {
-    key: "QUERY_DEBUG_7",
-    name: "Debug 7",
+  "QUERY_MOTORBIKE_STUNT_TRACK": {
+    key: "QUERY_DEBUG_7", // DO NOT MODIFY # TODO MIGRATE
+    name: Puzzle.MOTORBIKE_STUNT_TRACK,
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_73_UI") ?? false,
   },
   "QUERY_Light_Builder": {
@@ -181,51 +229,6 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Activity_05_UI") ?? false,
   }
 };
-
-export enum Puzzle {
-  // 1.0
-  MUTTERFLY = "Mutterfly",
-  BLOBFLY = "Blobfly",
-  HOVERING_MAGNETITE = "Hovering Magnetite",
-  SIMULATION_TRAINING_DEVICE = "Simulation Training Device",
-  FRAGILE_ROCK = "Fragile Rock",
-  FISSURED_LEDGE = "Fissured Ledge",
-  SHOOTING_CHALLENGE = "Shooting Challenge",
-
-  // 1.1
-  TACTICAL_HOLOGRAM_SKI = "Tactical Hologram: Ski",
-  FROSTBUG = "Frostbug",
-
-  // 2.0
-  FLYING_CHALLENGE = "Flying Challenge",
-  MUSICFLY = "Musicfly",
-  OVERFLOWING_PALETTE = "Overflowing Palette",
-
-  // 2.4
-  HERO_REND = "Hero's Rend",
-
-  // 2.5
-  ORCHESTRATION_ALTAR = "Orchestration Altar",
-  TRIPTYCH_CHEST = "Triptych Chest",
-
-  // 2.6
-  DREAMS_OF_CINTERCIDE = "Dreams of Cintercide",
-
-  // 3.0
-  BIKE_CHALLENGE = "Bike Challenge",
-  SMARTPRINT_CUBE = "Smartprint Cube",
-  SOLISKIN = "Soliskin",
-  SOLISKIN_COLLECT = "Soliskin Collect",
-  GEOSPIDER_PROJECTION = "Geospider Projection",
-
-  // 3.1
-  SOLISKIN_GUIDE = "Soliskin Guide",
-  GLOMMOTH_PROJECTION = "Glommoth Projection",
-
-  // 3.3
-  VOIDWING_MOTH_PROJECTION = "Voidwing Moth Projection",
-  INVESTIGATE_ASTRITES = "Astrites - Investigate",
-}
 
 const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   // 1.0

@@ -79,11 +79,11 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   // DEBUG
   "Debug 1": "Atlas/WorldMapIcon/SP_IconMap_Play_67_UI.png",
   "Motorbike - Fixed Track": "Atlas/WorldMapIcon/SP_IconMap_Play_68_UI.png",
-  "Debug 3": "Atlas/WorldMapIcon/SP_IconMap_Play_69_UI.png",
+  [Puzzle.MOTORBIKE_FLIGHT_TRACK]: "Atlas/WorldMapIcon/SP_IconMap_Play_69_UI.png",
   "Debug 4": "Atlas/WorldMapIcon/SP_IconMap_Play_70_UI.png",
   "Debug 5": "Atlas/WorldMapIcon/SP_IconMap_Play_71_UI.png",
   "Debug 6": "Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
-  "Debug 7": "Atlas/WorldMapIcon/SP_IconMap_Play_73_UI.png",
+  [Puzzle.MOTORBIKE_STUNT_TRACK]: "Atlas/WorldMapIcon/SP_IconMap_Play_73_UI.png",
   "Light Builder": "Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
   "Debug 9": "Atlas/WorldMapIcon/SP_IconMap_Play_75_UI.png",
   "Debug 10": "Atlas/WorldMapIcon/SP_IconMap_Play_76_UI.png",
