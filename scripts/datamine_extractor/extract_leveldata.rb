@@ -10,6 +10,7 @@ data = []
     LevelPlayId: rowData["LevelPlayId"],
     Id: rowData["Id"],
     Key: rowData["Key"],
+    mapId: rowData["LevelId"],
     TidName: get_textmap_name(rowData["TidName"]),
     LevelPlayEntityId: rowData["LevelPlayEntityId"],
     LevelPlayMark: rowData["LevelPlayMark"],

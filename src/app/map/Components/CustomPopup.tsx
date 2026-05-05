@@ -86,6 +86,12 @@ export function CustomPopup({
             <pre>{JSON.stringify(marker.questData, null, 2)}</pre>
           </div>
         )}
+        {showDescription && marker.levelPlayData && (
+          <div className="text-xs italic mb-2 overflow-scroll max-h-[400px]">
+            LevelPlayData:
+            <pre>{JSON.stringify(marker.levelPlayData, null, 2)}</pre>
+          </div>
+        )}
         {showDescription && (
           <div className="text-xs italic mb-2 overflow-scroll max-h-[400px]">
             References:

@@ -1,11 +1,13 @@
-import { APIMapMark, APIQuestData } from "@/types/mapTypes";
+import { APILevelPlayData, APIMapMark, APIQuestData } from "@/types/mapTypes";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const lookupMap = new Map<number, Map<number, APIMapMark>>();
 const questByEntityId = new Map<string, APIQuestData>();
-const [mapMarksData, questData]: [APIMapMark[], APIQuestData[]] =
+const leveldataByEntityId = new Map<string, APILevelPlayData>();
+const [mapMarksData, questData, levelPlayData]: [APIMapMark[], APIQuestData[], APILevelPlayData[]] =
   await Promise.all([
     fetch(`${basePath}/data/map_marks_minified.json`).then((r) => r.json()),
     fetch(`${basePath}/data/quest_types_minified.json`).then((r) => r.json()),
+    fetch(`${basePath}/data/levelplaydata_minified.json`).then((r) => r.json()),
   ]);
 
 for (const mark of mapMarksData) {
@@ -21,6 +23,10 @@ for (const quest of questData) {
   questByEntityId.set(key, quest);
 }
 
+for (const lp of levelPlayData) {
+  const key = `${lp.mapId}-${lp.LevelPlayEntityId}`;
+  leveldataByEntityId.set(key, lp);
+}
 export { mapMarksData, questData, questByEntityId };
 
 export const getMapMark = (mapId: number, entityConfigId: number | undefined): APIMapMark | undefined => {
@@ -30,4 +36,8 @@ export const getMapMark = (mapId: number, entityConfigId: number | undefined): A
 
 export const getQuestData = (key: string): APIQuestData | undefined => {
   return questByEntityId.get(key);
+};
+
+export const getLevelPlayData = (key: string): APILevelPlayData | undefined => {
+  return leveldataByEntityId.get(key);
 };

@@ -40,6 +40,7 @@ export interface APILevelPlayData {
   LevelPlayId: number;
   Id?: number;
   Key?: string;
+  mapId: number;
   TidName: string;
   LevelPlayEntityId?: number;
   LevelPlayMark?: string;
