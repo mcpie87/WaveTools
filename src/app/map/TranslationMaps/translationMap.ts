@@ -127,7 +127,6 @@ const TranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
       "Quest054",
       "Quest094",
       "Quest095",
-      "Quest096",
       "Quest097",
       "QuestObj5",
       "branch2.0_Quest094",
