@@ -65,6 +65,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Scenery": "Atlas/TabIcon/SP_IconLookAround.png",
   "Quest Activity": "Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
   [Puzzle.GEOSPIDER_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_31079_UI.png",
+  [Puzzle.REINDEER_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_32051_UI.png",
 
   // 3.1
   "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",

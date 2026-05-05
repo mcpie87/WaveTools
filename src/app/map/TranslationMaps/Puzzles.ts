@@ -37,6 +37,7 @@ export enum Puzzle {
   SOLISKIN = "Soliskin",
   SOLISKIN_COLLECT = "Soliskin Collect",
   GEOSPIDER_PROJECTION = "Geospider Projection",
+  REINDEER_PROJECTION = "Reindeer Projection",
 
   // 3.1
   SOLISKIN_GUIDE = "Soliskin Guide",
@@ -335,6 +336,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.GEOSPIDER_PROJECTION]: {
     key: "PUZZLE_GEOSPIDER_PROJECTION",
     keys: ["branch3.0_40_Gameplay_3_0/VisionSummon11"]
+  },
+  [Puzzle.REINDEER_PROJECTION]: {
+    key: "PUZZLE_REINDEER_PROJECTION",
+    keys: ["branch3.3_249_Gameplay_3_0/VisionSummon11"]
   },
 
   // 3.1
