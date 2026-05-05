@@ -48,6 +48,7 @@ export enum Puzzle {
   INVESTIGATE_ASTRITES = "Astrites - Investigate",
   MOTORBIKE_STUNT_TRACK = "Motorbike - Stunt Track",
   MOTORBIKE_FLIGHT_TRACK = "Motorbike - Flight Track",
+  INSPECT = "Inspect",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -353,10 +354,13 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
     key: "PUZZLE_VOIDWING_MOTH_PROJECTION",
     keys: ["branch3.3_109_Gameplay_3_9"]
   },
-
   [Puzzle.INVESTIGATE_ASTRITES]: {
     key: "PUZZLE_INVESTIGATE_ASTRITES",
     keys: ["branch3.3_161_Treasure_2_0_05"]
+  },
+  [Puzzle.INSPECT]: {
+    key: "PUZZLE_INSPECT",
+    keys: ["branch3.3_151_Gameplay001"]
   },
 };
 
