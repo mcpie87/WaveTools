@@ -49,6 +49,7 @@ export enum Puzzle {
   MOTORBIKE_STUNT_TRACK = "Motorbike - Stunt Track",
   MOTORBIKE_FLIGHT_TRACK = "Motorbike - Flight Track",
   INSPECT = "Inspect",
+  INVESTIGATE = "Investigate",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -362,6 +363,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
     key: "PUZZLE_INSPECT",
     keys: ["branch3.3_151_Gameplay001"]
   },
+  [Puzzle.INVESTIGATE]: {
+    key: "PUZZLE_INVESTIGATE",
+    keys: ["Quest096"]
+  }
 };
 
 export const PuzzleTranslationMap: Record<string, TranslationMapEntry> =
