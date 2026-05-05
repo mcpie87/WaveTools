@@ -7,6 +7,7 @@ import { getTranslationMapName } from "./translationMap";
 import { IMarker } from "../types";
 import { convertToUrl } from "@/utils/utils";
 import { Puzzle } from "./Puzzles";
+import { TeleporterName } from "./Teleporters";
 
 type IconUrl = string;
 type IconRecord = [
@@ -28,7 +29,9 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
 
   /* Puzzles */
-  "Tacet Field": ["Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png", true],
+  [TeleporterName.TACET_FIELD]: ["Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png", true],
+  [TeleporterName.TACET_DISCORD_NEST]: ["Atlas/WorldMapIcon/SP_IconMap_Play_53_UI.png", true],
+  [TeleporterName.NIGHTMARE_NEST]: ["Atlas/WorldMapIcon/SP_IconMonsterHead_1006_UI.png", true],
   "Side Quest": ["Atlas/WorldMapIcon/SP_IconMap_Task_02_1_UI.png", true],
   "Tutorial Quest": ["Atlas/WorldMapIcon/SP_IconMap_Task_01_1_UI.png", true],
   "Tactical Hologram": ["Atlas/WorldMapIcon/SP_IconMap_Play_10_UI.png", true],

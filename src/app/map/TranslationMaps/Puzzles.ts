@@ -31,11 +31,6 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
         }) ?? false
     ),
   },
-  "QUERY_Tacet_Field": {
-    key: "QUERY_TACET_FIELD",
-    name: "Tacet Field",
-    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_WYQ_05_UI") ?? false,
-  },
   "QUERY_Tactical_Hologram": {
     key: "QUERY_TACTICAL_HOLOGRAM",
     name: "Tactical Hologram",

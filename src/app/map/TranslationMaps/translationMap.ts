@@ -3,7 +3,7 @@ import { ChestDisplayOrder, ChestTranslationMap } from "./Chests";
 import { PuzzleDisplayOrder, PuzzleQueryCategories, PuzzleTranslationMap } from "./Puzzles";
 import { AnimalDisplayOrder, AnimalTranslationMap } from "./Animals";
 import { TidalHeritageDisplayOrder, TidalHeritageTranslationMap } from "./TidalHeritages";
-import { TeleporterDisplayOrder, TeleporterTranslationMap } from "./Teleporters";
+import { TeleporterDisplayOrder, TeleporterQueryCategories, TeleporterTranslationMap } from "./Teleporters";
 import { CasketDisplayOrder, CasketTranslationMap } from "./Caskets";
 import { PlantDisplayOrder, PlantTranslationMap } from "./Plants";
 import { SpecialtyDisplayOrder, SpecialtyTranslationMap } from "./Specialties";
@@ -229,6 +229,7 @@ export const UnionTranslationMap: Record<string, TranslationMapEntry> =
     .reduce((acc, map) => ({ ...acc, ...map }), {});
 
 export const QueryCategories: Record<string, QueryCategory> = {
+  ...TeleporterQueryCategories,
   ...PuzzleQueryCategories,
 }
 
