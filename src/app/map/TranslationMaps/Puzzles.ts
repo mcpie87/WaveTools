@@ -183,11 +183,6 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: Puzzle.MOTORBIKE_FLIGHT_TRACK,
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_69_UI") ?? false,
   },
-  "QUERY_DEBUG_4": {
-    key: "QUERY_DEBUG_4",
-    name: "Debug 4",
-    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_70_UI") ?? false,
-  },
   "QUERY_DEBUG_5": {
     key: "QUERY_DEBUG_5",
     name: "Debug 5",
