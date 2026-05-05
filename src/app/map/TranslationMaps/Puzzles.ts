@@ -120,7 +120,10 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
   "QUERY_Voidmatter_Blocks": {
     key: "QUERY_VOIDMATTER_BLOCKS",
     name: "Voidmatter Blocks",
-    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Activity_CubeNor") ?? false,
+    query: (m) => [
+      "SP_IconMap_Activity_CubeEndless.png",
+      "SP_IconMap_Activity_CubeNor"
+    ].some(icon => m?.mapMark?.icon.includes(icon)) ?? false,
   },
   "QUERY_DEBUG_1": {
     key: "QUERY_DEBUG_1",
