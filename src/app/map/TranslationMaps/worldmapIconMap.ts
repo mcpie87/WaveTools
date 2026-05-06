@@ -8,6 +8,7 @@ import { IMarker } from "../types";
 import { convertToUrl } from "@/utils/utils";
 import { Puzzle } from "./Puzzles";
 import { TeleporterName } from "./Teleporters";
+import { Quest } from "./Quests";
 
 type IconUrl = string;
 type IconRecord = [
@@ -32,8 +33,13 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [TeleporterName.TACET_FIELD]: ["Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png", true],
   [TeleporterName.TACET_DISCORD_NEST]: ["Atlas/WorldMapIcon/SP_IconMap_Play_53_UI.png", true],
   [TeleporterName.NIGHTMARE_NEST]: ["Atlas/WorldMapIcon/SP_IconMonsterHead_1006_UI.png", true],
-  "Side Quest": ["Atlas/WorldMapIcon/SP_IconMap_Task_02_1_UI.png", true],
-  "Tutorial Quest": ["Atlas/WorldMapIcon/SP_IconMap_Task_01_1_UI.png", true],
+  [Quest.MAIN_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_UI.png", true],
+  [Quest.SIDE_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_02_1_UI.png", true],
+  [Quest.TUTORIAL_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_1_UI.png", true],
+  [Quest.EVENT_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_14_UI.png", true],
+  [Quest.STORY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_03_UI.png", true],
+  [Quest.DAILY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_06_UI.png", true],
+  [Quest.EXPLORATION_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_10_UI.png", true],
   "Tactical Hologram": ["Atlas/WorldMapIcon/SP_IconMap_Play_10_UI.png", true],
   // 2.0
   "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",

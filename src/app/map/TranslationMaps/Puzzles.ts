@@ -147,16 +147,6 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Bike Racing",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_61_UI") ?? false,
   },
-  "QUERY_Side_Quest": {
-    key: "QUERY_SIDE_QUEST",
-    name: "Side Quest",
-    query: (m) => m?.questData?.questTypeId === 2,
-  },
-  "QUERY_Tutorial_Quest": {
-    key: "QUERY_TUTORIAL_QUEST",
-    name: "Tutorial Quest",
-    query: (m) => m?.questData?.questTypeId === 7,
-  },
   // 3.3
   "QUERY_Voidbane_Eldertree": {
     key: "QUERY_VOIDBANE_ELDERTREE",

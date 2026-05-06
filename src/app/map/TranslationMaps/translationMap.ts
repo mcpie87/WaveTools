@@ -16,6 +16,7 @@ import { MiscellaneousDisplayOrder, MiscellaneousTranslationMap } from "./Miscel
 import { IMarker } from "../types";
 import { QueryCategory } from "./types";
 import { EnemyChallengesDisplayOrder, EnemyChallengesTranslationMap } from "./EnemyChallenges";
+import { QuestDisplayOrder, QuestQueryCategories, QuestTranslationMap } from "./Quests";
 
 const TranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   "Quest ???": {
@@ -208,6 +209,7 @@ export const displayedCategories = [
   ["Casket", CasketTranslationMap, CasketDisplayOrder],
   ["Tidal Heritage", TidalHeritageTranslationMap, TidalHeritageDisplayOrder],
   ["Chests", ChestTranslationMap, ChestDisplayOrder],
+  ["Quests", QuestTranslationMap, QuestDisplayOrder],
   ["Puzzles", PuzzleTranslationMap, PuzzleDisplayOrder],
   ["Specialties", SpecialtyTranslationMap, SpecialtyDisplayOrder],
   ["Enemy Challenges", EnemyChallengesTranslationMap, EnemyChallengesDisplayOrder],
@@ -228,6 +230,7 @@ export const UnionTranslationMap: Record<string, TranslationMapEntry> =
     .reduce((acc, map) => ({ ...acc, ...map }), {});
 
 export const QueryCategories: Record<string, QueryCategory> = {
+  ...QuestQueryCategories,
   ...TeleporterQueryCategories,
   ...PuzzleQueryCategories,
 }

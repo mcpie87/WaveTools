@@ -37,7 +37,8 @@ def extract_quest_data(row)
     # ProvideType: row["ProvideType"],
     # DistributeType: row["DistributeType"],
     # ObjType: row["ObjType"],
-    trackEntityId: row.dig("AddInteractOption", "EntityId"),
+    # trackEntityId: row.dig("AddInteractOption", "EntityId"),
+    trackEntityId: row["Reference"][0].split("_")[2].to_i,
   }
 end
 
@@ -48,13 +49,21 @@ untrackable_quests = 0
 data = []
 @questdata_config.each do |row|
   rowData = row["Data"]
-  next unless rowData
+  skip_row = rowData && rowData["Reference"]
+  next unless skip_row
 
   quest_data = extract_quest_data(rowData)
+  if !rowData["Reference"]
+    untrackable_quests += 1
+    next
+  end
+  first_reference_entity_id = rowData["Reference"][0].split("_")[2].to_i
   if !rowData["AddInteractOption"]
     # puts "No AddInteractOption for #{rowData["Id"]}"
     untrackable_quests += 1
-    next
+  else
+    tracked_entity_id = rowData["AddInteractOption"]["EntityId"]
+    byebug if tracked_entity_id != first_reference_entity_id
   end
   trackable_quests += 1
   next if quest_data[:name].nil? || quest_data[:description] == ""

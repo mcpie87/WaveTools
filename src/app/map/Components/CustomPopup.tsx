@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Popup } from "react-leaflet";
 import { getTranslationMapName, getMatchedTrackableCategories } from "../TranslationMaps/translationMap";
 import { useMapStore } from "../state/mapStore";
+import { NO_DATA_STRING } from "@/constants/constants";
 
 interface CustomPopupProps {
   marker: IMarker;
@@ -36,7 +37,10 @@ export function CustomPopup({
         )}
         {marker.questData && (
           <div className="text-xs italic mb-2">
-            {marker.questData.description}
+            {marker.questData.chapterName && marker.questData.chapterName !== NO_DATA_STRING && (
+              <div>Chapter: {marker.questData.chapterName}</div>
+            )}
+            <div>{marker.questData.description}</div>
           </div>
         )}
         {marker.mapMark && title !== marker.mapMark.title && (
