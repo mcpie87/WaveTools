@@ -37,10 +37,14 @@ export function CustomPopup({
         )}
         {marker.questData && (
           <div className="text-xs italic mb-2">
-            {marker.questData.chapterName && marker.questData.chapterName !== NO_DATA_STRING && (
-              <div>Chapter: {marker.questData.chapterName}</div>
-            )}
-            <div>{marker.questData.description}</div>
+            {marker.questData.chapterName &&
+              marker.questData.chapterName !== NO_DATA_STRING && (
+                <div className="font-semibold">
+                  Chapter: {marker.questData.chapterName}
+                </div>
+              )
+            }
+            <div className="text-secondary">{marker.questData.description}</div>
           </div>
         )}
         {marker.mapMark && title !== marker.mapMark.title && (
