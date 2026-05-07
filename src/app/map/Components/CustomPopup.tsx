@@ -2,7 +2,7 @@ import { translateBlueprint } from "../BlueprintTranslationService";
 import { IMarker } from "../types";
 import { Button } from "@/components/ui/button";
 import { Popup } from "react-leaflet";
-import { getTranslationMapName, getMatchedTrackableCategories } from "../TranslationMaps/translationMap";
+import { getTranslationMapName, filterTrackedCategoriesForMarker } from "../TranslationMaps/translationMap";
 import { useMapStore } from "../state/mapStore";
 import { NO_DATA_STRING } from "@/constants/constants";
 
@@ -22,7 +22,7 @@ export function CustomPopup({
 
   const entityKey = `e_${marker.mapId}_${marker.entityId}`;
   const visitedSet = dbMapData.visitedEntities[entityKey] || new Set();
-  const matchedCategories = getMatchedTrackableCategories(marker);
+  const matchedCategories = filterTrackedCategoriesForMarker(marker);
 
   return (
     <Popup autoPan={false}>

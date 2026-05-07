@@ -17,6 +17,7 @@ import { IMarker } from "../types";
 import { QueryCategory } from "./types";
 import { EnemyChallengesDisplayOrder, EnemyChallengesTranslationMap } from "./EnemyChallenges";
 import { QuestDisplayOrder, QuestQueryCategories, QuestTranslationMap } from "./Quests";
+import { useMapStore } from "../state/mapStore";
 
 const TranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   "Quest ???": {
@@ -281,4 +282,14 @@ export const getMatchedTrackableCategories = (marker: IMarker): { name: string, 
 
   marker._matchedCategories = matched;
   return matched;
+};
+
+export const filterTrackedCategoriesForMarker = (marker: IMarker): { name: string, key: string, dictKey?: string }[] => {
+  const matchedCategories = getMatchedTrackableCategories(marker);
+  const { visibleCategories } = useMapStore.getState().dbMapData;
+
+  if (visibleCategories) {
+    return matchedCategories.filter(cat => cat.dictKey && visibleCategories[cat.dictKey]);
+  }
+  return matchedCategories;
 };
