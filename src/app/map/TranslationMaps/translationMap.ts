@@ -247,15 +247,20 @@ export const getTrackingKey = (category: string): string => {
 };
 
 export const getTranslationMapName = (marker: IMarker): string => {
-  const categoryTranslation = UnionTranslationMap[marker.category]?.name;
-  const queryCategoryKey = marker.metadata || marker.mapMark
-    ? Object.entries(QueryCategories)
-      .find(([, qcat]) => qcat.query(marker))?.[0]
-    : undefined;
-
-  const queryTranslation = queryCategoryKey ? QueryCategories[queryCategoryKey]?.name : undefined;
-  return queryTranslation ?? categoryTranslation ?? "";
+  const categories = getMatchedTrackableCategories(marker);
+  return categories.length > 1
+    ? categories[1].name // query result
+    : categories[0].name // blueprint result
+    ?? "";
 }
+
+export const getTranslationMapNameFromVisibleCategories = (marker: IMarker): string => {
+  const categories = filterTrackedCategoriesForMarker(marker);
+  return categories.length > 1
+    ? categories[1].name // query result
+    : categories[0].name // blueprint result
+    ?? "";
+};
 
 const queryCategoryEntries = Object.entries(QueryCategories);
 

@@ -3,7 +3,7 @@ import { CustomPopup } from "../../Components/CustomPopup";
 import { IMarker } from "../../types";
 import React, { useMemo } from "react";
 import { useMapStore } from "../../state/mapStore";
-import { isMarkerFullyVisited } from "../../state/map.selectors";
+import { isMarkerVisitedBasedOnVisibleCategories } from "../../state/map.selectors";
 
 interface SingleMarkerProps {
   marker: IMarker;
@@ -23,7 +23,7 @@ export const SingleMarkerComponent = ({
   );
   const toggleMarkerSelected = useMapStore((state) => state.toggleMarkerSelected);
 
-  const isVisited = useMapStore((state) => isMarkerFullyVisited(state.dbMapData, marker));
+  const isVisited = useMapStore((state) => isMarkerVisitedBasedOnVisibleCategories(state.dbMapData, marker));
 
   const icon = useMemo(
     () => getIcon(marker, isVisited, isSelected),

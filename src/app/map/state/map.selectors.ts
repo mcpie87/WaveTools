@@ -1,6 +1,6 @@
 import { DbMapData } from "@/types/mapTypes";
 import { IMarker } from "../types";
-import { getMatchedTrackableCategories, getTrackingKey } from "../TranslationMaps/translationMap";
+import { filterTrackedCategoriesForMarker, getMatchedTrackableCategories, getTrackingKey } from "../TranslationMaps/translationMap";
 import { getMarkerRealId } from "../mapUtils";
 
 export const isCategoryVisible = (
@@ -40,5 +40,14 @@ export const isMarkerFullyVisited = (state: DbMapData, m: IMarker) => {
   if (!visitedSet) return false;
 
   const matched = getMatchedTrackableCategories(m);
+  return matched.length > 0 && matched.every(c => visitedSet.has(c.key));
+};
+
+export const isMarkerVisitedBasedOnVisibleCategories = (state: DbMapData, m: IMarker) => {
+  const entityKey = getMarkerRealId(m);
+  const visitedSet = state.visitedEntities[entityKey];
+  if (!visitedSet) return false;
+
+  const matched = filterTrackedCategoriesForMarker(m);
   return matched.length > 0 && matched.every(c => visitedSet.has(c.key));
 };

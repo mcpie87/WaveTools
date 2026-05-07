@@ -3,7 +3,7 @@ import { Echo4Cost } from "./Echo4Costs";
 import { Echo3Cost } from "./Echo3Costs";
 import { Echo1Cost } from "./Echo1Costs";
 import { NPCMobs } from "./NPCMobs";
-import { getTranslationMapName } from "./translationMap";
+import { getTranslationMapNameFromVisibleCategories } from "./translationMap";
 import { IMarker } from "../types";
 import { convertToUrl } from "@/utils/utils";
 import { Puzzle } from "./Puzzles";
@@ -475,7 +475,7 @@ export const getWorldmapIcon = (name: string): IconRecord | null => {
 };
 
 export const getWorldmapIconFromMarker = (marker: IMarker): IconRecord | null => {
-  const name = getTranslationMapName(marker);
+  const name = getTranslationMapNameFromVisibleCategories(marker);
   const icon = getWorldmapIcon(name);
   if (icon) return icon;
 
