@@ -14,9 +14,6 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
   const visibleMarkers = useVisibleMarkers(markers);
   const hideVisited = useMapStore((state) => state.hideVisited);
 
-  console.log("[MarkerLayer] Markers:", markers.length);
-  console.log("[MarkerLayer] Visible markers:", visibleMarkers.length);
-
   const iconCache = useRef(new Map<string, L.DivIcon>());
   useEffect(() => {
     iconCache.current.clear();
