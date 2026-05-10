@@ -1,7 +1,7 @@
 import { SelectedMap } from "@/types/mapTypes";
 import { APIMarker, IMarker } from "./types";
 import L from 'leaflet';
-import { getLevelPlayData, getMapMark, getQuestData } from "./data/map_marks";
+import { getLevelPlayChildren, getLevelPlayData, getLevelPlayReferences, getMapMark, getQuestChildren, getQuestData, getQuestReferences } from "./data/map_marks";
 
 export const scaleFactor = 0.30118;
 export const TILE_SIZE = 256;
@@ -117,6 +117,10 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedEntities: Record<
   visited: visitedEntities[getMarkerRealId(marker)] ?? false, // pre 3.2 method: visitedMap[marker.Id] || false,
   questData: getQuestData(`${marker.MapId}-${marker.EntityId}`),
   levelPlayData: getLevelPlayData(`${marker.MapId}-${marker.EntityId}`),
+  questChildren: getQuestChildren(getMarkerRealId(marker)),
+  questReferences: getQuestReferences(getMarkerRealId(marker)),
+  levelPlayChildren: getLevelPlayChildren(getMarkerRealId(marker)),
+  levelPlayReferences: getLevelPlayReferences(getMarkerRealId(marker)),
 });
 
 

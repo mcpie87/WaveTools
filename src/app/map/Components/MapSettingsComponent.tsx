@@ -32,6 +32,8 @@ interface MapSettingsComponentProps {
   setHideVisited: (v: boolean) => void;
   showDescriptions: boolean;
   setShowDescriptions: (v: boolean) => void;
+  showOnlyQuestRelated: boolean;
+  setShowOnlyQuestRelated: (v: boolean) => void;
   clearCategories: () => void;
   dbMapData: DbMapData;
   toggleCategory: (category: string) => void;
@@ -54,6 +56,8 @@ export const MapSettingsComponent = ({
   setHideVisited,
   showDescriptions,
   setShowDescriptions,
+  showOnlyQuestRelated,
+  setShowOnlyQuestRelated,
   clearCategories,
   dbMapData,
   toggleCategory,
@@ -224,6 +228,13 @@ export const MapSettingsComponent = ({
                     className="data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500 border-yellow-500/50"
                   >
                     Multi-select markers
+                  </Toggle>
+                  <Toggle
+                    pressed={showOnlyQuestRelated}
+                    onPressedChange={(v) => setShowOnlyQuestRelated(v)}
+                    className="data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500 border-yellow-500/50"
+                  >
+                    Show only quest related
                   </Toggle>
                   <Button onClick={() => clearCategories()}>Clear Categories</Button>
                 </div>

@@ -48,6 +48,7 @@ export function useFilteredMarkers(
   indexes: MarkerIndexes | null,
   selectedMap: SelectedMap,
   selectedMapId: number | null,
+  showOnlyQuestRelated: boolean,
 ): IMarker[] {
   return useMemo(() => {
     if (!indexes) return [];
@@ -81,6 +82,8 @@ export function useFilteredMarkers(
       }
     }
 
-    return results.map(m => convertMarkerToCoord(m, {}));
-  }, [indexes, selectedMap, selectedMapId]);
+    const parsedMarkers = results.map(m => convertMarkerToCoord(m, {}));
+    const isQuestRelated = (m: IMarker) => m.questChildren || m.questReferences;
+    return parsedMarkers.filter(m => showOnlyQuestRelated ? isQuestRelated(m) : true);
+  }, [indexes, selectedMap, selectedMapId, showOnlyQuestRelated]);
 }

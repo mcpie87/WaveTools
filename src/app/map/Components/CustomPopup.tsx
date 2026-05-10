@@ -47,6 +47,38 @@ export function CustomPopup({
             <div className="text-secondary">{marker.questData.description}</div>
           </div>
         )}
+        {marker.questReferences && ((marker.questData && marker.questReferences.find(e => e.id !== marker.questData!.id)) || !marker.questData) && (
+          <div className="text-xs italic mb-2">
+            Quest Reference of:
+            {marker.questReferences.map(e => (
+              <div key={e.name} className="text-blue-400">{e.name}</div>
+            ))}
+          </div>
+        )}
+        {marker.questChildren && ((marker.questData && marker.questChildren.find(e => e.id !== marker.questData!.id)) || !marker.questData) && (
+          <div className="text-xs italic mb-2">
+            Quest Child of:
+            {marker.questChildren.map(e => (
+              <div key={e.name} className="text-blue-400">{e.name}</div>
+            ))}
+          </div>
+        )}
+        {marker.levelPlayChildren && ((marker.levelPlayData && marker.levelPlayChildren.find(e => e.Id !== marker.levelPlayData!.LevelPlayId)) || !marker.levelPlayData) && (
+          <div className="text-xs italic mb-2">
+            LP Child of:
+            {marker.levelPlayChildren.map(e => (
+              <div key={e.Key} className="text-blue-400">{`[${e.Type}][${e.Id}][Key: ${e.Key}]`}</div>
+            ))}
+          </div>
+        )}
+        {marker.levelPlayReferences && ((marker.levelPlayData && marker.levelPlayReferences.find(e => e.Id !== marker.levelPlayData!.LevelPlayId)) || !marker.levelPlayData) && (
+          <div className="text-xs italic mb-2">
+            LP Reference of:
+            {marker.levelPlayReferences.map(e => (
+              <div key={e.Key} className="text-blue-400">{`[${e.Type}][${e.Id}][Key: ${e.Key}`}</div>
+            ))}
+          </div>
+        )}
         {marker.mapMark && title !== marker.mapMark.title && (
           <div className="text-xs italic mb-2">
             {marker.mapMark.title}
@@ -89,19 +121,43 @@ export function CustomPopup({
           </div>
         )}
         {showDescription && marker.questData && (
-          <div className="text-xs italic mb-2">
+          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
             Quest:
             <pre>{JSON.stringify(marker.questData, null, 2)}</pre>
           </div>
         )}
+        {showDescription && marker.questChildren && (marker.questData && marker.questChildren.find(e => e.id !== marker.questData!.id)) && (
+          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+            Quest Children:
+            <pre>{JSON.stringify(marker.questChildren, null, 2)}</pre>
+          </div>
+        )}
+        {showDescription && marker.questReferences && (marker.questData && marker.questReferences.find(e => e.id !== marker.questData!.id)) && (
+          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+            Quest References:
+            <pre>{JSON.stringify(marker.questReferences, null, 2)}</pre>
+          </div>
+        )}
+        {showDescription && marker.levelPlayChildren && (
+          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+            LP Children:
+            <pre>{JSON.stringify(marker.levelPlayChildren, null, 2)}</pre>
+          </div>
+        )}
+        {showDescription && marker.levelPlayReferences && (
+          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+            LP References:
+            <pre>{JSON.stringify(marker.levelPlayReferences, null, 2)}</pre>
+          </div>
+        )}
         {showDescription && marker.levelPlayData && (
-          <div className="text-xs italic mb-2 overflow-scroll max-h-[400px]">
+          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
             LevelPlayData:
             <pre>{JSON.stringify(marker.levelPlayData, null, 2)}</pre>
           </div>
         )}
-        {showDescription && (
-          <div className="text-xs italic mb-2 overflow-scroll max-h-[400px]">
+        {showDescription && marker.references && (
+          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
             References:
             <pre>
               {JSON.stringify(marker.references, null, 2)}

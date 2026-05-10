@@ -3,6 +3,10 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const lookupMap = new Map<number, Map<number, APIMapMark>>();
 const questByEntityId = new Map<string, APIQuestData>();
 const leveldataByEntityId = new Map<string, APILevelPlayData>();
+const questsByChildren = new Map<string, APIQuestData[]>();
+const questsByReference = new Map<string, APIQuestData[]>();
+const leveldataByChildren = new Map<string, APILevelPlayData[]>();
+const leveldataByReference = new Map<string, APILevelPlayData[]>();
 const [mapMarksData, questData, levelPlayData]: [APIMapMark[], APIQuestData[], APILevelPlayData[]] =
   await Promise.all([
     fetch(`${basePath}/data/map_marks_minified.json`).then((r) => r.json()),
@@ -21,11 +25,47 @@ for (const mark of mapMarksData) {
 for (const quest of questData) {
   const key = `${quest.mapId}-${quest.trackEntityId}`;
   questByEntityId.set(key, quest);
+
+  if (quest.children && quest.children.length > 0) {
+    for (const child of quest.children) {
+      if (!questsByChildren.has(child)) {
+        questsByChildren.set(child, []);
+      }
+      questsByChildren.get(child)!.push(quest);
+    }
+  }
+
+  if (quest.references && quest.references.length > 0) {
+    for (const reference of quest.references) {
+      if (!questsByReference.has(reference)) {
+        questsByReference.set(reference, []);
+      }
+      questsByReference.get(reference)!.push(quest);
+    }
+  }
 }
 
 for (const lp of levelPlayData) {
   const key = `${lp.mapId}-${lp.LevelPlayEntityId}`;
   leveldataByEntityId.set(key, lp);
+
+  if (lp.Children && lp.Children.length > 0) {
+    for (const child of lp.Children) {
+      if (!leveldataByChildren.has(child)) {
+        leveldataByChildren.set(child, []);
+      }
+      leveldataByChildren.get(child)!.push(lp);
+    }
+  }
+
+  if (lp.Reference && lp.Reference.length > 0) {
+    for (const reference of lp.Reference) {
+      if (!leveldataByReference.has(reference)) {
+        leveldataByReference.set(reference, []);
+      }
+      leveldataByReference.get(reference)!.push(lp);
+    }
+  }
 }
 export { mapMarksData, questData, questByEntityId };
 
@@ -40,4 +80,21 @@ export const getQuestData = (key: string): APIQuestData | undefined => {
 
 export const getLevelPlayData = (key: string): APILevelPlayData | undefined => {
   return leveldataByEntityId.get(key);
+};
+
+
+export const getQuestChildren = (key: string): APIQuestData[] | undefined => {
+  return questsByChildren.get(key);
+};
+
+export const getQuestReferences = (key: string): APIQuestData[] | undefined => {
+  return questsByReference.get(key);
+};
+
+export const getLevelPlayChildren = (key: string): APILevelPlayData[] | undefined => {
+  return leveldataByChildren.get(key);
+};
+
+export const getLevelPlayReferences = (key: string): APILevelPlayData[] | undefined => {
+  return leveldataByReference.get(key);
 };

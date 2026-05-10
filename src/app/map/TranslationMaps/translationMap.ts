@@ -248,18 +248,18 @@ export const getTrackingKey = (category: string): string => {
 
 export const getTranslationMapName = (marker: IMarker): string => {
   const categories = getMatchedTrackableCategories(marker);
+  if (categories.length === 0) return "";
   return categories.length > 1
     ? categories[1].name // query result
-    : categories[0].name // blueprint result
-    ?? "";
+    : categories[0].name; // blueprint result
 }
 
 export const getTranslationMapNameFromVisibleCategories = (marker: IMarker): string => {
   const categories = filterTrackedCategoriesForMarker(marker);
+  if (categories.length === 0) return "";
   return categories.length > 1
     ? categories[1].name // query result
-    : categories[0].name // blueprint result
-    ?? "";
+    : categories[0].name; // blueprint result
 };
 
 const queryCategoryEntries = Object.entries(QueryCategories);

@@ -69,6 +69,10 @@ export interface IMarker {
   references?: IMarkerReferences;
   questData?: APIQuestData;
   levelPlayData?: APILevelPlayData;
+  questChildren: APIQuestData[] | undefined;
+  questReferences: APIQuestData[] | undefined;
+  levelPlayChildren: APILevelPlayData[] | undefined;
+  levelPlayReferences: APILevelPlayData[] | undefined;
   // for optimization purposes for entity mapping
   _matchedCategories?: { name: string, key: string, dictKey?: string }[];
 }

@@ -65,6 +65,8 @@ interface MapState {
   setRadius: (radius: number) => void;
   showDescriptions: boolean;
   setShowDescriptions: (show: boolean) => void;
+  showOnlyQuestRelated: boolean;
+  setShowOnlyQuestRelated: (show: boolean) => void;
   hideVisited: boolean;
   setHideVisited: (hide: boolean) => void;
 
@@ -239,6 +241,8 @@ export const useMapStore = create<MapState>((set) => ({
   setRadius: (radius) => set({ radius }),
   showDescriptions: false,
   setShowDescriptions: (showDescriptions) => set({ showDescriptions }),
+  showOnlyQuestRelated: false,
+  setShowOnlyQuestRelated: (showOnlyQuestRelated) => set({ showOnlyQuestRelated }),
   hideVisited: false,
   setHideVisited: (hideVisited) => set({ hideVisited }),
 

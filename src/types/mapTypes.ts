@@ -34,6 +34,8 @@ export interface APIQuestData {
   trackEntityId: number;
   typeName: string;
   chapterName: string;
+  children?: string[];
+  references?: string[];
 }
 
 export interface APILevelPlayData {

@@ -39,6 +39,8 @@ def extract_quest_data(row)
     # ObjType: row["ObjType"],
     # trackEntityId: row.dig("AddInteractOption", "EntityId"),
     trackEntityId: row["Reference"][0].split("_")[2].to_i,
+    children: row["Children"],
+    references: row["Reference"],
   }
 end
 
