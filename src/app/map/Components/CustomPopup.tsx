@@ -5,6 +5,7 @@ import { Popup } from "react-leaflet";
 import { getTranslationMapName, filterTrackedCategoriesForMarker } from "../TranslationMaps/translationMap";
 import { useMapStore } from "../state/mapStore";
 import { NO_DATA_STRING } from "@/constants/constants";
+import { getQuestInfo } from "../data/map_marks";
 
 interface CustomPopupProps {
   marker: IMarker;
@@ -23,6 +24,18 @@ export function CustomPopup({
   const entityKey = `e_${marker.mapId}_${marker.entityId}`;
   const visitedSet = dbMapData.visitedEntities[entityKey] || new Set();
   const matchedCategories = filterTrackedCategoriesForMarker(marker);
+
+  const isLevelDataRefSameAsChildren = marker.levelPlayReferences
+    && marker.levelPlayChildren
+    && marker.levelPlayReferences.length === 1
+    && marker.levelPlayChildren.length === 1
+    && marker.levelPlayChildren[0] === marker.levelPlayReferences[0];
+
+  const isQuestDataRefSameAsChildren = marker.questReferences
+    && marker.questChildren
+    && marker.questReferences.length === 1
+    && marker.questChildren.length === 1
+    && marker.questChildren[0] === marker.questReferences[0];
 
   return (
     <Popup autoPan={false}>
@@ -55,7 +68,7 @@ export function CustomPopup({
             ))}
           </div>
         )}
-        {marker.questChildren && ((marker.questData && marker.questChildren.find(e => e.id !== marker.questData!.id)) || !marker.questData) && (
+        {marker.questChildren && !isQuestDataRefSameAsChildren && ((marker.questData && marker.questChildren.find(e => e.id !== marker.questData!.id)) || !marker.questData) && (
           <div className="text-xs italic mb-2">
             Quest Child of:
             {marker.questChildren.map(e => (
@@ -63,7 +76,7 @@ export function CustomPopup({
             ))}
           </div>
         )}
-        {marker.levelPlayChildren && ((marker.levelPlayData && marker.levelPlayChildren.find(e => e.Id !== marker.levelPlayData!.LevelPlayId)) || !marker.levelPlayData) && (
+        {marker.levelPlayChildren && !isLevelDataRefSameAsChildren && ((marker.levelPlayData && marker.levelPlayChildren.find(e => e.Id !== marker.levelPlayData!.LevelPlayId)) || !marker.levelPlayData) && (
           <div className="text-xs italic mb-2">
             LP Child of:
             {marker.levelPlayChildren.map(e => (
@@ -75,7 +88,35 @@ export function CustomPopup({
           <div className="text-xs italic mb-2">
             LP Reference of:
             {marker.levelPlayReferences.map(e => (
-              <div key={e.Key} className="text-blue-400">{`[${e.Type}][${e.Id}][Key: ${e.Key}`}</div>
+              <>
+                <div key={e.Key} className="text-blue-400">
+                  {`[${e.Type}][${e.Id}][Key: ${e.Key}`}
+                </div>
+                {e.Translations && e.Translations.length > 0 && (
+                  <>
+                    <span>Steps:</span>
+                    <div>
+                      {e.Translations.map(([step, translation]) => (
+                        <div key={step} className="text-blue-400">
+                          {step}: {translation}
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+                {e.Condition && e.Condition.length > 0 && (
+                  <>
+                    <span>Conditions:</span>
+                    <div>
+                      {e.Condition.map(({ Type, PreLevelPlay, PreQuest }) => (
+                        <div key={Type} className="text-blue-400">
+                          {Type}: {PreLevelPlay || (PreQuest && getQuestInfo(PreQuest)?.name) || NO_DATA_STRING}
+                        </div>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </>
             ))}
           </div>
         )}

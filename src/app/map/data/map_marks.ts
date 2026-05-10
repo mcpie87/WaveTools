@@ -14,6 +14,9 @@ const [mapMarksData, questData, levelPlayData]: [APIMapMark[], APIQuestData[], A
     fetch(`${basePath}/data/levelplaydata_minified.json`).then((r) => r.json()),
   ]);
 
+const questDataByQuestId = new Map<number, APIQuestData>();
+
+
 for (const mark of mapMarksData) {
   if (mark.entityConfigId === 0) continue;
   if (!lookupMap.has(mark.mapId)) {
@@ -25,6 +28,7 @@ for (const mark of mapMarksData) {
 for (const quest of questData) {
   const key = `${quest.mapId}-${quest.trackEntityId}`;
   questByEntityId.set(key, quest);
+  questDataByQuestId.set(quest.id, quest);
 
   if (quest.children && quest.children.length > 0) {
     for (const child of quest.children) {
@@ -73,6 +77,10 @@ export const getMapMark = (mapId: number, entityConfigId: number | undefined): A
   if (entityConfigId === undefined) return undefined;
   return lookupMap.get(mapId)?.get(entityConfigId);
 };
+
+export const getQuestInfo = (id: number): APIQuestData | undefined => {
+  return questDataByQuestId.get(id);
+}
 
 export const getQuestData = (key: string): APIQuestData | undefined => {
   return questByEntityId.get(key);

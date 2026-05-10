@@ -48,6 +48,7 @@ export enum Puzzle {
   INVESTIGATE_ASTRITES = "Astrites - Investigate",
   MOTORBIKE_STUNT_TRACK = "Motorbike - Stunt Track",
   MOTORBIKE_FLIGHT_TRACK = "Motorbike - Flight Track",
+  THREAT_ELIMINATION = "Threat Elimination",
   INSPECT = "Inspect",
   INVESTIGATE = "Investigate",
 }
@@ -181,9 +182,9 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Debug 5",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_71_UI") ?? false,
   },
-  "QUERY_DEBUG_6": {
-    key: "QUERY_DEBUG_6",
-    name: "Debug 6",
+  "QUERY_THREAT_ELIMINATION": {
+    key: "QUERY_DEBUG_6", // DO NOT MODIFY # TODO MIGRATE
+    name: Puzzle.THREAT_ELIMINATION,
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_72_UI") ?? false,
   },
   "QUERY_MOTORBIKE_STUNT_TRACK": {
@@ -215,7 +216,12 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     key: "QUERY_QUEST_ACTIVITY",
     name: "Quest Activity",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Activity_05_UI") ?? false,
-  }
+  },
+  "QUERY_FLYING_CHALLENGE": {
+    key: "QUERY_FLYING_CHALLENGE",
+    name: Puzzle.FLYING_CHALLENGE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_16_UI") ?? false,
+  },
 };
 
 const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {

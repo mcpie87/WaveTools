@@ -49,6 +49,12 @@ export interface APILevelPlayData {
   Reference: string[];
   Children: string[];
   Type?: string;
+  Translations: [number, string][];
+  Condition: {
+    Type: string,
+    PreLevelPlay?: number,
+    PreQuest?: number,
+  }[];
 }
 
 export interface APIQuestData {
