@@ -337,7 +337,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   },
   [Puzzle.REINDEER_PROJECTION]: {
     key: "PUZZLE_REINDEER_PROJECTION",
-    keys: ["branch3.3_249_Gameplay_3_0/VisionSummon11"]
+    keys: [
+      "branch3.0_40_Gameplay_3_0/VisionSummon8",
+      "branch3.3_249_Gameplay_3_0/VisionSummon11", // TODO: remove? not sure
+    ]
   },
 
   // 3.1
