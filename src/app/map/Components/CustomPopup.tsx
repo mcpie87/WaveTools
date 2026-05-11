@@ -108,9 +108,10 @@ export function CustomPopup({
                   <>
                     <span>Conditions:</span>
                     <div>
-                      {e.Condition.map(({ Type, PreLevelPlay, PreQuest, PreChildQuest }) => {
+                      {e.Condition.map(({ Type, PreLevelPlay, PreQuest, PreChildQuest, Config }) => {
                         const questName = PreQuest && getQuestInfo(PreQuest)?.name
                           || PreChildQuest?.QuestId && `${getQuestInfo(PreChildQuest.QuestId)?.name} - ${PreChildQuest.ChildQuestId}`
+                          || Type === "SystemState" && Config && `[Type: ${Config.Type}, RoadId: ${Config.RoadId}, IsBuilt: ${Config.IsBuilt}]`
                           || NO_DATA_STRING;
                         return (
                           <div key={Type} className="text-blue-400">
