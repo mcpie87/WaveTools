@@ -20,6 +20,7 @@ export enum Puzzle {
   FLYING_CHALLENGE = "Flying Challenge",
   MUSICFLY = "Musicfly",
   OVERFLOWING_PALETTE = "Overflowing Palette",
+  ECHO_CHALLENGE = "Echo Challenge",
 
   // 2.4
   HERO_REND = "Hero's Rend",
@@ -55,6 +56,7 @@ export enum Puzzle {
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
+
   "QUERY_BvbEntrance": {
     key: "QUERY_PEAKS_OF_PRESTIGE",
     name: "Peaks of Prestige",
@@ -89,6 +91,7 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Tactical Hologram",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_10_UI") ?? false,
   },
+  // 2.0
   "QUERY_Treasure_Spot": {
     key: "QUERY_TREASURE_SPOT",
     name: "Treasure Spot",
@@ -109,6 +112,13 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Tactical Hologram: Vitreum Dancer",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_17_UI") ?? false,
   },
+  "QUERY_Echo_Challenge": {
+    key: "QUERY_ECHO_CHALLENGE",
+    name: Puzzle.ECHO_CHALLENGE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_21_UI") ?? false,
+  },
+
+  // 2.1
   "QUERY_Echo_Challenge_Dancer_Hacking": {
     key: "QUERY_ECHO_CHALLENGE_DANCER_HACKING",
     name: "Echo Challenge: Dancer Hacking",

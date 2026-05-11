@@ -49,6 +49,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Dream Patrol": "Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
   "Overflowing Palette": "Atlas/WorldMapIcon/SP_IconMap_Play_18_UI.png",
   "Fratelli": "Atlas/WorldMapIcon/SP_IconMap_Play_20_UI.png",
+  [Puzzle.ECHO_CHALLENGE]: "Atlas/WorldMapIcon/SP_IconMap_Play_21_UI.png",
   "Tactical Hologram: Vitreum Dancer": "Atlas/WorldMapIcon/SP_IconMap_Play_17_UI.png",
   "Echo Challenge: Dancer Hacking": "Atlas/WorldMapIcon/SP_IconMap_Play_31_UI.png",
   // 2.4

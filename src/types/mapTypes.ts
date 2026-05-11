@@ -51,7 +51,7 @@ export interface APILevelPlayData {
   Type?: string;
   Translations: [number, string][];
   Condition: {
-    Type: "SystemState" | "PreChildQuest" | "PreLevelPlay" | "PreQuest",
+    Type: "SystemState" | "PreChildQuest" | "PreLevelPlay" | "PreQuest" | "ExploreLevel"
     PreLevelPlay?: number,
     PreQuest?: number,
     PreChildQuest?: {
@@ -62,7 +62,8 @@ export interface APILevelPlayData {
       Type: string,
       RoadId: number,
       IsBuilt: boolean,
-    }
+    },
+    ExploreLevel?: number,
   }[];
 }
 
