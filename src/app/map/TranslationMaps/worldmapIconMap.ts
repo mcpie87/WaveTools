@@ -43,7 +43,8 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Tactical Hologram": ["Atlas/WorldMapIcon/SP_IconMap_Play_10_UI.png", true],
   // 2.0
   "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
-  "Flying Challenge": "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
+  [Puzzle.FLYING_CHALLENGE]: "Atlas/WorldMapIcon/SP_IconMap_Play_23_UI.png",
+  [Puzzle.EXTRA_CHALLENGE]: "Atlas/WorldMapIcon/SP_IconMap_Play_16_UI.png",
   "Musicfly": "Atlas/WorldMapIcon/SP_IconMap_Play_22_UI.png",
   "Dream Patrol": "Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
   "Overflowing Palette": "Atlas/WorldMapIcon/SP_IconMap_Play_18_UI.png",

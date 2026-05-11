@@ -51,6 +51,7 @@ export enum Puzzle {
   THREAT_ELIMINATION = "Threat Elimination",
   INSPECT = "Inspect",
   INVESTIGATE = "Investigate",
+  EXTRA_CHALLENGE = "Extra Challenge",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -217,9 +218,9 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: "Quest Activity",
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Activity_05_UI") ?? false,
   },
-  "QUERY_FLYING_CHALLENGE": {
-    key: "QUERY_FLYING_CHALLENGE",
-    name: Puzzle.FLYING_CHALLENGE,
+  "QUERY_EXTRA_CHALLENGE": {
+    key: "QUERY_EXTRA_CHALLENGE",
+    name: Puzzle.EXTRA_CHALLENGE,
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_16_UI") ?? false,
   },
 };
@@ -342,7 +343,7 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
       "branch3.3_249_Gameplay_3_0/VisionSummon11", // TODO: remove? not sure
     ]
   },
-
+  // "branch3.3_FlowerPollutionManager" // Flower pollution?
   // 3.1
   [Puzzle.GLOMMOTH_PROJECTION]: {
     key: "GLOHOMOTH_VISION", // moved from MISC, DO NOT CHANGE THIS KEY
