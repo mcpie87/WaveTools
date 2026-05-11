@@ -31,7 +31,7 @@ export interface APIQuestData {
   chapterId: number;
   name: string;
   description: string;
-  trackEntityId: number;
+  trackEntityId: string;
   typeName: string;
   chapterName: string;
   children?: string[];
@@ -44,7 +44,7 @@ export interface APILevelPlayData {
   Key?: string;
   mapId: number;
   TidName: string;
-  LevelPlayEntityId?: number;
+  LevelPlayEntityId: string;
   LevelPlayMark?: string;
   Reference: string[];
   Children: string[];
