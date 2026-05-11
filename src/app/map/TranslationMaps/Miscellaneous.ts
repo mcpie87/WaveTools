@@ -61,6 +61,18 @@ export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[];
     key: "GRAPPLING_HOOK",
     keys: ["branch3.0_135_Gameplay007"]
   },
+  "Fishing Spot - Small": {
+    key: "MISC_FISHING_SPOT_SMALL",
+    keys: ["branch2.1_Gameplay128"]
+  },
+  "Fishing Spot - Medium": {
+    key: "MISC_FISHING_SPOT_MEDIUM",
+    keys: ["branch2.1_Gameplay127"]
+  },
+  "Fishing Spot - Large": {
+    key: "MISC_FISHING_SPOT_LARGE",
+    keys: ["branch2.1_Gameplay126"]
+  }
 };
 export const MiscellaneousTranslationMap: Record<string, TranslationMapEntry> =
   (() => {

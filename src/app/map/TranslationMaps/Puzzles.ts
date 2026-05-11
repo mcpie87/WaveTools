@@ -353,7 +353,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   },
   [Puzzle.INVESTIGATE_ASTRITES]: {
     key: "PUZZLE_INVESTIGATE_ASTRITES",
-    keys: ["branch3.3_161_Treasure_2_0_05"]
+    keys: [
+      "branch2.1_SceneObj1", // Riccoli Islands sailing investigation
+      "branch3.3_161_Treasure_2_0_05", // Dimmr Plains astrites from trees
+    ]
   },
   [Puzzle.INSPECT]: {
     key: "PUZZLE_INSPECT",
