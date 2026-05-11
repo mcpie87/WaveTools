@@ -38,7 +38,7 @@ def extract_quest_data(row)
     # DistributeType: row["DistributeType"],
     # ObjType: row["ObjType"],
     # trackEntityId: row.dig("AddInteractOption", "EntityId"),
-    trackEntityId: row["Reference"][0].split("_")[2].to_i,
+    trackEntityId: row["Reference"][0],
     children: row["Children"],
     references: row["Reference"],
   }
@@ -60,13 +60,15 @@ data = []
     next
   end
   first_reference_entity_id = rowData["Reference"][0].split("_")[2].to_i
-  if !rowData["AddInteractOption"]
-    # puts "No AddInteractOption for #{rowData["Id"]}"
-    untrackable_quests += 1
-  else
-    tracked_entity_id = rowData["AddInteractOption"]["EntityId"]
-    byebug if tracked_entity_id != first_reference_entity_id
-  end
+  # # 2026-05-11 - removed this completely, this fails for "Graduation Trip"
+  # # where first 2 references are same entity id but different map id
+  # if !rowData["AddInteractOption"]
+  #   # puts "No AddInteractOption for #{rowData["Id"]}"
+  #   untrackable_quests += 1
+  # else
+  #   tracked_entity_id = rowData["AddInteractOption"]["EntityId"]
+  #   byebug if tracked_entity_id != first_reference_entity_id
+  # end
   trackable_quests += 1
   next if quest_data[:name].nil? || quest_data[:description] == ""
   type_name = get_textmap_name(@questmaintype_config.dig(rowData["Type"], "MainTypeName")) || "EMPTY"

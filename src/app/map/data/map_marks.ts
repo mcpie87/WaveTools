@@ -26,7 +26,7 @@ for (const mark of mapMarksData) {
 }
 
 for (const quest of questData) {
-  const key = `${quest.mapId}-${quest.trackEntityId}`;
+  const key = `${quest.trackEntityId}`;
   questByEntityId.set(key, quest);
   questDataByQuestId.set(quest.id, quest);
 
@@ -50,7 +50,7 @@ for (const quest of questData) {
 }
 
 for (const lp of levelPlayData) {
-  const key = `${lp.mapId}-${lp.LevelPlayEntityId}`;
+  const key = lp.LevelPlayEntityId;
   leveldataByEntityId.set(key, lp);
 
   if (lp.Children && lp.Children.length > 0) {

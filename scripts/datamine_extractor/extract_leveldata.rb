@@ -17,13 +17,14 @@ end
 data = []
 @levelplaydata_config.each do |row|
   rowData = row["Data"]
+  next if !rowData["LevelPlayEntityId"] || !rowData["LevelPlayEntityId"] == 0 || !rowData["Reference"]
   data << {
     LevelPlayId: rowData["LevelPlayId"],
     Id: rowData["Id"],
     Key: rowData["Key"],
     mapId: rowData["LevelId"],
     TidName: get_textmap_name(rowData["TidName"]),
-    LevelPlayEntityId: rowData["LevelPlayEntityId"],
+    LevelPlayEntityId: rowData["Reference"][0], # rowData["LevelPlayEntityId"], # deprecated, need e_mapid_entityid instead
     LevelPlayMark: rowData["LevelPlayMark"],
     Reference: rowData["Reference"],
     Children: rowData["Children"],
