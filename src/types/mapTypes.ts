@@ -54,6 +54,10 @@ export interface APILevelPlayData {
     Type: string,
     PreLevelPlay?: number,
     PreQuest?: number,
+    PreChildQuest?: {
+      QuestId: number,
+      ChildQuestId: number,
+    }
   }[];
 }
 

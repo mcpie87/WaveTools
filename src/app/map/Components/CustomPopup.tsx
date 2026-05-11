@@ -108,11 +108,16 @@ export function CustomPopup({
                   <>
                     <span>Conditions:</span>
                     <div>
-                      {e.Condition.map(({ Type, PreLevelPlay, PreQuest }) => (
-                        <div key={Type} className="text-blue-400">
-                          {Type}: {PreLevelPlay || (PreQuest && getQuestInfo(PreQuest)?.name) || NO_DATA_STRING}
-                        </div>
-                      ))}
+                      {e.Condition.map(({ Type, PreLevelPlay, PreQuest, PreChildQuest }) => {
+                        const questName = PreQuest && getQuestInfo(PreQuest)?.name
+                          || PreChildQuest?.QuestId && `${getQuestInfo(PreChildQuest.QuestId)?.name} - ${PreChildQuest.ChildQuestId}`
+                          || NO_DATA_STRING;
+                        return (
+                          <div key={Type} className="text-blue-400">
+                            {Type}: {PreLevelPlay || questName}
+                          </div>
+                        );
+                      })}
                     </div>
                   </>
                 )}
