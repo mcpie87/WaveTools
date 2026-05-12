@@ -111,6 +111,19 @@ export const QuestQueryCategories: Record<string, QueryCategory> = {
     name: Quest.EVENT_QUEST,
     query: (m) => m?.questData?.questTypeId === 10,
   },
+  "QUERY_LevelPlayData_Quest": {
+    key: "QUERY_LEVEL_PLAY_DATA_QUEST",
+    name: "Puzzle Quest",
+    query: (m) => m?.levelPlayData?.Type === "Quest"
+      && m?.levelPlayData.Translations.length > 0,
+  },
+  "QUERY_LevelPlayData_Riddle": {
+    key: "QUERY_LEVEL_PLAY_DATA_RIDDLE",
+    name: "Puzzle Riddle",
+    query: (m) => m?.levelPlayData?.Type === "Riddle"
+      && !m?.mapMark
+      && m?.levelPlayData.Translations.length > 0,
+  }
 };
 
 const QuestTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
