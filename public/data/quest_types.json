@@ -1320,7 +1320,7 @@
     "chapterId": null,
     "name": "communication optimization test",
     "description": "communication optimization test",
-    "trackEntityId": "f_31000162_5",
+    "trackEntityId": null,
     "children": null,
     "references": [
       "f_31000162_5"
@@ -6056,7 +6056,7 @@
     "chapterId": null,
     "name": "Save the World? Save the Cat!",
     "description": "The Cat's food stock is running low. Please help feed the cat.",
-    "trackEntityId": "f_125000003_6",
+    "trackEntityId": null,
     "children": null,
     "references": [
       "f_125000003_6"
@@ -7933,7 +7933,7 @@
     "chapterId": null,
     "name": "",
     "description": "test/",
-    "trackEntityId": "q_34000010",
+    "trackEntityId": "e_110_34000048",
     "children": null,
     "references": [
       "q_34000010"
@@ -14374,7 +14374,7 @@
     "chapterId": null,
     "name": "Co-op BOSS challenge reward",
     "description": "Co-op BOSS challenge reward",
-    "trackEntityId": "q_221750000",
+    "trackEntityId": "e_8_221750031",
     "children": null,
     "references": [
       "q_221750000"
@@ -17968,7 +17968,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Hadrian's Gladiator",
     "description": "Adventures in the Water City-Hadrian's Gladiator",
-    "trackEntityId": "l_8_222900001",
+    "trackEntityId": "e_8_222900004",
     "children": null,
     "references": [
       "l_8_222900001",
@@ -18121,7 +18121,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Bakie",
     "description": "Adventures in the Water City-Bakie",
-    "trackEntityId": "l_8_222900003",
+    "trackEntityId": "e_8_222900008",
     "children": null,
     "references": [
       "l_8_222900003",
@@ -18137,7 +18137,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Aria Mummer",
     "description": "Adventures in the Water City-Aria Mummer",
-    "trackEntityId": "l_8_222900005",
+    "trackEntityId": "e_8_222900012",
     "children": null,
     "references": [
       "l_8_222900005",
@@ -18154,7 +18154,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Mercurio",
     "description": "Adventures in the Water City-Mercurio",
-    "trackEntityId": "l_8_222900007",
+    "trackEntityId": "e_8_222900016",
     "children": null,
     "references": [
       "l_8_222900007",
@@ -18170,7 +18170,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Lario",
     "description": "Adventures in the Water City-Lario",
-    "trackEntityId": "l_8_222900009",
+    "trackEntityId": "e_8_222900020",
     "children": null,
     "references": [
       "l_8_222900009",
@@ -18186,7 +18186,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-C-MOSS",
     "description": "Adventures in the Water City-C-MOSS",
-    "trackEntityId": "l_8_222900011",
+    "trackEntityId": "e_8_222900026",
     "children": null,
     "references": [
       "l_8_222900011",
@@ -18202,7 +18202,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Farceur's Faces",
     "description": "Adventures in the Water City-Farceur's Faces",
-    "trackEntityId": "l_8_222900013",
+    "trackEntityId": "e_8_222900030",
     "children": null,
     "references": [
       "l_8_222900013",
@@ -18218,7 +18218,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Gondola",
     "description": "Adventures in the Water City-Gondola",
-    "trackEntityId": "l_8_222900015",
+    "trackEntityId": "e_8_222900034",
     "children": null,
     "references": [
       "l_8_222900015",
@@ -18499,7 +18499,7 @@
     "chapterId": null,
     "name": "Traces of Tides",
     "description": "Fulmine, the manager of Wutherium Film Studio, looks worried these days.\nThe deadline for the next periodical is around the corner, but he seems to have trouble picking the right photos... he beseeched the Laureate for help.",
-    "trackEntityId": "l_8_159900000",
+    "trackEntityId": "e_8_159900051",
     "children": null,
     "references": [
       "l_8_159900000",
@@ -18521,7 +18521,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Signor Octopus",
     "description": "Adventures in the Water City-Signor Octopus",
-    "trackEntityId": "l_8_222900017",
+    "trackEntityId": "e_8_222900070",
     "children": null,
     "references": [
       "l_8_222900017",
@@ -18537,7 +18537,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Tubpup",
     "description": "Adventures in the Water City-Tubpup",
-    "trackEntityId": "l_8_222900019",
+    "trackEntityId": "e_8_222900068",
     "children": null,
     "references": [
       "l_8_222900019",
@@ -18553,7 +18553,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Lucerna",
     "description": "Adventures in the Water City-Lucerna",
-    "trackEntityId": "l_8_222900021",
+    "trackEntityId": "e_8_222900066",
     "children": null,
     "references": [
       "l_8_222900021",
@@ -18569,7 +18569,7 @@
     "chapterId": null,
     "name": "Adventures in the Water City-Plushie Squad",
     "description": "Adventures in the Water City-Plushie Squad",
-    "trackEntityId": "l_8_222900023",
+    "trackEntityId": "e_8_222900064",
     "children": null,
     "references": [
       "l_8_222900023",
@@ -19693,7 +19693,7 @@
     "chapterId": null,
     "name": "Should the Shooting Stars Blaze",
     "description": "You find a mysterious \"light spark.\" Follow this little spark, and you may witness the shooting stars blaze.",
-    "trackEntityId": "q_161750001",
+    "trackEntityId": "e_903_161750021",
     "children": null,
     "references": [
       "q_161750001",
@@ -19907,7 +19907,7 @@
     "chapterId": null,
     "name": "Rewards",
     "description": "Rewards",
-    "trackEntityId": "q_171750002",
+    "trackEntityId": "e_8_171750003",
     "children": null,
     "references": [
       "q_171750002"
@@ -24144,7 +24144,7 @@
     "chapterId": null,
     "name": "Overflowing Picture Book",
     "description": "You meet Alix, who carries a picture book filled with landscapes from across Rinascita. But its colors have all faded, leaving him heartbroken. Moved by his sorrow, you decide to restore the book's lost hues and help bring its beauty back to life.",
-    "trackEntityId": "f_181700000_1",
+    "trackEntityId": null,
     "children": null,
     "references": [
       "f_181700000_1"
@@ -24505,7 +24505,7 @@
     "chapterId": null,
     "name": "Dream Contagion",
     "description": "Complete the challenge and defeat the Nightmare hidden within the Dreamscape Node.",
-    "trackEntityId": "l_8_157850001",
+    "trackEntityId": "e_8_157850010",
     "children": null,
     "references": [
       "l_8_157850001",
@@ -25115,7 +25115,7 @@
     "chapterId": null,
     "name": "Epilogue: The Lost Beyond",
     "description": "You return to Ragunna to see whether the aftermath of the Fabricatorium of the Deep reached the people there, but unexpectedly run into Zani in the city. Might as well talk to her to catch up with the situation.",
-    "trackEntityId": "q_172000001",
+    "trackEntityId": "e_905_172700655",
     "children": null,
     "references": [
       "q_172000001",
@@ -25190,7 +25190,7 @@
     "chapterId": null,
     "name": "Return to the Lost Beyond after completing Main Mission",
     "description": "Return to the Lost Beyond after completing Main Mission",
-    "trackEntityId": "q_172000001",
+    "trackEntityId": "e_905_172700655",
     "children": null,
     "references": [
       "q_172000001"
@@ -25205,7 +25205,7 @@
     "chapterId": null,
     "name": "Dialogue with Triss in the Lost Beyond",
     "description": "Dialogue with Triss in the Lost Beyond",
-    "trackEntityId": "q_172000001",
+    "trackEntityId": "e_905_172700655",
     "children": null,
     "references": [
       "q_172000001"
@@ -25237,7 +25237,7 @@
     "chapterId": null,
     "name": "Book Seller",
     "description": "Book Seller",
-    "trackEntityId": "q_172000003",
+    "trackEntityId": "e_905_180700308",
     "children": null,
     "references": [
       "q_172000003"
@@ -29783,7 +29783,7 @@
     "chapterId": 2014,
     "name": "Advance the Foundation Phase of the Spacetrek Observatory",
     "description": "Continue to rebuild the route network by increasing the Network Activity to 600",
-    "trackEntityId": "q_176000004",
+    "trackEntityId": "e_906_169700026",
     "children": null,
     "references": [
       "q_176000004"
@@ -29798,7 +29798,7 @@
     "chapterId": 2014,
     "name": "Advance the Platform Phase of the Spacetrek Observatory",
     "description": "Continue to rebuild the route network by increasing the Network Activity to 1200",
-    "trackEntityId": "q_176000005",
+    "trackEntityId": "e_906_169000185",
     "children": null,
     "references": [
       "q_176000005",
@@ -29814,7 +29814,7 @@
     "chapterId": 2014,
     "name": "Advance the Overwatch Phase of the Spacetrek Observatory",
     "description": "Continue to rebuild the route network by increasing the Network Activity to 2100",
-    "trackEntityId": "q_176000006",
+    "trackEntityId": "e_906_169700206",
     "children": null,
     "references": [
       "q_176000006"
@@ -31696,7 +31696,7 @@
     "chapterId": 3007,
     "name": "Where Wisdom Lights the Way",
     "description": "A Roya girl pauses before a stone wall. She explains that it holds one of the foundations of the Roya tribe, a record of the operating patterns of the Reactor Drive. You decide to join her in relighting these petroglyphs, restoring the wisdom with which the Roya once measured their world and ensuring their brilliance never fades.",
-    "trackEntityId": "q_157700003",
+    "trackEntityId": "e_8_915700002",
     "children": null,
     "references": [
       "q_157700003",
@@ -32325,7 +32325,7 @@
     "chapterId": null,
     "name": "Voidspawn Emergence",
     "description": "The abnormal Voidworm activity has been contained, and the Academy's crisis has passed. While the Voidworm has returned to its normal route, lingering Voidmatter disturbances have yet to fully dissipate. Continued monitoring is required.",
-    "trackEntityId": "l_906_131700004",
+    "trackEntityId": "e_906_131700177",
     "children": [
       "l_906_131700004"
     ],
@@ -32753,7 +32753,7 @@
     "chapterId": null,
     "name": "Fest Guest: Yinlin",
     "description": "A familiar figure appears on the balcony. Go talk to her and catch up.",
-    "trackEntityId": "q_162750008",
+    "trackEntityId": "e_8900_162750011",
     "children": null,
     "references": [
       "q_162750008",
@@ -34983,7 +34983,7 @@
     "chapterId": null,
     "name": "Smartprint Cube Reboot - Frostlands Surface",
     "description": "Complete all Smartprint Cube Reboot challenges on the Frostlands Surface",
-    "trackEntityId": "q_690000001",
+    "trackEntityId": "e_906_690750048",
     "children": null,
     "references": [
       "q_690000001"
@@ -36404,7 +36404,7 @@
     "chapterId": 2015,
     "name": "Restoration: Solisia Landing!",
     "description": "The Voidcreeps in the Solisia Landing Survey Site has yet to be cleared. Soliskin Barton seems to have an idea of what to do.",
-    "trackEntityId": "l_909_219850000",
+    "trackEntityId": "e_909_219850024",
     "children": null,
     "references": [
       "l_909_219850000",
@@ -36420,7 +36420,7 @@
     "chapterId": 2015,
     "name": "Restoration: Sealed Fissure!",
     "description": "The Sealed Fissure shows few signs of Voidmatter contamination, but a disoriented Soliskin, Bada, is trapped in the ice and in desperate need of rescue.",
-    "trackEntityId": "l_909_219850003",
+    "trackEntityId": "e_909_219850109",
     "children": null,
     "references": [
       "l_909_219850003",
@@ -36436,7 +36436,7 @@
     "chapterId": 2015,
     "name": "Restoration: Silent Crag!",
     "description": "Rampaging Exoswarm are closing in on the research station. Help Professor Maeve find her missing student, Finella, and Soliskin Budee.",
-    "trackEntityId": "l_909_219850002",
+    "trackEntityId": "e_909_219850108",
     "children": null,
     "references": [
       "l_909_219850002",
@@ -36452,7 +36452,7 @@
     "chapterId": 2015,
     "name": "Restoration: Dimmr Deep!",
     "description": "The surveying of the Dimmr Deep is at a critical juncture. Help the researchers recover their Geospider S4, which Soliskin Banana has taken for a joyride.",
-    "trackEntityId": "l_909_219850001",
+    "trackEntityId": "e_909_219850035",
     "children": null,
     "references": [
       "l_909_219850001",
@@ -36971,7 +36971,7 @@
     "chapterId": 3007,
     "name": "Spacetrek Incubation Program",
     "description": "A man named Ham has invited you to participate in the Spacetrek Incubation Program...",
-    "trackEntityId": "q_184850008",
+    "trackEntityId": "e_909_211850000",
     "children": null,
     "references": [
       "q_184850008"
@@ -37219,7 +37219,7 @@
     "chapterId": null,
     "name": "Luuk Herssen's \"secret workspace\"",
     "description": "Luuk Herssen's \"secret workspace\"",
-    "trackEntityId": "q_189000000",
+    "trackEntityId": "e_906_176000000",
     "children": null,
     "references": [
       "q_189000000"
@@ -37583,7 +37583,7 @@
     "chapterId": 3007,
     "name": "Message Stranded in Shimmer: Epilogue",
     "description": "Reynard has sent a message to let you know what happened after that 'scavenger' incident...",
-    "trackEntityId": "q_211850007",
+    "trackEntityId": "e_909_194850000",
     "children": null,
     "references": [
       "q_211850007"
@@ -37598,7 +37598,7 @@
     "chapterId": null,
     "name": "Hidden Exostrider",
     "description": "Hidden Exostrider",
-    "trackEntityId": "q_155000004",
+    "trackEntityId": "e_8_155850001",
     "children": null,
     "references": [
       "q_155000004",

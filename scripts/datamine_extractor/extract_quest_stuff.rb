@@ -4,7 +4,8 @@ require 'byebug'
 
 @questchapter_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/quest_chapter/questchapter.json")
 @questmaintype_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/questtype/questmaintype.json")
-@questdata_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/QuestData/questdata.json", true)
+@questdata_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/QuestData/questdata.json", false, "QuestId")
+@levelplaydata_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/LevelPlayData/levelplaydata.json", false, "LevelPlayId")
 
 # data = []
 # @questchapter_config.each do |row|
@@ -20,6 +21,34 @@ require 'byebug'
 # end
 # save_json(data, "questchapter.json")
 # puts "Saved #{data.size} questchapter."
+
+def get_tracked_entity_id(row)
+  tracked_id = (row["Reference"] || row.dig("Data", "Reference"))
+  return nil if tracked_id.nil?
+
+  type, map, id = tracked_id[0].split("_")
+  # it can be e_MAP_ID, l_ID, q_ID
+  id = map if id.nil?
+  id = id.to_i
+  if type == "e"
+    "#{type}_#{map}_#{id}"
+  elsif type == "l"
+    lpdata = @levelplaydata_config[id]
+    byebug unless lpdata.is_a?(Hash)
+    get_tracked_entity_id(lpdata)
+  elsif type == "q"
+    qdata = @questdata_config[id]
+    byebug unless qdata.is_a?(Hash)
+    get_tracked_entity_id(qdata)
+  elsif type == "f"
+    # TODO find out what is it
+    nil
+  elsif type.nil?
+    nil
+  else
+    byebug
+  end
+end
 
 def extract_quest_data(row)
   {
@@ -38,7 +67,7 @@ def extract_quest_data(row)
     # DistributeType: row["DistributeType"],
     # ObjType: row["ObjType"],
     # trackEntityId: row.dig("AddInteractOption", "EntityId"),
-    trackEntityId: row["Reference"][0],
+    trackEntityId: get_tracked_entity_id(row),
     children: row["Children"],
     references: row["Reference"],
   }
@@ -49,7 +78,7 @@ quest_chapters = {}
 trackable_quests = 0
 untrackable_quests = 0
 data = []
-@questdata_config.each do |row|
+@questdata_config.entries.each do |id, row|
   rowData = row["Data"]
   skip_row = rowData && rowData["Reference"]
   next unless skip_row
