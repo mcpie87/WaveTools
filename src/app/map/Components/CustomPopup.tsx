@@ -39,7 +39,7 @@ export function CustomPopup({
 
   return (
     <Popup autoPan={false}>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         <div className="font-bold flex items-center justify-center">
           {title}{showDescription && ` - ${marker.category}`}
         </div>
