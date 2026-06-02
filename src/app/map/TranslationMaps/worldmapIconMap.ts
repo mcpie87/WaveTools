@@ -9,6 +9,7 @@ import { convertToUrl } from "@/utils/utils";
 import { Puzzle } from "./Puzzles";
 import { TeleporterName } from "./Teleporters";
 import { Quest } from "./Quests";
+import { Miscellaneous } from "./Miscellaneous";
 
 type IconUrl = string;
 type IconRecord = [
@@ -21,6 +22,9 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Resonance Beacon": "Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
   "Gondola Platform": "Atlas/WorldMapIcon/SP_IconMap_Ocean_UI.png",
   "Mechascout": "Atlas/WorldMapIcon/SP_IconMap_Play_56_UI.png",
+  [TeleporterName.TACET_FIELD]: ["Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png", true],
+  [TeleporterName.TACET_DISCORD_NEST]: ["Atlas/WorldMapIcon/SP_IconMap_Play_53_UI.png", true],
+  [TeleporterName.NIGHTMARE_NEST]: ["Atlas/WorldMapIcon/SP_IconMonsterHead_1006_UI.png", true],
 
   /* Caskets */
   "Sonance Casket": "Image/IconMst160/T_IconMst160_006_UI.png",
@@ -29,10 +33,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Sonance Casket: Septimont": "Image/IconMst80/T_IconMst80_008_UI.png",
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
 
-  /* Puzzles */
-  [TeleporterName.TACET_FIELD]: ["Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png", true],
-  [TeleporterName.TACET_DISCORD_NEST]: ["Atlas/WorldMapIcon/SP_IconMap_Play_53_UI.png", true],
-  [TeleporterName.NIGHTMARE_NEST]: ["Atlas/WorldMapIcon/SP_IconMonsterHead_1006_UI.png", true],
+  /* Quests */
   [Quest.MAIN_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_UI.png", true],
   [Quest.SIDE_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_02_1_UI.png", true],
   [Quest.TUTORIAL_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_1_UI.png", true],
@@ -40,6 +41,8 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [Quest.STORY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_03_UI.png", true],
   [Quest.DAILY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_06_UI.png", true],
   [Quest.EXPLORATION_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_10_UI.png", true],
+
+  /* Puzzles */
   "Tactical Hologram": ["Atlas/WorldMapIcon/SP_IconMap_Play_10_UI.png", true],
   // 2.0
   "Treasure Spot": "Atlas/WorldMapIcon/SP_IconMap_Play_15_UI.png",
@@ -74,6 +77,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Quest Activity": "Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
   [Puzzle.GEOSPIDER_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_31079_UI.png",
   [Puzzle.REINDEER_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_32051_UI.png",
+  [Puzzle.ZIPZAP_PROJECTION]: "Image/IconMonsterHead/T_IconMonsterHead_31082_UI.png",
 
   // 3.1
   "Soliskin Guide": "Atlas/WorldMapIcon/SP_IconMap_Play_66_UI.png",
@@ -451,6 +455,9 @@ const CustomIcons: Record<string, IconUrl> = {
   "Mutterfly": "Mutterfly.png",
   "Blobfly": "Blobfly.webp",
   "Frostbug": "Frostbug.webp",
+  [Puzzle.FRAGILE_ROCK]: "Fragile_Rock.png",
+  [Puzzle.TRAINING_DUMMY]: "Training_Dummy.png",
+  [Miscellaneous.LAUNCH_PAD]: "Launchpad.png",
 };
 
 export const convertPngToWebp = (fileName: string) => fileName.replace(/\.png$/, '.webp');

@@ -6,21 +6,47 @@ export enum Puzzle {
   // 1.0
   MUTTERFLY = "Mutterfly",
   BLOBFLY = "Blobfly",
-  HOVERING_MAGNETITE = "Hovering Magnetite",
+  MAGNETIC_CUBE = "Magnetic Cube",
   SIMULATION_TRAINING_DEVICE = "Simulation Training Device",
   FRAGILE_ROCK = "Fragile Rock",
   FISSURED_LEDGE = "Fissured Ledge",
   SHOOTING_CHALLENGE = "Shooting Challenge",
+  TRAINING_DUMMY = "Training Dummy",
+  ENERGY_MATRIX = "Energy Matrix",
+  ENCRYPTION_BLOCK = "Encryption Block",
+  PRESSURE_PLATFORM = "Pressure Platform",
+  WEIGHT_BLOCK = "Weight Block",
+  GRAPPLE_SHOOTER = "Grapple Shooter",
+  SPIKES = "Spikes",
+  CORRODERS = "Corroders",
+  SOUND_EMULATOR = "Sound Emulator",
+  TACETITE_FULMINATE = "Tacetite Fulminate",
+  ECHO_CHALLENGE_GULPUFF = "Echo Challenge: Gulpuff",
+  PROPULSION_FLUX = "Propulsion Flux",
+  TACTICAL_HOLOGRAM_CHALLENGE = "Tactical Hologram: Challenge",
+  ECHO_CHALLENGE_CRUISEWING = "Echo Challenge: Cruisewing",
+  HOVER_TARGET = "Hover Target",
+  TACTICAL_HOLOGRAM_OVERDASH = "Tactical Hologram: Overdash",
+  INDUCTION_CELL = "Induction Cell",
+  INDUCTION_CELL_SOCKET = "Induction Cell Socket",
+  TACTICAL_HOLOGRAM_DETONATE = "Tactical Hologram: Detonate",
+  ILLUSIVE_SPRINT = "Illusive Sprint",
+  TRANSDUCER = "Transducer",
 
   // 1.1
   TACTICAL_HOLOGRAM_SKI = "Tactical Hologram: Ski",
   FROSTBUG = "Frostbug",
+  CHRONOSORTER = "Chronosorter",
+  LEAP_DEVICE = "Leap Device",
+  ECHO_CHALLENGE_CLANG_BANG = "Echo Challenge: Clang Bang",
 
   // 2.0
   FLYING_CHALLENGE = "Flying Challenge",
   MUSICFLY = "Musicfly",
   OVERFLOWING_PALETTE = "Overflowing Palette",
   ECHO_CHALLENGE = "Echo Challenge",
+  NIGHTMARE_CLOUD_PURPLE = "Nightmare Cloud: Purple",
+  NIGHTMARE_CLOUD_RED = "Nightmare Cloud: Red",
 
   // 2.4
   HERO_REND = "Hero's Rend",
@@ -39,6 +65,7 @@ export enum Puzzle {
   SOLISKIN_COLLECT = "Soliskin Collect",
   GEOSPIDER_PROJECTION = "Geospider Projection",
   REINDEER_PROJECTION = "Reindeer Projection",
+  ZIPZAP_PROJECTION = "Zipzap Projection",
 
   // 3.1
   SOLISKIN_GUIDE = "Soliskin Guide",
@@ -245,7 +272,7 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
     key: "PUZZLE_BLOBFLY",
     keys: ["Animal032"]
   },
-  [Puzzle.HOVERING_MAGNETITE]: {
+  [Puzzle.MAGNETIC_CUBE]: {
     key: "PUZZLE_HOVERING_MAGNETITE",
     keys: ["Gameplay381"]
   },
@@ -267,6 +294,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.SHOOTING_CHALLENGE]: {
     key: "PUZZLE_SHOOTING_CHALLENGE",
     keys: ["Gameplay055"]
+  },
+  [Puzzle.TRAINING_DUMMY]: {
+    key: "PUZZLE_TRAINING_DUMMY",
+    keys: ["Gameplay050"]
   },
 
   // 1.1
@@ -294,6 +325,14 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.OVERFLOWING_PALETTE]: {
     key: "PUZZLE_OVERFLOWING_PALETTE",
     keys: ["Gameplay8"]
+  },
+  [Puzzle.NIGHTMARE_CLOUD_PURPLE]: {
+    key: "PURPLE_RINASCITA_CLOUD",
+    keys: ["Gameplay012"]
+  },
+  [Puzzle.NIGHTMARE_CLOUD_RED]: {
+    key: "RED_RINASCITA_CLOUD",
+    keys: ["branch2.0_JMXJ_StrongPollution"]
   },
 
   // 2.4
@@ -352,6 +391,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
       "branch3.0_40_Gameplay_3_0/VisionSummon8",
       "branch3.3_249_Gameplay_3_0/VisionSummon11", // TODO: remove? not sure
     ]
+  },
+  [Puzzle.ZIPZAP_PROJECTION]: {
+    key: "PUZZLE_ZIPZAP_PROJECTION",
+    keys: ["branch3.0_157_Gameplay_3_0/VisionSummon1"]
   },
   // "branch3.3_FlowerPollutionManager" // Flower pollution?
   // 3.1

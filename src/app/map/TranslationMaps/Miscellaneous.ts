@@ -1,5 +1,9 @@
 import { TranslationMapEntry } from "./TranslationMapInterface"
 
+export enum Miscellaneous {
+  LAUNCH_PAD = "Launch Pad",
+}
+
 export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   "Weapon": {
     key: "MISC_EXILE_WEAPON",
@@ -18,6 +22,10 @@ export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[];
       "SceneObj100",
     ]
   },
+  [Miscellaneous.LAUNCH_PAD]: {
+    key: "MISC_LAUNCH_PAD",
+    keys: ["Gameplay525"]
+  },
   "Monnaie Box": {
     key: "MISC_MONNAIE_BOX",
     keys: [
@@ -28,14 +36,6 @@ export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[];
       "Quest010",
       "Quest009",
     ],
-  },
-  "Purple Rinascita Cloud": {
-    key: "PURPLE_RINASCITA_CLOUD",
-    keys: ["Gameplay012"]
-  },
-  "Red Rinascita Cloud": {
-    key: "RED_RINASCITA_CLOUD",
-    keys: ["branch2.0_JMXJ_StrongPollution"]
   },
   "Scavenger's Backpack": {
     key: "SCAVENGER_BACKPACK",
