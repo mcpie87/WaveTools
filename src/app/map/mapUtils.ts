@@ -145,6 +145,7 @@ export enum MapName {
   LAHAI_ROI = "Lahai Roi",
   ROYA_FROSTLANDS = "Roya Frostlands",
   DIMMR_PLAINS = "Dimmr Plains",
+  NIGHT_CITY = "Night City",
   OVERWORLD = "Overworld",
 }
 
@@ -276,6 +277,9 @@ export const mapConfigs: Record<string, MapConfig> = {
     mapId: 909,
     bounds: [[-3, 5], [-2, 5]],
     url: `${prefix}/AYTiles/T_AYTiles_{x}_{y}_UI.${format}`
+  },
+  [MapName.NIGHT_CITY]: {
+    mapId: 1015,
   },
   [MapName.OVERWORLD]: {
     mapId: 8,
