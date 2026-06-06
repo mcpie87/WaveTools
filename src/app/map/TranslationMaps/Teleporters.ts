@@ -9,6 +9,7 @@ export enum TeleporterKey {
   TACET_FIELD = "QUERY_TACET_FIELD",
   NIGHTMARE_NEXT = "QUERY_NIGHTMARE_NEST",
   TACET_DISCORD_NEST = "QUERY_TACET_NEST",
+  SOMNOIRE = "SOMNOIRE",
 }
 
 export enum TeleporterName {
@@ -19,6 +20,7 @@ export enum TeleporterName {
   TACET_FIELD = "Tacet Field",
   NIGHTMARE_NEST = "Nightmare Nest",
   TACET_DISCORD_NEST = "Tacet Discord Nest",
+  SOMNOIRE = "Somnoire",
 }
 
 export const TeleporterQueryCategories: Record<string, QueryCategory> = {
@@ -38,7 +40,12 @@ export const TeleporterQueryCategories: Record<string, QueryCategory> = {
   [TeleporterName.NIGHTMARE_NEST]: {
     key: TeleporterName.NIGHTMARE_NEST,
     name: TeleporterName.NIGHTMARE_NEST,
-    query: (m) => m?.mapMark?.icon.includes("SP_IconMonsterHead_1006_UI.png") ?? false,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMonsterHead_1006_UI") ?? false,
+  },
+  [TeleporterKey.SOMNOIRE]: {
+    key: TeleporterName.SOMNOIRE,
+    name: TeleporterName.SOMNOIRE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_03_UI") ?? false,
   },
 }
 
@@ -73,6 +80,13 @@ const TeleporterTranslationMapGroups: Record<string, { keys: string[]; key: stri
     key: TeleporterKey.MECHASCOUT,
     keys: [
       "branch2.8_41_Gameplay_3_0/Common1",
+    ]
+  },
+  // 3.4
+  [TeleporterName.SOMNOIRE]: {
+    key: TeleporterKey.SOMNOIRE,
+    keys: [
+      "branch3.4_159_Gameplay_3_4/Cyber_Door3",
     ]
   },
 };

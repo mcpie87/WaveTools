@@ -5164,6 +5164,17 @@
             "value": 3000
           }
         ]
+      },
+      {
+        "id": 42601500,
+        "name": "Forget-Me-Not",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
       }
     ]
   },
@@ -5704,6 +5715,128 @@
             "id": 2,
             "name": "Shell Credit",
             "value": 40000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "type": null,
+    "name": "AI Variety Store",
+    "currency": [
+      80
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 42601510,
+        "name": "Past Reveries",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 80000086,
+        "name": "The David Martinez",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": 80010086,
+        "name": "The David Martinez Recipe",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "id": 43010003,
+        "name": "Advanced Resonance Potion",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 8
+          }
+        ]
+      },
+      {
+        "id": 43020003,
+        "name": "Advanced Energy Core",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 8
+          }
+        ]
+      },
+      {
+        "id": 36000003,
+        "name": "Advanced Sealed Tube",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "id": 43021022,
+        "name": "Aftertune Combustor",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 43021023,
+        "name": "Remnant Combustor",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Shell Credit",
+        "value": [
+          {
+            "id": 80,
+            "name": "Pull Tabs",
+            "value": 1
           }
         ]
       }

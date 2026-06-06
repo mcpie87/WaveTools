@@ -360,6 +360,14 @@
           "\"Module\" - 80"
         ],
         "limit": 15
+      },
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 8"
+        ],
+        "limit": 10
       }
     ]
   },
@@ -422,6 +430,14 @@
           "\"Module\" - 80"
         ],
         "limit": 15
+      },
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 8"
+        ],
+        "limit": 10
       }
     ]
   },
@@ -474,6 +490,14 @@
         "shopName": "NO CONTENT",
         "price": [
           "\"Module\" - 100"
+        ],
+        "limit": 15
+      },
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 10"
         ],
         "limit": 15
       }
@@ -2050,6 +2074,22 @@
           "\"Module\" - 100"
         ],
         "limit": 50
+      },
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 5"
+        ],
+        "limit": 14
+      },
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 1"
+        ],
+        "limit": -1
       }
     ]
   },
@@ -4890,6 +4930,14 @@
           "\"Module\" - 180"
         ],
         "limit": 5
+      },
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 5"
+        ],
+        "limit": 10
       }
     ]
   },
@@ -5576,6 +5624,76 @@
           "Shell Credit - 3000"
         ],
         "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601500,
+    "itemName": "Forget-Me-Not",
+    "shops": [
+      {
+        "id": 141,
+        "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601510,
+    "itemName": "Past Reveries",
+    "shops": [
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 5"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 80000086,
+    "itemName": "The David Martinez",
+    "shops": [
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 20"
+        ],
+        "limit": 5
+      }
+    ]
+  },
+  {
+    "id": 80010086,
+    "itemName": "The David Martinez Recipe",
+    "shops": [
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 100"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 43021023,
+    "itemName": "Remnant Combustor",
+    "shops": [
+      {
+        "id": 160,
+        "shopName": "AI Variety Store",
+        "price": [
+          "Pull Tabs - 15"
+        ],
+        "limit": 10
       }
     ]
   }

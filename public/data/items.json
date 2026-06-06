@@ -2972,7 +2972,7 @@
   {
     "id": 50015,
     "name": "Purchase Connoisseur Channel",
-    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast.\r\n\r\nComplete the Podcast Tasks for various rewards.",
+    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast.\n\nComplete the Podcast Tasks for various rewards.",
     "bg_description": "Start listening to the Pioneer Podcast now to gain valuable insights for your outdoor adventures!",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cdtq_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cdtq_UI.png",
@@ -2982,7 +2982,7 @@
   {
     "id": 50016,
     "name": "Insider Channel Key",
-    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast.\r\n\r\nComplete the Podcast Tasks for various rewards.",
+    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast.\n\nComplete the Podcast Tasks for various rewards.",
     "bg_description": "Standard physical key issued by the Pioneer Association for the Insider Channel.\n\"Welcome to the Insider Channel! Coming up next is the morning news express...\"",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_zl_02_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_zl_02_UI.png",
@@ -3772,7 +3772,7 @@
   {
     "id": 50017,
     "name": "Connoisseur Key",
-    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast and get additional privilege rewards.\r\n\r\nComplete the Podcast Tasks for various rewards.",
+    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast and get additional privilege rewards.\n\nComplete the Podcast Tasks for various rewards.",
     "bg_description": "Special Deluxe Keycode for the Pioneer Podcast's Connoisseur Channel.\n\"Start listening to the Pioneer Podcast now to gain valuable insights for your outdoor adventures!\"",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_zl_03_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_zl_03_UI.png",
@@ -5962,7 +5962,7 @@
   {
     "id": 50000064,
     "name": "Morphable Echo - Freezing Frost",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Freezing Frost.\r\n2pcs Set: Glacio DMG + 10%.\r\n5pcs Set: Glacio DMG + 10% after releasing Basic Attack or Heavy Attack. This effect stacks up to 3 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Freezing Frost.\n2pcs Set: Glacio DMG + 10%.\n5pcs Set: Glacio DMG + 10% after releasing Basic Attack or Heavy Attack. This effect stacks up to 3 times, each stack lasts 15s.",
     "bg_description": "Chills are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_05_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_05_UI.png",
@@ -5972,7 +5972,7 @@
   {
     "id": 50000065,
     "name": "Morphable Echo - Molten Rift",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\r\n2pcs Set: Fusion DMG + 10%.\r\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\n2pcs Set: Fusion DMG + 10%.\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
     "bg_description": "Flames are flickering and rising in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_06_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_06_UI.png",
@@ -5982,7 +5982,7 @@
   {
     "id": 50000066,
     "name": "Morphable Echo - Void Thunder",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\r\n2pcs Set: Electro DMG + 10%.\r\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\n2pcs Set: Electro DMG + 10%.\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
     "bg_description": "Thunder is rumbling in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_07_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_07_UI.png",
@@ -5992,7 +5992,7 @@
   {
     "id": 50000067,
     "name": "Morphable Echo - Sierra Gale",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\r\n2pcs Set: Aero DMG + 10%.\r\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\n2pcs Set: Aero DMG + 10%.\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "A gust of wind is howling through the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_08_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_08_UI.png",
@@ -6002,7 +6002,7 @@
   {
     "id": 50000068,
     "name": "Morphable Echo - Celestial Light",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\r\n2pcs Set: Spectro DMG + 10%.\r\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\n2pcs Set: Spectro DMG + 10%.\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "Dazzling rays of light are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_09_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_09_UI.png",
@@ -6012,7 +6012,7 @@
   {
     "id": 50000069,
     "name": "Morphable Echo - Havoc Eclipse",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\r\n2pcs Set: Havoc DMG + 10%.\r\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\n2pcs Set: Havoc DMG + 10%.\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
     "bg_description": "The chaos seems to devour everything in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_10_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_10_UI.png",
@@ -6032,7 +6032,7 @@
   {
     "id": 50000071,
     "name": "Morphable Echo - Moonlit Clouds",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\r\n2pcs Set: Energy Regen + 10%.\r\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\n2pcs Set: Energy Regen + 10%.\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
     "bg_description": "A bright moon seems to hide in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_12_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_12_UI.png",
@@ -6052,7 +6052,7 @@
   {
     "id": 50000073,
     "name": "Morphable Echo - Freezing Frost",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Freezing Frost.\r\n2pcs Set: Glacio DMG + 10%.\r\n5pcs Set: Glacio DMG + 10% after releasing Basic Attack or Heavy Attack. This effect stacks up to 3 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Freezing Frost.\n2pcs Set: Glacio DMG + 10%.\n5pcs Set: Glacio DMG + 10% after releasing Basic Attack or Heavy Attack. This effect stacks up to 3 times, each stack lasts 15s.",
     "bg_description": "Chills are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_05_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_05_UI.png",
@@ -6062,7 +6062,7 @@
   {
     "id": 50000074,
     "name": "Morphable Echo - Molten Rift",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\r\n2pcs Set: Fusion DMG + 10%.\r\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\n2pcs Set: Fusion DMG + 10%.\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
     "bg_description": "Flames are flickering and rising in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_06_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_06_UI.png",
@@ -6072,7 +6072,7 @@
   {
     "id": 50000075,
     "name": "Morphable Echo - Void Thunder",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\r\n2pcs Set: Electro DMG + 10%.\r\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\n2pcs Set: Electro DMG + 10%.\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
     "bg_description": "Thunder is rumbling in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_07_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_07_UI.png",
@@ -6082,7 +6082,7 @@
   {
     "id": 50000076,
     "name": "Morphable Echo - Sierra Gale",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\r\n2pcs Set: Aero DMG + 10%.\r\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\n2pcs Set: Aero DMG + 10%.\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "A gust of wind is howling through the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_08_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_08_UI.png",
@@ -6092,7 +6092,7 @@
   {
     "id": 50000077,
     "name": "Morphable Echo - Celestial Light",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\r\n2pcs Set: Spectro DMG + 10%.\r\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\n2pcs Set: Spectro DMG + 10%.\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "Dazzling rays of light are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_09_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_09_UI.png",
@@ -6102,7 +6102,7 @@
   {
     "id": 50000078,
     "name": "Morphable Echo - Havoc Eclipse",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\r\n2pcs Set: Havoc DMG + 10%.\r\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\n2pcs Set: Havoc DMG + 10%.\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
     "bg_description": "The chaos seems to devour everything in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_10_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_10_UI.png",
@@ -6122,7 +6122,7 @@
   {
     "id": 50000080,
     "name": "Morphable Echo - Moonlit Clouds",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\r\n2pcs Set: Energy Regen + 10%.\r\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\n2pcs Set: Energy Regen + 10%.\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
     "bg_description": "A bright moon seems to hide in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_12_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_12_UI.png",
@@ -10792,7 +10792,7 @@
   {
     "id": 50001502,
     "name": "Morphable Echo - Molten Rift",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\r\n2pcs Set: Fusion DMG + 10%.\r\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\n2pcs Set: Fusion DMG + 10%.\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
     "bg_description": "Flames are flickering and rising in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_06_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_06_UI.png",
@@ -10802,7 +10802,7 @@
   {
     "id": 50001503,
     "name": "Morphable Echo - Void Thunder",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\r\n2pcs Set: Electro DMG + 10%.\r\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\n2pcs Set: Electro DMG + 10%.\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
     "bg_description": "Thunder is rumbling in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_07_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_07_UI.png",
@@ -10812,7 +10812,7 @@
   {
     "id": 50001504,
     "name": "Morphable Echo - Sierra Gale",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\r\n2pcs Set: Aero DMG + 10%.\r\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\n2pcs Set: Aero DMG + 10%.\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "A gust of wind is howling through the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_08_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_08_UI.png",
@@ -10822,7 +10822,7 @@
   {
     "id": 50001505,
     "name": "Morphable Echo - Celestial Light",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\r\n2pcs Set: Spectro DMG + 10%.\r\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\n2pcs Set: Spectro DMG + 10%.\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "Dazzling rays of light are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_09_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_09_UI.png",
@@ -10832,7 +10832,7 @@
   {
     "id": 50001506,
     "name": "Morphable Echo - Havoc Eclipse",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\r\n2pcs Set: Havoc DMG + 10%.\r\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\n2pcs Set: Havoc DMG + 10%.\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
     "bg_description": "The chaos seems to devour everything in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_10_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_10_UI.png",
@@ -10852,7 +10852,7 @@
   {
     "id": 50001508,
     "name": "Morphable Echo - Moonlit Clouds",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\r\n2pcs Set: Energy Regen + 10%.\r\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\n2pcs Set: Energy Regen + 10%.\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
     "bg_description": "A bright moon seems to hide in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_12_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_12_UI.png",
@@ -18442,7 +18442,7 @@
   {
     "id": 50000213,
     "name": "Gleaner's Ascension Supply II",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nDream of Stars x1\nRedbell x1\nForget-Me-Not x1\nMoss Amber x1\nEdelschnee x1\n...",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nMoss Amber x1\nEdelschnee x1\nArithmetic Shell x1\nRimewisp x1\nGemini Spore x1\n…",
     "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
@@ -19013,7 +19013,7 @@
     "id": 80130057,
     "name": "Yogurt, Oranges, and Frosting",
     "attributes_description": "Pour some yogurt into the answer, draw some oranges in the runes, spread some frosting over the future.\nThere is no right or wrong—a perfect balance of sweet and sour.",
-    "bg_description": "Fully activate Luuk Herssen's Resonance Chain",
+    "bg_description": "Fully activate Sigrika's Resonance Chain",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
@@ -19330,6 +19330,16 @@
     "rarity": 4
   },
   {
+    "id": 70140086,
+    "name": "Quickhack Module",
+    "attributes_description": "A Quickhack module from Lucy. Can be used to hack into the various mechanisms within Somnoire: Night City.",
+    "bg_description": "A Quickhack module from Lucy. Can be used to hack into the various mechanisms within Somnoire: Night City.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_219_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_219_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_219_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 71500082,
     "name": "Reveler Captain's Seal",
     "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
@@ -19460,6 +19470,96 @@
     "rarity": 5
   },
   {
+    "id": 44010060,
+    "name": "Phantom: Glommoth",
+    "attributes_description": "Unlocks the Phantom Appearance of the corresponding Echo.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_32061_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_32061_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_32061_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 203,
+    "name": "NO CONTENT",
+    "attributes_description": "Data chips scattered beneath the frostlands, presumed to have been left behind by expedition members. Used as a token for Tracing Progress.",
+    "bg_description": "Data chips scattered beneath the frostlands, their surfaces scarred by the corruption of a Void Storm, like final words left for Solaris by the explorers who never returned. Time does not erase everything. The proof of what once happened, of what was endured, slowly settles alongside those fearless souls.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Theme31_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Theme31_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Theme31_01_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 204,
+    "name": "NO CONTENT",
+    "attributes_description": "Data chips scattered beneath the frostlands, presumed to have been left behind by expedition members. Used as a token for Tracing Progress.",
+    "bg_description": "Data chips scattered beneath the frostlands, their surfaces scarred by the corruption of a Void Storm, like final words left for Solaris by the explorers who never returned. Time does not erase everything. The proof of what once happened, of what was endured, slowly settles alongside those fearless souls.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_Theme31_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_Theme31_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_Theme31_01_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50007,
+    "name": "Dreamcatcher Tide",
+    "attributes_description": "Used to Convene once in the following Collab Resonator Convenes:\n<color=#ffd12f>\"Dreaming Upon the Moon\" & \"Rekindled Embers of Rage.\"</color>",
+    "bg_description": "\"Above the waves, I cry out loud. Brilliant ripples, answers found. With this guidance, you will traverse the veil of dreams.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ck_1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ck_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ck_01_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50008,
+    "name": "Shadowforge Tide",
+    "attributes_description": "Used to Convene once in the following Collab Weapon Convenes:\n<color=#ffd12f>\"Spectral Trigger\" & \"Skull Thrasher.\"</color>",
+    "bg_description": "\"Above the waves, I cry out loud. Brilliant ripples, answers found. Yesterday's shadow, forged anew.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ck_2_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ck_02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ck_02_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50009,
+    "name": "Illusive Coral",
+    "attributes_description": "Used to exchange for materials in the Illusive Coral Shop.",
+    "bg_description": "The ephemeral branches of illusory dreams. \n\"That is the proof of your encounter.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ck_3_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ck_03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ck_03_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 10001511,
+    "name": "Lucy's Waveband",
+    "attributes_description": "Can be used to activate Lucy's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1624_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1624_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1624_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 10001308,
+    "name": "Rebecca's Waveband",
+    "attributes_description": "Can be used to activate Rebecca's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1625_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1625_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1625_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000183,
+    "name": "At Dream's Edge - Waveband",
+    "attributes_description": "Open and choose to obtain either: <color=#ffd12f>Lucy's Waveband or Rebecca's Waveband.</color>",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_RoleSelect_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_RoleSelect_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_RoleSelect_01_UI.png",
+    "rarity": 5
+  },
+  {
     "id": 80131008,
     "name": "Supernova Launcher",
     "attributes_description": "Clear Endless Galaxy Track 10 in the event \"Star Bouncing\"",
@@ -19522,7 +19622,7 @@
   {
     "id": 71500089,
     "name": "Whispers of an Undying Grudge",
-    "attributes_description": "Total Spectro DMG is increased by 20%. Total Heavy Attack DMG is increased by 40%. Total Resonance Liberation DMG is increased by 40%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "attributes_description": "Total Spectro DMG is increased by 20%. Total Heavy Attack DMG is increased by 40%. Total Basic Attack DMG is increased by 40%. \n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
     "bg_description": "A young man endured twenty years of humiliation and ridicule before finally putting a bullet through his enemy's heart. The melody that had been haunting his ears since his father's death finally fell silent. Twenty years later, his enemy's son ended the whisper tormenting him in the very same way.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_40.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_40.png",
@@ -19557,6 +19657,16 @@
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 78,
+    "name": "NO CONTENT",
+    "attributes_description": "Item obtained from dailies, can be collected to receive daily rewards.",
+    "bg_description": "Following the direction of the pointer, you travel on the land of Solaris-3, these journeys will never be forgotten.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_currency_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_currency_01_UI.png",
     "rarity": 5
   },
   {
@@ -19634,8 +19744,8 @@
     "name": "Safety Charm",
     "attributes_description": "Similar to an \"Exam Charm,\" this \"mysterious lucky charm\" can be occasionally found in certain places.",
     "bg_description": "Similar to an \"Exam Charm,\" this \"mysterious lucky charm\" can be occasionally found in certain places. Highly sought after by field personnel, it is said to bless its holder with safety and good fortune. Rumor has it that it really can ward off danger and misfortune.\nHowever, this particular piece appears unfinished. Its slightly misaligned edges suggest it is a work in progress.",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_fx_01_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_fx_01_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_fx_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_fx_01_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_fx_01_UI.png",
     "rarity": 4
   },
@@ -19645,8 +19755,28 @@
     "attributes_description": "A stone with carvings of portraits and Royan characters.",
     "bg_description": "On the stone are three animals: a Fluffguin, a Kronapuff, and a Toskr Lemming. They are gathered happily around a Roya girl who is carving statues with a small knife.\n\n\"To my best friends: Fenrir, who loves to dance. Dallas, who loves to eat fish. And Bori, who loves flowers.\nI carve you on this stone, so we can always be together. Forever.\"",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_212_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_212_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_212_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_212_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_212_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 41400314,
+    "name": "Nightmare Flashdrive",
+    "attributes_description": "Nightmare: Adam Smasher's drop, used for Lucy and Rebecca's Ascension.",
+    "bg_description": "A nightmare in crystal. Though its shell and the dreamscape it haunted have perished, this crystal pulses with a malevolent frequency, forever casting a shadow over each and every true love.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_L_027_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_L_027_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_L_027_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 79,
+    "name": "CredChip",
+    "attributes_description": "The digital currency of Night City brought by the Edgerunners. Collect and exchange them for rewards with the Edgerunners.",
+    "bg_description": "\"Remember, only money that can be traced is clean money.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_06_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_06_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_06_UI.png",
     "rarity": 4
   },
   {
@@ -19760,6 +19890,16 @@
     "rarity": 4
   },
   {
+    "id": 42601510,
+    "name": "Past Reveries",
+    "attributes_description": "A material used for Lucy and Rebecca's Ascension.",
+    "bg_description": "A cartridge preserving memories of the good old days, alongside the final chapter of a true legend's journey.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_23_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_23_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_23_UI.png",
+    "rarity": 1
+  },
+  {
     "id": 80110524,
     "name": "What Awaits Beyond the Radiance",
     "attributes_description": "Background music played when witnessing the appearance of the Aurora Bridge with Sigrika.",
@@ -19770,6 +19910,56 @@
     "rarity": 4
   },
   {
+    "id": 10001109,
+    "name": "Lucilla's Waveband",
+    "attributes_description": "Can be used to activate Lucilla's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1626_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1626_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1626_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500090,
+    "name": "Reveler Captain's Seal",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_18.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500091,
+    "name": "The Mirror Reflecting the Beyond",
+    "attributes_description": "Resonators deal 60% more total DMG for 15s after they inflict Havoc Bane.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "When reflection begins to usurp reality, who you see in the mirror will take your place... and walk into the real world.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_43.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_43.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_43.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500092,
+    "name": "The Eye That Gazes into the Abyss",
+    "attributes_description": "Enemies take 50% more total Glacio Chafe DMG.\nInflicting Glacio Chafe on the enemies increases total Glacio DMG by 50% for 5s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Deep within the pupil stands an inverted lighthouse. When you gaze into it, does that black tide gaze into you as well?",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_46.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_46.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_46.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500093,
+    "name": "Whispers of an Undying Grudge",
+    "attributes_description": "Total Spectro DMG is increased by 20%. Total Heavy Attack DMG is increased by 40%. Total Basic Attack DMG is increased by 40%. \n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "A young man endured twenty years of humiliation and ridicule before finally putting a bullet through his enemy's heart. The melody that had been haunting his ears since his father's death finally fell silent. Twenty years later, his enemy's son ended the whisper tormenting him in the very same way.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_40.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_40.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_40.png",
+    "rarity": 5
+  },
+  {
     "id": 80110525,
     "name": "First and Last Gift",
     "attributes_description": "Background music played when Denia leaves.",
@@ -19777,6 +19967,326 @@
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80,
+    "name": "Pull Tabs",
+    "attributes_description": "The currency used to exchange for items in Store.",
+    "bg_description": "\"It's so much harder to part with real cash, isn't it? I mean, if you're dead set on using paper money... just take this pull-tab. Pretend it's a coin and make do.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_22_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_22_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_22_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 55001,
+    "name": "Unbound Brilliance",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71200001,
+    "name": "Photo of the Exhibition Hall Central Area",
+    "attributes_description": "\"Key\" to the Exhibition Hall Central Area.",
+    "bg_description": "A backdoor Lucilla crafted for herself using her power. Very few know how to use it correctly.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_227_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_227_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_227_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200002,
+    "name": "Photo of the Old Research Institute",
+    "attributes_description": "\"Key\" to the old Research Institute.",
+    "bg_description": "A photograph taken while the old Institute was still operational. For its owner, it serves as a memento—the unpleasant kind.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_225_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_225_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_225_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200003,
+    "name": "Antivoid Material Lab Keepsake Photo",
+    "attributes_description": "\"Key\" to the Antivoid Material Lab.",
+    "bg_description": "A photo taken before a certain individual left the lab. For some reason, they didn't take it with them, choosing instead to carry away something far more precious.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_222_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_222_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_222_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200004,
+    "name": "\"Exit\" Key",
+    "attributes_description": "\"Key\" to the Exit of Lucilla's Memory Palace.",
+    "bg_description": "A \"key\" marked with the exit of Lucilla's Memory Palace. To escape the shackles of memory, one must first put them on.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_221_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_221_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_221_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200005,
+    "name": "Damaged Photo of Student Dorm",
+    "attributes_description": "\"Key\" to a Student Dorm.",
+    "bg_description": "A photo of an ordinary student dorm. The paper appears to have been gripped tightly, leaving the surface creased and mottled.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_223_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_223_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_223_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200006,
+    "name": "Yellowed Photo of Student Dorm",
+    "attributes_description": "\"Key\" to a Student Dorm.",
+    "bg_description": "A photo of an ordinary student dorm. The image was captured slightly out of focus.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_224_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_224_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_224_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200007,
+    "name": "\"Classroom\" Photo",
+    "attributes_description": "\"Key\" to a \"Classroom.\"",
+    "bg_description": "A place of passage for countless students and teachers, where innumerable memories overlap. A \"classroom\" that exists only in memory.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_221_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_221_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_221_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 55002,
+    "name": "Corner of the Star Sea",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71200008,
+    "name": "Visitor Pass",
+    "attributes_description": "A visitor pass for the gate at the market. The image on it depicts a tale from the past about admiration and misunderstanding.",
+    "bg_description": "A visitor pass for the gate at the market. The image on it depicts a tale from the past about admiration and misunderstanding.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_218_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_218_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_218_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80001078,
+    "name": "Refreshing Morning",
+    "attributes_description": "Increases Max HP of all Resonators in the team by 1250, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "\"Wondering how I get my morning spark? Here, try a sip.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_28_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_28_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_28_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 51048,
+    "name": "Truthseeker's Tuning Collection",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80131010,
+    "name": "Legend Smasher",
+    "attributes_description": "Defeat Nightmare: Adam Smasher on Difficulty 5 in \"Night City Roaming\"",
+    "bg_description": "Live as a nobody in peace, or go out in a blaze of glory? Your choice. Real legends never die!",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_12_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_12_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_12_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80131011,
+    "name": "Knock on Gate Fissure",
+    "attributes_description": "Defeat 3 Fissure Wardens in a single run of Dream Abode in Fissure challenge",
+    "bg_description": "O Dreamchasers, knock upon the mysterious gate and ascend to the realm in your dreams.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_13_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_13_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_13_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51049,
+    "name": "Renegade's Shadowforge Collection I",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51050,
+    "name": "Renegade's Dreamcatcher Collection",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51051,
+    "name": "Renegade's Shadowforge Collection II",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80000086,
+    "name": "The David Martinez",
+    "attributes_description": "Increases ATK of all Resonators in the team by 30%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "A drink in the Afterlife named after David Martinez. Part of a ritual to honor the memory of street legends who went out in a blaze of glory.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_095_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_095_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_095_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80010086,
+    "name": "The David Martinez Recipe",
+    "attributes_description": "Used to learn how to make The David Martinez.",
+    "bg_description": "A recipe that details how to make The David Martinez.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80130058,
+    "name": "Scorching Frost",
+    "attributes_description": "All desires are bound by one blade. Every road leads to the same end.\nThe future that belongs to her alone shall answer her wish.",
+    "bg_description": "Fully activate Hiyuki's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130059,
+    "name": "Spectrum of the Dark",
+    "attributes_description": "At the edge of night, someone once lit a firework. Since then, all that is bright has soared to the heavens, while all that is dim has sunk forever into the depths of dreams.",
+    "bg_description": "Fully activate Denia's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130060,
+    "name": "Till the Moonlight Dims",
+    "attributes_description": "Even if it is a fleeting dream, I will show that you existed.",
+    "bg_description": "Fully activate Lucy's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130061,
+    "name": "Rowdy Rebel",
+    "attributes_description": "A girl and her iron against the world. A bundle of rage and love ready to burst, painting the city's cold concrete with a neon brilliance.",
+    "bg_description": "Fully activate Rebecca's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130062,
+    "name": "The Witness",
+    "attributes_description": "I bear witness to the silent miracle of seeds sprouting from the frozen earth. One day, they shall reach the sky.",
+    "bg_description": "Fully activate Lucilla's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71200009,
+    "name": "\"All Eyes On You\"",
+    "attributes_description": "A gift from President Lucilla. Lucy left it in Solaris when she woke from the dream that surprised her.",
+    "bg_description": "Memory may fade, but this cross-realm friendship will keep its colors.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_217_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_217_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_217_a_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200010,
+    "name": "\"All Eyes On You\"",
+    "attributes_description": "A gift from President Lucilla. Lucy left it in Solaris when she woke from the dream that surprised her.",
+    "bg_description": "Memory may fade, but this cross-realm friendship will keep its colors.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_217_b_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_217_b_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_217_b_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200011,
+    "name": "Chat Screenshot",
+    "attributes_description": "A screenshot of a chat with Lucilla. It may be the key to reaching the rendezvous point.",
+    "bg_description": "Don't get yourself lost in a memory, Rover.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_226_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_226_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_226_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110526,
+    "name": "To Hold You on the Moon",
+    "attributes_description": "Background music played when everyone stood together against the Nightmare Tacet Discord.",
+    "bg_description": "Complete Episodic Quest \"At Dream's Edge\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200012,
+    "name": "Travel Snapshot",
+    "attributes_description": "A photo Lucilla took of you in the Memory Palace. Just a keepsake.",
+    "bg_description": "Someone really isn't that photogenic.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_228_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_228_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_228_a_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200013,
+    "name": "Travel Snapshot",
+    "attributes_description": "A photo Lucilla took of you in the Memory Palace. Just a keepsake.",
+    "bg_description": "Someone really isn't that photogenic.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_228_b_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_228_b_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_228_b_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71200014,
+    "name": "\"Untitled 18 - Brancesi, 2021\"",
+    "attributes_description": "A painting from another world. Is it a real piece? Hell knows.",
+    "bg_description": "At least you can't sell it repeatedly to get the dough in this world.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_220_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_220_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_220_UI.png",
     "rarity": 4
   }
 ]

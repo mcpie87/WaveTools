@@ -27,6 +27,14 @@ def convert_to_png(path)
   "#{directory}/#{filename}.png"
 end
 
+def convert_to_webp(path)
+  directory = File.dirname(path)
+  filename  = File.basename(path)
+  filename = filename.sub(/\A(.+)\.\1\z/, '\1')
+
+  "#{directory}/#{filename}.webp"
+end
+
 def parse_iteminfo(item)
     {
         id: item["Id"],

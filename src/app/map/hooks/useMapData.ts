@@ -6,6 +6,7 @@ import { APIAreaLayer } from "@/types/mapTypes";
 import RBush from "rbush";
 import { mapMarksData } from "../data/map_marks";
 import { GAME_VERSION, LEVEL_ENTITY_CONFIG_URL } from "@/constants/constants";
+import { isDevelopment } from "@/utils/utils";
 
 const ENTITIES_URL = LEVEL_ENTITY_CONFIG_URL[GAME_VERSION];
 
@@ -75,16 +76,27 @@ export function useMapData() {
 
   useEffect(() => {
     (async () => {
-      const cache = await caches.open('levelentityconfig-cache');
-      const cached = await cache.match(ENTITIES_URL);
-
-      const raw: APIMarker[] = cached
-        ? await cached.json()
-        : await (async () => {
-          const res = await fetch(ENTITIES_URL);
-          if (res.ok) await cache.put(ENTITIES_URL, res.clone());
+      let raw: APIMarker[];
+      if (isDevelopment()) {
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+        const url = `${basePath}/data/levelentityconfig.json`;
+        raw = await (async () => {
+          const res = await fetch(url)
+          if (res.ok) return await res.json();
           return res.json();
         })();
+      } else {
+        const cache = await caches.open('levelentityconfig-cache');
+        const cached = await cache.match(ENTITIES_URL);
+
+        raw = cached
+          ? await cached.json()
+          : await (async () => {
+            const res = await fetch(ENTITIES_URL);
+            if (res.ok) await cache.put(ENTITIES_URL, res.clone());
+            return res.json();
+          })();
+      }
 
       setIndexes(buildIndexes(raw));
       setReady(r => ({ ...r, entities: true }));

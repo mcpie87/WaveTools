@@ -22,9 +22,10 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Resonance Beacon": "Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
   "Gondola Platform": "Atlas/WorldMapIcon/SP_IconMap_Ocean_UI.png",
   "Mechascout": "Atlas/WorldMapIcon/SP_IconMap_Play_56_UI.png",
-  [TeleporterName.TACET_FIELD]: ["Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png", true],
+  [TeleporterName.TACET_FIELD]: ["Atlas/WorldMapIcon/SP_IconMap_WYQ_06_UI.png", true],
   [TeleporterName.TACET_DISCORD_NEST]: ["Atlas/WorldMapIcon/SP_IconMap_Play_53_UI.png", true],
-  [TeleporterName.NIGHTMARE_NEST]: ["Atlas/WorldMapIcon/SP_IconMonsterHead_1006_UI.png", true],
+  [TeleporterName.NIGHTMARE_NEST]: ["Atlas/WorldMapIcon/SP_IconMonsterHead_31037_UI.png", true],
+  [TeleporterName.SOMNOIRE]: ["Atlas/WorldMapIcon/SP_IconMap_Play_03_UI.png", true],
 
   /* Caskets */
   "Sonance Casket": "Image/IconMst160/T_IconMst160_006_UI.png",

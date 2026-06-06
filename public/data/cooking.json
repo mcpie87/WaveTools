@@ -3248,7 +3248,23 @@
         "value": 3
       }
     ],
-    "typeId": 2
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001078,
+      "name": "Refreshing Morning",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 1250, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "\"Wondering how I get my morning spark? Here, try a sip.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_28_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_28_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_28_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1109,
+      "name": "Lucilla",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_66_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -3507,6 +3523,33 @@
         "id": 80050001,
         "name": "Cooking oil",
         "value": 1
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10086,
+    "resultItem": {
+      "id": 80000086,
+      "name": "The David Martinez",
+      "attributes_description": "Increases ATK of all Resonators in the team by 30%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A drink in the Afterlife named after David Martinez. Part of a ritual to honor the memory of street legends who went out in a blaze of glory.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_095_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_095_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_095_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42601340,
+        "name": "Dusk Honeypot",
+        "value": 4
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 4
       }
     ],
     "typeId": 1

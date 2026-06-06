@@ -178,5 +178,11 @@
     "name": "Reel of Spliced Memories",
     "sortId": 31,
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriSupport1.png"
+  },
+  {
+    "id": 32,
+    "name": "Shadow of Shattered Dreams",
+    "sortId": 32,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriAdam.png"
   }
 ]

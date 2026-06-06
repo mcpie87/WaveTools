@@ -15112,22 +15112,6 @@
     "title": "Twilight Woodlands"
   },
   {
-    "id": 3360010,
-    "mapId": 909,
-    "relativeId": 0,
-    "entityConfigId": 0,
-    "icon": "./.png",
-    "title": "Stalaglow Cavern"
-  },
-  {
-    "id": 3360011,
-    "mapId": 909,
-    "relativeId": 0,
-    "entityConfigId": 0,
-    "icon": "./.png",
-    "title": "Nevermore Halls"
-  },
-  {
     "id": 3360012,
     "mapId": 909,
     "relativeId": 0,
@@ -15152,28 +15136,12 @@
     "title": "Skyrelic Cascade"
   },
   {
-    "id": 3360015,
-    "mapId": 909,
-    "relativeId": 0,
-    "entityConfigId": 0,
-    "icon": "./.png",
-    "title": "Voidthirst Cradle"
-  },
-  {
     "id": 3360016,
     "mapId": 909,
     "relativeId": 0,
     "entityConfigId": 0,
     "icon": "./.png",
     "title": "Ljos Isle"
-  },
-  {
-    "id": 3360017,
-    "mapId": 909,
-    "relativeId": 0,
-    "entityConfigId": 0,
-    "icon": "./.png",
-    "title": "Tomorrow's Horizon"
   },
   {
     "id": 3360018,
@@ -15381,7 +15349,7 @@
     "relativeId": 8003,
     "entityConfigId": 207850003,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_02_UI.png",
-    "title": "Depths of Illusive Realm: Chromatic Fantasy"
+    "title": "Depths of Illusive Realm: Dreamchasers"
   },
   {
     "id": 3350101,
@@ -16126,5 +16094,29 @@
     "entityConfigId": 121850273,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
     "title": "Resonance Beacon"
+  },
+  {
+    "id": 5043,
+    "mapId": 906,
+    "relativeId": 316700030,
+    "entityConfigId": 193700000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_89_UI.png",
+    "title": "Nightmare: Adam Smasher"
+  },
+  {
+    "id": 3410001,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 246700001,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_MotoParkour_UI.png",
+    "title": "Startorch Racing, Rerun!"
+  },
+  {
+    "id": 3430001,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 159700010,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_78_UI.png",
+    "title": "Somnoire: Night City"
   }
 ]
