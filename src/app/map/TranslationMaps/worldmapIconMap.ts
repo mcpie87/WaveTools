@@ -34,13 +34,13 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
 
   /* Quests */
-  [Quest.MAIN_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_UI.png", true],
-  [Quest.SIDE_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_02_1_UI.png", true],
+  [Quest.MAIN_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_2_UI.png", true],
+  [Quest.SIDE_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_02_2_UI.png", true],
   [Quest.TUTORIAL_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_1_UI.png", true],
   [Quest.EVENT_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_14_UI.png", true],
-  [Quest.STORY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_03_UI.png", true],
-  [Quest.DAILY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_06_UI.png", true],
-  [Quest.EXPLORATION_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_10_UI.png", true],
+  [Quest.STORY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_05_UI.png", true],
+  [Quest.DAILY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_07_UI.png", true],
+  [Quest.EXPLORATION_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_11_1_UI.png", true],
 
   /* Puzzles */
   "Tactical Hologram": ["Atlas/WorldMapIcon/SP_IconMap_Play_10_UI.png", true],
