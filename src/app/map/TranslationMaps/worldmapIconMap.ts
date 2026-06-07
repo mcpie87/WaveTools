@@ -437,7 +437,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
 
   /* Miscellaneous */
   "Weapon": "Image/IconWeapon/T_IconWeapon21020011_UI.png",
-  "Cooking": ["Atlas/WorldMapIcon/SP_IconMap_Shop_06_UI.png", true],
+  "Cooking": ["Atlas/WorldMapIcon/SP_IconMap_Shop_07_UI.png", true],
 };
 
 const CustomIcons: Record<string, IconUrl> = {
