@@ -20,6 +20,7 @@ export enum Quest {
   DAILY_QUEST = "Daily Quest", // questTypeId === 4
   EXPLORATION_QUEST = "Exploration Quest", // questTypeId === 9
   EVENT_QUEST = "Event Quest", // questTypeId === 10
+  EPISODIC_QUEST = "Episodic Quest", // questTypeId === 11
 
   // 1.0
   MUTTERFLY = "Mutterfly",
@@ -110,6 +111,11 @@ export const QuestQueryCategories: Record<string, QueryCategory> = {
     key: "QUERY_EVENT_QUEST",
     name: Quest.EVENT_QUEST,
     query: (m) => m?.questData?.questTypeId === 10,
+  },
+  "QUERY_EPISODIC_Quest": {
+    key: "QUERY_EPISODIC_QUEST",
+    name: Quest.EPISODIC_QUEST,
+    query: (m) => m?.questData?.questTypeId === 16,
   },
   "QUERY_LevelPlayData_Quest": {
     key: "QUERY_LEVEL_PLAY_DATA_QUEST",
