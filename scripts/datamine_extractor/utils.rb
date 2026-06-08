@@ -104,3 +104,43 @@ def save_csv(data, path)
     end
     puts "Generated #{out_path}."
 end
+
+def get_item_info(item_id, keys = nil)
+  @iteminfo_config ||= load_file("#{DATAMINE_PATH}/#{BINDATA}/item/iteminfo.json")
+  @phantomiteminfo_config ||= load_file("#{DATAMINE_PATH}/#{BINDATA}/phantom/phantomitem.json", false, "ItemId")
+
+  row = @iteminfo_config[item_id] || @phantomiteminfo_config[item_id]
+
+  fields = {}
+
+  # default-safe fields (only if row exists)
+  if row
+    fields[:icon] = -> { convert_to_png(row["Icon"]) }
+    fields[:icon_middle] = -> { convert_to_png(row["IconMiddle"]) }
+    fields[:icon_small] = -> { convert_to_png(row["IconSmall"]) }
+    fields[:rarity] = -> { row["QualityId"] }
+  end
+
+  if row && row["MonsterId"]
+    fields[:id] = -> { row["ItemId"] }
+    fields[:name] = -> { get_textmap_name(row["MonsterName"]) }
+
+  elsif item_id == 80100004
+    fields[:id] = -> { item_id }
+    fields[:name] = -> { get_textmap_name("ItemInfo_80100004_Name") }
+    fields[:rarity] ||= -> { nil }
+
+  elsif row
+    fields[:id] = -> { row["Id"] }
+    fields[:name] = -> { get_textmap_name(row["Name"]) }
+    fields[:attributes_description] = -> { get_textmap_name(row["AttributesDescription"]) }
+    fields[:bg_description] = -> { get_textmap_name(row["BgDescription"]) }
+  end
+
+  selected = (keys || fields.keys).map(&:to_sym)
+
+  selected.map do |key|
+    fn = fields[key]
+    [key, fn ? fn.call : nil]
+  end.to_h
+end
