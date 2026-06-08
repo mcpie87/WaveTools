@@ -141,7 +141,7 @@ export enum MapName {
   AVINOLEUM = "Avinoleum",
   FABRICATORIUM = "Fabricatorium of the Deep",
   // HONAMI_CITY_WAR = "Honami City - war area",
-  HONAMI_CITY = "Honami City",
+  HONAMI_CITY = "Chronorift Metropolis",
   LAHAI_ROI = "Lahai Roi",
   ROYA_FROSTLANDS = "Roya Frostlands",
   DIMMR_PLAINS = "Dimmr Plains",
