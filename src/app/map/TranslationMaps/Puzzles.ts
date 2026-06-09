@@ -436,7 +436,7 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   },
   [Puzzle.HACKING_CAMERA]: {
     key: "PUZZLE_HACKING_CAMERA",
-    keys: ["branch3.4_39_Gameplay20"]
+    keys: ["branch3.4_39_Gameplay20", "branch3.4_39_Gameplay25"]
   },
   [Puzzle.VENDING_MACHINE]: {
     key: "PUZZLE_VENDING_MACHINE",
