@@ -57,6 +57,7 @@ const ChestTranslationMapGroups: Record<string, { keys: string[]; key: string }>
       "branch2.0_Treasure_2_0_08",
       "branch2.3_151_Treasure_LNXT_Lock03", // Test only (1 Total, MapId: [100])
       "Treasure_LNXT_Hide02",  // Test only (1 Total, MapId: [100])
+      "branch3.4_193_Treasure_3_2", // 3.4 story quest?
     ]
   },
   [Chest.ADVANCED_SUPPLY_CHEST]: {

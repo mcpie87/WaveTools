@@ -85,6 +85,8 @@ export enum Puzzle {
   BREACH_PROTOCOL = "Breach Protocol",
   HACKING_CAMERA = "Hacking Camera",
   VENDING_MACHINE = "Vending Machine",
+  SURVEILLANCE_CAMERA = "Surveillance Camera",
+  NIGHT_CITY_INSPECT = "Inspect - Night City",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -436,11 +438,19 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   },
   [Puzzle.HACKING_CAMERA]: {
     key: "PUZZLE_HACKING_CAMERA",
-    keys: ["branch3.4_39_Gameplay20", "branch3.4_39_Gameplay25"]
+    keys: ["branch3.4_39_Gameplay20"],
+  },
+  [Puzzle.SURVEILLANCE_CAMERA]: {
+    key: "PUZZLE_SURVEILLANCE_CAMERA",
+    keys: ["branch3.4_39_Gameplay25"]
   },
   [Puzzle.VENDING_MACHINE]: {
     key: "PUZZLE_VENDING_MACHINE",
     keys: ["branch3.4_39_Gameplay21"]
+  },
+  [Puzzle.NIGHT_CITY_INSPECT]: {
+    key: "PUZZLE_NIGHT_CITY_INSPECT",
+    keys: ["branch3.4_217_Gameplay_3_4/Lucy2"]
   },
 };
 
