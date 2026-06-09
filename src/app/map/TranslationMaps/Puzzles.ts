@@ -83,6 +83,8 @@ export enum Puzzle {
 
   // 3.4
   BREACH_PROTOCOL = "Breach Protocol",
+  HACKING_CAMERA = "Hacking Camera",
+  VENDING_MACHINE = "Vending Machine",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -431,6 +433,14 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.BREACH_PROTOCOL]: {
     key: "PUZZLE_BREACH_PROTOCOL",
     keys: ["branch3.4_193_Gameplay_3_4/Lucy4"]
+  },
+  [Puzzle.HACKING_CAMERA]: {
+    key: "PUZZLE_HACKING_CAMERA",
+    keys: ["branch3.4_39_Gameplay20"]
+  },
+  [Puzzle.VENDING_MACHINE]: {
+    key: "PUZZLE_VENDING_MACHINE",
+    keys: ["branch3.4_39_Gameplay21"]
   },
 };
 
