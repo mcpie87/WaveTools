@@ -102,6 +102,8 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Light Builder": "Atlas/WorldMapIcon/SP_IconMap_Play_74_UI.png",
   "Debug 9": "Atlas/WorldMapIcon/SP_IconMap_Play_75_UI.png",
   "Debug 10": "Atlas/WorldMapIcon/SP_IconMap_Play_76_UI.png",
+  // 3.4
+  [Puzzle.BREACH_PROTOCOL]: "Atlas/WorldMapIcon/SP_IconMap_Task_17_1_UI.png",
 
 
 
