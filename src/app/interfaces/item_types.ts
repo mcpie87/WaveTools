@@ -112,6 +112,8 @@ export enum ItemSpecialty {
   REDBELL = "Redbell",
   DREAM_OF_STARS = "Dream of Stars",
   FORGET_ME_NOT = "Forget-Me-Not",
+  // 3.4 Night City
+  PAST_REVERIES = "Past Reveries",
 }
 
 export enum ItemCasket {

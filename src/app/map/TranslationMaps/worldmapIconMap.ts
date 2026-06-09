@@ -145,6 +145,8 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [ItemSpecialty.DREAM_OF_STARS]: "Image/IconC/T_IconC_075_UI.png",
   [ItemSpecialty.REDBELL]: "Image/IconC/T_IconC_076_UI.png",
   [ItemSpecialty.FORGET_ME_NOT]: "Image/IconC/T_IconC_077_UI.png",
+  // 3.4
+  [ItemSpecialty.PAST_REVERIES]: "Image/IconA/T_IconA_23_UI.png",
 
   /* ======================================================================= */
   /*                            NPC Monsters                                 */

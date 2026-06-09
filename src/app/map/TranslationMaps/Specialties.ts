@@ -58,5 +58,8 @@ export const SpecialtyTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.3_151_Collect_SBS3": { key: "SPECIALTY_REDBELL", name: ItemSpecialty.REDBELL },
   "branch3.3_151_Collect_SBS4": { key: "SPECIALTY_DREAM_OF_STARS", name: ItemSpecialty.DREAM_OF_STARS },
   "branch3.3_151_Collect_SBS5": { key: "SPECIALTY_FORGET_ME_NOT", name: ItemSpecialty.FORGET_ME_NOT },
+
+  // 3.4
+  "branch3.4_193_Collect_CJW2": { key: "SPECIALTY_PAST_REVERIES", name: ItemSpecialty.PAST_REVERIES },
 };
 export const SpecialtyDisplayOrder = Object.values(ItemSpecialty);
