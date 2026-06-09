@@ -80,6 +80,9 @@ export enum Puzzle {
   INSPECT = "Inspect",
   INVESTIGATE = "Investigate",
   EXTRA_CHALLENGE = "Extra Challenge",
+
+  // 3.4
+  BREACH_PROTOCOL = "Breach Protocol",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -422,7 +425,13 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.INVESTIGATE]: {
     key: "PUZZLE_INVESTIGATE",
     keys: ["Quest096"]
-  }
+  },
+
+  // 3.4
+  [Puzzle.BREACH_PROTOCOL]: {
+    key: "PUZZLE_BREACH_PROTOCOL",
+    keys: ["branch3.4_193_Gameplay_3_4/Lucy4"]
+  },
 };
 
 export const PuzzleTranslationMap: Record<string, TranslationMapEntry> =
