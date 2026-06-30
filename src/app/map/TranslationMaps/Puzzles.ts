@@ -420,6 +420,7 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
     key: "PUZZLE_INVESTIGATE_ASTRITES",
     keys: [
       "branch2.1_SceneObj1", // Riccoli Islands sailing investigation
+      "branch2.8_318_Collect_Drop/2_20", // Honami capsules
       "branch3.3_161_Treasure_2_0_05", // Dimmr Plains astrites from trees
     ]
   },
