@@ -10,6 +10,7 @@ export enum TeleporterKey {
   NIGHTMARE_NEXT = "QUERY_NIGHTMARE_NEST",
   TACET_DISCORD_NEST = "QUERY_TACET_NEST",
   SOMNOIRE = "SOMNOIRE",
+  FORGERY = "FORGERY",
 }
 
 export enum TeleporterName {
@@ -21,6 +22,7 @@ export enum TeleporterName {
   NIGHTMARE_NEST = "Nightmare Nest",
   TACET_DISCORD_NEST = "Tacet Discord Nest",
   SOMNOIRE = "Somnoire",
+  FORGERY = "Forgery"
 }
 
 export const TeleporterQueryCategories: Record<string, QueryCategory> = {
@@ -46,6 +48,11 @@ export const TeleporterQueryCategories: Record<string, QueryCategory> = {
     key: TeleporterName.SOMNOIRE,
     name: TeleporterName.SOMNOIRE,
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_03_UI") ?? false,
+  },
+  [TeleporterName.FORGERY]: {
+    key: TeleporterName.FORGERY,
+    name: TeleporterName.FORGERY,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_01_UI") ?? false,
   },
 }
 

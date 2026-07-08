@@ -59,7 +59,10 @@ export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[];
   },
   "Grappling Hook": {
     key: "GRAPPLING_HOOK",
-    keys: ["branch3.0_135_Gameplay007"]
+    keys: [
+      "branch3.0_135_Gameplay007",
+      "branch3.5_Gameplay008",
+    ]
   },
   "Fishing Spot - Small": {
     key: "MISC_FISHING_SPOT_SMALL",

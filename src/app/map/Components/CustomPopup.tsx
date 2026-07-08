@@ -162,58 +162,68 @@ export function CustomPopup({
             })}
           </div>
         )}
-
-        {showDescription && marker.mapMark && (
-          <div className="text-xs italic mb-2">
-            Map Mark: {marker.mapMark && JSON.stringify(marker.mapMark)}
-          </div>
-        )}
-        {showDescription && marker.questData && (
-          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
-            Quest:
-            <pre>{JSON.stringify(marker.questData, null, 2)}</pre>
-          </div>
-        )}
-        {showDescription && marker.questChildren && (marker.questData && marker.questChildren.find(e => e.id !== marker.questData!.id)) && (
-          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
-            Quest Children:
-            <pre>{JSON.stringify(marker.questChildren, null, 2)}</pre>
-          </div>
-        )}
-        {showDescription && marker.questReferences && (marker.questData && marker.questReferences.find(e => e.id !== marker.questData!.id)) && (
-          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
-            Quest References:
-            <pre>{JSON.stringify(marker.questReferences, null, 2)}</pre>
-          </div>
-        )}
-        {showDescription && marker.levelPlayChildren && (
-          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
-            LP Children:
-            <pre>{JSON.stringify(marker.levelPlayChildren, null, 2)}</pre>
-          </div>
-        )}
-        {showDescription && marker.levelPlayReferences && (
-          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
-            LP References:
-            <pre>{JSON.stringify(marker.levelPlayReferences, null, 2)}</pre>
-          </div>
-        )}
-        {showDescription && marker.levelPlayData && (
-          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
-            LevelPlayData:
-            <pre>{JSON.stringify(marker.levelPlayData, null, 2)}</pre>
-          </div>
-        )}
-        {showDescription && marker.references && (
-          <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
-            References:
-            <pre>
-              {JSON.stringify(marker.references, null, 2)}
-            </pre>
-          </div>
-        )}
         {showDescription && (
-          <pre className="text-xs mt-2 max-h-[300px] overflow-auto">{marker.description}</pre>
+          <div className="max-h-[600px] overflow-scroll">
+            {marker.rewards && (
+              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+                Rewards:
+                <pre>{JSON.stringify(marker.rewards, null, 2)}</pre>
+              </div>
+            )}
+            {marker.mapMark && (
+              <div className="text-xs italic mb-2">
+                Map Mark: {marker.mapMark && JSON.stringify(marker.mapMark)}
+              </div>
+            )}
+            {marker.questData && (
+              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+                Quest:
+                <pre>{JSON.stringify(marker.questData, null, 2)}</pre>
+              </div>
+            )}
+            {marker.questChildren && (marker.questData && marker.questChildren.find(e => e.id !== marker.questData!.id)) && (
+              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+                Quest Children:
+                <pre>{JSON.stringify(marker.questChildren, null, 2)}</pre>
+              </div>
+            )}
+            {marker.questReferences && (marker.questData && marker.questReferences.find(e => e.id !== marker.questData!.id)) && (
+              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+                Quest References:
+                <pre>{JSON.stringify(marker.questReferences, null, 2)}</pre>
+              </div>
+            )}
+            {marker.levelPlayChildren && (
+              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+                LP Children:
+                <pre>{JSON.stringify(marker.levelPlayChildren, null, 2)}</pre>
+              </div>
+            )}
+            {marker.levelPlayReferences && (
+              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+                LP References:
+                <pre>{JSON.stringify(marker.levelPlayReferences, null, 2)}</pre>
+              </div>
+            )}
+            {marker.levelPlayData && (
+              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+                LevelPlayData:
+                <pre>{JSON.stringify(marker.levelPlayData, null, 2)}</pre>
+              </div>
+            )}
+            {marker.references && (
+              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
+                References:
+                <pre>
+                  {JSON.stringify(marker.references, null, 2)}
+                </pre>
+              </div>
+            )}
+            <div className="text-xs italic mt-2 overflow-auto max-h-[300px]">
+              LevelEntity:
+              <pre>{marker.description}</pre>
+            </div>
+          </div>
         )}
       </div>
     </Popup>

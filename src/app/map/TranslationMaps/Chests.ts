@@ -35,6 +35,9 @@ const ChestTranslationMapGroups: Record<string, { keys: string[]; key: string }>
       "branch3.0_693_Treasure_3_6",
       "Treasure_LNXT_Hide01", // Test only (1 Total, MapId: [100])
       "branch2.4_151_Treasure_LNXT_Hide02", // Test only (1 Total, MapId: [100])
+      "branch3.5_150_Treasure_3_2", // 3.5 Translation: "Basic Supply Chest" - TODO: verify
+      "branch3.5_693_Treasure_3_7", // 3.5 Translation: "Basic Supply Chest" - TODO: verify
+      "branch3.5_693_Treasure_3_18", // 3.5 Translation: "Basic Supply Chest" - TODO: verify
     ]
   },
   [Chest.STANDARD_SUPPLY_CHEST]: {
@@ -57,7 +60,11 @@ const ChestTranslationMapGroups: Record<string, { keys: string[]; key: string }>
       "branch2.0_Treasure_2_0_08",
       "branch2.3_151_Treasure_LNXT_Lock03", // Test only (1 Total, MapId: [100])
       "Treasure_LNXT_Hide02",  // Test only (1 Total, MapId: [100])
-      "branch3.4_193_Treasure_3_2", // 3.4 story quest?
+      "branch3.4_193_Treasure_3_2", // 3.4 story quest? doesnt drop astrites tho
+      "branch3.5_150_Treasure_3_3", // 3.5 Translation: "Standard Supply Chest" - TODO: verify
+      "branch3.5_693_Treasure_3_8", // 3.5 Translation: "Standard Supply Chest" - TODO: verify
+      "branch3.5_693_Treasure_3_12", // 3.5 Translation: "Standard Supply Chest" - TODO: verify
+      "branch3.5_693_Treasure_3_17", // 3.5 Translation: "Standard Supply Chest" - TODO: verify
     ]
   },
   [Chest.ADVANCED_SUPPLY_CHEST]: {
@@ -79,6 +86,9 @@ const ChestTranslationMapGroups: Record<string, { keys: string[]; key: string }>
       "Treasure024",
       "Treasure028",
       "Treasure_LNXT_Hide03", // verify
+      "branch3.5_693_Treasure_3_9", // 3.5 Translation: "Advanced Supply Chest" - TODO: verify
+      "branch3.5_693_Treasure_3_20", // 3.5 Translation: "Advanced Supply PACK" - TODO: verify
+      "branch3.5_150_Treasure_3_4", // 3.5 Translation: "Advanced Supply PACK" - TODO: verify
     ]
   },
   [Chest.PREMIUM_SUPPLY_CHEST]: {

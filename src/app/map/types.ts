@@ -1,4 +1,4 @@
-import { APILevelPlayData, APIMapMark, APIQuestData } from "@/types/mapTypes";
+import { APIBlueprintReward, APILevelPlayData, APIMapMark, APIQuestData } from "@/types/mapTypes";
 
 export interface ComponentsData {
   RewardComponent?: { RewardId?: number };
@@ -73,6 +73,7 @@ export interface IMarker {
   questReferences: APIQuestData[] | undefined;
   levelPlayChildren: APILevelPlayData[] | undefined;
   levelPlayReferences: APILevelPlayData[] | undefined;
+  rewards?: APIBlueprintReward;
   // for optimization purposes for entity mapping
   _matchedCategories?: { name: string, key: string, dictKey?: string }[];
 }

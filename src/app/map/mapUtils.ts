@@ -1,7 +1,7 @@
 import { SelectedMap } from "@/types/mapTypes";
 import { APIMarker, IMarker } from "./types";
 import L from 'leaflet';
-import { getLevelPlayChildren, getLevelPlayData, getLevelPlayReferences, getMapMark, getQuestChildren, getQuestData, getQuestReferences } from "./data/map_marks";
+import { getBlueprintRewards, getLevelPlayChildren, getLevelPlayData, getLevelPlayReferences, getMapMark, getQuestChildren, getQuestData, getQuestReferences } from "./data/map_marks";
 
 export const scaleFactor = 0.30118;
 export const TILE_SIZE = 256;
@@ -121,6 +121,7 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedEntities: Record<
   questReferences: getQuestReferences(getMarkerRealId(marker)),
   levelPlayChildren: getLevelPlayChildren(getMarkerRealId(marker)),
   levelPlayReferences: getLevelPlayReferences(getMarkerRealId(marker)),
+  rewards: getBlueprintRewards(marker.BlueprintType),
 });
 
 
@@ -146,6 +147,7 @@ export enum MapName {
   ROYA_FROSTLANDS = "Roya Frostlands",
   DIMMR_PLAINS = "Dimmr Plains",
   NIGHT_CITY = "Night City",
+  MENGZHOU = "Mengzhou",
   OVERWORLD = "Overworld",
 }
 
@@ -281,9 +283,14 @@ export const mapConfigs: Record<string, MapConfig> = {
   [MapName.NIGHT_CITY]: {
     mapId: 1015,
   },
+  [MapName.MENGZHOU]: {
+    mapId: 8,
+    bounds: [[-4, 3], [-20, -1]],
+    url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
+  },
   [MapName.OVERWORLD]: {
     mapId: 8,
-    bounds: [[-18, 11], [-3, 18]],
+    bounds: [[-18, 11], [-12, 18]],
     url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
   },
 } as const;

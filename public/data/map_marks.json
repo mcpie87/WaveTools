@@ -16104,6 +16104,38 @@
     "title": "Nightmare: Adam Smasher"
   },
   {
+    "id": 4028,
+    "mapId": 8,
+    "relativeId": 150750010,
+    "entityConfigId": 693751147,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_WYQ_09_UI.png",
+    "title": "Tactical Hologram: Sparring"
+  },
+  {
+    "id": 3541001,
+    "mapId": 8,
+    "relativeId": 147000037,
+    "entityConfigId": 147000533,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Potential Case"
+  },
+  {
+    "id": 3541002,
+    "mapId": 8,
+    "relativeId": 219750001,
+    "entityConfigId": 219750839,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Potential Case"
+  },
+  {
+    "id": 3542001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 165750001,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
     "id": 3410001,
     "mapId": 906,
     "relativeId": 0,
@@ -16112,11 +16144,1379 @@
     "title": "Startorch Racing, Rerun!"
   },
   {
+    "id": 3542002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 164750234,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3542003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 164750288,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3542004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 165750033,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
     "id": 3430001,
     "mapId": 906,
     "relativeId": 0,
     "entityConfigId": 159700010,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_78_UI.png",
     "title": "Somnoire: Night City"
+  },
+  {
+    "id": 3560001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Xuanfang Hold"
+  },
+  {
+    "id": 3560002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Western Fang Peaks"
+  },
+  {
+    "id": 3560003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Southern Yuan Hills"
+  },
+  {
+    "id": 3560004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Eastern Xuan Peaks"
+  },
+  {
+    "id": 3560011,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Xuanfang Ministry of Development"
+  },
+  {
+    "id": 3560012,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Xuanfang Ministry of War"
+  },
+  {
+    "id": 3560013,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Huizhen Plaza"
+  },
+  {
+    "id": 3560014,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Xuanfang Huaxu Academy"
+  },
+  {
+    "id": 3560015,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Verdant Court"
+  },
+  {
+    "id": 3560016,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Xuanfang Square"
+  },
+  {
+    "id": 3560017,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Western Skyreach Range"
+  },
+  {
+    "id": 3560018,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Eastern Fogveil Pass"
+  },
+  {
+    "id": 3560021,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Thousandfold Foundry: Skyflow Lines"
+  },
+  {
+    "id": 3560023,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Thousandfold Foundry: Assembly Bay"
+  },
+  {
+    "id": 3560024,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Thousandfold Foundry: Ruination Grounds"
+  },
+  {
+    "id": 3560031,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Gate of Xuanfang"
+  },
+  {
+    "id": 3560032,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Shaftpost Yard"
+  },
+  {
+    "id": 3560033,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Bird-Return Garden"
+  },
+  {
+    "id": 3560034,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Preening Pool"
+  },
+  {
+    "id": 3560035,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Goldsong Woods"
+  },
+  {
+    "id": 3560036,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Sweetbeak Orchard"
+  },
+  {
+    "id": 3560037,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Laststanding Squarefield"
+  },
+  {
+    "id": 3560038,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Hundred-Span Corridor"
+  },
+  {
+    "id": 3560041,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Tranquil Ruins"
+  },
+  {
+    "id": 3560042,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Boughrest Ridge"
+  },
+  {
+    "id": 3560043,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Fogveil Pagoda"
+  },
+  {
+    "id": 3560044,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Xianling Village"
+  },
+  {
+    "id": 353001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 255750000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_01_UI.png",
+    "title": "Sparring Ground"
+  },
+  {
+    "id": 353002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147750026,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_01_UI.png",
+    "title": "Cloudfall Chasm"
+  },
+  {
+    "id": 3520002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751106,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3520003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147750014,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_87_UI.png",
+    "title": "Four Chime Shaftpost"
+  },
+  {
+    "id": 3520004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751112,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3520001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751143,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3520005,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751116,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520006,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751119,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520007,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751122,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520008,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751125,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520009,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751128,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520010,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751131,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520011,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751134,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520012,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751137,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520013,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751140,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3541003,
+    "mapId": 8,
+    "relativeId": 190000003,
+    "entityConfigId": 190000023,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Potential Case"
+  },
+  {
+    "id": 200004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Dreaming Cavern"
+  },
+  {
+    "id": 3541004,
+    "mapId": 8,
+    "relativeId": 190000002,
+    "entityConfigId": 190000004,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Potential Case"
+  },
+  {
+    "id": 3541005,
+    "mapId": 8,
+    "relativeId": 147000036,
+    "entityConfigId": 147750181,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Potential Case"
+  },
+  {
+    "id": 3510003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 176750177,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_88_UI.png",
+    "title": "Rafter Kite Retrieval"
+  },
+  {
+    "id": 3520014,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 115750732,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520015,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 115750738,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520016,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 115750741,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520017,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 115750744,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520018,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 115750747,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3520019,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 115750753,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3542005,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 172750350,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3542006,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 692750078,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3542007,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 259750100,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3542008,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 259750023,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3550101,
+    "mapId": 8,
+    "relativeId": 150750011,
+    "entityConfigId": 150750234,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring"
+  },
+  {
+    "id": 3550102,
+    "mapId": 8,
+    "relativeId": 150750012,
+    "entityConfigId": 150750455,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring"
+  },
+  {
+    "id": 3550103,
+    "mapId": 8,
+    "relativeId": 150750013,
+    "entityConfigId": 150750236,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring"
+  },
+  {
+    "id": 3550104,
+    "mapId": 8,
+    "relativeId": 150750014,
+    "entityConfigId": 150750238,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring"
+  },
+  {
+    "id": 3550105,
+    "mapId": 8,
+    "relativeId": 150750015,
+    "entityConfigId": 150750240,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring"
+  },
+  {
+    "id": 3550106,
+    "mapId": 8,
+    "relativeId": 150750016,
+    "entityConfigId": 150750241,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring"
+  },
+  {
+    "id": 3550107,
+    "mapId": 8,
+    "relativeId": 150750017,
+    "entityConfigId": 150750243,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring"
+  },
+  {
+    "id": 3550108,
+    "mapId": 8,
+    "relativeId": 150750018,
+    "entityConfigId": 150750456,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring"
+  },
+  {
+    "id": 3550109,
+    "mapId": 8,
+    "relativeId": 150750019,
+    "entityConfigId": 150750320,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring"
+  },
+  {
+    "id": 3550110,
+    "mapId": 8,
+    "relativeId": 150750020,
+    "entityConfigId": 150750450,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
+    "title": "Squarefield Sparring: Final"
+  },
+  {
+    "id": 3550201,
+    "mapId": 8,
+    "relativeId": 150750021,
+    "entityConfigId": 150750324,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550202,
+    "mapId": 8,
+    "relativeId": 150750022,
+    "entityConfigId": 150750326,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550204,
+    "mapId": 8,
+    "relativeId": 150750024,
+    "entityConfigId": 150750327,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550205,
+    "mapId": 8,
+    "relativeId": 150750025,
+    "entityConfigId": 150750328,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550206,
+    "mapId": 8,
+    "relativeId": 150750026,
+    "entityConfigId": 150750329,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550207,
+    "mapId": 8,
+    "relativeId": 150750027,
+    "entityConfigId": 150750330,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550208,
+    "mapId": 8,
+    "relativeId": 150750028,
+    "entityConfigId": 150750331,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550209,
+    "mapId": 8,
+    "relativeId": 150750029,
+    "entityConfigId": 150750332,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550210,
+    "mapId": 8,
+    "relativeId": 150750030,
+    "entityConfigId": 150750333,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550211,
+    "mapId": 8,
+    "relativeId": 150750031,
+    "entityConfigId": 150750334,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550212,
+    "mapId": 8,
+    "relativeId": 150750032,
+    "entityConfigId": 150750335,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550213,
+    "mapId": 8,
+    "relativeId": 150750033,
+    "entityConfigId": 150750336,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550214,
+    "mapId": 8,
+    "relativeId": 150750034,
+    "entityConfigId": 150750337,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550215,
+    "mapId": 8,
+    "relativeId": 150750035,
+    "entityConfigId": 150750338,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+    "title": "Auto Casket"
+  },
+  {
+    "id": 3550301,
+    "mapId": 8,
+    "relativeId": 151750033,
+    "entityConfigId": 151750223,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550302,
+    "mapId": 8,
+    "relativeId": 151750034,
+    "entityConfigId": 151750239,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550303,
+    "mapId": 8,
+    "relativeId": 151750031,
+    "entityConfigId": 151750225,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550304,
+    "mapId": 8,
+    "relativeId": 151750035,
+    "entityConfigId": 151750226,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550305,
+    "mapId": 8,
+    "relativeId": 151750036,
+    "entityConfigId": 151750227,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550306,
+    "mapId": 8,
+    "relativeId": 151750037,
+    "entityConfigId": 151750228,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550307,
+    "mapId": 8,
+    "relativeId": 151750032,
+    "entityConfigId": 151750229,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550308,
+    "mapId": 8,
+    "relativeId": 151750038,
+    "entityConfigId": 151750230,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550309,
+    "mapId": 8,
+    "relativeId": 151750039,
+    "entityConfigId": 151750231,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550310,
+    "mapId": 8,
+    "relativeId": 151750040,
+    "entityConfigId": 151750232,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550311,
+    "mapId": 8,
+    "relativeId": 151750043,
+    "entityConfigId": 151750233,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550312,
+    "mapId": 8,
+    "relativeId": 151750045,
+    "entityConfigId": 151750234,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550313,
+    "mapId": 8,
+    "relativeId": 151750044,
+    "entityConfigId": 151750235,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550314,
+    "mapId": 8,
+    "relativeId": 151750041,
+    "entityConfigId": 151750236,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550315,
+    "mapId": 8,
+    "relativeId": 151750042,
+    "entityConfigId": 151750237,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550316,
+    "mapId": 8,
+    "relativeId": 151750046,
+    "entityConfigId": 151750238,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3550401,
+    "mapId": 8,
+    "relativeId": 172750006,
+    "entityConfigId": 692750264,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Super Cloud Ride Challenge 1"
+  },
+  {
+    "id": 3550402,
+    "mapId": 8,
+    "relativeId": 692750001,
+    "entityConfigId": 692750265,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Super Cloud Ride Challenge 2"
+  },
+  {
+    "id": 3550403,
+    "mapId": 8,
+    "relativeId": 692750002,
+    "entityConfigId": 692750266,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Super Cloud Ride Challenge 3"
+  },
+  {
+    "id": 3550404,
+    "mapId": 8,
+    "relativeId": 172000010,
+    "entityConfigId": 172750499,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Super Cloud Ride Challenge 4"
+  },
+  {
+    "id": 3550405,
+    "mapId": 8,
+    "relativeId": 172000008,
+    "entityConfigId": 172750500,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_62_UI.png",
+    "title": "Super Cloud Ride Challenge 5"
+  },
+  {
+    "id": 3550501,
+    "mapId": 8,
+    "relativeId": 147750021,
+    "entityConfigId": 147750010,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Stillness"
+  },
+  {
+    "id": 3550502,
+    "mapId": 8,
+    "relativeId": 147750022,
+    "entityConfigId": 147750074,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Stillness"
+  },
+  {
+    "id": 3550503,
+    "mapId": 8,
+    "relativeId": 147750023,
+    "entityConfigId": 147750075,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Stillness"
+  },
+  {
+    "id": 3550504,
+    "mapId": 8,
+    "relativeId": 147750026,
+    "entityConfigId": 147750077,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Stillness"
+  },
+  {
+    "id": 3550505,
+    "mapId": 8,
+    "relativeId": 147750027,
+    "entityConfigId": 147750079,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Stillness"
+  },
+  {
+    "id": 3550601,
+    "mapId": 8,
+    "relativeId": 610750008,
+    "entityConfigId": 688751222,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_81_UI.png",
+    "title": "Elseway Shroud"
+  },
+  {
+    "id": 3550602,
+    "mapId": 8,
+    "relativeId": 610750009,
+    "entityConfigId": 688751224,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_81_UI.png",
+    "title": "Elseway Shroud"
+  },
+  {
+    "id": 3550603,
+    "mapId": 8,
+    "relativeId": 610750010,
+    "entityConfigId": 688751226,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_81_UI.png",
+    "title": "Elseway Shroud"
+  },
+  {
+    "id": 3550604,
+    "mapId": 8,
+    "relativeId": 610750011,
+    "entityConfigId": 688751185,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_81_UI.png",
+    "title": "Elseway Shroud"
+  },
+  {
+    "id": 3550605,
+    "mapId": 8,
+    "relativeId": 610750012,
+    "entityConfigId": 688751186,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_81_UI.png",
+    "title": "Elseway Shroud"
+  },
+  {
+    "id": 3550701,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751192,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_82_UI.png",
+    "title": "Q-L1NG"
+  },
+  {
+    "id": 3550702,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751196,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_82_UI.png",
+    "title": "Q-L1NG"
+  },
+  {
+    "id": 3550703,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751197,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_82_UI.png",
+    "title": "Q-L1NG"
+  },
+  {
+    "id": 3550704,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751201,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_82_UI.png",
+    "title": "Q-L1NG"
+  },
+  {
+    "id": 3550705,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751204,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_82_UI.png",
+    "title": "Q-L1NG"
+  },
+  {
+    "id": 3550706,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751206,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_82_UI.png",
+    "title": "Q-L1NG"
+  },
+  {
+    "id": 3550707,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751218,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_82_UI.png",
+    "title": "Q-L1NG"
+  },
+  {
+    "id": 3550708,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751338,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_82_UI.png",
+    "title": "Q-L1NG"
+  },
+  {
+    "id": 3550801,
+    "mapId": 8,
+    "relativeId": 610750006,
+    "entityConfigId": 610750189,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_16_UI.png",
+    "title": "Autopuppets in Fog Veiled Chambers"
+  },
+  {
+    "id": 3550802,
+    "mapId": 8,
+    "relativeId": 610750005,
+    "entityConfigId": 610750187,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_16_UI.png",
+    "title": "Faithful Heart Tested at Skyfall"
+  },
+  {
+    "id": 3550803,
+    "mapId": 8,
+    "relativeId": 610750007,
+    "entityConfigId": 610750190,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_16_UI.png",
+    "title": "Code Red: Corehazard"
+  },
+  {
+    "id": 3551005,
+    "mapId": 8,
+    "relativeId": 172750016,
+    "entityConfigId": 172750359,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
+    "title": "Art of Explosion"
+  },
+  {
+    "id": 3551006,
+    "mapId": 8,
+    "relativeId": 172750017,
+    "entityConfigId": 172750361,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
+    "title": "Art of Explosion"
+  },
+  {
+    "id": 3551007,
+    "mapId": 8,
+    "relativeId": 686750045,
+    "entityConfigId": 686750704,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
+    "title": "Transform! City Guardian!"
+  },
+  {
+    "id": 3551009,
+    "mapId": 8,
+    "relativeId": 686750046,
+    "entityConfigId": 686750711,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
+    "title": "Field Test"
+  },
+  {
+    "id": 3551011,
+    "mapId": 8,
+    "relativeId": 686750039,
+    "entityConfigId": 686750739,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
+    "title": "Jump Puffs, Jump!"
+  },
+  {
+    "id": 3551012,
+    "mapId": 8,
+    "relativeId": 686750036,
+    "entityConfigId": 686750733,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
+    "title": "Small But Mighty"
+  },
+  {
+    "id": 3551013,
+    "mapId": 8,
+    "relativeId": 686750044,
+    "entityConfigId": 686750712,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_19_UI.png",
+    "title": "Smeltguard Dances, Fortune Surges"
+  },
+  {
+    "id": 3510005,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 176750179,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Shop_03_UI.png",
+    "title": "Huaxu Apothecary"
+  },
+  {
+    "id": 3510002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 176750176,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Shop_08_UI.png",
+    "title": "Jade Steed Itinerant"
+  },
+  {
+    "id": 3510001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 176750175,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Shop_06_UI.png",
+    "title": "Yuan's Flavors"
+  },
+  {
+    "id": 3510004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 176750178,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Shop_01_UI.png",
+    "title": "Ministry of Development Crafting Bay"
+  },
+  {
+    "id": 3510007,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 182750049,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Shop_18_UI.png",
+    "title": "Xuanfang Ironshield Foundation"
+  },
+  {
+    "id": 3510008,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 182750048,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Shop_18_UI.png",
+    "title": "Xuanfang Ironshield Foundation"
+  },
+  {
+    "id": 3541006,
+    "mapId": 8,
+    "relativeId": 147000040,
+    "entityConfigId": 147000554,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Potential Case"
+  },
+  {
+    "id": 3580001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 610750144,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Dreaming Cavern"
+  },
+  {
+    "id": 3580002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 610750145,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Dreaming Cavern"
+  },
+  {
+    "id": 3540001,
+    "mapId": 906,
+    "relativeId": 0,
+    "entityConfigId": 200750000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_271_UI.png",
+    "title": "Lament Recon: Tacet Crisis"
+  },
+  {
+    "id": 15,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_85_UI.png",
+    "title": "Unclaimed Rafter Kite"
+  },
+  {
+    "id": 7013,
+    "mapId": 8,
+    "relativeId": 255750037,
+    "entityConfigId": 255750001,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_53_UI.png",
+    "title": "Southern Yuan Hills Tacet Discord Nest"
+  },
+  {
+    "id": 3541010,
+    "mapId": 8,
+    "relativeId": 183750005,
+    "entityConfigId": 183750123,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Potential Case"
+  },
+  {
+    "id": 3541011,
+    "mapId": 8,
+    "relativeId": 188750006,
+    "entityConfigId": 688751089,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Potential Case"
+  },
+  {
+    "id": 3570001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 610750151,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Fogveil Cavern"
+  },
+  {
+    "id": 3570003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 610750153,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Central Workshop Entrance"
+  },
+  {
+    "id": 3570004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 610750154,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Central Workshop Entrance"
+  },
+  {
+    "id": 3550606,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751233,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_81_UI.png",
+    "title": "Elseway Shroud"
+  },
+  {
+    "id": 3510006,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 13750056,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_90_UI.png",
+    "title": "King Auto"
+  },
+  {
+    "id": 5018,
+    "mapId": 8,
+    "relativeId": 255750038,
+    "entityConfigId": 255750078,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png",
+    "title": "Eastern Xuan Peaks Tacet Field"
+  },
+  {
+    "id": 5019,
+    "mapId": 8,
+    "relativeId": 255750039,
+    "entityConfigId": 255750104,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png",
+    "title": "Western Fang Peaks Tacet Field"
+  },
+  {
+    "id": 3542009,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 686750704,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3542010,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 686750682,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3542011,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 686750711,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3542012,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147000509,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3542013,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147000511,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 5044,
+    "mapId": 8,
+    "relativeId": 180750001,
+    "entityConfigId": 180750197,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMonsterHead_34030_UI.png",
+    "title": "Myriad Snare: Rustfire Chassis"
+  },
+  {
+    "id": 3550617,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751430,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_84_UI.png",
+    "title": "Fogveil Pagoda"
+  },
+  {
+    "id": 3551101,
+    "mapId": 8,
+    "relativeId": 254750000,
+    "entityConfigId": 254750007,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3551102,
+    "mapId": 8,
+    "relativeId": 254750001,
+    "entityConfigId": 254750009,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3551103,
+    "mapId": 8,
+    "relativeId": 254750002,
+    "entityConfigId": 254750012,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3551104,
+    "mapId": 8,
+    "relativeId": 254750003,
+    "entityConfigId": 254750015,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3551105,
+    "mapId": 8,
+    "relativeId": 254750004,
+    "entityConfigId": 254750018,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3551106,
+    "mapId": 8,
+    "relativeId": 254750005,
+    "entityConfigId": 254750024,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3551107,
+    "mapId": 8,
+    "relativeId": 254750007,
+    "entityConfigId": 254750021,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3520020,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 693751151,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3530001,
+    "mapId": 8,
+    "relativeId": 2111,
+    "entityConfigId": 150750262,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMonsterHead_34031_UI.png",
+    "title": "Court of Shackled Souls"
+  },
+  {
+    "id": 3550716,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 688751597,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_83_UI.png",
+    "title": "T-G0NG"
   }
 ]

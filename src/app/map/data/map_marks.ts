@@ -1,4 +1,4 @@
-import { APILevelPlayData, APIMapMark, APIQuestData } from "@/types/mapTypes";
+import { APIBlueprintReward, APILevelPlayData, APIMapMark, APIQuestData, BlueprintType } from "@/types/mapTypes";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const lookupMap = new Map<number, Map<number, APIMapMark>>();
 const questByEntityId = new Map<string, APIQuestData>();
@@ -7,11 +7,12 @@ const questsByChildren = new Map<string, APIQuestData[]>();
 const questsByReference = new Map<string, APIQuestData[]>();
 const leveldataByChildren = new Map<string, APILevelPlayData[]>();
 const leveldataByReference = new Map<string, APILevelPlayData[]>();
-const [mapMarksData, questData, levelPlayData]: [APIMapMark[], APIQuestData[], APILevelPlayData[]] =
+const [mapMarksData, questData, levelPlayData, blueprintRewards]: [APIMapMark[], APIQuestData[], APILevelPlayData[], Record<BlueprintType, APIBlueprintReward>] =
   await Promise.all([
     fetch(`${basePath}/data/map_marks_minified.json`).then((r) => r.json()),
     fetch(`${basePath}/data/quest_types_minified.json`).then((r) => r.json()),
     fetch(`${basePath}/data/levelplaydata_minified.json`).then((r) => r.json()),
+    fetch(`${basePath}/data/blueprint_rewards_minified.json`).then((r) => r.json()),
   ]);
 
 const questDataByQuestId = new Map<number, APIQuestData>();
@@ -105,4 +106,8 @@ export const getLevelPlayChildren = (key: string): APILevelPlayData[] | undefine
 
 export const getLevelPlayReferences = (key: string): APILevelPlayData[] | undefined => {
   return leveldataByReference.get(key);
+};
+
+export const getBlueprintRewards = (key: BlueprintType): APIBlueprintReward | undefined => {
+  return blueprintRewards[key];
 };

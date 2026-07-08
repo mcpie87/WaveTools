@@ -343,7 +343,7 @@
       "id": 80000009,
       "name": "Shuyun Herbal Tea",
       "attributes_description": "Increases ATK and Crit. Rate of all Resonators in the team by 12% and 10% respectively, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
-      "bg_description": "Shuyun's ancestral secret herbal tea, most suitable for summer. But the taste is special, and the taste is polarized. The formula is never disclosed, and it is hard to buy. Usually, you can only ask Shuyun to make it.",
+      "bg_description": "Shuyun's family secret herbal tea, best savored in summer. Its flavor, however, is an acquired taste, and opinions on it are sharply divided. The recipe has never been shared, and no amount of gold could ever pry it loose. Usually, the only way to try it is to ask Shuyun to brew it for you.",
       "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_010_UI.png",
       "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_010_UI.png",
       "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_010_UI.png",
@@ -3553,5 +3553,404 @@
       }
     ],
     "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10087,
+    "resultItem": {
+      "id": 80000087,
+      "name": "Jade Mushroom Soup",
+      "attributes_description": "Grants 40% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A soup made by pouring Uncracked Jade liquid and White Jade Beauty into a broth, then letting it simmer over a low flame. Remarkably versatile, it bends willingly to the cook's hand—a rich stock brings out a deep, savory character, while spring water yields a lighter, fresher note. A brief simmer is all it takes for the flavors to naturally bloom.\n\nTo keep impatient children from sneaking a taste before the mushrooms are fully cooked, parents have long made a habit of hiding away their bowls and chopsticks until the White Jade Beauty is properly done. Across the Land of Xuanfang, this is a comfort dish everyone grows up with.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_098_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_098_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_098_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601530,
+        "name": "Uncracked Jade",
+        "value": 3
+      },
+      {
+        "id": 42601560,
+        "name": "White Jade Beauty",
+        "value": 2
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001087,
+      "name": "Gilded Jadeite",
+      "attributes_description": "Grants 44% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Wax gourd and fresh crab meat are simmered together with an Uncracked Jade egg mixture in a tureen, creating rich, alternating layers of gold and jade. Stewed slowly in a rich broth, the wax gourd soaks up the full sweetness of the crab, while a delicate topping of finely minced ham adds a savory depth to the unfolding finish. Every spoonful feels like a conversation between the mountains and the sea.\n\nThe first time Suisui laid eyes on this soup in a small eatery, she was instantly captivated by its layers of jade-and-gold hue. One spoonful, and the fragrance unfurled across her tongue. From then on, she sent someone to buy takeout from the shop every single day. However, it was tucked away in a remote corner and saw few customers, teetering on the edge of closure and soon to be turned into a tea house. Without a second thought, Suisui marched in with a chest of Credit Shells and an acquisition contract, and set them down squarely in front of the shopkeeper.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_29_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_29_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_29_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1110,
+      "name": "Suisui",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_71_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10088,
+    "resultItem": {
+      "id": 80000088,
+      "name": "Cloudward Stew",
+      "attributes_description": "Grants 50% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Made by slow-stewing newly sprouted bamboo shoots with salted meat in a single pot. The natural sweetness of the bamboo melds with the savory depth of the meat, yielding a classic dish that is both hearty and deeply satisfying.\n\nIn Yuan Fortress, Cloudward Stew is regarded as a dish of good fortune, said to grant children sharp senses and a compassionate heart. During school enrollments or festive occasions, families often prepare this meal, wishing for their little ones to grow as strong and upright as spring bamboo, reaching ever skyward toward the clouds.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_103_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_103_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_103_UI.png",
+      "rarity": 5
+    },
+    "materials": [
+      {
+        "id": 42601540,
+        "name": "Climber Shoots",
+        "value": 3
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 42601550,
+        "name": "Jade Hexahedron",
+        "value": 2
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10089,
+    "resultItem": {
+      "id": 80000089,
+      "name": "Sizzling Jade Stir-fry",
+      "attributes_description": "Grants 25% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Thinly sliced cured meat is layered atop sliced mushrooms and steamed for hours. The saltiness of the meat seeps into the mushrooms' natural sweetness, lifting the whole dish to something far greater than its parts.\n\nMengzhou has a long-standing tradition of curing meat to bring out deeper flavor. Among the cuts, locals prize the rose-colored core as the \"Sizzling Cube.\" This dish lays that cube over White Jade Beauty mushrooms, hence the name \"Sizzling Jade Stir-fry.\" When honored guests arrive, a plate of this fine delicacy is more than enough to delight them.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_097_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook189/T_IconCook189_097_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_097_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 3
+      },
+      {
+        "id": 42601560,
+        "name": "White Jade Beauty",
+        "value": 3
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10090,
+    "resultItem": {
+      "id": 80000090,
+      "name": "Crab Braised Fish",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Fresh fish fillets are bathed in a sweet-and-sour glaze, then simmered over a low flame to bring out their delicate flavor. Though no crab ever touches the pot, the taste is remarkably true to the real thing.\n\nThis famous Yuan Fortress dish boasts a long history, though its reputation has waxed and waned with the passing generations. The recipe that now circulates across the Land of Xuanfang preserves the most widely embraced method, yet the truly authentic taste is known only to a few.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_104_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_104_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_104_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400120,
+        "name": "Fish",
+        "value": 3
+      },
+      {
+        "id": 80020003,
+        "name": "Sweet and Sour Sauce",
+        "value": 2
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 2
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10091,
+    "resultItem": {
+      "id": 80000091,
+      "name": "Little Snowy Moons",
+      "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Steamed from a base of rice milk, these snow-white sponge cakes are shaped like a full moon, earning them the name \"Little Snowy Moons.\" Soft and sweet, the pastry also goes by alternative names such as \"Jade Plate\" or \"Water Moon Bun.\"\n\nDuring Mengzhou's annual Waking Moon Festival, it has long been a tradition for every household to prepare these cakes in welcome of the rising moon. Soldiers stationed far from home in Xuanfang carried this custom with them, hoping that even if the same moon doesn't shine over both lands, their hearts might still meet in this shared moment of reunion.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_101_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_101_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_101_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601530,
+        "name": "Uncracked Jade",
+        "value": 3
+      },
+      {
+        "id": 80050006,
+        "name": "Rice",
+        "value": 2
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10092,
+    "resultItem": {
+      "id": 80000092,
+      "name": "Stir-Fried Trio",
+      "attributes_description": "Grants 10% Healing Bonus to all Resonators in the team and increases their Max HP by 20%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Two varieties of fresh meat and seasonal bamboo shoots are finely scored in a chrysanthemum pattern, then flash-fried over a roaring flame. When the heat hits just right, all three ingredients curl up and bloom into a bright, glistening cascade of crimson.\n\nThis dish boasts an incredibly short cooking time, delivering a rich aroma and fiery kick that instantly stirs the appetite. In the Land of Xuanfang, locals often gauge a patient's recovery by their craving for the Stir-Fried Trio. If they can catch its scent and handle the heat, they're bound to be well on the mend.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_096_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_096_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_096_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 4
+      },
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 2
+      },
+      {
+        "id": 42601540,
+        "name": "Climber Shoots",
+        "value": 2
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": 1
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10093,
+    "resultItem": {
+      "id": 80000093,
+      "name": "Flavor Under Heaven",
+      "attributes_description": "Grants 30% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A whole fowl is submerged in an aged stock and braised thoroughly over a low flame, basted again and again with the savory broth until the meat turns tender.\n\nThis dish is intensely spicy, yet the heat builds up rather than striking at first bite. First-timers are often fooled by its seemingly mild appearance, but by the time the waves of spice roll in, they are drenched in sweat, tongues burning as if they'd swallowed a wheel of fire. Rumor has it that an epicure who feared no spice once polished off three whole plates. Finishing his meal, he let out a satisfied cry: \"Three birds, one hand—enough to seize every flavor under heaven.\" The room fell silent in awe, and the dish has borne the name ever since.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_106_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_106_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_106_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 4
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": 2
+      },
+      {
+        "id": 42310200,
+        "name": "Pavo Plum",
+        "value": 2
+      },
+      {
+        "id": 80020002,
+        "name": "Braising Sauce",
+        "value": 1
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10094,
+    "resultItem": {
+      "id": 80000094,
+      "name": "Brocade Pearl Meatballs",
+      "attributes_description": "Grants 50% Resonance Skill DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Minced meat is mixed with diced bamboo shoots and chili flakes, shaped into perfect spheres, and placed into a bamboo steamer to cook through. The finished meatballs gleam with a pleasing, glossy crimson hue. With each bite, a fragrant burst of meat and spice unfurls, revealing a texture that is soft yet chewy. Their luminous, pearl-like appearance has earned them the local name \"Brocade Pearl Meatballs.\"\n\nRound as they are, they speak of reunion. Red as they gleam, they carry wishes for prosperity. And that perfect hint of spice keeps this well-rounded flavor ever tasting plain.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_099_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_099_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_099_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42601540,
+        "name": "Climber Shoots",
+        "value": 4
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": 2
+      },
+      {
+        "id": 42601550,
+        "name": "Jade Hexahedron",
+        "value": 1
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10095,
+    "resultItem": {
+      "id": 80000095,
+      "name": "Memories of Autumn",
+      "attributes_description": "Grants 40% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Delicate fish balls, crafted from minced fish, are simmered together with tea leaves to form a refined soup. The tea buds offer a gentle bitterness while the fish balls lend a subtle sweetness. At first glance, the soup appears modest and unassuming, but a careful sip reveals a faint, lingering note of autumn that stays on the palate.\n\nThis soup traces its origins to Mengzhou, where it was initially made with an entirely different aquatic ingredient, one far fresher than tea leaves. When the recipe made its way here, however, that original ingredient was nowhere to be found, and the locals had no choice but to substitute it with tea. And so, as the soup meets the tongue—poised somewhere between the familiar and the foreign—it stirs a flood of memories all the way back home.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_100_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_100_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_100_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400120,
+        "name": "Fish",
+        "value": 3
+      },
+      {
+        "id": 80050004,
+        "name": "Tea",
+        "value": 2
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10096,
+    "resultItem": {
+      "id": 80000096,
+      "name": "Jade Broth Noodles",
+      "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Fine noodles, thin as silver silk, are dropped into boiling water, blanched in an instant, then nestled neatly into a bowl. Large chunks of meat, slow-braised to a melt-in-your-mouth tenderness, rest atop the noodles. The broth, clarified to crystal clarity with White Jade Beauty mushrooms and rich stock, carries a faint, lingering whisper of cooking wine.\n\nIt is the most common meal you'll find across the Land of Xuanfang. Utterly ordinary in appearance, yet it delivers a depth of flavor that surprises with the very first bite. As some have put it: \"The mildest flavors hold the truest essence. The ultimate delicacy is pure simplicity.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_102_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_102_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_102_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 3
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 42601560,
+        "name": "White Jade Beauty",
+        "value": 2
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001096,
+      "name": "The Secret of Delicacy",
+      "attributes_description": "Increases ATK of all Resonators in the team by 28%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "The egg noodles Yangyang makes, tasting exactly as she remembers her mother's did.\n\nBack in her hometown, Yangyang's schedule was always packed to the brim. Still unsure of where her path would lead, she was constantly trying to squeeze out every last second, desperate to add any edge that might carry her forward.  But no matter how late she came home from vocal lessons, walking back under a starlit sky, a steaming bowl of egg noodles was always waiting for her on the table. Sometimes there would be two bowls, which meant her father had also worked late into the night. And sometimes, there would be three, because her older sister, who was supposed to be fast asleep, would inevitably catch the scent of the noodles and coax her mother into making her a midnight meal.\n\nTo Yangyang, that bowl of egg noodles means home, love, and all the quiet warmth folded into everyday life.\n\nIt's the flavor that carried her all the way to where she is now, and the exact taste she wishes to pass on to someone special, someday.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_102_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_102_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_102_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1610,
+      "name": "Yangyang: Xuanling",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_70_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10097,
+    "resultItem": {
+      "id": 80000097,
+      "name": "Immortal's Medley Tribute",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 25%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "White Jade Beauty mushrooms and Climber Shoots are julienned and flash-fried in hot oil until their edges curl slightly. An Uncracked Jade egg mixture is then poured in and tossed gently until soft, delicate curds form, then finished with a scattering of Pavo Plums. With each sudden burst of berry juice, an intense, spicy aroma unfurls, instantly coaxing out the freshness of every ingredient.\n\nUnbound by the traditional culinary methods, the Fillet Fairmaiden captures the true spirit of cooking. The essence of these premium ingredients seeps fully into the mushrooms, bamboo shoots, and egg curds, sending out a fragrance so mouthwatering that anyone who catches a whiff can't help but crave a taste.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_238_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_238_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_238_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601530,
+        "name": "Uncracked Jade",
+        "value": 4
+      },
+      {
+        "id": 42601560,
+        "name": "White Jade Beauty",
+        "value": 2
+      },
+      {
+        "id": 42601540,
+        "name": "Climber Shoots",
+        "value": 2
+      },
+      {
+        "id": 42310200,
+        "name": "Pavo Plum",
+        "value": 1
+      }
+    ],
+    "typeId": 2
   }
 ]

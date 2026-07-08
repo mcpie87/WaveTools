@@ -144,3 +144,18 @@ def get_item_info(item_id, keys = nil)
     [key, fn ? fn.call : nil]
   end.to_h
 end
+
+def get_rewards(reward_id)
+  return nil unless reward_id
+  @droppackage_config ||= load_file("#{DATAMINE_PATH}/#{BINDATA}/drop/droppackage.json")
+  return nil if @droppackage_config[reward_id].nil?
+
+  rewards = []
+  @droppackage_config[reward_id]["DropPreview"].each do |reward|
+    rewards << {
+      item: get_item_info(reward["Key"], [:id, :name]),
+      count: reward["Value"],
+    }
+  end
+  rewards
+end

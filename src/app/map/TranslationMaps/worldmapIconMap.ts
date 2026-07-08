@@ -22,10 +22,11 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Resonance Beacon": "Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
   "Gondola Platform": "Atlas/WorldMapIcon/SP_IconMap_Ocean_UI.png",
   "Mechascout": "Atlas/WorldMapIcon/SP_IconMap_Play_56_UI.png",
-  [TeleporterName.TACET_FIELD]: ["Atlas/WorldMapIcon/SP_IconMap_WYQ_06_UI.png", true],
+  [TeleporterName.TACET_FIELD]: ["Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png", true],
   [TeleporterName.TACET_DISCORD_NEST]: ["Atlas/WorldMapIcon/SP_IconMap_Play_53_UI.png", true],
-  [TeleporterName.NIGHTMARE_NEST]: ["Atlas/WorldMapIcon/SP_IconMonsterHead_31037_UI.png", true],
+  [TeleporterName.NIGHTMARE_NEST]: ["Atlas/WorldMapIcon/SP_IconMonsterHead_1006_UI.png", true],
   [TeleporterName.SOMNOIRE]: ["Atlas/WorldMapIcon/SP_IconMap_Play_03_UI.png", true],
+  [TeleporterName.FORGERY]: ["Atlas/WorldMapIcon/SP_IconMap_Play_01_UI.png", true],
 
   /* Caskets */
   "Sonance Casket": "Image/IconMst160/T_IconMst160_006_UI.png",
@@ -35,14 +36,14 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
 
   /* Quests */
-  [Quest.MAIN_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_2_UI.png", true],
-  [Quest.SIDE_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_02_2_UI.png", true],
-  [Quest.TUTORIAL_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_11_2_UI.png", true],
-  [Quest.EVENT_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_15_UI.png", true],
-  [Quest.STORY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_05_UI.png", true],
-  [Quest.DAILY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_07_UI.png", true],
-  [Quest.EXPLORATION_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_11_1_UI.png", true],
-  [Quest.EPISODIC_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_17_2_UI.png", true],
+  [Quest.MAIN_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_1_UI.png", true],
+  [Quest.SIDE_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_02_1_UI.png", true],
+  [Quest.TUTORIAL_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_3_UI.png", true],
+  [Quest.EVENT_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_14_UI.png", true],
+  [Quest.STORY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_03_UI.png", true],
+  [Quest.DAILY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_06_UI.png", true],
+  [Quest.EXPLORATION_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_10_UI.png", true],
+  [Quest.EPISODIC_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_17_1_UI.png", true],
 
 
   /* Puzzles */
@@ -443,7 +444,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
 
   /* Miscellaneous */
   "Weapon": "Image/IconWeapon/T_IconWeapon21020011_UI.png",
-  "Cooking": ["Atlas/WorldMapIcon/SP_IconMap_Shop_07_UI.png", true],
+  "Cooking": ["Atlas/WorldMapIcon/SP_IconMap_Shop_06_UI.png", true],
 };
 
 const CustomIcons: Record<string, IconUrl> = {

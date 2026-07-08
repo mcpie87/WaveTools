@@ -1682,7 +1682,7 @@
       },
       {
         "id": 80010033,
-        "name": "Recipe: Lotus Pastry",
+        "name": "Lotus Pastry Recipe",
         "value": [
           {
             "id": 44010025,
@@ -1693,7 +1693,7 @@
       },
       {
         "id": 80010034,
-        "name": "Recipe: Spicy Meat with Pavo Plums",
+        "name": "Spicy Meat with Pavo Plums Recipe",
         "value": [
           {
             "id": 44010025,
@@ -5715,6 +5715,803 @@
             "id": 2,
             "name": "Shell Credit",
             "value": 40000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "type": null,
+    "name": "Huaxu Apothecary",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 42601600,
+        "name": "Cloudperch Seed",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601610,
+        "name": "Flowborne Dream",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601530,
+        "name": "Uncracked Jade",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601540,
+        "name": "Climber Shoots",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601550,
+        "name": "Jade Hexahedron",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601560,
+        "name": "White Jade Beauty",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601570,
+        "name": "Opus Stone",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601580,
+        "name": "Leafweaver",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 42601590,
+        "name": "Floral Crest Jade",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 500
+          }
+        ]
+      },
+      {
+        "id": 80021001,
+        "name": "Base Fluid",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80021002,
+        "name": "Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021004,
+        "name": "Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 4500
+          }
+        ]
+      },
+      {
+        "id": 80021003,
+        "name": "Strong Fluid Catalyst",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80021005,
+        "name": "Strong Fluid Stabilizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "type": null,
+    "name": "Jade Steed Hauler",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050004,
+        "name": "Tea",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050006,
+        "name": "Rice",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050007,
+        "name": "Kudzu Root",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050009,
+        "name": "Beans",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80050010,
+        "name": "Vinegar",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "id": 80020000,
+        "name": "Hot Pot Base",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80020001,
+        "name": "Clear Soup",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 80020002,
+        "name": "Braising Sauce",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80020003,
+        "name": "Sweet and Sour Sauce",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      },
+      {
+        "id": 80020004,
+        "name": "Tofu",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "type": null,
+    "name": "Yuan's Flavors",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 80000087,
+        "name": "Jade Mushroom Soup",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000089,
+        "name": "Sizzling Jade Stir-fry",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000090,
+        "name": "Crab Braised Fish",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80000091,
+        "name": "Little Snowy Moons",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000092,
+        "name": "Stir-Fried Trio",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80000093,
+        "name": "Flavor Under Heaven",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 9000
+          }
+        ]
+      },
+      {
+        "id": 80000094,
+        "name": "Brocade Pearl Meatballs",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80000095,
+        "name": "Memories of Autumn",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80000096,
+        "name": "Jade Broth Noodles",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 13500
+          }
+        ]
+      },
+      {
+        "id": 80010087,
+        "name": "Jade Mushroom Soup Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010089,
+        "name": "Sizzling Jade Stir-fry Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010090,
+        "name": "Crab Braised Fish Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010091,
+        "name": "Little Snowy Moons Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010092,
+        "name": "Stir-Fried Trio Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010093,
+        "name": "Flavor Under Heaven Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          }
+        ]
+      },
+      {
+        "id": 80010094,
+        "name": "Brocade Pearl Meatballs Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010095,
+        "name": "Memories of Autumn Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010096,
+        "name": "Jade Broth Noodles Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "type": null,
+    "name": "Ministry of Development Crafting Bay",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 41100091,
+        "name": "LF Autopuppet Kernel",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 43021011,
+        "name": "Broken Wing Polarizer",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43021021,
+        "name": "Incomplete Combustor",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43021031,
+        "name": "Spliced String",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43021041,
+        "name": "LF Carved Crystal",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 43021051,
+        "name": "LF Waveworn Shard",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 2400
+          }
+        ]
+      },
+      {
+        "id": 21010011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21020011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21030011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21040011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21050011,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          }
+        ]
+      },
+      {
+        "id": 21010012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21020012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21030012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21040012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      },
+      {
+        "id": 21050012,
+        "name": "NO CONTENT",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "type": null,
+    "name": "Xuanfang Ironshield Foundation",
+    "currency": [
+      2
+    ],
+    "openId": 0,
+    "dialogue": null,
+    "items": [
+      {
+        "id": 71300504,
+        "name": "Donation Certificate I",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 71300505,
+        "name": "Donation Certificate II",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
+          }
+        ]
+      },
+      {
+        "id": 71300506,
+        "name": "Donation Certificate III",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 1500
           }
         ]
       }

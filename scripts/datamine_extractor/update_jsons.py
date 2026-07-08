@@ -14,6 +14,10 @@ extractor_files = [
     "extract_layers.rb",
     "extract_map_marks.rb",
     "extract_quest_stuff.rb",
+    "extract_leveldata.rb",
+
+    "extract_blueprint_translations.rb",
+    "extract_blueprint_rewards.rb",
 ]
 
 output_files = [
@@ -29,6 +33,9 @@ output_files = [
     "sonatas.json",
     "synthesis.json",
     "weapons.json",
+    "blueprints.json",
+    "blueprint_rewards.json",
+    "levelplaydata.json",
 ]
 
 for file in extractor_files:

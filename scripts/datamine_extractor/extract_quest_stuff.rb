@@ -7,6 +7,45 @@ require 'byebug'
 @questdata_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/QuestData/questdata.json", false, "QuestId")
 @levelplaydata_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/LevelPlayData/levelplaydata.json", false, "LevelPlayId")
 
+@questnodedata_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/QuestNodeData/questnodedata.json", true)
+
+@droppackage_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/drop/droppackage.json")
+@iteminfo_config = load_file("#{DATAMINE_PATH}/#{BINDATA}/item/iteminfo.json")
+
+def get_rewards(reward_id)
+  return nil unless reward_id
+
+  rewards = []
+  @droppackage_config[reward_id]["DropPreview"].each do |reward|
+    rewards << {
+      item: get_item_info(reward["Key"], [:id, :name]),
+      count: reward["Value"],
+    }
+  end
+  rewards
+end
+
+
+# for translations of steps
+@questplay_preprocess_data = {}
+@questnodedata_config.each do |row|
+  key, idx = row["Key"].split("_").map(&:to_i)
+  @questplay_preprocess_data[key] ||= {}
+  translation = get_textmap_name(row["Data"]["TidTip"])
+  step_data = {}
+  unless translation == "" || translation == "NO CONTENT"
+    step_data[:translation] = translation
+  end
+  reward = get_rewards(row["Data"]["RewardId"])
+  if reward && !reward.empty?
+    step_data[:rewards] = reward
+  end
+  if !step_data.empty?
+    @questplay_preprocess_data[key][idx.to_i] = step_data
+  end
+end
+
+
 # data = []
 # @questchapter_config.each do |row|
 #   data << {
@@ -70,6 +109,7 @@ def extract_quest_data(row)
     trackEntityId: get_tracked_entity_id(row),
     children: row["Children"],
     references: row["Reference"],
+    questStepData: @questplay_preprocess_data[row["Id"]].sort_by { |k, v| v[:step] }.to_h,
   }
 end
 

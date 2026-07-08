@@ -3073,5 +3073,605 @@
       }
     ],
     "formulaType": 1
+  },
+  {
+    "type": "synthesis",
+    "id": 248,
+    "resultItem": {
+      "id": 41100094,
+      "name": "FF Autopuppet Kernel",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A unique kernel structure that grants its host Autuppet a rudimentary form of \"intelligence.\" Legends tell of an Autopuppet capable of perfectly passing as human, driven entirely by a kernel identical to this one. Out of the countless machines produced by the Skyworks, only the absolute pinnacle of models possesses the qualification to harbor it.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_013_4_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_013_4_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_013_4_UI.png",
+      "rarity": 5
+    },
+    "name": "FF Autopuppet Kernel",
+    "rarity": 5,
+    "materials": [
+      {
+        "id": 41100093,
+        "name": "HF Autopuppet Kernel",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 249,
+    "resultItem": {
+      "id": 41100093,
+      "name": "HF Autopuppet Kernel",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A powerful kernel structure capable of outputting a massive amount of energy. The Autopuppets it drives can execute exceptionally complex commands. It can only be recovered from the rare, formidable Autopuppets.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_013_3_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_013_3_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_013_3_UI.png",
+      "rarity": 4
+    },
+    "name": "HF Autopuppet Kernel",
+    "rarity": 4,
+    "materials": [
+      {
+        "id": 41100092,
+        "name": "MF Autopuppet Kernel",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 250,
+    "resultItem": {
+      "id": 41100092,
+      "name": "MF Autopuppet Kernel",
+      "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+      "bg_description": "A standard kernel structure produced in massive quantities. This is the most ubiquitous model, serving as the default powerhouse for standard Autopuppets. Commonly found across a wide variety of models.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_013_2_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_013_2_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_013_2_UI.png",
+      "rarity": 3
+    },
+    "name": "MF Autopuppet Kernel",
+    "rarity": 3,
+    "materials": [
+      {
+        "id": 41100091,
+        "name": "LF Autopuppet Kernel",
+        "value": 3
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 251,
+    "resultItem": {
+      "id": 42300060,
+      "name": "Pecok Flower",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A vibrant flower, with its sap often processed into dye.\nKnown for its fragrance and water-resistant properties, the flower is commonly used to produce seal ink paste for official or personalized stamps.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_18A_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup160/T_IconRup160_SM_Gat_18A_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup80/T_IconRup80_SM_Gat_18A_UI.png",
+      "rarity": 1
+    },
+    "name": "Pecok Flower",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 252,
+    "resultItem": {
+      "id": 42300070,
+      "name": "Belle Poppy",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "Once the symbol of the Port City of Guixu, it nearly went extinct when Incinero Petals were rampant.\nHowever, at the outskirts of the city ruins, Belle Poppy was found to bloom still at its home, having endured the disaster.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_29A_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup160/T_IconRup160_SM_Gat_29A_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup80/T_IconRup80_SM_Gat_29A_UI.png",
+      "rarity": 1
+    },
+    "name": "Belle Poppy",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 253,
+    "resultItem": {
+      "id": 42300090,
+      "name": "Wintry Bell",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A flower blooming on the high shores.\nLegend has it that the Wintry Bell does not really wither. When the ancient bells born by the giant Turtoise in Gorges of Spirits resonate, they will rise again from the ice and snow.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_31A_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup160/T_IconRup160_SM_Gat_31A_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup80/T_IconRup80_SM_Gat_31A_UI.png",
+      "rarity": 1
+    },
+    "name": "Wintry Bell",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 254,
+    "resultItem": {
+      "id": 42300030,
+      "name": "Iris",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A plant native to Whining Aix's Mire. It symbolizes broken or concealed affection.\nAffected by the continuous thundercloud weather of this place, this variant has a significantly shortened flowering period compared to its original species. A true pity, indeed.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_33A_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup160/T_IconRup160_SM_Gat_33A_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup80/T_IconRup80_SM_Gat_33A_UI.png",
+      "rarity": 1
+    },
+    "name": "Iris",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 255,
+    "resultItem": {
+      "id": 42300080,
+      "name": "Coriolus",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A special fungus associated with ancient trees. Its medicinal and curative properties have been recorded in numerous medical classics of Jinzhou.\nAn ancient specimen is preserved in the Academy, a living relic tracing back to the era when the towering Central Banyan in the Dim Forest was not so majestic.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_SM_Gat_30A_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup160/T_IconRup160_SM_Gat_30A_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup80/T_IconRup80_SM_Gat_30A_UI.png",
+      "rarity": 1
+    },
+    "name": "Coriolus",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 256,
+    "resultItem": {
+      "id": 42300040,
+      "name": "Terraspawn Fungus",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A fungus that spreads across dark soil, resembling a black lotus. Once the cap matures and darkens, it begins to liquefy and makes the ground fertile for more mushrooms to grow, hence its name.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_HuiYanGu_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_HuiYanGu_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_HuiYanGu_UI.png",
+      "rarity": 1
+    },
+    "name": "Terraspawn Fungus",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 257,
+    "resultItem": {
+      "id": 42300050,
+      "name": "Lanternberry",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A fluorescent berry growing in caves.\nBefore miners get down the mine in the Tiger's Maw, their family will tuck a lanternberry into their pocket, hoping its glow will lead them safely home in the midst of darkness.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_denglongguo_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_denglongguo_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_denglongguo_UI.png",
+      "rarity": 1
+    },
+    "name": "Lanternberry",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 258,
+    "resultItem": {
+      "id": 42300100,
+      "name": "Violet Coral",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "Violet Coral, commonly found trapped in the shallow beaches, is always revitalized with the flow and withered with the ebb.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_Sep_061_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_Sep_061_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_Sep_061_UI.png",
+      "rarity": 1
+    },
+    "name": "Violet Coral",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 259,
+    "resultItem": {
+      "id": 42310200,
+      "name": "Pavo Plum",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "Berries resembling feathers, the people of Hongzhen call them Linglong Hearts.\nThey have an incredibly spicy taste and are said to be able to refresh the mind and enhance intelligence when consumed.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_029_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_029_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_029_UI.png",
+      "rarity": 1
+    },
+    "name": "Pavo Plum",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 260,
+    "resultItem": {
+      "id": 42310210,
+      "name": "Loong's Pearl",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A tranquil flower, casting its gentle radiance amidst the shadows.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_030_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_030_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_030_UI.png",
+      "rarity": 1
+    },
+    "name": "Loong's Pearl",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 261,
+    "resultItem": {
+      "id": 42310230,
+      "name": "Nova",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "An unstable crystal precipitated out of highly concentrated Remnant Energy. It is so unsteady that it starts to sublimate as soon as it is formed, disappearing into thin air as energy. Its existence reminds one of the transience of the life of a Nova.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_084_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_084_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_084_UI.png",
+      "rarity": 1
+    },
+    "name": "Nova",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 262,
+    "resultItem": {
+      "id": 42601160,
+      "name": "Firecracker Jewelweed",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A vividly colored flower shaped like an unfurling firework.\nGive a Firecracker Jewelweed a gentle shake, and its swollen capsules will burst open...\nThe seeds scatter in all directions, resembling the colorful burst of a firecracker.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_043_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_043_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_043_UI.png",
+      "rarity": 1
+    },
+    "name": "Firecracker Jewelweed",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 263,
+    "resultItem": {
+      "id": 42601150,
+      "name": "Sword Acorus",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A tall flower with a firm stem, crowned by delicate flowers.\nSword Acoruses are often used by instructors to teach swordsmanship to young nobles, replacing real swords with these harmless blooms. The children, entranced by the beauty and fragrance, find their attention captured far more easily than by cold, menacing blades.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_044_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_044_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_044_UI.png",
+      "rarity": 1
+    },
+    "name": "Sword Acorus",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 264,
+    "resultItem": {
+      "id": 42601140,
+      "name": "Golden Fleece",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A cluster of golden sulfur crystals, often found in caves rich in geothermal activity. They resemble their mythical namesake—the Golden Fleece guarded by a venomous dragon.\nWhen ground into a fine powder and combined with a hint of molten copper, Golden Fleece transforms into stage-worthy fireworks.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_045_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_045_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_045_UI.png",
+      "rarity": 1
+    },
+    "name": "Golden Fleece",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 265,
+    "resultItem": {
+      "id": 42601170,
+      "name": "Seaside Cendrelis",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A fluorescent flower often found in the crevices of ruins. In the past, Seaside Cendrelis wreaths were used in the rite of initiation for infants and the inaugurations of new Fisalia family heads. As a result, it became a symbol of the power once held by the old nobility.\nEver since the tower's fateful ascent to the sky, the Seaside Cendrelis has been considered extinct, for it has never been seen again.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_144_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_144_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_144_UI.png",
+      "rarity": 1
+    },
+    "name": "Seaside Cendrelis",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 266,
+    "resultItem": {
+      "id": 42601220,
+      "name": "Bamboo Iris",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A common purple flower from the Septimont plains. Locals use it for spice blends or as home décor.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_bianzhuhua_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_bianzhuhua_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_bianzhuhua_UI.png",
+      "rarity": 1
+    },
+    "name": "Bamboo Iris",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 267,
+    "resultItem": {
+      "id": 42601230,
+      "name": "Bloodleaf Viburnum",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "Viburnums that grow in Border Mountains. Its deep red leaves stand out sharply, like blood seeping through the pale mountains.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_xueyejiami_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_xueyejiami_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_xueyejiami_UI.png",
+      "rarity": 1
+    },
+    "name": "Bloodleaf Viburnum",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 268,
+    "resultItem": {
+      "id": 42601250,
+      "name": "\"Afterlife\"",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A pure-white lycoris.\nIts petals seem untinted by the vivid scarlet typical of its kind. Or perhaps the colors that were there have long faded. These delicate flowers bloom quietly in darkness. Just like the name they've been given, their unique appearance suggests maybe a whole new world exists beyond the Beyond.\n\"Things unfinished in this life shall wait for the next.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_054_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_054_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_054_UI.png",
+      "rarity": 1
+    },
+    "name": "\"Afterlife\"",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 269,
+    "resultItem": {
+      "id": 42601290,
+      "name": "Sliverglow Bloom",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A rare flower found only in the Sanguis Plateaus, said to glow like moonlight in the dark.\n\"O warriors, should shadow steal the moon, look down, and the Sliverglow Bloom still shines beneath your feet.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_057_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_057_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_057_UI.png",
+      "rarity": 1
+    },
+    "name": "Sliverglow Bloom",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 270,
+    "resultItem": {
+      "id": 42601300,
+      "name": "Luminous Calendula",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A rare bloom found only in the Sanguis Plateaus, said to thrive where warriors have shed their blood.\nWhen Gladiators die a glorious death in Septimont's wild hunts, their companions often place a Luminous Calendula at their graves as a solemn tribute to their courage and sacrifice.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_058_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_058_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_058_UI.png",
+      "rarity": 1
+    },
+    "name": "Luminous Calendula",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 271,
+    "resultItem": {
+      "id": 42601280,
+      "name": "Stone Rose",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "A strange flower that blooms where the Dark Tide has receded. Though its core has been completely calcified, a faint fragrance still lingers—a proof that life's resilience shall never be underestimated.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_056_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_056_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_056_UI.png",
+      "rarity": 1
+    },
+    "name": "Stone Rose",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
+  },
+  {
+    "type": "synthesis",
+    "id": 272,
+    "resultItem": {
+      "id": 42601310,
+      "name": "Summer Flower",
+      "attributes_description": "A material used for Resonator Ascension.",
+      "bg_description": "This flower has always remained in bloom as the Lament sealed it and the City within the Sonoro Sphere. Just like an eternal summer, it never withers, never fades. In the past, during every blossom season, Honami City would hold a traditional Summer Flower viewing event.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_060_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_060_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_060_UI.png",
+      "rarity": 1
+    },
+    "name": "Summer Flower",
+    "rarity": 1,
+    "materials": [
+      {
+        "id": 83,
+        "name": "Regenerative Pistil",
+        "value": 1
+      }
+    ],
+    "formulaType": 3
   }
 ]

@@ -86,6 +86,19 @@ export interface APIQuestData {
   AddInteractOption: unknown;
 }
 
+export type BlueprintType = string;
+export interface APIBlueprintReward {
+  title: string;
+  rewardId: number;
+  rewards: {
+    item: {
+      id: number;
+      name: string;
+    };
+    count: number;
+  }[];
+}
+
 export type SelectedMap = MapName
   | MainStoryDungeonName
   | StoryDungeonName

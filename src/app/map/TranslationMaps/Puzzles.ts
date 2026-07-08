@@ -88,6 +88,9 @@ export enum Puzzle {
   SURVEILLANCE_CAMERA = "Surveillance Camera",
   NIGHT_CITY_INSPECT = "Inspect - Laptop",
   TEXT_OF_UNKNOWN_ORIGIN = "Inspect - Text of Unknown Origin",
+
+  // 3.5
+  ELSEWAY_SHROUD = "Elseway Shroud",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -268,6 +271,8 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     name: Puzzle.EXTRA_CHALLENGE,
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_16_UI") ?? false,
   },
+
+  // 3.5
 };
 
 const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
@@ -457,6 +462,12 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.TEXT_OF_UNKNOWN_ORIGIN]: {
     key: "PUZZLE_TEXT_OF_UNKNOWN_ORIGIN_INSPECT",
     keys: ["branch3.4_193_Gameplay_3_4/Lucy3"]
+  },
+
+  // 3.5
+  [Puzzle.ELSEWAY_SHROUD]: {
+    key: "PUZZLE_ELSEWAY_SHROUD",
+    keys: ["branch3.5_41_Gameplay_3_5/JGZD1"]
   },
 };
 

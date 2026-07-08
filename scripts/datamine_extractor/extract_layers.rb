@@ -9,21 +9,22 @@ data = []
 @multimap_config.each do |row|
   if row["Area"].size === 0
     next
-  elsif row["Area"].size > 1
-    byebug
-    next
   end
 
   mapId = row["MapId"]
-  areaId = row["Area"][0]
+  areaIds = row["Area"]
   mapTiles = {}
   row["MapTilePath"].each do |tile|
     mapTiles[tile] = convert_to_png(@uiresource_config[tile]["Path"])
   end
 
   data << {
+    floorName: get_textmap_name(row["FloorName"]),
+    floorIcon: row["FloorIcon"],
+    floor: row["Floor"],
     mapId: mapId,
-    areaId: areaId,
+    areaId: areaIds[0], # TODO: 3.5 added arrayable areaIds, need to fix it
+    areaIds: areaIds,
     mapTiles: mapTiles,
   }
 end

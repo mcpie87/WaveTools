@@ -1893,7 +1893,7 @@
     "id": 80000009,
     "name": "Shuyun Herbal Tea",
     "attributes_description": "Increases ATK and Crit. Rate of all Resonators in the team by 12% and 10% respectively, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
-    "bg_description": "Shuyun's ancestral secret herbal tea, most suitable for summer. But the taste is special, and the taste is polarized. The formula is never disclosed, and it is hard to buy. Usually, you can only ask Shuyun to make it.",
+    "bg_description": "Shuyun's family secret herbal tea, best savored in summer. Its flavor, however, is an acquired taste, and opinions on it are sharply divided. The recipe has never been shared, and no amount of gold could ever pry it loose. Usually, the only way to try it is to ask Shuyun to brew it for you.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_010_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_010_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_010_UI.png",
@@ -6441,7 +6441,7 @@
   },
   {
     "id": 80010033,
-    "name": "Recipe: Lotus Pastry",
+    "name": "Lotus Pastry Recipe",
     "attributes_description": "Used to learn how to cook Lotus Pastry.",
     "bg_description": "A recipe that details how to make Lotus Pastry.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
@@ -6451,7 +6451,7 @@
   },
   {
     "id": 80010034,
-    "name": "Recipe: Spicy Meat with Pavo Plums",
+    "name": "Spicy Meat with Pavo Plums Recipe",
     "attributes_description": "Used to learn how to cook Spicy Meat with Pavo Plums.",
     "bg_description": "A recipe that details how to make Spicy Meat with Pavo Plums.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
@@ -6463,7 +6463,7 @@
     "id": 19,
     "name": "Lollo Stamp",
     "attributes_description": "The voucher used to redeem the Lollo Helper special delivery.",
-    "bg_description": "Thank you for being a Lollo Helper!\nTo express our gratitude, we'd love to present you with a Lollo Stamp. You can use it to exchange for your Lollo Helper special delivery at the designated Lollo Logistics stations.",
+    "bg_description": "Thank you for being a Lollo Helper!\nTo express our gratitude, we'd love to present you with a Lollo Stamp. You can use it to exchange for your Lollo Helper special delivery during all Lollo Campaign events.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_01_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_01_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_01_UI.png",
@@ -17152,8 +17152,8 @@
   {
     "id": 80010068,
     "name": "Skelecanth Tartare Recipe",
-    "attributes_description": "Used to learn how to cook Skelecanth Tartare.",
-    "bg_description": "A recipe that details how to cook Skelecanth Tartare.",
+    "attributes_description": "Used to learn how to cook Jade Mushroom Soup.",
+    "bg_description": "A recipe that details how to cook Jade Mushroom Soup.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17162,8 +17162,8 @@
   {
     "id": 80010069,
     "name": "Lichen Salad Recipe",
-    "attributes_description": "Used to learn how to cook Lichen Salad.",
-    "bg_description": "A recipe that details how to cook Lichen Salad.",
+    "attributes_description": "Used to learn how to cook Cloudward Stew.",
+    "bg_description": "A recipe that details how to cook Cloudward Stew.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17172,8 +17172,8 @@
   {
     "id": 80010070,
     "name": "Pine Needle Soda Recipe",
-    "attributes_description": "Used to learn how to make Pine Needle Soda.",
-    "bg_description": "A recipe that details how to make Pine Needle Soda.",
+    "attributes_description": "Used to learn how to cook Sizzling Jade Stir-fry.",
+    "bg_description": "A recipe that details how to cook Sizzling Jade Stir-fry.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17182,8 +17182,8 @@
   {
     "id": 80010071,
     "name": "Honeypot Jam Recipe",
-    "attributes_description": "Used to learn how to make Honeypot Jam.",
-    "bg_description": "A recipe that details how to make Honeypot Jam.",
+    "attributes_description": "Used to learn how to cook Crab Braised Fish.",
+    "bg_description": "A recipe that details how to cook Crab Braised Fish.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17192,8 +17192,8 @@
   {
     "id": 80010072,
     "name": "Smoked Meat Stew Recipe",
-    "attributes_description": "Used to learn how to cook Smoked Meat Stew.",
-    "bg_description": "A recipe that details how to cook Smoked Meat Stew.",
+    "attributes_description": "Used to learn how to cook Little Snowy Moons.",
+    "bg_description": "A recipe that details how to cook Little Snowy Moons.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17202,8 +17202,8 @@
   {
     "id": 80010073,
     "name": "Grilled Fern Spore Recipe",
-    "attributes_description": "Used to learn how to cook Grilled Fern Spore.",
-    "bg_description": "A recipe that details how to cook Grilled Fern Spore.",
+    "attributes_description": "Used to learn how to cook Stir-Fried Trio.",
+    "bg_description": "A recipe that details how to cook Stir-Fried Trio.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17212,8 +17212,8 @@
   {
     "id": 80010074,
     "name": "Fruit Crackle Recipe",
-    "attributes_description": "Used to learn how to make Fruit Crackle.",
-    "bg_description": "A recipe that details how to make Fruit Crackle.",
+    "attributes_description": "Used to learn how to cook Flavor Under Heaven.",
+    "bg_description": "A recipe that details how to cook Flavor Under Heaven.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17222,8 +17222,8 @@
   {
     "id": 80010075,
     "name": "\"Crack & Bolt\" Fish Jar Recipe",
-    "attributes_description": "Used to learn how to make \"Crack & Bolt\" Fish Jar.",
-    "bg_description": "A recipe that details how to make \"Crack & Bolt\" Fish Jar.",
+    "attributes_description": "Used to learn how to cook Brocade Pearl Meatballs.",
+    "bg_description": "A recipe that details how to cook Brocade Pearl Meatballs.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17232,8 +17232,8 @@
   {
     "id": 80010076,
     "name": "\"Munchie-More\" Bun Recipe",
-    "attributes_description": "Used to learn how to make \"Munchie-More\" Bun.",
-    "bg_description": "A recipe that details how to make \"Munchie-More\" Bun.",
+    "attributes_description": "Used to learn how to cook Memories of Autumn.",
+    "bg_description": "A recipe that details how to cook Memories of Autumn.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17242,8 +17242,8 @@
   {
     "id": 80010077,
     "name": "Complete Nutrition Squeezy Jelly Recipe",
-    "attributes_description": "Used to learn how to make Complete Nutrition Squeezy Jelly.",
-    "bg_description": "A recipe that details how to make Complete Nutrition Squeezy Jelly.",
+    "attributes_description": "Used to learn how to cook Jade Broth Noodles.",
+    "bg_description": "A recipe that details how to cook Jade Broth Noodles.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17252,8 +17252,8 @@
   {
     "id": 80010078,
     "name": "Lahai-Roi Special Plant Milk Recipe",
-    "attributes_description": "Used to learn how to make Lahai-Roi Special Plant Milk.",
-    "bg_description": "A recipe that details how to make Lahai-Roi Special Plant Milk.",
+    "attributes_description": "Used to learn how to cook Immortal's Medley Tribute.",
+    "bg_description": "A recipe that details how to cook Immortal's Medley Tribute.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
@@ -17402,7 +17402,7 @@
   {
     "id": 50000211,
     "name": "Voyager's Ascension Supply",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nDream of Stars x1\nRedbell x1\nForget-Me-Not x1\nMoss Amber x1\nEdelschnee x1\n...",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nCloudperch Seed x1\nFlowborne Dream x1\nBlade Blossom x1\nRedbell x1\nForget-Me-Not x1\n...",
     "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
@@ -17412,7 +17412,7 @@
   {
     "id": 50000212,
     "name": "Reprise Ascension Supply",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nDream of Stars x1\nRedbell x1\nForget-Me-Not x1\nMoss Amber x1\nEdelschnee x1\n...",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nCloudperch Seed x1\nFlowborne Dream x1\nBlade Blossom x1\nRedbell x1\nForget-Me-Not x1\n...",
     "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
@@ -19552,12 +19552,22 @@
   {
     "id": 50000183,
     "name": "At Dream's Edge - Waveband",
-    "attributes_description": "Open and choose to obtain either: <color=#ffd12f>Lucy's Waveband or Rebecca's Waveband.</color>",
+    "attributes_description": "Open in Backpack and choose to obtain either: <color=#ffd12f>Lucy's Waveband or Rebecca's Waveband.</color> You may choose to obtain up to <color=#ffd12f>2</color> Wavebands for each of these Resonators.\nIf the selected Resonator's Waveband has already reached its limit, the newly obtained Waveband will be converted into <color=#ffd12f>Illusive Corals</color> instead.",
     "bg_description": "NO CONTENT",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_RoleSelect_01_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_RoleSelect_01_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_RoleSelect_01_UI.png",
     "rarity": 5
+  },
+  {
+    "id": 77,
+    "name": "Simulation Data",
+    "attributes_description": "Large quantities of data gathered during the testing of the hologram.",
+    "bg_description": "The more data is collected from the drills, the more accurate the Waveworn Phenomena simulations become.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_80400002_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_80400002_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_80400002_UI.png",
+    "rarity": 4
   },
   {
     "id": 80131008,
@@ -19760,6 +19770,16 @@
     "rarity": 4
   },
   {
+    "id": 71300001,
+    "name": "Skyscribe Armillary",
+    "attributes_description": "A portable device issued by Xuanfang's Ministry of War, capable of syncing frequency data with Skywatch Rings.",
+    "bg_description": "A portable device made to synchronize seamlessly with Skywatch Rings in real time. Xuanfang Wardens rely on it to monitor and log the Autopuppets' patrol routes. When calibrated with the proper data, it can also be deployed to hunt down specific frequencies.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_244_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_244_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_244_UI.png",
+    "rarity": 5
+  },
+  {
     "id": 41400314,
     "name": "Nightmare Flashdrive",
     "attributes_description": "Nightmare: Adam Smasher's drop, used for Lucy and Rebecca's Ascension.",
@@ -19890,6 +19910,56 @@
     "rarity": 4
   },
   {
+    "id": 70050201,
+    "name": "Shielder Automaton I",
+    "attributes_description": "One of the three components required to reassemble the Shielder Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Shielder Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Shielder Automaton serves as the shield-bearer of the Auto Legion, always standing at the very front lines to protect its fellow Automatons.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_01_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050202,
+    "name": "Shielder Automaton II",
+    "attributes_description": "One of the three components required to reassemble the Shielder Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Shielder Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Shielder Automaton serves as the shield-bearer of the Auto Legion, always standing at the very front lines to protect its fellow Automatons.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_01A_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_01A_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_01A_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050203,
+    "name": "Shielder Automaton III",
+    "attributes_description": "One of the three components required to reassemble the Shielder Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Shielder Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Shielder Automaton serves as the shield-bearer of the Auto Legion, always standing at the very front lines to protect its fellow Automatons.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_01B_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_01B_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_01B_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050204,
+    "name": "Swordsman Automaton I",
+    "attributes_description": "One of the three components required to reassemble the Swordsman Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Swordsman Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Swordsman Automaton is known for weaving through enemy lines, taking the heads of the enemy commanders in the blink of an eye.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_02_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_02_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_02_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050205,
+    "name": "Swordsman Automaton II",
+    "attributes_description": "One of the three components required to reassemble the Swordsman Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Swordsman Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Swordsman Automaton is known for weaving through enemy lines, taking the heads of the enemy commanders in the blink of an eye.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_02A_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_02A_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_02A_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 42601510,
     "name": "Past Reveries",
     "attributes_description": "A material used for Lucy and Rebecca's Ascension.",
@@ -19960,6 +20030,16 @@
     "rarity": 5
   },
   {
+    "id": 52014,
+    "name": "To the New World - World Tour Concert Pack",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
     "id": 80110525,
     "name": "First and Last Gift",
     "attributes_description": "Background music played when Denia leaves.",
@@ -19987,6 +20067,26 @@
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71300002,
+    "name": "Yangyang's Letter",
+    "attributes_description": "A letter from Yangyang.",
+    "bg_description": "A letter from Yangyang. Ever since your journey began, the two of you have kept in touch through letters, sharing the latest twists and turns in each other's lives.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_232_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_232_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_232_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 40040008,
+    "name": "Unclaimed Rafter Kite",
+    "attributes_description": "Touch to collect or use Grapple to hook and quickly approach the Unclaimed Rafter Kites.",
+    "bg_description": "Rafter Kites are letters in a unique shape, and within each unclaimed Rafter Kite lies an undelivered message from a century ago.\nBring these messages to Qiuhong or Chiwen, and they will use them to learn about Xuanfang Hold's past and better plan how to protect its future.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_011_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst160/T_IconMst160_011_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst80/T_IconMst80_011_UI.png",
     "rarity": 5
   },
   {
@@ -20060,6 +20160,16 @@
     "rarity": 4
   },
   {
+    "id": 81,
+    "name": "Sliver of Xuanfang",
+    "attributes_description": "Mechanism fragments collected while exploring the Land of Xuanfang. They can be used to raise the level in \"A Glimpse of Xuanfang\" event.",
+    "bg_description": "Xuanfang Hold inches ceaselessly toward ruin... Before it vanishes for good, these fragments stand as witnesses, recording its every smallest collapse. Some say that within them, one can glimpse the whole of Xuanfang Hold.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Act_07_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Act_07_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Act_07_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 55002,
     "name": "Corner of the Star Sea",
     "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
@@ -20070,6 +20180,56 @@
     "rarity": 5
   },
   {
+    "id": 71300500,
+    "name": "Unique Climber Shoot",
+    "attributes_description": "A Climber Shoot discovered by you and the Fillet Fairmaiden inside an abandoned wooden mechanism out in the wilderness.",
+    "bg_description": "Growing from cracks in mechanisms, this uniquely textured Climber Shoot is essential for cooking Immortal's Medley.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_080_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_080_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_080_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71300501,
+    "name": "Undelivered Letter of Confession",
+    "attributes_description": "A confession letter Jiuwu wrote to Sonija, attached with several drafts.",
+    "bg_description": "A confession letter to Sonija, bearing the marks of countless erasures and revisions. The final draft was never sent out due to a lack of determination.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_081_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_081_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_081_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 44010061,
+    "name": "Phantom: Forbidden Bastion",
+    "attributes_description": "Unlocks the Phantom Appearance of the corresponding Echo.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_32068_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_32068_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_32068_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 44010062,
+    "name": "Phantom: Smiter",
+    "attributes_description": "Unlocks the Phantom Appearance of the corresponding Echo.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods/T_IconMonsterGoods_SG_31090_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_31090_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_31090_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80700014,
+    "name": "Constable Token",
+    "attributes_description": "A small token resembling a coin. Can be used to exchange for supplies at the Yard Exchange.",
+    "bg_description": "An official token issued to Constables. It functions as currency to trade for supplies at Shaftpost Yard, but is barred from circulation within the Hold. These tokens are generally distributed as a stipend upon the successful resolution of a case.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_currency_10_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_currency_10_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_currency_10_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 71200008,
     "name": "Visitor Pass",
     "attributes_description": "A visitor pass for the gate at the market. The image on it depicts a tale from the past about admiration and misunderstanding.",
@@ -20077,6 +20237,16 @@
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_218_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_218_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_218_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050206,
+    "name": "Swordsman Automaton III",
+    "attributes_description": "One of the three components required to reassemble the Swordsman Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Swordsman Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Swordsman Automaton is known for weaving through enemy lines, taking the heads of the enemy commanders in the blink of an eye.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_02B_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_02B_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_02B_UI.png",
     "rarity": 4
   },
   {
@@ -20170,6 +20340,26 @@
     "rarity": 4
   },
   {
+    "id": 71300503,
+    "name": "Heavy Gift",
+    "attributes_description": "A token of gratitude from the patients of Xuanfang Hold to Baizhi.",
+    "bg_description": "A token of gratitude from the patients of Xuanfang Hold to Baizhi. It is wrapped meticulously in multiple layers, hefty to hold, as if the senders feared their heartfelt intentions might not fully come through. You do not know what is hidden inside, nor whether it matches the package you received. But you know that within its weight lies a profound depth of blessings and appreciation.\nDeep down, you know Baizhi will surely treasure it.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_239_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_239_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_239_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50025,
+    "name": "Weekly Subscription",
+    "attributes_description": "Used to claim login rewards on specific days within 15 days.",
+    "bg_description": "Get unlimited access to the Celestial Observatory for a specified period with this pass.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_zk_01_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_zk_01_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_zk_01_UI.png",
+    "rarity": 5
+  },
+  {
     "id": 80130058,
     "name": "Scorching Frost",
     "attributes_description": "All desires are bound by one blade. Every road leads to the same end.\nThe future that belongs to her alone shall answer her wish.",
@@ -20240,6 +20430,16 @@
     "rarity": 4
   },
   {
+    "id": 82,
+    "name": "Sparring Coin",
+    "attributes_description": "A special token forged by the Skyworks, which can be exchanged for an assortment of supplies prepared for the participants.\nEvery fierce battle the Xuanfang Hold has endured will become the experience that strengthens its foundation.",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_B5_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup160/T_IconRup160_B5_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup80/T_IconRup80_B5_UI.png",
+    "rarity": 5
+  },
+  {
     "id": 71200011,
     "name": "Chat Screenshot",
     "attributes_description": "A screenshot of a chat with Lucilla. It may be the key to reaching the rendezvous point.",
@@ -20258,6 +20458,76 @@
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "rarity": 4
+  },
+  {
+    "id": 71300504,
+    "name": "Donation Certificate I",
+    "attributes_description": "A card issued by Jianji to the donors, which can be presented to Jianji to claim dividends.",
+    "bg_description": "A strange data card. It is said that the encryption key stored within can prove the holder has made a financial donation.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_081_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_081_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_081_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71300505,
+    "name": "Donation Certificate II",
+    "attributes_description": "A card issued by Jianji to the donors, which can be presented to Jianji to claim dividends.",
+    "bg_description": "A strange data card. It is said that the encryption key stored within can prove the holder has made a financial donation.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_081_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_081_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_081_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71300506,
+    "name": "Donation Certificate III",
+    "attributes_description": "A card issued by Jianji to the donors, which can be presented to Jianji to claim dividends.",
+    "bg_description": "A strange data card. It is said that the encryption key stored within can prove the holder has made a financial donation.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_081_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_081_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_081_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500094,
+    "name": "Reveler Captain's Seal",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_18.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500095,
+    "name": "The Mirror Reflecting the Beyond",
+    "attributes_description": "Resonators deal 60% more total DMG for 15s after they inflict Havoc Bane.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "When reflection begins to usurp reality, who you see in the mirror will take your place... and walk into the real world.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_43.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_43.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_43.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500096,
+    "name": "Silver Shuttle Faring through Dream",
+    "attributes_description": "Enemies take 30% more total Fusion DMG and 100% more total Fusion Burst DMG.\nInflicting Negative Status on the enemies increases ATK by 20% for 5s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "A traveler rides upon the silver shuttle as it drifts across the lake of the heart. The dream stretches on and on, with no end to it.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_45.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_45.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_45.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500097,
+    "name": "The Scale of Heart and Soul",
+    "attributes_description": "Inflicting Tune Strain - Shifting increases the Resonator's total DMG dealt by 40% for 30s.\nDealing Tune Break DMG grants 30% All-Attribute DMG Bonus plus an additional 30% Aero DMG Bonus to all Resonators in the team for 30s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "The left plate, blanketed in dust. The right, scabbed. Your Honor, please place your weight.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_50.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_50.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_50.png",
+    "rarity": 5
   },
   {
     "id": 71200012,
@@ -20288,5 +20558,1375 @@
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_220_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_220_UI.png",
     "rarity": 4
+  },
+  {
+    "id": 53009,
+    "name": "Peach Parfait",
+    "attributes_description": "Used to unlock a Resonator-specific outfit that grants the designated Resonator a new look.",
+    "bg_description": "The sky's colors melt into the sea. Splashing waves sparkle in the brilliant summer sun. A bird glides across the boundless blue overhead. A slice of watermelon and a perfectly chilled peach parfait. Just another slow summer day for her.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_61_Skin1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_61_Skin1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_61_Skin1_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 53010,
+    "name": "Peppermint",
+    "attributes_description": "Used to unlock a Resonator-specific outfit that grants the designated Resonator a new look.",
+    "bg_description": "Endless sunshine, golden sand beaches, and vibrant hues bursting everywhere—summer's here! Lynae's favorite season, hands down! Hm? The heatwave sapped your energy? Why not pop open another ice-cold soda?\n(∩^o^)⊃━☆ﾟ.*･",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_61_Skin1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_61_Skin1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_61_Skin1_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80400004,
+    "name": "Op Credit",
+    "attributes_description": "Virtual operation currency issued by the Black Shores to be used in various simulations.",
+    "bg_description": "Simulation data gathered from scenarios of varying severity helps guide our future personnel assignments when responding to Waveworn Phenomena.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_80400001_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_80400001_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_80400001_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 72630001,
+    "name": "Parcel to be Delivered",
+    "attributes_description": "A parcel to be delivered.",
+    "bg_description": "Inside is a well-worn set of ring puzzles and a half-opened letter. Left behind by a daughter for her father, these tokens are as quiet as she was—a silent proof of her unspoken care.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_239_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_239_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_239_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 72630002,
+    "name": "An Inventory and A Parcel",
+    "attributes_description": "An inventory and a parcel.",
+    "bg_description": "An inventory listing the belongings of the fallen Xuanfang Wardens, accompanied by a parcel containing the ring puzzles and the letter you just retrieved.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_239_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_239_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_239_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 72630003,
+    "name": "Parcel to be Delivered",
+    "attributes_description": "A parcel to be delivered.",
+    "bg_description": "A delicate jade-green pendant emitting a soft, restrained glow. Alongside it lies a crumpled, expired ticket to a popular water performance in Mengzhou.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_239_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_239_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_239_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 41400334,
+    "name": "Solidarity's Loneflame",
+    "attributes_description": "Myriad Snare: Rustfire Chassis's drop, used for Resonator Ascension.",
+    "bg_description": "The forge fires have melted multiple modular parts into a singular mass. After a century of bitter warfare, only a lonely, unbending soul remains to drive this vessel, turning it into an unquenchable flame.\n\nThis obsession burns to this very day, fueled by the desire to repay that unwavering companionship that leaves no soul behind, and to fulfill a century-old vow to defend Xuanfang to the death. Within the flickering firelight, a fine line faintly comes into view: \"Son of Unyielding Virtue.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_L_029_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_L_029_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_L_029_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 41400324,
+    "name": "Skyward Glazed Heart",
+    "attributes_description": "Thousand-Puppet Pavilion's drop, used for Skill Upgrade.",
+    "bg_description": "He believes he has exploited everything of this emotion, yet he never truly understands its essence.\n\nA burning hatred against the foes. A pining for home. A longing for the beloved. A wandering lost on the road ahead. The terror of death. The sheer tenacity for life.\n\nIt was never some incomprehensible impurity, nor the dawn of chaos.\n\nWhat the girl witnessed as she cast a glance back was voices fading softly into the drifting winds—hearts as clear as glass, carried away on feathers toward the far reaches of the sky.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_L_028_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_L_028_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_L_028_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 83,
+    "name": "Regenerative Pistil",
+    "attributes_description": "Upload data to the Bioprinter to print Resonator Ascension Collectibles native to the following regions:\nHuanglong - Jinzhou, Black Shores, Rinascita, Honami City",
+    "bg_description": "Thanks to the efforts of the Spacetrek Collective, the Upphaf Life Chamber located in the Roya Frostlands is now officially operational. \nSimply input compliant sample data, and the chamber can \"print\" the designated plants identical to the original specimens.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_236_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_236_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_236_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 50033001,
+    "name": "Morphable Song of Feathered Trace",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Song of Feathered Trace.\n \n2pcs Set: Energy Regen +10%.\n\n5pcs Set: Upon inflicting Havoc Bane, gain Xuanling's Feather, which grants a 20% increase in Crit. Rate and 35% increase in Heavy Attack DMG Bonus to the Resonator, lasting 15s.\nUpon inflicting Glacio Chafe, gain Chongming's Feather, which grants a 0.1% increase in ATK to Resonators in the team for every 1% of the Resonator's Energy Regen, up to 25%, lasting 10s.",
+    "bg_description": "The footprints in the rift will never fade...",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_38_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_38_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_38_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50033002,
+    "name": "Morphable Heart of Evil's Purge",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Heart of Evil's Purge\n \n2pcs Set: Aero DMG +10%.\n\n5pcs Set: Inflicting Tune Strain - Shifting inreases Crit. DMG by 20% and Aero DMG Bonus by 30% for 15s.",
+    "bg_description": "The footprints in the rift will never fade...",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_40_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_40_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_40_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50033003,
+    "name": "Morphable Lamp of Nether Road",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Lamp of Nether Road\n\n2pcs Set: HP+10%.\n\n5pcs Set: Upon gaining a Shield, gain 5% increase in Crit. Rate for 5s, max 4 stacks. This effect can be triggered every 0.5s. At max stacks, gain 15% Fusion DMG Bonus.",
+    "bg_description": "The footprints in the rift will never fade...",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_39_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_39_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_39_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50032001,
+    "name": "Morphable Song of Feathered Trace",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Song of Feathered Trace.\n \n2pcs Set: Energy Regen +10%.\n\n5pcs Set: Upon inflicting Havoc Bane, gain Xuanling's Feather, which grants a 20% increase in Crit. Rate and 35% increase in Heavy Attack DMG Bonus to the Resonator, lasting 15s.\nUpon inflicting Glacio Chafe, gain Chongming's Feather, which grants a 0.1% increase in ATK to Resonators in the team for every 1% of the Resonator's Energy Regen, up to 25%, lasting 10s.",
+    "bg_description": "The footprints in the rift will never fade...",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_36_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_36_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_36_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50032002,
+    "name": "Morphable Heart of Evil's Purge",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Heart of Evil's Purge\n \n2pcs Set: Aero DMG +10%.\n\n5pcs Set: Inflicting Tune Strain - Shifting inreases Crit. DMG by 20% and Aero DMG Bonus by 30% for 15s.",
+    "bg_description": "The footprints in the rift will never fade...",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_36_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_36_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_36_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50032003,
+    "name": "Morphable Lamp of Nether Road",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Lamp of Nether Road\n\n2pcs Set: HP+10%.\n\n5pcs Set: Upon gaining a Shield, gain 5% increase in Crit. Rate for 5s, max 4 stacks. This effect can be triggered every 0.5s. At max stacks, gain 15% Fusion DMG Bonus.",
+    "bg_description": "The footprints in the rift will never fade...",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_36_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_36_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shlb_36_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 10821,
+    "name": "Casket Sonar Use Permit: Mengzhou",
+    "attributes_description": "Grants the bearer of this permit the access to Casket Sonar in given regions.",
+    "bg_description": "The use permit of the Casket Sonar in Mengzhou. To ensure frequency safety in Mengzhou, users are permitted to use the Casket Sonar only within authorized areas in compliance with this official permit.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_24_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_24_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_24_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 10822,
+    "name": "Lootmapper Use Permit: Mengzhou",
+    "attributes_description": "Grants the bearer of this permit the access to the Lootmapper in given regions.",
+    "bg_description": "The use permit of the Lootmapper in Mengzhou. To ensure frequency safety in Mengzhou, users are permitted to use the Lootmapper only within authorized areas in compliance with this official permit.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_25_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_25_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_25_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50000131,
+    "name": "Originite Weapon Supply Chest",
+    "attributes_description": "Open to claim one Originite series weapon of your choice:\n<color=Rare4>Broadblade#41 *1</color>\n<color=Rare4>Sword#18 *1</color>\n<color=Rare4>Pistols#26 *1</color>\n<color=Rare4>Gauntlets#21D *1</color>\n<color=Rare4>Rectifier#25 *1</color>",
+    "bg_description": "The special supply chest obtained from Shilang in the Tiger's Maw.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_012_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_012_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_012_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50000132,
+    "name": "Originite Weapon Supply Chest",
+    "attributes_description": "Open to claim one Originite series weapon of your choice:\n<color=Rare4>Broadblade#41 *1</color>\n<color=Rare4>Sword#18 *1</color>\n<color=Rare4>Pistols#26 *1</color>\n<color=Rare4>Gauntlets#21D *1</color>\n<color=Rare4>Rectifier#25 *1</color>",
+    "bg_description": "The special supply chest obtained from Shilang in the Tiger's Maw.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_012_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_012_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_012_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71300507,
+    "name": "Retreat Ward Medicine",
+    "attributes_description": "A standard medication prescribed by the Retreat Ward for basic medical care and injury recovery.",
+    "bg_description": "A standard medication prescribed by the Retreat Ward for basic medical care and injury recovery.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_243_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_243_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_243_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71300508,
+    "name": "Friends as Ever",
+    "attributes_description": "The photo that Duzhou always carries. In it are three people in Xuanfang Warden garb, laughing and embracing each other. At the bottom are written their names: Duzhou, Yanlang, and Mingyu.",
+    "bg_description": "The photo that Duzhou always carries. In it are three people in Xuanfang Warden garb, laughing and embracing each other. At the bottom are written their names: Duzhou, Yanlang, and Mingyu.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_235_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_235_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_235_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 10001610,
+    "name": "Yangyang: Xuanling's Waveband",
+    "attributes_description": "Can be used to activate Yangyang: Xuanling's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1628_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1628_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1628_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 10001110,
+    "name": "Suisui's Waveband",
+    "attributes_description": "Can be used to activate Suisui's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1627_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1627_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1627_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050207,
+    "name": "Scholar Automaton I",
+    "attributes_description": "One of the three components required to reassemble the Scholar Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Scholar Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Scholar Automaton is the brain of the Auto Legion. Its groundbreaking invention, \"Oldton's Three Laws,\" profoundly altered the very landscape of warfare.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_03_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050208,
+    "name": "Scholar Automaton II",
+    "attributes_description": "One of the three components required to reassemble the Scholar Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Scholar Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Scholar Automaton is the brain of the Auto Legion. Its groundbreaking invention, \"Oldton's Three Laws,\" profoundly altered the very landscape of warfare.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_03A_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_03A_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_03A_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050209,
+    "name": "Scholar Automaton III",
+    "attributes_description": "One of the three components required to reassemble the Scholar Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Scholar Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Scholar Automaton is the brain of the Auto Legion. Its groundbreaking invention, \"Oldton's Three Laws,\" profoundly altered the very landscape of warfare.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_03B_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_03B_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_03B_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050210,
+    "name": "Angler Automaton I",
+    "attributes_description": "One of the three components required to reassemble the Angler Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "An Angler Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Angler Automaton usually maintains a low profile, but it is actually a hidden grand master within the Auto Legion. \nIt is famous for the motto: \"The automaton casts its line. Only those who wish to be caught will take the bait.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050211,
+    "name": "Angler Automaton II",
+    "attributes_description": "One of the three components required to reassemble the Angler Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "An Angler Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Angler Automaton usually maintains a low profile, but it is actually a hidden grand master within the Auto Legion. \nIt is famous for the motto: \"The automaton casts its line. Only those who wish to be caught will take the bait.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_04A_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_04A_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_04A_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050212,
+    "name": "Angler Automaton III",
+    "attributes_description": "One of the three components required to reassemble the Angler Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "An Angler Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Angler Automaton usually maintains a low profile, but it is actually a hidden grand master within the Auto Legion. \nIt is famous for the motto: \"The automaton casts its line. Only those who wish to be caught will take the bait.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_04B_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_04B_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_04B_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050213,
+    "name": "Lionarch Automaton I",
+    "attributes_description": "One of the three components required to reassemble the Lionarch Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Lionarch Automaton component obtained from an Auto Casket.\nAccording to King Auto, despite its fiercely powerful appearance, the Lionarch Automaton is actually the mascot of the Auto Legion. It is traditionally stationed on either side of the barracks gates to ward off evil.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_05_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_05_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_05_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050214,
+    "name": "Lionarch Automaton II",
+    "attributes_description": "One of the three components required to reassemble the Lionarch Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Lionarch Automaton component obtained from an Auto Casket.\nAccording to King Auto, despite its fiercely powerful appearance, the Lionarch Automaton is actually the mascot of the Auto Legion. It is traditionally stationed on either side of the barracks gates to ward off evil.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_05A_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_05A_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_05A_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050215,
+    "name": "Lionarch Automaton III",
+    "attributes_description": "One of the three components required to reassemble the Lionarch Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Lionarch Automaton component obtained from an Auto Casket.\nAccording to King Auto, despite its fiercely powerful appearance, the Lionarch Automaton is actually the mascot of the Auto Legion. It is traditionally stationed on either side of the barracks gates to ward off evil.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_05B_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_05B_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_05B_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050216,
+    "name": "Rusher Automaton I",
+    "attributes_description": "One of the three components required to reassemble the Rusher Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Rusher Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Rusher Automaton is the swiftest warrior in the Auto Legion. The mobile unit under its command is capable of executing rapid forced marches across any terrain.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_06_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_06_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_06_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050217,
+    "name": "Rusher Automaton II",
+    "attributes_description": "One of the three components required to reassemble the Rusher Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Rusher Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Rusher Automaton is the swiftest warrior in the Auto Legion. The mobile unit under its command is capable of executing rapid forced marches across any terrain.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_06A_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_06A_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_06A_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050218,
+    "name": "Rusher Automaton III",
+    "attributes_description": "One of the three components required to reassemble the Rusher Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Rusher Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Rusher Automaton is the swiftest warrior in the Auto Legion. The mobile unit under its command is capable of executing rapid forced marches across any terrain.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_06B_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_06B_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_06B_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050219,
+    "name": "Wrestler Automaton I",
+    "attributes_description": "One of the three components required to reassemble the Wrestler Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Wrestler Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Wrestler Automaton is the most combative soldier in the Auto Legion and stands as one of its top fighters. Constantly priming itself for the next bout, any ground beneath its feet becomes an eternal arena.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_07_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_07_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_07_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050220,
+    "name": "Wrestler Automaton II",
+    "attributes_description": "One of the three components required to reassemble the Wrestler Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Wrestler Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Wrestler Automaton is the most combative soldier in the Auto Legion and stands as one of its top fighters. Constantly priming itself for the next bout, any ground beneath its feet becomes an eternal arena.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_07A_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_07A_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_07A_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050221,
+    "name": "Wrestler Automaton III",
+    "attributes_description": "One of the three components required to reassemble the Wrestler Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Wrestler Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Wrestler Automaton is the most combative soldier in the Auto Legion and stands as one of its top fighters. Constantly priming itself for the next bout, any ground beneath its feet becomes an eternal arena.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_07B_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_07B_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_07B_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050222,
+    "name": "Teamaster Automaton I",
+    "attributes_description": "One of the three components required to reassemble the Teamaster Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Teamaster Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Teamaster Automaton acts as the drillmaster of the Auto Legion. It possesses the incredible composure to calmly savor its tea even in the heat of battle—a level of focus that every automaton would do well to emulate.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_08_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_08_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_08_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 70050223,
+    "name": "Teamaster Automaton II",
+    "attributes_description": "One of the three components required to reassemble the Teamaster Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Teamaster Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Teamaster Automaton acts as the drillmaster of the Auto Legion. It possesses the incredible composure to calmly savor its tea even in the heat of battle—a level of focus that every automaton would do well to emulate.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_08A_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_08A_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_08A_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 70050224,
+    "name": "Teamaster Automaton III",
+    "attributes_description": "One of the three components required to reassemble the Teamaster Automaton. Deliver all three pieces to King Auto to claim rewards.",
+    "bg_description": "A Teamaster Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Teamaster Automaton acts as the drillmaster of the Auto Legion. It possesses the incredible composure to calmly savor its tea even in the heat of battle—a level of focus that every automaton would do well to emulate.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_08B_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_08B_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_08B_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50000118,
+    "name": "Weekly Challenge New Voyage Supply Pack",
+    "attributes_description": "Open to claim a type of advanced skill material of your choice:\n<color=Rare4>Skyward Glazed Heart x1</color>\n<color=Rare4>We Who Question x1</color>\n<color=Rare4>Curse of the Abyss x1</color>\n<color=Rare4>When Irises Bloom x1</color>\n...",
+    "bg_description": "Upon touching the chest, you hear what sounds like a battle hymn.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_068_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack128/T_IconGiftPack128_068_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_068_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 52017,
+    "name": "New Voyage Starter Pack",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 52018,
+    "name": "New Voyage Radiant Pack",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 52019,
+    "name": "New Voyage Battlesong Pack",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 42601530,
+    "name": "Uncracked Jade",
+    "attributes_description": "A material used for Cooking.",
+    "bg_description": "The Land of Xuanfang is rich in jade. Locals see the Jadeplume Eagle as a spiritual creature bound to the jade, and guard it closely. If a fallen Jade Egg is found, they will try to return it to its nest. Only those confirmed abandoned are treated as a gift from the wild and used with care. Once the chicks hatch, the remaining jade‑calcified shells become even more precious. They are carved into ornaments for children, carrying the blessing: \"May you spread your wings and soar.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_084_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_084_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_084_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601540,
+    "name": "Climber Shoots",
+    "attributes_description": "A material used for Cooking.",
+    "bg_description": "Once Climber Shoots emerge from the ground, they gradually take on the straight appearance of ordinary bamboo shoots, their color shifting from black to green. Locals associate them with a wondrous artifact in Huanglong legends capable of connecting people's hearts, viewing the shoots as an auspicious ingredient that blesses children with sharp senses and deep empathy.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_080_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_080_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_080_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601550,
+    "name": "Jade Hexahedron",
+    "attributes_description": "A material used for Cooking.",
+    "bg_description": "Hard and dense, the Jade Hexahedron is a superb energy-conducting medium, frequently mined for use in mechanics and residential construction. When selecting a site for a Autopuppet factory, the builders will specifically choose an area rich in Jade Hexahedron veins to meet the immense power demands of its automated operations.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_082_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_082_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_082_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601560,
+    "name": "White Jade Beauty",
+    "attributes_description": "A material used for Cooking.",
+    "bg_description": "The White Jade Beauty is difficult to preserve. Once touched or bruised, the damaged area rapidly oozes a striking cyan-blue hue, resembling a clouded jewel or a cracked jade plate. \nThough delicious, it is mildly toxic. Eating it raw causes dizziness and vomiting, so it must be fully cooked before consumption. To ensure safety, eateries often take diners' utensils away while the mushrooms are cooking to prevent them from sneaking a premature bite.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_079_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_079_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_079_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601570,
+    "name": "Opus Stone",
+    "attributes_description": "A material used for Cooking.",
+    "bg_description": "Every Opus Stone is made thanks to the rigorous selection process of Opus Otters. Uncut stones with dull acoustics or messy textures are discarded along the water's edge, becoming \"Otter Castaways\" occasionally found by travelers.\nThe people of Mengzhou carefully polish Opus Stones of varying pitches, crafting them into lithophones and wind chimes hung beneath eaves or by the water. Whenever the chimes ring, nearby Opus Otters often pause their work to listen closely. If the mood strikes them, they will even knock on their own stones in harmony, as if jamming a song with a kindred spirit.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_081_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_081_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_081_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601580,
+    "name": "Leafweaver",
+    "attributes_description": "A material used for Synthesis.",
+    "bg_description": "The Leafweaver has a delicate frame and a pale golden hue. As a \"professional weaver,\" it cuts leaves or petals to construct intricately designed, spiral tower-like nests. On sunny afternoons in the Land of Xuanfang, one can often spot busy Leafweavers fluttering through the air, carrying leaves several times larger than their own bodies.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_086_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_086_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_086_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601590,
+    "name": "Floral Crest Jade",
+    "attributes_description": "A material used for Synthesis.",
+    "bg_description": "The Floral Crest Jade is encased in a shell of dense, incredibly hard black jade. Twistscales grind away at this outer layer using their own scales, polishing it over and over until the surface gleams like a mirror. Eventually the shell flakes off in one smooth piece, revealing the \"jade chrysanthemum\" beneath—fully intact and vivid with color.\nCherishing the stone's delicate veining, the people of Mengzhou have long taken to displaying these Twistscale-polished jades in their homes, where they sit upon desks as quiet, elegant treasures.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_085_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_085_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_085_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601600,
+    "name": "Cloudperch Seed",
+    "attributes_description": "A material used for Resonator Ascension.",
+    "bg_description": "In the Land of Xuanfang, the Cloudperch Seed is seen as the embodiment of lightness and ambition. Whenever the late autumn winds begin to blow, the tree's \"perching feathers\" rustle in unison, breaking free from the branches to dance through the valleys. Borne on mountain breezes and air currents, these seeds can travel immense distances. Only when the wind finally subsides do the winged seeds touch down gently, scattering life across distant lands.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_083_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_083_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_083_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601610,
+    "name": "Flowborne Dream",
+    "attributes_description": "A material used for Resonator Ascension.",
+    "bg_description": "\"Drawing the twilight's glow, gathering radiance upon scales.\"\nThe Flowborne Dream is exceptionally sensitive to environmental shifts. The shimmering changes in its scales and its swimming patterns allow it to detect ecological imbalances in a given area faster than any crafted device. It is also why the people of Mengzhou often keep them in wall-mounted glass tanks draped with thin silk scroll paintings. Beyond mere decoration, they serve as a natural early-warning instrument.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_087_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_087_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_087_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 42601620,
+    "name": "Blade Blossom",
+    "attributes_description": "A material used for Resonator Ascension.",
+    "bg_description": "With its sword-like leaves and refreshing scent, the Blade Blossom has historically been imbued with the folkloric meaning of \"warding off evil with blade leaves\" by the people of Mengzhou. Every midsummer, locals gather their long, straight leaves and hang them alongside mugwort on doorframes and windows, believing they can ward off impurities and misfortune. Its tendency to bloom under the moonlight and scatter its blade-like petals in the wind is viewed as a fleeting purification ritual. Wherever the petals drift, all gloom seems washed away.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_078_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_078_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_078_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 50000420,
+    "name": "Basic Enclosure Tank - Land of Xuanfang",
+    "attributes_description": "Open to claim one basic material for Weapon Ascension or Skill Upgrade of your choice:\n<color=Rare2>LF Autopuppet Kernel *1</color>\n<color=Rare2>Crude Ring *1</color>\n<color=Rare2>LF Whisperin Core *1</color>\n<color=Rare2>LF Howler Core *1</color>\n<color=Rare2>LF Polygon Core *1</color>\n<color=Rare2>LF Tidal Residuum *1</color>",
+    "bg_description": "An enclosure tank crafted by the Ministry of Development, used to preserve various specimens collected during field expeditions.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_13.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_13.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cllb_13.png",
+    "rarity": 2
+  },
+  {
+    "id": 50000421,
+    "name": "Medium Enclosure Tank - Land of Xuanfang",
+    "attributes_description": "Open to claim one medium material for Weapon Ascension or Skill Upgrade of your choice:\n<color=Rare3>MF Autopuppet Kernel *1</color>\n<color=Rare3>Basic Ring *1</color>\n<color=Rare3>MF Whisperin Core *1</color>\n<color=Rare3>MF Howler Core *1</color>\n<color=Rare3>MF Polygon Core *1</color>\n<color=Rare3>MF Tidal Residuum *1</color>",
+    "bg_description": "An enclosure tank crafted by the Ministry of Development, used to preserve various specimens collected during field expeditions.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_14.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_14.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cllb_14.png",
+    "rarity": 3
+  },
+  {
+    "id": 50000422,
+    "name": "Advanced Enclosure Tank - Land of Xuanfang",
+    "attributes_description": "Open to claim one advanced material for Weapon Ascension or Skill Upgrade of your choice:\n<color=Rare4>HF Autopuppet Kernel *1</color>\n<color=Rare4>Improved Ring *1</color>\n<color=Rare4>HF Whisperin Core *1</color>\n<color=Rare4>HF Howler Core *1</color>\n<color=Rare4>HF Polygon Core *1</color>\n<color=Rare4>HF Tidal Residuum *1</color>",
+    "bg_description": "An enclosure tank crafted by the Ministry of Development, used to preserve various specimens collected during field expeditions.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_15.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_15.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cllb_15.png",
+    "rarity": 4
+  },
+  {
+    "id": 50000423,
+    "name": "Premium Enclosure Tank - Land of Xuanfang",
+    "attributes_description": "Open to claim one premium material for Weapon Ascension or Skill Upgrade of your choice:\n<color=Rare5>FF Autopuppet Kernel *1</color>\n<color=Rare5>Tailored Ring *1</color>\n<color=Rare5>FF Whisperin Core *1</color>\n<color=Rare5>FF Howler Core *1</color>\n<color=Rare5>FF Polygon Core *1</color>\n<color=Rare5>FF Tidal Residuum *1</color>",
+    "bg_description": "An enclosure tank crafted by the Ministry of Development, used to preserve various specimens collected during field expeditions.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_16.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_16.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cllb_16.png",
+    "rarity": 5
+  },
+  {
+    "id": 41100091,
+    "name": "LF Autopuppet Kernel",
+    "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+    "bg_description": "A weak kernel structure capable of providing only a limited amount of energy. The Autopuppets it powers are typically restricted to executing the simplest of commands. Commonly found on weak Autopuppets.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_013_1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_013_1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_013_1_UI.png",
+    "rarity": 2
+  },
+  {
+    "id": 41100092,
+    "name": "MF Autopuppet Kernel",
+    "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+    "bg_description": "A standard kernel structure produced in massive quantities. This is the most ubiquitous model, serving as the default powerhouse for standard Autopuppets. Commonly found across a wide variety of models.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_013_2_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_013_2_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_013_2_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 41100093,
+    "name": "HF Autopuppet Kernel",
+    "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+    "bg_description": "A powerful kernel structure capable of outputting a massive amount of energy. The Autopuppets it drives can execute exceptionally complex commands. It can only be recovered from the rare, formidable Autopuppets.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_013_3_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_013_3_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_013_3_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 41100094,
+    "name": "FF Autopuppet Kernel",
+    "attributes_description": "A material used for Weapon & Resonator Ascension and Skill Upgrade.",
+    "bg_description": "A unique kernel structure that grants its host Autuppet a rudimentary form of \"intelligence.\" Legends tell of an Autopuppet capable of perfectly passing as human, driven entirely by a kernel identical to this one. Out of the countless machines produced by the Skyworks, only the absolute pinnacle of models possesses the qualification to harbor it.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMout/T_IconMout_O_013_4_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMout160/T_IconMout160_O_013_4_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMout80/T_IconMout80_O_013_4_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71300509,
+    "name": "Jade Upon the Ripples",
+    "attributes_description": "Upon the blue waters, the reflections of you and Danjin ripple softly. This precious moment will remain forever etched in both of your memories.",
+    "bg_description": "The pain of losing her family left a lasting stain on the girl's jade pendant and her heart. Though she struck out countless times, her blade could never cleave her nightmares, only carving the trauma deeper into her mind. Fortunately, the bond once broken has been mended by the warmth of companionship. That heartfelt devotion has finally chased away the haunting mists of her suffering. Now, the girl smiles again—as soft as wind dancing across clear waters, as bright as jade regaining its luster.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_234_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_234_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_234_a_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71300510,
+    "name": "Jade Upon the Ripples",
+    "attributes_description": "Upon the blue waters, the reflections of you and Danjin ripple softly. This precious moment will remain forever etched in both of your memories.",
+    "bg_description": "The pain of losing her family left a lasting stain on the girl's jade pendant and her heart. Though she struck out countless times, her blade could never cleave her nightmares, only carving the trauma deeper into her mind. Fortunately, the bond once broken has been mended by the warmth of companionship. That heartfelt devotion has finally chased away the haunting mists of her suffering. Now, the girl smiles again—as soft as wind dancing across clear waters, as bright as jade regaining its luster.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_234_b_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_234_b_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_234_b_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80000087,
+    "name": "Jade Mushroom Soup",
+    "attributes_description": "Grants 40% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "A soup made by pouring Uncracked Jade liquid and White Jade Beauty into a broth, then letting it simmer over a low flame. Remarkably versatile, it bends willingly to the cook's hand—a rich stock brings out a deep, savory character, while spring water yields a lighter, fresher note. A brief simmer is all it takes for the flavors to naturally bloom.\n\nTo keep impatient children from sneaking a taste before the mushrooms are fully cooked, parents have long made a habit of hiding away their bowls and chopsticks until the White Jade Beauty is properly done. Across the Land of Xuanfang, this is a comfort dish everyone grows up with.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_098_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_098_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_098_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80000088,
+    "name": "Cloudward Stew",
+    "attributes_description": "Grants 50% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Made by slow-stewing newly sprouted bamboo shoots with salted meat in a single pot. The natural sweetness of the bamboo melds with the savory depth of the meat, yielding a classic dish that is both hearty and deeply satisfying.\n\nIn Yuan Fortress, Cloudward Stew is regarded as a dish of good fortune, said to grant children sharp senses and a compassionate heart. During school enrollments or festive occasions, families often prepare this meal, wishing for their little ones to grow as strong and upright as spring bamboo, reaching ever skyward toward the clouds.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_103_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_103_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_103_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80000089,
+    "name": "Sizzling Jade Stir-fry",
+    "attributes_description": "Grants 25% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Thinly sliced cured meat is layered atop sliced mushrooms and steamed for hours. The saltiness of the meat seeps into the mushrooms' natural sweetness, lifting the whole dish to something far greater than its parts.\n\nMengzhou has a long-standing tradition of curing meat to bring out deeper flavor. Among the cuts, locals prize the rose-colored core as the \"Sizzling Cube.\" This dish lays that cube over White Jade Beauty mushrooms, hence the name \"Sizzling Jade Stir-fry.\" When honored guests arrive, a plate of this fine delicacy is more than enough to delight them.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_097_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook189/T_IconCook189_097_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_097_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80000090,
+    "name": "Crab Braised Fish",
+    "attributes_description": "Increases Energy Regen of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Fresh fish fillets are bathed in a sweet-and-sour glaze, then simmered over a low flame to bring out their delicate flavor. Though no crab ever touches the pot, the taste is remarkably true to the real thing.\n\nThis famous Yuan Fortress dish boasts a long history, though its reputation has waxed and waned with the passing generations. The recipe that now circulates across the Land of Xuanfang preserves the most widely embraced method, yet the truly authentic taste is known only to a few.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_104_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_104_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_104_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80000091,
+    "name": "Little Snowy Moons",
+    "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Steamed from a base of rice milk, these snow-white sponge cakes are shaped like a full moon, earning them the name \"Little Snowy Moons.\" Soft and sweet, the pastry also goes by alternative names such as \"Jade Plate\" or \"Water Moon Bun.\"\n\nDuring Mengzhou's annual Waking Moon Festival, it has long been a tradition for every household to prepare these cakes in welcome of the rising moon. Soldiers stationed far from home in Xuanfang carried this custom with them, hoping that even if the same moon doesn't shine over both lands, their hearts might still meet in this shared moment of reunion.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_101_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_101_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_101_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80000092,
+    "name": "Stir-Fried Trio",
+    "attributes_description": "Grants 10% Healing Bonus to all Resonators in the team and increases their Max HP by 20%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Two varieties of fresh meat and seasonal bamboo shoots are finely scored in a chrysanthemum pattern, then flash-fried over a roaring flame. When the heat hits just right, all three ingredients curl up and bloom into a bright, glistening cascade of crimson.\n\nThis dish boasts an incredibly short cooking time, delivering a rich aroma and fiery kick that instantly stirs the appetite. In the Land of Xuanfang, locals often gauge a patient's recovery by their craving for the Stir-Fried Trio. If they can catch its scent and handle the heat, they're bound to be well on the mend.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_096_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_096_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_096_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80000093,
+    "name": "Flavor Under Heaven",
+    "attributes_description": "Grants 30% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "A whole fowl is submerged in an aged stock and braised thoroughly over a low flame, basted again and again with the savory broth until the meat turns tender.\n\nThis dish is intensely spicy, yet the heat builds up rather than striking at first bite. First-timers are often fooled by its seemingly mild appearance, but by the time the waves of spice roll in, they are drenched in sweat, tongues burning as if they'd swallowed a wheel of fire. Rumor has it that an epicure who feared no spice once polished off three whole plates. Finishing his meal, he let out a satisfied cry: \"Three birds, one hand—enough to seize every flavor under heaven.\" The room fell silent in awe, and the dish has borne the name ever since.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_106_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_106_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_106_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80000094,
+    "name": "Brocade Pearl Meatballs",
+    "attributes_description": "Grants 50% Resonance Skill DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Minced meat is mixed with diced bamboo shoots and chili flakes, shaped into perfect spheres, and placed into a bamboo steamer to cook through. The finished meatballs gleam with a pleasing, glossy crimson hue. With each bite, a fragrant burst of meat and spice unfurls, revealing a texture that is soft yet chewy. Their luminous, pearl-like appearance has earned them the local name \"Brocade Pearl Meatballs.\"\n\nRound as they are, they speak of reunion. Red as they gleam, they carry wishes for prosperity. And that perfect hint of spice keeps this well-rounded flavor ever tasting plain.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_099_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_099_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_099_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80000095,
+    "name": "Memories of Autumn",
+    "attributes_description": "Grants 40% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Delicate fish balls, crafted from minced fish, are simmered together with tea leaves to form a refined soup. The tea buds offer a gentle bitterness while the fish balls lend a subtle sweetness. At first glance, the soup appears modest and unassuming, but a careful sip reveals a faint, lingering note of autumn that stays on the palate.\n\nThis soup traces its origins to Mengzhou, where it was initially made with an entirely different aquatic ingredient, one far fresher than tea leaves. When the recipe made its way here, however, that original ingredient was nowhere to be found, and the locals had no choice but to substitute it with tea. And so, as the soup meets the tongue—poised somewhere between the familiar and the foreign—it stirs a flood of memories all the way back home.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_100_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_100_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_100_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80000096,
+    "name": "Jade Broth Noodles",
+    "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Fine noodles, thin as silver silk, are dropped into boiling water, blanched in an instant, then nestled neatly into a bowl. Large chunks of meat, slow-braised to a melt-in-your-mouth tenderness, rest atop the noodles. The broth, clarified to crystal clarity with White Jade Beauty mushrooms and rich stock, carries a faint, lingering whisper of cooking wine.\n\nIt is the most common meal you'll find across the Land of Xuanfang. Utterly ordinary in appearance, yet it delivers a depth of flavor that surprises with the very first bite. As some have put it: \"The mildest flavors hold the truest essence. The ultimate delicacy is pure simplicity.\"",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_102_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_102_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_102_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80000097,
+    "name": "Immortal's Medley Tribute",
+    "attributes_description": "Increases Max HP of all Resonators in the team by 25%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "White Jade Beauty mushrooms and Climber Shoots are julienned and flash-fried in hot oil until their edges curl slightly. An Uncracked Jade egg mixture is then poured in and tossed gently until soft, delicate curds form, then finished with a scattering of Pavo Plums. With each sudden burst of berry juice, an intense, spicy aroma unfurls, instantly coaxing out the freshness of every ingredient.\n\nUnbound by the traditional culinary methods, the Fillet Fairmaiden captures the true spirit of cooking. The essence of these premium ingredients seeps fully into the mushrooms, bamboo shoots, and egg curds, sending out a fragrance so mouthwatering that anyone who catches a whiff can't help but crave a taste.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_238_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_238_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_238_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80001087,
+    "name": "Gilded Jadeite",
+    "attributes_description": "Grants 44% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "Wax gourd and fresh crab meat are simmered together with an Uncracked Jade egg mixture in a tureen, creating rich, alternating layers of gold and jade. Stewed slowly in a rich broth, the wax gourd soaks up the full sweetness of the crab, while a delicate topping of finely minced ham adds a savory depth to the unfolding finish. Every spoonful feels like a conversation between the mountains and the sea.\n\nThe first time Suisui laid eyes on this soup in a small eatery, she was instantly captivated by its layers of jade-and-gold hue. One spoonful, and the fragrance unfurled across her tongue. From then on, she sent someone to buy takeout from the shop every single day. However, it was tucked away in a remote corner and saw few customers, teetering on the edge of closure and soon to be turned into a tea house. Without a second thought, Suisui marched in with a chest of Credit Shells and an acquisition contract, and set them down squarely in front of the shopkeeper.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_29_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_29_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_29_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80001096,
+    "name": "The Secret of Delicacy",
+    "attributes_description": "Increases ATK of all Resonators in the team by 28%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "The egg noodles Yangyang makes, tasting exactly as she remembers her mother's did.\n\nBack in her hometown, Yangyang's schedule was always packed to the brim. Still unsure of where her path would lead, she was constantly trying to squeeze out every last second, desperate to add any edge that might carry her forward.  But no matter how late she came home from vocal lessons, walking back under a starlit sky, a steaming bowl of egg noodles was always waiting for her on the table. Sometimes there would be two bowls, which meant her father had also worked late into the night. And sometimes, there would be three, because her older sister, who was supposed to be fast asleep, would inevitably catch the scent of the noodles and coax her mother into making her a midnight meal.\n\nTo Yangyang, that bowl of egg noodles means home, love, and all the quiet warmth folded into everyday life.\n\nIt's the flavor that carried her all the way to where she is now, and the exact taste she wishes to pass on to someone special, someday.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_102_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_102_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_102_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80010087,
+    "name": "Jade Mushroom Soup Recipe",
+    "attributes_description": "Used to learn how to cook Jade Mushroom Soup.",
+    "bg_description": "A recipe that details how to cook Jade Mushroom Soup.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80010088,
+    "name": "Cloudward Stew Recipe",
+    "attributes_description": "Used to learn how to cook Cloudward Stew.",
+    "bg_description": "A recipe that details how to cook Cloudward Stew.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80010089,
+    "name": "Sizzling Jade Stir-fry Recipe",
+    "attributes_description": "Used to learn how to cook Sizzling Jade Stir-fry.",
+    "bg_description": "A recipe that details how to cook Sizzling Jade Stir-fry.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80010090,
+    "name": "Crab Braised Fish Recipe",
+    "attributes_description": "Used to learn how to cook Crab Braised Fish.",
+    "bg_description": "A recipe that details how to cook Crab Braised Fish.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80010091,
+    "name": "Little Snowy Moons Recipe",
+    "attributes_description": "Used to learn how to cook Little Snowy Moons.",
+    "bg_description": "A recipe that details how to cook Little Snowy Moons.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80010092,
+    "name": "Stir-Fried Trio Recipe",
+    "attributes_description": "Used to learn how to cook Stir-Fried Trio.",
+    "bg_description": "A recipe that details how to cook Stir-Fried Trio.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80010093,
+    "name": "Flavor Under Heaven Recipe",
+    "attributes_description": "Used to learn how to cook Flavor Under Heaven.",
+    "bg_description": "A recipe that details how to cook Flavor Under Heaven.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 80010094,
+    "name": "Brocade Pearl Meatballs Recipe",
+    "attributes_description": "Used to learn how to cook Brocade Pearl Meatballs.",
+    "bg_description": "A recipe that details how to cook Brocade Pearl Meatballs.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80010095,
+    "name": "Memories of Autumn Recipe",
+    "attributes_description": "Used to learn how to cook Memories of Autumn.",
+    "bg_description": "A recipe that details how to cook Memories of Autumn.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80010096,
+    "name": "Jade Broth Noodles Recipe",
+    "attributes_description": "Used to learn how to cook Jade Broth Noodles.",
+    "bg_description": "A recipe that details how to cook Jade Broth Noodles.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80010097,
+    "name": "Immortal's Medley Tribute Recipe",
+    "attributes_description": "Used to learn how to cook Immortal's Medley Tribute.",
+    "bg_description": "A recipe that details how to cook Immortal's Medley Tribute.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_036_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_036_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_036_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 50000119,
+    "name": "Weekly Challenge Supply Pack V",
+    "attributes_description": "Open to claim a type of advanced skill material of your choice:\n<color=Rare4>Skyward Glazed Heart x1</color>\n<color=Rare4>We Who Question x1</color>\n<color=Rare4>Curse of the Abyss x1</color>\n<color=Rare4>When Irises Bloom x1</color>\n...",
+    "bg_description": "Upon touching the chest, you hear what sounds like a battle hymn.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_068_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack128/T_IconGiftPack128_068_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_068_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 10001309,
+    "name": "Rover: Electro's Waveband",
+    "attributes_description": "Can be used to activate Rover: Electro's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1300_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1300_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1300_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 54010,
+    "name": "Nightveil Piercer Model Set",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50001401,
+    "name": "Molded Echo - Lingering Tunes",
+    "attributes_description": "Open to obtain the following 5 Echoes:\nLingering Tunes Set: Mech Abomination (Crit. Rate)\nLingering Tunes Set: Flautist (ATK)\nLingering Tunes Set: Chasm Guardian (ATK)\nLingering Tunes Set: Vanguard Junrock (ATK)\nLingering Tunes Set: Snip Snap (ATK)",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shzxlb_13_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shzxlb_13_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shzxlb_13_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50001402,
+    "name": "Molded Echo - Rejuvenating Glow",
+    "attributes_description": "Open to obtain the following 5 Echoes:\nRejuvenating Glow Set: Bell-Borne Geochelone (Healing Bonus)\nRejuvenating Glow Set: Stonewall Bracer (Energy Regen)\nRejuvenating Glow Set: Chasm Guardian (Energy Regen)\nRejuvenating Glow Set: Vanguard Junrock (ATK)\nRejuvenating Glow Set: Fission Junrock (ATK)",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shzxlb_11_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shzxlb_11_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shzxlb_11_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50001403,
+    "name": "Molded Echo - Moonlit Clouds",
+    "attributes_description": "Open to obtain the following 5 Echoes:\nMoonlit Clouds Set: Impermanence Heron (Crit. Rate)\nMoonlit Clouds Set: Stonewall Bracer (Energy Regen)\nMoonlit Clouds Set: Viridblaze Saurian (Energy Regen)\nMoonlit Clouds Set: Fission Junrock (ATK)\nMoonlit Clouds Set: Zig Zag (ATK)",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shzxlb_12_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shzxlb_12_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_shzxlb_12_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000215,
+    "name": "5-Star Weapon Supply Chest - New Voyage",
+    "attributes_description": "Open to claim one of the following weapons: <color=Rare5>Lustrous Razor, Emerald of Genesis, Static Mist, Abyss Surges, Cosmic Ripples, Laser Shearer, Radiance Cleaver, Phasic Homogenizer, Pulsation Bracer, Boson Astrolabe.</color>",
+    "bg_description": "NO CONTENT",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_003_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_003_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_003_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51052,
+    "name": "Jade Steed's Radiant Chest",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51053,
+    "name": "Shaftpost Yard's Radiant Chest",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51054,
+    "name": "Jade Steed's Forging Chest",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 55003,
+    "name": "Cloud Lark",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 55004,
+    "name": "Upon Rosy Clouds",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80131012,
+    "name": "Virtual Beacon",
+    "attributes_description": "A special reward obtained in \"Virtual Crisis: Quadrant Trials.\" It records the highest total Stress Level reached during the challenge.",
+    "bg_description": "As the doom that returns all things to nothingness comes surging in, you raise the torch against the tide and light the way for every lost soul who comes after.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_03_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_03_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_03_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80131013,
+    "name": "Until We Meet Again",
+    "attributes_description": "A limited-time title from Endstate Matrix: Adversity Vanguard. Obtainable at any Challenge Stage and remains active until the end of the current stage.",
+    "bg_description": "Having walked through the long night, you now have a heart to call your own. From here, the sea of stars is boundless, and the world is made new.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_MowingTower35_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_MowingTower35_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_MowingTower35_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130063,
+    "name": "Votary of the Voice",
+    "attributes_description": "Each time calamity falls like a pebble into the sea, the girl races to where the ripples spread. The wind's voice tethers her journey but keeps its ending secret. Born to listen, born to protect—is this the path that will, at last, carry her toward her own ruin?",
+    "bg_description": "Fully activate Yangyang: Xuanling's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130064,
+    "name": "Mist and Verdure",
+    "attributes_description": "Ten thousand miles she has traveled, and she saw, wherever cooking smoke curls, there is the mortal world; wherever lanternlight glows, there is a flourishing age. Splendid rivers and mountains before her eyes, warm spring breeze within her heart, such is the scene she would give a lifetime to paint and to protect.",
+    "bg_description": "Fully activate Suisui's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130065,
+    "name": "Lightning in Prism",
+    "attributes_description": "This is the shape held in the prism, the heart sunk to the abyss, and now, along with hope and tomorrow, it is entrusted to you. The riddle that was never yours to solve now awaits an answer none could have foretold.",
+    "bg_description": "Fully activate Rover: Electro's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51055,
+    "name": "Shaftpost Yard's Monthly Aid",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000133,
+    "name": "Podcast New Voyage Supply Pack",
+    "attributes_description": "Open to claim a type of premium resource of your choice:\n<color=Rare5>Premium Resonance Potion x5</color>\n<color=Rare5>Premium Energy Core x5</color>\n<color=Rare5>Premium Sealed Tube x4</color>\n<color=Rare5>Shell Credit x100000</color>",
+    "bg_description": "A Supply Pack filled with essentials for your adventures, courtesy of the Pioneer Podcast for their dedicated new audience. Stay curious out there, friend.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_Pass04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71300100,
+    "name": "Fox Mask",
+    "attributes_description": "A fox mask, presumably dropped by the suspect who stole the Sentinel's Token.",
+    "bg_description": "A fox mask, presumably dropped by the suspect who stole the Sentinel's Token.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_231_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_156_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_231_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 84,
+    "name": "Encrypted Data",
+    "attributes_description": "Critical data that's carefully encrypted. Used to exchange for rewards in the Recurring Challenge \"Endstate Matrix.\"",
+    "bg_description": "These data are invaluable relics of countless fallen civilizations. Fractured by the assault on the Matrix and stitched back together by viral corruption, they now drift scattered across the data space… Thankfully, the Spacetrek Collective has the means to restore them.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity32/MowingTower/T_IconA_Act_MowingTowerPoint_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity32/MowingTower/T_IconA160_Act_MowingTowerPoint_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity32/MowingTower/T_IconA80_Act_MowingTowerPoint_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110527,
+    "name": "A Different Sky",
+    "attributes_description": "Background music played while crossing the Gate of Xuanfang.",
+    "bg_description": "Reach the Four Chime Shaftpost in Main Quest \"The Wind Before the Storm\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110528,
+    "name": "Song of Xuanling",
+    "attributes_description": "A song once popular in the Land of Xuanfang.",
+    "bg_description": "Defeat Thousand-Puppet Pavilion in Main Quest \"Xuanling Sings, Storm Quelled\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110529,
+    "name": "Hear the Wind Sing",
+    "attributes_description": "Background music played during Yangyang's conversation with the Streams.",
+    "bg_description": "Complete Main Quest - Segue \"The Chant of Unseen Ties\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110530,
+    "name": "Rage of Machines",
+    "attributes_description": "Background music played while battling Myriad Snare: Rustfire Chassis.",
+    "bg_description": "Complete the Suisui line and meet up with her in Xuanfang Hold in Main Quest \"Xuanling Sings, Storm Quelled\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110531,
+    "name": "Penumbra",
+    "attributes_description": "Background music played while confronting Thousand-Puppet Pavilion.",
+    "bg_description": "Defeat Thousand-Puppet Pavilion in Main Quest \"Xuanling Sings, Storm Quelled\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110532,
+    "name": "Sum of Ten Thousand Voices",
+    "attributes_description": "Background music played while bringing peace to the souls of past soldiers.",
+    "bg_description": "Defeat Thousand-Puppet Pavilion in Main Quest \"Xuanling Sings, Storm Quelled\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110533,
+    "name": "The Star That Voyages Again",
+    "attributes_description": "Background music played while saying goodbye and leaving Startorch Academy.",
+    "bg_description": "Reach the Four Chime Shaftpost in Main Quest \"The Wind Before the Storm\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110534,
+    "name": "May the Fire Forever Burn",
+    "attributes_description": "Background music played when Suisui wins her bet with Hsin the Moon Fox.",
+    "bg_description": "Complete the Suisui line and meet up with her in Xuanfang Hold in Main Quest \"Xuanling Sings, Storm Quelled\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110535,
+    "name": "The Moment Before Daybreak",
+    "attributes_description": "Background music played during the Xuanfang Hold crisis.",
+    "bg_description": "Reach the Four Chime Shaftpost in Main Quest \"The Wind Before the Storm\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 51056,
+    "name": "Xuanfang's Support Ration",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 51057,
+    "name": "Shaftpost Yard's Battlesong Collection",
+    "attributes_description": "Obtain to receive the items inside.",
+    "bg_description": "",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_dj_19_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71300003,
+    "name": "Spirit Pendant",
+    "attributes_description": "A jade pendant from Suisui.",
+    "bg_description": "A jade pendant gifted by Suisui, one of a matching pair. Rigged with a hidden tracking function, the set allows each bearer to keep tabs on the other's condition.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_230_UI.png",
+    "icon_middle": "Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_230_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_230_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71300004,
+    "name": "Letter of Reply",
+    "attributes_description": "Your letter to Yangyang.",
+    "bg_description": "Your reply to Yangyang's letter. Exchanging letters with her has become an indispensable part of your journey.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_233_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_233_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_233_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71300005,
+    "name": "Unfinished Letter",
+    "attributes_description": "A letter written by Yangyang in the Land of Xuanfang.",
+    "bg_description": "A letter penned by Yangyang while she sojourned in the Land of Xuanfang. She never truly expected it would find its way to you, but when feelings run deep and longing knows no bounds, even a miracle can become the destiny.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_232_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_232_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_232_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71300511,
+    "name": "Chamber Data",
+    "attributes_description": "Data gathered across Fogveil Pagoda, required to unlock the path to the Fogveil Pivot.",
+    "bg_description": "A modular part containing the Chamber Data. There are three such pieces in total, each storing data for the Chamber, the Lockpit, and the Purging Mill respectively. Only by gathering all three can the path to the Fogveil Pivot be opened.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_242_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_240_UI.T_IconTask160_Task_242_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_240_UI.T_IconTask80_Task_242_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71300512,
+    "name": "Lockpit Data",
+    "attributes_description": "Data gathered across Fogveil Pagoda, required to unlock the path to the Fogveil Pivot.",
+    "bg_description": "A modular part containing the Lockpit Data. There are three such pieces in total, each storing data for the Chamber, the Lockpit, and the Purging Mill respectively. Only by gathering all three can the path to the Fogveil Pivot be opened.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_241_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_240_UI.T_IconTask160_Task_241_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_240_UI.T_IconTask80_Task_241_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71300513,
+    "name": "Purging Mill Data",
+    "attributes_description": "Data gathered across Fogveil Pagoda, required to unlock the path to the Fogveil Pivot.",
+    "bg_description": "A modular part containing the Purging Mill Data. There are three such pieces in total, each storing data for the Chamber, the Lockpit, and the Purging Mill respectively. Only by gathering all three can the path to the Fogveil Pivot be opened.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_240_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_240_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_240_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50000430,
+    "name": "Basic Enclosure Tank III",
+    "attributes_description": "Open to claim one basic material for Weapon Ascension or Skill Upgrade of your choice:\n<color=Rare2>LF Autopuppet Kernel *1</color>\n<color=Rare2>LF Exoswarm Core *1</color> \n<color=Rare2>LF Mech Core *1</color> \n<color=Rare2>Fractured Exoswarm Pendant *1</color>\n<color=Rare2>Crude Ring *1</color>\n<color=Rare2>LF Whisperin Core *1</color>\n<color=Rare2>LF Howler Core *1</color>\n<color=Rare2>LF Polygon Core *1</color>\n<color=Rare2>LF Tidal Residuum *1</color>",
+    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_023_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_023_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_023_UI.png",
+    "rarity": 2
+  },
+  {
+    "id": 50000431,
+    "name": "Medium Enclosure Tank III",
+    "attributes_description": "Open to claim one medium material for Weapon Ascension or Skill Upgrade of your choice: \n<color=Rare3>MF Autopuppet Kernel *1</color>\n<color=Rare3>MF Exoswarm Core *1</color> \n<color=Rare3>MF Mech Core *1</color> \n<color=Rare3>Worn Exoswarm Pendant *1</color>\n<color=Rare3>Basic Ring *1</color>\n<color=Rare3>MF Whisperin Core *1</color>\n<color=Rare3>MF Howler Core *1</color>\n<color=Rare3>MF Polygon Core *1</color>\n<color=Rare3>MF Tidal Residuum *1</color>",
+    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_024_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_024_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_024_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 50000432,
+    "name": "Advanced Enclosure Tank III",
+    "attributes_description": "Open to claim one advanced material for Weapon Ascension or Skill Upgrade of your choice: \n<color=Rare4>HF Autopuppet Kernel *1</color>\n<color=Rare4>HF Exoswarm Core *1</color> \n<color=Rare4>HF Mech Core *1</color> \n<color=Rare4>Chipped Exoswarm Pendant *1</color>\n<color=Rare4>Improved Ring *1</color>\n<color=Rare4>HF Whisperin Core *1</color>\n<color=Rare4>HF Howler Core *1</color>\n<color=Rare4>HF Polygon Core *1</color>\n<color=Rare4>HF Tidal Residuum *1</color>",
+    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_025_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_025_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_025_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50000433,
+    "name": "Premium Enclosure Tank III",
+    "attributes_description": "Open to claim one premium material for Weapon Ascension or Skill Upgrade of your choice: \n<color=Rare5>FF Autopuppet Kernel *1</color>\n<color=Rare5>FF Exoswarm Core *1</color> \n<color=Rare5>FF Mech Core *1</color> \n<color=Rare5>Intact Exoswarm Pendant *1</color>\n<color=Rare5>Tailored Ring *1</color>\n<color=Rare5>FF Whisperin Core *1</color>\n<color=Rare5>FF Howler Core *1</color>\n<color=Rare5>FF Polygon Core *1</color>\n<color=Rare5>FF Tidal Residuum *1</color>",
+    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_026_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_026_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_026_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000216,
+    "name": "Gleaner's Ascension Supply IV",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nCloudperch Seed x1\nFlowborne Dream x1\nBlade Blossom x1\nRedbell x1\nForget-Me-Not x1\n...",
+    "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cllb_05.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110536,
+    "name": "Wooden Wings on the Wind",
+    "attributes_description": "Background music of the Bird-Return Garden in Spring.",
+    "bg_description": "Change the season in Bird-Return Garden to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110537,
+    "name": "With Ice and Jade",
+    "attributes_description": "Background music of the Bird-Return Garden in Winter.",
+    "bg_description": "Change the season in Bird-Return Garden to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110538,
+    "name": "When Brilliance Returns",
+    "attributes_description": "Background music of the Bird-Return Garden in Autumn.",
+    "bg_description": "Change the season in Bird-Return Garden to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71300006,
+    "name": "Skyscribe Armillary",
+    "attributes_description": "A portable device issued by Xuanfang's Ministry of War, capable of syncing frequency data with Skywatch Rings.",
+    "bg_description": "A portable device made to synchronize seamlessly with Skywatch Rings in real time. Xuanfang Wardens rely on it to monitor and log the Autopuppets' patrol routes. When calibrated with the proper data, it can also be deployed to hunt down specific frequencies.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_244_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_244_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_244_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71300007,
+    "name": "Unfinished Letter",
+    "attributes_description": "A letter written by Yangyang in the Land of Xuanfang.",
+    "bg_description": "A letter penned by Yangyang while she sojourned in the Land of Xuanfang. She never truly expected it would find its way to you, but when feelings run deep and longing knows no bounds, even a miracle can become the destiny.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_232_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_232_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_232_UI.png",
+    "rarity": 5
   }
 ]

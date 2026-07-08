@@ -674,6 +674,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -720,6 +728,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -758,6 +774,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -804,6 +828,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -822,6 +854,14 @@
       {
         "id": 117,
         "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
         "price": [
           "Shell Credit - 300"
         ],
@@ -872,6 +912,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1188,6 +1236,14 @@
           "Shell Credit - 300"
         ],
         "limit": 20
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1206,6 +1262,14 @@
       {
         "id": 117,
         "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
         "price": [
           "Shell Credit - 300"
         ],
@@ -1256,6 +1320,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1294,6 +1366,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1332,6 +1412,14 @@
           "Shell Credit - 500"
         ],
         "limit": 50
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 300"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1660,6 +1748,14 @@
           "Shell Credit - 20000"
         ],
         "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1686,6 +1782,14 @@
       {
         "id": 144,
         "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
         "price": [
           "Shell Credit - 20000"
         ],
@@ -1720,6 +1824,14 @@
           "Shell Credit - 20000"
         ],
         "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1746,6 +1858,14 @@
       {
         "id": 144,
         "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
         "price": [
           "Shell Credit - 20000"
         ],
@@ -1780,6 +1900,14 @@
           "Shell Credit - 20000"
         ],
         "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 20000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -1798,6 +1926,14 @@
       {
         "id": 117,
         "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 2
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
         "price": [
           "Shell Credit - 3000"
         ],
@@ -1824,6 +1960,14 @@
           "Shell Credit - 3000"
         ],
         "limit": 2
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 2
       }
     ]
   },
@@ -1842,6 +1986,14 @@
       {
         "id": 117,
         "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 3
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
         "price": [
           "Shell Credit - 2000"
         ],
@@ -1868,6 +2020,14 @@
           "Shell Credit - 2000"
         ],
         "limit": 3
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 3
       }
     ]
   },
@@ -1886,6 +2046,14 @@
       {
         "id": 117,
         "shopName": "KU-Money Exchange",
+        "price": [
+          "Shell Credit - 2000"
+        ],
+        "limit": 3
+      },
+      {
+        "id": 151,
+        "shopName": "Jade Steed Hauler",
         "price": [
           "Shell Credit - 2000"
         ],
@@ -2412,6 +2580,14 @@
           "Shell Credit - 40000"
         ],
         "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -2438,6 +2614,14 @@
       {
         "id": 144,
         "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
         "price": [
           "Shell Credit - 40000"
         ],
@@ -2472,6 +2656,14 @@
           "Shell Credit - 40000"
         ],
         "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -2498,6 +2690,14 @@
       {
         "id": 144,
         "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
         "price": [
           "Shell Credit - 40000"
         ],
@@ -2532,12 +2732,20 @@
           "Shell Credit - 40000"
         ],
         "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 40000"
+        ],
+        "limit": 20
       }
     ]
   },
   {
     "id": 80010033,
-    "itemName": "Recipe: Lotus Pastry",
+    "itemName": "Lotus Pastry Recipe",
     "shops": [
       {
         "id": 113,
@@ -2551,7 +2759,7 @@
   },
   {
     "id": 80010034,
-    "itemName": "Recipe: Spicy Meat with Pavo Plums",
+    "itemName": "Spicy Meat with Pavo Plums Recipe",
     "shops": [
       {
         "id": 113,
@@ -2752,6 +2960,14 @@
           "Shell Credit - 3000"
         ],
         "limit": 6
+      },
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 6
       }
     ]
   },
@@ -2786,6 +3002,14 @@
       {
         "id": 141,
         "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
+      },
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
         "price": [
           "Shell Credit - 4500"
         ],
@@ -2828,6 +3052,14 @@
           "Shell Credit - 4500"
         ],
         "limit": 3
+      },
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 4500"
+        ],
+        "limit": 3
       }
     ]
   },
@@ -2866,6 +3098,14 @@
           "Shell Credit - 9000"
         ],
         "limit": 2
+      },
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
       }
     ]
   },
@@ -2900,6 +3140,14 @@
       {
         "id": 141,
         "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 2
+      },
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
         "price": [
           "Shell Credit - 9000"
         ],
@@ -4874,6 +5122,14 @@
           "Shell Credit - 2400"
         ],
         "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -5414,6 +5670,14 @@
           "Shell Credit - 2400"
         ],
         "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -5424,6 +5688,14 @@
       {
         "id": 144,
         "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
         "price": [
           "Shell Credit - 2400"
         ],
@@ -5442,6 +5714,14 @@
           "Shell Credit - 2400"
         ],
         "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
       }
     ]
   },
@@ -5452,6 +5732,14 @@
       {
         "id": 144,
         "shopName": "NO CONTENT",
+        "price": [
+          "Shell Credit - 2400"
+        ],
+        "limit": 20
+      },
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
         "price": [
           "Shell Credit - 2400"
         ],
@@ -5642,6 +5930,104 @@
     ]
   },
   {
+    "id": 80000087,
+    "itemName": "Jade Mushroom Soup",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80000089,
+    "itemName": "Sizzling Jade Stir-fry",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80000090,
+    "itemName": "Crab Braised Fish",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 41100091,
+    "itemName": "LF Autopuppet Kernel",
+    "shops": [
+      {
+        "id": 153,
+        "shopName": "Ministry of Development Crafting Bay",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 60
+      }
+    ]
+  },
+  {
+    "id": 71300504,
+    "itemName": "Donation Certificate I",
+    "shops": [
+      {
+        "id": 155,
+        "shopName": "Xuanfang Ironshield Foundation",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 71300505,
+    "itemName": "Donation Certificate II",
+    "shops": [
+      {
+        "id": 155,
+        "shopName": "Xuanfang Ironshield Foundation",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 71300506,
+    "itemName": "Donation Certificate III",
+    "shops": [
+      {
+        "id": 155,
+        "shopName": "Xuanfang Ironshield Foundation",
+        "price": [
+          "Shell Credit - 1500"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
     "id": 42601510,
     "itemName": "Past Reveries",
     "shops": [
@@ -5694,6 +6080,342 @@
           "Pull Tabs - 15"
         ],
         "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 42601600,
+    "itemName": "Cloudperch Seed",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601610,
+    "itemName": "Flowborne Dream",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601530,
+    "itemName": "Uncracked Jade",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601540,
+    "itemName": "Climber Shoots",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601550,
+    "itemName": "Jade Hexahedron",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601560,
+    "itemName": "White Jade Beauty",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601570,
+    "itemName": "Opus Stone",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601580,
+    "itemName": "Leafweaver",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601590,
+    "itemName": "Floral Crest Jade",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 500"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 80000091,
+    "itemName": "Little Snowy Moons",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80000092,
+    "itemName": "Stir-Fried Trio",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80000093,
+    "itemName": "Flavor Under Heaven",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 9000"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80000094,
+    "itemName": "Brocade Pearl Meatballs",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80000095,
+    "itemName": "Memories of Autumn",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80000096,
+    "itemName": "Jade Broth Noodles",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 13500"
+        ],
+        "limit": 10
+      }
+    ]
+  },
+  {
+    "id": 80010087,
+    "itemName": "Jade Mushroom Soup Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010089,
+    "itemName": "Sizzling Jade Stir-fry Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010090,
+    "itemName": "Crab Braised Fish Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010091,
+    "itemName": "Little Snowy Moons Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010092,
+    "itemName": "Stir-Fried Trio Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010093,
+    "itemName": "Flavor Under Heaven Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 10000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010094,
+    "itemName": "Brocade Pearl Meatballs Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010095,
+    "itemName": "Memories of Autumn Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
+  },
+  {
+    "id": 80010096,
+    "itemName": "Jade Broth Noodles Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
       }
     ]
   }
