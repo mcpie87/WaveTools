@@ -114,6 +114,9 @@ export enum ItemSpecialty {
   FORGET_ME_NOT = "Forget-Me-Not",
   // 3.4 Night City
   PAST_REVERIES = "Past Reveries",
+  // 3.5
+  CLOUDPERCH_SEED = "Cloudperch Seed",
+  FLOWBORNE_DREAM = "Flowborne Dream",
 }
 
 export enum ItemCasket {

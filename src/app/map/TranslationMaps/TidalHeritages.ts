@@ -14,6 +14,7 @@ const TidalHeritageTranslationMapGroups: Record<string, { keys: string[]; key: s
       "Treasure005",
       "branch2.0_Treasure1",
       "branch3.0_938_Treasure2",
+      "branch3.5_150_Treasure3", // 3.5, TODO: verify
     ]
   },
   [TidalHeritage.PURPLE]: {
@@ -22,6 +23,7 @@ const TidalHeritageTranslationMapGroups: Record<string, { keys: string[]; key: s
       "Treasure008",
       "branch2.0_Treasure2",
       "branch3.0_938_Treasure3",
+      "branch3.5_150_Treasure4", // 3.5, TODO: verify
     ]
   },
   [TidalHeritage.GOLD]: {
@@ -30,6 +32,7 @@ const TidalHeritageTranslationMapGroups: Record<string, { keys: string[]; key: s
       "Treasure011",
       "branch2.0_Treasure3",
       "branch3.0_938_Treasure4",
+      "branch3.5_150_Treasure5", // 3.5, TODO: verify
     ]
   },
   [TidalHeritage.UNKNOWN]: {

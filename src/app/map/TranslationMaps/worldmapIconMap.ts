@@ -150,6 +150,10 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [ItemSpecialty.FORGET_ME_NOT]: "Image/IconC/T_IconC_077_UI.png",
   // 3.4
   [ItemSpecialty.PAST_REVERIES]: "Image/IconA/T_IconA_23_UI.png",
+  // 3.5
+  [ItemSpecialty.CLOUDPERCH_SEED]: "Image/IconC/T_IconC_083_UI.png",
+  [ItemSpecialty.FLOWBORNE_DREAM]: "Image/IconC/T_IconC_087_UI.png",
+
 
   /* ======================================================================= */
   /*                            NPC Monsters                                 */
