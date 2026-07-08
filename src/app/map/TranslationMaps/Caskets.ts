@@ -25,6 +25,14 @@ const CasketTranslationMapGroups: Record<string, { keys: string[]; key: string }
     key: "CASKET_LAHAI_TAPE",
     keys: ["branch3.0_41_Gameplay_3_0/Common1"]
   },
+  [ItemCasket.RAFTER_KITE]: {
+    key: "CASKET_RAFTER_KITE",
+    keys: [
+      "branch3.5_192_Gameplay_3_0/Common2",
+      "branch3.5_192_Gameplay_3_0/Common3",
+      "branch3.5_176_Gameplay_3_0/Common4",
+    ]
+  },
 };
 
 export const CasketTranslationMap: Record<string, TranslationMapEntry> =

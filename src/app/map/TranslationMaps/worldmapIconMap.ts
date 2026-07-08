@@ -1,4 +1,4 @@
-import { ItemOre, ItemPlant, ItemSpecialty } from "@/app/interfaces/item_types";
+import { ItemCasket, ItemOre, ItemPlant, ItemSpecialty } from "@/app/interfaces/item_types";
 import { Echo4Cost } from "./Echo4Costs";
 import { Echo3Cost } from "./Echo3Costs";
 import { Echo1Cost } from "./Echo1Costs";
@@ -34,6 +34,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Sonance Casket: Ragunna": "Image/IconMst80/T_IconMst80_008_UI.png",
   "Sonance Casket: Septimont": "Image/IconMst80/T_IconMst80_008_UI.png",
   "Lahai Tape": "Image/IconTask80/T_IconTask80_Task_181_UI.png",
+  [ItemCasket.RAFTER_KITE]: "Image/IconMst/T_IconMst_011_UI.png",
 
   /* Quests */
   [Quest.MAIN_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_1_UI.png", true],
