@@ -24,7 +24,6 @@ export class IDBSource implements Source {
     if (cached) {
       if (cached.version !== this.version) {
         console.log(`[PMTiles] Stale cache: ${this.url}, re-downloading`);
-        this.buffer = cached.data;
         await db.tiles.delete(this.url);
         this.scheduleBackgroundDownload();
       } else {
