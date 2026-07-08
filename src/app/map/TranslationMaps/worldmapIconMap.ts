@@ -105,7 +105,10 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   "Debug 10": "Atlas/WorldMapIcon/SP_IconMap_Play_76_UI.png",
   // 3.4
   [Puzzle.BREACH_PROTOCOL]: ["Atlas/WorldMapIcon/SP_IconMap_Task_17_1_UI.png", true],
-
+  // 3.5
+  [Puzzle.SEAT_OF_STILLNESS]: "Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+  [Puzzle.AUTO_CASKET]: "Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
+  [Puzzle.SQUAREFIELD_SPARRING]: "Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
 
 
   /* Specialties */

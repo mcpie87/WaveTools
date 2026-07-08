@@ -91,6 +91,9 @@ export enum Puzzle {
 
   // 3.5
   ELSEWAY_SHROUD = "Elseway Shroud",
+  SEAT_OF_STILLNESS = "Seat of Stillness",
+  AUTO_CASKET = "Auto Casket",
+  SQUAREFIELD_SPARRING = "Squarefield Sparring",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -273,6 +276,21 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
   },
 
   // 3.5
+  "QUERY_SEAT_OF_STILLNESS": {
+    key: "QUERY_SEAT_OF_STILLNESS",
+    name: Puzzle.SEAT_OF_STILLNESS,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_80_UI") ?? false,
+  },
+  "QUERY_AUTO_CASKET": {
+    key: "QUERY_AUTO_CASKET",
+    name: Puzzle.AUTO_CASKET,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_92_UI") ?? false,
+  },
+  "QUERY_SQUAREFIELD_SPARRING": {
+    key: "QUERY_SQUAREFIELD_SPARRING",
+    name: Puzzle.SQUAREFIELD_SPARRING,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_91_UI") ?? false,
+  },
 };
 
 const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
