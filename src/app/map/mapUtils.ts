@@ -287,7 +287,7 @@ export const mapConfigs: Record<string, MapConfig> = {
   },
   [MapName.MENGZHOU]: {
     mapId: 8,
-    bounds: [[-4, 3], [-20, -1]],
+    bounds: [[-4, 3], [-12, -1]],
     url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
   },
   [MapName.OVERWORLD]: {
