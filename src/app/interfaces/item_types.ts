@@ -130,6 +130,8 @@ export enum ItemCasket {
   SONANCE_SEPTIMONT = "Sonance Casket: Septimont",
   // 3.0
   LAHAI_TAPE = "Lahai Tape",
+  // 3.5
+  RAFTER_KITE = "Rafter Kite",
 }
 
 export enum ItemOre {
