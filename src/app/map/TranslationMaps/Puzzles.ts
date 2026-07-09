@@ -72,6 +72,7 @@ export enum Puzzle {
   GLOMMOTH_PROJECTION = "Glommoth Projection",
 
   // 3.3
+  VOIDMATTER_BLOCKS = "Voidmatter Blocks",
   VOIDWING_MOTH_PROJECTION = "Voidwing Moth Projection",
   INVESTIGATE_ASTRITES = "Astrites - Investigate",
   MOTORBIKE_STUNT_TRACK = "Motorbike - Stunt Track",
@@ -208,7 +209,7 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
   },
   "QUERY_Voidmatter_Blocks": {
     key: "QUERY_VOIDMATTER_BLOCKS",
-    name: "Voidmatter Blocks",
+    name: Puzzle.VOIDMATTER_BLOCKS,
     query: (m) => [
       "SP_IconMap_Activity_CubeEndless.png",
       "SP_IconMap_Activity_CubeNor"
