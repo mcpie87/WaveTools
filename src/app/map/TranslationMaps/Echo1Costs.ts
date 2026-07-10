@@ -112,6 +112,13 @@ export enum Echo1Cost {
   KERNEL_PUPPET_REFLECTION = "Kernel Puppet: Reflection",
   KERNEL_PUPPET_ANGER = "Kernel Puppet: Anger",
   KERNEL_PUPPET_JOY = "Kernel Puppet: Joy",
+  PORCELAIN_PICKET = "Porcelain Picket",
+  STONE_PICKET = "Stone Picket",
+  AUREATE_PICKET = "Aureate Picket",
+  FOG_LIONARCH_HEAD = "Fog Lionarch: Head",
+  FOG_LIONARCH_BODY = "Fog Lionarch: Body",
+  SMOLDER = "Smolder",
+  SMITER = "Smiter",
 }
 
 export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
@@ -125,7 +132,8 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
     keys: [
       "Monster002",
       "Monster079",
-      "Monster_Branch1.1_003"
+      "Monster_Branch1.1_003",
+      "branch3.5_612_Monster003",
     ]
   },
   [Echo1Cost.ELECTRO_PREDATOR]: {
@@ -162,7 +170,11 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
   },
   [Echo1Cost.CRUISEWING]: {
     key: "ECHO_CRUISEWING",
-    keys: ["Monster014", "Monster_branch1.3_005"]
+    keys: [
+      "Monster014",
+      "Monster_branch1.3_005",
+      "branch3.5_612_Monster015",
+    ]
   },
   [Echo1Cost.SABYR_BOAR]: {
     key: "ECHO_SABYR_BOAR",
@@ -194,15 +206,24 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
   },
   [Echo1Cost.WHIFF_WHAFF]: {
     key: "ECHO_WHIFF_WHAFF",
-    keys: ["Monster008"]
+    keys: [
+      "Monster008",
+      "branch3.5_612_Monster009",
+    ]
   },
   [Echo1Cost.SNIP_SNAP]: {
     key: "ECHO_SNIP_SNAP",
-    keys: ["Monster006"]
+    keys: [
+      "Monster006",
+      "branch3.5_612_Monster007",
+    ]
   },
   [Echo1Cost.ZIG_ZAG]: {
     key: "ECHO_ZIG_ZAG",
-    keys: ["Monster007"]
+    keys: [
+      "Monster007",
+      "branch3.5_612_Monster008",
+    ]
   },
   [Echo1Cost.TICK_TACK]: {
     key: "ECHO_TICK_TACK",
@@ -603,6 +624,37 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
   [Echo1Cost.KERNEL_PUPPET_JOY]: {
     key: "ECHO_KERNEL_PUPPET_JOY",
     keys: ["Monster_branch3.5_020"]
+  },
+  [Echo1Cost.PORCELAIN_PICKET]: {
+    key: "ECHO_PORCELAIN_PICKET",
+    keys: ["branch3.5_672_Monster_007"]
+  },
+  [Echo1Cost.STONE_PICKET]: {
+    key: "ECHO_STONE_PICKET",
+    keys: ["branch3.5_672_Monster_008"]
+  },
+  [Echo1Cost.AUREATE_PICKET]: {
+    key: "ECHO_AUREATE_PICKET",
+    keys: ["branch3.5_672_Monster_009"]
+  },
+  [Echo1Cost.FOG_LIONARCH_HEAD]: {
+    key: "ECHO_FOG_LIONARCH_HEAD",
+    keys: [
+      "branch3.5_602_Monster_003",
+      "branch3.5_602_Monster_004",
+    ]
+  },
+  [Echo1Cost.FOG_LIONARCH_BODY]: {
+    key: "ECHO_FOG_LIONARCH_BODY",
+    keys: ["branch3.5_602_Monster_006"]
+  },
+  [Echo1Cost.SMOLDER]: {
+    key: "ECHO_SMOLDER",
+    keys: ["branch3.5_602_monster_001"]
+  },
+  [Echo1Cost.SMITER]: {
+    key: "ECHO_SMITER",
+    keys: ["branch3.5_602_Monster_005"]
   },
 };
 
