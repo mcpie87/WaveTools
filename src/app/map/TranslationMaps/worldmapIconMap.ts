@@ -391,6 +391,23 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   // 3.3
   [Echo3Cost.VOIDWING_MOTH]: "Image/IconMonsterHead/T_IconMonsterHead_32066_UI.png",
 
+  // 3.5
+  [Echo3Cost.FOG_LIONARCH]: "Image/IconMonsterHead/T_IconMonsterHead_32067_UI.png",
+  [Echo3Cost.FORBIDDEN_BASTION]: "Image/IconMonsterHead/T_IconMonsterHead_32068_UI.png",
+  [Echo1Cost.PORCELAIN_PICKET]: "Image/IconMonsterHead/T_IconMonsterHead_31091_UI.png",
+  [Echo1Cost.STONE_PICKET]: "Image/IconMonsterHead/T_IconMonsterHead_31092_UI.png",
+  [Echo1Cost.AUREATE_PICKET]: "Image/IconMonsterHead/T_IconMonsterHead_31093_UI.png",
+  [Echo1Cost.FOG_LIONARCH_HEAD]: "Image/IconMonsterHead/T_IconMonsterHead_31101_UI.png",
+  [Echo1Cost.FOG_LIONARCH_BODY]: "Image/IconMonsterHead/T_IconMonsterHead_31100_UI.png",
+  [Echo1Cost.SMOLDER]: "Image/IconMonsterHead/T_IconMonsterHead_31102_UI.png",
+  [Echo1Cost.SMITER]: "Image/IconMonsterHead/T_IconMonsterHead_31090_UI.png",
+  [Echo1Cost.KERNEL_PUPPET_GRIEF]: "Image/IconMonsterHead/T_IconMonsterHead_31098_UI.png",
+  [Echo1Cost.KERNEL_PUPPET_FRIGHT]: "Image/IconMonsterHead/T_IconMonsterHead_31099_UI.png",
+  [Echo1Cost.KERNEL_PUPPET_WORRY]: "Image/IconMonsterHead/T_IconMonsterHead_31096_UI.png",
+  [Echo1Cost.KERNEL_PUPPET_REFLECTION]: "Image/IconMonsterHead/T_IconMonsterHead_31097_UI.png",
+  [Echo1Cost.KERNEL_PUPPET_ANGER]: "Image/IconMonsterHead/T_IconMonsterHead_31095_UI.png",
+  [Echo1Cost.KERNEL_PUPPET_JOY]: "Image/IconMonsterHead/T_IconMonsterHead_31094_UI.png",
+
   /* Ores */
   // 1.0
   [ItemOre.FLORAMBER]: "Image/IconC80/T_IconC80_SM_Gat_19A_UI.png",
