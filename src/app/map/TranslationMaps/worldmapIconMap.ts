@@ -39,7 +39,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   /* Quests */
   [Quest.MAIN_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_1_UI.png", true],
   [Quest.SIDE_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_02_1_UI.png", true],
-  [Quest.TUTORIAL_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_01_3_UI.png", true],
+  [Quest.TUTORIAL_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_11_UI.png", true],
   [Quest.EVENT_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_14_UI.png", true],
   [Quest.STORY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_03_UI.png", true],
   [Quest.DAILY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_06_UI.png", true],
