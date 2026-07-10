@@ -54,8 +54,8 @@ export default function XYZMap() {
   const setRadius = useMapStore((state) => state.setRadius);
   const showDescriptions = useMapStore((state) => state.showDescriptions);
   const setShowDescriptions = useMapStore((state) => state.setShowDescriptions);
-  const showOnlyQuestRelated = useMapStore((state) => state.showOnlyQuestRelated);
-  const setShowOnlyQuestRelated = useMapStore((state) => state.setShowOnlyQuestRelated);
+  const questFilter = useMapStore((state) => state.questFilter);
+  const setQuestFilter = useMapStore((state) => state.setQuestFilter);
   const hideVisited = useMapStore((state) => state.hideVisited);
   const setHideVisited = useMapStore((state) => state.setHideVisited);
 
@@ -72,7 +72,7 @@ export default function XYZMap() {
     (state) => state.setCategoryGroupVisibility
   );
 
-  const markers = useFilteredMarkers(indexes, selectedMap, selectedMapId, showOnlyQuestRelated);
+  const markers = useFilteredMarkers(indexes, selectedMap, selectedMapId, questFilter);
   const categories: Array<[string, number, number]> = useMapCategoryStats(
     markers,
     dbMapData
@@ -138,8 +138,8 @@ export default function XYZMap() {
             setHideVisited={setHideVisited}
             showDescriptions={showDescriptions}
             setShowDescriptions={setShowDescriptions}
-            showOnlyQuestRelated={showOnlyQuestRelated}
-            setShowOnlyQuestRelated={setShowOnlyQuestRelated}
+            questFilter={questFilter}
+            setQuestFilter={setQuestFilter}
             clearCategories={clearCategories}
             dbMapData={dbMapData}
             toggleCategory={toggleCategory}

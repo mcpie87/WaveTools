@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { DbMapData, SelectedMap } from "@/types/mapTypes";
-import { MapName, getMarkerRealId } from "../mapUtils";
+import { MapName, getMarkerRealId, QuestFilter, __DISPLAY_ALL__ } from "../mapUtils";
 import { mapStorageService } from "../services/mapStorageService";
 import { IMarker } from "../types";
 import { getMatchedTrackableCategories } from "../TranslationMaps/translationMap";
@@ -65,8 +65,8 @@ interface MapState {
   setRadius: (radius: number) => void;
   showDescriptions: boolean;
   setShowDescriptions: (show: boolean) => void;
-  showOnlyQuestRelated: boolean;
-  setShowOnlyQuestRelated: (show: boolean) => void;
+  questFilter: QuestFilter;
+  setQuestFilter: (filter: QuestFilter) => void;
   hideVisited: boolean;
   setHideVisited: (hide: boolean) => void;
 
@@ -241,8 +241,8 @@ export const useMapStore = create<MapState>((set) => ({
   setRadius: (radius) => set({ radius }),
   showDescriptions: false,
   setShowDescriptions: (showDescriptions) => set({ showDescriptions }),
-  showOnlyQuestRelated: false,
-  setShowOnlyQuestRelated: (showOnlyQuestRelated) => set({ showOnlyQuestRelated }),
+  questFilter: __DISPLAY_ALL__,
+  setQuestFilter: (questFilter) => set({ questFilter }),
   hideVisited: false,
   setHideVisited: (hideVisited) => set({ hideVisited }),
 

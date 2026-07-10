@@ -8,9 +8,10 @@ import {
   UnionTranslationMap
 } from '../TranslationMaps/translationMap';
 
-import { __ALL_MAPS__, __ALL_MAPS_BUT_DEFINED__, __ALL_MAPS_BUT_DUNGEONS_AND_TEST__, __ALL_MAPS_BUT_TEST_DUNGEON__, __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__, __DUNGEONS_ONLY__, __WORLD_MAPS__, mainStoryDungeonMapConfigs, mapConfigs, sonoroDungeonMapConfigs, storyDungeonMapConfigs, testDungeonMapConfigs } from "../mapUtils";
+import { __ALL_MAPS__, __ALL_MAPS_BUT_DEFINED__, __ALL_MAPS_BUT_DUNGEONS_AND_TEST__, __ALL_MAPS_BUT_TEST_DUNGEON__, __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__, __DISPLAY_ALL__, __DISPLAY_LEVELPLAY_ONLY__, __DISPLAY_NO_QUEST_NO_LEVELPLAY__, __DISPLAY_QUEST_AND_LEVELPLAY_ONLY__, __DISPLAY_QUEST_ONLY__, __DUNGEONS_ONLY__, __WORLD_MAPS__, mainStoryDungeonMapConfigs, mapConfigs, QuestFilter, sonoroDungeonMapConfigs, storyDungeonMapConfigs, testDungeonMapConfigs } from "../mapUtils";
 import { Input } from "@/components/ui/input";
 import { Toggle } from "@/components/ui/toggle";
+import { Label } from "@/components/ui/label";
 import { CategoryPaneComponent } from "./CategoryPaneComponent";
 import { translateBlueprint } from "../BlueprintTranslationService";
 import { DbMapData, SelectedMap } from "@/types/mapTypes";
@@ -32,8 +33,8 @@ interface MapSettingsComponentProps {
   setHideVisited: (v: boolean) => void;
   showDescriptions: boolean;
   setShowDescriptions: (v: boolean) => void;
-  showOnlyQuestRelated: boolean;
-  setShowOnlyQuestRelated: (v: boolean) => void;
+  questFilter: QuestFilter;
+  setQuestFilter: (v: QuestFilter) => void;
   clearCategories: () => void;
   dbMapData: DbMapData;
   toggleCategory: (category: string) => void;
@@ -56,8 +57,8 @@ export const MapSettingsComponent = ({
   setHideVisited,
   showDescriptions,
   setShowDescriptions,
-  showOnlyQuestRelated,
-  setShowOnlyQuestRelated,
+  questFilter,
+  setQuestFilter,
   clearCategories,
   dbMapData,
   toggleCategory,
@@ -229,13 +230,24 @@ export const MapSettingsComponent = ({
                   >
                     Multi-select markers
                   </Toggle>
-                  <Toggle
-                    pressed={showOnlyQuestRelated}
-                    onPressedChange={(v) => setShowOnlyQuestRelated(v)}
-                    className="data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500 border-yellow-500/50"
-                  >
-                    Show only quest related
-                  </Toggle>
+                  <div className="flex flex-col gap-1.5">
+                    <Label htmlFor="quest-filter" className="text-xs font-semibold text-muted-foreground ml-1">Quest filter</Label>
+                    <Select
+                      value={questFilter}
+                      onValueChange={v => setQuestFilter(v as QuestFilter)}
+                    >
+                      <SelectTrigger id="quest-filter">
+                        <SelectValue placeholder="Quest / LevelPlay Filter" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value={__DISPLAY_ALL__}>Show All</SelectItem>
+                        <SelectItem value={__DISPLAY_QUEST_ONLY__}>Quest Only</SelectItem>
+                        <SelectItem value={__DISPLAY_LEVELPLAY_ONLY__}>LevelPlay Only</SelectItem>
+                        <SelectItem value={__DISPLAY_QUEST_AND_LEVELPLAY_ONLY__}>Quest & LevelPlay</SelectItem>
+                        <SelectItem value={__DISPLAY_NO_QUEST_NO_LEVELPLAY__}>No Quest & No LevelPlay</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
                   <Button onClick={() => clearCategories()}>Clear Categories</Button>
                 </div>
               </div>

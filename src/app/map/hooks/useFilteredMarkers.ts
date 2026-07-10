@@ -18,6 +18,12 @@ import {
   storyDungeonMapConfigs,
   testDungeonMapConfigs,
   unionMapConfigs,
+  QuestFilter,
+  __DISPLAY_ALL__,
+  __DISPLAY_LEVELPLAY_ONLY__,
+  __DISPLAY_NO_QUEST_NO_LEVELPLAY__,
+  __DISPLAY_QUEST_AND_LEVELPLAY_ONLY__,
+  __DISPLAY_QUEST_ONLY__,
 } from "../mapUtils";
 
 const definedMapIds = new Set(Object.values(unionMapConfigs).map(c => c.mapId));
@@ -48,7 +54,7 @@ export function useFilteredMarkers(
   indexes: MarkerIndexes | null,
   selectedMap: SelectedMap,
   selectedMapId: number | null,
-  showOnlyQuestRelated: boolean,
+  questFilter: QuestFilter,
 ): IMarker[] {
   return useMemo(() => {
     if (!indexes) return [];
@@ -83,7 +89,15 @@ export function useFilteredMarkers(
     }
 
     const parsedMarkers = results.map(m => convertMarkerToCoord(m, {}));
-    const isQuestRelated = (m: IMarker) => m.questChildren || m.questReferences;
-    return parsedMarkers.filter(m => showOnlyQuestRelated ? isQuestRelated(m) : true);
-  }, [indexes, selectedMap, selectedMapId, showOnlyQuestRelated]);
+    const isQuestRelated = (m: IMarker) => !!(m.questChildren || m.questReferences);
+    const isLevelPlayRelated = (m: IMarker) => !!(m.levelPlayChildren || m.levelPlayReferences);
+    return parsedMarkers.filter(m => {
+      if (questFilter === __DISPLAY_ALL__) return true;
+      if (questFilter === __DISPLAY_QUEST_ONLY__) return isQuestRelated(m);
+      if (questFilter === __DISPLAY_LEVELPLAY_ONLY__) return isLevelPlayRelated(m);
+      if (questFilter === __DISPLAY_QUEST_AND_LEVELPLAY_ONLY__) return isQuestRelated(m) || isLevelPlayRelated(m);
+      if (questFilter === __DISPLAY_NO_QUEST_NO_LEVELPLAY__) return !isQuestRelated(m) && !isLevelPlayRelated(m);
+      return true;
+    });
+  }, [indexes, selectedMap, selectedMapId, questFilter]);
 }
