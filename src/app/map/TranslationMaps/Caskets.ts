@@ -31,6 +31,7 @@ const CasketTranslationMapGroups: Record<string, { keys: string[]; key: string }
       "branch3.5_192_Gameplay_3_0/Common2",
       "branch3.5_192_Gameplay_3_0/Common3",
       "branch3.5_176_Gameplay_3_0/Common4",
+      "branch3.5_21_Gameplay_3_0/Common4",
     ]
   },
 };
