@@ -95,6 +95,7 @@ export enum Puzzle {
   SEAT_OF_STILLNESS = "Seat of Stillness",
   AUTO_CASKET = "Auto Casket",
   SQUAREFIELD_SPARRING = "Squarefield Sparring",
+  TREASURE_OF_PERILOUS_ENCLAVE = "Treasures of Perilous Enclave",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -291,6 +292,11 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     key: "QUERY_SQUAREFIELD_SPARRING",
     name: Puzzle.SQUAREFIELD_SPARRING,
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_91_UI") ?? false,
+  },
+  "QUERY_TREASURE_OF_PERILOUS_ENCLAVE": {
+    key: "QUERY_TREASURE_OF_PERILOUS_ENCLAVE",
+    name: Puzzle.TREASURE_OF_PERILOUS_ENCLAVE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_86_UI") ?? false,
   },
 };
 
