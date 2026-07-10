@@ -16997,7 +16997,7 @@
     "relativeId": 147750021,
     "entityConfigId": 147750010,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
-    "title": "Seat of Stillness"
+    "title": "Seat of Serenity"
   },
   {
     "id": 3550502,
@@ -17005,7 +17005,7 @@
     "relativeId": 147750022,
     "entityConfigId": 147750074,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
-    "title": "Seat of Stillness"
+    "title": "Seat of Serenity"
   },
   {
     "id": 3550503,
@@ -17013,7 +17013,7 @@
     "relativeId": 147750023,
     "entityConfigId": 147750075,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
-    "title": "Seat of Stillness"
+    "title": "Seat of Serenity"
   },
   {
     "id": 3550504,
@@ -17021,7 +17021,7 @@
     "relativeId": 147750026,
     "entityConfigId": 147750077,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
-    "title": "Seat of Stillness"
+    "title": "Seat of Serenity"
   },
   {
     "id": 3550505,
@@ -17029,7 +17029,7 @@
     "relativeId": 147750027,
     "entityConfigId": 147750079,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
-    "title": "Seat of Stillness"
+    "title": "Seat of Serenity"
   },
   {
     "id": 3550601,
@@ -17371,7 +17371,7 @@
     "id": 5018,
     "mapId": 8,
     "relativeId": 255750038,
-    "entityConfigId": 255750078,
+    "entityConfigId": 255750066,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png",
     "title": "Eastern Xuan Peaks Tacet Field"
   },
@@ -17379,7 +17379,7 @@
     "id": 5019,
     "mapId": 8,
     "relativeId": 255750039,
-    "entityConfigId": 255750104,
+    "entityConfigId": 255750086,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png",
     "title": "Western Fang Peaks Tacet Field"
   },

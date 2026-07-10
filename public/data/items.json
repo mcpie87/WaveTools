@@ -2972,7 +2972,7 @@
   {
     "id": 50015,
     "name": "Purchase Connoisseur Channel",
-    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast.\n\nComplete the Podcast Tasks for various rewards.",
+    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast.\r\n\r\nComplete the Podcast Tasks for various rewards.",
     "bg_description": "Start listening to the Pioneer Podcast now to gain valuable insights for your outdoor adventures!",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cdtq_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cdtq_UI.png",
@@ -2982,7 +2982,7 @@
   {
     "id": 50016,
     "name": "Insider Channel Key",
-    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast.\n\nComplete the Podcast Tasks for various rewards.",
+    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast.\r\n\r\nComplete the Podcast Tasks for various rewards.",
     "bg_description": "Standard physical key issued by the Pioneer Association for the Insider Channel.\n\"Welcome to the Insider Channel! Coming up next is the morning news express...\"",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_zl_02_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_zl_02_UI.png",
@@ -3772,7 +3772,7 @@
   {
     "id": 50017,
     "name": "Connoisseur Key",
-    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast and get additional privilege rewards.\n\nComplete the Podcast Tasks for various rewards.",
+    "attributes_description": "Unlocks the Insider Channel of the Pioneer Podcast and get additional privilege rewards.\r\n\r\nComplete the Podcast Tasks for various rewards.",
     "bg_description": "Special Deluxe Keycode for the Pioneer Podcast's Connoisseur Channel.\n\"Start listening to the Pioneer Podcast now to gain valuable insights for your outdoor adventures!\"",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_zl_03_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_zl_03_UI.png",
@@ -5962,7 +5962,7 @@
   {
     "id": 50000064,
     "name": "Morphable Echo - Freezing Frost",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Freezing Frost.\n2pcs Set: Glacio DMG + 10%.\n5pcs Set: Glacio DMG + 10% after releasing Basic Attack or Heavy Attack. This effect stacks up to 3 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Freezing Frost.\r\n2pcs Set: Glacio DMG + 10%.\r\n5pcs Set: Glacio DMG + 10% after releasing Basic Attack or Heavy Attack. This effect stacks up to 3 times, each stack lasts 15s.",
     "bg_description": "Chills are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_05_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_05_UI.png",
@@ -5972,7 +5972,7 @@
   {
     "id": 50000065,
     "name": "Morphable Echo - Molten Rift",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\n2pcs Set: Fusion DMG + 10%.\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\r\n2pcs Set: Fusion DMG + 10%.\r\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
     "bg_description": "Flames are flickering and rising in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_06_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_06_UI.png",
@@ -5982,7 +5982,7 @@
   {
     "id": 50000066,
     "name": "Morphable Echo - Void Thunder",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\n2pcs Set: Electro DMG + 10%.\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\r\n2pcs Set: Electro DMG + 10%.\r\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
     "bg_description": "Thunder is rumbling in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_07_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_07_UI.png",
@@ -5992,7 +5992,7 @@
   {
     "id": 50000067,
     "name": "Morphable Echo - Sierra Gale",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\n2pcs Set: Aero DMG + 10%.\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\r\n2pcs Set: Aero DMG + 10%.\r\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "A gust of wind is howling through the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_08_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_08_UI.png",
@@ -6002,7 +6002,7 @@
   {
     "id": 50000068,
     "name": "Morphable Echo - Celestial Light",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\n2pcs Set: Spectro DMG + 10%.\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\r\n2pcs Set: Spectro DMG + 10%.\r\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "Dazzling rays of light are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_09_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_09_UI.png",
@@ -6012,7 +6012,7 @@
   {
     "id": 50000069,
     "name": "Morphable Echo - Havoc Eclipse",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\n2pcs Set: Havoc DMG + 10%.\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\r\n2pcs Set: Havoc DMG + 10%.\r\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
     "bg_description": "The chaos seems to devour everything in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_10_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_10_UI.png",
@@ -6032,7 +6032,7 @@
   {
     "id": 50000071,
     "name": "Morphable Echo - Moonlit Clouds",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\n2pcs Set: Energy Regen + 10%.\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\r\n2pcs Set: Energy Regen + 10%.\r\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
     "bg_description": "A bright moon seems to hide in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_12_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_12_UI.png",
@@ -6052,7 +6052,7 @@
   {
     "id": 50000073,
     "name": "Morphable Echo - Freezing Frost",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Freezing Frost.\n2pcs Set: Glacio DMG + 10%.\n5pcs Set: Glacio DMG + 10% after releasing Basic Attack or Heavy Attack. This effect stacks up to 3 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Freezing Frost.\r\n2pcs Set: Glacio DMG + 10%.\r\n5pcs Set: Glacio DMG + 10% after releasing Basic Attack or Heavy Attack. This effect stacks up to 3 times, each stack lasts 15s.",
     "bg_description": "Chills are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_05_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_05_UI.png",
@@ -6062,7 +6062,7 @@
   {
     "id": 50000074,
     "name": "Morphable Echo - Molten Rift",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\n2pcs Set: Fusion DMG + 10%.\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\r\n2pcs Set: Fusion DMG + 10%.\r\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
     "bg_description": "Flames are flickering and rising in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_06_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_06_UI.png",
@@ -6072,7 +6072,7 @@
   {
     "id": 50000075,
     "name": "Morphable Echo - Void Thunder",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\n2pcs Set: Electro DMG + 10%.\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\r\n2pcs Set: Electro DMG + 10%.\r\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
     "bg_description": "Thunder is rumbling in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_07_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_07_UI.png",
@@ -6082,7 +6082,7 @@
   {
     "id": 50000076,
     "name": "Morphable Echo - Sierra Gale",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\n2pcs Set: Aero DMG + 10%.\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\r\n2pcs Set: Aero DMG + 10%.\r\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "A gust of wind is howling through the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_08_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_08_UI.png",
@@ -6092,7 +6092,7 @@
   {
     "id": 50000077,
     "name": "Morphable Echo - Celestial Light",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\n2pcs Set: Spectro DMG + 10%.\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\r\n2pcs Set: Spectro DMG + 10%.\r\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "Dazzling rays of light are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_09_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_09_UI.png",
@@ -6102,7 +6102,7 @@
   {
     "id": 50000078,
     "name": "Morphable Echo - Havoc Eclipse",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\n2pcs Set: Havoc DMG + 10%.\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\r\n2pcs Set: Havoc DMG + 10%.\r\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
     "bg_description": "The chaos seems to devour everything in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_10_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_10_UI.png",
@@ -6122,7 +6122,7 @@
   {
     "id": 50000080,
     "name": "Morphable Echo - Moonlit Clouds",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\n2pcs Set: Energy Regen + 10%.\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\r\n2pcs Set: Energy Regen + 10%.\r\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
     "bg_description": "A bright moon seems to hide in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_12_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_12_UI.png",
@@ -10792,7 +10792,7 @@
   {
     "id": 50001502,
     "name": "Morphable Echo - Molten Rift",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\n2pcs Set: Fusion DMG + 10%.\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Molten Rift.\r\n2pcs Set: Fusion DMG + 10%.\r\n5pcs Set: Fusion DMG + 30% for 15s after releasing Resonance Skill.",
     "bg_description": "Flames are flickering and rising in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_06_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_06_UI.png",
@@ -10802,7 +10802,7 @@
   {
     "id": 50001503,
     "name": "Morphable Echo - Void Thunder",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\n2pcs Set: Electro DMG + 10%.\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Void Thunder.\r\n2pcs Set: Electro DMG + 10%.\r\n5pcs Set: Electro DMG + 15% after releasing Heavy Attack or Resonance Skill. This effect stacks up to 2 times, each stack lasts 15s.",
     "bg_description": "Thunder is rumbling in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_07_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_07_UI.png",
@@ -10812,7 +10812,7 @@
   {
     "id": 50001504,
     "name": "Morphable Echo - Sierra Gale",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\n2pcs Set: Aero DMG + 10%.\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Sierra Gale.\r\n2pcs Set: Aero DMG + 10%.\r\n5pcs Set: Aero DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "A gust of wind is howling through the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_08_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_08_UI.png",
@@ -10822,7 +10822,7 @@
   {
     "id": 50001505,
     "name": "Morphable Echo - Celestial Light",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\n2pcs Set: Spectro DMG + 10%.\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Celestial Light.\r\n2pcs Set: Spectro DMG + 10%.\r\n5pcs Set: Spectro DMG + 30% for 15s after releasing Intro Skill.",
     "bg_description": "Dazzling rays of light are emanating from the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_09_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_09_UI.png",
@@ -10832,7 +10832,7 @@
   {
     "id": 50001506,
     "name": "Morphable Echo - Havoc Eclipse",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\n2pcs Set: Havoc DMG + 10%.\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Havoc Eclipse.\r\n2pcs Set: Havoc DMG + 10%.\r\n5pcs Set: Havoc DMG + 7.5% after releasing Basic Attack or Heavy Attack. This effect stacks up to 4 times, each stack lasts 15s.",
     "bg_description": "The chaos seems to devour everything in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_10_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_10_UI.png",
@@ -10852,7 +10852,7 @@
   {
     "id": 50001508,
     "name": "Morphable Echo - Moonlit Clouds",
-    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\n2pcs Set: Energy Regen + 10%.\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
+    "attributes_description": "Open to obtain a random Echo of the following Sonata Effect: Moonlit Clouds.\r\n2pcs Set: Energy Regen + 10%.\r\n5pcs Set: After using Outro Skill, increases the ATK of the next Resonator by 22.5% for 15s.",
     "bg_description": "A bright moon seems to hide in the crevice...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_shlb_12_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_shlb_12_UI.png",
@@ -20083,7 +20083,7 @@
     "id": 40040008,
     "name": "Unclaimed Rafter Kite",
     "attributes_description": "Touch to collect or use Grapple to hook and quickly approach the Unclaimed Rafter Kites.",
-    "bg_description": "Rafter Kites are letters in a unique shape, and within each unclaimed Rafter Kite lies an undelivered message from a century ago.\nBring these messages to Qiuhong or Chiwen, and they will use them to learn about Xuanfang Hold's past and better plan how to protect its future.",
+    "bg_description": "Rafter Kites carry letters, and each Unclaimed Rafter Kite holds a message undelivered for over a century. \nDeliver these to Qiuhong or Chiwen, and they will use them to learn more about Xuanfang Hold's past and better plan how to protect its future.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_011_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst160/T_IconMst160_011_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst80/T_IconMst80_011_UI.png",
@@ -20222,7 +20222,7 @@
   {
     "id": 80700014,
     "name": "Constable Token",
-    "attributes_description": "A small token resembling a coin. Can be used to exchange for supplies at the Yard Exchange.",
+    "attributes_description": "A small token resembling ancient currency. Can be used to exchange for supplies at the Yard Exchange.",
     "bg_description": "An official token issued to Constables. It functions as currency to trade for supplies at Shaftpost Yard, but is barred from circulation within the Hold. These tokens are generally distributed as a stipend upon the successful resolution of a case.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_currency_10_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_currency_10_UI.png",
@@ -20351,7 +20351,7 @@
   },
   {
     "id": 50025,
-    "name": "Weekly Subscription",
+    "name": "New Voyage Weekly Subscription",
     "attributes_description": "Used to claim login rewards on specific days within 15 days.",
     "bg_description": "Get unlimited access to the Celestial Observatory for a specified period with this pass.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_zk_01_UI.png",
@@ -20583,7 +20583,7 @@
     "id": 80400004,
     "name": "Op Credit",
     "attributes_description": "Virtual operation currency issued by the Black Shores to be used in various simulations.",
-    "bg_description": "Simulation data gathered from scenarios of varying severity helps guide our future personnel assignments when responding to Waveworn Phenomena.",
+    "bg_description": "To ensure the simulation models the reality as close as possible, the Black Shores issues these virtual tokens that can be exchanged for supplies to be used in various scenarios.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_80400001_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_80400001_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_80400001_UI.png",
@@ -20593,7 +20593,7 @@
     "id": 72630001,
     "name": "Parcel to be Delivered",
     "attributes_description": "A parcel to be delivered.",
-    "bg_description": "Inside is a well-worn set of ring puzzles and a half-opened letter. Left behind by a daughter for her father, these tokens are as quiet as she was—a silent proof of her unspoken care.",
+    "bg_description": "Inside is a well-worn Nine Linked Rings puzzle, and a half-opened letter. Left behind by a daughter for her father, these tokens are as quiet as she was—a silent proof of her unspoken care.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_239_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_239_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_239_UI.png",
@@ -20603,7 +20603,7 @@
     "id": 72630002,
     "name": "An Inventory and A Parcel",
     "attributes_description": "An inventory and a parcel.",
-    "bg_description": "An inventory listing the belongings of the fallen Xuanfang Wardens, accompanied by a parcel containing the ring puzzles and the letter you just retrieved.",
+    "bg_description": "An inventory listing the belongings of the fallen Xuanfang Wardens, accompanied by a parcel containing the Nine Linked Rings puzzle and the letter you just retrieved.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_239_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_239_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_239_UI.png",
@@ -20804,9 +20804,9 @@
     "name": "Scholar Automaton II",
     "attributes_description": "One of the three components required to reassemble the Scholar Automaton. Deliver all three pieces to King Auto to claim rewards.",
     "bg_description": "A Scholar Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Scholar Automaton is the brain of the Auto Legion. Its groundbreaking invention, \"Oldton's Three Laws,\" profoundly altered the very landscape of warfare.",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_03A_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_03A_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_03A_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_03B_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_03B_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_03B_UI.png",
     "rarity": 4
   },
   {
@@ -20814,9 +20814,9 @@
     "name": "Scholar Automaton III",
     "attributes_description": "One of the three components required to reassemble the Scholar Automaton. Deliver all three pieces to King Auto to claim rewards.",
     "bg_description": "A Scholar Automaton component obtained from an Auto Casket.\nAccording to King Auto, the Scholar Automaton is the brain of the Auto Legion. Its groundbreaking invention, \"Oldton's Three Laws,\" profoundly altered the very landscape of warfare.",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_03B_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_03B_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_03B_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_ClawMachine_03A_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_ClawMachine_03A_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_ClawMachine_03A_UI.png",
     "rarity": 4
   },
   {
@@ -21235,7 +21235,7 @@
     "attributes_description": "Grants 25% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
     "bg_description": "Thinly sliced cured meat is layered atop sliced mushrooms and steamed for hours. The saltiness of the meat seeps into the mushrooms' natural sweetness, lifting the whole dish to something far greater than its parts.\n\nMengzhou has a long-standing tradition of curing meat to bring out deeper flavor. Among the cuts, locals prize the rose-colored core as the \"Sizzling Cube.\" This dish lays that cube over White Jade Beauty mushrooms, hence the name \"Sizzling Jade Stir-fry.\" When honored guests arrive, a plate of this fine delicacy is more than enough to delight them.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_097_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook189/T_IconCook189_097_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_097_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_097_UI.png",
     "rarity": 3
   },
@@ -21304,9 +21304,9 @@
     "name": "Jade Broth Noodles",
     "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
     "bg_description": "Fine noodles, thin as silver silk, are dropped into boiling water, blanched in an instant, then nestled neatly into a bowl. Large chunks of meat, slow-braised to a melt-in-your-mouth tenderness, rest atop the noodles. The broth, clarified to crystal clarity with White Jade Beauty mushrooms and rich stock, carries a faint, lingering whisper of cooking wine.\n\nIt is the most common meal you'll find across the Land of Xuanfang. Utterly ordinary in appearance, yet it delivers a depth of flavor that surprises with the very first bite. As some have put it: \"The mildest flavors hold the truest essence. The ultimate delicacy is pure simplicity.\"",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_102_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_102_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_102_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_105_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_105_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_105_UI.png",
     "rarity": 4
   },
   {
@@ -21805,8 +21805,8 @@
     "attributes_description": "Data gathered across Fogveil Pagoda, required to unlock the path to the Fogveil Pivot.",
     "bg_description": "A modular part containing the Chamber Data. There are three such pieces in total, each storing data for the Chamber, the Lockpit, and the Purging Mill respectively. Only by gathering all three can the path to the Fogveil Pivot be opened.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_242_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_240_UI.T_IconTask160_Task_242_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_240_UI.T_IconTask80_Task_242_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_242_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_242_UI.png",
     "rarity": 4
   },
   {
@@ -21815,8 +21815,8 @@
     "attributes_description": "Data gathered across Fogveil Pagoda, required to unlock the path to the Fogveil Pivot.",
     "bg_description": "A modular part containing the Lockpit Data. There are three such pieces in total, each storing data for the Chamber, the Lockpit, and the Purging Mill respectively. Only by gathering all three can the path to the Fogveil Pivot be opened.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_241_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_240_UI.T_IconTask160_Task_241_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_240_UI.T_IconTask80_Task_241_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_241_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_241_UI.png",
     "rarity": 4
   },
   {

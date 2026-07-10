@@ -15161,7 +15161,7 @@
   "branch3.3_249_Gameplay_3_7": "Unfreeze the Powered Statue Gameplay",
   "branch3.5_41_Gameplay_3_5/JiGuanZhaiDi1": "---",
   "branch3.5_172_Gameplay_3_3/Motor3": "General Interaction",
-  "Player053_1": "Yuanwu_Pylon",
+  "Player053_1": "Suisui's Domain",
   "branch3.3_109_Gameplay_3_10": "---",
   "TsEntity_154_娜斯塔霞（义手）": "Nastasha",
   "branch3.5_199_Gameplay_3_0/Common11": "---",
@@ -17497,5 +17497,11 @@
   "branch3.5_176_TsEntity_声骸_火炉鼎_武": "Stoke",
   "branch3.5_882_Gameplay17": "Use Grapple",
   "branch3.5_176_Gameplay_3_0/Common4": "Rafter Kite",
-  "branch3.5_40_Gameplay_3_5/WuWaGo14": "---"
+  "branch3.5_40_Gameplay_3_5/WuWaGo14": "---",
+  "branch3.5_254_Gameplay_3_5/Dashushouwei2": "---",
+  "branch3.5_609_Monster_branch3.5_024": "Kernel Puppet: Reflection",
+  "branch3.5_609_Monster_branch3.5_023": "Kernel Puppet: Worry",
+  "branch3.5_609_Monster_branch3.5_022": "Kernel Puppet: Anger",
+  "branch3.5_602_Monster_008": "Fog Lionarch",
+  "VisionBoss047": "Zhonglou"
 }
