@@ -75,6 +75,7 @@ const TeleporterTranslationMapGroups: Record<string, { keys: string[]; key: stri
       "Teleport2",
       "branch2.4_143_Gameplay_2_4QQ2",
       "branch3.0_693_Gameplay_3_0/Common2",
+      "branch3.5_150_Gameplay_3_0/Common3",
     ]
   },
   [TeleporterName.GONDOLA_PLATFORM]: {
