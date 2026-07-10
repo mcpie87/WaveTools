@@ -104,6 +104,14 @@ export enum Echo1Cost {
   // 3.1
   ICEGLINT_DANCER = "Iceglint Dancer",
   SHADOW_STEPPER = "Shadow Stepper",
+
+  // 3.5
+  KERNEL_PUPPET_GRIEF = "Kernel Puppet: Grief",
+  KERNEL_PUPPET_FRIGHT = "Kernel Puppet: Fright",
+  KERNEL_PUPPET_WORRY = "Kernel Puppet: Worry",
+  KERNEL_PUPPET_REFLECTION = "Kernel Puppet: Reflection",
+  KERNEL_PUPPET_ANGER = "Kernel Puppet: Anger",
+  KERNEL_PUPPET_JOY = "Kernel Puppet: Joy",
 }
 
 export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
@@ -569,6 +577,32 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
       "branch3.1_243_Monster_Branch3.0_006",
       "branch3.1_243_Monster_Branch3.0_008",
     ]
+  },
+
+  // 3.5
+  [Echo1Cost.KERNEL_PUPPET_GRIEF]: {
+    key: "ECHO_KERNEL_PUPPET_GRIEF",
+    keys: ["Monster_branch3.5_024"]
+  },
+  [Echo1Cost.KERNEL_PUPPET_FRIGHT]: {
+    key: "ECHO_KERNEL_PUPPET_FRIGHT",
+    keys: ["Monster_branch3.5_025"]
+  },
+  [Echo1Cost.KERNEL_PUPPET_WORRY]: {
+    key: "ECHO_KERNEL_PUPPET_GRIEF_WORRY",
+    keys: ["Monster_branch3.5_022"]
+  },
+  [Echo1Cost.KERNEL_PUPPET_REFLECTION]: {
+    key: "ECHO_KERNEL_PUPPET_REFLECTION",
+    keys: ["Monster_branch3.5_023"]
+  },
+  [Echo1Cost.KERNEL_PUPPET_ANGER]: {
+    key: "ECHO_KERNEL_PUPPET_ANGER",
+    keys: ["Monster_branch3.5_021"]
+  },
+  [Echo1Cost.KERNEL_PUPPET_JOY]: {
+    key: "ECHO_KERNEL_PUPPET_JOY",
+    keys: ["Monster_branch3.5_020"]
   },
 };
 
