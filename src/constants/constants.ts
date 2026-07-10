@@ -15,5 +15,8 @@ export const LEVEL_ENTITY_CONFIG_URL = {
   "3.2": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYg2T5sklxJ4nuj2VU30S6CMmriOek7xaNolKR",
   "3.3": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aY5fi4u2qjAdJkHTRCp4gGhObslNFKLmSfDMu9",
   "3.4": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYltkvqNvoarfhQgc5ZKqovzUx7Ib2J6CmBEdy",
-  "3.5": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYa0zIDLV2ueLCWN7KzdQgiRDxGBj5wfln8USM",
+  // COMMENTED: old 3.5 is from preload, the devs modified a lot of entities (moved them around)
+  // keeping it commented for archival reasons - don't use it
+  // "3.5": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYa0zIDLV2ueLCWN7KzdQgiRDxGBj5wfln8USM",
+  "3.5": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYU2RHTP5D7tN6y5wEdxQGmviC1MIKOklTVa3P",
 };
