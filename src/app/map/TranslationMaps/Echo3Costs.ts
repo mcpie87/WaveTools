@@ -89,6 +89,7 @@ export enum Echo3Cost {
 
   // 3.5
   FOG_LIONARCH = "Fog Lionarch",
+  FORBIDDEN_BASTION = "Forbidden Bastion",
 }
 
 const Echo3CostTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
@@ -480,6 +481,16 @@ const Echo3CostTranslationMapGroups: Record<string, { keys: string[]; key: strin
     keys: [
       "branch3.5_602_Monster_002",
       "branch3.5_602_Monster_007",
+    ]
+  },
+  [Echo3Cost.FORBIDDEN_BASTION]: {
+    key: "ECHO_FORBIDDEN_BASTION",
+    keys: [
+      "branch3.5_165_Monster_封庭械囿1",
+      "branch3.5_180_Monster_封庭械囿1",
+      "branch3.5_612_Monster_Branch3.5_004",
+      "branch3.5_Monster_封庭械囿",
+      "Monster_Branch3.5_003",
     ]
   },
 }
