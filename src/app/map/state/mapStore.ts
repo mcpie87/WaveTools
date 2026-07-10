@@ -10,6 +10,7 @@ export const defaultMapState: DbMapData = {
   visitedMarkers: {},
   displayedCategoryGroups: {},
   visitedEntities: {},
+  categoryPresets: {},
 };
 
 export function initMapState(): DbMapData {
@@ -34,6 +35,10 @@ export function initMapState(): DbMapData {
       ...defaultMapState.displayedCategoryGroups,
       ...loaded.displayedCategoryGroups
     },
+    categoryPresets: {
+      ...defaultMapState.categoryPresets,
+      ...loaded.categoryPresets
+    },
   };
 }
 
@@ -49,6 +54,9 @@ interface MapState {
   setCategoryGroupVisibility: (categoryGroup: string, value: boolean) => void;
   toggleCategoryGroupVisibility: (categoryGroup: string) => void;
   bulkSetMarkersVisited: (markers: IMarker[], value: boolean) => void;
+  saveCategoryPreset: (name: string) => void;
+  loadCategoryPreset: (name: string) => void;
+  deleteCategoryPreset: (name: string) => void;
 
   // UI State
   selectedMap: SelectedMap;
@@ -161,6 +169,46 @@ export const useMapStore = create<MapState>((set) => ({
       const newData = {
         ...state.dbMapData,
         visibleCategories: {},
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  saveCategoryPreset: (name) => {
+    set((state) => {
+      const newData = {
+        ...state.dbMapData,
+        categoryPresets: {
+          ...state.dbMapData.categoryPresets,
+          [name]: { ...state.dbMapData.visibleCategories },
+        },
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  loadCategoryPreset: (name) => {
+    set((state) => {
+      const preset = state.dbMapData.categoryPresets?.[name];
+      if (!preset) return state;
+      const newData = {
+        ...state.dbMapData,
+        visibleCategories: { ...preset },
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  deleteCategoryPreset: (name) => {
+    set((state) => {
+      const newPresets = { ...state.dbMapData.categoryPresets };
+      delete newPresets[name];
+      const newData = {
+        ...state.dbMapData,
+        categoryPresets: newPresets,
       };
       mapStorageService.save(newData);
       return { dbMapData: newData };

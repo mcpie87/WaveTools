@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import React, { Fragment, useMemo, useState } from "react";
 import { useDebounce } from 'use-debounce';
+import { Trash2 } from "lucide-react";
 import {
   displayedCategories,
   UnionTranslationMap
@@ -71,8 +72,30 @@ export const MapSettingsComponent = ({
   const [showSettings, setShowSettings] = useState(true);
   const [showDungeonMaps, setShowDungeonMaps] = useState(false);
   const [categoryFilter, setCategoryFilter] = useState('');
+  const [presetName, setPresetName] = useState('');
+  const [selectedPreset, setSelectedPreset] = useState<string>('');
+
+  const saveCategoryPreset = useMapStore((state) => state.saveCategoryPreset);
+  const loadCategoryPreset = useMapStore((state) => state.loadCategoryPreset);
+  const deleteCategoryPreset = useMapStore((state) => state.deleteCategoryPreset);
+  const presets = Object.keys(dbMapData.categoryPresets || {});
 
   const [categoryFilterDebounced] = useDebounce(categoryFilter, 300);
+
+  const handleToggleCategory = (category: string) => {
+    setSelectedPreset('');
+    toggleCategory(category);
+  };
+
+  const handleToggleCategories = (categories: string[], value: boolean) => {
+    setSelectedPreset('');
+    toggleCategories(categories, value);
+  };
+
+  const handleClearCategories = () => {
+    setSelectedPreset('');
+    clearCategories();
+  };
 
   const undefinedCategories = categories.filter(category =>
     !displayedCategories.some(c => c[1][category[0]])
@@ -248,7 +271,65 @@ export const MapSettingsComponent = ({
                       </SelectContent>
                     </Select>
                   </div>
-                  <Button onClick={() => clearCategories()}>Clear Categories</Button>
+                  <Button onClick={handleClearCategories}>Clear Categories</Button>
+
+                  <div className="flex flex-col gap-2 pt-2 border-t mt-2">
+                    <div className="flex gap-2">
+                      <Input
+                        placeholder="Preset name"
+                        value={presetName}
+                        onChange={e => setPresetName(e.target.value)}
+                        className="h-8"
+                      />
+                      <Button
+                        size="sm"
+                        disabled={!presetName}
+                        onClick={() => {
+                          saveCategoryPreset(presetName);
+                          setPresetName("");
+                        }}
+                      >
+                        Save
+                      </Button>
+                    </div>
+                    {presets.length > 0 && (
+                      <div className="flex gap-2 items-center mt-1">
+                        <Select
+                          value={selectedPreset}
+                          onValueChange={v => {
+                            setSelectedPreset(v);
+                            setPresetName(v);
+                            loadCategoryPreset(v);
+                          }}
+                        >
+                          <SelectTrigger className="flex-1 h-8">
+                            <SelectValue placeholder="Load a preset..." />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {presets.map(preset => (
+                              <SelectItem key={preset} value={preset}>
+                                {preset}
+                              </SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
+                        <Button
+                          size="icon"
+                          variant="ghost"
+                          className="h-8 w-8 text-destructive hover:bg-destructive/10 shrink-0"
+                          disabled={!selectedPreset || !presets.includes(selectedPreset)}
+                          onClick={() => {
+                            if (selectedPreset) {
+                              deleteCategoryPreset(selectedPreset);
+                              setSelectedPreset('');
+                            }
+                          }}
+                        >
+                          <Trash2 className="h-4 w-4" />
+                        </Button>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -280,8 +361,8 @@ export const MapSettingsComponent = ({
                           categories={filteredCategories}
                           displayOrder={displayOrder}
                           translationMap={translationMap}
-                          toggleCategory={toggleCategory}
-                          toggleCategories={toggleCategories}
+                          toggleCategory={handleToggleCategory}
+                          toggleCategories={handleToggleCategories}
                           toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
                           showDescriptions={showDescriptions}
                           dbMapData={dbMapData}
@@ -305,8 +386,8 @@ export const MapSettingsComponent = ({
                         ].some(s => s.includes(categoryFilterDebounced.toLowerCase()))
                       )
                   }
-                  toggleCategory={toggleCategory}
-                  toggleCategories={(showDescriptions && !mapConfigs[selectedMap]) || selectedMapId !== null ? toggleCategories : undefined}
+                  toggleCategory={handleToggleCategory}
+                  toggleCategories={(showDescriptions && !mapConfigs[selectedMap]) || selectedMapId !== null ? handleToggleCategories : undefined}
                   toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
                   isOpen={dbMapData.displayedCategoryGroups['Not defined categories']}
                   showDescriptions={showDescriptions}
