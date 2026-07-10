@@ -64,7 +64,8 @@ const TeleporterTranslationMapGroups: Record<string, { keys: string[]; key: stri
       "Teleport008",
       "Teleport3",
       "branch2.4_143_Gameplay_2_4QQ1",
-      "branch3.0_693_Gameplay_3_0/Common1"
+      "branch3.0_693_Gameplay_3_0/Common1",
+      "branch3.5_150_Gameplay_3_0/Common2",
     ]
   },
   [TeleporterName.RESONANCE_BEACON]: {
