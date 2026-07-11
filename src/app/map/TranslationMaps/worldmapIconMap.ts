@@ -423,7 +423,8 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [ItemOre.LUXITE]: "Image/IconC/T_IconC_069_UI.png",
   // 3.1
   [ItemOre.METEORIC_IRON]: "Image/IconC/T_IconC_073_UI.png",
-
+  // 3.5
+  [ItemOre.JADE_HEXAHEDRON]: "Image/IconC/T_IconC_082_UI.png",
 
   /* Plants */
   [ItemPlant.CLIMBING_FIG]: "Image/IconRup80/T_IconRup80_SM_Gat_23A_UI.png",

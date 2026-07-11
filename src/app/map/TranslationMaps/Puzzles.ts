@@ -96,6 +96,7 @@ export enum Puzzle {
   AUTO_CASKET = "Auto Casket",
   SQUAREFIELD_SPARRING = "Squarefield Sparring",
   TREASURE_OF_PERILOUS_ENCLAVE = "Treasures of Perilous Enclave",
+  RETROSPECTIVE_CLUE = "Retrospective Clue",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -493,6 +494,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.ELSEWAY_SHROUD]: {
     key: "PUZZLE_ELSEWAY_SHROUD",
     keys: ["branch3.5_41_Gameplay_3_5/JGZD1"]
+  },
+  [Puzzle.RETROSPECTIVE_CLUE]: {
+    key: "PUZZLE_RETROSPECTIVE_CLUE",
+    keys: ["branch3.5_Clue"]
   },
 };
 
