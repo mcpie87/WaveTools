@@ -149,6 +149,8 @@ export enum ItemOre {
   LUXITE = "Luxite",
   // 3.1
   METEORIC_IRON = "Meteoric Iron",
+  // 3.5
+  JADE_HEXAHEDRON = "Jade Hexahedron",
 }
 
 export enum ItemPlant {
