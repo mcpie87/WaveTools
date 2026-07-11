@@ -1,7 +1,7 @@
 export const ASSET_URL = "https://raw.githubusercontent.com/alt3ri/WW_Asset_Webp/refs/heads/main/";
 export const GAME_VERSION = "3.5";
 export const NO_DATA_STRING = "NO CONTENT"
-
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export const WAVEPLATE_ICON_URL = "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_yml_UI.png";
 export const SHELL_CREDIT_ICON_URL = "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_hsb_UI.png";

@@ -2,6 +2,8 @@ import { SelectedMap } from "@/types/mapTypes";
 import { APIMarker, IMarker } from "./types";
 import L from 'leaflet';
 import { getBlueprintRewards, getLevelPlayChildren, getLevelPlayData, getLevelPlayReferences, getMapMark, getQuestChildren, getQuestData, getQuestReferences } from "./data/map_marks";
+import { DEV_CONFIG, IS_DEV } from "@/config/dev";
+import { BASE_PATH } from "@/constants/constants";
 
 export const scaleFactor = 0.30118;
 export const TILE_SIZE = 256;
@@ -137,7 +139,9 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedEntities: Record<
 });
 
 
-export const MAP_TILES_URL = "https://raw.githubusercontent.com/mcpie87/wuwa-map-tiles/refs/heads/master";
+export const MAP_TILES_URL = IS_DEV && DEV_CONFIG.map.layer.forceLocalPMTiles
+  ? `${BASE_PATH}/data` // /pmtiles folder is inside
+  : "https://raw.githubusercontent.com/mcpie87/wuwa-map-tiles/refs/heads/master";
 const prefix = MAP_TILES_URL;
 // ? `${MAP_TILES_URL}` //'/map_tiles/'
 // : `${ASSET_URL}UIResources/UiWorldMap/Image`;

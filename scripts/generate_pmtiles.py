@@ -16,6 +16,21 @@ OUTPUT_DIR = Path("pmtiles_output")
 TEMP_DIR = Path("temp_tiles")
 MANIFEST_FILE = OUTPUT_DIR / "manifest.json"
 
+# Exceptions for specific tiles to use a specific version instead of the latest.
+# If target version is not found, attempts next version
+# fallbacks to highest if nothing is found
+# Format: "LayerKey": [ ([min_x, max_x], [min_y, max_y], target_versions) ]
+TILE_VERSION_EXCEPTIONS = {
+    "T_MapTiles": [
+        ([-10, -5], [-2, 3], [0]),
+        ([8, 10], [-5, -2], [0]),
+    ],
+    "T_DDTTiles": [
+        ([-2, 2], [-1, 2], [3, 0]),
+    ],
+}
+
+
 # Patterns matching your get_all_layers logic
 PATTERN_NORMAL = r'T_(.+?)_(-?\d+)_(-?\d+)(?:_(\d+))?_(.+?)\.webp$'
 PATTERN_FOG = r'T_FogTiles_(.+?)_(-?\d+)_(-?\d+)(?:_(\d+))?_(.+?)\.webp$'
@@ -129,6 +144,7 @@ def parse_tile_details(file_path):
         
         return {
             'layer': layer_name,
+            'layer1': layer1, # required for target versions for simplicity in config
             'x': int(x),
             'y': int(y),
             'version': int(version) if version else 0,
@@ -136,13 +152,22 @@ def parse_tile_details(file_path):
         }
     return None
 
+def get_target_versions(layer1, x, y):
+    for key in [layer1, f"T_{layer1}"]:
+        if key in TILE_VERSION_EXCEPTIONS:
+            for x_range, y_range, target_versions in TILE_VERSION_EXCEPTIONS[key]:
+                if x_range[0] <= x <= x_range[1] and y_range[0] <= y <= y_range[1]:
+                    return target_versions
+    return None
+
 def get_latest_tiles_by_layer():
     """
     Scans the directory and groups the latest version of every tile by layer.
     """
     # Structure: layer_name -> (x, y) -> latest_tile_info
-    layers_data = defaultdict(lambda: defaultdict(lambda: {'version': -1}))
+    all_layers_data = defaultdict(lambda: defaultdict(lambda: {}))
     
+    # build layer data with versions
     root = Path(TILES_DIR)
     for file in root.rglob('*.webp'):
         details = parse_tile_details(file)
@@ -151,10 +176,25 @@ def get_latest_tiles_by_layer():
             
         layer = details['layer']
         coord = (details['x'], details['y'])
-        
-        # Keep the highest version
-        if details['version'] > layers_data[layer][coord]['version']:
-            layers_data[layer][coord] = details
+        version = details['version']
+        all_layers_data[layer][coord][version] = details
+
+    layers_data = defaultdict(lambda: defaultdict(lambda: {}))
+    for layer, coords in all_layers_data.items():
+        for coord, versions in coords.items():
+            x, y = coord
+            layer1 = versions[0]['layer1']
+            target_versions = get_target_versions(layer1, x, y)
+            if target_versions is None:
+                # Normal logic: keep highest
+                layers_data[layer][coord] = versions[max(versions.keys())]
+            else:
+                # Target versions are defined, pick first that is present
+                for version in target_versions:
+                    matched_version = versions.get(version)
+                    if matched_version:
+                        layers_data[layer][coord] = matched_version
+                        break
             
     return layers_data
 
