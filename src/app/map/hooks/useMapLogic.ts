@@ -14,11 +14,10 @@ export function useMapLogic() {
     }
   }, []);
 
-  const areaLayers = new Map(layersData.map((l) => [l.areaId, l]));
-  const areaLayer = new Map();
-  for (const layer of areaLayers.values()) {
+  const areaLayers = new Map();
+  for (const layer of layersData) {
     for (const areaId of layer.areaIds) {
-      areaLayer.set(areaId, layer);
+      areaLayers.set(areaId, layer);
     }
   }
 

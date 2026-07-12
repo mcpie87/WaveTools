@@ -16,6 +16,7 @@ export function AreaTileLayer({ areaId, areaLayers }: { areaId: number, areaLaye
       break;
     }
     if (!areaLayerURL) return;
+    console.log("[AreaTileLayer] Loading area layer for areaId ", areaId, areaLayerURL);
 
     const tileLayer = new PMTileLayer(areaLayerURL, {
       tileSize: 256,
