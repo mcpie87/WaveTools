@@ -13,6 +13,7 @@ export interface DbMapData {
 export interface APIAreaLayer {
   mapId: number;
   areaId: number;
+  areaIds: number[];
   mapTiles: Record<string, string>;
 }
 
