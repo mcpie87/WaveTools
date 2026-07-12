@@ -111,6 +111,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [Puzzle.AUTO_CASKET]: "Atlas/WorldMapIcon/SP_IconMap_Play_92_UI.png",
   [Puzzle.SQUAREFIELD_SPARRING]: "Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
   [Puzzle.TREASURE_OF_PERILOUS_ENCLAVE]: "Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+  [Puzzle.ELSEWAY_SHROUD]: "Atlas/WorldMapIcon/SP_IconMap_Play_81_UI.png",
 
   /* Specialties */
   // 1.0
