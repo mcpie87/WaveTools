@@ -24,6 +24,7 @@ import {
   __DISPLAY_NO_QUEST_NO_LEVELPLAY__,
   __DISPLAY_QUEST_AND_LEVELPLAY_ONLY__,
   __DISPLAY_QUEST_ONLY__,
+  __DISPLAY_NO_QUEST__,
 } from "../mapUtils";
 
 const definedMapIds = new Set(Object.values(unionMapConfigs).map(c => c.mapId));
@@ -96,6 +97,7 @@ export function useFilteredMarkers(
       if (questFilter === __DISPLAY_QUEST_ONLY__) return isQuestRelated(m);
       if (questFilter === __DISPLAY_LEVELPLAY_ONLY__) return isLevelPlayRelated(m);
       if (questFilter === __DISPLAY_QUEST_AND_LEVELPLAY_ONLY__) return isQuestRelated(m) || isLevelPlayRelated(m);
+      if (questFilter === __DISPLAY_NO_QUEST__) return !isQuestRelated(m);
       if (questFilter === __DISPLAY_NO_QUEST_NO_LEVELPLAY__) return !isQuestRelated(m) && !isLevelPlayRelated(m);
       return true;
     });

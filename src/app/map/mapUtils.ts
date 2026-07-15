@@ -45,12 +45,14 @@ export const __DISPLAY_ALL__ = "__DISPLAY_ALL__" as const;
 export const __DISPLAY_QUEST_ONLY__ = "__DISPLAY_QUEST_ONLY__" as const;
 export const __DISPLAY_LEVELPLAY_ONLY__ = "__DISPLAY_LEVELPLAY_ONLY__" as const;
 export const __DISPLAY_QUEST_AND_LEVELPLAY_ONLY__ = "__DISPLAY_QUEST_AND_LEVELPLAY_ONLY__" as const;
+export const __DISPLAY_NO_QUEST__ = "__DISPLAY_NO_QUEST__" as const;
 export const __DISPLAY_NO_QUEST_NO_LEVELPLAY__ = "__DISPLAY_NO_QUEST_NO_LEVELPLAY__" as const;
 
 export type QuestFilter = typeof __DISPLAY_ALL__
   | typeof __DISPLAY_QUEST_ONLY__
   | typeof __DISPLAY_LEVELPLAY_ONLY__
   | typeof __DISPLAY_QUEST_AND_LEVELPLAY_ONLY__
+  | typeof __DISPLAY_NO_QUEST__
   | typeof __DISPLAY_NO_QUEST_NO_LEVELPLAY__;
 
 export const isCustomMapSelected = (selectedMap: SelectedMap) => {

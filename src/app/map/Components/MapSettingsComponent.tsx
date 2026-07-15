@@ -9,7 +9,7 @@ import {
   UnionTranslationMap
 } from '../TranslationMaps/translationMap';
 
-import { __ALL_MAPS__, __ALL_MAPS_BUT_DEFINED__, __ALL_MAPS_BUT_DUNGEONS_AND_TEST__, __ALL_MAPS_BUT_TEST_DUNGEON__, __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__, __DISPLAY_ALL__, __DISPLAY_LEVELPLAY_ONLY__, __DISPLAY_NO_QUEST_NO_LEVELPLAY__, __DISPLAY_QUEST_AND_LEVELPLAY_ONLY__, __DISPLAY_QUEST_ONLY__, __DUNGEONS_ONLY__, __WORLD_MAPS__, mainStoryDungeonMapConfigs, mapConfigs, QuestFilter, sonoroDungeonMapConfigs, storyDungeonMapConfigs, testDungeonMapConfigs } from "../mapUtils";
+import { __ALL_MAPS__, __ALL_MAPS_BUT_DEFINED__, __ALL_MAPS_BUT_DUNGEONS_AND_TEST__, __ALL_MAPS_BUT_TEST_DUNGEON__, __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__, __DISPLAY_ALL__, __DISPLAY_LEVELPLAY_ONLY__, __DISPLAY_NO_QUEST__, __DISPLAY_NO_QUEST_NO_LEVELPLAY__, __DISPLAY_QUEST_AND_LEVELPLAY_ONLY__, __DISPLAY_QUEST_ONLY__, __DUNGEONS_ONLY__, __WORLD_MAPS__, mainStoryDungeonMapConfigs, mapConfigs, QuestFilter, sonoroDungeonMapConfigs, storyDungeonMapConfigs, testDungeonMapConfigs } from "../mapUtils";
 import { Input } from "@/components/ui/input";
 import { Toggle } from "@/components/ui/toggle";
 import { Label } from "@/components/ui/label";
@@ -267,6 +267,7 @@ export const MapSettingsComponent = ({
                         <SelectItem value={__DISPLAY_QUEST_ONLY__}>Quest Only</SelectItem>
                         <SelectItem value={__DISPLAY_LEVELPLAY_ONLY__}>LevelPlay Only</SelectItem>
                         <SelectItem value={__DISPLAY_QUEST_AND_LEVELPLAY_ONLY__}>Quest & LevelPlay</SelectItem>
+                        <SelectItem value={__DISPLAY_NO_QUEST__}>No Quest</SelectItem>
                         <SelectItem value={__DISPLAY_NO_QUEST_NO_LEVELPLAY__}>No Quest & No LevelPlay</SelectItem>
                       </SelectContent>
                     </Select>
