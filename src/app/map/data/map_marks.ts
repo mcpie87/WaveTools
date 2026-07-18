@@ -1,7 +1,7 @@
 import { APIBlueprintReward, APILevelPlayData, APIMapMark, APIQuestData, BlueprintType } from "@/types/mapTypes";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const lookupMap = new Map<number, Map<number, APIMapMark>>();
-const questByEntityId = new Map<string, APIQuestData>();
+const questByEntityId = new Map<string, APIQuestData[]>();
 const leveldataByEntityId = new Map<string, APILevelPlayData>();
 const questsByChildren = new Map<string, APIQuestData[]>();
 const questsByReference = new Map<string, APIQuestData[]>();
@@ -28,7 +28,10 @@ for (const mark of mapMarksData) {
 
 for (const quest of questData) {
   const key = `${quest.trackEntityId}`;
-  questByEntityId.set(key, quest);
+  if (!questByEntityId.has(key)) {
+    questByEntityId.set(key, []);
+  }
+  questByEntityId.get(key)!.push(quest);
   questDataByQuestId.set(quest.id, quest);
 
   if (quest.children && quest.children.length > 0) {
@@ -83,7 +86,7 @@ export const getQuestInfo = (id: number): APIQuestData | undefined => {
   return questDataByQuestId.get(id);
 }
 
-export const getQuestData = (key: string): APIQuestData | undefined => {
+export const getQuestData = (key: string): APIQuestData[] | undefined => {
   return questByEntityId.get(key);
 };
 

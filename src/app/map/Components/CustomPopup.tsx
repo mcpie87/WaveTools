@@ -17,7 +17,7 @@ export function CustomPopup({
 }: CustomPopupProps) {
   const translation = translateBlueprint(marker.category); // synchronous
 
-  const title = marker.questData?.name || getTranslationMapName(marker);
+  const title = marker.questData?.[0]?.name || getTranslationMapName(marker);
   const toggleEntityCategoryVisited = useMapStore(s => s.toggleEntityCategoryVisited);
   const dbMapData = useMapStore(s => s.dbMapData);
 
@@ -48,19 +48,20 @@ export function CustomPopup({
             Translation: {translation}
           </div>
         )}
-        {marker.questData && (
+        {marker.questData && marker.questData.length > 0 && (
           <div className="text-xs italic mb-2">
-            {marker.questData.chapterName &&
-              marker.questData.chapterName !== NO_DATA_STRING && (
-                <div className="font-semibold">
-                  Chapter: {marker.questData.chapterName}
-                </div>
-              )
-            }
-            <div className="text-secondary">{marker.questData.description}</div>
+            {marker.questData.map((quest, idx) => (
+              <div key={quest.id} className={idx > 0 ? "mt-2 pt-2 border-t border-base-300" : ""}>
+                <div className="font-semibold text-primary">{quest.name}</div>
+                {quest.chapterName && quest.chapterName !== NO_DATA_STRING && (
+                  <div className="font-semibold">Chapter: {quest.chapterName}</div>
+                )}
+                <div className="text-secondary">{quest.description}</div>
+              </div>
+            ))}
           </div>
         )}
-        {marker.questReferences && ((marker.questData && marker.questReferences.find(e => e.id !== marker.questData!.id)) || !marker.questData) && (
+        {marker.questReferences && ((marker.questData && marker.questReferences.find(e => !marker.questData!.find(q => q.id === e.id))) || !marker.questData) && (
           <div className="text-xs italic mb-2">
             Quest Reference of:
             {marker.questReferences.map(e => (
@@ -68,7 +69,7 @@ export function CustomPopup({
             ))}
           </div>
         )}
-        {marker.questChildren && !isQuestDataRefSameAsChildren && ((marker.questData && marker.questChildren.find(e => e.id !== marker.questData!.id)) || !marker.questData) && (
+        {marker.questChildren && !isQuestDataRefSameAsChildren && ((marker.questData && marker.questChildren.find(e => !marker.questData!.find(q => q.id === e.id))) || !marker.questData) && (
           <div className="text-xs italic mb-2">
             Quest Child of:
             {marker.questChildren.map(e => (
@@ -176,18 +177,18 @@ export function CustomPopup({
               </div>
             )}
             {marker.questData && (
-              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
-                Quest:
+              <details className="mt-2">
+                <summary className="cursor-pointer opacity-50 hover:opacity-100">Quest Data (Raw)</summary>
                 <pre>{JSON.stringify(marker.questData, null, 2)}</pre>
-              </div>
+              </details>
             )}
-            {marker.questChildren && (marker.questData && marker.questChildren.find(e => e.id !== marker.questData!.id)) && (
+            {marker.questChildren && (marker.questData && marker.questChildren.find(e => !marker.questData!.find(q => q.id === e.id))) && (
               <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
                 Quest Children:
                 <pre>{JSON.stringify(marker.questChildren, null, 2)}</pre>
               </div>
             )}
-            {marker.questReferences && (marker.questData && marker.questReferences.find(e => e.id !== marker.questData!.id)) && (
+            {marker.questReferences && (marker.questData && marker.questReferences.find(e => !marker.questData!.find(q => q.id === e.id))) && (
               <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
                 Quest References:
                 <pre>{JSON.stringify(marker.questReferences, null, 2)}</pre>

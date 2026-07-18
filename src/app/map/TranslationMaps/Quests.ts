@@ -75,47 +75,47 @@ export const QuestQueryCategories: Record<string, QueryCategory> = {
   "QUERY_Main_Quest": {
     key: "QUERY_MAIN_QUEST",
     name: Quest.MAIN_QUEST,
-    query: (m) => m?.questData?.questTypeId === 1,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 1) ?? false,
   },
   "QUERY_Side_Quest": {
     key: "QUERY_SIDE_QUEST",
     name: Quest.SIDE_QUEST,
-    query: (m) => m?.questData?.questTypeId === 2,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 2) ?? false,
   },
   "QUERY_Tutorial_Quest": {
     key: "QUERY_TUTORIAL_QUEST",
     name: Quest.TUTORIAL_QUEST,
-    query: (m) => m?.questData?.questTypeId === 7,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 7) ?? false,
   },
   "QUERY_Story_Quest": {
     key: "QUERY_STORY_QUEST",
     name: Quest.STORY_QUEST,
-    query: (m) => m?.questData?.questTypeId === 3,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 3) ?? false,
   },
   "QUERY_DAILY_Quest": {
     key: "QUERY_DAILY_QUEST",
     name: Quest.DAILY_QUEST,
-    query: (m) => m?.questData?.questTypeId === 4,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 4) ?? false,
   },
   "QUERY_EXPLORATION_Quest": {
     key: "QUERY_EXPLORATION_QUEST",
     name: Quest.EXPLORATION_QUEST,
-    query: (m) => m?.questData?.questTypeId === 9,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 9) ?? false,
   },
   "QUERY_UNASSIGNED_Quest": {
     key: "QUERY_UNASSIGNED_QUEST",
     name: "UNASSIGNED_QUEST",
-    query: (m) => m?.questData?.questTypeId === 11,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 11) ?? false,
   },
   "QUERY_EVENT_Quest": {
     key: "QUERY_EVENT_QUEST",
     name: Quest.EVENT_QUEST,
-    query: (m) => m?.questData?.questTypeId === 10,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 10) ?? false,
   },
   "QUERY_EPISODIC_Quest": {
     key: "QUERY_EPISODIC_QUEST",
     name: Quest.EPISODIC_QUEST,
-    query: (m) => m?.questData?.questTypeId === 16,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 16) ?? false,
   },
   "QUERY_LevelPlayData_Quest": {
     key: "QUERY_LEVEL_PLAY_DATA_QUEST",

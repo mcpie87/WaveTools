@@ -67,7 +67,7 @@ export interface IMarker {
   displayedZ: number;
   visited?: Set<string>;
   references?: IMarkerReferences;
-  questData?: APIQuestData;
+  questData?: APIQuestData[];
   levelPlayData?: APILevelPlayData;
   questChildren: APIQuestData[] | undefined;
   questReferences: APIQuestData[] | undefined;
