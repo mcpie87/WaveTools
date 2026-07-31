@@ -6,6 +6,7 @@ export interface DbMapData {
   visitedMarkers: Record<number, boolean>,
   // key: e_{mapId}_{entityId}, value: Set of category keys
   visitedEntities: Record<string, Set<string>>,
+  visitedEntitiesTimestamps: Record<string, Record<string, number>>,
   displayedCategoryGroups: Record<string, boolean>,
   categoryPresets?: Record<string, Record<string, boolean>>,
 }

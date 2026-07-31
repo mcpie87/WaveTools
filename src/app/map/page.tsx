@@ -92,8 +92,8 @@ export default function XYZMap() {
       EntityId: -1,
       MapId: mapConfigs[selectedMap]?.mapId ?? -1,
     };
-    return convertMarkerToCoord(apiMarker, dbMapData.visitedEntities);
-  }, [coords, selectedMap, dbMapData.visitedEntities]);
+    return convertMarkerToCoord(apiMarker, dbMapData.visitedEntities, dbMapData.visitedEntitiesTimestamps);
+  }, [coords, selectedMap, dbMapData.visitedEntities, dbMapData.visitedEntitiesTimestamps]);
 
   const markersWithinRadius = useMemo(() => {
     const cx = coords.x * 10000;

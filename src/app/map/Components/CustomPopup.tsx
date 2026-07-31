@@ -1,3 +1,4 @@
+import dayjs from "dayjs";
 import { translateBlueprint } from "../BlueprintTranslationService";
 import { IMarker } from "../types";
 import { Button } from "@/components/ui/button";
@@ -23,6 +24,7 @@ export function CustomPopup({
 
   const entityKey = `e_${marker.mapId}_${marker.entityId}`;
   const visitedSet = dbMapData.visitedEntities[entityKey] || new Set();
+  const visitedTimestamps = dbMapData.visitedEntitiesTimestamps[entityKey] || {};
   const matchedCategories = filterTrackedCategoriesForMarker(marker);
 
   const isLevelDataRefSameAsChildren = marker.levelPlayReferences
@@ -152,13 +154,21 @@ export function CustomPopup({
           <div className="flex flex-col gap-1 w-full mt-2">
             {matchedCategories.map(cat => {
               const isVisited = visitedSet.has(cat.key);
+              const timestamp = visitedTimestamps[cat.key];
+              const timestampDisplay = timestamp
+                ? dayjs(timestamp).format("YYYY-MM-DD HH:mm:ss")
+                : isVisited
+                  ? "Checked before 2026-07-31"
+                  : "";
               return (
-                <Button
-                  key={cat.key}
-                  onClick={() => toggleEntityCategoryVisited(marker, cat.key)}
-                >
-                  {isVisited ? "Uncheck" : "Check"}{matchedCategories.length === 1 ? "" : " " + cat.name}
-                </Button>
+                <div key={cat.key} className="flex flex-col gap-1 w-full">
+                  <Button
+                    onClick={() => toggleEntityCategoryVisited(marker, cat.key)}
+                  >
+                    {isVisited ? "Uncheck" : "Check"}{matchedCategories.length === 1 ? "" : " " + cat.name}
+                  </Button>
+                  {isVisited && <div className="text-[10px] text-center opacity-70">{timestampDisplay}</div>}
+                </div>
               )
             })}
           </div>

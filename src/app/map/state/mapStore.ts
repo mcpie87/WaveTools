@@ -10,6 +10,7 @@ export const defaultMapState: DbMapData = {
   visitedMarkers: {},
   displayedCategoryGroups: {},
   visitedEntities: {},
+  visitedEntitiesTimestamps: {},
   categoryPresets: {},
 };
 
@@ -30,6 +31,10 @@ export function initMapState(): DbMapData {
     visitedEntities: {
       ...defaultMapState.visitedEntities,
       ...loaded.visitedEntities
+    },
+    visitedEntitiesTimestamps: {
+      ...defaultMapState.visitedEntitiesTimestamps,
+      ...loaded.visitedEntitiesTimestamps
     },
     displayedCategoryGroups: {
       ...defaultMapState.displayedCategoryGroups,
@@ -100,11 +105,14 @@ export const useMapStore = create<MapState>((set) => ({
     set((state) => {
       const entityKey = getMarkerRealId(marker);
       const newVisitedParts = new Set(state.dbMapData.visitedEntities[entityKey] || []);
+      const newTimestamps = { ...(state.dbMapData.visitedEntitiesTimestamps[entityKey] || {}) };
 
       if (newVisitedParts.has(categoryKey)) {
         newVisitedParts.delete(categoryKey);
+        delete newTimestamps[categoryKey];
       } else {
         newVisitedParts.add(categoryKey);
+        newTimestamps[categoryKey] = Date.now();
       }
 
       const newData = {
@@ -113,7 +121,14 @@ export const useMapStore = create<MapState>((set) => ({
           ...state.dbMapData.visitedEntities,
           [entityKey]: newVisitedParts,
         },
+        visitedEntitiesTimestamps: {
+          ...state.dbMapData.visitedEntitiesTimestamps,
+          [entityKey]: newTimestamps,
+        }
       };
+      if (Object.keys(newTimestamps).length === 0) {
+        delete newData.visitedEntitiesTimestamps![entityKey];
+      }
       mapStorageService.save(newData);
       return { dbMapData: newData };
     });
@@ -246,16 +261,20 @@ export const useMapStore = create<MapState>((set) => ({
   bulkSetMarkersVisited: (markers, value) => {
     set((state) => {
       const updatedVisited = { ...state.dbMapData.visitedEntities };
+      const updatedTimestamps = { ...(state.dbMapData.visitedEntitiesTimestamps || {}) };
       for (const m of markers) {
         const entityKey = getMarkerRealId(m);
         const matched = getMatchedTrackableCategories(m);
         const visitedSet = new Set(updatedVisited[entityKey] || []);
+        const timestampSet = { ...(updatedTimestamps[entityKey] || {}) };
 
         for (const cat of matched) {
           if (value) {
             visitedSet.add(cat.key);
+            timestampSet[cat.key] = Date.now();
           } else {
             visitedSet.delete(cat.key);
+            delete timestampSet[cat.key];
           }
         }
 
@@ -264,10 +283,17 @@ export const useMapStore = create<MapState>((set) => ({
         } else {
           updatedVisited[entityKey] = visitedSet;
         }
+
+        if (Object.keys(timestampSet).length === 0) {
+          delete updatedTimestamps[entityKey];
+        } else {
+          updatedTimestamps[entityKey] = timestampSet;
+        }
       }
       const newData = {
         ...state.dbMapData,
         visitedEntities: updatedVisited,
+        visitedEntitiesTimestamps: updatedTimestamps,
       };
       mapStorageService.save(newData);
       return { dbMapData: newData };

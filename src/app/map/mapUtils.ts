@@ -112,7 +112,11 @@ export const getMapCenter = (mapName: SelectedMap): L.LatLngExpression => {
   ]
 }
 
-export const convertMarkerToCoord = (marker: APIMarker, visitedEntities: Record<string, Set<string>>): IMarker => ({
+export const convertMarkerToCoord = (
+  marker: APIMarker,
+  visitedEntities: Record<string, Set<string>>,
+  visitedEntitiesTimestamps: Record<string, Record<string, number>>
+): IMarker => ({
   ...translateGameToMap({
     x: marker.Transform[0].X,
     y: marker.Transform[0].Y,
@@ -131,6 +135,7 @@ export const convertMarkerToCoord = (marker: APIMarker, visitedEntities: Record<
   displayedZ: marker.Transform[0].Z / 10000,
   category: marker.BlueprintType,
   visited: visitedEntities[getMarkerRealId(marker)] ?? false, // pre 3.2 method: visitedMap[marker.Id] || false,
+  visitedTimestamps: visitedEntitiesTimestamps?.[getMarkerRealId(marker)],
   questData: getQuestData(getMarkerRealId(marker)),
   levelPlayData: getLevelPlayData(getMarkerRealId(marker)),
   questChildren: getQuestChildren(getMarkerRealId(marker)),

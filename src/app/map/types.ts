@@ -66,6 +66,7 @@ export interface IMarker {
   displayedY: number;
   displayedZ: number;
   visited?: Set<string>;
+  visitedTimestamps?: Record<string, number>;
   references?: IMarkerReferences;
   questData?: APIQuestData[];
   levelPlayData?: APILevelPlayData;

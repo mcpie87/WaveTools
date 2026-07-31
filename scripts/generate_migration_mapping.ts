@@ -70,7 +70,7 @@ async function generate() {
   for (const marker of markers) {
     let iMarker;
     try {
-      iMarker = convertMarkerToCoord(marker, {});
+      iMarker = convertMarkerToCoord(marker, {}, {});
     } catch (e) {
       console.log(e);
       continue;

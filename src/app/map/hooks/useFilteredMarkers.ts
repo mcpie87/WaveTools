@@ -89,7 +89,7 @@ export function useFilteredMarkers(
       }
     }
 
-    const parsedMarkers = results.map(m => convertMarkerToCoord(m, {}));
+    const parsedMarkers = results.map(m => convertMarkerToCoord(m, {}, {}));
     const isQuestRelated = (m: IMarker) => !!(m.questChildren || m.questReferences);
     const isLevelPlayRelated = (m: IMarker) => !!(m.levelPlayChildren || m.levelPlayReferences);
     return parsedMarkers.filter(m => {
