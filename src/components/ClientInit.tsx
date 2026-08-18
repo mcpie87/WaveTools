@@ -26,7 +26,11 @@ export const ClientInit = ({ children }: ClientInitProps) => {
     })();
   }, []);
 
-  if (status === 'pending') return <div>Loading...</div>;
+  if (status === 'pending') {
+    return (
+      <div className="min-h-screen bg-[rgb(var(--base-100))]" />
+    );
+  }
   if (status === 'error') return <div>Migrations failed. Please contact the developer.</div>;
   return <>{children}</>;
 };

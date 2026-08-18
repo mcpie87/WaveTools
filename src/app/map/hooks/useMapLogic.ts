@@ -3,7 +3,7 @@ import { useMapData } from "./useMapData";
 import { useMapStore } from "../state/mapStore";
 
 export function useMapLogic() {
-  const { indexes, layersData, ready } = useMapData();
+  const { indexes, layersData, ready, loadingSteps } = useMapData();
   const dbMapData = useMapStore((state) => state.dbMapData);
 
   useEffect(() => {
@@ -24,6 +24,7 @@ export function useMapLogic() {
   return {
     indexes,
     ready,
+    loadingSteps,
     dbMapData, // For backward compatibility in page.tsx if needed, but should be removed eventually
     areaLayers,
   };

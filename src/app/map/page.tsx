@@ -7,6 +7,7 @@ import { MapContainer, Circle } from 'react-leaflet';
 import L from 'leaflet';
 import './fixLeafletIcon';
 
+import { MapLoadingScreen } from './Components/MapLoadingScreen';
 import { APIMarker, IMarker } from './types';
 import {
   convertMarkerToCoord,
@@ -38,7 +39,7 @@ import { CursorCoordinates } from './Components/CursorCoordinates';
 const simpleCRS = L.CRS.Simple;
 
 export default function XYZMap() {
-  const { indexes, ready, areaLayers } = useMapLogic();
+  const { indexes, ready, loadingSteps, areaLayers } = useMapLogic();
 
   // Use Zustand store for UI state
   const selectedMap = useMapStore((state) => state.selectedMap);
@@ -117,8 +118,9 @@ export default function XYZMap() {
     hideVisited,
   );
 
-  if (!ready.entities || !ready.manifest) return <div className="p-4">Loading data…</div>;
-  if (!ready.translations) return <div>Loading translations…</div>;
+  if (!ready.entities || !ready.manifest || !ready.translations) {
+    return <MapLoadingScreen steps={loadingSteps} />;
+  }
 
   return (
     <div className="h-screen w-screen flex relative">
