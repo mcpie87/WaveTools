@@ -101,7 +101,6 @@ async function fetchWithProgress(
   const chunks: Uint8Array[] = [];
   let received = 0;
 
-  // eslint-disable-next-line no-constant-condition
   while (true) {
     const { done, value } = await reader.read();
     if (done) break;
@@ -247,9 +246,9 @@ export function useMapData() {
         setIndexes(builtIndexes);
         setReady(r => ({ ...r, entities: true }));
         updateStep('indexing', { status: 'done', completedAt: Date.now() });
-      } catch (err: any) {
+      } catch (err) {
         if (cancelled) return;
-        updateStep('entities', { status: 'error', error: err.message, completedAt: Date.now() });
+        updateStep('entities', { status: 'error', error: err instanceof Error ? err.message : "Unknown error", completedAt: Date.now() });
       }
     })();
 
@@ -281,8 +280,8 @@ export function useMapData() {
         }
         await new Promise(r => setTimeout(r, 400));
         if (!cancelled) updateStep('layers', { status: 'done', completedAt: Date.now() });
-      } catch (err: any) {
-        if (!cancelled) updateStep('layers', { status: 'error', error: err.message, completedAt: Date.now() });
+      } catch (err) {
+        if (!cancelled) updateStep('layers', { status: 'error', error: err instanceof Error ? err.message : "Unknown error", completedAt: Date.now() });
       }
     })();
 
