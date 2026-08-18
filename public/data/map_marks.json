@@ -17518,5 +17518,165 @@
     "entityConfigId": 688751597,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_83_UI.png",
     "title": "T-G0NG"
+  },
+  {
+    "id": 5045,
+    "mapId": 8,
+    "relativeId": 316800120,
+    "entityConfigId": 923800000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMonsterHead_34032_UI.png",
+    "title": "Calamity Effigy"
+  },
+  {
+    "id": 3640001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 200800057,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_11_UI.png",
+    "title": "If Dreams Still Reverberate"
+  },
+  {
+    "id": 3651001,
+    "mapId": 8,
+    "relativeId": 923800000,
+    "entityConfigId": 923800003,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3651002,
+    "mapId": 8,
+    "relativeId": 923800001,
+    "entityConfigId": 923800004,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3651003,
+    "mapId": 8,
+    "relativeId": 923800002,
+    "entityConfigId": 923800005,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3651004,
+    "mapId": 8,
+    "relativeId": 923800003,
+    "entityConfigId": 923800006,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3651005,
+    "mapId": 8,
+    "relativeId": 923800004,
+    "entityConfigId": 923800007,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3662001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 264800000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3662002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 269800006,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "General Commission"
+  },
+  {
+    "id": 3650001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 241800012,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "The Strings Remember: First String"
+  },
+  {
+    "id": 3650002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 241800013,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "The Strings Remember: Second String"
+  },
+  {
+    "id": 3650003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 241800014,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "The Strings Remember: Third String"
+  },
+  {
+    "id": 3650004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 241800015,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "The Strings Remember: Fourth String"
+  },
+  {
+    "id": 3650005,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 241800016,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "The Strings Remember: Fifth String"
+  },
+  {
+    "id": 3650006,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 241800017,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "The Strings Remember: Sixth String"
+  },
+  {
+    "id": 3650007,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 241800018,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "The Strings Remember: Seventh String"
+  },
+  {
+    "id": 3630001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 196800001,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_03_UI.png",
+    "title": "Journey to Manifold Sanctum"
+  },
+  {
+    "id": 3610000,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 915800065,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_93_UI.png",
+    "title": "Qingxiao's Training Hall"
+  },
+  {
+    "id": 3630002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 268800004,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_03_UI.png",
+    "title": "Xuanyuan Domain"
+  },
+  {
+    "id": 3651006,
+    "mapId": 8,
+    "relativeId": 923800005,
+    "entityConfigId": 923800028,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
   }
 ]

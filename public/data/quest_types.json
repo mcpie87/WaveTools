@@ -55175,6 +55175,7 @@
       "e_8_187850000",
       "e_8_187750022",
       "e_8_690750038",
+      "e_8_217750728",
       "e_8_114750012",
       "e_8_939750013",
       "e_8_939750012",
@@ -64662,7 +64663,6 @@
       "f_191700000_8",
       "f_191700000_9",
       "f_191700000_10",
-      "f_191700000_14",
       "f_191700000_11",
       "f_191700000_12"
     ],
@@ -71309,8 +71309,10 @@
       "e_8_317000034",
       "e_1589_317000016",
       "e_8_317750176",
+      "l_8_692750003",
       "l_8_172750013",
       "q_192000006",
+      "q_189000005",
       "f_189000002_1",
       "f_189000002_4",
       "f_189000002_2"
@@ -72663,7 +72665,6 @@
       "e_8_192750112",
       "e_8_192750126",
       "q_192750000",
-      "f_192000002_2",
       "f_192000002_3",
       "f_192000002_7",
       "f_192000002_8"
@@ -72895,12 +72896,12 @@
       "e_2516_121850048",
       "e_2516_121850002",
       "e_909_121850003",
+      "e_909_151000118",
       "e_909_121850002",
       "e_909_121850001",
       "e_909_121850020",
       "e_909_121850023",
       "e_909_121850029",
-      "e_909_151000118",
       "e_909_121850032",
       "e_909_951850000",
       "e_909_951850001",
@@ -73590,6 +73591,95 @@
     },
     "typeName": "Event Quests",
     "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 173000000,
+    "mapId": 8,
+    "questTypeId": 1,
+    "chapterId": 43,
+    "name": "Song of the Heart Sword",
+    "description": "With the great battle over, the Land of Xuanfang is slowly returning to how it once was, though plenty of aftershocks have yet to settle. Then one day, a WavesLine message from Yangyang arrives out of the blue: Suisui is about to head back to Mengzhou City...",
+    "trackEntityId": "e_8_173000021",
+    "children": [
+      "e_8_173000021",
+      "e_8_173000022",
+      "e_8_173800323",
+      "e_8_173800249",
+      "e_8_173800250",
+      "e_8_173800251",
+      "e_8_173800002",
+      "e_8_173800284",
+      "e_8_173800318",
+      "e_8_173800322",
+      "e_8_173800319",
+      "e_8_173800045",
+      "e_8_173800355",
+      "e_8_173800235",
+      "e_8_173800368"
+    ],
+    "references": [
+      "e_8_173000021",
+      "e_8_173000022",
+      "e_8_173800323",
+      "e_8_173800007",
+      "e_8_693751151",
+      "e_8_173800249",
+      "e_8_173800250",
+      "e_8_173800251",
+      "e_8_270750189",
+      "e_8_270750190",
+      "e_8_270750191",
+      "e_8_270750192",
+      "e_8_173800002",
+      "e_8_173800284",
+      "e_8_173800318",
+      "e_8_173800322",
+      "e_8_173800319",
+      "e_8_173800354",
+      "e_8_173800045",
+      "e_8_173800355",
+      "e_8_173800368",
+      "e_8_173800235",
+      "q_192000007",
+      "f_173000000_3",
+      "f_173000000_4",
+      "f_173000000_6",
+      "f_173000000_7"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Read Yangyang's WavesLine message"
+      },
+      "78": {
+        "translation": "Step through the mysterious gateway"
+      },
+      "87": {
+        "translation": "Head back to the special Elseway Shroud",
+        "rewards": [
+          {
+            "item": {
+              "id": 71200015,
+              "name": "Qingfu Pendant"
+            },
+            "count": 1
+          }
+        ]
+      },
+      "117": {
+        "translation": "Head to the Elseway Shroud Suisui mentioned"
+      },
+      "130": {
+        "translation": "Enter the Elseway Shroud"
+      },
+      "134": {
+        "translation": "Continue your earlier adventure"
+      },
+      "221": {
+        "translation": "Go see Suisui off"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Rebirth From the Depths"
   },
   {
     "id": 692000003,
@@ -74972,6 +75062,1119 @@
     "chapterName": "NO CONTENT"
   },
   {
+    "id": 936000005,
+    "mapId": 8,
+    "questTypeId": 1,
+    "chapterId": 43,
+    "name": "Song of the Heart Sword",
+    "description": "Not long after the upheaval that swept the entire Land of Xuanfang came to an end, Suisui, far away in Mengzhou City, wants to share what her investigation turned up with you and Yangyang... Come to think of it, what has Qingxiao been up to lately?",
+    "trackEntityId": "e_8_915800000",
+    "children": [
+      "e_8_915800000",
+      "e_8_915800005",
+      "e_8_915800008",
+      "e_8_915800006",
+      "e_8_915800009",
+      "e_8_915800007",
+      "e_8_915800022",
+      "e_8_915800023",
+      "e_8_915800024",
+      "e_8_915800025",
+      "e_8_915800026",
+      "e_8_915800027",
+      "e_8_915800028",
+      "e_8_915800029",
+      "e_8_915800031",
+      "e_8_915800001",
+      "e_8_936000000",
+      "e_8_915800057",
+      "e_8_915800055",
+      "e_8_915800100",
+      "e_8_915800102",
+      "e_8_915800103",
+      "e_8_915800104",
+      "e_8_915800105",
+      "e_8_915800106",
+      "e_8_915800107",
+      "e_8_915800108",
+      "e_8_915800109",
+      "e_8_915800110",
+      "e_8_915800111",
+      "e_8_915800112",
+      "e_8_915800113",
+      "e_8_915800078",
+      "e_8_915800079",
+      "e_8_915800080",
+      "e_8_915800084",
+      "e_8_915800072",
+      "e_8_915800073",
+      "e_8_915800074",
+      "e_8_915800076",
+      "e_8_915800077",
+      "l_8_915800000"
+    ],
+    "references": [
+      "e_8_915800000",
+      "e_8_915800005",
+      "e_8_915800008",
+      "e_8_915800006",
+      "e_8_915800009",
+      "e_8_915800007",
+      "e_8_915800022",
+      "e_8_915800023",
+      "e_8_915800024",
+      "e_8_915800025",
+      "e_8_915800026",
+      "e_8_915800027",
+      "e_8_915800028",
+      "e_8_915800029",
+      "e_8_915800031",
+      "e_8_915800030",
+      "e_8_915800001",
+      "e_8_936000000",
+      "e_8_915800064",
+      "e_8_151750583",
+      "e_8_151750584",
+      "e_8_151750588",
+      "e_8_151750589",
+      "e_8_151750592",
+      "e_8_151750596",
+      "e_8_151750597",
+      "e_8_151750598",
+      "e_8_151750601",
+      "e_8_151750602",
+      "e_8_151750603",
+      "e_8_151750608",
+      "e_8_915800057",
+      "e_8_915800114",
+      "e_8_158800639",
+      "e_8_168800195",
+      "e_8_150750136",
+      "e_8_150750760",
+      "e_8_150750137",
+      "e_8_150750138",
+      "e_8_150750886",
+      "e_8_150750887",
+      "e_8_150750888",
+      "e_8_150750119",
+      "e_8_150750124",
+      "e_8_150750125",
+      "e_8_150750127",
+      "e_8_150750128",
+      "e_8_150750129",
+      "e_8_150750130",
+      "e_8_150750131",
+      "e_8_150750132",
+      "e_8_150750133",
+      "e_8_150750134",
+      "e_8_150750135",
+      "e_8_150750458",
+      "e_8_150750459",
+      "e_8_158800641",
+      "e_8_158800640",
+      "e_8_915800089",
+      "e_8_866800000",
+      "e_8_915800055",
+      "e_8_915800100",
+      "e_8_915800102",
+      "e_8_915800103",
+      "e_8_915800104",
+      "e_8_915800105",
+      "e_8_915800106",
+      "e_8_915800107",
+      "e_8_915800108",
+      "e_8_915800109",
+      "e_8_915800110",
+      "e_8_915800111",
+      "e_8_915800112",
+      "e_8_915800113",
+      "e_8_915800058",
+      "e_8_915800059",
+      "e_8_915800060",
+      "e_8_915800061",
+      "e_8_915800062",
+      "e_8_915800063",
+      "e_8_915800078",
+      "e_8_915800079",
+      "e_8_915800080",
+      "e_8_164750355",
+      "e_8_164750356",
+      "e_8_164750357",
+      "e_8_164750358",
+      "e_8_164750359",
+      "e_8_915800084",
+      "e_8_164750288",
+      "e_8_915800013",
+      "e_8_693751143",
+      "e_8_915800072",
+      "e_8_915800073",
+      "e_8_915800074",
+      "e_8_915800076",
+      "e_8_915800077",
+      "e_8_915800069",
+      "e_8_915800070",
+      "e_8_915800071",
+      "e_8_915800083",
+      "l_8_915800000",
+      "l_8_923800005",
+      "l_8_150750016",
+      "l_8_915800001",
+      "l_8_158800020",
+      "l_8_176750008",
+      "q_915000005",
+      "q_164750000",
+      "f_936000003_12",
+      "f_936000003_3",
+      "f_936000003_4",
+      "f_936000003_8",
+      "f_915800001_20",
+      "f_936000003_9"
+    ],
+    "questStepData": {
+      "4": {
+        "translation": "Meet up with Yangyang at the Ministry of War",
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 40
+          },
+          {
+            "item": {
+              "id": 1,
+              "name": "Union EXP"
+            },
+            "count": 400
+          },
+          {
+            "item": {
+              "id": 43010003,
+              "name": "Advanced Resonance Potion"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020003,
+              "name": "Advanced Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 30000
+          }
+        ]
+      },
+      "6": {
+        "translation": "Read Qingxiao's WavesLine message"
+      },
+      "7": {
+        "translation": "Have a meal with Qingxiao at Yuan's Flavors"
+      },
+      "15": {
+        "translation": "Head to Qingxiao's training hall in the Eastern Xuan Peaks",
+        "rewards": [
+          {
+            "item": {
+              "id": 71200016,
+              "name": "Sword Talisman Pendant"
+            },
+            "count": 1
+          }
+        ]
+      },
+      "16": {
+        "translation": "Meet up with Yangyang at the Ministry of War"
+      },
+      "24": {
+        "translation": "Meet up with Yangyang at the Ministry of War"
+      },
+      "29": {
+        "translation": "Read the WavesLine message you just received",
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 20
+          },
+          {
+            "item": {
+              "id": 1,
+              "name": "Union EXP"
+            },
+            "count": 200
+          },
+          {
+            "item": {
+              "id": 61,
+              "name": "Modding EXP"
+            },
+            "count": 1600
+          },
+          {
+            "item": {
+              "id": 10001309,
+              "name": "Rover: Electro's Waveband"
+            },
+            "count": 1
+          },
+          {
+            "item": {
+              "id": null,
+              "name": null
+            },
+            "count": 1
+          },
+          {
+            "item": {
+              "id": null,
+              "name": null
+            },
+            "count": 1
+          }
+        ]
+      },
+      "30": {
+        "translation": "Meet up with Yangyang at the Ministry of War"
+      },
+      "2": {
+        "translation": "Return to Qingxiao's training hall"
+      },
+      "34": {
+        "translation": "Fly to Xuanfang Hold with your sword"
+      },
+      "35": {
+        "translation": "Fly to Xuanfang Hold with your sword"
+      },
+      "49": {
+        "translation": "Find a table in Yuan's Flavors with Qingxiao"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Rebirth From the Depths"
+  },
+  {
+    "id": 936000003,
+    "mapId": 911,
+    "questTypeId": 1,
+    "chapterId": 43,
+    "name": "Song of the Heart Sword",
+    "description": "To trace the anomaly to its source, you and Qingxiao ventured into the Manifold Sanctum, only to find that Xuanfang Hold's control mainframe had been eroded by Reverberations. As the Sanctum, and then all of Xuanfang Hold, took to the air, the two of you fell into a deep valley...",
+    "trackEntityId": "e_911_936800203",
+    "children": [
+      "e_911_936800402",
+      "e_911_936800179",
+      "e_911_936800126",
+      "e_911_936800203",
+      "e_911_936800404",
+      "e_911_683000064",
+      "e_911_683000065",
+      "e_911_683000066",
+      "e_911_683000067",
+      "e_911_683000068",
+      "e_911_683000069",
+      "e_911_936800418",
+      "e_911_936000026",
+      "e_911_936800051",
+      "e_911_683000049",
+      "e_911_936000066",
+      "e_911_936000067",
+      "e_911_936800254",
+      "e_911_683000050",
+      "e_911_683000054",
+      "e_911_936800405",
+      "e_911_936800517",
+      "e_911_936800052",
+      "e_911_936800135",
+      "e_911_936800222",
+      "e_911_936800136",
+      "e_911_936800223",
+      "e_911_936800224",
+      "e_911_936000057",
+      "e_911_936800005",
+      "e_911_936800006",
+      "e_911_936800221",
+      "e_911_936800145",
+      "e_911_936800146",
+      "e_911_936800406",
+      "e_911_936800157",
+      "e_911_936800158",
+      "e_911_936800056",
+      "e_911_936000075",
+      "e_911_936000076",
+      "e_911_936800131",
+      "e_911_936800225",
+      "e_911_936800516",
+      "e_911_936800513",
+      "e_911_936800407",
+      "e_911_936000078",
+      "e_911_936800255",
+      "e_911_936800256",
+      "e_911_936800408",
+      "e_911_936000021",
+      "e_911_936800535",
+      "e_911_936800049",
+      "e_911_936800048",
+      "e_911_936000022",
+      "e_911_936800312",
+      "e_911_251800170",
+      "e_911_936800210",
+      "e_911_936800271",
+      "e_911_936800362",
+      "e_911_936000082",
+      "e_911_936800371",
+      "e_911_936800236",
+      "e_911_196000642",
+      "e_911_196000643",
+      "e_911_196000644",
+      "e_911_936800153",
+      "e_911_936800154",
+      "e_911_936800155",
+      "e_911_196000607",
+      "e_911_196000608",
+      "e_911_936800151",
+      "e_911_936800152",
+      "e_911_196000624",
+      "e_911_196000625",
+      "e_911_936800278",
+      "e_911_936800523",
+      "e_911_196000440",
+      "e_911_936800216",
+      "e_911_936800272",
+      "e_911_196000597",
+      "e_911_936800021",
+      "e_911_196000595",
+      "e_911_936800022",
+      "e_911_196000596",
+      "e_911_936800162",
+      "e_911_936800163",
+      "e_911_936800497",
+      "e_911_936800501",
+      "e_911_936800502",
+      "e_911_936800506",
+      "e_911_936800211",
+      "e_911_936800214",
+      "e_911_232000021",
+      "e_911_936800505",
+      "e_911_936800409",
+      "e_911_936800215",
+      "e_911_196000602",
+      "e_911_196000603",
+      "e_911_196000604",
+      "e_911_936800359",
+      "e_911_936800253",
+      "e_911_936800427",
+      "e_911_936800437",
+      "e_911_936800438",
+      "e_911_232000022",
+      "e_911_936800243",
+      "e_911_936800244",
+      "e_911_936800245",
+      "e_911_936800246",
+      "e_911_936800247",
+      "e_911_936800248",
+      "e_911_936000089",
+      "e_911_936000090",
+      "e_911_936000091",
+      "e_911_936800361",
+      "e_911_936800448",
+      "e_911_936800449",
+      "e_911_936800450",
+      "e_911_936800451",
+      "e_911_936800452",
+      "e_911_232000023",
+      "l_911_196000007",
+      "l_911_196000008",
+      "l_911_196000005"
+    ],
+    "references": [
+      "e_911_936800203",
+      "e_911_936800179",
+      "e_911_936000026",
+      "e_911_936800404",
+      "e_911_936800405",
+      "e_911_936800406",
+      "e_911_936800407",
+      "e_911_936800408",
+      "e_911_936800409",
+      "e_911_936800236",
+      "e_911_251800211",
+      "e_911_251800209",
+      "e_911_936800402",
+      "e_911_936800316",
+      "e_911_936800067",
+      "e_911_936000009",
+      "e_911_936000007",
+      "e_911_936800317",
+      "e_911_936800319",
+      "e_911_936800126",
+      "e_911_936800100",
+      "e_911_936800507",
+      "e_911_936800375",
+      "e_911_936000014",
+      "e_911_936800519",
+      "e_911_936000016",
+      "e_911_936800000",
+      "e_911_936000017",
+      "e_911_936000003",
+      "e_911_936000018",
+      "e_911_683000064",
+      "e_911_683000065",
+      "e_911_683000066",
+      "e_911_683000067",
+      "e_911_683000068",
+      "e_911_683000069",
+      "e_911_936800001",
+      "e_911_936800292",
+      "e_911_936800002",
+      "e_911_936800545",
+      "e_911_936800418",
+      "e_911_936800051",
+      "e_911_936800584",
+      "e_911_936800294",
+      "e_911_936800293",
+      "e_911_683000049",
+      "e_911_936000066",
+      "e_911_936000067",
+      "e_911_936800254",
+      "e_911_936800296",
+      "e_911_936800313",
+      "e_911_936800295",
+      "e_911_936800547",
+      "e_911_683000050",
+      "e_911_683000054",
+      "e_911_936000058",
+      "e_911_936800517",
+      "e_911_936800298",
+      "e_911_936800052",
+      "e_911_936800585",
+      "e_911_936800302",
+      "e_911_936800299",
+      "e_911_936800135",
+      "e_911_936800222",
+      "e_911_936800136",
+      "e_911_936800223",
+      "e_911_936800224",
+      "e_911_936000057",
+      "e_911_936800297",
+      "e_911_936800314",
+      "e_911_936800300",
+      "e_911_936800005",
+      "e_911_936800006",
+      "e_911_936800221",
+      "e_911_936800145",
+      "e_911_936800146",
+      "e_911_936800512",
+      "e_911_936800175",
+      "e_911_936800157",
+      "e_911_936800158",
+      "e_911_936800301",
+      "e_911_936800056",
+      "e_911_936000075",
+      "e_911_936000076",
+      "e_911_936800131",
+      "e_911_936800225",
+      "e_911_936800516",
+      "e_911_936800586",
+      "e_911_936800303",
+      "e_911_936800559",
+      "e_911_936800513",
+      "e_911_936000027",
+      "e_911_936000078",
+      "e_911_936800255",
+      "e_911_936800256",
+      "e_911_936800306",
+      "e_911_936800307",
+      "e_911_936800304",
+      "e_911_936800549",
+      "e_911_936800237",
+      "e_911_936000080",
+      "e_911_936000021",
+      "e_911_936800535",
+      "e_911_936800310",
+      "e_911_936800305",
+      "e_911_936800551",
+      "e_911_936800049",
+      "e_911_936800048",
+      "e_911_936000022",
+      "e_911_936800312",
+      "e_8_936000007",
+      "e_911_936800309",
+      "e_911_936800308",
+      "e_8_936800010",
+      "e_911_936000024",
+      "e_911_251800170",
+      "e_911_936800561",
+      "e_911_936800360",
+      "e_911_936800374",
+      "e_911_936800210",
+      "e_911_936800271",
+      "e_911_936800510",
+      "e_911_936800362",
+      "e_911_936800173",
+      "e_911_936000082",
+      "e_911_936800583",
+      "e_911_936000083",
+      "e_911_936800371",
+      "e_911_936800372",
+      "e_911_936800520",
+      "e_911_936800373",
+      "e_911_936800581",
+      "e_911_936800412",
+      "e_911_196000642",
+      "e_911_196000643",
+      "e_911_196000644",
+      "e_911_936800153",
+      "e_911_936800154",
+      "e_911_936800155",
+      "e_911_196000607",
+      "e_911_196000608",
+      "e_911_936800151",
+      "e_911_936800152",
+      "e_911_196000624",
+      "e_911_196000625",
+      "e_911_936800278",
+      "e_911_936800523",
+      "e_911_936800116",
+      "e_911_936800119",
+      "e_911_936800522",
+      "e_911_936000085",
+      "e_911_196000440",
+      "e_911_936800216",
+      "e_911_936800377",
+      "e_911_936800376",
+      "e_911_936800272",
+      "e_911_196000597",
+      "e_911_936800021",
+      "e_911_196000595",
+      "e_911_936800022",
+      "e_911_196000596",
+      "e_911_936800380",
+      "e_911_936800378",
+      "e_911_936800553",
+      "e_911_936800576",
+      "e_911_936800162",
+      "e_911_936800163",
+      "e_911_936800497",
+      "e_911_936800501",
+      "e_911_936800502",
+      "e_911_936800506",
+      "e_911_936800211",
+      "e_911_936800214",
+      "e_911_232000021",
+      "e_911_936800505",
+      "e_911_936800215",
+      "e_911_936800337",
+      "e_911_936800580",
+      "e_911_936800413",
+      "e_911_936800379",
+      "e_911_936800382",
+      "e_911_936800381",
+      "e_911_936800555",
+      "e_911_196000602",
+      "e_911_196000603",
+      "e_911_196000604",
+      "e_911_936800359",
+      "e_911_936800521",
+      "e_911_936800253",
+      "e_911_936800427",
+      "e_911_936800437",
+      "e_911_936800438",
+      "e_911_936800249",
+      "e_911_232000022",
+      "e_911_936800587",
+      "e_911_936800384",
+      "e_911_936800383",
+      "e_911_936800557",
+      "e_911_936800243",
+      "e_911_936800244",
+      "e_911_936800245",
+      "e_911_936800246",
+      "e_911_936800247",
+      "e_911_936800248",
+      "e_911_936800415",
+      "e_911_936000089",
+      "e_911_936000090",
+      "e_911_936000091",
+      "e_911_936800361",
+      "e_911_936800032",
+      "e_911_936800034",
+      "e_911_936800035",
+      "e_911_936800448",
+      "e_911_936800449",
+      "e_911_936800450",
+      "e_911_936800451",
+      "e_911_936800452",
+      "e_911_936800385",
+      "e_911_232000023",
+      "e_911_936800588",
+      "l_911_196000007",
+      "l_911_196000008",
+      "l_911_196000005",
+      "q_173000000",
+      "f_936000002_2",
+      "f_936000002_3",
+      "f_936000002_4",
+      "f_936000002_6",
+      "f_936000002_7",
+      "f_936000002_8",
+      "f_936000002_9",
+      "f_936000002_11",
+      "f_936000002_12",
+      "f_936000002_17",
+      "f_936000002_18",
+      "f_936000002_74",
+      "f_936000002_20",
+      "f_936000002_22",
+      "f_936000002_23",
+      "f_936000002_24",
+      "f_936000002_25",
+      "f_936000002_27",
+      "f_936000002_28",
+      "f_936000002_29",
+      "f_915800001_19",
+      "f_936000002_30",
+      "f_936000002_31",
+      "f_936000002_32",
+      "f_936000002_34",
+      "f_936000002_75",
+      "f_936000002_76",
+      "f_936000002_35",
+      "f_936000002_36",
+      "f_936000002_37",
+      "f_936000002_129",
+      "f_936000002_39",
+      "f_936000002_42",
+      "f_936000002_43",
+      "f_936000002_81",
+      "f_936000002_44",
+      "f_936000002_45",
+      "f_936000002_69",
+      "f_936000002_47",
+      "f_936000002_83",
+      "f_936000002_84",
+      "f_196000000_94",
+      "f_936000002_48",
+      "f_936000002_85",
+      "f_936000002_52",
+      "f_936000002_56",
+      "f_915800001_21",
+      "f_936000002_51",
+      "f_936000002_57",
+      "f_936000002_86",
+      "f_936000002_59",
+      "f_915800001_13",
+      "f_936000002_60",
+      "f_936000002_61",
+      "f_936000002_62",
+      "f_936000002_88",
+      "f_915800001_4",
+      "f_936000002_89",
+      "f_936000002_90",
+      "f_936000002_91",
+      "f_936000002_93",
+      "f_936000002_96",
+      "f_936000002_64",
+      "f_936000002_95"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Fall to the valley floor"
+      },
+      "36": {
+        "translation": "Talk to the villager greeting you"
+      },
+      "44": {
+        "translation": "Head straight through the cave"
+      },
+      "43": {
+        "translation": "Head to Yuan Fortress"
+      },
+      "22": {
+        "translation": "Ask the nearby people what's going on"
+      },
+      "32": {
+        "translation": "Explore the area"
+      },
+      "46": {
+        "translation": "Explore the Cloud Shuttle"
+      },
+      "74": {
+        "translation": "Explore the Cloud Shuttle"
+      },
+      "75": {
+        "translation": "Ask the Artisans what's going on"
+      },
+      "76": {
+        "translation": "Explore ahead"
+      },
+      "77": {
+        "translation": "Head for the Cloud Shuttle at the very front"
+      },
+      "78": {
+        "translation": "Defeat the rogue Autopuppets"
+      },
+      "85": {
+        "translation": "Talk things over with Qingxiao"
+      },
+      "88": {
+        "translation": "Head to the start of the Windpath and begin Sword Flight"
+      },
+      "86": {
+        "translation": "Keep going"
+      },
+      "55": {
+        "translation": "Fly to the next Cloud Shuttle"
+      },
+      "56": {
+        "translation": "Explore ahead"
+      },
+      "72": {
+        "translation": "Examine the Swordlight standing on the ground"
+      },
+      "70": {
+        "translation": "Head to the next Cloud Shuttle"
+      },
+      "59": {
+        "translation": "Keep going"
+      },
+      "61": {
+        "translation": "Head to the next Cloud Shuttle"
+      },
+      "64": {
+        "translation": "Defeat the incoming Autopuppets"
+      },
+      "65": {
+        "translation": "Go check on the mysterious Autopuppet"
+      },
+      "93": {
+        "translation": "Wait for Qingxiao to undo the last mechanism"
+      },
+      "89": {
+        "translation": "Defeat the incoming Autopuppets"
+      },
+      "94": {
+        "translation": "Talk to the rescued Artisans"
+      },
+      "99": {
+        "translation": "Head to the lightway leading to the Skyend Barrier"
+      },
+      "103": {
+        "translation": "Go meet up with Muyu"
+      },
+      "101": {
+        "translation": "Investigate the anomaly nearby"
+      },
+      "102": {
+        "translation": "Look around"
+      },
+      "116": {
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 50
+          },
+          {
+            "item": {
+              "id": 1,
+              "name": "Union EXP"
+            },
+            "count": 500
+          },
+          {
+            "item": {
+              "id": 43010003,
+              "name": "Advanced Resonance Potion"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020003,
+              "name": "Advanced Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 30000
+          }
+        ]
+      },
+      "117": {
+        "translation": "Feel the Sword Intent in the sword"
+      },
+      "118": {
+        "translation": "Leave the \"Autopuppet village\""
+      },
+      "119": {
+        "translation": "Keep going"
+      },
+      "120": {
+        "translation": "Eliminate the rogue Autopuppets and rescue the \"villagers\""
+      },
+      "122": {
+        "translation": "Talk to the \"villagers\" in the Netherworld Domain"
+      },
+      "123": {
+        "translation": "Keep going"
+      },
+      "113": {
+        "translation": "Keep going"
+      },
+      "124": {
+        "translation": "Keep exploring ahead"
+      },
+      "125": {
+        "translation": "Keep going"
+      },
+      "127": {
+        "translation": "Keep exploring ahead"
+      },
+      "135": {
+        "translation": "Ask around among the nearby villagers"
+      },
+      "136": {
+        "translation": "Go check out the mountain gate ahead"
+      },
+      "144": {
+        "translation": "Talk over the situation with Qingxiao"
+      },
+      "143": {
+        "translation": "Check the frequency on the nearby Swordlight"
+      },
+      "142": {
+        "translation": "Defeat the Autopuppets"
+      },
+      "146": {
+        "translation": "Head to Yuan Fortress"
+      },
+      "147": {
+        "translation": "Explore the Cloud Shuttle"
+      },
+      "149": {
+        "translation": "Keep exploring ahead"
+      },
+      "150": {
+        "translation": "Defeat the rogue Autopuppets"
+      },
+      "151": {
+        "translation": "Continue forward"
+      },
+      "155": {
+        "translation": "Use the flying sword to undo all the mechanisms at once"
+      },
+      "148": {
+        "translation": "Keep going"
+      },
+      "160": {
+        "translation": "Find the Artisan who's acting a little strangely"
+      },
+      "159": {
+        "translation": "Defeat the rogue Autopuppets"
+      },
+      "158": {
+        "translation": "Go talk to the Artisan who's acting strangely"
+      },
+      "161": {
+        "translation": "Leave a clue for that person"
+      },
+      "162": {
+        "translation": "Pass through the Spirit Portal"
+      },
+      "164": {
+        "translation": "Examine the Autopuppet wreckage nearby"
+      },
+      "169": {
+        "translation": "Examine the book someone appears to have left behind"
+      },
+      "170": {
+        "translation": "Talk to the Autopuppet beside the mechanism"
+      },
+      "172": {
+        "translation": "Keep going"
+      },
+      "173": {
+        "translation": "Defeat the rogue Autopuppets"
+      },
+      "177": {
+        "translation": "Keep exploring ahead"
+      },
+      "174": {
+        "translation": "(Optional) Talk to the Artisan by the Xuan Bombards"
+      },
+      "180": {
+        "translation": "Explore the Cloud Shuttle"
+      },
+      "181": {
+        "translation": "Explore ahead to learn about the current situation"
+      },
+      "182": {
+        "translation": "Keep going"
+      },
+      "183": {
+        "translation": "Keep going"
+      },
+      "184": {
+        "translation": "Use Sword Flight to reach the next Cloud Shuttle"
+      },
+      "192": {
+        "translation": "Steer the Cloud Shuttle to move forward"
+      },
+      "193": {
+        "translation": "Keep going"
+      },
+      "194": {
+        "translation": "Keep going"
+      },
+      "195": {
+        "translation": "Keep going"
+      },
+      "204": {
+        "translation": "Explore ahead"
+      },
+      "206": {
+        "translation": "(Optional) Use Sensor to check your surroundings"
+      },
+      "208": {
+        "translation": "Continue forward"
+      },
+      "218": {
+        "translation": "Look around"
+      },
+      "211": {
+        "translation": "Explore your surroundings"
+      },
+      "212": {
+        "translation": "Keep going"
+      },
+      "214": {
+        "translation": "Keep going"
+      },
+      "216": {
+        "translation": "Defeat the incoming rogue Autopuppets"
+      },
+      "215": {
+        "translation": "Keep exploring ahead"
+      },
+      "220": {
+        "translation": "Use the flying sword to undo the mechanism"
+      },
+      "226": {
+        "translation": "Explore ahead"
+      },
+      "227": {
+        "translation": "Explore ahead"
+      },
+      "228": {
+        "translation": "Explore ahead"
+      },
+      "224": {
+        "translation": "Ask the nearby villagers what's going on"
+      },
+      "223": {
+        "translation": "Head to the cave ahead"
+      },
+      "229": {
+        "translation": "Head to Yuan Fortress"
+      },
+      "222": {
+        "translation": "Set out for the distant lightway"
+      },
+      "221": {
+        "translation": "Keep going"
+      },
+      "232": {
+        "translation": "Head to the lightway leading to the Skyend Barrier"
+      },
+      "233": {
+        "translation": "Fly through the Skyend Barrier"
+      },
+      "234": {
+        "translation": "Wait for Qingxiao to undo the mechanism"
+      },
+      "235": {
+        "translation": "Explore ahead"
+      },
+      "245": {
+        "translation": "Head to the cave ahead"
+      },
+      "249": {
+        "translation": "Keep going"
+      },
+      "251": {
+        "translation": "Keep going"
+      },
+      "259": {
+        "translation": "Keep going"
+      },
+      "260": {
+        "translation": "Keep going"
+      },
+      "262": {
+        "translation": "Head to the next Cloud Shuttle"
+      },
+      "268": {
+        "translation": "Use Flying Swords to disable the Mechanism Control"
+      },
+      "271": {
+        "translation": "(Optional) Undo the nearby mechanism barrier"
+      },
+      "273": {
+        "translation": "Continue forward"
+      },
+      "336": {
+        "translation": "Look around"
+      },
+      "337": {
+        "translation": "Return to the Manifold Sanctum"
+      },
+      "343": {
+        "translation": "Continue forward"
+      },
+      "344": {
+        "translation": "Head to the Cloud Shuttle ahead"
+      },
+      "345": {
+        "translation": "Return to the Manifold Sanctum"
+      },
+      "371": {
+        "translation": "Examine the airflow gathering ahead"
+      },
+      "383": {
+        "translation": "(Optional) Smash the nearby obstacles"
+      },
+      "380": {
+        "translation": "(Optional) Rescue the trapped \"villagers\""
+      },
+      "393": {
+        "translation": "Continue forward"
+      },
+      "394": {
+        "translation": "Find the special frequency nearby"
+      },
+      "395": {
+        "translation": "Explore around"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Rebirth From the Depths"
+  },
+  {
     "id": 226800001,
     "mapId": 2522,
     "questTypeId": 10,
@@ -75102,6 +76305,7 @@
       "e_8_199000043",
       "e_8_199751514",
       "e_8_199751745",
+      "e_8_172800007",
       "e_8_199751555",
       "e_8_199751796",
       "e_8_199751550",
@@ -75258,6 +76462,7 @@
       "e_8_199751745",
       "e_8_199000097",
       "e_8_199000044",
+      "e_8_172800007",
       "e_8_199751555",
       "e_8_199751796",
       "e_8_199752033",
@@ -75693,6 +76898,184 @@
     },
     "typeName": "Side Quests",
     "chapterName": "Lahai-Roi: Voices Along the Way"
+  },
+  {
+    "id": 915000005,
+    "mapId": 911,
+    "questTypeId": 1,
+    "chapterId": 43,
+    "name": "Song of the Heart Sword",
+    "description": "To trace the anomaly to its source, you and Qingxiao ventured into the Manifold Sanctum, only to find that Xuanfang Hold's control mainframe had been eroded by Reverberations. As the Sanctum, and then all of Xuanfang Hold, took to the air, the two of you fell into a deep valley...",
+    "trackEntityId": "e_911_915800021",
+    "children": [
+      "e_911_915000013",
+      "e_911_915000011",
+      "e_911_915000012",
+      "e_911_915800007",
+      "e_911_915800028",
+      "e_911_915000007",
+      "e_911_915800010",
+      "e_911_915800009",
+      "e_911_915800006",
+      "e_911_915800000",
+      "e_911_915800038",
+      "e_911_915800025",
+      "e_911_915800017",
+      "e_911_915800008",
+      "e_911_915800012",
+      "e_911_915800013",
+      "e_911_915800014",
+      "e_911_915800030",
+      "e_911_915000014",
+      "e_8_251800000",
+      "l_911_196000000",
+      "l_911_196000006"
+    ],
+    "references": [
+      "e_911_915800021",
+      "e_911_915800022",
+      "e_911_915800027",
+      "e_911_915000013",
+      "e_911_915000011",
+      "e_911_915000012",
+      "e_911_915800007",
+      "e_911_915800028",
+      "e_911_915000007",
+      "e_911_915800010",
+      "e_911_915800009",
+      "e_911_915800006",
+      "e_911_915800031",
+      "e_911_915800023",
+      "e_911_915000021",
+      "e_911_915800000",
+      "e_911_915000019",
+      "e_911_915800038",
+      "e_911_915800025",
+      "e_911_915800017",
+      "e_911_915800008",
+      "e_911_915800012",
+      "e_911_915800013",
+      "e_911_915800014",
+      "e_911_915800030",
+      "e_911_915000014",
+      "e_911_915800015",
+      "e_911_915800016",
+      "e_1598_915800006",
+      "e_911_915800032",
+      "e_911_915800024",
+      "e_911_915000000",
+      "e_911_251800167",
+      "e_8_251800000",
+      "e_8_915800066",
+      "l_911_196000000",
+      "l_911_196000006",
+      "q_936000003",
+      "q_915000005",
+      "f_936000002_65",
+      "f_936000002_66",
+      "f_936000002_67",
+      "f_915000009_4",
+      "f_915000009_5",
+      "f_915000009_53",
+      "f_915000009_52",
+      "f_915000009_54",
+      "f_915000009_56"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Keep exploring ahead"
+      },
+      "5": {
+        "translation": "Keep supporting Qingxiao"
+      },
+      "6": {
+        "translation": "Help Qingxiao into the cabin"
+      },
+      "7": {
+        "translation": "Return to Qingxiao's inner landscape"
+      },
+      "15": {
+        "translation": "Destroy the Autopuppets Muyu is controlling"
+      },
+      "11": {
+        "translation": "Keep destroying the incoming Autopuppets"
+      },
+      "16": {
+        "translation": "Help Qingxiao into the corridor"
+      },
+      "12": {
+        "translation": "Destroy the Autopuppets blocking the way"
+      },
+      "19": {
+        "translation": "Keep clearing the nearby threats"
+      },
+      "18": {
+        "translation": "Keep clearing the nearby threats"
+      },
+      "20": {
+        "translation": "With the area cleared, go back to Qingxiao"
+      },
+      "22": {
+        "translation": "Continue the fight in the Di Realm",
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 50
+          },
+          {
+            "item": {
+              "id": 1,
+              "name": "Union EXP"
+            },
+            "count": 500
+          },
+          {
+            "item": {
+              "id": 43010003,
+              "name": "Advanced Resonance Potion"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020003,
+              "name": "Advanced Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 30000
+          }
+        ]
+      },
+      "24": {
+        "translation": "Press deeper into the Tian Realm"
+      },
+      "27": {
+        "translation": "Return to the mysterious garden"
+      },
+      "29": {
+        "translation": "Help Qingxiao into the corridor"
+      },
+      "33": {
+        "translation": "Head to the final Skyend Barrier"
+      },
+      "52": {
+        "translation": "Help Qingxiao into the corridor"
+      },
+      "68": {
+        "translation": "Help Qingxiao into the corridor"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Rebirth From the Depths"
   },
   {
     "id": 237850001,
@@ -79610,6 +80993,7 @@
       "e_8_686750703",
       "e_8_686750704",
       "e_8_686750879",
+      "e_8_686750930",
       "l_8_686750045",
       "l_8_686750041",
       "f_686750001_3",
@@ -79932,6 +81316,7 @@
       "e_8_165750021",
       "e_8_165750129",
       "e_8_165750128",
+      "e_8_165750229",
       "e_8_165750130",
       "e_8_165750025",
       "e_8_165750029",
@@ -80200,6 +81585,179 @@
     },
     "typeName": "Side Quests",
     "chapterName": "Rafter Kite, Jade Steed, and the Visitor"
+  },
+  {
+    "id": 32000000,
+    "mapId": 20300008,
+    "questTypeId": 15,
+    "chapterId": 29,
+    "name": "When the Unknown Thrums",
+    "description": "The gateway to Lahai-Roi is now open! What burns beneath the frostlands is waiting for your return!",
+    "trackEntityId": "e_8_915700002",
+    "children": [
+      "e_8_915700002",
+      "e_906_915700015",
+      "e_906_915700005",
+      "e_906_915700069",
+      "e_906_915700111",
+      "e_906_915700116",
+      "e_906_600700002",
+      "e_906_600700000",
+      "e_906_600700001",
+      "e_906_600700013",
+      "e_906_915700095",
+      "e_906_915700058",
+      "e_906_915700057",
+      "e_906_915700117",
+      "e_906_915700082",
+      "e_906_915700083",
+      "e_906_915700084",
+      "e_906_915700079",
+      "e_906_915700080",
+      "e_906_915700081",
+      "e_906_915700078",
+      "e_906_915700077",
+      "e_906_185700009",
+      "e_906_915700085",
+      "e_906_915700051",
+      "e_906_185700008",
+      "e_906_185700018",
+      "e_906_185700022",
+      "e_906_915000104",
+      "e_906_185700007",
+      "e_906_185700019",
+      "e_906_915700009",
+      "e_906_915700092",
+      "e_906_915700091",
+      "e_906_915700087",
+      "e_906_915700064",
+      "e_906_915700010",
+      "e_906_185700002",
+      "e_906_185700001",
+      "e_906_185700004",
+      "e_906_185700006",
+      "e_906_185700010",
+      "e_906_185700013",
+      "e_906_185700014",
+      "e_906_185700020",
+      "e_906_915700179",
+      "e_906_185700021",
+      "e_906_915700119",
+      "e_906_915000112",
+      "e_906_915700028",
+      "e_906_915700062",
+      "e_906_915700031",
+      "e_906_915700025",
+      "e_906_915700026",
+      "e_906_915700027",
+      "e_906_915000113",
+      "e_906_185700015",
+      "e_906_185700017"
+    ],
+    "references": [
+      "e_8_915700002",
+      "e_906_915700113",
+      "e_906_915700114",
+      "e_906_915700148",
+      "e_906_185700010",
+      "e_906_185700014",
+      "e_906_185700013",
+      "e_906_915700015",
+      "e_906_915700005",
+      "e_906_915700069",
+      "e_906_915700111",
+      "e_8_915700001",
+      "e_906_915700116",
+      "e_906_915700038",
+      "e_906_915700070",
+      "e_906_600700002",
+      "e_906_600700000",
+      "e_906_600700001",
+      "e_906_600700013",
+      "e_906_915700095",
+      "e_906_915700176",
+      "e_906_915700177",
+      "e_906_915700178",
+      "e_906_915700058",
+      "e_906_915700057",
+      "e_906_915700117",
+      "e_906_915700082",
+      "e_906_915700083",
+      "e_906_915700084",
+      "e_906_915700079",
+      "e_906_915700080",
+      "e_906_915700081",
+      "e_906_915700078",
+      "e_906_915700077",
+      "e_906_185700009",
+      "e_906_915700085",
+      "e_906_915700051",
+      "e_906_185700008",
+      "e_906_185700018",
+      "e_906_185700022",
+      "e_906_915000104",
+      "e_906_185700007",
+      "e_906_185700019",
+      "e_906_915700009",
+      "e_906_915700092",
+      "e_906_915700091",
+      "e_906_915700087",
+      "e_906_915700064",
+      "e_906_915700010",
+      "e_906_185700002",
+      "e_906_185700001",
+      "e_906_185700004",
+      "e_906_185700006",
+      "e_906_185700020",
+      "e_906_915700179",
+      "e_906_185700021",
+      "e_906_915700119",
+      "e_906_915000112",
+      "e_906_915700028",
+      "e_906_915700062",
+      "e_906_915700031",
+      "e_906_915700025",
+      "e_906_915700026",
+      "e_906_915700027",
+      "e_906_915000113",
+      "e_906_185700015",
+      "e_906_185700017",
+      "e_906_915700017",
+      "q_915000003",
+      "q_915700000",
+      "f_915000008_2",
+      "f_915000008_6",
+      "f_915000008_8",
+      "f_915000008_50"
+    ],
+    "questStepData": {
+      "6": {
+        "translation": "Head to the rift in the Black Shores and enter Honami City"
+      },
+      "7": {
+        "translation": "Head to the rift in the Black Shores and enter Honami City"
+      },
+      "8": {
+        "translation": "Head to the rift in the Black Shores and enter Honami City"
+      },
+      "19": {
+        "translation": "Shake off the pursuing Voidworm"
+      },
+      "21": {
+        "translation": "Shake off the pursuing Voidworm"
+      },
+      "53": {
+        "translation": "Next Stop: Lahai-Roi"
+      },
+      "32": {
+        "translation": "Shake off the pursuing Voidworm"
+      },
+      "69": {
+        "translation": "Next Stop: Lahai-Roi"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "To the Stars Yet to Shine"
   },
   {
     "id": 164750001,
@@ -80498,179 +82056,6 @@
     },
     "typeName": "Side Quests",
     "chapterName": "Rafter Kite, Jade Steed, and the Visitor"
-  },
-  {
-    "id": 32000000,
-    "mapId": 20300008,
-    "questTypeId": 15,
-    "chapterId": 29,
-    "name": "When the Unknown Thrums",
-    "description": "The gateway to Lahai-Roi is now open! What burns beneath the frostlands is waiting for your return!",
-    "trackEntityId": "e_8_915700002",
-    "children": [
-      "e_8_915700002",
-      "e_906_915700015",
-      "e_906_915700005",
-      "e_906_915700069",
-      "e_906_915700111",
-      "e_906_915700116",
-      "e_906_600700002",
-      "e_906_600700000",
-      "e_906_600700001",
-      "e_906_600700013",
-      "e_906_915700095",
-      "e_906_915700058",
-      "e_906_915700057",
-      "e_906_915700117",
-      "e_906_915700082",
-      "e_906_915700083",
-      "e_906_915700084",
-      "e_906_915700079",
-      "e_906_915700080",
-      "e_906_915700081",
-      "e_906_915700078",
-      "e_906_915700077",
-      "e_906_185700009",
-      "e_906_915700085",
-      "e_906_915700051",
-      "e_906_185700008",
-      "e_906_185700018",
-      "e_906_185700022",
-      "e_906_915000104",
-      "e_906_185700007",
-      "e_906_185700019",
-      "e_906_915700009",
-      "e_906_915700092",
-      "e_906_915700091",
-      "e_906_915700087",
-      "e_906_915700064",
-      "e_906_915700010",
-      "e_906_185700002",
-      "e_906_185700001",
-      "e_906_185700004",
-      "e_906_185700006",
-      "e_906_185700010",
-      "e_906_185700013",
-      "e_906_185700014",
-      "e_906_185700020",
-      "e_906_915700179",
-      "e_906_185700021",
-      "e_906_915700119",
-      "e_906_915000112",
-      "e_906_915700028",
-      "e_906_915700062",
-      "e_906_915700031",
-      "e_906_915700025",
-      "e_906_915700026",
-      "e_906_915700027",
-      "e_906_915000113",
-      "e_906_185700015",
-      "e_906_185700017"
-    ],
-    "references": [
-      "e_8_915700002",
-      "e_906_915700113",
-      "e_906_915700114",
-      "e_906_915700148",
-      "e_906_185700010",
-      "e_906_185700014",
-      "e_906_185700013",
-      "e_906_915700015",
-      "e_906_915700005",
-      "e_906_915700069",
-      "e_906_915700111",
-      "e_8_915700001",
-      "e_906_915700116",
-      "e_906_915700038",
-      "e_906_915700070",
-      "e_906_600700002",
-      "e_906_600700000",
-      "e_906_600700001",
-      "e_906_600700013",
-      "e_906_915700095",
-      "e_906_915700176",
-      "e_906_915700177",
-      "e_906_915700178",
-      "e_906_915700058",
-      "e_906_915700057",
-      "e_906_915700117",
-      "e_906_915700082",
-      "e_906_915700083",
-      "e_906_915700084",
-      "e_906_915700079",
-      "e_906_915700080",
-      "e_906_915700081",
-      "e_906_915700078",
-      "e_906_915700077",
-      "e_906_185700009",
-      "e_906_915700085",
-      "e_906_915700051",
-      "e_906_185700008",
-      "e_906_185700018",
-      "e_906_185700022",
-      "e_906_915000104",
-      "e_906_185700007",
-      "e_906_185700019",
-      "e_906_915700009",
-      "e_906_915700092",
-      "e_906_915700091",
-      "e_906_915700087",
-      "e_906_915700064",
-      "e_906_915700010",
-      "e_906_185700002",
-      "e_906_185700001",
-      "e_906_185700004",
-      "e_906_185700006",
-      "e_906_185700020",
-      "e_906_915700179",
-      "e_906_185700021",
-      "e_906_915700119",
-      "e_906_915000112",
-      "e_906_915700028",
-      "e_906_915700062",
-      "e_906_915700031",
-      "e_906_915700025",
-      "e_906_915700026",
-      "e_906_915700027",
-      "e_906_915000113",
-      "e_906_185700015",
-      "e_906_185700017",
-      "e_906_915700017",
-      "q_915000003",
-      "q_915700000",
-      "f_915000008_2",
-      "f_915000008_6",
-      "f_915000008_8",
-      "f_915000008_50"
-    ],
-    "questStepData": {
-      "6": {
-        "translation": "Head to the rift in the Black Shores and enter Honami City"
-      },
-      "7": {
-        "translation": "Head to the rift in the Black Shores and enter Honami City"
-      },
-      "8": {
-        "translation": "Head to the rift in the Black Shores and enter Honami City"
-      },
-      "19": {
-        "translation": "Shake off the pursuing Voidworm"
-      },
-      "21": {
-        "translation": "Shake off the pursuing Voidworm"
-      },
-      "53": {
-        "translation": "Next Stop: Lahai-Roi"
-      },
-      "32": {
-        "translation": "Shake off the pursuing Voidworm"
-      },
-      "69": {
-        "translation": "Next Stop: Lahai-Roi"
-      }
-    },
-    "typeName": "Main Quests",
-    "chapterName": "To the Stars Yet to Shine"
   },
   {
     "id": 195700001,
@@ -85423,6 +86808,7 @@
       "e_8_688751426",
       "e_8_688751425",
       "e_8_188750215",
+      "e_8_188750234",
       "e_8_688751094",
       "e_8_688751185",
       "e_8_688751131",
@@ -85464,7 +86850,6 @@
       "e_8_688751130",
       "e_8_188750136",
       "e_8_188750208",
-      "e_8_188750234",
       "e_8_188750209",
       "e_8_188750207",
       "e_8_188750137",
@@ -86123,7 +87508,7 @@
     "questTypeId": 2,
     "chapterId": 3009,
     "name": "Art of Explosion",
-    "description": "Dans la Terre de Xuanfang, les amateurs de mécanismes sont légion, et Xubai en fait partie. Pourtant, il a beau s'acharner, il ne parvient pas à en maîtriser le fonctionnement. Pour réussir l'épreuve, il a fait appel à vous.",
+    "description": "There's no shortage of people in the Land of Xuanfang who are fascinated by mechanisms, and Xubai is one of them. But no matter how hard he tries, he just can't get the hang of it.\nTo pass the assessment, he's turned to you for help.",
     "trackEntityId": "e_8_172750345",
     "children": [
       "e_8_172750345",
@@ -86267,6 +87652,7 @@
       "e_8_688751739",
       "e_8_688751111",
       "e_8_688751204",
+      "e_8_688751710",
       "e_8_688751318",
       "e_8_688751175",
       "e_8_688751205",
@@ -86615,7 +88001,7 @@
       "e_8_252750523",
       "e_8_252750515",
       "e_8_252750518",
-      "e_8_252750043",
+      "e_8_252800006",
       "e_8_165750193",
       "e_8_165750209",
       "e_8_165750068",
@@ -88036,7 +89422,7 @@
         "translation": "Talk to the people nearby to learn the situation"
       },
       "45": {
-        "translation": "Talk to the Xuanfang Warden",
+        "translation": "Talk to the Constable",
         "rewards": [
           {
             "item": {
@@ -88914,6 +90300,1025 @@
     "chapterName": "Pickets, Lionarchs. Puppets in Cages"
   },
   {
+    "id": 121800000,
+    "mapId": 20110008,
+    "questTypeId": 15,
+    "chapterId": 8,
+    "name": "Dreamweaver's Ascent",
+    "description": "Your forgotten past, hazy memories, and a strange dream... So many questions linger about your identity, and who you used to be. Meanwhile, a mysterious pull guides you to a hidden place on the distant sea...",
+    "trackEntityId": "e_8_125900102",
+    "children": [
+      "e_8_125900102",
+      "e_8_125900101",
+      "e_8_121800005",
+      "e_68_125000003",
+      "e_68_125000004"
+    ],
+    "references": [
+      "e_8_125900102",
+      "e_8_125900101",
+      "e_8_125001262",
+      "e_8_109005245",
+      "e_8_109005246",
+      "e_8_109005247",
+      "e_8_11000505",
+      "e_8_11000504",
+      "e_8_109005251",
+      "e_8_109005248",
+      "e_8_109800535",
+      "e_8_121800005",
+      "e_68_125000003",
+      "e_68_125000004",
+      "e_68_125000007",
+      "e_68_310000002",
+      "e_8_139800012",
+      "e_8_125900106",
+      "e_8_125900274",
+      "e_8_11000502",
+      "e_8_11000503",
+      "e_8_109003440",
+      "e_8_109003441",
+      "e_8_109003442",
+      "e_8_109003443",
+      "e_8_109003444",
+      "e_8_109003445",
+      "e_8_109003446",
+      "e_8_109004624",
+      "e_8_109004625",
+      "e_8_109004626",
+      "e_8_109004627",
+      "e_8_109004628",
+      "e_8_109004629",
+      "e_8_109004630",
+      "e_8_109004631",
+      "e_8_109004632",
+      "e_8_109004633",
+      "e_8_109004634",
+      "e_8_109004635",
+      "e_8_109004636",
+      "e_8_109004637",
+      "e_8_109004638",
+      "e_8_109004639",
+      "e_8_109004640",
+      "e_8_109004641",
+      "e_8_109005244",
+      "e_8_109005249",
+      "e_8_109700312",
+      "e_8_109700313",
+      "e_8_109700314",
+      "e_8_109700315",
+      "e_8_109700316",
+      "e_8_109700317",
+      "e_8_109700318",
+      "e_8_109700319",
+      "e_8_109700320",
+      "e_8_109700327",
+      "e_8_109700328",
+      "e_8_109700329",
+      "e_8_109700330",
+      "e_8_109700331",
+      "e_8_109700332",
+      "q_125000124",
+      "q_125000120",
+      "f_125000007_7",
+      "f_125000007_11"
+    ],
+    "questStepData": {
+      "104": {
+        "translation": "Head to the Gourmet Street"
+      },
+      "108": {
+        "translation": "Head to City Hall"
+      },
+      "95": {
+        "translation": "Head to City Hall"
+      },
+      "96": {
+        "translation": "Head to the Meeting Room"
+      },
+      "94": {
+        "translation": "Talk to Sanhua"
+      },
+      "107": {
+        "translation": "Leave City Hall"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Jinzhou Rising"
+  },
+  {
+    "id": 121800001,
+    "mapId": 20110008,
+    "questTypeId": 15,
+    "chapterId": 8,
+    "name": "To Mt. Firmament",
+    "description": "Jinhsi has gone missing, and you just had an enigmatic dream.... That Wayfinder at the ferry may hold some answers to these mysteries.",
+    "trackEntityId": "e_8_125001173",
+    "children": [
+      "e_8_125001173",
+      "e_8_125900006",
+      "e_8_125001307",
+      "e_8_133900561",
+      "e_8_133900562",
+      "e_8_133900563",
+      "e_8_133900271",
+      "e_8_133900272",
+      "e_8_133900273",
+      "e_8_133900289"
+    ],
+    "references": [
+      "e_8_125001173",
+      "e_8_141900335",
+      "e_8_141900336",
+      "e_8_125900025",
+      "e_8_125900132",
+      "e_8_125900133",
+      "e_8_125900134",
+      "e_8_123000852",
+      "e_8_125900022",
+      "e_8_125900023",
+      "e_8_125900024",
+      "e_8_125900001",
+      "e_8_125900112",
+      "e_8_125900165",
+      "e_8_904900001",
+      "e_8_125001310",
+      "e_8_125900267",
+      "e_8_125900107",
+      "e_8_125900108",
+      "e_8_125900159",
+      "e_8_125900160",
+      "e_8_125900161",
+      "e_8_136900698",
+      "e_8_136900699",
+      "e_8_136900707",
+      "e_8_136900709",
+      "e_8_136900708",
+      "e_8_141900066",
+      "e_8_125900006",
+      "e_8_133900291",
+      "e_8_133900290",
+      "e_8_133900298",
+      "e_8_148900023",
+      "e_8_125001308",
+      "e_8_125900115",
+      "e_8_125900075",
+      "e_8_125900076",
+      "e_8_125001307",
+      "e_8_125900047",
+      "e_8_125900069",
+      "e_8_133900561",
+      "e_8_133900562",
+      "e_8_133900563",
+      "e_8_133900271",
+      "e_8_133900272",
+      "e_8_133900273",
+      "e_8_133900289",
+      "e_8_125001245",
+      "e_8_148900022",
+      "e_8_125900154",
+      "e_8_904900002",
+      "e_8_125001248",
+      "e_8_125900063",
+      "e_8_125900104",
+      "e_8_125900117",
+      "e_8_125900119",
+      "e_8_125900120",
+      "e_8_125900064",
+      "e_8_141000083",
+      "e_8_133900293",
+      "e_8_133900294",
+      "e_8_125900118",
+      "e_8_125900121",
+      "e_8_125900268",
+      "e_8_125900269",
+      "e_8_125900051",
+      "e_8_131000090",
+      "e_8_131000091",
+      "e_8_131000092",
+      "e_8_141000085",
+      "e_8_141000086",
+      "e_8_141000087",
+      "e_8_141000606",
+      "e_8_880700461",
+      "e_8_880700462",
+      "q_121800000",
+      "q_125000121",
+      "f_125000007_1",
+      "f_125000007_6",
+      "f_125000007_2",
+      "f_125000007_15"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Head to the Ferry"
+      },
+      "109": {
+        "translation": "Arrive at Mt. Firmament"
+      },
+      "110": {
+        "translation": "Ask Changli about the Chronosorter"
+      },
+      "7": {
+        "translation": "Repair the Bridge with Chronosorter"
+      },
+      "8": {
+        "translation": "Go Further into Mt. Firmament"
+      },
+      "9": {
+        "translation": "Go Further into Mt. Firmament"
+      },
+      "10": {
+        "translation": "Go Further into Mt. Firmament"
+      },
+      "11": {
+        "translation": "Defeat the Fractsidus"
+      },
+      "13": {
+        "translation": "Go further into Mt. Firmament"
+      },
+      "168": {
+        "translation": "Check the Tutorials for Information on the Photonvault and the Photon Barrier"
+      },
+      "14": {
+        "translation": "Head to the Temporal Barrier Through the Cave"
+      },
+      "15": {
+        "translation": "Cross the Temporal Barrier"
+      },
+      "16": {
+        "translation": "Go further into Mt. Firmament"
+      },
+      "111": {
+        "translation": "Go further into Mt. Firmament"
+      },
+      "149": {
+        "translation": "Follow the Resonance Traces"
+      },
+      "150": {
+        "translation": "Search for Clues about Jinhsi"
+      },
+      "163": {
+        "translation": "Follow the Resonance Traces"
+      },
+      "33": {
+        "translation": "Inspect the Pond"
+      },
+      "145": {
+        "translation": "Inspect the Vase"
+      },
+      "35": {
+        "translation": "Investigate the Sound behind the Waterfall"
+      },
+      "36": {
+        "translation": "Enter the Chamber"
+      },
+      "133": {
+        "translation": "Follow Xinyi"
+      },
+      "144": {
+        "translation": "Talk to the Residents"
+      },
+      "140": {
+        "translation": "Talk to Xinyi"
+      },
+      "38": {
+        "translation": "Head to the Truthseeker's Pass"
+      },
+      "39": {
+        "translation": "Head to the Truthseeker's Pass"
+      },
+      "40": {
+        "translation": "Head to the Truthseeker's Pass"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Jinzhou Rising"
+  },
+  {
+    "id": 121800002,
+    "mapId": 20110008,
+    "questTypeId": 15,
+    "chapterId": 8,
+    "name": "Truthseeker's Pass",
+    "description": "According to Xinyi, Hongzhen's Mayor, Jinhsi has gone off to Truthseeker's Pass, or the Court of Savantae Ruins. The Cipher Key stored in the heart of Truthseeker's Pass is a precondition to opening Mianloong Chamber and the audience with Jué, the Sentinel.",
+    "trackEntityId": "e_8_131000001",
+    "children": [
+      "e_8_133900239",
+      "e_8_133900699",
+      "e_8_133900119",
+      "e_8_131000074",
+      "e_8_131000218",
+      "e_8_133900121",
+      "e_8_133900120",
+      "e_8_131000219",
+      "e_8_131000220",
+      "e_8_133900122",
+      "e_8_133900123",
+      "e_8_133900423",
+      "e_8_133900424",
+      "e_8_131000236",
+      "e_8_133900578",
+      "e_8_133900577",
+      "e_8_133900621",
+      "e_8_133003454"
+    ],
+    "references": [
+      "e_8_131000001",
+      "e_8_133003581",
+      "e_8_125001310",
+      "e_8_125900267",
+      "e_8_125900107",
+      "e_8_125900108",
+      "e_8_125900159",
+      "e_8_125900160",
+      "e_8_125900161",
+      "e_8_131000018",
+      "e_8_131000017",
+      "e_8_131000059",
+      "e_8_131000091",
+      "e_8_131000156",
+      "e_8_133900239",
+      "e_8_133900300",
+      "e_8_133900699",
+      "e_8_131000202",
+      "e_8_133900425",
+      "e_8_133900119",
+      "e_8_131000074",
+      "e_8_131000218",
+      "e_8_133900121",
+      "e_8_133900120",
+      "e_8_131000219",
+      "e_8_131000220",
+      "e_8_133900122",
+      "e_8_133900123",
+      "e_8_131000205",
+      "e_8_133900423",
+      "e_8_133900421",
+      "e_8_133003582",
+      "e_8_133900424",
+      "e_8_131000236",
+      "e_8_131000031",
+      "e_8_131000080",
+      "e_8_131000081",
+      "e_8_131000082",
+      "e_8_131000206",
+      "e_8_143000312",
+      "e_8_133900422",
+      "e_8_133900260",
+      "e_8_133900259",
+      "e_8_133900258",
+      "e_8_133900578",
+      "e_8_133900577",
+      "e_8_133900621",
+      "e_8_133003454",
+      "e_8_904900003",
+      "e_8_133900569",
+      "e_8_133003534",
+      "e_8_133900297",
+      "e_8_131000212",
+      "e_8_131000090",
+      "e_8_131000092",
+      "e_8_133003528",
+      "e_8_131000275",
+      "e_8_131000051",
+      "e_8_131000214",
+      "e_8_133003526",
+      "e_8_148900016",
+      "e_8_131000239",
+      "e_8_131000306",
+      "e_8_131000224",
+      "e_8_131000307",
+      "e_8_131000240",
+      "e_8_131000308",
+      "e_8_133900240",
+      "e_8_133900104",
+      "e_8_133900124",
+      "e_8_131000021",
+      "e_8_131000006",
+      "e_8_131000039",
+      "e_8_131000284",
+      "e_8_133900182",
+      "e_8_133900299",
+      "e_8_131000161",
+      "e_8_131000093",
+      "e_8_131000095",
+      "e_8_131000096",
+      "e_8_133900454",
+      "e_8_133900666",
+      "e_8_133900694",
+      "e_8_133900456",
+      "l_8_131000062",
+      "l_8_131000055",
+      "q_121800001",
+      "q_133000009",
+      "f_31000053_6",
+      "f_31000053_5",
+      "f_31000053_1",
+      "f_31000053_10",
+      "f_31000053_9",
+      "f_31000053_8",
+      "f_31000053_11"
+    ],
+    "questStepData": {
+      "118": {
+        "translation": "Disable the Photon Barrier on the gate and enter Truthseeker's Pass"
+      },
+      "119": {
+        "translation": "Control the Tacetite Fulminate"
+      },
+      "120": {
+        "translation": "Throw the Tacetite Fulminate at the cracks in the Ledge Wheels to create a path"
+      },
+      "123": {
+        "translation": "Turn off the Photonvault"
+      },
+      "140": {
+        "translation": "Operate the Chronosorter"
+      },
+      "41": {
+        "translation": "Disable the Photon Barrier on the gate to Truthseeker's Pass"
+      },
+      "42": {
+        "translation": "Enter Truthseeker's Pass"
+      },
+      "43": {
+        "translation": "Go deep into Truthseeker's Pass"
+      },
+      "89": {
+        "translation": "Defeat the TD holograms"
+      },
+      "144": {
+        "translation": "Defeat the TD holograms"
+      },
+      "94": {
+        "translation": "Approach and activate the Flare Stone, then put out the Flare Crest (Part One)"
+      },
+      "104": {
+        "translation": "Leave the upper tier of Truthseeker's Pass for the middle tier"
+      },
+      "96": {
+        "translation": "Leave the upper tier of Truthseeker's Pass for the middle tier"
+      },
+      "145": {
+        "translation": "Inspect the CSC tome"
+      },
+      "97": {
+        "translation": "Leave the upper tier of Truthseeker's Pass for the middle tier"
+      },
+      "117": {
+        "translation": "Leave the upper tier of Truthseeker's Pass for the middle tier"
+      },
+      "105": {
+        "translation": "Leave the upper tier of Truthseeker's Pass for the middle tier"
+      },
+      "128": {
+        "translation": "Operate the Chronosorter and find a way to leave the chamber"
+      },
+      "103": {
+        "translation": "Enter the Carrier Room"
+      },
+      "90": {
+        "translation": "Approach and activate the Flare Stone, then put out the Flare Crest (Part Two)"
+      },
+      "109": {
+        "translation": "Take the Carrier Lift to the lower tier"
+      },
+      "110": {
+        "translation": "Take the Carrier Lift to the lower tier"
+      },
+      "146": {
+        "translation": "Inspect the CSC tome"
+      },
+      "111": {
+        "translation": "Go deeper into Truthseeker's Pass"
+      },
+      "92": {
+        "translation": "Go deeper into Truthseeker's Pass"
+      },
+      "141": {
+        "translation": "Go deeper into Truthseeker's Pass"
+      },
+      "148": {
+        "translation": "Go deeper into Truthseeker's Pass"
+      },
+      "93": {
+        "translation": "Turn off Photonvault and operate Chronosorter"
+      },
+      "99": {
+        "translation": "Approach and activate the Flare Stone, then put out the Flare Crest (Part Three)"
+      },
+      "143": {
+        "translation": "Defeat Lumiscale Construct: Severedge"
+      },
+      "142": {
+        "translation": "Approach and activate the Flare Stone, then put out the Flare Crest (Part Three)"
+      },
+      "112": {
+        "translation": "Head to the Carrier Lift"
+      },
+      "147": {
+        "translation": "Head to the Carrier Lift"
+      },
+      "98": {
+        "translation": "Head to the Carrier Lift"
+      },
+      "100": {
+        "translation": "Take the Carrier Lift to the upper tier"
+      },
+      "102": {
+        "translation": "Enter the secret tunnel"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Jinzhou Rising"
+  },
+  {
+    "id": 121800003,
+    "mapId": 20110008,
+    "questTypeId": 15,
+    "chapterId": 8,
+    "name": "Road of Pilgrimage",
+    "description": "The hibernating deity silently awaits the pilgrims' arrival. To distinguish truth from lies, seek answers from this divine being.",
+    "trackEntityId": "e_8_125900048",
+    "children": [
+      "e_8_125900067",
+      "e_8_125900105"
+    ],
+    "references": [
+      "e_8_125900048",
+      "e_8_125001248",
+      "e_8_125900069",
+      "e_8_125001310",
+      "e_8_125900267",
+      "e_8_125900107",
+      "e_8_125900108",
+      "e_8_125900159",
+      "e_8_125900160",
+      "e_8_125900161",
+      "e_8_125900067",
+      "e_8_125900026",
+      "e_8_125900028",
+      "e_8_125900031",
+      "e_8_125900036",
+      "e_8_125900038",
+      "e_8_125900030",
+      "e_8_125900033",
+      "e_8_125900015",
+      "e_8_125900014",
+      "e_8_125900016",
+      "e_8_125001188",
+      "e_8_125001187",
+      "e_8_125001190",
+      "e_8_125001192",
+      "e_8_125001191",
+      "e_8_125900040",
+      "e_8_125001189",
+      "e_8_125900105",
+      "e_8_125900050",
+      "e_8_125900270",
+      "e_8_125900271",
+      "e_8_125001311",
+      "e_8_125900064",
+      "e_8_125001308",
+      "e_8_125900115",
+      "e_8_125900266",
+      "e_8_125900250",
+      "e_8_125900000",
+      "e_8_125900051",
+      "e_8_146900055",
+      "e_8_131000212",
+      "e_8_125900047",
+      "e_8_125900058",
+      "e_8_125900063",
+      "e_8_125900074",
+      "e_8_125900096",
+      "e_8_125900097",
+      "e_8_125900098",
+      "e_8_125900099",
+      "e_8_125900104",
+      "e_8_125900117",
+      "e_8_125900118",
+      "e_8_125900119",
+      "e_8_125900121",
+      "e_8_125900122",
+      "e_8_125900126",
+      "e_8_125900128",
+      "e_8_125900129",
+      "e_8_125900130",
+      "e_8_125900137",
+      "e_8_125900138",
+      "e_8_125900139",
+      "e_8_125900141",
+      "e_8_125900142",
+      "e_8_125900145",
+      "e_8_125900147",
+      "e_8_125900149",
+      "e_8_125900150",
+      "e_8_125900151",
+      "e_8_125900152",
+      "e_8_125900153",
+      "e_8_125900154",
+      "e_8_125900238",
+      "e_8_125900249",
+      "e_8_125900253",
+      "e_8_125900254",
+      "e_8_125900257",
+      "e_8_125900258",
+      "e_8_125900260",
+      "e_8_125900261",
+      "e_8_125900263",
+      "e_8_125900265",
+      "e_8_125900273",
+      "e_8_125900264",
+      "e_8_146900249",
+      "e_8_146900058",
+      "e_8_102001734",
+      "e_8_102001735",
+      "e_8_102001708",
+      "e_8_102001709",
+      "e_8_102001710",
+      "e_8_102001739",
+      "e_8_102001740",
+      "e_8_102001741",
+      "e_8_146001130",
+      "e_8_146001131",
+      "e_8_146001132",
+      "e_8_146001133",
+      "e_8_146001134",
+      "e_8_146001140",
+      "e_8_125900001",
+      "e_8_125900003",
+      "e_8_125900022",
+      "e_8_125900023",
+      "e_8_125900024",
+      "e_8_125900112",
+      "e_8_125900165",
+      "e_8_133900698",
+      "e_8_141000628",
+      "e_8_141900068",
+      "q_121800002",
+      "q_125000122",
+      "f_125000007_3",
+      "f_125000007_12",
+      "f_125000007_4"
+    ],
+    "questStepData": {
+      "117": {
+        "translation": "Head to the Central Chamber"
+      },
+      "118": {
+        "translation": "Head to the Central Chamber"
+      },
+      "116": {
+        "translation": "Head to the Central Chamber"
+      },
+      "47": {
+        "translation": "Retrieve the Cipher Key"
+      },
+      "122": {
+        "translation": "Return to Hongzhen"
+      },
+      "132": {
+        "translation": "Enter the Secret Chamber"
+      },
+      "51": {
+        "translation": "Leave the Chamber"
+      },
+      "52": {
+        "translation": "Head to Mianloong Chamber"
+      },
+      "53": {
+        "translation": "Head to Mianloong Chamber"
+      },
+      "54": {
+        "translation": "Head to Mianloong Chamber"
+      },
+      "55": {
+        "translation": "Head to Mianloong Chamber"
+      },
+      "56": {
+        "translation": "Head to Mianloong Chamber"
+      },
+      "58": {
+        "translation": "Continue onward"
+      },
+      "59": {
+        "translation": "Continue onward"
+      },
+      "60": {
+        "translation": "Continue onward"
+      },
+      "61": {
+        "translation": "Inspect the Hibernation Pod"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Jinzhou Rising"
+  },
+  {
+    "id": 121800004,
+    "mapId": 20110008,
+    "questTypeId": 15,
+    "chapterId": 8,
+    "name": "Mianloong Chamber",
+    "description": "According to the Sentinel's hints, three Flare Stones must be activated, and the Flare Crests be put out to remove the chains on them that are made of special Flare Crests.",
+    "trackEntityId": "e_8_146900195",
+    "children": [
+      "e_8_146001149",
+      "e_8_146001147",
+      "e_8_146001148",
+      "e_8_146001150",
+      "e_8_146001145",
+      "e_8_146001144",
+      "e_8_146001164",
+      "e_8_146001142",
+      "e_8_146001143",
+      "e_8_146900284",
+      "e_8_146900282",
+      "l_8_146000053"
+    ],
+    "references": [
+      "e_8_146900195",
+      "e_8_125001310",
+      "e_8_125900267",
+      "e_8_125900107",
+      "e_8_125900108",
+      "e_8_125900159",
+      "e_8_125900160",
+      "e_8_125900161",
+      "e_8_146900063",
+      "e_8_131000061",
+      "e_8_146001149",
+      "e_8_146001147",
+      "e_8_146001148",
+      "e_8_102001705",
+      "e_8_102001732",
+      "e_8_102001733",
+      "e_8_146001164",
+      "e_8_146001143",
+      "e_8_146001142",
+      "e_8_131000103",
+      "e_8_146900064",
+      "e_8_146900280",
+      "e_8_146001140",
+      "e_8_146001151",
+      "e_8_146001152",
+      "e_8_102001706",
+      "e_8_131000155",
+      "e_8_146001153",
+      "e_8_146001150",
+      "e_8_146001145",
+      "e_8_146001144",
+      "e_8_146900283",
+      "e_8_146900284",
+      "e_8_146900282",
+      "e_8_146900070",
+      "e_8_146900285",
+      "e_8_146900072",
+      "e_8_102001716",
+      "e_8_146001119",
+      "e_8_148900027",
+      "e_8_146900071",
+      "e_8_148900031",
+      "e_8_148900033",
+      "e_8_148900032",
+      "e_8_102001717",
+      "e_8_102001746",
+      "e_8_102001747",
+      "e_8_146001115",
+      "e_8_141900334",
+      "e_8_146001127",
+      "e_8_146001128",
+      "e_8_146001155",
+      "e_8_146900065",
+      "e_8_146900194",
+      "e_8_146900196",
+      "e_8_125900275",
+      "e_8_146900243",
+      "e_8_146900286",
+      "e_8_102001708",
+      "e_8_102001709",
+      "e_8_102001710",
+      "e_8_102001734",
+      "e_8_102001735",
+      "e_8_102001739",
+      "e_8_102001740",
+      "e_8_102001741",
+      "e_8_146001130",
+      "e_8_146001131",
+      "e_8_146001132",
+      "e_8_146001133",
+      "e_8_146001134",
+      "e_8_146900058",
+      "e_8_102001728",
+      "e_8_102001730",
+      "e_8_102001742",
+      "e_8_102001743",
+      "e_8_102001744",
+      "e_8_146001158",
+      "e_8_146001160",
+      "e_8_146001161",
+      "e_8_146900007",
+      "e_8_146900055",
+      "e_8_146900105",
+      "e_8_146900106",
+      "e_8_125900264",
+      "e_8_146900099",
+      "e_8_148900008",
+      "e_8_148900012",
+      "e_8_148900015",
+      "l_8_146000053",
+      "l_8_146900009",
+      "q_121800003",
+      "q_121800004",
+      "q_146000002",
+      "f_146000000_1"
+    ],
+    "questStepData": {
+      "13": {
+        "translation": "Inspect the hibernation pod"
+      },
+      "9": {
+        "translation": "Operate the Chronosorter to adjust the water level"
+      },
+      "5": {
+        "translation": "Approach and activate the Flare Stone to put out the Flare Crest (Part One)"
+      },
+      "50": {
+        "translation": "Operate the Chronosorter to adjust the water level"
+      },
+      "15": {
+        "translation": "Approach and activate the Flare Stone to put out the Flare Crest (Part Two)"
+      },
+      "16": {
+        "translation": "Operate the Chronosorter"
+      },
+      "17": {
+        "translation": "Levitate the Tacetite Fulminate"
+      },
+      "18": {
+        "translation": "Use the Tacetite Fulminate to destroy the Fissured Ledge"
+      },
+      "38": {
+        "translation": "Approach and activate the Flare Stone to put out the Flare Crest (Part Two)"
+      },
+      "62": {
+        "translation": "Defeat the TD holograms"
+      },
+      "48": {
+        "translation": "Operate the Chronosorter to adjust the water level"
+      },
+      "7": {
+        "translation": "Approach and activate the Flare Stone to put out the Flare Crest (Part Two)"
+      },
+      "25": {
+        "translation": "Use the Tacetite Fulminate to destroy the Fissured Ledge"
+      },
+      "6": {
+        "translation": "Approach and activate the Flare Stone to put out the Flare Crest (Part Three)"
+      },
+      "8": {
+        "translation": "Return to Mianloong Chamber and inspect the hibernation pod"
+      },
+      "49": {
+        "translation": "Check the file"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Jinzhou Rising"
+  },
+  {
+    "id": 121800005,
+    "mapId": 20110008,
+    "questTypeId": 15,
+    "chapterId": 8,
+    "name": "The Commander of Time",
+    "description": "It is the deity that commands time. It is the deity that bestows blessings. Now is your time to confront Sentinel Jué.",
+    "trackEntityId": "e_8_125001310",
+    "children": [
+      "e_8_121800006"
+    ],
+    "references": [
+      "e_8_125001310",
+      "e_8_125900267",
+      "e_8_125900107",
+      "e_8_125900108",
+      "e_8_125900159",
+      "e_8_125900160",
+      "e_8_125900161",
+      "e_8_125900266",
+      "e_8_125900068",
+      "e_8_125001219",
+      "e_8_125001217",
+      "e_8_125001218",
+      "e_8_125001220",
+      "e_8_125900100",
+      "e_8_146900063",
+      "e_8_146900064",
+      "e_8_146900249",
+      "e_8_121800006",
+      "e_8_125900003",
+      "e_8_125900001",
+      "e_8_125900022",
+      "e_8_125900023",
+      "e_8_125900024",
+      "e_8_125900112",
+      "e_8_125900165",
+      "e_8_125900154",
+      "e_8_904900001",
+      "e_8_904900002",
+      "e_8_140900034",
+      "e_8_131000061",
+      "e_8_140900026",
+      "e_8_140900027",
+      "e_8_140900028",
+      "e_8_140900029",
+      "e_8_140900032",
+      "e_8_140900149",
+      "e_8_140900150",
+      "e_8_140900151",
+      "e_8_140900155",
+      "e_8_140900152",
+      "e_8_140900153",
+      "e_8_140900154",
+      "e_8_140900156",
+      "e_8_140900158",
+      "e_8_125900264",
+      "e_8_146900286",
+      "q_121800004",
+      "q_125000123",
+      "f_125000007_10",
+      "f_125000007_5"
+    ],
+    "questStepData": {
+      "65": {
+        "translation": "Leave Mianloong Chamber"
+      },
+      "79": {
+        "translation": "Complete the Destined Battle"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Jinzhou Rising"
+  },
+  {
+    "id": 121800006,
+    "mapId": 20110008,
+    "questTypeId": 15,
+    "chapterId": 8,
+    "name": "When the Snow Clears",
+    "description": "Time resumes and the snow clears. Mt. Firmament emerges from its long seclusion, ready to embrace its revival.",
+    "trackEntityId": "e_8_125900096",
+    "children": [
+      "e_8_125900096",
+      "e_8_125900097",
+      "e_8_125900098",
+      "e_8_125900099",
+      "e_8_125900238",
+      "l_8_131900003"
+    ],
+    "references": [
+      "e_8_125900096",
+      "e_8_125900097",
+      "e_8_125900098",
+      "e_8_125900099",
+      "e_8_125900238",
+      "e_8_136905848",
+      "e_8_140900034",
+      "e_8_140900026",
+      "e_8_140900027",
+      "e_8_140900028",
+      "e_8_140900029",
+      "e_8_140900032",
+      "e_8_140900149",
+      "e_8_140900150",
+      "e_8_140900151",
+      "e_8_140900155",
+      "e_8_140900152",
+      "e_8_140900153",
+      "e_8_140900154",
+      "e_8_140900156",
+      "e_8_140900158",
+      "e_8_131900008",
+      "e_8_136905932",
+      "e_8_136906107",
+      "e_8_136906111",
+      "e_8_136906112",
+      "l_8_131900003",
+      "q_121800005",
+      "q_125000124",
+      "f_125000007_8"
+    ],
+    "questStepData": {
+      "82": {
+        "translation": "Return to Hongzhen"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Jinzhou Rising"
+  },
+  {
     "id": 318750004,
     "mapId": 8,
     "questTypeId": 10,
@@ -88969,5 +91374,1630 @@
     },
     "typeName": "Event Quests",
     "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 936800000,
+    "mapId": 8,
+    "questTypeId": 1,
+    "chapterId": 44,
+    "name": "The Nethermancer's Requiem",
+    "description": "With the crisis behind you, Liangyu seems to have something to discuss. Go find out what it is when you have a moment. You may soon be seeing that Nethermancer who worked alongside you at the Manifold Sanctum.",
+    "trackEntityId": "e_8_915800003",
+    "children": [
+      "e_8_915800003",
+      "e_8_915000083",
+      "e_8_915000082"
+    ],
+    "references": [
+      "e_8_915800003",
+      "e_8_693751116",
+      "e_8_915000083",
+      "e_8_254750090",
+      "e_8_915800099",
+      "e_8_915800068",
+      "e_8_915000082",
+      "l_8_254750001",
+      "q_936000005",
+      "f_936000004_2",
+      "f_936000004_3",
+      "f_936000004_4",
+      "f_936000004_5",
+      "f_936000004_7",
+      "f_936000004_6",
+      "f_936000004_8",
+      "f_936000004_9"
+    ],
+    "questStepData": {
+      "8": {
+        "translation": "Talk to Liangyu"
+      },
+      "13": {
+        "translation": "Head to Yanshu's home and ask after Jingran"
+      },
+      "11": {
+        "translation": "Go meet Jingran"
+      },
+      "12": {
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 50
+          },
+          {
+            "item": {
+              "id": 1,
+              "name": "Union EXP"
+            },
+            "count": 500
+          },
+          {
+            "item": {
+              "id": 43010003,
+              "name": "Advanced Resonance Potion"
+            },
+            "count": 3
+          },
+          {
+            "item": {
+              "id": 36000003,
+              "name": "Advanced Sealed Tube"
+            },
+            "count": 3
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 30000
+          }
+        ]
+      },
+      "25": {
+        "translation": "Read Qingxiao's WavesLine message",
+        "rewards": [
+          {
+            "item": {
+              "id": 80700051,
+              "name": "Wish for Peace - Drifting Resonance"
+            },
+            "count": 1
+          }
+        ]
+      },
+      "27": {
+        "translation": "Head to Yanshu's home and ask after Jingran"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Rebirth From the Depths"
+  },
+  {
+    "id": 264800003,
+    "mapId": 8,
+    "questTypeId": 2,
+    "chapterId": 3009,
+    "name": "The Line Between Life and Death",
+    "description": "Qiuhong has asked for your help investigating a \"ghost\" sighting.",
+    "trackEntityId": "e_8_264800000",
+    "children": [
+      "e_8_264800057",
+      "e_8_264800001",
+      "e_8_264800088",
+      "e_8_264800105",
+      "e_8_264800106",
+      "e_8_264800107",
+      "e_8_264800091",
+      "e_8_264800093",
+      "e_8_264800095",
+      "e_8_264800094",
+      "e_8_264800096",
+      "e_8_264800086",
+      "e_8_264800118",
+      "e_8_264800111",
+      "e_8_264800112",
+      "e_8_264800113",
+      "e_8_264800015",
+      "e_8_264800067",
+      "e_8_264800069",
+      "e_8_264800019",
+      "e_8_264800121",
+      "e_8_264800048",
+      "e_8_264800049",
+      "e_8_264800023",
+      "e_8_264800020",
+      "e_8_264800024",
+      "e_8_264800032",
+      "e_8_264800025",
+      "e_8_264800035",
+      "e_8_264800026",
+      "e_8_264800037",
+      "e_8_264800027",
+      "e_8_264800039",
+      "e_8_264800028",
+      "e_8_264800041",
+      "e_8_264800052",
+      "e_8_264800043",
+      "e_8_264800053",
+      "e_8_264800044",
+      "e_8_264800046",
+      "e_8_264800114",
+      "e_8_264800122",
+      "e_8_264800110"
+    ],
+    "references": [
+      "e_8_264800000",
+      "e_8_264800057",
+      "e_8_264800100",
+      "e_8_150750076",
+      "e_8_150750842",
+      "e_8_264800001",
+      "e_8_264800088",
+      "e_8_264800105",
+      "e_8_264800106",
+      "e_8_264800107",
+      "e_8_264800054",
+      "e_8_151750619",
+      "e_8_151750620",
+      "e_8_151750621",
+      "e_8_151750622",
+      "e_8_151750623",
+      "e_8_252750500",
+      "e_8_252750501",
+      "e_8_252750503",
+      "e_8_252750504",
+      "e_8_252750574",
+      "e_8_264800099",
+      "e_8_264800091",
+      "e_8_264800093",
+      "e_8_264800095",
+      "e_8_264800094",
+      "e_8_264800096",
+      "e_8_264800120",
+      "e_8_264800086",
+      "e_8_264800118",
+      "e_8_264800111",
+      "e_8_264800112",
+      "e_8_264800113",
+      "e_8_264800124",
+      "e_8_264800015",
+      "e_8_264800067",
+      "e_8_264800069",
+      "e_8_264800058",
+      "e_8_264800059",
+      "e_8_264800060",
+      "e_8_264800061",
+      "e_8_264800062",
+      "e_8_151750624",
+      "e_8_151750625",
+      "e_8_151750626",
+      "e_8_151750627",
+      "e_8_273750233",
+      "e_8_273750234",
+      "e_8_151750612",
+      "e_8_273750236",
+      "e_8_273750228",
+      "e_8_172750422",
+      "e_8_172750425",
+      "e_8_172750423",
+      "e_8_172750424",
+      "e_8_264800019",
+      "e_8_264800121",
+      "e_8_264800048",
+      "e_8_264800049",
+      "e_8_264800023",
+      "e_8_264800032",
+      "e_8_264800035",
+      "e_8_264800037",
+      "e_8_264800039",
+      "e_8_264800041",
+      "e_8_264800043",
+      "e_8_264800044",
+      "e_8_264800046",
+      "e_8_264800020",
+      "e_8_264800024",
+      "e_8_264800025",
+      "e_8_264800026",
+      "e_8_264800027",
+      "e_8_264800028",
+      "e_8_264800052",
+      "e_8_264800053",
+      "e_8_264800051",
+      "e_8_264800114",
+      "e_8_264800122",
+      "e_8_264800110",
+      "l_8_150750031",
+      "q_936800000",
+      "q_125000126",
+      "f_264800002_2",
+      "f_264800002_3",
+      "f_264800002_39",
+      "f_264800002_5",
+      "f_264800002_8",
+      "f_264800002_9",
+      "f_264800002_10",
+      "f_264800002_11",
+      "f_264800002_13",
+      "f_264800002_14",
+      "f_264800002_16",
+      "f_264800002_15",
+      "f_264800002_20",
+      "f_264800002_21",
+      "f_264800002_28",
+      "f_264800002_30",
+      "f_264800002_31",
+      "f_264800002_33",
+      "f_264800002_34",
+      "f_264800002_35",
+      "f_264800002_36",
+      "f_264800002_37",
+      "f_264800002_51"
+    ],
+    "questStepData": {
+      "4": {
+        "translation": "Talk with Abby"
+      },
+      "18": {
+        "translation": "Head to the stall"
+      },
+      "19": {
+        "translation": "Talk to Lyu Yi"
+      },
+      "20": {
+        "translation": "Check on Abby"
+      },
+      "31": {
+        "translation": "Report your findings to Qiuhong"
+      },
+      "36": {
+        "translation": "Meet the Ministry of War reinforcements"
+      },
+      "38": {
+        "translation": "Use the Copper Mirror of Truth"
+      },
+      "15": {
+        "translation": "Confront Lyu Yi"
+      },
+      "40": {
+        "translation": "Defeat the Tacet Discord"
+      },
+      "41": {
+        "translation": "Comfort Lyu Yi"
+      },
+      "59": {
+        "translation": "Start the Rewind"
+      },
+      "62": {
+        "translation": "Wait until night (21:00-00:00)"
+      },
+      "70": {
+        "translation": "Wait for Abby and Buling to lure the shopkeeper away"
+      },
+      "73": {
+        "translation": "Complete the deduction"
+      },
+      "77": {
+        "translation": "Reach the quest area"
+      },
+      "79": {
+        "translation": "Use the Copper Mirror of Truth"
+      },
+      "81": {
+        "translation": "Uncover Lyu Yi's secret"
+      },
+      "82": {
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 10
+          },
+          {
+            "item": {
+              "id": 80700014,
+              "name": "Constable Token"
+            },
+            "count": 100
+          },
+          {
+            "item": {
+              "id": 43010003,
+              "name": "Advanced Resonance Potion"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020003,
+              "name": "Advanced Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 20000
+          }
+        ]
+      },
+      "95": {
+        "translation": "Explain the conclusion of your reasoning"
+      }
+    },
+    "typeName": "Side Quests",
+    "chapterName": "Rafter Kite, Jade Steed, and the Visitor"
+  },
+  {
+    "id": 264800002,
+    "mapId": 8,
+    "questTypeId": 10,
+    "chapterId": null,
+    "name": "The Strings Remember: First String",
+    "description": "Qingxiao seems to have something to discuss with you. Why not pay a visit to her training hall up on the peak?",
+    "trackEntityId": "e_8_277800014",
+    "children": [
+      "e_8_241800012",
+      "e_8_277800000"
+    ],
+    "references": [
+      "e_8_277800014",
+      "e_8_241800012",
+      "e_8_277800015",
+      "e_8_277800000",
+      "l_8_168800010",
+      "f_277800000_1"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Talk to Qingxiao"
+      },
+      "7": {
+        "translation": "Go see Qingxiao at the training hall on the mountain"
+      }
+    },
+    "typeName": "Event Quests",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 264800004,
+    "mapId": 8,
+    "questTypeId": 10,
+    "chapterId": null,
+    "name": "The Strings Remember: Second String",
+    "description": "You've agreed to learn the guqin from Qingxiao. Head to her training hall to begin the next lesson.",
+    "trackEntityId": "e_8_277800009",
+    "children": [
+      "e_8_241800013",
+      "e_8_277800001"
+    ],
+    "references": [
+      "e_8_277800009",
+      "e_8_241800013",
+      "e_8_277800015",
+      "e_8_277800001",
+      "l_8_168800010",
+      "f_277800000_2"
+    ],
+    "questStepData": {
+      "4": {
+        "translation": "Talk to Qingxiao"
+      },
+      "7": {
+        "translation": "Meet up with Qingxiao at the training hall"
+      }
+    },
+    "typeName": "Event Quests",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 264800005,
+    "mapId": 8,
+    "questTypeId": 10,
+    "chapterId": null,
+    "name": "The Strings Remember: Third String",
+    "description": "This time the lesson has been moved to Boughrest Ridge. Head over and see what's in store.",
+    "trackEntityId": "e_8_241800014",
+    "children": [
+      "e_8_241800014",
+      "e_8_277800002"
+    ],
+    "references": [
+      "e_8_241800014",
+      "e_8_277800002",
+      "e_8_277800010",
+      "f_277800000_3"
+    ],
+    "questStepData": {
+      "4": {
+        "translation": "Talk to Qingxiao"
+      },
+      "7": {
+        "translation": "Meet up with Qingxiao at Boughrest Ridge"
+      }
+    },
+    "typeName": "Event Quests",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 264800006,
+    "mapId": 8,
+    "questTypeId": 10,
+    "chapterId": null,
+    "name": "The Strings Remember: Fourth String",
+    "description": "Before you know it, it's time for Qingxiao to test how far your guqin playing has come. Head to the courtyard at Boughrest Ridge to keep the appointment.",
+    "trackEntityId": "e_8_241800015",
+    "children": [
+      "e_8_241800015",
+      "e_8_277800003"
+    ],
+    "references": [
+      "e_8_241800015",
+      "e_8_277800003",
+      "e_8_277800011",
+      "f_277800000_4"
+    ],
+    "questStepData": {
+      "4": {
+        "translation": "Talk to Qingxiao"
+      },
+      "8": {
+        "translation": "Meet up with Qingxiao at Boughrest Ridge"
+      }
+    },
+    "typeName": "Event Quests",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 264800007,
+    "mapId": 8,
+    "questTypeId": 10,
+    "chapterId": null,
+    "name": "The Strings Remember: Fifth String",
+    "description": "The new lesson site is in the Western Fang Peaks. When the appointed time comes, go meet Qingxiao there.",
+    "trackEntityId": "e_8_241800016",
+    "children": [
+      "e_8_241800016",
+      "e_8_277800004"
+    ],
+    "references": [
+      "e_8_241800016",
+      "e_8_277800004",
+      "e_8_277800012",
+      "f_277800000_5"
+    ],
+    "questStepData": {
+      "4": {
+        "translation": "Talk to Qingxiao"
+      },
+      "8": {
+        "translation": "Meet up with Qingxiao at the Skyworks"
+      }
+    },
+    "typeName": "Event Quests",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 264800008,
+    "mapId": 8,
+    "questTypeId": 10,
+    "chapterId": null,
+    "name": "The Strings Remember: Sixth String",
+    "description": "Qingxiao mentioned earlier that she wanted to discuss something with you today. Ask her about it while you're there for your lesson.",
+    "trackEntityId": "e_8_241800017",
+    "children": [
+      "e_8_241800017",
+      "e_8_277800005"
+    ],
+    "references": [
+      "e_8_241800017",
+      "e_8_277800005",
+      "e_8_277800013",
+      "f_277800000_6"
+    ],
+    "questStepData": {
+      "4": {
+        "translation": "Talk to Qingxiao"
+      },
+      "8": {
+        "translation": "Meet up with Qingxiao at the Skyworks"
+      }
+    },
+    "typeName": "Event Quests",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 264800009,
+    "mapId": 8,
+    "questTypeId": 10,
+    "chapterId": null,
+    "name": "The Strings Remember: Seventh String",
+    "description": "You've agreed to play a duet with Qingxiao today. Head to that familiar pavilion near the Ministry of War. She's waiting for you.",
+    "trackEntityId": "e_8_241800018",
+    "children": [
+      "e_8_241800018",
+      "e_8_277800006"
+    ],
+    "references": [
+      "e_8_241800018",
+      "e_8_277800006",
+      "e_8_277800007",
+      "f_277800000_7"
+    ],
+    "questStepData": {
+      "4": {
+        "translation": "Talk to Qingxiao"
+      },
+      "8": {
+        "translation": "Meet up with Qingxiao at the Ministry of War"
+      }
+    },
+    "typeName": "Event Quests",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 268800001,
+    "mapId": 8,
+    "questTypeId": 2,
+    "chapterId": 3009,
+    "name": "Hidden Data",
+    "description": "Ruoyun has asked for your help investigating a piece of data hidden inside the Xuanyuan Domain.",
+    "trackEntityId": "e_8_268800004",
+    "children": [
+      "e_911_268800099",
+      "e_911_268800107",
+      "e_911_268800126",
+      "e_911_268800125",
+      "e_911_268800104",
+      "e_911_268800111",
+      "e_911_268800116",
+      "e_911_268800147",
+      "e_911_268800148",
+      "e_911_268800153",
+      "e_911_268800154",
+      "e_911_268800189",
+      "e_911_268800089",
+      "e_911_268800062",
+      "e_911_268800201",
+      "e_911_268800059",
+      "e_911_268800029",
+      "e_911_268800071",
+      "e_911_268800129"
+    ],
+    "references": [
+      "e_8_268800004",
+      "e_911_268800058",
+      "e_911_268800201",
+      "e_911_268800099",
+      "e_911_268800107",
+      "e_911_268800126",
+      "e_911_268800125",
+      "e_911_268800104",
+      "e_911_268800111",
+      "e_911_268800116",
+      "e_911_268800147",
+      "e_911_268800148",
+      "e_911_268800153",
+      "e_911_268800154",
+      "e_911_268800189",
+      "e_911_268800089",
+      "e_911_268800062",
+      "e_911_268800057",
+      "e_911_268800056",
+      "e_911_268800059",
+      "e_911_268800086",
+      "e_911_268800029",
+      "e_911_268800071",
+      "e_911_268800122",
+      "e_911_268800123",
+      "e_911_268800119",
+      "e_911_268800129",
+      "e_911_268800088",
+      "e_911_268800198",
+      "q_125000126",
+      "q_936800000",
+      "f_268800000_2",
+      "f_268800000_3",
+      "f_268800000_18",
+      "f_268800000_4",
+      "f_268800000_5",
+      "f_268800000_8",
+      "f_268800000_6"
+    ],
+    "questStepData": {
+      "8": {
+        "translation": "Read Ruoyun's WavesLine message"
+      },
+      "9": {
+        "translation": "Head to the Xuanyuan Domain"
+      },
+      "30": {
+        "translation": "Explore the Xuanyuan Domain again"
+      },
+      "19": {
+        "translation": "Use the Copper Mirror of Truth"
+      },
+      "12": {
+        "translation": "Investigate where the Reverberation vanished",
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 10
+          },
+          {
+            "item": {
+              "id": 80700014,
+              "name": "Constable Token"
+            },
+            "count": 100
+          },
+          {
+            "item": {
+              "id": 43010003,
+              "name": "Advanced Resonance Potion"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 36000003,
+              "name": "Advanced Sealed Tube"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 20000
+          }
+        ]
+      },
+      "31": {
+        "translation": "Follow Jadie"
+      },
+      "32": {
+        "translation": "Prepare to enter the Xuanyuan Domain"
+      },
+      "33": {
+        "translation": "Talk to Ruoyun"
+      }
+    },
+    "typeName": "Side Quests",
+    "chapterName": "Rafter Kite, Jade Steed, and the Visitor"
+  },
+  {
+    "id": 121800007,
+    "mapId": 20110018,
+    "questTypeId": 15,
+    "chapterId": 8,
+    "name": "A New Companion",
+    "description": "After the battle of Norfall Barren, everything came to an end. Your friends are calling you for a meet-up with snacks at Panhua's Restaurant. It seems they like to know more about that \"little one\" from within your body...",
+    "trackEntityId": "e_8_880900002",
+    "children": [
+      "e_8_880900002",
+      "e_8_880900000",
+      "e_8_880900001"
+    ],
+    "references": [
+      "e_8_880900002",
+      "e_8_880900000",
+      "e_8_880900001",
+      "e_8_11000354",
+      "e_8_109005247",
+      "e_8_11000351",
+      "e_8_109005244",
+      "e_8_11000352",
+      "e_8_109005245",
+      "e_8_11000353",
+      "e_8_109005246",
+      "e_8_11000504",
+      "e_8_11000505",
+      "e_8_109005251",
+      "e_8_109005248",
+      "e_8_139800012",
+      "e_8_109002505",
+      "e_8_125900106",
+      "e_8_125900274",
+      "e_8_109800535",
+      "e_8_11000502",
+      "e_8_11000503",
+      "e_8_109003440",
+      "e_8_109003441",
+      "e_8_109003442",
+      "e_8_109003443",
+      "e_8_109003444",
+      "e_8_109003445",
+      "e_8_109003446",
+      "e_8_109004624",
+      "e_8_109004625",
+      "e_8_109004626",
+      "e_8_109004627",
+      "e_8_109004628",
+      "e_8_109004629",
+      "e_8_109004630",
+      "e_8_109004631",
+      "e_8_109004632",
+      "e_8_109004633",
+      "e_8_109004634",
+      "e_8_109004635",
+      "e_8_109004636",
+      "e_8_109004637",
+      "e_8_109004638",
+      "e_8_109004639",
+      "e_8_109004640",
+      "e_8_109004641",
+      "e_8_109005249",
+      "e_8_109700312",
+      "e_8_109700313",
+      "e_8_109700314",
+      "e_8_109700315",
+      "e_8_109700316",
+      "e_8_109700317",
+      "e_8_109700318",
+      "e_8_109700319",
+      "e_8_109700320",
+      "e_8_109700327",
+      "e_8_109700328",
+      "e_8_109700329",
+      "e_8_109700330",
+      "e_8_109700331",
+      "e_8_109700332",
+      "q_880000013",
+      "f_880900000_1",
+      "f_880900000_2",
+      "f_880900000_3",
+      "f_880900000_4"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Head to Panhua's Restaurant and talk to your friends"
+      }
+    },
+    "typeName": "Main Quests",
+    "chapterName": "Jinzhou Rising"
+  },
+  {
+    "id": 269800000,
+    "mapId": 8,
+    "questTypeId": 2,
+    "chapterId": 3009,
+    "name": "More Than a Warden: Part II",
+    "description": "Qingyan seems to have a few things on his mind now that he's recovered. Go see what they are...",
+    "trackEntityId": "e_8_269800006",
+    "children": [
+      "e_8_269800006",
+      "e_8_269800009",
+      "e_8_269800011",
+      "e_8_269800012",
+      "e_8_269800019",
+      "e_8_269800020",
+      "e_8_269800021",
+      "e_8_269800033",
+      "e_8_269800034",
+      "e_8_269800035",
+      "e_8_269800030",
+      "e_8_269800031",
+      "e_8_269800032",
+      "e_8_269800016",
+      "e_8_269800017",
+      "e_8_269800018",
+      "e_8_269800014",
+      "e_8_269800052",
+      "e_8_269800060",
+      "e_8_164800022",
+      "e_8_269800038",
+      "e_8_164800030",
+      "e_8_164800025",
+      "e_8_164800026",
+      "e_8_164800027",
+      "e_8_164800028",
+      "e_8_164800029",
+      "e_8_164800031",
+      "e_8_269800039"
+    ],
+    "references": [
+      "e_8_269800006",
+      "e_8_320751560",
+      "e_8_320751571",
+      "e_8_320751581",
+      "e_8_269800009",
+      "e_8_269800011",
+      "e_8_269800012",
+      "e_8_252750221",
+      "e_8_252750222",
+      "e_8_252750224",
+      "e_8_252750252",
+      "e_8_252750253",
+      "e_8_252750269",
+      "e_8_252750616",
+      "e_8_320751027",
+      "e_8_320751028",
+      "e_8_320751029",
+      "e_8_252750223",
+      "e_8_252750270",
+      "e_8_269800019",
+      "e_8_269800020",
+      "e_8_269800021",
+      "e_8_269800010",
+      "e_8_269800037",
+      "e_8_269800038",
+      "e_8_269800033",
+      "e_8_269800034",
+      "e_8_269800035",
+      "e_8_269800030",
+      "e_8_269800031",
+      "e_8_269800032",
+      "e_8_269800016",
+      "e_8_269800017",
+      "e_8_269800018",
+      "e_8_269800014",
+      "e_8_269800052",
+      "e_8_269800060",
+      "e_8_164800022",
+      "e_8_252750268",
+      "e_8_164800030",
+      "e_8_164800025",
+      "e_8_164800026",
+      "e_8_164800027",
+      "e_8_164800028",
+      "e_8_164800029",
+      "e_8_164800031",
+      "e_8_269800039",
+      "e_8_269800054",
+      "q_936000005",
+      "q_164750001",
+      "f_269800000_2",
+      "f_269800000_1",
+      "f_269800000_3",
+      "f_269800000_5",
+      "f_269800000_6",
+      "f_269800000_13",
+      "f_269800000_14",
+      "f_269800000_7",
+      "f_269800000_8",
+      "f_269800000_10",
+      "f_269800000_11",
+      "f_269800000_12"
+    ],
+    "questStepData": {
+      "19": {
+        "translation": "Comfort Qingyan"
+      },
+      "4": {
+        "translation": "Talk to the troubled Qingyan"
+      },
+      "5": {
+        "translation": "Reach Xianling Village"
+      },
+      "6": {
+        "translation": "Talk to Qiankun"
+      },
+      "7": {
+        "translation": "Go mine Jade Hexahedron"
+      },
+      "13": {
+        "translation": "Go rescue Qingyan"
+      },
+      "14": {
+        "translation": "Ask what happened"
+      },
+      "15": {
+        "translation": "Return to the rebuild site"
+      },
+      "16": {
+        "translation": "Report back to Qiankun"
+      },
+      "17": {
+        "translation": "Wait for the rebuild to finish"
+      },
+      "18": {
+        "translation": "Talk to \"that person\" in the corner",
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 20
+          },
+          {
+            "item": {
+              "id": 80700014,
+              "name": "Constable Token"
+            },
+            "count": 100
+          },
+          {
+            "item": {
+              "id": 36000003,
+              "name": "Advanced Sealed Tube"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020003,
+              "name": "Advanced Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 20000
+          }
+        ]
+      },
+      "44": {
+        "translation": "Defeat the Tacet Discords"
+      },
+      "45": {
+        "translation": "Defeat the Tacet Discords"
+      },
+      "46": {
+        "translation": "Defeat the Tacet Discords"
+      },
+      "69": {
+        "translation": "Go mine Jade Hexahedron"
+      },
+      "71": {
+        "translation": "Talk to Qingyan"
+      }
+    },
+    "typeName": "Side Quests",
+    "chapterName": "Rafter Kite, Jade Steed, and the Visitor"
+  },
+  {
+    "id": 269800001,
+    "mapId": 8,
+    "questTypeId": 4,
+    "chapterId": null,
+    "name": "Short Days, Shorter Nights I",
+    "description": "You cross paths with Jingran again by chance, and he seems to have stumbled onto an old story involving the Nethermancers.",
+    "trackEntityId": "e_8_269800042",
+    "children": [
+      "e_8_269800042",
+      "e_8_269800040",
+      "e_8_164800033",
+      "e_8_164800034"
+    ],
+    "references": [
+      "e_8_269800042",
+      "e_8_269800040",
+      "e_8_164800032",
+      "e_8_164800033",
+      "e_8_164800034",
+      "e_8_269800056",
+      "q_936800000",
+      "f_269800001_3",
+      "f_269800001_4",
+      "f_269800001_5",
+      "f_269800001_6"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Check on the panicked courier"
+      },
+      "4": {
+        "translation": "Find the \"ghost\""
+      },
+      "6": {
+        "translation": "Try out Jingran's modified camera",
+        "rewards": [
+          {
+            "item": {
+              "id": 80030000,
+              "name": "Intimacy"
+            },
+            "count": 480
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 3000
+          },
+          {
+            "item": {
+              "id": 43010001,
+              "name": "Basic Resonance Potion"
+            },
+            "count": 1
+          }
+        ]
+      }
+    },
+    "typeName": "Daily Quest",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 269800002,
+    "mapId": 8,
+    "questTypeId": 4,
+    "chapterId": null,
+    "name": "Short Days, Shorter Nights II",
+    "description": "A WavesLine message has come in from Jingran. Go with him and get to the bottom of this old Nethermancer story.",
+    "trackEntityId": "e_8_269800043",
+    "children": [
+      "e_8_269800043",
+      "e_8_269800044",
+      "e_8_164800000",
+      "e_8_164800001",
+      "e_8_269800063",
+      "e_8_164800003"
+    ],
+    "references": [
+      "e_8_269800043",
+      "e_8_269800044",
+      "e_8_164800000",
+      "e_8_269800057",
+      "e_8_164800001",
+      "e_8_269800063",
+      "e_8_164800003",
+      "e_8_164800032",
+      "q_269800001",
+      "f_269800001_8",
+      "f_269800001_9",
+      "f_269800001_10",
+      "f_269800001_11"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Meet Jingran at the spot"
+      },
+      "4": {
+        "translation": "Take a photo of Jiang Laowu's goods"
+      },
+      "5": {
+        "translation": "Go check out the figure"
+      },
+      "6": {
+        "translation": "Talk with Jingran",
+        "rewards": [
+          {
+            "item": {
+              "id": 80030000,
+              "name": "Intimacy"
+            },
+            "count": 480
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 3000
+          },
+          {
+            "item": {
+              "id": 43010001,
+              "name": "Basic Resonance Potion"
+            },
+            "count": 1
+          }
+        ]
+      }
+    },
+    "typeName": "Daily Quest",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 269800003,
+    "mapId": 8,
+    "questTypeId": 4,
+    "chapterId": null,
+    "name": "Short Days, Shorter Nights III",
+    "description": "Late at night, a WavesLine message arrives from Jingran. He's found a lead on that damaged item from before and is inviting you over to take a look.",
+    "trackEntityId": "e_8_269800045",
+    "children": [
+      "e_8_269800045",
+      "e_8_269800046",
+      "e_8_164800004"
+    ],
+    "references": [
+      "e_8_269800045",
+      "e_8_269800046",
+      "e_8_164800004",
+      "e_8_269800058",
+      "q_269800002",
+      "f_269800001_13",
+      "f_269800001_14",
+      "f_269800001_15",
+      "f_269800001_16",
+      "f_269800001_17"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Talk to Jingran"
+      },
+      "4": {
+        "translation": "Meet up with Jingran"
+      },
+      "6": {
+        "translation": "Use the camera to locate the target"
+      },
+      "11": {
+        "translation": "Take Jingran to Huaxu Academy"
+      },
+      "12": {
+        "rewards": [
+          {
+            "item": {
+              "id": 80030000,
+              "name": "Intimacy"
+            },
+            "count": 480
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 3000
+          },
+          {
+            "item": {
+              "id": 43010001,
+              "name": "Basic Resonance Potion"
+            },
+            "count": 1
+          }
+        ]
+      }
+    },
+    "typeName": "Daily Quest",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 269800004,
+    "mapId": 8,
+    "questTypeId": 4,
+    "chapterId": null,
+    "name": "Short Days, Shorter Nights IV",
+    "description": "There's no telling whether Jingran is doing any better. Go pay him a visit.",
+    "trackEntityId": "e_8_164800005",
+    "children": [
+      "e_8_269800029",
+      "e_8_164800005",
+      "e_8_164800008",
+      "e_8_164800009",
+      "e_8_164800010",
+      "e_8_164800011",
+      "e_8_164800014"
+    ],
+    "references": [
+      "e_8_164800005",
+      "e_8_269800029",
+      "e_8_164800006",
+      "e_8_164800007",
+      "e_8_164800008",
+      "e_8_164800009",
+      "e_8_164800010",
+      "e_8_164800011",
+      "e_8_164800014",
+      "q_269800003",
+      "f_269800001_18",
+      "f_269800001_36",
+      "f_269800001_19",
+      "f_269800001_20",
+      "f_269800001_21",
+      "f_269800001_22",
+      "f_269800001_23"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Ask the physician about Jingran's condition"
+      },
+      "4": {
+        "translation": "Talk with the Lynx Spirit"
+      },
+      "5": {
+        "translation": "Head in the direction the Lynx Spirit pointed out"
+      },
+      "6": {
+        "translation": "Defeat the enemies"
+      },
+      "19": {
+        "translation": "Go heal Jingran"
+      },
+      "20": {
+        "rewards": [
+          {
+            "item": {
+              "id": 80030000,
+              "name": "Intimacy"
+            },
+            "count": 480
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 3000
+          },
+          {
+            "item": {
+              "id": 43010001,
+              "name": "Basic Resonance Potion"
+            },
+            "count": 1
+          }
+        ]
+      }
+    },
+    "typeName": "Daily Quest",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 269800005,
+    "mapId": 8,
+    "questTypeId": 4,
+    "chapterId": null,
+    "name": "Short Days, Shorter Nights V",
+    "description": "Jingran is doing a good deal better. Go with him to find the hidden realm that the copper coin points to.",
+    "trackEntityId": "e_8_269800051",
+    "children": [
+      "e_8_269800051",
+      "e_8_164800015",
+      "e_2528_164800007",
+      "e_2528_164800004",
+      "e_2528_164800008",
+      "e_2528_164800005",
+      "e_2528_164800011",
+      "e_2528_164800002",
+      "e_8_164800017"
+    ],
+    "references": [
+      "e_8_269800051",
+      "e_8_164800015",
+      "e_2528_164800001",
+      "e_2528_164800010",
+      "e_2528_164800007",
+      "e_2528_164800004",
+      "e_2528_164800008",
+      "e_2528_164800005",
+      "e_2528_164800011",
+      "e_2528_164800002",
+      "e_2528_164800003",
+      "e_8_164800016",
+      "e_8_164800017",
+      "e_8_164800032",
+      "q_269800004",
+      "f_269800001_24",
+      "f_269800001_26",
+      "f_269800001_27",
+      "f_269800001_28",
+      "f_269800001_30",
+      "f_269800001_32",
+      "f_269800001_33",
+      "f_269800001_34",
+      "f_269800001_35"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Meet up with Jingran"
+      },
+      "6": {
+        "translation": "Explore the hidden realm"
+      },
+      "7": {
+        "translation": "Approach the figure"
+      },
+      "8": {
+        "translation": "Continue forward"
+      },
+      "9": {
+        "translation": "Investigate where the last figure stood"
+      },
+      "11": {
+        "translation": "Leave the hidden realm"
+      },
+      "12": {
+        "translation": "Talk to Jingran",
+        "rewards": [
+          {
+            "item": {
+              "id": 80030000,
+              "name": "Intimacy"
+            },
+            "count": 480
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 3000
+          },
+          {
+            "item": {
+              "id": 43010001,
+              "name": "Basic Resonance Potion"
+            },
+            "count": 1
+          }
+        ]
+      },
+      "16": {
+        "translation": "Continue forward"
+      },
+      "19": {
+        "translation": "Explore the hidden realm"
+      }
+    },
+    "typeName": "Daily Quest",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 268800002,
+    "mapId": 911,
+    "questTypeId": 2,
+    "chapterId": 3009,
+    "name": "Hidden Data II",
+    "description": "The Reverberation in Lyu Yi's stall seems connected to the one that escaped the Xuanyuan Domain. Brief Ruoyun on the situation.",
+    "trackEntityId": "e_911_268800173",
+    "children": null,
+    "references": [
+      "e_911_268800173",
+      "q_268800001",
+      "q_264800003",
+      "f_268800000_9",
+      "f_268800000_7"
+    ],
+    "questStepData": {
+      "16": {
+        "translation": "Talk to Ruoyun",
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 20
+          },
+          {
+            "item": {
+              "id": 36000003,
+              "name": "Advanced Sealed Tube"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020003,
+              "name": "Advanced Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 20000
+          }
+        ]
+      },
+      "17": {
+        "translation": "Send Ruoyun a WavesLine message",
+        "rewards": [
+          {
+            "item": {
+              "id": 3,
+              "name": "Astrite"
+            },
+            "count": 20
+          },
+          {
+            "item": {
+              "id": 36000003,
+              "name": "Advanced Sealed Tube"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020003,
+              "name": "Advanced Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 20000
+          }
+        ]
+      },
+      "19": {
+        "translation": "Figure out the connection between the Reverberations"
+      },
+      "18": {
+        "translation": "Figure out the connection between the Reverberations"
+      }
+    },
+    "typeName": "Side Quests",
+    "chapterName": "Rafter Kite, Jade Steed, and the Visitor"
+  },
+  {
+    "id": 200800000,
+    "mapId": 8,
+    "questTypeId": 10,
+    "chapterId": null,
+    "name": "If Dreams Still Reverberate",
+    "description": "The Ivory Gatekeeper has sent you an SOS over WavesLine! The gate in the depths of the Somnoire—the one that should never be opened, the one you once shut—has somehow come open again. Now, terrifying Nightmares are once again running rampant in the Somnoire...",
+    "trackEntityId": "e_8_200800055",
+    "children": null,
+    "references": [
+      "e_8_200800055",
+      "e_8_200800056",
+      "f_200800000_1"
+    ],
+    "questStepData": {
+      "2": {
+        "translation": "Check the Ivory Gatekeeper's WavesLine message"
+      },
+      "4": {
+        "translation": "Talk to the Ivory Gatekeeper",
+        "rewards": [
+          {
+            "item": {
+              "id": 43010002,
+              "name": "Medium Resonance Potion"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020002,
+              "name": "Medium Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 36000002,
+              "name": "Medium Sealed Tube"
+            },
+            "count": 1
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 3000
+          }
+        ]
+      }
+    },
+    "typeName": "Event Quests",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 200800002,
+    "mapId": 8,
+    "questTypeId": 10,
+    "chapterId": null,
+    "name": "If Dreams Still Reverberate - Epilogue",
+    "description": "Once again, you have put an end to the crisis in the Somnoire...",
+    "trackEntityId": "e_8_200800055",
+    "children": null,
+    "references": [
+      "e_8_200800055",
+      "q_159000001",
+      "f_200800000_1"
+    ],
+    "questStepData": {
+      "6": {
+        "translation": "Talk to the Ivory Gatekeeper",
+        "rewards": [
+          {
+            "item": {
+              "id": 43010002,
+              "name": "Medium Resonance Potion"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020002,
+              "name": "Medium Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 36000002,
+              "name": "Medium Sealed Tube"
+            },
+            "count": 1
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 3000
+          }
+        ]
+      },
+      "8": {
+        "translation": "Talk to the Ivory Gatekeeper",
+        "rewards": [
+          {
+            "item": {
+              "id": 43010002,
+              "name": "Medium Resonance Potion"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 43020002,
+              "name": "Medium Energy Core"
+            },
+            "count": 2
+          },
+          {
+            "item": {
+              "id": 36000002,
+              "name": "Medium Sealed Tube"
+            },
+            "count": 1
+          },
+          {
+            "item": {
+              "id": 2,
+              "name": "Shell Credit"
+            },
+            "count": 3000
+          }
+        ]
+      }
+    },
+    "typeName": "Event Quests",
+    "chapterName": "NO CONTENT"
+  },
+  {
+    "id": 264800010,
+    "mapId": 8,
+    "questTypeId": 11,
+    "chapterId": 3009,
+    "name": "The Line Between Life and Death",
+    "description": "Ruoyun has asked for your help investigating a piece of data hidden inside the Xuanyuan Domain.",
+    "trackEntityId": "e_8_264800119",
+    "children": [
+      "e_8_264800097",
+      "e_8_264800098"
+    ],
+    "references": [
+      "e_8_264800119",
+      "e_8_264800097",
+      "e_8_264800098",
+      "q_264800003",
+      "f_264800002_38"
+    ],
+    "questStepData": {
+    },
+    "typeName": "NO CONTENT",
+    "chapterName": "Rafter Kite, Jade Steed, and the Visitor"
   }
 ]

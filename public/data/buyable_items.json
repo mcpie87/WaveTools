@@ -6418,5 +6418,19 @@
         "limit": 1
       }
     ]
+  },
+  {
+    "id": 42601620,
+    "itemName": "Blade Blossom",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
   }
 ]

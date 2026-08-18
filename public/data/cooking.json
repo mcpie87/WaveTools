@@ -3691,7 +3691,23 @@
         "value": 2
       }
     ],
-    "typeId": 1
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001090,
+      "name": "Mengzhou Fish in Vinegar",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 34% for 30 min. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Made with fresh live fish from the Luo River, this dish is gently poached over a low flame and dressed in a traditional sweet-and-sour sauce. It gleams a glossy red, its flesh silver-white at every cut—delicate on the tongue, with a bright tangy-sweetness. The recipe is an old one, and though no shortage of variations have appeared over the years, only the original may be called \"Mengzhou Fish in Vinegar.\"\nAt the Waking Moon Festival in Yuan Fortress long ago, Qingxiao once tasted this dish at the famed restaurant Yuan's Flavors. Lanterns filled the city that night; dragons and fishes of light danced above the crowds, and every face wore a smile. A century later, fewer and fewer can cook it the way it tasted back then. Qingxiao has tried her own hand at it, but never managed to bring back the taste she remembers.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_31_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_31_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_31_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1413,
+      "name": "Qingxiao",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_73_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -3723,7 +3739,23 @@
         "value": 2
       }
     ],
-    "typeId": 1
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001091,
+      "name": "Moonlit Splendor",
+      "attributes_description": "Increases ATK of all Resonators in the team by 28% for 30 min. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "This snow-white steamed rice cake is round as a full moon, soft and springy, and scattered with candied green and red threads like twin rainbows fallen across snow. Hence the name \"Moonlit Splendor.\" Lightly sweet and dense on the tongue, the fragrance of rice and sugar from it melts slowly between the teeth.\nThis confection is created by the wife of Jingran's Shifu, Granny Yanshu, and is his favorite. His little sister always says the cake is sickly sweet. Jingran disagrees, and every time he cups one in his hands and bites down, the satisfaction shows in his whole face.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_30_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_30_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_30_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1212,
+      "name": "Jingran",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_74_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -3874,7 +3906,7 @@
     "resultItem": {
       "id": 80000096,
       "name": "Jade Broth Noodles",
-      "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "attributes_description": "Increases ATK of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
       "bg_description": "Fine noodles, thin as silver silk, are dropped into boiling water, blanched in an instant, then nestled neatly into a bowl. Large chunks of meat, slow-braised to a melt-in-your-mouth tenderness, rest atop the noodles. The broth, clarified to crystal clarity with White Jade Beauty mushrooms and rich stock, carries a faint, lingering whisper of cooking wine.\n\nIt is the most common meal you'll find across the Land of Xuanfang. Utterly ordinary in appearance, yet it delivers a depth of flavor that surprises with the very first bite. As some have put it: \"The mildest flavors hold the truest essence. The ultimate delicacy is pure simplicity.\"",
       "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_105_UI.png",
       "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_105_UI.png",
@@ -3902,7 +3934,7 @@
     "specialtyItem": {
       "id": 80001096,
       "name": "The Secret of Delicacy",
-      "attributes_description": "Increases ATK of all Resonators in the team by 28%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "attributes_description": "Increases ATK of all Resonators in the team by 33%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
       "bg_description": "The egg noodles Yangyang makes, tasting exactly as she remembers her mother's did.\n\nBack in her hometown, Yangyang's schedule was always packed to the brim. Still unsure of where her path would lead, she was constantly trying to squeeze out every last second, desperate to add any edge that might carry her forward.  But no matter how late she came home from vocal lessons, walking back under a starlit sky, a steaming bowl of egg noodles was always waiting for her on the table. Sometimes there would be two bowls, which meant her father had also worked late into the night. And sometimes, there would be three, because her older sister, who was supposed to be fast asleep, would inevitably catch the scent of the noodles and coax her mother into making her a midnight meal.\n\nTo Yangyang, that bowl of egg noodles means home, love, and all the quiet warmth folded into everyday life.\n\nIt's the flavor that carried her all the way to where she is now, and the exact taste she wishes to pass on to someone special, someday.",
       "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_102_UI.png",
       "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_102_UI.png",
