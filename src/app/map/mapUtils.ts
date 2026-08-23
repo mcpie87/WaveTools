@@ -216,6 +216,8 @@ export enum SonoroDungeonName {
   SPACETREK_COLLECTIVE = "Spacetrek Collective", // not really sonoro
   // 3.5
   SEA_OF_GHOSTS = "Sea of Ghosts", // TODO: verify, might be a test dungeon
+  // 3.6
+  XUANYUAN_DOMAIN = "Xuanyuan Domain",
 }
 export enum TestDungeonName {
   TEST_DUNGEON = "Game Test Dungeon",
@@ -438,6 +440,12 @@ export const sonoroDungeonMapConfigs: Record<string, MapConfig> = {
   [SonoroDungeonName.SEA_OF_GHOSTS]: {
     // Quest: Sea of Ghosts ? TODO: verify
     mapId: 777,
+  },
+
+  // 3.6
+  [SonoroDungeonName.XUANYUAN_DOMAIN]: {
+    // Quest: Xuanyuan Domain
+    mapId: 911,
   },
 };
 
