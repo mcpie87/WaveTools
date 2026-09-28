@@ -4,7 +4,7 @@ require 'awesome_print'
 require 'byebug'
 require 'fileutils'
 
-DATAMINE_PATH = "/home/curdy/projects/wuwa/WutheringWaves_Data"
+DATAMINE_PATH = ENV.fetch("DATAMINE_PATH", File.expand_path("~/projects/wuwa/WutheringWaves_Data"))
 BINDATA = "BinData"
 TEXTMAPS = "Textmaps"
 
