@@ -3632,7 +3632,23 @@
         "value": 2
       }
     ],
-    "typeId": 2
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001088,
+      "name": "Abundant Azure",
+      "attributes_description": "Increases Healing Bonus of all Resonators in the team by 55% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Cloudward Stew prepared by Hsin. Fresh and rich broth, white as silk, with bamboo shoots meticulously cut into the delicate patterns of modular parts, and fresh vegetables carved into floral garnishes, presented in a jade bowl inscribed with a gold fox. The seasoning and heat are matched to perfection, exquisite beyond reproach.\nAccording to legend, the original recipe of this dish derived from the guidance of Hsin the Moon Fox. Hsin naturally remembered it by heart, yet after tasting the many variations throughout the streets of Xuanfang, She discovered that the flavor would vary from household to household. This home cooking, brought forth from ordinary stoves, is sometimes rich, sometimes light, each unique in its own way, yet it is a taste that people, although separated, still hold dear in their hearts.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_33_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_33_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_33_UI.png",
+      "rarity": 5
+    },
+    "specialtyCook": {
+      "id": 1311,
+      "name": "Hsin",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_75_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -3898,7 +3914,23 @@
         "value": 2
       }
     ],
-    "typeId": 1
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001095,
+      "name": "Huating Memories",
+      "attributes_description": "Grants 44% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "When Suoming first arrived at Xuanfang Hold, she came across a dish flavored with tea broth called \"Memories of Autumn,\" which awakened memories of the white tea from home. It was Tangning who later told her that this dish originally used no tea at all, but due to the lack of its true ingredients locally, it was a traveling soul yearning for the taste who used tea as a substitute, thus giving it its present form.\nSuoming then procured Huating white tea and personally remade the dish. The tea's fresh aroma gave it a delicate flavor, and from then on it frequently graced her table. Those under her command secretly lamented that her homesickness was difficult to dispel, which accounted for her singular fondness for the flavor. Yet to her, it was merely a preference for that fresh and clear taste, and perhaps, without intention, this dish had also retained within it the flavor of her homeland.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_32_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_32_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_32_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1312,
+      "name": "Suoming",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_76_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -3984,5 +4016,32 @@
       }
     ],
     "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10098,
+    "resultItem": {
+      "id": 80000098,
+      "name": "Emerald Tonic",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 20%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Mung bean soup commonly found in the streets of Mengzhou. Rich in flavor and refreshing, perfect for beating the summer heat. This beverage has accompanied many through the sweltering days, a simple taste of home one remembers best.\n\"Not used to the taste? Don't worry! A person's taste varies from place to place, after all! It's fine...\"\n\"...How about another sip or two?\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_107_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_107_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_107_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601530,
+        "name": "Uncracked Jade",
+        "value": 4
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 3
+      }
+    ],
+    "typeId": 1
   }
 ]

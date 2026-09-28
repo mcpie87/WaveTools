@@ -5894,6 +5894,28 @@
             "value": 3000
           }
         ]
+      },
+      {
+        "id": 42601630,
+        "name": "Bloom of Hearkening",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
+      },
+      {
+        "id": 42601640,
+        "name": "Miasmic Branch",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 3000
+          }
+        ]
       }
     ]
   },
@@ -6285,6 +6307,17 @@
       {
         "id": 80010096,
         "name": "Jade Broth Noodles Recipe",
+        "value": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 15000
+          }
+        ]
+      },
+      {
+        "id": 80010098,
+        "name": "Emerald Tonic Recipe",
         "value": [
           {
             "id": 2,
