@@ -20,4 +20,5 @@ export const LEVEL_ENTITY_CONFIG_URL = {
   // "3.5": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYa0zIDLV2ueLCWN7KzdQgiRDxGBj5wfln8USM",
   "3.5": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYU2RHTP5D7tN6y5wEdxQGmviC1MIKOklTVa3P",
   "3.6": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYxv7rGtDI86TJHzYt4EGhwiWaL19OMkrAKFNp",
+  "3.7": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYpVAeSVFYLosNBJe1D0Rl2KVgPCbIAWSEqdOZ",
 };
