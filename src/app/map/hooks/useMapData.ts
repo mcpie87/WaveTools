@@ -267,14 +267,15 @@ export function useMapData() {
       try {
         const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
         const url = `${basePath}/data/map_tiles.json`;
+        const cacheKey = `${url}?v=${GAME_VERSION}`;
         const cache = await caches.open('area-layers-cache');
-        const cached = await cache.match(url + GAME_VERSION);
+        const cached = await cache.match(cacheKey);
         if (cached) {
           if (!cancelled) setLayersData(await cached.json());
         } else {
           const res = await fetch(url);
           if (res.ok) {
-            await cache.put(url, res.clone());
+            await cache.put(cacheKey, res.clone());
             if (!cancelled) setLayersData(await res.json());
           }
         }
