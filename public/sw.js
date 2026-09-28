@@ -1,5 +1,6 @@
-const PATCH = 'wuwa-patch-3.1';
-const TILE_CACHE = `wuwa-leaflet-tiles-${PATCH}`;
+const PATCH = new URL(self.location.href).searchParams.get('v') ?? 'unversioned';
+const CACHE_PREFIXES = ['wuwa-leaflet-tiles-', 'wuwa-assets-'];
+const ASSET_CACHE = `wuwa-assets-${PATCH}`;
 const META_DB = 'wuwa-tile-meta';
 const MONTH = 30 * 24 * 60 * 60 * 1000;
 
@@ -30,21 +31,30 @@ async function setTs(url) {
   });
 }
 
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    const names = await caches.keys();
+    await Promise.all(names
+      .filter(name => name !== ASSET_CACHE && CACHE_PREFIXES.some(prefix => name.startsWith(prefix)))
+      .map(name => caches.delete(name)));
+  })());
+});
+
 self.addEventListener('fetch', event => {
   const req = event.request;
   const url = req.url;
 
-  // Only cache tiles
+  // Only cache images; PMTiles use range requests and are cached in IndexedDB
   if (
     req.method !== 'GET' ||
-    !url.endsWith('.png') ||
+    !/\.(png|webp)$/.test(new URL(url).pathname) ||
     (!url.includes('githubusercontent') && !url.includes('/Game/Aki/UI/'))
   ) {
     return;
   }
 
   event.respondWith((async () => {
-    const cache = await caches.open(TILE_CACHE);
+    const cache = await caches.open(ASSET_CACHE);
     const cached = await cache.match(req);
 
     if (cached) {
