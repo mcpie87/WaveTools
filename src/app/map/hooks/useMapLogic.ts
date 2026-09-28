@@ -1,16 +1,18 @@
 import { useEffect } from "react";
 import { useMapData } from "./useMapData";
 import { useMapStore } from "../state/mapStore";
+import { GAME_VERSION } from "@/constants/constants";
 
 export function useMapLogic() {
   const { indexes, layersData, ready, loadingSteps } = useMapData();
   const dbMapData = useMapStore((state) => state.dbMapData);
 
   useEffect(() => {
-    // Tile caching
+    // Icon caching
     if ('serviceWorker' in navigator) {
       const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      navigator.serviceWorker.register(`${basePath}/sw.js`);
+      // sw.js reads ?v= to version its cache
+      navigator.serviceWorker.register(`${basePath}/sw.js?v=${GAME_VERSION}`);
     }
   }, []);
 
