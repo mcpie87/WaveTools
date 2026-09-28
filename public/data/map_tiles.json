@@ -1277,5 +1277,85 @@
       "T_MapSubTiles_-8_1_XTP_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/SubTiles/T_MapSubTiles_-8_1_XTP_LAYER1_UI.png",
       "T_MapSubTiles_-8_2_XTP_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/SubTiles/T_MapSubTiles_-8_2_XTP_LAYER1_UI.png"
     }
+  },
+  {
+    "floorName": "Cascade Hollow",
+    "floorIcon": "SP_MapIcon1",
+    "floor": -1,
+    "mapId": 912,
+    "areaId": 46501,
+    "areaIds": [
+      46501
+    ],
+    "mapTiles": {
+      "T_MSTLTiles_0_0_YXY_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/MSTLTiles/T_MSTLTiles_0_0_YXY_LAYER1_UI.png"
+    }
+  },
+  {
+    "floorName": "Thousandbloom Grotto",
+    "floorIcon": "SP_MapIcon1",
+    "floor": -1,
+    "mapId": 912,
+    "areaId": 46502,
+    "areaIds": [
+      46502
+    ],
+    "mapTiles": {
+      "T_MSTLTiles_0_0_YXY_LAYER2_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/MSTLTiles/T_MSTLTiles_0_0_YXY_LAYER2_UI.png"
+    }
+  },
+  {
+    "floorName": "Wandering Heart Ruins",
+    "floorIcon": "SP_MapIcon1",
+    "floor": -1,
+    "mapId": 912,
+    "areaId": 46503,
+    "areaIds": [
+      46503
+    ],
+    "mapTiles": {
+      "T_MSTLTiles_0_0_YXY_LAYER3_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/MSTLTiles/T_MSTLTiles_0_0_YXY_LAYER3_UI.png"
+    }
+  },
+  {
+    "floorName": "Stillfrost Crossing",
+    "floorIcon": "SP_MapIcon1",
+    "floor": -1,
+    "mapId": 912,
+    "areaId": 46504,
+    "areaIds": [
+      46504
+    ],
+    "mapTiles": {
+      "T_MSTLTiles_0_0_DTQ_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/MSTLTiles/T_MSTLTiles_0_0_DTQ_LAYER1_UI.png",
+      "T_MSTLTiles_1_0_DTQ_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/MSTLTiles/T_MSTLTiles_1_0_DTQ_LAYER1_UI.png"
+    }
+  },
+  {
+    "floorName": "Rime Grotto",
+    "floorIcon": "SP_MapIcon1",
+    "floor": -1,
+    "mapId": 912,
+    "areaId": 46505,
+    "areaIds": [
+      46505
+    ],
+    "mapTiles": {
+      "T_MSTLTiles_1_0_QXY_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/MSTLTiles/T_MSTLTiles_1_0_QXY_LAYER1_UI.png",
+      "T_MSTLTiles_1_1_QXY_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/MSTLTiles/T_MSTLTiles_1_1_QXY_LAYER1_UI.png"
+    }
+  },
+  {
+    "floorName": "Abyssbrink Grotto",
+    "floorIcon": "SP_MapIcon1",
+    "floor": -1,
+    "mapId": 912,
+    "areaId": 46506,
+    "areaIds": [
+      46506
+    ],
+    "mapTiles": {
+      "T_MSTLTiles_0_1_JXY_LAYER1_UI": "/Game/Aki/UI/UIResources/UiWorldMap/Image/MSTLTiles/T_MSTLTiles_0_1_JXY_LAYER1_UI.png"
+    }
   }
 ]

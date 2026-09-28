@@ -16096,6 +16096,22 @@
     "title": "Resonance Beacon"
   },
   {
+    "id": 3720001,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 683000005,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 3760001,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Simulacrum Nexus of Mengzhou"
+  },
+  {
     "id": 5043,
     "mapId": 906,
     "relativeId": 316700030,
@@ -17528,6 +17544,46 @@
     "title": "Calamity Effigy"
   },
   {
+    "id": 3730001,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Heart of Flames"
+  },
+  {
+    "id": 3730002,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Heart of Bloom"
+  },
+  {
+    "id": 3730003,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Heart of Frost"
+  },
+  {
+    "id": 3730004,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Heart of Ruin"
+  },
+  {
+    "id": 3730005,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Heart of Stillness"
+  },
+  {
     "id": 3640001,
     "mapId": 8,
     "relativeId": 0,
@@ -17592,12 +17648,252 @@
     "title": "General Commission"
   },
   {
+    "id": 1120001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000852,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1120002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000887,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1120003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000857,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000858,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120005,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000859,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120006,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000860,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120007,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000861,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120008,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000862,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120009,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000863,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120010,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000864,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120011,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123000936,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120012,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 141000610,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120013,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 141000611,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120014,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143000362,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120015,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 141900078,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120016,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 141900072,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120017,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 141900079,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120018,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 141900082,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120019,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 141900085,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1120020,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 141900086,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 124001188,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1020002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 109002090,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 109002091,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 109002092,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020005,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113003476,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020006,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 109003309,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020007,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 121800005,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_03_UI.png",
+    "title": "The Grand Library"
+  },
+  {
+    "id": 1020008,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 109005324,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020009,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 109005325,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020010,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 109005326,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
     "id": 3650001,
     "mapId": 8,
     "relativeId": 0,
     "entityConfigId": 241800012,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
-    "title": "The Strings Remember: First String"
+    "title": "NO CONTENT"
   },
   {
     "id": 3650002,
@@ -17605,7 +17901,7 @@
     "relativeId": 0,
     "entityConfigId": 241800013,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
-    "title": "The Strings Remember: Second String"
+    "title": "NO CONTENT"
   },
   {
     "id": 3650003,
@@ -17613,7 +17909,7 @@
     "relativeId": 0,
     "entityConfigId": 241800014,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
-    "title": "The Strings Remember: Third String"
+    "title": "NO CONTENT"
   },
   {
     "id": 3650004,
@@ -17621,7 +17917,7 @@
     "relativeId": 0,
     "entityConfigId": 241800015,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
-    "title": "The Strings Remember: Fourth String"
+    "title": "NO CONTENT"
   },
   {
     "id": 3650005,
@@ -17629,7 +17925,7 @@
     "relativeId": 0,
     "entityConfigId": 241800016,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
-    "title": "The Strings Remember: Fifth String"
+    "title": "NO CONTENT"
   },
   {
     "id": 3650006,
@@ -17637,7 +17933,7 @@
     "relativeId": 0,
     "entityConfigId": 241800017,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
-    "title": "The Strings Remember: Sixth String"
+    "title": "NO CONTENT"
   },
   {
     "id": 3650007,
@@ -17645,7 +17941,95 @@
     "relativeId": 0,
     "entityConfigId": 241800018,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
-    "title": "The Strings Remember: Seventh String"
+    "title": "NO CONTENT"
+  },
+  {
+    "id": 3720002,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850059,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3720003,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850060,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3720004,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850057,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3720005,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850058,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3720006,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850062,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3720007,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850056,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3720008,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850061,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3750001,
+    "mapId": 912,
+    "relativeId": 254850001,
+    "entityConfigId": 254850001,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3750002,
+    "mapId": 912,
+    "relativeId": 254850002,
+    "entityConfigId": 254850002,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3750003,
+    "mapId": 912,
+    "relativeId": 254850003,
+    "entityConfigId": 254850003,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_72_UI.png",
+    "title": "Censure Lock Crisis"
+  },
+  {
+    "id": 3750004,
+    "mapId": 912,
+    "relativeId": 254850000,
+    "entityConfigId": 254850000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_104_UI.png",
+    "title": "Censure Lock Crisis: When the Heartbeat Returns"
   },
   {
     "id": 3630001,
@@ -17656,12 +18040,428 @@
     "title": "Journey to Manifold Sanctum"
   },
   {
+    "id": 1320001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113003404,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113003405,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 134750104,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320004,
+    "mapId": 900,
+    "relativeId": 0,
+    "entityConfigId": 138000089,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320005,
+    "mapId": 900,
+    "relativeId": 0,
+    "entityConfigId": 138750082,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320006,
+    "mapId": 900,
+    "relativeId": 0,
+    "entityConfigId": 138000090,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320007,
+    "mapId": 900,
+    "relativeId": 0,
+    "entityConfigId": 138000091,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320008,
+    "mapId": 900,
+    "relativeId": 0,
+    "entityConfigId": 138000092,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320009,
+    "mapId": 900,
+    "relativeId": 0,
+    "entityConfigId": 138000093,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320010,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 134750470,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320011,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 134750471,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320012,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 146750621,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320013,
+    "mapId": 900,
+    "relativeId": 0,
+    "entityConfigId": 138750446,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320014,
+    "mapId": 900,
+    "relativeId": 0,
+    "entityConfigId": 138750448,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320015,
+    "mapId": 900,
+    "relativeId": 0,
+    "entityConfigId": 138750444,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1320016,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 138900002,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3720009,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850063,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1220001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 6700002,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_05.png",
+    "title": "Thus Says the Moon"
+  },
+  {
+    "id": 1220002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 880700042,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_02.png",
+    "title": "Plum Blossom Pole"
+  },
+  {
+    "id": 1220003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 880700045,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_08.png",
+    "title": "Yumyum Haven"
+  },
+  {
+    "id": 1220004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 880700038,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_01.png",
+    "title": "Fireworks Shop"
+  },
+  {
+    "id": 1220005,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123700059,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_12.png",
+    "title": "Swim, Gulpuff, Swim"
+  },
+  {
+    "id": 1220006,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 880700044,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_04.png",
+    "title": "Puppet Theater"
+  },
+  {
+    "id": 1220007,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 880700041,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_09.png",
+    "title": "Hsin's Fortuity"
+  },
+  {
+    "id": 1220008,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 880700043,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_07.png",
+    "title": "Fan Drawing Stall"
+  },
+  {
+    "id": 1220009,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 880700036,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_06.png",
+    "title": "Riddle Twiddle"
+  },
+  {
+    "id": 1220010,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123700047,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_11.png",
+    "title": "Moon Shooter"
+  },
+  {
+    "id": 3730006,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Heartscape Labyrinth"
+  },
+  {
+    "id": 3730007,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Heart of Appearance"
+  },
+  {
+    "id": 3750011,
+    "mapId": 912,
+    "relativeId": 270850015,
+    "entityConfigId": 270850174,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3750012,
+    "mapId": 912,
+    "relativeId": 270850016,
+    "entityConfigId": 270850175,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3750013,
+    "mapId": 912,
+    "relativeId": 270850017,
+    "entityConfigId": 270850187,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3750014,
+    "mapId": 912,
+    "relativeId": 270850018,
+    "entityConfigId": 270850203,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3750015,
+    "mapId": 912,
+    "relativeId": 270850019,
+    "entityConfigId": 270850221,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3750016,
+    "mapId": 912,
+    "relativeId": 270850020,
+    "entityConfigId": 270850230,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3750017,
+    "mapId": 912,
+    "relativeId": 270850021,
+    "entityConfigId": 270850240,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3750018,
+    "mapId": 912,
+    "relativeId": 270850022,
+    "entityConfigId": 270850251,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3750019,
+    "mapId": 912,
+    "relativeId": 270850023,
+    "entityConfigId": 270850259,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
+    "title": "Treasures of Perilous Enclave"
+  },
+  {
+    "id": 3750021,
+    "mapId": 912,
+    "relativeId": 270850009,
+    "entityConfigId": 270850069,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3750022,
+    "mapId": 912,
+    "relativeId": 270850010,
+    "entityConfigId": 270850074,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3750023,
+    "mapId": 912,
+    "relativeId": 270850011,
+    "entityConfigId": 270850079,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3750024,
+    "mapId": 912,
+    "relativeId": 270850012,
+    "entityConfigId": 270850084,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3750025,
+    "mapId": 912,
+    "relativeId": 270850013,
+    "entityConfigId": 270850089,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3750026,
+    "mapId": 912,
+    "relativeId": 270850014,
+    "entityConfigId": 270850095,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+    "title": "Sword Flight Point"
+  },
+  {
+    "id": 3750501,
+    "mapId": 912,
+    "relativeId": 273850006,
+    "entityConfigId": 273850100,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Serenity"
+  },
+  {
+    "id": 3750502,
+    "mapId": 912,
+    "relativeId": 273850007,
+    "entityConfigId": 273850102,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Serenity"
+  },
+  {
+    "id": 3750503,
+    "mapId": 912,
+    "relativeId": 273850008,
+    "entityConfigId": 273850105,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Serenity"
+  },
+  {
+    "id": 3750504,
+    "mapId": 912,
+    "relativeId": 273850009,
+    "entityConfigId": 273850108,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Serenity"
+  },
+  {
+    "id": 3750505,
+    "mapId": 912,
+    "relativeId": 273850010,
+    "entityConfigId": 273850111,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_80_UI.png",
+    "title": "Seat of Serenity"
+  },
+  {
+    "id": 3740011,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 239850310,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_99_UI.png",
+    "title": "Heart of Appearance"
+  },
+  {
     "id": 3610000,
     "mapId": 8,
     "relativeId": 0,
     "entityConfigId": 915800065,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_93_UI.png",
     "title": "Qingxiao's Training Hall"
+  },
+  {
+    "id": 3730008,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Manifold Dimension"
+  },
+  {
+    "id": 1220011,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123700015,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconActMoon_03.png",
+    "title": "By Moon's Grace"
   },
   {
     "id": 3630002,
@@ -17672,11 +18472,915 @@
     "title": "Xuanyuan Domain"
   },
   {
+    "id": 3740101,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 316850070,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_312_UI.png",
+    "title": "Artisan's Search"
+  },
+  {
+    "id": 3750600,
+    "mapId": 912,
+    "relativeId": 923850002,
+    "entityConfigId": 923850020,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750601,
+    "mapId": 912,
+    "relativeId": 923850003,
+    "entityConfigId": 923850026,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750602,
+    "mapId": 912,
+    "relativeId": 923850004,
+    "entityConfigId": 923850027,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750603,
+    "mapId": 912,
+    "relativeId": 923850005,
+    "entityConfigId": 923850028,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750604,
+    "mapId": 912,
+    "relativeId": 270850041,
+    "entityConfigId": 270850427,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750605,
+    "mapId": 912,
+    "relativeId": 273850011,
+    "entityConfigId": 273850413,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750606,
+    "mapId": 912,
+    "relativeId": 273850012,
+    "entityConfigId": 923850048,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750607,
+    "mapId": 912,
+    "relativeId": 273850013,
+    "entityConfigId": 923850051,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750608,
+    "mapId": 912,
+    "relativeId": 273850014,
+    "entityConfigId": 923850052,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750609,
+    "mapId": 912,
+    "relativeId": 273850015,
+    "entityConfigId": 923850055,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750610,
+    "mapId": 912,
+    "relativeId": 923850009,
+    "entityConfigId": 923850030,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750611,
+    "mapId": 912,
+    "relativeId": 923850010,
+    "entityConfigId": 923850031,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750612,
+    "mapId": 912,
+    "relativeId": 923850011,
+    "entityConfigId": 923850032,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750613,
+    "mapId": 912,
+    "relativeId": 923850012,
+    "entityConfigId": 923850033,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750614,
+    "mapId": 912,
+    "relativeId": 923850013,
+    "entityConfigId": 923850034,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+    "title": "Controlled Anomaly Zone"
+  },
+  {
+    "id": 3750700,
+    "mapId": 912,
+    "relativeId": 260850012,
+    "entityConfigId": 260850278,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_103_UI.png",
+    "title": "Dream Fox Statue"
+  },
+  {
+    "id": 3750701,
+    "mapId": 912,
+    "relativeId": 260850013,
+    "entityConfigId": 260850279,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_103_UI.png",
+    "title": "Dream Fox Statue"
+  },
+  {
+    "id": 3750702,
+    "mapId": 912,
+    "relativeId": 260850014,
+    "entityConfigId": 260850280,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_103_UI.png",
+    "title": "Dream Fox Statue"
+  },
+  {
+    "id": 3750703,
+    "mapId": 912,
+    "relativeId": 260850015,
+    "entityConfigId": 260850281,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_103_UI.png",
+    "title": "Dream Fox Statue"
+  },
+  {
+    "id": 3750704,
+    "mapId": 912,
+    "relativeId": 260850016,
+    "entityConfigId": 260850283,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_101_UI.png",
+    "title": "Dream Kernel Puppet"
+  },
+  {
+    "id": 3750705,
+    "mapId": 912,
+    "relativeId": 260850017,
+    "entityConfigId": 260850285,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_101_UI.png",
+    "title": "Dream Kernel Puppet"
+  },
+  {
+    "id": 3750706,
+    "mapId": 912,
+    "relativeId": 260850018,
+    "entityConfigId": 260850287,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_101_UI.png",
+    "title": "Dream Kernel Puppet"
+  },
+  {
+    "id": 3750707,
+    "mapId": 912,
+    "relativeId": 260850019,
+    "entityConfigId": 260850293,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_101_UI.png",
+    "title": "Dream Kernel Puppet"
+  },
+  {
+    "id": 3750708,
+    "mapId": 912,
+    "relativeId": 260850020,
+    "entityConfigId": 260850289,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_101_UI.png",
+    "title": "Dream Kernel Puppet"
+  },
+  {
+    "id": 3750710,
+    "mapId": 912,
+    "relativeId": 239850010,
+    "entityConfigId": 239850320,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_102_UI.png",
+    "title": "Dream Jade Rootstone"
+  },
+  {
+    "id": 3750711,
+    "mapId": 912,
+    "relativeId": 239850011,
+    "entityConfigId": 239850424,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_102_UI.png",
+    "title": "Dream Jade Rootstone"
+  },
+  {
+    "id": 3750800,
+    "mapId": 912,
+    "relativeId": 232000002,
+    "entityConfigId": 232000096,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_100_UI.png",
+    "title": "Composite Anomaly Zone"
+  },
+  {
+    "id": 3750801,
+    "mapId": 912,
+    "relativeId": 232850000,
+    "entityConfigId": 232850003,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_100_UI.png",
+    "title": "Composite Anomaly Zone"
+  },
+  {
+    "id": 3750802,
+    "mapId": 912,
+    "relativeId": 232000001,
+    "entityConfigId": 232000022,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_100_UI.png",
+    "title": "Composite Anomaly Zone"
+  },
+  {
+    "id": 3750804,
+    "mapId": 912,
+    "relativeId": 232850003,
+    "entityConfigId": 232850006,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_100_UI.png",
+    "title": "Composite Anomaly Zone"
+  },
+  {
+    "id": 3750805,
+    "mapId": 912,
+    "relativeId": 232850002,
+    "entityConfigId": 232850009,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_100_UI.png",
+    "title": "Composite Anomaly Zone"
+  },
+  {
+    "id": 3730009,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Mengxuan Vale"
+  },
+  {
+    "id": 3730010,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 0,
+    "icon": "./.png",
+    "title": "Repair Workshop"
+  },
+  {
+    "id": 3720010,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850366,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
     "id": 3651006,
     "mapId": 8,
     "relativeId": 923800005,
     "entityConfigId": 923800028,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
     "title": "Sword Flight Point"
+  },
+  {
+    "id": 7014,
+    "mapId": 912,
+    "relativeId": 255850002,
+    "entityConfigId": 255850000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_53_UI.png",
+    "title": "Simulacrum Nexus Tacet Discord Nest"
+  },
+  {
+    "id": 1020011,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113002859,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020012,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 124001192,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020013,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113002862,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020014,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 124001204,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1020015,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113003298,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020016,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113000019,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020017,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113000022,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020018,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113002860,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020019,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 113003314,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020020,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 133000709,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020021,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 133000710,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020022,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143000002,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020023,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143800083,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020024,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 122000884,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020025,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 122000885,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020026,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 122000889,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020027,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 122000890,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020028,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 122006104,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020029,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 124001182,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1020030,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143000000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020031,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143000049,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020032,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111001407,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1020033,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111001408,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020034,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111001409,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020035,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111001410,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020036,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111001411,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020037,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 105000006,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020038,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111001821,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020039,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 112000904,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1020040,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 112001409,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020041,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 112001410,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020042,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 112001411,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020043,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 124001180,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020044,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 112001816,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020045,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 112001817,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020046,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143000047,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020047,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143800080,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020048,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143800081,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020049,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 124001189,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1020050,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 134000517,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020051,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 110000448,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020052,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 110000449,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020053,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 110000452,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020054,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 134000551,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020055,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143000048,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020056,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 123800008,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020057,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143800082,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020058,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 124001185,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1020059,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 124001186,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 1020060,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 118000639,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020061,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 118000640,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020062,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 118000641,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020063,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 118000642,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020064,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 118000643,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020065,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 118000644,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020066,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 118000645,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020067,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 118000647,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020068,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 118001030,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020069,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143000004,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020070,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143000005,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020071,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 143000050,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020072,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 103000849,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020073,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 103000851,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020074,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 103000852,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 1020075,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 103000853,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 5020,
+    "mapId": 912,
+    "relativeId": 255850000,
+    "entityConfigId": 255850009,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png",
+    "title": "Tacet Field: Heart of Flames"
+  },
+  {
+    "id": 5200,
+    "mapId": 912,
+    "relativeId": 255850001,
+    "entityConfigId": 200850072,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_WYQ_05_UI.png",
+    "title": "Tacet Field: Heart of Stillness"
+  },
+  {
+    "id": 3731001,
+    "mapId": 912,
+    "relativeId": 2121,
+    "entityConfigId": 316850000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMonsterHead_34033_1_1_UI.png",
+    "title": "Ordinance of the Inevitable"
+  },
+  {
+    "id": 3750031,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850528,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Cascade Hollow"
+  },
+  {
+    "id": 3750032,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850529,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Thousandbloom Grotto"
+  },
+  {
+    "id": 3750033,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850530,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Wandering Heart Ruins"
+  },
+  {
+    "id": 3750034,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850531,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Stillfrost Crossing"
+  },
+  {
+    "id": 3750035,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850532,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Rime Grotto"
+  },
+  {
+    "id": 3750036,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850533,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Layer_UI.png",
+    "title": "Abyssbrink Grotto"
+  },
+  {
+    "id": 3750041,
+    "mapId": 912,
+    "relativeId": 923850016,
+    "entityConfigId": 270850438,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Days Without Number"
+  },
+  {
+    "id": 3750042,
+    "mapId": 912,
+    "relativeId": 923850017,
+    "entityConfigId": 270850440,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Tales from the Capsule: Ashen Fox"
+  },
+  {
+    "id": 3750043,
+    "mapId": 912,
+    "relativeId": 923850015,
+    "entityConfigId": 270850439,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "title": "Moonlike Heart, Mortal Longing"
   }
 ]

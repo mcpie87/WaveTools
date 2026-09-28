@@ -202,5 +202,23 @@
     "name": "Lamp of Nether Road",
     "sortId": 35,
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriJingran.png"
+  },
+  {
+    "id": 36,
+    "name": "Heart of Sworn Vigil",
+    "sortId": 36,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriXin.png"
+  },
+  {
+    "id": 37,
+    "name": "Flash of Electric Reflection",
+    "sortId": 37,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriThunderError.png"
+  },
+  {
+    "id": 38,
+    "name": "Flower of Tinged Yearning",
+    "sortId": 38,
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconElementAttri/T_IconElementAttriCureA.png"
   }
 ]

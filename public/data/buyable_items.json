@@ -6432,5 +6432,47 @@
         "limit": 15
       }
     ]
+  },
+  {
+    "id": 42601630,
+    "itemName": "Bloom of Hearkening",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 42601640,
+    "itemName": "Miasmic Branch",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
+  },
+  {
+    "id": 80010098,
+    "itemName": "Emerald Tonic Recipe",
+    "shops": [
+      {
+        "id": 152,
+        "shopName": "Yuan's Flavors",
+        "price": [
+          "Shell Credit - 15000"
+        ],
+        "limit": 1
+      }
+    ]
   }
 ]
