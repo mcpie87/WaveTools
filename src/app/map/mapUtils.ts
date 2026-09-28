@@ -171,6 +171,7 @@ export enum MapName {
   DIMMR_PLAINS = "Dimmr Plains",
   NIGHT_CITY = "Night City",
   MENGZHOU = "Mengzhou",
+  SIMULACRUM_NEXUS = "Simulacrum Nexus of Mengzhou",
   OVERWORLD = "Overworld",
 }
 
@@ -314,6 +315,11 @@ export const mapConfigs: Record<string, MapConfig> = {
     mapId: 8,
     bounds: [[-4, 3], [-12, -1]],
     url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
+  },
+  [MapName.SIMULACRUM_NEXUS]: {
+    mapId: 912,
+    bounds: [[-5, 7], [-5, 7]],
+    url: `${prefix}/MSTLTiles/T_MSTLTiles_{x}_{y}_UI.${format}`
   },
   [MapName.OVERWORLD]: {
     mapId: 8,
