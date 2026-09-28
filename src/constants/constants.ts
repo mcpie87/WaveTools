@@ -1,5 +1,5 @@
 export const ASSET_URL = "https://raw.githubusercontent.com/alt3ri/WW_Asset_Webp/refs/heads/main/";
-export const GAME_VERSION = "3.6";
+export const GAME_VERSION = "3.7";
 export const NO_DATA_STRING = "NO CONTENT"
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
