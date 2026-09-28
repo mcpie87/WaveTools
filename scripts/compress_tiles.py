@@ -11,7 +11,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 # sudo mount -t drvfs Z: /mnt/z   
 
 # CONFIG
-INPUT_DIR = Path("/mnt/z/projects/WW_Asset_Webp/UIResources/UiWorldMap/Image")
+INPUT_DIR = Path(os.environ.get("WW_ASSET_WEBP", "/mnt/z/projects/WW_Asset_Webp")) / "UIResources/UiWorldMap/Image"
 OUTPUT_DIR = Path("./map_tiles")
 CACHE_FILE = Path("./conversion_cache.json")
 PATTERN = r"T_.*_-?[0-9]+_-?[0-9]+_"
@@ -70,35 +70,36 @@ def convert_file(file_path_str: str):
 
     return relative_path, {"mtime": mtime, "quality": QUALITY}, status, file_path, output_path, percent_saved, input_size, output_size
 
-# Run conversions in parallel
-total_percent_saved = 0
-converted_count = 0
-total_input_size = 0
-total_output_size = 0
+if __name__ == "__main__":
+    # Run conversions in parallel
+    total_percent_saved = 0
+    converted_count = 0
+    total_input_size = 0
+    total_output_size = 0
 
-with ProcessPoolExecutor(max_workers=MAX_WORKERS) as executor:
-    futures = [executor.submit(convert_file, str(f)) for f in png_files]
-    for future in as_completed(futures):
-        rel_path, cache_entry, status, file_path, output_path, percent_saved, input_size, output_size = future.result()
-        cache[rel_path] = cache_entry
-        total_percent_saved += percent_saved
-        total_input_size += input_size
-        total_output_size += output_size
-        if status == "[CONV]":
-            converted_count += 1
-        print(f"{status}|[S: {percent_saved}%] {file_path} -> {output_path}")
+    with ProcessPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = [executor.submit(convert_file, str(f)) for f in png_files]
+        for future in as_completed(futures):
+            rel_path, cache_entry, status, file_path, output_path, percent_saved, input_size, output_size = future.result()
+            cache[rel_path] = cache_entry
+            total_percent_saved += percent_saved
+            total_input_size += input_size
+            total_output_size += output_size
+            if status == "[CONV]":
+                converted_count += 1
+            print(f"{status}|[S: {percent_saved}%] {file_path} -> {output_path}")
 
-# Save updated cache safely
-CACHE_FILE.write_text(json.dumps(cache, indent=2))
+    # Save updated cache safely
+    CACHE_FILE.write_text(json.dumps(cache, indent=2))
 
-# Summary
-print("Conversion complete!")
-print(f"Total files converted: {converted_count}")
-if png_files:
-    avg_percent_saved = total_percent_saved // len(png_files)
-    print(f"Average space saved per file (all matching files): {avg_percent_saved}%")
-    print(f"Total size before: {human_readable_size(total_input_size)}")
-    print(f"Total size after : {human_readable_size(total_output_size)}")
-    print(f"Overall saved    : {human_readable_size(total_input_size - total_output_size)}")
-else:
-    print("No files matched the pattern.")
+    # Summary
+    print("Conversion complete!")
+    print(f"Total files converted: {converted_count}")
+    if png_files:
+        avg_percent_saved = total_percent_saved // len(png_files)
+        print(f"Average space saved per file (all matching files): {avg_percent_saved}%")
+        print(f"Total size before: {human_readable_size(total_input_size)}")
+        print(f"Total size after : {human_readable_size(total_output_size)}")
+        print(f"Overall saved    : {human_readable_size(total_input_size - total_output_size)}")
+    else:
+        print("No files matched the pattern.")
