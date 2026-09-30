@@ -13,6 +13,7 @@ interface MarkerLayerProps {
 export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
   const visibleMarkers = useVisibleMarkers(markers);
   const hideVisited = useMapStore((state) => state.hideVisited);
+  const visibleCategories = useMapStore((state) => state.dbMapData.visibleCategories);
 
   const iconCache = useRef(new Map<string, L.DivIcon>());
   useEffect(() => {
@@ -20,7 +21,7 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
   }, [hideVisited]);
 
   const getIcon = useCallback((marker: IMarker, visited: boolean, selected: boolean) => {
-    const iconData = getWorldmapIconFromMarker(marker);
+    const iconData = getWorldmapIconFromMarker(marker, visibleCategories);
     const worldmapIconUrl = iconData?.[0];
     const ignoreMarkerBg = iconData?.[1];
     const key = `${marker.category}:${worldmapIconUrl}:${visited}:${selected}:${hideVisited}`;
@@ -138,7 +139,7 @@ export const MarkerLayer = ({ markers }: MarkerLayerProps) => {
 
     iconCache.current.set(key, icon);
     return icon;
-  }, [hideVisited]);
+  }, [hideVisited, visibleCategories]);
 
   return visibleMarkers.map((m) => (
     <SingleMarker key={`${m.id}`} marker={m} getIcon={getIcon} />
