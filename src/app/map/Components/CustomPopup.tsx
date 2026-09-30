@@ -25,7 +25,7 @@ export function CustomPopup({
   const entityKey = `e_${marker.mapId}_${marker.entityId}`;
   const visitedSet = dbMapData.visitedEntities[entityKey] || new Set();
   const visitedTimestamps = dbMapData.visitedEntitiesTimestamps[entityKey] || {};
-  const matchedCategories = filterTrackedCategoriesForMarker(marker);
+  const matchedCategories = filterTrackedCategoriesForMarker(marker, dbMapData.visibleCategories);
 
   const isLevelDataRefSameAsChildren = marker.levelPlayReferences
     && marker.levelPlayChildren

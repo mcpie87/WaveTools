@@ -17,7 +17,6 @@ import { IMarker } from "../types";
 import { QueryCategory } from "./types";
 import { EnemyChallengesDisplayOrder, EnemyChallengesTranslationMap } from "./EnemyChallenges";
 import { QuestDisplayOrder, QuestQueryCategories, QuestTranslationMap } from "./Quests";
-import { useMapStore } from "../state/mapStore";
 
 const TranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   "Quest ???": {
@@ -254,8 +253,11 @@ export const getTranslationMapName = (marker: IMarker): string => {
     : categories[0].name; // blueprint result
 }
 
-export const getTranslationMapNameFromVisibleCategories = (marker: IMarker): string => {
-  const categories = filterTrackedCategoriesForMarker(marker);
+export const getTranslationMapNameFromVisibleCategories = (
+  marker: IMarker,
+  visibleCategories: Record<string, boolean>
+): string => {
+  const categories = filterTrackedCategoriesForMarker(marker, visibleCategories);
   if (categories.length === 0) return "";
   return categories.length > 1
     ? categories[1].name // query result
@@ -289,9 +291,11 @@ export const getMatchedTrackableCategories = (marker: IMarker): { name: string, 
   return matched;
 };
 
-export const filterTrackedCategoriesForMarker = (marker: IMarker): { name: string, key: string, dictKey?: string }[] => {
+export const filterTrackedCategoriesForMarker = (
+  marker: IMarker,
+  visibleCategories: Record<string, boolean>
+): { name: string, key: string, dictKey?: string }[] => {
   const matchedCategories = getMatchedTrackableCategories(marker);
-  const { visibleCategories } = useMapStore.getState().dbMapData;
 
   if (visibleCategories) {
     return matchedCategories.filter(cat => cat.dictKey && visibleCategories[cat.dictKey]);

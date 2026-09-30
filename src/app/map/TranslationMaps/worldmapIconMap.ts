@@ -518,8 +518,11 @@ export const getWorldmapIcon = (name: string): IconRecord | null => {
   return [`${basePath}/assets/${iconMatch}`, false];
 };
 
-export const getWorldmapIconFromMarker = (marker: IMarker): IconRecord | null => {
-  const name = getTranslationMapNameFromVisibleCategories(marker);
+export const getWorldmapIconFromMarker = (
+  marker: IMarker,
+  visibleCategories: Record<string, boolean>
+): IconRecord | null => {
+  const name = getTranslationMapNameFromVisibleCategories(marker, visibleCategories);
   const icon = getWorldmapIcon(name);
   if (icon) return icon;
 

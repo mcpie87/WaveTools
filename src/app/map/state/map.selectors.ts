@@ -43,11 +43,15 @@ export const isMarkerFullyVisited = (state: DbMapData, m: IMarker) => {
   return matched.length > 0 && matched.every(c => visitedSet.has(c.key));
 };
 
-export const isMarkerVisitedBasedOnVisibleCategories = (state: DbMapData, m: IMarker) => {
+export const isMarkerVisitedBasedOnVisibleCategories = (
+  state: DbMapData,
+  m: IMarker,
+  visibleCategories: Record<string, boolean>
+) => {
   const entityKey = getMarkerRealId(m);
   const visitedSet = state.visitedEntities[entityKey];
   if (!visitedSet) return false;
 
-  const matched = filterTrackedCategoriesForMarker(m);
+  const matched = filterTrackedCategoriesForMarker(m, visibleCategories);
   return matched.length > 0 && matched.every(c => visitedSet.has(c.key));
 };
