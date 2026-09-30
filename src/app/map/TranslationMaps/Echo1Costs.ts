@@ -119,6 +119,12 @@ export enum Echo1Cost {
   FOG_LIONARCH_BODY = "Fog Lionarch: Body",
   SMOLDER = "Smolder",
   SMITER = "Smiter",
+
+  // 3.6
+  JADE_NETHER_SERPENT = "Jade Nether Serpent",
+
+  // 3.7
+  BLOOMBURST_PUPPET = "Bloomburst Puppet",
 }
 
 export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
@@ -178,11 +184,11 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
   },
   [Echo1Cost.SABYR_BOAR]: {
     key: "ECHO_SABYR_BOAR",
-    keys: ["Monster015"]
+    keys: ["Monster015", "branch3.5_612_Monster016"]
   },
   [Echo1Cost.GULPUFF]: {
     key: "ECHO_GULPUFF",
-    keys: ["Monster016", "Monster149", "branch2.1_Monster001"]
+    keys: ["Monster016", "Monster149", "branch2.1_Monster001", "branch3.5_612_Monster017"]
   },
   [Echo1Cost.EXCARAT]: {
     key: "ECHO_EXCARAT",
@@ -243,7 +249,7 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
   },
   [Echo1Cost.FUSION_DREADMANE]: {
     key: "ECHO_FUSION_DREADMANE",
-    keys: ["Monster053"]
+    keys: ["Monster053", "branch3.5_612_Monster054"]
   },
   [Echo1Cost.HAVOC_WARRIOR]: {
     key: "ECHO_HAVOC_WARRIOR",
@@ -379,15 +385,15 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
   },
   [Echo1Cost.FROSTSCOURGE_STALKER]: {
     key: "ECHO_FROSTSCOURGE_STALKER",
-    keys: ["Monster064"]
+    keys: ["Monster064", "branch3.5_612_Monster065"]
   },
   [Echo1Cost.GALESCOURGE_STALKER]: {
     key: "ECHO_GALESCOURGE_STALKER",
-    keys: ["Monster099"]
+    keys: ["Monster099", "branch3.5_612_Monster100"]
   },
   [Echo1Cost.VOLTSCOURGE_STALKER]: {
     key: "ECHO_VOLTSCOURGE_STALKER",
-    keys: ["Monster1"]
+    keys: ["Monster1", "branch3.5_612_Monster2"]
   },
 
   // 2.1
@@ -655,6 +661,24 @@ export const Echo1CostTranslationMapGroups: Record<string, { keys: string[]; key
   [Echo1Cost.SMITER]: {
     key: "ECHO_SMITER",
     keys: ["branch3.5_602_Monster_005"]
+  },
+
+  // 3.6
+  [Echo1Cost.JADE_NETHER_SERPENT]: {
+    key: "ECHO_JADE_NETHER_SERPENT",
+    keys: [
+      "branch3.6_606_Monster_004",
+    ]
+  },
+
+  // 3.7
+  [Echo1Cost.BLOOMBURST_PUPPET]: {
+    key: "ECHO_BLOOMBURST_PUPPET",
+    keys: [
+      "Monster_Branch3.7_007",
+      "Monster_Branch3.7_009",
+      "branch3.7_665_Monster_Branch3.7_008",
+    ]
   },
 };
 

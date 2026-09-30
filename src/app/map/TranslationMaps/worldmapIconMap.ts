@@ -112,6 +112,12 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [Puzzle.SQUAREFIELD_SPARRING]: "Atlas/WorldMapIcon/SP_IconMap_Play_91_UI.png",
   [Puzzle.TREASURE_OF_PERILOUS_ENCLAVE]: "Atlas/WorldMapIcon/SP_IconMap_Play_86_UI.png",
   [Puzzle.ELSEWAY_SHROUD]: "Atlas/WorldMapIcon/SP_IconMap_Play_81_UI.png",
+  // 3.6
+  [Puzzle.SWORD_FLIGHT_POINT]: "Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
+  // 3.7
+  [Puzzle.COMPOSITE_ANOMALY_ZONE]: "Atlas/WorldMapIcon/SP_IconMap_Play_100_UI.png",
+  [Puzzle.CONTROLLED_ANOMALY_ZONE]: "Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+  [Puzzle.DREAM_JADE_ROOTSTONE]: "Atlas/WorldMapIcon/SP_IconMap_Play_102_UI.png",
 
   /* Specialties */
   // 1.0
@@ -158,6 +164,9 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   // 3.5
   [ItemSpecialty.CLOUDPERCH_SEED]: "Image/IconC/T_IconC_083_UI.png",
   [ItemSpecialty.FLOWBORNE_DREAM]: "Image/IconC/T_IconC_087_UI.png",
+  // 3.7
+  [ItemSpecialty.BLOOM_OF_HEARKENING]: "Image/IconC/T_IconC_088_UI.png",
+  [ItemSpecialty.MIASMIC_BRANCH]: "Image/IconC/T_IconC_089_UI.png",
 
 
   /* ======================================================================= */
@@ -408,6 +417,16 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [Echo1Cost.KERNEL_PUPPET_REFLECTION]: "Image/IconMonsterHead/T_IconMonsterHead_31097_UI.png",
   [Echo1Cost.KERNEL_PUPPET_ANGER]: "Image/IconMonsterHead/T_IconMonsterHead_31095_UI.png",
   [Echo1Cost.KERNEL_PUPPET_JOY]: "Image/IconMonsterHead/T_IconMonsterHead_31094_UI.png",
+  [Echo4Cost.MYRIAD_SNARE_RUSTFIRE_CHASSIS]: "Image/IconMonsterHead/T_IconMonsterHead_34030_UI.png",
+
+  // 3.6
+  [Echo1Cost.JADE_NETHER_SERPENT]: "Image/IconMonsterHead/T_IconMonsterHead_31103_UI.png",
+  [Echo3Cost.SKYWATCH_LANCER]: "Image/IconMonsterHead/T_IconMonsterHead_32069_UI.png",
+
+  // 3.7
+  [Echo1Cost.BLOOMBURST_PUPPET]: "Image/IconMonsterHead/T_IconMonsterHead_31104_UI.png",
+  [Echo3Cost.FORMRENDER]: "Image/IconMonsterHead/T_IconMonsterHead_32070_UI.png",
+  [Echo3Cost.SOULFRAYER]: "Image/IconMonsterHead/T_IconMonsterHead_32071_UI.png",
 
   /* Ores */
   // 1.0
@@ -468,6 +487,12 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [ItemPlant.FOXTAIL_KELP]: "Image/IconC/T_IconC_071_UI.png",
   [ItemPlant.LUMINOUS_CALENDULA]: "Image/IconC/T_IconC_058_UI.png",
   [ItemPlant.LOTUS_SEEDS]: "Image/IconC80/T_IconC80_Sep_021_UI.png", // Verified
+  // 3.5 Mengzhou, icon paths from iteminfo.json
+  [ItemPlant.WHITE_JADE_BEAUTY]: "Image/IconC/T_IconC_079_UI.png",
+  [ItemPlant.CLIMBER_SHOOTS]: "Image/IconC/T_IconC_080_UI.png",
+  [ItemPlant.UNCRACKED_JADE]: "Image/IconC/T_IconC_084_UI.png",
+  [ItemPlant.LEAFWEAVER]: "Image/IconC/T_IconC_086_UI.png",
+  [ItemPlant.FLORAL_CREST_JADE]: "Image/IconC/T_IconC_085_UI.png",
 
   /* Miscellaneous */
   "Weapon": "Image/IconWeapon/T_IconWeapon21020011_UI.png",

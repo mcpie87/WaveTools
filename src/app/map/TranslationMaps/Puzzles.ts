@@ -97,6 +97,14 @@ export enum Puzzle {
   SQUAREFIELD_SPARRING = "Squarefield Sparring",
   TREASURE_OF_PERILOUS_ENCLAVE = "Treasures of Perilous Enclave",
   RETROSPECTIVE_CLUE = "Retrospective Clue",
+
+  // 3.6
+  SWORD_FLIGHT_POINT = "Sword Flight Point",
+
+  // 3.7
+  COMPOSITE_ANOMALY_ZONE = "Composite Anomaly Zone",
+  CONTROLLED_ANOMALY_ZONE = "Controlled Anomaly Zone",
+  DREAM_JADE_ROOTSTONE = "Dream Jade Rootstone",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -298,6 +306,30 @@ export const PuzzleQueryCategories: Record<string, QueryCategory> = {
     key: "QUERY_TREASURE_OF_PERILOUS_ENCLAVE",
     name: Puzzle.TREASURE_OF_PERILOUS_ENCLAVE,
     query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_86_UI") ?? false,
+  },
+
+  // 3.6
+  "QUERY_SWORD_FLIGHT_POINT": {
+    key: "QUERY_SWORD_FLIGHT_POINT",
+    name: Puzzle.SWORD_FLIGHT_POINT,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_94_UI") ?? false,
+  },
+
+  // 3.7
+  "QUERY_COMPOSITE_ANOMALY_ZONE": {
+    key: "QUERY_COMPOSITE_ANOMALY_ZONE",
+    name: Puzzle.COMPOSITE_ANOMALY_ZONE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_100_UI") ?? false,
+  },
+  "QUERY_CONTROLLED_ANOMALY_ZONE": {
+    key: "QUERY_CONTROLLED_ANOMALY_ZONE",
+    name: Puzzle.CONTROLLED_ANOMALY_ZONE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_95_UI") ?? false,
+  },
+  "QUERY_DREAM_JADE_ROOTSTONE": {
+    key: "QUERY_DREAM_JADE_ROOTSTONE",
+    name: Puzzle.DREAM_JADE_ROOTSTONE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_102_UI") ?? false,
   },
 };
 
