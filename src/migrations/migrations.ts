@@ -8,5 +8,6 @@ export const migrations: Migration[] = [
   require("./migrations/2026-02-13T2250-add-schema-version").default,
   require("./migrations/2026-04-15T0016-convert-old-ids").default,
   require("./migrations/2026-04-16T1538-updated-backed-up-markers").default,
+  require("./migrations/2026-09-30T1200-category-visibility").default,
 ].sort((a, b) => a.version.localeCompare(b.version));
 /* eslint-enable @typescript-eslint/no-require-imports */

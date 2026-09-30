@@ -6,7 +6,7 @@ import { getMarkerRealId } from "../mapUtils";
 export const isCategoryVisible = (
   state: DbMapData,
   category: string
-) => !!state.visibleCategories[category];
+) => !!state.visibleCategories[getTrackingKey(category)];
 
 export const isMarkerVisible = (
   state: DbMapData,
@@ -16,7 +16,7 @@ export const isMarkerVisible = (
   const entityKey = getMarkerRealId(m);
   const visitedSet = state.visitedEntities[entityKey];
 
-  if (state.visibleCategories[m.category]) {
+  if (state.visibleCategories[getTrackingKey(m.category)]) {
     const trackingKey = getTrackingKey(m.category);
     const isVisited = (visitedSet !== undefined && visitedSet.has(trackingKey));
     if (!hideVisited || !isVisited) return true;
@@ -25,7 +25,7 @@ export const isMarkerVisible = (
   const matched = getMatchedTrackableCategories(m);
   for (let i = 0; i < matched.length; i++) {
     const match = matched[i];
-    if (match.dictKey && state.visibleCategories[match.dictKey]) {
+    if (state.visibleCategories[match.key]) {
       const isVisited = (visitedSet !== undefined && visitedSet.has(match.key));
       if (!hideVisited || !isVisited) return true;
     }
