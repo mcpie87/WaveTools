@@ -3,7 +3,7 @@ import { translateBlueprint } from "../BlueprintTranslationService";
 import { IMarker } from "../types";
 import { Button } from "@/components/ui/button";
 import { Popup } from "react-leaflet";
-import { getTranslationMapName, filterTrackedCategoriesForMarker } from "../TranslationMaps/translationMap";
+import { getTranslationMapNameFromVisibleCategories, filterTrackedCategoriesForMarker } from "../TranslationMaps/translationMap";
 import { useMapStore } from "../state/mapStore";
 import { NO_DATA_STRING } from "@/constants/constants";
 import { getQuestInfo } from "../data/map_marks";
@@ -18,7 +18,7 @@ export function CustomPopup({
 }: CustomPopupProps) {
   const translation = translateBlueprint(marker.category); // synchronous
 
-  const title = marker.questData?.[0]?.name || getTranslationMapName(marker);
+  const title = marker.questData?.[0]?.name || getTranslationMapNameFromVisibleCategories(marker);
   const toggleEntityCategoryVisited = useMapStore(s => s.toggleEntityCategoryVisited);
   const dbMapData = useMapStore(s => s.dbMapData);
 
