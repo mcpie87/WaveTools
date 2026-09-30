@@ -115,9 +115,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   // 3.6
   [Puzzle.SWORD_FLIGHT_POINT]: "Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
   // 3.7
-  [Puzzle.COMPOSITE_ANOMALY_ZONE]: "Atlas/WorldMapIcon/SP_IconMap_Play_100_UI.png",
   [Puzzle.CONTROLLED_ANOMALY_ZONE]: "Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
-  [Puzzle.DREAM_JADE_ROOTSTONE]: "Atlas/WorldMapIcon/SP_IconMap_Play_102_UI.png",
 
   /* Specialties */
   // 1.0
@@ -517,6 +515,8 @@ const CustomIcons: Record<string, IconUrl> = {
   "Frostbug": "Frostbug.webp",
   [Puzzle.FRAGILE_ROCK]: "Fragile_Rock.png",
   [Puzzle.TRAINING_DUMMY]: "Training_Dummy.png",
+  [Puzzle.COMPOSITE_ANOMALY_ZONE]: "Composite_Anomaly_Zone.webp",
+  [Puzzle.DREAM_JADE_ROOTSTONE]: "Dream_Jade_Rootstone.webp",
   [Miscellaneous.LAUNCH_PAD]: "Launchpad.png",
 };
 
