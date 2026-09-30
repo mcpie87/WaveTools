@@ -1,20 +1,20 @@
+import { fetchMapCatalogAdapter } from "./data/mapCatalogAdapters";
+import { installMapCatalog } from "./data/map_marks";
+
 let blueprintTranslations: Record<string, string> | null = null;
 let loadPromise: Promise<Record<string, string>> | null = null;
 
-export async function loadBlueprintTranslations(): Promise<Record<string, string>> {
+export async function loadBlueprintTranslations(): Promise<
+  Record<string, string>
+> {
   if (blueprintTranslations) return blueprintTranslations;
   if (loadPromise) return loadPromise;
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  loadPromise = fetch(`${basePath}/data/blueprints_minified.json`)
-    .then(res => {
-      if (!res.ok) throw new Error("Failed to load blueprint translations");
-      return res.json();
-    })
-    .then(data => {
-      blueprintTranslations = data;
-      return data;
-    });
+  loadPromise = fetchMapCatalogAdapter.load().then((catalog) => {
+    installMapCatalog(catalog);
+    blueprintTranslations = catalog.blueprints;
+    return blueprintTranslations;
+  });
 
   return loadPromise;
 }
