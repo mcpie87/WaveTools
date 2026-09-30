@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import clsx from "clsx";
 import { getWorldmapIcon } from "../TranslationMaps/worldmapIconMap";
+import { getTrackingKey } from "../TranslationMaps/translationMap";
 import Image from "next/image";
 
 interface CategoryPaneGroupComponentProps {
@@ -27,8 +28,8 @@ const CategoryPaneGroupComponent = ({
   const [isOpen, setIsOpen] = useState(false);
   const totalVisited = categories.reduce((sum, [, , v]) => sum + v, 0);
   const totalCount = categories.reduce((sum, [, c]) => sum + c, 0);
-  const allChecked = categories.every(([t]) => dbMapData.visibleCategories[t]);
-  const someChecked = categories.some(([t]) => dbMapData.visibleCategories[t]);
+  const allChecked = categories.every(([t]) => dbMapData.visibleCategories[getTrackingKey(t)]);
+  const someChecked = categories.some(([t]) => dbMapData.visibleCategories[getTrackingKey(t)]);
 
   return (
     <>
@@ -39,13 +40,13 @@ const CategoryPaneGroupComponent = ({
         )}
         onClick={() => {
           if (!toggleCategories) {
-            toggleCategory(groupName);
+            toggleCategory(getTrackingKey(categories[0][0]));
             return;
           }
           if (allChecked) {
-            toggleCategories?.(categories.map(([t]) => t), false);
+            toggleCategories?.([...new Set(categories.map(([t]) => getTrackingKey(t)))], false);
           } else {
-            toggleCategories?.(categories.map(([t]) => t), true);
+            toggleCategories?.([...new Set(categories.map(([t]) => getTrackingKey(t)))], true);
           }
         }}
       >
@@ -88,11 +89,11 @@ const CategoryPaneGroupComponent = ({
           <button
             key={category}
             className="flex flex-col flex-wrap items-center justify-between gap-2 text-xs font-mono hover:bg-base-300 transition-colors"
-            onClick={() => toggleCategory(category)}
+            onClick={() => toggleCategory(getTrackingKey(category))}
           >
             <div className="flex w-full justify-between">
               <div className="flex flex-row gap-2">
-                <input type="checkbox" key={category} checked={!!dbMapData.visibleCategories[category]} />
+                <input type="checkbox" key={category} checked={!!dbMapData.visibleCategories[getTrackingKey(category)]} />
                 <div className="flex flex-col text-xs font-mono">
                   <span className="font-mono text-gray-500">{category}</span>
                   {showDescriptions && (
@@ -159,7 +160,7 @@ export const CategoryPaneComponent = ({
       (displayOrder.includes(b) ? displayOrder.indexOf(b) : Infinity) ||
       a.localeCompare(b)
   });
-  const toggledCount = categories.filter(c => dbMapData.visibleCategories[c[0]]).length;
+  const toggledCount = categories.filter(c => dbMapData.visibleCategories[getTrackingKey(c[0])]).length;
 
 
   return (
@@ -181,7 +182,7 @@ export const CategoryPaneComponent = ({
             className="flex-end"
             onClick={(e) => {
               e.stopPropagation();
-              toggleCategories(categories.map(c => c[0]), !toggledCount);
+              toggleCategories([...new Set(categories.map(c => getTrackingKey(c[0])))], !toggledCount);
             }}
           >
             {toggledCount > 0 ? "Uncheck all" : "Check all"}
