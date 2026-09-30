@@ -222,14 +222,6 @@ export function CustomPopup({
                 <pre>{JSON.stringify(marker.levelPlayData, null, 2)}</pre>
               </div>
             )}
-            {marker.references && (
-              <div className="text-xs italic mb-2 overflow-scroll max-h-[200px]">
-                References:
-                <pre>
-                  {JSON.stringify(marker.references, null, 2)}
-                </pre>
-              </div>
-            )}
             <div className="text-xs italic mt-2 overflow-auto max-h-[300px]">
               LevelEntity:
               <pre>{marker.description}</pre>
