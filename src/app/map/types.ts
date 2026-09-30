@@ -36,19 +36,6 @@ export interface APIMarker {
   description?: string;
 }
 
-export interface IMarkerReferences {
-  levelData?: {
-    references?: string[];
-    children?: string[];
-  };
-  questData?: {
-    questData?: APIQuestData[];
-    references?: number[];
-    children?: number[];
-    weakReferences?: number[];
-  }
-}
-
 export interface IMarker {
   x: number;
   y: number;
@@ -65,9 +52,7 @@ export interface IMarker {
   displayedX: number;
   displayedY: number;
   displayedZ: number;
-  visited?: Set<string>;
   visitedTimestamps?: Record<string, number>;
-  references?: IMarkerReferences;
   questData?: APIQuestData[];
   levelPlayData?: APILevelPlayData;
   questChildren: APIQuestData[] | undefined;

@@ -4,7 +4,6 @@ import { loadBlueprintTranslations } from "../BlueprintTranslationService";
 import { APIMarker } from "../types";
 import { APIAreaLayer } from "@/types/mapTypes";
 import RBush from "rbush";
-import { mapMarksData } from "../data/map_marks";
 import { GAME_VERSION, LEVEL_ENTITY_CONFIG_URL } from "@/constants/constants";
 import { isDevelopment } from "@/utils/utils";
 
@@ -289,5 +288,5 @@ export function useMapData() {
     return () => { cancelled = true; };
   }, [updateStep]);
 
-  return { indexes, layersData, mapMarksData, ready, loadingSteps };
+  return { indexes, layersData, ready, loadingSteps };
 }

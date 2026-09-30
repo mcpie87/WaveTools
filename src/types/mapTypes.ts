@@ -70,25 +70,6 @@ export interface APILevelPlayData {
   }[];
 }
 
-export interface APIQuestData {
-  QuestId: number;
-  Id?: number;
-  Type: string;
-  RegionId: number;
-  RoleId: number;
-  Key: string;
-  TidName: string;
-  TidDesc: string;
-  RewardId: number;
-  ProvideType: string;
-  DistributeType: string;
-  Reference: string[];
-  Children: string[];
-  WeakReference: string[];
-  ActiveActions: unknown;
-  AddInteractOption: unknown;
-}
-
 export type BlueprintType = string;
 export interface APIBlueprintReward {
   title: string;
