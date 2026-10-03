@@ -106,6 +106,7 @@ export enum Puzzle {
   CONTROLLED_ANOMALY_ZONE = "Controlled Anomaly Zone",
   DREAM_JADE_ROOTSTONE = "Dream Jade Rootstone",
   DREAM_FOX_STATUE = "Dream Fox Statue",
+  THOUSANDFOLD_PETALS = "Thousandfold Petals",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -537,6 +538,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.DREAM_FOX_STATUE]: {
     key: "PUZZLE_DREAM_FOX_STATUE",
     keys: ["branch3.7_13_Gameplay_8"]
+  },
+  [Puzzle.THOUSANDFOLD_PETALS]: {
+    key: "PUZZLE_THOUSANDFOLD_PETALS",
+    keys: ["branch3.7_239_Gameplay_InvisibleChair1"]
   },
 };
 
