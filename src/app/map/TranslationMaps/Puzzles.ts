@@ -105,6 +105,7 @@ export enum Puzzle {
   COMPOSITE_ANOMALY_ZONE = "Composite Anomaly Zone",
   CONTROLLED_ANOMALY_ZONE = "Controlled Anomaly Zone",
   DREAM_JADE_ROOTSTONE = "Dream Jade Rootstone",
+  DREAM_FOX_STATUE = "Dream Fox Statue",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -530,6 +531,12 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.RETROSPECTIVE_CLUE]: {
     key: "PUZZLE_RETROSPECTIVE_CLUE",
     keys: ["branch3.5_Clue"]
+  },
+
+  // 3.7
+  [Puzzle.DREAM_FOX_STATUE]: {
+    key: "PUZZLE_DREAM_FOX_STATUE",
+    keys: ["branch3.7_13_Gameplay_8"]
   },
 };
 

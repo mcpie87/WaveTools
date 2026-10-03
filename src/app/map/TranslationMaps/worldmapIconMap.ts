@@ -116,6 +116,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [Puzzle.SWORD_FLIGHT_POINT]: "Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
   // 3.7
   [Puzzle.CONTROLLED_ANOMALY_ZONE]: "Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
+  [Puzzle.DREAM_FOX_STATUE]: "Atlas/WorldMapIcon/SP_IconMap_Play_103_UI.png",
 
   /* Specialties */
   // 1.0
