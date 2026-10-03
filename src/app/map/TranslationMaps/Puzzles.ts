@@ -542,7 +542,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   },
   [Puzzle.THOUSANDFOLD_PETALS]: {
     key: "PUZZLE_THOUSANDFOLD_PETALS",
-    keys: ["branch3.7_239_Gameplay_InvisibleChair1"]
+    keys: [
+      "branch3.7_239_Gameplay_InvisibleChair1",
+      "branch3.7_239_Gameplay_3_7/GhostTitan6",
+    ]
   },
   [Puzzle.SHADOW_BINDER]: {
     key: "PUZZLE_SHADOW_BINDER",
