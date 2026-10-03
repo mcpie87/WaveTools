@@ -519,6 +519,7 @@ const CustomIcons: Record<string, IconUrl> = {
   [Puzzle.TRAINING_DUMMY]: "Training_Dummy.png",
   [Puzzle.COMPOSITE_ANOMALY_ZONE]: "Composite_Anomaly_Zone.webp",
   [Puzzle.DREAM_JADE_ROOTSTONE]: "Dream_Jade_Rootstone.webp",
+  [Puzzle.SHADOW_BINDER]: "Shadow_Binder.webp",
   [Miscellaneous.LAUNCH_PAD]: "Launchpad.png",
 };
 
