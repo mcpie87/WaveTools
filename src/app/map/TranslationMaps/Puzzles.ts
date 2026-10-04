@@ -108,6 +108,7 @@ export enum Puzzle {
   DREAM_FOX_STATUE = "Dream Fox Statue",
   THOUSANDFOLD_PETALS = "Thousandfold Petals",
   SHADOW_BINDER = "Shadow Binder",
+  DREAM_KERNEL_PUPPET = "Dream Kernel Puppet",
 }
 
 export const PuzzleQueryCategories: Record<string, QueryCategory> = {
@@ -551,6 +552,10 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
   [Puzzle.SHADOW_BINDER]: {
     key: "PUZZLE_SHADOW_BINDER",
     keys: ["branch3.7_239_Gameplay_3_7/GhostTitan1"]
+  },
+  [Puzzle.DREAM_KERNEL_PUPPET]: {
+    key: "PUZZLE_DREAM_KERNEL_PUPPET",
+    keys: ["branch3.7_13_Gameplay_9"]
   },
 };
 

@@ -118,6 +118,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [Puzzle.CONTROLLED_ANOMALY_ZONE]: "Atlas/WorldMapIcon/SP_IconMap_Play_95_UI.png",
   [Puzzle.DREAM_FOX_STATUE]: "Atlas/WorldMapIcon/SP_IconMap_Play_103_UI.png",
   [Puzzle.THOUSANDFOLD_PETALS]: "Image/IconTask80/T_IconTask80_Task_252_UI.png",
+  [Puzzle.DREAM_KERNEL_PUPPET]: "Atlas/WorldMapIcon/SP_IconMap_Play_101_UI.png",
 
   /* Specialties */
   // 1.0
