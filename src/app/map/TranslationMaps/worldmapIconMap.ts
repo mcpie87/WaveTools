@@ -45,6 +45,7 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   [Quest.DAILY_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_06_UI.png", true],
   [Quest.EXPLORATION_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_10_UI.png", true],
   [Quest.EPISODIC_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_17_1_UI.png", true],
+  [Quest.TALES_QUEST]: ["Atlas/WorldMapIcon/SP_IconMap_Task_18_UI.png", true],
 
 
   /* Puzzles */
