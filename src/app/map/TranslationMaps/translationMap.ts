@@ -202,9 +202,6 @@ export const TranslationMap: Record<string, TranslationMapEntry> =
 
     return result;
   })();
-export const TranslationDisplayOrder = [
-];
-
 export const displayedCategories = [
   ["Teleporter", TeleporterTranslationMap, TeleporterDisplayOrder],
   ["Casket", CasketTranslationMap, CasketDisplayOrder],
@@ -222,7 +219,7 @@ export const displayedCategories = [
   ["Ores", OreTranslationMap, OreDisplayOrder],
   ["Animals", AnimalTranslationMap, AnimalDisplayOrder],
   ["Miscellaneous", MiscellaneousTranslationMap, MiscellaneousDisplayOrder],
-  ["Unassigned", TranslationMap, TranslationDisplayOrder],
+  ["Unassigned", TranslationMap, [] as string[]],
 ] as const;
 
 export const UnionTranslationMap: Record<string, TranslationMapEntry> =

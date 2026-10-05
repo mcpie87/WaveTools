@@ -3,11 +3,6 @@ import { IMarker } from "../types";
 import { filterTrackedCategoriesForMarker, getMatchedTrackableCategories, getTrackingKey } from "../TranslationMaps/translationMap";
 import { getMarkerRealId } from "../mapUtils";
 
-export const isCategoryVisible = (
-  state: DbMapData,
-  category: string
-) => !!state.visibleCategories[category];
-
 export const isMarkerVisible = (
   state: DbMapData,
   m: IMarker,
@@ -32,15 +27,6 @@ export const isMarkerVisible = (
   }
 
   return false;
-};
-
-export const isMarkerFullyVisited = (state: DbMapData, m: IMarker) => {
-  const entityKey = getMarkerRealId(m);
-  const visitedSet = state.visitedEntities[entityKey];
-  if (!visitedSet) return false;
-
-  const matched = getMatchedTrackableCategories(m);
-  return matched.length > 0 && matched.every(c => visitedSet.has(c.key));
 };
 
 export const isMarkerVisitedBasedOnVisibleCategories = (state: DbMapData, m: IMarker) => {

@@ -134,7 +134,6 @@ export const convertMarkerToCoord = (
   displayedY: marker.Transform[0].Y / 10000,
   displayedZ: marker.Transform[0].Z / 10000,
   category: marker.BlueprintType,
-  visited: visitedEntities[getMarkerRealId(marker)] ?? false, // pre 3.2 method: visitedMap[marker.Id] || false,
   visitedTimestamps: visitedEntitiesTimestamps?.[getMarkerRealId(marker)],
   questData: getQuestData(getMarkerRealId(marker)),
   levelPlayData: getLevelPlayData(getMarkerRealId(marker)),

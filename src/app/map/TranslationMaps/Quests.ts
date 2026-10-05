@@ -22,54 +22,6 @@ export enum Quest {
   EVENT_QUEST = "Event Quest", // questTypeId === 10
   EPISODIC_QUEST = "Episodic Quest", // questTypeId === 11
   TALES_QUEST = "Tales Quest", // questTypeId === 17
-
-  // 1.0
-  MUTTERFLY = "Mutterfly",
-  BLOBFLY = "Blobfly",
-  HOVERING_MAGNETITE = "Hovering Magnetite",
-  SIMULATION_TRAINING_DEVICE = "Simulation Training Device",
-  FRAGILE_ROCK = "Fragile Rock",
-  FISSURED_LEDGE = "Fissured Ledge",
-  SHOOTING_CHALLENGE = "Shooting Challenge",
-
-  // 1.1
-  TACTICAL_HOLOGRAM_SKI = "Tactical Hologram: Ski",
-  FROSTBUG = "Frostbug",
-
-  // 2.0
-  FLYING_CHALLENGE = "Flying Challenge",
-  MUSICFLY = "Musicfly",
-  OVERFLOWING_PALETTE = "Overflowing Palette",
-
-  // 2.4
-  HERO_REND = "Hero's Rend",
-
-  // 2.5
-  ORCHESTRATION_ALTAR = "Orchestration Altar",
-  TRIPTYCH_CHEST = "Triptych Chest",
-
-  // 2.6
-  DREAMS_OF_CINTERCIDE = "Dreams of Cintercide",
-
-  // 3.0
-  BIKE_CHALLENGE = "Bike Challenge",
-  SMARTPRINT_CUBE = "Smartprint Cube",
-  SOLISKIN = "Soliskin",
-  SOLISKIN_COLLECT = "Soliskin Collect",
-  GEOSPIDER_PROJECTION = "Geospider Projection",
-  REINDEER_PROJECTION = "Reindeer Projection",
-
-  // 3.1
-  SOLISKIN_GUIDE = "Soliskin Guide",
-  GLOMMOTH_PROJECTION = "Glommoth Projection",
-
-  // 3.3
-  VOIDWING_MOTH_PROJECTION = "Voidwing Moth Projection",
-  INVESTIGATE_ASTRITES = "Astrites - Investigate",
-  MOTORBIKE_STUNT_TRACK = "Motorbike - Stunt Track",
-  MOTORBIKE_FLIGHT_TRACK = "Motorbike - Flight Track",
-  INSPECT = "Inspect",
-  INVESTIGATE = "Investigate",
 }
 
 export const QuestQueryCategories: Record<string, QueryCategory> = {
