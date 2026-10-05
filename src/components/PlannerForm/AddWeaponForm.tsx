@@ -48,7 +48,7 @@ export const AddWeaponForm = ({ onAddWeapon, onClose }: AddWeaponFormProps) => {
     return [...weapons].sort((a, b) => {
       switch (sortBy) {
         case SORT_BY.RELEASE_DATE: return 0; // we get them sorted this way
-        case SORT_BY.ALPHABETICAL: return a.name < b.name ? 0 : 1;
+        case SORT_BY.ALPHABETICAL: return a.name.localeCompare(b.name);
         case SORT_BY.RARITY: return b.rarity - a.rarity;
       }
     });
