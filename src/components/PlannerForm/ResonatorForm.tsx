@@ -21,7 +21,7 @@ export const ResonatorForm = ({
 }: ResonatorFormProps) => {
   const {
     handleSubmit,
-    formState: { isSubmitting },
+    formState: { isSubmitting, errors },
     setValue,
     watch,
   } = useForm<ResonatorStateDBEntry>({
@@ -32,11 +32,10 @@ export const ResonatorForm = ({
   const handleSetValue = (fieldName: Path<ResonatorStateDBEntry>, newValue: number | string) => {
     // TODO: this requires way more control
     if (fieldName === "level.current") {
-      const current = watch("level.current");
       const desired = watch("level.desired");
-      const currentInt = parseInt(current as string);
+      const newCurrentInt = parseInt(newValue as string);
       const desiredInt = parseInt(desired as string);
-      if (currentInt > desiredInt || (currentInt === desiredInt && typeof current === "string")) {
+      if (newCurrentInt > desiredInt || (newCurrentInt === desiredInt && typeof newValue === "string")) {
         // Selected current level is higher than desired, we have to update desired
         setValue("level.desired", newValue);
       }
@@ -106,6 +105,11 @@ export const ResonatorForm = ({
                     values={levelSelectValues}
                   />
                 </div>
+                {errors.level?.current?.message && (
+                  <p role="alert" className="text-red-500">
+                    {errors.level.current.message}
+                  </p>
+                )}
               </div>
             </div>
             <div className="flex flex-row justify-center gap-10">
@@ -140,6 +144,11 @@ export const ResonatorForm = ({
                           max={10}
                         />
                       </div>
+                      {errors[typedSkillKey]?.current?.message && (
+                        <p role="alert" className="text-red-500">
+                          {errors[typedSkillKey].current.message}
+                        </p>
+                      )}
                     </div>
                   )
                 })}
@@ -175,6 +184,11 @@ export const ResonatorForm = ({
                           max={2}
                         />
                       </div>
+                      {errors[typedSkillKey]?.current?.message && (
+                        <p role="alert" className="text-red-500">
+                          {errors[typedSkillKey].current.message}
+                        </p>
+                      )}
                     </div>
                   )
                 })}
