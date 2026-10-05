@@ -2,7 +2,7 @@ import { IAPIItem, IAPIResonator, IAPIWeapon } from "@/app/interfaces/api_interf
 import { getAscensions, InputEntry, ResonatorDBSchema, ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { getKeyFromEnumValue } from "@/utils/utils";
 import { RESONATOR_ASCENSION_MATERIALS, RESONATOR_EXP_TO_SHELL_RATIO, TALENT_INHERENT_MATERIALS, TALENT_MATERIALS, TALENT_SIDE_MATERIALS, TalentMaterialDataInterfaceEntry, TOTAL_LEVEL_EXPERIENCE, TOTAL_WEAPON_EXP, WEAPON_ASCENSION_MATERIALS, WEAPON_EXP_TO_SHELL_RATIO } from "@/constants/character_ascension";
-import { ItemResonatorEXP, ItemWeaponEXP, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
+import { ItemResonatorEXP, ItemType, ItemTypeEXP, ItemWeaponEXP, SHELL_CREDIT_ID } from "@/app/interfaces/item_types";
 import { ActiveSkillNames, PassiveSkillNames, resonatorSchemaForForm } from "@/schemas/resonatorSchema";
 import { findItemByName, getCommonMaterial, getSynthesisItems, getWeaponMaterial } from "./items_utils";
 import { IResonatorPlanner, IWeaponPlanner, PLANNER_TYPE, IRequiredItemMap } from "@/app/interfaces/planner_item";
@@ -10,6 +10,7 @@ import { WeaponDBSchema } from "@/types/weaponTypes";
 import { parseResonatorToPlanner, parseWeaponToPlanner } from "./api_parser";
 import { IItem, TItemMap } from "@/app/interfaces/item";
 import { InventoryDBSchema, InventoryStateDBEntry } from "@/types/inventoryTypes";
+import { EXP_POTION_VALUES_DESC } from "@/constants/constants";
 
 export const getPlannerDBSize = (
   dbResonators: ResonatorDBSchema,
@@ -51,6 +52,7 @@ export const setItemsBasedOnInventory = (itemMap: TItemMap, inventory: Inventory
     if (!inventory[name]) {
       continue;
     }
+
     const inventoryItem = inventory[name];
     if (inventoryItem.owned >= item.value!) {
       inventoryItem.owned -= item.value!;
@@ -62,7 +64,72 @@ export const setItemsBasedOnInventory = (itemMap: TItemMap, inventory: Inventory
     }
   }
 
+  applyEXPConversion(ItemType.RESONATOR_EXP, itemMap, inventory);
+  applyEXPConversion(ItemType.WEAPON_EXP, itemMap, inventory);
   applySynthesizerOnItems(itemMap, inventory);
+  return itemMap;
+}
+
+const getEXPItems = (type: ItemTypeEXP): string[] => {
+  return type === ItemType.RESONATOR_EXP
+    ? Object.values(ItemResonatorEXP)
+    : Object.values(ItemWeaponEXP);
+}
+
+const calculateItemConversions = (
+  item: IItem,
+  baseValue: number,
+  inventoryItems: InventoryStateDBEntry[],
+): void => {
+  if (!item || item.value === 0) return;
+
+  item.converted = 0;
+
+  EXP_POTION_VALUES_DESC.forEach((value, index) => {
+    const inv = inventoryItems[index];
+    if (!inv || inv.owned === 0) return;
+
+    const neededPotions = item.value! - (item.converted ?? 0);
+    const maxConvertible = Math.floor((inv.owned * value) / baseValue);
+    const conversions = Math.min(neededPotions, maxConvertible);
+
+    if (conversions <= 0) return;
+
+    const itemsToConsume = Math.ceil((conversions * baseValue) / value);
+    inv.owned -= itemsToConsume;
+    item.converted! += conversions;
+  });
+
+  if (item.converted === 0) {
+    item.converted = undefined;
+  }
+};
+
+export const applyEXPConversion = (
+  type: ItemTypeEXP,
+  itemMap: TItemMap,
+  inventory: InventoryDBSchema
+): TItemMap => {
+  if (![ItemType.RESONATOR_EXP, ItemType.WEAPON_EXP].includes(type)) {
+    // Function doesn't support non exp values
+    return itemMap;
+  }
+
+  // Rarities: 5, 4, 3, 2 (descending)
+  const expItems = getEXPItems(type);
+
+  const inventoryItems = expItems.map((name) => inventory[name]);
+  if (inventoryItems.some(e => !e)) {
+    // Inventory does not contain properly defined exp items
+    return itemMap;
+  }
+
+  const items = expItems.map((name) => itemMap.get(name)).filter(item => item !== undefined);
+
+  items.forEach((item, index) => {
+    calculateItemConversions(item, EXP_POTION_VALUES_DESC[index], inventoryItems);
+  });
+
   return itemMap;
 }
 
@@ -91,22 +158,16 @@ export const applySynthesizerOnItems = (itemMap: TItemMap, inventory: InventoryD
 
       // We assume that item subtraction was already done
       if (rarity3 && rarity3.value! > 0) {
-        // console.log("Conversion needed to ⭐⭐⭐");
         synthesize(inventoryRarity2, rarity3);
-        // console.log("⭐⭐⭐", rarity3.name, rarity3.value, rarity3.converted, rarity3.checked);
       }
       if (rarity4 && rarity4.value! > 0) {
-        // console.log("Conversion needed to ⭐⭐⭐⭐");
         synthesize(inventoryRarity3, rarity4);
         synthesize(inventoryRarity2, rarity4);
-        // console.log("⭐⭐⭐⭐", rarity4.name, rarity4.value, rarity4.converted, rarity4.checked);
       }
       if (rarity5 && rarity5.value! > 0) {
-        // console.log("Conversion needed to ⭐⭐⭐⭐⭐");
         synthesize(inventoryRarity4, rarity5);
         synthesize(inventoryRarity3, rarity5);
         synthesize(inventoryRarity2, rarity5);
-        // console.log("⭐⭐⭐⭐⭐", rarity5.name, rarity5.value, rarity5.converted, rarity5.checked);
       }
 
       for (const item of synthesisItems) {
@@ -122,22 +183,32 @@ const synthesize = (
   sourceItem: InventoryStateDBEntry,
   targetItem: IItem
 ) => {
+  if (!sourceItem) {
+    return;
+  }
   const multiplier = 3 ** (targetItem.rarity - sourceItem.rarity);
   if (sourceItem.owned < multiplier) {
     // We don't have enough to bother, skip
     return;
   }
 
-  const converted = Math.floor(sourceItem.owned / multiplier);
+  if (targetItem.value! === targetItem.converted) {
+    // Item already converted, skip
+    return;
+  }
 
-  if (targetItem.value! >= converted) {
+  const maxConverted = Math.floor(sourceItem.owned / multiplier);
+  targetItem.converted ??= 0;
+
+  if (targetItem.value! - targetItem.converted! >= maxConverted) {
     // We don't have enough
-    targetItem.converted = converted;
-    sourceItem.owned -= multiplier * converted;
+    targetItem.converted += maxConverted;
+    sourceItem.owned -= multiplier * maxConverted;
   } else {
     // We have enough, remove .value from inventory
-    targetItem.converted = targetItem.value;
-    sourceItem.owned -= targetItem.value! * multiplier;
+    const converted = targetItem.value! - targetItem.converted!;
+    targetItem.converted += converted;
+    sourceItem.owned -= converted * multiplier;
   }
 
   if (targetItem.value! === targetItem.converted!) {

@@ -11,6 +11,21 @@ const enum LOOKUP_TYPE {
   Talent
 }
 
+// Pass only names
+export function getAPIItems(items: string[], apiItems: IAPIItem[]): IAPIItem[] {
+  const results: IAPIItem[] = [];
+  for (const item of items) {
+    const apiItem = apiItems.find(apiItem => item === apiItem.name);
+    if (!apiItem) {
+      console.error(`apiItem not found ${item}`);
+      continue;
+    }
+    results.push(apiItem);
+  }
+  return results;
+}
+
+
 export function parseItemToItemCard(data: IAPIItem): IItem {
   return {
     id: data.id,

@@ -7,13 +7,11 @@ import { IResonatorPlanner, IWeaponPlanner } from "@/app/interfaces/planner_item
 interface ManagePriorityComponentProps {
   plannerItems: (IResonatorPlanner | IWeaponPlanner)[];
   onDragAndDrop: (target: IResonatorPlanner | IWeaponPlanner, newPriority: number) => void;
-  showForm: boolean;
   onClose: () => void;
 }
 export const ManagePriorityComponent = ({
   plannerItems,
   onDragAndDrop,
-  showForm,
   onClose,
 }: ManagePriorityComponentProps) => {
   const [draggedItemIndex, setDraggedItemIndex] = useState<number | null>(null);
@@ -37,7 +35,7 @@ export const ManagePriorityComponent = ({
   };
 
   return (
-    <ModalComponent show={showForm} onClose={onClose}>
+    <ModalComponent show={true} onClose={onClose}>
       <div>
         <div className="text-center text-3xl">Manage Priority</div>
         <div className="text-center">Drag to change order</div>

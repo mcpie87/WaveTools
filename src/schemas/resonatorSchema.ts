@@ -103,6 +103,7 @@ export const resonatorSchema = z.object({
   priority: z.number(),
   rarity: z.number(),
   level: levelSchema,
+  isActive: z.boolean().default(true),
   // Dynamically map over ActiveSkillNames and PassiveSkillNames
   ...Object.fromEntries(
     Object.keys(ActiveSkillNames).map((skill) => [skill, activeSkillSchema])
@@ -116,5 +117,5 @@ export const resonatorSchema = z.object({
 export type resonatorSchemaField = keyof typeof resonatorSchema.shape;
 export type resonatorSchemaForForm = Exclude<
   keyof typeof resonatorSchema.shape,
-  "name" | "priority" | "rarity" | "id" | "type"
+  "name" | "priority" | "rarity" | "id" | "type" | "isActive"
 >;

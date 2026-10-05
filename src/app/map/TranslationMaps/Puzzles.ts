@@ -1,0 +1,591 @@
+import { TranslationMapEntry } from "./TranslationMapInterface";
+import { QueryCategory } from "./types";
+
+
+export enum Puzzle {
+  // 1.0
+  MUTTERFLY = "Mutterfly",
+  BLOBFLY = "Blobfly",
+  MAGNETIC_CUBE = "Magnetic Cube",
+  SIMULATION_TRAINING_DEVICE = "Simulation Training Device",
+  FRAGILE_ROCK = "Fragile Rock",
+  FISSURED_LEDGE = "Fissured Ledge",
+  SHOOTING_CHALLENGE = "Shooting Challenge",
+  TRAINING_DUMMY = "Training Dummy",
+  ENERGY_MATRIX = "Energy Matrix",
+  ENCRYPTION_BLOCK = "Encryption Block",
+  PRESSURE_PLATFORM = "Pressure Platform",
+  WEIGHT_BLOCK = "Weight Block",
+  GRAPPLE_SHOOTER = "Grapple Shooter",
+  SPIKES = "Spikes",
+  CORRODERS = "Corroders",
+  SOUND_EMULATOR = "Sound Emulator",
+  TACETITE_FULMINATE = "Tacetite Fulminate",
+  ECHO_CHALLENGE_GULPUFF = "Echo Challenge: Gulpuff",
+  PROPULSION_FLUX = "Propulsion Flux",
+  TACTICAL_HOLOGRAM_CHALLENGE = "Tactical Hologram: Challenge",
+  ECHO_CHALLENGE_CRUISEWING = "Echo Challenge: Cruisewing",
+  HOVER_TARGET = "Hover Target",
+  TACTICAL_HOLOGRAM_OVERDASH = "Tactical Hologram: Overdash",
+  INDUCTION_CELL = "Induction Cell",
+  INDUCTION_CELL_SOCKET = "Induction Cell Socket",
+  TACTICAL_HOLOGRAM_DETONATE = "Tactical Hologram: Detonate",
+  ILLUSIVE_SPRINT = "Illusive Sprint",
+  TRANSDUCER = "Transducer",
+
+  // 1.1
+  TACTICAL_HOLOGRAM_SKI = "Tactical Hologram: Ski",
+  FROSTBUG = "Frostbug",
+  CHRONOSORTER = "Chronosorter",
+  LEAP_DEVICE = "Leap Device",
+  ECHO_CHALLENGE_CLANG_BANG = "Echo Challenge: Clang Bang",
+
+  // 2.0
+  FLYING_CHALLENGE = "Flying Challenge",
+  MUSICFLY = "Musicfly",
+  OVERFLOWING_PALETTE = "Overflowing Palette",
+  ECHO_CHALLENGE = "Echo Challenge",
+  NIGHTMARE_CLOUD_PURPLE = "Nightmare Cloud: Purple",
+  NIGHTMARE_CLOUD_RED = "Nightmare Cloud: Red",
+
+  // 2.4
+  HERO_REND = "Hero's Rend",
+
+  // 2.5
+  ORCHESTRATION_ALTAR = "Orchestration Altar",
+  TRIPTYCH_CHEST = "Triptych Chest",
+
+  // 2.6
+  DREAMS_OF_CINTERCIDE = "Dreams of Cintercide",
+
+  // 3.0
+  BIKE_CHALLENGE = "Bike Challenge",
+  SMARTPRINT_CUBE = "Smartprint Cube",
+  SOLISKIN = "Soliskin",
+  SOLISKIN_COLLECT = "Soliskin Collect",
+  GEOSPIDER_PROJECTION = "Geospider Projection",
+  REINDEER_PROJECTION = "Reindeer Projection",
+  ZIPZAP_PROJECTION = "Zipzap Projection",
+
+  // 3.1
+  SOLISKIN_GUIDE = "Soliskin Guide",
+  GLOMMOTH_PROJECTION = "Glommoth Projection",
+
+  // 3.3
+  VOIDMATTER_BLOCKS = "Voidmatter Blocks",
+  VOIDWING_MOTH_PROJECTION = "Voidwing Moth Projection",
+  INVESTIGATE_ASTRITES = "Astrites - Investigate",
+  MOTORBIKE_STUNT_TRACK = "Motorbike - Stunt Track",
+  MOTORBIKE_FLIGHT_TRACK = "Motorbike - Flight Track",
+  THREAT_ELIMINATION = "Threat Elimination",
+  INSPECT = "Inspect",
+  INVESTIGATE = "Investigate",
+  EXTRA_CHALLENGE = "Extra Challenge",
+
+  // 3.4
+  BREACH_PROTOCOL = "Breach Protocol",
+  HACKING_CAMERA = "Hacking Camera",
+  VENDING_MACHINE = "Vending Machine",
+  SURVEILLANCE_CAMERA = "Surveillance Camera",
+  NIGHT_CITY_INSPECT = "Inspect - Laptop",
+  TEXT_OF_UNKNOWN_ORIGIN = "Inspect - Text of Unknown Origin",
+
+  // 3.5
+  ELSEWAY_SHROUD = "Elseway Shroud",
+  SEAT_OF_STILLNESS = "Seat of Stillness",
+  AUTO_CASKET = "Auto Casket",
+  SQUAREFIELD_SPARRING = "Squarefield Sparring",
+  TREASURE_OF_PERILOUS_ENCLAVE = "Treasures of Perilous Enclave",
+  RETROSPECTIVE_CLUE = "Retrospective Clue",
+
+  // 3.6
+  SWORD_FLIGHT_POINT = "Sword Flight Point",
+
+  // 3.7
+  COMPOSITE_ANOMALY_ZONE = "Composite Anomaly Zone",
+  CONTROLLED_ANOMALY_ZONE = "Controlled Anomaly Zone",
+  DREAM_JADE_ROOTSTONE = "Dream Jade Rootstone",
+  DREAM_FOX_STATUE = "Dream Fox Statue",
+  THOUSANDFOLD_PETALS = "Thousandfold Petals",
+  SHADOW_BINDER = "Shadow Binder",
+  DREAM_KERNEL_PUPPET = "Dream Kernel Puppet",
+}
+
+export const PuzzleQueryCategories: Record<string, QueryCategory> = {
+
+  "QUERY_BvbEntrance": {
+    key: "QUERY_PEAKS_OF_PRESTIGE",
+    name: "Peaks of Prestige",
+    query: (m) => m.metadata?.InteractComponent?.InteractIcon === "BvbEntrance"
+      || (m.metadata?.InteractComponent?.Options?.some(o => o.Icon === "BvbEntrance") ?? false),
+  },
+  "QUERY_BvbInteract": {
+    key: "QUERY_PEAKS_OF_PRESTIGE",
+    name: "Peaks of Prestige",
+    query: (m) => m.metadata?.InteractComponent?.InteractIcon === "BvbInteract"
+      || (m.metadata?.InteractComponent?.Options?.some(o => o.Icon === "BvbInteract") ?? false),
+  },
+  // "QUERY_InteractIcon": {
+  //   name: "Interact Icon",
+  //   query: (m) => m.metadata?.InteractComponent?.InteractIcon !== undefined
+  //     || (m.metadata?.InteractComponent?.Options?.some(o => o.Icon !== undefined) ?? false),
+  // },
+  "QUERY_Scenery": {
+    key: "QUERY_SCENERY",
+    name: "Scenery",
+    query: (m) => (
+      m.metadata?.InteractComponent?.Options
+        ?.some(option => {
+          if (option.Type?.Type !== "Actions") return false;
+          const action = option.Type?.Actions?.find(a => a.Name === "UnlockSystemItem");
+          return action?.Params?.SystemOption?.Type === "AtlasSystem";
+        }) ?? false
+    ),
+  },
+  "QUERY_Tactical_Hologram": {
+    key: "QUERY_TACTICAL_HOLOGRAM",
+    name: "Tactical Hologram",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_10_UI") ?? false,
+  },
+  // 2.0
+  "QUERY_Treasure_Spot": {
+    key: "QUERY_TREASURE_SPOT",
+    name: "Treasure Spot",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_15_UI") ?? false,
+  },
+  "QUERY_Fratelli": {
+    key: "QUERY_FRATELLI",
+    name: "Fratelli",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_20_UI") ?? false,
+  },
+  "QUERY_Dream_Patrol": {
+    key: "QUERY_DREAM_PATROL",
+    name: "Dream Patrol",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_19_UI") ?? false,
+  },
+  "QUERY_Tactical_Hologram_Vitreum_Dancer": {
+    key: "QUERY_TACTICAL_HOLOGRAM_VITREUM_DANCER",
+    name: "Tactical Hologram: Vitreum Dancer",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_17_UI") ?? false,
+  },
+  "QUERY_Echo_Challenge": {
+    key: "QUERY_ECHO_CHALLENGE",
+    name: Puzzle.ECHO_CHALLENGE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_21_UI") ?? false,
+  },
+
+  // 2.1
+  "QUERY_Echo_Challenge_Dancer_Hacking": {
+    key: "QUERY_ECHO_CHALLENGE_DANCER_HACKING",
+    name: "Echo Challenge: Dancer Hacking",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_31_UI") ?? false,
+  },
+  "QUERY_Pipeline_Maintenance": {
+    key: "QUERY_PIPELINE_MAINTENANCE",
+    name: "Pipeline Maintenance",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_43_UI") ?? false,
+  },
+  "QUERY_Hot_Spring": {
+    key: "QUERY_HOT_SPRING",
+    name: "Hot Spring",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_55_UI") ?? false,
+  },
+  "QUERY_Void_Storm": {
+    key: "QUERY_VOID_STORM",
+    name: "Void Storm",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_49_UI") ?? false,
+  },
+  "QUERY_Route_Constructor": {
+    key: "QUERY_ROUTE_CONSTRUCTOR",
+    name: "Route Constructor",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Activity_Navigation_10_UI") ?? false,
+  },
+  "QUERY_Route_Network_Blockage": {
+    key: "QUERY_ROUTE_NETWORK_BLOCKAGE",
+    name: "Route Network Blockage",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_59_UI") ?? false,
+  },
+  "QUERY_Bike_Challenge": {
+    key: "QUERY_BIKE_CHALLENGE",
+    name: "Bike Challenge",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_62_UI") ?? false,
+  },
+  "QUERY_Bike_Racing": {
+    key: "QUERY_BIKE_RACING",
+    name: "Bike Racing",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_61_UI") ?? false,
+  },
+  // 3.3
+  "QUERY_Voidbane_Eldertree": {
+    key: "QUERY_VOIDBANE_ELDERTREE",
+    name: "Voidbane Eldertree",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_70_UI") ?? false,
+  },
+  "QUERY_Voidmatter_Blocks": {
+    key: "QUERY_VOIDMATTER_BLOCKS",
+    name: Puzzle.VOIDMATTER_BLOCKS,
+    query: (m) => [
+      "SP_IconMap_Activity_CubeEndless.png",
+      "SP_IconMap_Activity_CubeNor"
+    ].some(icon => m?.mapMark?.icon.includes(icon)) ?? false,
+  },
+  "QUERY_DEBUG_1": {
+    key: "QUERY_DEBUG_1",
+    name: "Debug 1",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_67_UI") ?? false,
+  },
+  "QUERY_MOTORBIKE_FIXED_TRACK": {
+    key: "QUERY_DEBUG_2", // MOTORBIKE_FIXED_TRACK TODO - migrate
+    name: "Motorbike - Fixed Track",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_68_UI") ?? false,
+  },
+  "QUERY_MOTORBIKE_FLIGHT_TRACK": {
+    key: "QUERY_DEBUG_3",
+    name: Puzzle.MOTORBIKE_FLIGHT_TRACK,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_69_UI") ?? false,
+  },
+  "QUERY_DEBUG_5": {
+    key: "QUERY_DEBUG_5",
+    name: "Debug 5",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_71_UI") ?? false,
+  },
+  "QUERY_THREAT_ELIMINATION": {
+    key: "QUERY_DEBUG_6", // DO NOT MODIFY # TODO MIGRATE
+    name: Puzzle.THREAT_ELIMINATION,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_72_UI") ?? false,
+  },
+  "QUERY_MOTORBIKE_STUNT_TRACK": {
+    key: "QUERY_DEBUG_7", // DO NOT MODIFY # TODO MIGRATE
+    name: Puzzle.MOTORBIKE_STUNT_TRACK,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_73_UI") ?? false,
+  },
+  "QUERY_Light_Builder": {
+    key: "QUERY_LIGHT_BUILDER",
+    name: "Light Builder",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_74_UI") ?? false,
+  },
+  "QUERY_DEBUG_9": {
+    key: "QUERY_DEBUG_9",
+    name: "Debug 9",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_75_UI") ?? false,
+  },
+  "QUERY_DEBUG_10": {
+    key: "QUERY_DEBUG_10",
+    name: "Debug 10",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_76_UI") ?? false,
+  },
+  "QUERY_Cave": {
+    key: "QUERY_CAVE",
+    name: "Cave",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Layer_UI") ?? false,
+  },
+  "QUERY_QUEST_ACTIVITY": {
+    key: "QUERY_QUEST_ACTIVITY",
+    name: "Quest Activity",
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Activity_05_UI") ?? false,
+  },
+  "QUERY_EXTRA_CHALLENGE": {
+    key: "QUERY_EXTRA_CHALLENGE",
+    name: Puzzle.EXTRA_CHALLENGE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_16_UI") ?? false,
+  },
+
+  // 3.5
+  "QUERY_SEAT_OF_STILLNESS": {
+    key: "QUERY_SEAT_OF_STILLNESS",
+    name: Puzzle.SEAT_OF_STILLNESS,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_80_UI") ?? false,
+  },
+  "QUERY_AUTO_CASKET": {
+    key: "QUERY_AUTO_CASKET",
+    name: Puzzle.AUTO_CASKET,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_92_UI") ?? false,
+  },
+  "QUERY_SQUAREFIELD_SPARRING": {
+    key: "QUERY_SQUAREFIELD_SPARRING",
+    name: Puzzle.SQUAREFIELD_SPARRING,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_91_UI") ?? false,
+  },
+  "QUERY_TREASURE_OF_PERILOUS_ENCLAVE": {
+    key: "QUERY_TREASURE_OF_PERILOUS_ENCLAVE",
+    name: Puzzle.TREASURE_OF_PERILOUS_ENCLAVE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_86_UI") ?? false,
+  },
+
+  // 3.6
+  "QUERY_SWORD_FLIGHT_POINT": {
+    key: "QUERY_SWORD_FLIGHT_POINT",
+    name: Puzzle.SWORD_FLIGHT_POINT,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_94_UI") ?? false,
+  },
+
+  // 3.7
+  "QUERY_COMPOSITE_ANOMALY_ZONE": {
+    key: "QUERY_COMPOSITE_ANOMALY_ZONE",
+    name: Puzzle.COMPOSITE_ANOMALY_ZONE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_100_UI") ?? false,
+  },
+  "QUERY_CONTROLLED_ANOMALY_ZONE": {
+    key: "QUERY_CONTROLLED_ANOMALY_ZONE",
+    name: Puzzle.CONTROLLED_ANOMALY_ZONE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_95_UI") ?? false,
+  },
+  "QUERY_DREAM_JADE_ROOTSTONE": {
+    key: "QUERY_DREAM_JADE_ROOTSTONE",
+    name: Puzzle.DREAM_JADE_ROOTSTONE,
+    query: (m) => m?.mapMark?.icon.includes("SP_IconMap_Play_102_UI") ?? false,
+  },
+};
+
+const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
+  // 1.0
+  [Puzzle.MUTTERFLY]: {
+    key: "PUZZLE_MUTTERFLY",
+    keys: ["Gameplay111"]
+  },
+  [Puzzle.BLOBFLY]: {
+    key: "PUZZLE_BLOBFLY",
+    keys: ["Animal032"]
+  },
+  [Puzzle.MAGNETIC_CUBE]: {
+    key: "PUZZLE_HOVERING_MAGNETITE",
+    keys: ["Gameplay381"]
+  },
+  [Puzzle.SIMULATION_TRAINING_DEVICE]: {
+    key: "PUZZLE_SIMULATION_TRAINING_DEVICE",
+    keys: [
+      "Gameplay200",
+      "branch2.4_143_Gameplay_2_4QQ4"
+    ]
+  },
+  [Puzzle.FRAGILE_ROCK]: {
+    key: "PUZZLE_FRAGILE_ROCK",
+    keys: ["Gameplay003"]
+  },
+  [Puzzle.FISSURED_LEDGE]: {
+    key: "PUZZLE_FISSURED_LEDGE",
+    keys: ["Gameplay004"]
+  },
+  [Puzzle.SHOOTING_CHALLENGE]: {
+    key: "PUZZLE_SHOOTING_CHALLENGE",
+    keys: ["Gameplay055"]
+  },
+  [Puzzle.TRAINING_DUMMY]: {
+    key: "PUZZLE_TRAINING_DUMMY",
+    keys: ["Gameplay050"]
+  },
+
+  // 1.1
+  [Puzzle.TACTICAL_HOLOGRAM_SKI]: {
+    key: "PUZZLE_TACTICAL_HOLOGRAM_SKI",
+    keys: ["Gameplay207"]
+  },
+  [Puzzle.FROSTBUG]: {
+    key: "PUZZLE_FROSTBUG",
+    keys: ["Monster139"]
+  },
+
+  // 2.0
+  [Puzzle.FLYING_CHALLENGE]: {
+    key: "PUZZLE_FLYING_CHALLENGE",
+    keys: [
+      "Gameplay_LNXT_Flying",
+      "branch2.4_143_Gameplay_2_4QQ11",
+    ]
+  },
+  [Puzzle.MUSICFLY]: {
+    key: "PUZZLE_MUSICFLY",
+    keys: ["Gameplay_SoundDesign2"]
+  },
+  [Puzzle.OVERFLOWING_PALETTE]: {
+    key: "PUZZLE_OVERFLOWING_PALETTE",
+    keys: ["Gameplay8"]
+  },
+  [Puzzle.NIGHTMARE_CLOUD_PURPLE]: {
+    key: "PURPLE_RINASCITA_CLOUD",
+    keys: ["Gameplay012"]
+  },
+  [Puzzle.NIGHTMARE_CLOUD_RED]: {
+    key: "RED_RINASCITA_CLOUD",
+    keys: ["branch2.0_JMXJ_StrongPollution"]
+  },
+
+  // 2.4
+  [Puzzle.HERO_REND]: {
+    key: "PUZZLE_HERO_REND",
+    keys: ["branch2.4_143_Gameplay_2_4QQ14"]
+  },
+
+  // 2.5
+  [Puzzle.ORCHESTRATION_ALTAR]: {
+    key: "PUZZLE_ORCHESTRATION_ALTAR",
+    keys: ["branch2.5_41_Gameplay1"]
+  },
+  [Puzzle.TRIPTYCH_CHEST]: {
+    key: "PUZZLE_TRIPTYCH_CHEST",
+    keys: ["branch2.5_Slots"]
+  },
+
+  // 2.6
+  [Puzzle.DREAMS_OF_CINTERCIDE]: {
+    key: "PUZZLE_DREAMS_OF_CINTERCIDE",
+    keys: ["branch2.6_35_Gameplay640"]
+  },
+
+  // 3.0
+  [Puzzle.BIKE_CHALLENGE]: {
+    key: "PUZZLE_BIKE_CHALLENGE",
+    keys: [
+      "branch3.0_692_Gameplay_MotorZhongDuan",
+      // "branch3.0_135_Gameplay513", // DEPRECATED: 3.2 - query covers it
+    ]
+  },
+  [Puzzle.SMARTPRINT_CUBE]: {
+    key: "PUZZLE_SMARTPRINT_CUBE",
+    keys: ["branch2.8_41_Gameplay_3_0/RollBlock5"]
+  },
+  [Puzzle.SOLISKIN]: {
+    key: "PUZZLE_SOLISKIN",
+    keys: ["branch3.0_939_NPC420085"]
+  },
+  [Puzzle.SOLISKIN_COLLECT]: {
+    key: "PUZZLE_SOLISKIN_COLLECT",
+    keys: ["branch3.0_939_Collect_SBS14"]
+  },
+  [Puzzle.SOLISKIN_GUIDE]: {
+    key: "PUZZLE_SOLISKIN_GUIDE",
+    keys: ["branch3.1_115_Gameplay_3_1/SunSpiritPPV"]
+  },
+  [Puzzle.GEOSPIDER_PROJECTION]: {
+    key: "PUZZLE_GEOSPIDER_PROJECTION",
+    keys: ["branch3.0_40_Gameplay_3_0/VisionSummon11"]
+  },
+  [Puzzle.REINDEER_PROJECTION]: {
+    key: "PUZZLE_REINDEER_PROJECTION",
+    keys: [
+      "branch3.0_40_Gameplay_3_0/VisionSummon8",
+      "branch3.3_249_Gameplay_3_0/VisionSummon11", // TODO: remove? not sure
+    ]
+  },
+  [Puzzle.ZIPZAP_PROJECTION]: {
+    key: "PUZZLE_ZIPZAP_PROJECTION",
+    keys: ["branch3.0_157_Gameplay_3_0/VisionSummon1"]
+  },
+  // "branch3.3_FlowerPollutionManager" // Flower pollution?
+  // 3.1
+  [Puzzle.GLOMMOTH_PROJECTION]: {
+    key: "GLOHOMOTH_VISION", // moved from MISC, DO NOT CHANGE THIS KEY
+    keys: ["branch3.1_40_Gameplay_3_1/VisionSummon4"]
+  },
+
+  // 3.3
+  [Puzzle.VOIDWING_MOTH_PROJECTION]: {
+    key: "PUZZLE_VOIDWING_MOTH_PROJECTION",
+    keys: ["branch3.3_109_Gameplay_3_9"]
+  },
+  [Puzzle.INVESTIGATE_ASTRITES]: {
+    key: "PUZZLE_INVESTIGATE_ASTRITES",
+    keys: [
+      "branch2.1_SceneObj1", // Riccoli Islands sailing investigation
+      "branch2.8_318_Collect_Drop/2_20", // Honami capsules
+      "branch3.3_161_Treasure_2_0_05", // Dimmr Plains astrites from trees
+    ]
+  },
+  [Puzzle.INSPECT]: {
+    key: "PUZZLE_INSPECT",
+    keys: ["branch3.3_151_Gameplay001"]
+  },
+  [Puzzle.INVESTIGATE]: {
+    key: "PUZZLE_INVESTIGATE",
+    keys: ["Quest096"]
+  },
+
+  // 3.4
+  [Puzzle.BREACH_PROTOCOL]: {
+    key: "PUZZLE_BREACH_PROTOCOL",
+    keys: ["branch3.4_193_Gameplay_3_4/Lucy4"]
+  },
+  [Puzzle.HACKING_CAMERA]: {
+    key: "PUZZLE_HACKING_CAMERA",
+    keys: ["branch3.4_39_Gameplay20"],
+  },
+  [Puzzle.SURVEILLANCE_CAMERA]: {
+    key: "PUZZLE_SURVEILLANCE_CAMERA",
+    keys: ["branch3.4_39_Gameplay25"]
+  },
+  [Puzzle.VENDING_MACHINE]: {
+    key: "PUZZLE_VENDING_MACHINE",
+    keys: ["branch3.4_39_Gameplay21"]
+  },
+  [Puzzle.NIGHT_CITY_INSPECT]: {
+    key: "PUZZLE_NIGHT_CITY_INSPECT",
+    keys: ["branch3.4_217_Gameplay_3_4/Lucy2"]
+  },
+  [Puzzle.TEXT_OF_UNKNOWN_ORIGIN]: {
+    key: "PUZZLE_TEXT_OF_UNKNOWN_ORIGIN_INSPECT",
+    keys: ["branch3.4_193_Gameplay_3_4/Lucy3"]
+  },
+
+  // 3.5
+  [Puzzle.ELSEWAY_SHROUD]: {
+    key: "PUZZLE_ELSEWAY_SHROUD",
+    keys: ["branch3.5_41_Gameplay_3_5/JGZD1"]
+  },
+  [Puzzle.RETROSPECTIVE_CLUE]: {
+    key: "PUZZLE_RETROSPECTIVE_CLUE",
+    keys: ["branch3.5_Clue"]
+  },
+
+  // 3.7
+  [Puzzle.DREAM_FOX_STATUE]: {
+    key: "PUZZLE_DREAM_FOX_STATUE",
+    keys: ["branch3.7_13_Gameplay_8"]
+  },
+  [Puzzle.THOUSANDFOLD_PETALS]: {
+    key: "PUZZLE_THOUSANDFOLD_PETALS",
+    keys: [
+      "branch3.7_239_Gameplay_InvisibleChair1",
+      "branch3.7_239_Gameplay_3_7/GhostTitan6",
+      "branch3.7_239_Gameplay_InvisibleChair3",
+      "branch3.7_239_Gameplay_3_7/GhostTitan5",
+      "branch3.7_239_Gameplay_3_7/GhostTitan7",
+    ]
+  },
+  [Puzzle.SHADOW_BINDER]: {
+    key: "PUZZLE_SHADOW_BINDER",
+    keys: ["branch3.7_239_Gameplay_3_7/GhostTitan1"]
+  },
+  [Puzzle.DREAM_KERNEL_PUPPET]: {
+    key: "PUZZLE_DREAM_KERNEL_PUPPET",
+    keys: ["branch3.7_13_Gameplay_9"]
+  },
+};
+
+export const PuzzleTranslationMap: Record<string, TranslationMapEntry> =
+  (() => {
+    const result: Record<string, TranslationMapEntry> = {};
+
+    for (const [name, { key, keys }] of Object.entries(PuzzleTranslationMapGroups)) {
+      for (const k of keys) {
+        result[k] = { name, key };
+      }
+    }
+
+    for (const [qkey, { key, name }] of Object.entries(PuzzleQueryCategories)) {
+      result[qkey] = { name, key };
+    }
+
+    return result;
+  })();
+
+
+export const PuzzleDisplayOrder = [
+  "Mutterfly",
+  "Blobfly",
+  "Flying Challenge",
+  "Orchestration Altar",
+  "Triptych Chest",
+  "Bike Challenge",
+  "Soliskin Chest",
+  "Treasure Spot",
+];

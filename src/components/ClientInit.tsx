@@ -2,36 +2,35 @@
 
 import { runMigrations } from "@/migrations/runMigrations";
 import { useEffect, useState } from "react";
+import { hydrateRegisteredStores } from "@/app/map/state/storeRegistry";
 
 interface ClientInitProps {
   children: React.ReactNode;
 }
+
 export const ClientInit = ({ children }: ClientInitProps) => {
-  const [isReady, setIsReady] = useState(false);
-  const [migrationsResult, setMigrationsResult] = useState<boolean | null>(null);
+  const [status, setStatus] = useState<'pending' | 'done' | 'error'>('pending');
+  console.log("[ClientInit] Status:", status);
+
   useEffect(() => {
-    const run = async () => {
+    (async () => {
+      console.log("[ClientInit] Running migrations...");
       const result = await runMigrations();
-      setMigrationsResult(result);
-      setIsReady(true);
-    };
-    run();
+      if (!result) {
+        setStatus('error');
+        return;
+      }
+      console.log("[ClientInit] Hydrating registered stores...");
+      hydrateRegisteredStores();
+      setStatus('done');
+    })();
   }, []);
 
-  if (!isReady) {
+  if (status === 'pending') {
     return (
-      <div style={{ padding: '2rem', textAlign: 'center' }}>
-        Performing migrations...
-      </div>
+      <div className="min-h-screen bg-[rgb(var(--base-100))]" />
     );
   }
-  if (migrationsResult === false) {
-    return (
-      <div style={{ padding: '2rem', textAlign: 'center' }}>
-        Migrations failed. Please contact the developer.
-      </div>
-    );
-  }
-
+  if (status === 'error') return <div>Migrations failed. Please contact the developer.</div>;
   return <>{children}</>;
 };

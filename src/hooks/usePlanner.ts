@@ -1,6 +1,7 @@
 import { IResonatorPlanner, IWeaponPlanner, PLANNER_TYPE } from "@/app/interfaces/planner_item";
 import { useCharacters } from "@/context/CharacterContext";
 import { useWeapons } from "@/context/WeaponContext";
+import { ResonatorStateDBEntry } from "@/types/resonatorTypes";
 import { WeaponStateDBEntry } from "@/types/weaponTypes";
 import { updateSharedPriority } from "@/utils/priorityUtils";
 
@@ -9,11 +10,13 @@ export const usePlanner = () => {
     characters,
     updatePriorities: updateResonatorPriorities,
     deleteCharacter,
+    updateCharacter,
   } = useCharacters();
   const {
     weapons,
     updatePriorities: updateWeaponPriorities,
     deleteWeapon,
+    updateWeapon,
   } = useWeapons();
 
   const updatePlannerPriority = (
@@ -52,5 +55,16 @@ export const usePlanner = () => {
     }
   }
 
-  return { updatePlannerPriority, deletePlannerItem };
+  const toggleActive = (target: IResonatorPlanner | IWeaponPlanner) => {
+    target.dbData.isActive = !target.dbData.isActive;
+    if (target.type === PLANNER_TYPE.RESONATOR) {
+      updateCharacter(target.name, target.dbData as ResonatorStateDBEntry);
+    } else if (target.type === PLANNER_TYPE.WEAPON) {
+      updateWeapon(target.name, target.dbData as WeaponStateDBEntry);
+    } else {
+      console.error("Unknown planner type", target);
+    }
+  }
+
+  return { updatePlannerPriority, deletePlannerItem, toggleActive };
 }

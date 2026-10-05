@@ -1,0 +1,99 @@
+import { TranslationMapEntry } from "./TranslationMapInterface"
+
+export enum Miscellaneous {
+  LAUNCH_PAD = "Launch Pad",
+}
+
+export const MiscellaneousTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
+  "Weapon": {
+    key: "MISC_EXILE_WEAPON",
+    keys: [
+      "Weapon001", // Sniper Rifle
+      "Weapon002", // Crowbar
+      "Weapon003", // Flamethrower
+      "Weapon004", // Chainsaw
+      "Weapon005", // Electric Blade
+    ]
+  },
+  "Cooking": {
+    key: "MISC_COOKING",
+    keys: [
+      "SceneObj101",
+      "SceneObj100",
+    ]
+  },
+  [Miscellaneous.LAUNCH_PAD]: {
+    key: "MISC_LAUNCH_PAD",
+    keys: ["Gameplay525"]
+  },
+  "Monnaie Box": {
+    key: "MISC_MONNAIE_BOX",
+    keys: [
+      "branch2.0_SceneObj3",
+      "branch2.0_SceneObj2",
+      "SceneObj1",
+      "branch2.0_Quest012",
+      "Quest010",
+      "Quest009",
+    ],
+  },
+  "Scavenger's Backpack": {
+    key: "SCAVENGER_BACKPACK",
+    keys: ["Treasure031"]
+  },
+  "Tree Trunk": {
+    key: "MISC_TREE_TRUNK",
+    keys: ["SceneObj005"]
+  },
+  "Wooden Box": {
+    key: "MISC_WOODEN_BOX",
+    keys: ["SceneObj002"]
+  },
+  "Gondola": {
+    key: "GONDOLA",
+    keys: ["Gameplay626"]
+  },
+  "Floating Container": { // The one found on sea
+    key: "MISC_FLOATING_CONTAINER",
+    keys: ["Quest008"]
+  },
+  "Grappling Hook": {
+    key: "GRAPPLING_HOOK",
+    keys: [
+      "branch3.0_135_Gameplay007",
+      "branch3.5_Gameplay008",
+    ]
+  },
+  "Fishing Spot - Small": {
+    key: "MISC_FISHING_SPOT_SMALL",
+    keys: ["branch2.1_Gameplay128"]
+  },
+  "Fishing Spot - Medium": {
+    key: "MISC_FISHING_SPOT_MEDIUM",
+    keys: ["branch2.1_Gameplay127"]
+  },
+  "Fishing Spot - Large": {
+    key: "MISC_FISHING_SPOT_LARGE",
+    keys: ["branch2.1_Gameplay126"]
+  },
+  "Fishing Spot - Legendary": {
+    key: "MISC_FISHING_SPOT_LEGENDARY",
+    keys: ["branch2.1_Gameplay129"]
+  },
+};
+export const MiscellaneousTranslationMap: Record<string, TranslationMapEntry> =
+  (() => {
+    const result: Record<string, TranslationMapEntry> = {};
+
+    for (const [name, { key, keys }] of Object.entries(MiscellaneousTranslationMapGroups)) {
+      for (const k of keys) {
+        result[k] = { name, key };
+      }
+    }
+
+    return result;
+  })();
+
+export const MiscellaneousDisplayOrder = [
+  "Weapon",
+]

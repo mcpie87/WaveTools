@@ -17,12 +17,14 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				'base-100': 'var(--base-100)',
-				'base-200': 'var(--base-200)',
-				'base-300': 'var(--base-300)',
-				'text-primary': 'var(--text-primary)',
-				'text-secondary': 'var(--text-secondary)',
-				'static-base-100': '#dddddd',
+				'text-primary': 'rgb(var(--text-primary) / <alpha-value>)',
+				'text-secondary': 'rgb(var(--text-secondary) / <alpha-value>)',
+				'base-100': 'rgb(var(--base-100) / <alpha-value>)',
+				'base-200': 'rgb(var(--base-200) / <alpha-value>)',
+				'base-300': 'rgb(var(--base-300) / <alpha-value>)',
+				'base-400': 'rgb(var(--base-400) / <alpha-value>)',
+				'static-base-light-100': '#dddddd',
+				'static-base-dark-100': '#333333',
 				'static-text-primary': '#000000',
 				rarity5: '#e1d170',
 				rarity4: '#cab2e3',

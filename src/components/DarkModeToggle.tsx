@@ -1,21 +1,20 @@
 "use client";
 
 import LocalStorageService from "@/services/LocalStorageService";
+import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const storageService = new LocalStorageService("theme");
 
 export default function DarkModeToggle() {
   // dark mode by default cause people...
-  const [darkMode, setDarkMode] = useState(() => {
-    return storageService.load() || false;
-  });
+  const [darkMode, setDarkMode] = useState<"dark" | "light">("light");
 
   useEffect(() => {
-    const savedTheme = storageService.load();
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-      setDarkMode(true);
+    const saved = storageService.load();
+    if (saved === "dark" || saved === "light") {
+      setDarkMode(saved);
+      if (saved === "dark") document.documentElement.classList.add("dark");
     }
   }, []);
 
@@ -33,9 +32,11 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={toggleDarkMode}
-      className="p-2 rounded-md bg-gray-200 dark:bg-gray-800 text-black dark:text-white"
+      className="p-2 rounded-lg hover:bg-base-200"
+      aria-label="Toggle dark mode"
     >
-      {darkMode === "dark" ? "Dark Mode" : "Light Mode"}
+      <Sun className="h-5 w-5 dark:hidden" />
+      <Moon className="hidden h-5 w-5 dark:block" />
     </button>
   );
 }

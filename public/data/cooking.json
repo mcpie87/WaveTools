@@ -343,7 +343,7 @@
       "id": 80000009,
       "name": "Shuyun Herbal Tea",
       "attributes_description": "Increases ATK and Crit. Rate of all Resonators in the team by 12% and 10% respectively, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
-      "bg_description": "Shuyun's ancestral secret herbal tea, most suitable for summer. But the taste is special, and the taste is polarized. The formula is never disclosed, and it is hard to buy. Usually, you can only ask Shuyun to make it.",
+      "bg_description": "Shuyun's family secret herbal tea, best savored in summer. Its flavor, however, is an acquired taste, and opinions on it are sharply divided. The recipe has never been shared, and no amount of gold could ever pry it loose. Usually, the only way to try it is to ask Shuyun to brew it for you.",
       "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_010_UI.png",
       "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_010_UI.png",
       "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_010_UI.png",
@@ -751,7 +751,7 @@
       "id": 80000019,
       "name": "Milky Fish Soup",
       "attributes_description": "Restores 40 STA.",
-      "bg_description": "A soup that warms the body and seems to ward off the cold. Some families in Huanglong often serve it to sick family members.",
+      "bg_description": "A fish soup that warms the body and seems to ward off the cold. Some families in Huanglong often serve it to sick family members.",
       "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_020_UI.png",
       "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_020_UI.png",
       "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_020_UI.png",
@@ -774,7 +774,23 @@
         "value": 1
       }
     ],
-    "typeId": 3
+    "typeId": 3,
+    "specialtyItem": {
+      "id": 80001019,
+      "name": "Shredded Fish Soup",
+      "attributes_description": "Restores 50 STA.",
+      "bg_description": "Stir fry the shredded fish with seasoning, place it on top of the simmered thick broth, and then pour hot oil over the dish, creating a sizzling sound that brings out sweet and savory flavors. This rich soup is by far Buling's favorite hometown dish.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_23_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_23_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_23_UI.png",
+      "rarity": 2
+    },
+    "specialtyCook": {
+      "id": 1307,
+      "name": "Buling",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_58_UI.png",
+      "rarity": 4
+    }
   },
   {
     "type": "dish",
@@ -1262,7 +1278,7 @@
       "id": 80001034,
       "name": "Blazing Feather Spicy Meat",
       "attributes_description": "Increases Energy Regen of all Resonators in the team by 24%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
-      "bg_description": "Changli's favorite dish, which is made with extra chilis.\nThe vibrant redness hints at its intense flavor, which seems to leap out of the bowl. Served alongside rice and a cup of osmanthus syrup, amidst the bustling ambiance of Huangdou Mingting, it provides a heavenly culinary experience.\nWhile few in Mingting, apart from Changli, venture to taste this delicacy, it's a cherished household favorite among families in Hongzhen. Accompanied by wine, it adds an extra layer of warmth to the dining experience.",
+      "bg_description": "Changli's favorite dish, which is made with extra chili.\nThe vibrant redness hints at its intense flavor, which seems to leap out of the bowl. Served alongside rice and a cup of osmanthus syrup, amidst the bustling ambiance of Capital Mingting, it provides a heavenly culinary experience.\nWhile few in Mingting, apart from Changli, venture to taste this delicacy, it's a cherished household favorite among families in Hongzhen. Accompanied by wine, it adds an extra layer of warmth to the dining experience.",
       "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_041_UI.png",
       "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_041_UI.png",
       "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_041_UI.png",
@@ -1363,7 +1379,23 @@
         "value": 1
       }
     ],
-    "typeId": 3
+    "typeId": 3,
+    "specialtyItem": {
+      "id": 80001018,
+      "name": "Lemon-Scented Sukiyaki",
+      "attributes_description": "Increases Echo drop rate by 22%, lasting for 30m. Only effective on your own Resonators in Co-op Mode",
+      "bg_description": "Refreshing lemons meld their zesty notes into this rich stew. Tender and flavorful, it is one of Chisa's signature dishes. Every winter, she'd curl up under a heated futon to watch music shows while scents wafting from the pot filled the room. Those were the coziest days in her memories.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_24_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_24_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_24_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1508,
+      "name": "Chisa",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_57_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -1474,7 +1506,23 @@
         "value": 1
       }
     ],
-    "typeId": 3
+    "typeId": 3,
+    "specialtyItem": {
+      "id": 80001028,
+      "name": "Chongzhou Spicy Tofu",
+      "attributes_description": "Defeating overworld enemies yields 55% more Shell Credits, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "When Qiuyuan and his comrades were still in service, their missions often required them to travel fast and eat light, with little chance to enjoy a good meal. Even when they lodged at village inns, they still had to cook their own food out of an abundance of caution. Originally from Chongzhou, Qiuyuan had learned a few basic recipes at a young age. One of his dishes was fragrant, spicy, and mouthwatering, perfect for an empty stomach when paired with rice. Simple, yet satisfying. \n\"Eat well, live well.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_21_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_21_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_21_UI.png",
+      "rarity": 5
+    },
+    "specialtyCook": {
+      "id": 1411,
+      "name": "Qiuyuan",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_56_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -1916,7 +1964,23 @@
         "value": 3
       }
     ],
-    "typeId": 3
+    "typeId": 3,
+    "specialtyItem": {
+      "id": 80001044,
+      "name": "One-Pot Pasta",
+      "attributes_description": "Reduces Wall Dash and Swimming STA cost for all Resonators in the team by 35% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Zani's pasta is a rich and flavorful dish, made by layering hearty meat sauce with cheese, sausage, and fragrant herbs before cooking it to perfection.\nAccording to what she said, she first stumbled upon the idea while reheating a takeout meal that had gone cold after a long workday. On a whim, she threw in whatever ingredients she had on hand, and to her surprise, the result was unexpectedly delicious. What began as a quick fix soon turned into a carefully refined recipe.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_076_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_076_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_076_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1507,
+      "name": "Zani",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_38_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -2018,7 +2082,23 @@
         "value": 3
       }
     ],
-    "typeId": 2
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001047,
+      "name": "Knight-Errant's Essentials",
+      "attributes_description": "Grants 34% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Prepared by Cartethyia herself, this Laurus Salad comes packed with extra Viscum Berries, crispy and sweet.\nNow a wandering knight, she's hungry to learn, to grow, and to see the world.\nLet's start with a salad made just for the wandering knight. This time, extra berries included!",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_077_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_077_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_077_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1409,
+      "name": "Cartethyia",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_40_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -2152,7 +2232,23 @@
         "value": 1
       }
     ],
-    "typeId": 2
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001051,
+      "name": "Pasta Bocadillo",
+      "attributes_description": "Gives 8% Healing Bonus to all Resonators in the team and increases their Max HP by 12% for 15m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "For a wandering bard like Ciaccona, meals on the road are all about striking a balance between taste and convenience.\nOne day, as the campfire crackled to life, she had an idea and took the bread she always carried.\nAs the rich aroma of meat sauce filled the air, seeping into the bread's warm crust, she spread on the final layer of seasoning.\nHowever, there's an unspoken rule. Ragunna's pasta is not to be tampered with. No shortcuts, no twists. Taking a bite of her creation, Ciaccona was lost in her thoughts. \"If I ever get banished, this bread might just be one of the reasons.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_075_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_075_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_075_UI.png",
+      "rarity": 2
+    },
+    "specialtyCook": {
+      "id": 1407,
+      "name": "Ciaccona",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_37_UI.png",
+      "rarity": 5
+    }
   },
   {
     "type": "dish",
@@ -2334,5 +2430,1618 @@
       }
     ],
     "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10057,
+    "resultItem": {
+      "id": 80000057,
+      "name": "Oaknut Honeycake",
+      "attributes_description": "Reduces Flight STA consumption for all Resonators in the team by 10% for 15m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Add more syrup! No, even more! Until this honeycake is as sweet and warm as a hug! And don't forget to top it with some Oaknuts, the forest's blessings and nature's gift.\nMay you have a sweet day.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_081_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_081_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_081_UI.png",
+      "rarity": 2
+    },
+    "materials": [
+      {
+        "id": 42601200,
+        "name": "Oaknut",
+        "value": 1
+      },
+      {
+        "id": 42600010,
+        "name": "Bird Egg",
+        "value": 1
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 1
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 1
+      }
+    ],
+    "typeId": 3,
+    "specialtyItem": {
+      "id": 80001057,
+      "name": "Redcurrant Tart",
+      "attributes_description": "Reduces Flight STA consumption for all Resonators in the team by 12% for 15m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A tart drenched in thick, tangy jam that floods every crevice of the pastry, overpowering its sweetness. No one but Phrolova enjoys this zesty flavor, nor does anyone know where the tiny, sour berries even come from.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_087_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_087_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_087_UI.png",
+      "rarity": 2
+    },
+    "specialtyCook": {
+      "id": 1608,
+      "name": "Phrolova",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_41_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10058,
+    "resultItem": {
+      "id": 80000058,
+      "name": "Saltimbocca",
+      "attributes_description": "Grants 40% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A traditional Septimont dish made from mashed veal and Bloodleaf Viburnums.\nIt's said that it leaps into your mouth and gives you courage for battle.\nSeptimontians drum and feast before the hunt. They defend their home with blood and flesh.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_083_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_083_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_083_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601230,
+        "name": "Bloodleaf Viburnum",
+        "value": 2
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 42310170,
+        "name": "Gemberry",
+        "value": 2
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10059,
+    "resultItem": {
+      "id": 80000059,
+      "name": "Glory Roast Platter",
+      "attributes_description": "Grants 50% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Skewers, poultry legs, and meat wraps. Now you've got yourself a Glory Roast Platter!\nCome, Hero of Gladiators, Star of the Arena, take this \"glory\" and let's meet at the top!",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_082_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_082_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_082_UI.png",
+      "rarity": 5
+    },
+    "materials": [
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 6
+      },
+      {
+        "id": 42601220,
+        "name": "Bamboo Iris",
+        "value": 4
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": 2
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10060,
+    "resultItem": {
+      "id": 80000060,
+      "name": "Frosted Cream Blizzard",
+      "attributes_description": "Grants 25% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A cup of seemingly ordinary shaved ice. Is it really as ordinary as it looks?\n...Alright, yes. It is absolutely ordinary. But for Septimontians, this simple treat is one of the few chances to truly cool down.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_084_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_084_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_084_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42310070,
+        "name": "Lemongrass",
+        "value": 2
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": 2
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      }
+    ],
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001060,
+      "name": "Super Doubleshot Shaved Ice Milkshake Deluxe",
+      "attributes_description": "Grants 28% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Galbrena's unique dessert recipe features large scoops of ice cream over a bowl of shaved ice, topped with colorful jams for that extra kick in flavor, along with a portion generous enough to eat to your heart's content. She even took extra care to adjust the Tacet Discord-shaped candies and cookies to be more appealing and cute.\nPerhaps there's a deeper reason behind it all: When dealing with Tacet Discords, one needs a sharp, decisive \"crunch.\" But when it comes to life, one should savor its flavors to the fullest. According to Galbrena, eating them separately or together comes down to personal preference. Her only advice is: Enjoy it before it melts. Many life's precious moments \"melt in an instant,\" just like the sprinkles of ice. But don't worry, delightful flavors cling to the taste buds and never fade, always there to enjoy.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_22_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_22_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_22_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1208,
+      "name": "Galbrena",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_55_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10061,
+    "resultItem": {
+      "id": 80000061,
+      "name": "Solis",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A popular energy drink among Septimont Gladiators.\nDrink this can of Solis, and fight 'til the last breath!",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_086_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_086_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_086_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 3
+      },
+      {
+        "id": 42601110,
+        "name": "Viscum Berry",
+        "value": 6
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001061,
+      "name": "Heartpour",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 34% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Endorsed by Gladiator Star Lupa, it's still a hit across Septimont.\nLightly sweet, refreshingly smooth, and coming in a variety of flavors, it is best enjoyed ice cold.\nFor Lupa, fighting in the arena is an indispensable part of her life. At the breaks of matches, she still takes a sip of this Heartpour, remembering the thrill of the fight and the laughter she shared with her partner during the Agon of Champions.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_078_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_078_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_078_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1207,
+      "name": "Lupa",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_46_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10062,
+    "resultItem": {
+      "id": 80000062,
+      "name": "Bamboo Iris Crisps",
+      "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A local Septimontian Snack made from fried petals of Bamboo Iris. Light and crunchy.\nEach pack holds just a few Bamboo Iris Crisps... and a whole lot of deliciously fragrant air. You won't stop at just one.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_079_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_079_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_079_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601220,
+        "name": "Bamboo Iris",
+        "value": 4
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 2
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10063,
+    "resultItem": {
+      "id": 80000063,
+      "name": "Seasalt Popcorn",
+      "attributes_description": "Grants 10% Healing Bonus to all Resonators in the team and increases their Max HP by 20%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Seasalt Popcorn, your must-have snack for any Agon. Salty, joyful, and healthy! Every bite brings the taste of the sea.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_085_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_085_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_085_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42601210,
+        "name": "Amber Halite",
+        "value": 3
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": 3
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 3
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10064,
+    "resultItem": {
+      "id": 80000064,
+      "name": "Bubbly Buddy",
+      "attributes_description": "Grants 30% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Whether you're watching Agons or catching every clash in the arena, it's there for you.\nZero sugar. Zero calories. Packed with Bloodleaf Viburnums. Let it fire up the arena!",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_080_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_080_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_080_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601230,
+        "name": "Bloodleaf Viburnum",
+        "value": 4
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10065,
+    "resultItem": {
+      "id": 80000065,
+      "name": "Marinated Olives",
+      "attributes_description": "Grants 50% Resonance Skill DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "The clever folk of Septimont know a thousand ways to prepare olives, but only the marinated kind truly wins their hearts.\nA handful of olives and a good bottle of wine, that's all it takes to bring Septimontians the simplest joy and happiness sometimes.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_19_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_19_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_19_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42601130,
+        "name": "Felicitous Olives",
+        "value": 3
+      },
+      {
+        "id": 42601010,
+        "name": "Bay Leaf",
+        "value": 2
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 4
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001065,
+      "name": "Sweetened Olives",
+      "attributes_description": "Grants 55% Resonance Skill DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Did someone pick these olives? Hardly. The branches, heavy with ripened fruit, simply yielded their bounty, dropping them gently into her waiting hands. No elaborate preparation could improve their natural, fresh flavor. A simple roll in honey is all it takes to satisfy her discerning palate: as the verdant aroma still clings to her fingertips, a wave of sweet freshness washes over her mouth.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_20_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_20_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_20_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1410,
+      "name": "Iuno",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_48_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10066,
+    "resultItem": {
+      "id": 80000066,
+      "name": "Blooming Bread",
+      "attributes_description": "Grants 40% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A traditional staple of Septimont. Long before its people ever settled these highlands, this crisp-crusted, hearty bread had already become the most enduring flavor on their tongues.\nTo a Septimontian table, bread is what a sword is to a Gladiator.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_17_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_17_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_17_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 4
+      },
+      {
+        "id": 42601010,
+        "name": "Bay Leaf",
+        "value": 3
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001066,
+      "name": "Sweetleaf Blooming Bread",
+      "attributes_description": "Grants 44% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "An ordinary, traditional bread found throughout Septimont, even in the far-off town of Fabianum. Perhaps to set it apart, local bakers in Fabianum would sprinkle crushed herbs over the crisp crust and, with a sense of ceremony, carve the word \"Delicious\" into the surface, as if this modest declaration could lend it a hint of dignity.\nIs it delicious? The young Augusta never thought so. To her, it was just the dry, hard bread waiting at home after a day of running wild, something to fill her belly, the quiet \"footnote\" to every dinner her mother made. It was plain, unremarkable. Like water. Like sunlight. So ordinary it was easy to overlook. But years later, standing before her own stove in Septimont, Augusta tried to recapture that long-forgotten taste. And as the familiar scent and gentle sweetness returned to her tongue, she finally understood what \"Delicious\" meant.\nPerhaps, she had never truly bid farewell to her hometown.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_18_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_18_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_18_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1306,
+      "name": "Augusta",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_51_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10067,
+    "resultItem": {
+      "id": 80000067,
+      "name": "Laurel Shrimp in Nimbus Reduction",
+      "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Food that was once a staple of Rinascitan home cooking, but which has since disappeared from the public eye as high demand led to a precipitous drop in the availability of the tasty shrimp used in its preparation. Today, only a few who purchase expensive shrimp from merchants affiliated with the Order are able to recreate this classical dish.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_088_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_088_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_088_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42601260,
+        "name": "Shrimp Meat",
+        "value": 4
+      },
+      {
+        "id": 42601090,
+        "name": "Mastic Nuvola",
+        "value": 2
+      },
+      {
+        "id": 42601010,
+        "name": "Bay Leaf",
+        "value": 3
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10068,
+    "resultItem": {
+      "id": 80000068,
+      "name": "Skelecanth Tartare",
+      "attributes_description": "Reduces Wall Dash and Swimming STA consumption for all Resonators in the team by 20% for 15m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "In the Royan language, the name of this dish means \"sand-buried\"—a reference to how the Roya preserve Skelecanth rinsed in salt and spice. During this slow process, the fish gently ferments, its flesh turning tender and deeply flavorful.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000068_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000068_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000068_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42400120,
+        "name": "Fish",
+        "value": 3
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      },
+      {
+        "id": 42601320,
+        "name": "Pine Cone",
+        "value": 3
+      }
+    ],
+    "typeId": 3
+  },
+  {
+    "type": "dish",
+    "id": 10069,
+    "resultItem": {
+      "id": 80000069,
+      "name": "Lichen Salad",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "In Lahai-Roi, every edible ingredient is treasured, even the humble Cradle Lichen. A handful of fresh, lightly seasoned lichen mixed with the nuts of Creeping Torchpine creates a simple yet nourishing Royan delicacy rich in dietary fiber.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000069_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000069_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000069_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601360,
+        "name": "Cradle Lichen",
+        "value": 2
+      },
+      {
+        "id": 42601320,
+        "name": "Pine Cone",
+        "value": 1
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": 1
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10070,
+    "resultItem": {
+      "id": 80000070,
+      "name": "Pine Needle Soda",
+      "attributes_description": "Restores 80 STA.",
+      "bg_description": "In the clear container, bubbles fizz upward, rising through the pine needles that drift and settle inside the glass. What began as a simple \"use-what-you-have\" nutritional drink turned out to be unexpectedly delicious. One sip, and the pine's fragrance lingers between your teeth. Crisp, aromatic, with a cooling sweetness that sweeps away every trace of fatigue.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000070_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000070_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000070_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601320,
+        "name": "Pine Cone",
+        "value": 4
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      }
+    ],
+    "typeId": 3,
+    "specialtyItem": {
+      "id": 80001070,
+      "name": "Super Snowfluff Storm",
+      "attributes_description": "Restores 100 points of STA.",
+      "bg_description": "Soft, snow-white ice cream floats atop dark coffee, with an ice in the shape of a Snowfluff Seal resting peacefully within. A staple for those burning the midnight oil in the library, this drink balances the bitterness with a light, creamy sweetness. Every sip is a quiet moment of refreshment.\n\nThis drink is Aemys's award-winning creation from the Startorch Academy Beverage Innovation Contest. She once said that it was inspired by homesickness.\n\nThat sounded like a joke, perhaps, but not entirely. Those childhood days spent on the silent frostlands, playing with her family and the seals, now feel far away. And yet, the memories still linger in her mind.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_089_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_089_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_089_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1210,
+      "name": "Aemeath",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_53_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10071,
+    "resultItem": {
+      "id": 80000071,
+      "name": "Honeypot Jam",
+      "attributes_description": "Grants 25% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "To make preserved Dusk Honeypot, the fully ripened berries are harvested and gently simmered to remove excess moisture, then finished with just a touch of sugar. Time stops within the jar. The berry loses its faint, intoxicating effect, but its sweetness remains, safely kept for an entire year.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000071_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000071_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000071_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601340,
+        "name": "Dusk Honeypot",
+        "value": 4
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      }
+    ],
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001071,
+      "name": "Splendorous Sweetness",
+      "attributes_description": "Grants 28% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Denia's dessert from a cooking class. She spent most of the session taste-testing, so in the end she went with jam, something easy to prep.\nThe result was extremely sweet, under-marinated, and overcooked. The texture and sweetness never quite came together. But it looked creative and photographed well, so her classmates still gave it decent scores—by a slim margin.\n\"It tastes sweet. It looks nice. That's good enough, right? Hm? Texture and flavor? Sorry, not really following you.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_27_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_27_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_27_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1211,
+      "name": "Denia",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_64_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10072,
+    "resultItem": {
+      "id": 80000072,
+      "name": "Smoked Meat Stew",
+      "attributes_description": "Grants 40% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Thin slices of meat smoked over Creeping Torchpine needles are stewed together with the fermented drink, then served with mashed potatoes and a spoonful of Honeypot Jam. The rich fat of the Kronapuff mingles with the firm, chewy Lemming meat, offering alternating waves of flavor. On a night when the cold wind cuts to the bone, one mouthful of this dish is enough to make you forget the coldness and the exhaustion.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000072_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000072_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000072_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 3
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 42601340,
+        "name": "Dusk Honeypot",
+        "value": 3
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001072,
+      "name": "Hearty Double-Smoked Stew",
+      "attributes_description": "Grants 44% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "This stew is made with vegetables and poultry smoked separately, then simmered together in one pot to bring out a layered, comforting aroma. The vegetables add a light, woodsy freshness, while the chicken brings a rich, savory depth, all coming together in a warm, golden broth. Luuk often cooks it on a small tabletop stove after work. He says the rising steam and gentle smell help people relax the moment they step inside, like sitting down to a warm meal shared among friends.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_094_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_094_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_094_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1510,
+      "name": "Luuk Herssen",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_54_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10073,
+    "resultItem": {
+      "id": 80000073,
+      "name": "Grilled Fern Spore",
+      "attributes_description": "Increases Crit. DMG of all Resonators in the team by 32% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Young fern balls are picked, skewered, and grilled into one of the most common Royan greens. They have a noticeable bitterness. Fans say the aftertaste is pleasantly sweet, calling it \"the taste of adulthood.\" Royan children avoid them, but anyone who can finish a whole skewer without making a face earns bragging rights.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000073_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000073_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000073_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601350,
+        "name": "Fern Spore",
+        "value": 4
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": 1
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10074,
+    "resultItem": {
+      "id": 80000074,
+      "name": "Fruit Crackle",
+      "attributes_description": "Grants 30% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A snack made from Dusk Honeypots coated in frozen syrup. It gets its name from the cracking sound you hear when you bite into it. It's a favorite among Royan children, though it takes some skill to crunch the sugar-coated berry without spilling its juice onto the clothes.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000074_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000074_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000074_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601340,
+        "name": "Dusk Honeypot",
+        "value": 3
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 3
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001074,
+      "name": "Star Crackle",
+      "attributes_description": "Grants 35% Heavy ATK DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Sigrika's take on Fruit Crackle, which she made to satisfy her own tastes. The star-shaped frosted candy is cool, sweet, and refreshing.\nShe didn't follow the recipe to the letter. Instead, she added a dash of \"inspiration\" on a whim.\nThankfully, the result was pretty good.\nSometimes a little inspiration goes a long way.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_25_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_25_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_25_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1412,
+      "name": "Sigrika",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_65_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10075,
+    "resultItem": {
+      "id": 80000075,
+      "name": "\"Crack & Bolt\" Fish Jar",
+      "attributes_description": "Grants 50% Basic Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A Royan specialty strictly banned from Startorch Academy. Salted fish is packed into a jar and sealed with wet clay, allowing it to ferment and develop a strong, distinctive flavor. To eat it, one must crack the jar's lid.\n\nBefore eating it, make sure to keep these things in mind:\n1. Always open the jar outdoors, in a wide and downwind spot.\n2. Never open it indoors, in a warm place, upwind, or near a crowd.\n3. Check the jar before eating. If you see a crack, put it down immediately and bolt.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000075_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000075_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000075_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400120,
+        "name": "Fish",
+        "value": 4
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 3
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10076,
+    "resultItem": {
+      "id": 80000076,
+      "name": "\"Munchie-More\" Bun",
+      "attributes_description": "Increases ATK by 10% and Crit. DMG by 20% for all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A Startorch Academy cafeteria classic. It looks like a simple carb-on-carb combo, but it's surprisingly addictive: a soft bun brushed with salad dressing, stuffed with sweet-and-savory fried noodles, topped with red pickled ginger for balance. Most people can't stop munching more.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000076_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000076_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000076_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 4
+      },
+      {
+        "id": 42600010,
+        "name": "Bird Egg",
+        "value": 3
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10077,
+    "resultItem": {
+      "id": 80000077,
+      "name": "Complete Nutrition Squeezy Jelly",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 20% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Created for Startorch Academy's students and staff, this jelly is packed with balanced nutrients and fiber, offering steady energy and long-lasting fullness. Its nozzle is designed for easy use anywhere. You can customize the flavor, but be cautious when accepting homemade jelly from others. Not every creative flavor is pleasant for your tummy.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000077_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000077_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000077_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601350,
+        "name": "Fern Spore",
+        "value": 4
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 3
+      }
+    ],
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001077,
+      "name": "Packaged Red Bean Pudding",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 25%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Red bean pudding that can be easily made at home, a simple homemade dessert. After Hiyuki tweaked the recipe, it now comes in a more convenient package.\nHiyuki doesn't have much of a sweet tooth, but once she became the miko, she quietly visited a dessert shop to learn how to make red bean puddings. \nThe children of Ashinohara came to call it the \"good luck pudding.\" However the story grew, the sweetness itself stayed simple. Almost plain.\nJust as she hoped.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_26_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_26_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_26_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1108,
+      "name": "Hiyuki",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_67_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10078,
+    "resultItem": {
+      "id": 80000078,
+      "name": "Lahai-Roi Special Plant Milk",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 1000 for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A drink rich in nervonic acid that helps sharpen mental response. It's mellow with a hint of pine-leaf bitterness. Developed by the Academy kitchen using local Lahai-Roi ingredients, it represents their effort to explore new, sustainable food options.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000078_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000078_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000078_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601320,
+        "name": "Pine Cone",
+        "value": 3
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": 3
+      }
+    ],
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001078,
+      "name": "Refreshing Morning",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 1250, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "\"Wondering how I get my morning spark? Here, try a sip.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_28_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_28_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_28_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1109,
+      "name": "Lucilla",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_66_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10079,
+    "resultItem": {
+      "id": 80000079,
+      "name": "Canned Surprise",
+      "attributes_description": "Grants 50% Resonance Skill DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Cake, jam, and cream are stacked in tidy layers, then sealed inside a tin. The metal casing gives this delicate dessert a long shelf life and sturdy protection. Whether you're alone in a dorm room, working late in a lab, or out on a frozen plain, it's always there when you need a small, almost magical comfort.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000079_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000079_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000079_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42600010,
+        "name": "Bird Egg",
+        "value": 2
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 1
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": 2
+      },
+      {
+        "id": 42601340,
+        "name": "Dusk Honeypot",
+        "value": 1
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001079,
+      "name": "Canned Efficiency",
+      "attributes_description": "Grants 55% Resonance Skill DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A dish Mornye invented back when she was a student in her cooking class. She skipped the decorative fruit topping and packed in extra Dusk Honeypots instead, making each bite far more calorie-dense. According to her classmates, in the name of \"better nutrition,\" she even tried adding fish and soggy Fern Spores...",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_090_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_090_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_090_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1209,
+      "name": "Mornye",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_61_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10080,
+    "resultItem": {
+      "id": 80000080,
+      "name": "Instant Wakeup Energy Gel Sachet",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Created for people who dislike sweets, this smooth, savory blend goes down easily and is gentle on the stomach. According to one student who prefers not to be named, it tastes almost exactly like a cat treat.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000080_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000080_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000080_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 3
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 42400120,
+        "name": "Fish",
+        "value": 3
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10081,
+    "resultItem": {
+      "id": 80000081,
+      "name": "Midnight Wonder Cup Noodles",
+      "attributes_description": "Increases DEF by 10% and Max HP by 20% for all Resonators in the team, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Specially made by the Agronomy Wing, the cup noodles are famous for their rich aroma, which somehow manages to tempt people mostly at night. They may not be the most balanced meal, but they're undeniably one of the Academy's favorites.\n\nThe container has its own heating system, so just add drinking water and wait. If left too long and the noodles or the vegetables start multiplying unusually fast, please contact the Agronomy Wing for collection.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000081_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000081_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000081_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 3
+      },
+      {
+        "id": 42600010,
+        "name": "Bird Egg",
+        "value": 2
+      },
+      {
+        "id": 42601360,
+        "name": "Cradle Lichen",
+        "value": 3
+      }
+    ],
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001081,
+      "name": "Rainbow Wonder Cup Noodles",
+      "attributes_description": "Increases DEF by 12% and Max HP by 25% for all Resonators in the team, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Lynae's custom version of Midnight Wonder Cup Noodles takes her favorite flavor and tweaks it further. For some reason, the steam that rises when it's cooked glows in rainbow colors. One night, after an all-nighter experiment, a student opened a cup in the lab, and colorful mist drifted up from a dim corner, making them think they were seeing things.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_091_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_091_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_091_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1509,
+      "name": "Lynae",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_60_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10082,
+    "resultItem": {
+      "id": 80000082,
+      "name": "\"Sweetness At the Corner\" Chocolate Box",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A chocolate box filled with sweetness, and with the bright smiles of your friends melted into every piece. Share this moment of joy together, and let each bite bring back those happy encounters waiting just around the corner.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000082_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000082_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000082_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 3
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": 3
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10083,
+    "resultItem": {
+      "id": 80000083,
+      "name": "Crispy Juicy Fried Pork Chops Lunchbox",
+      "attributes_description": "Increases ATK of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A generously packed lunchbox loaded with flavor. Take a firm bite of the golden, crispy pork chops and savor every last piece. The satisfaction and energy it offers will fuel your next victory!",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_80000083_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_80000083_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_80000083_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 3
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": 2
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10084,
+    "resultItem": {
+      "id": 80000084,
+      "name": "Morning, Resonator",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "The rich, roasted aroma of coffee blends with a gentle hint of milk, creating a smooth, layered flavor in every sip. On every morning in Solaris, take this with you, and say \"good morning\" to yourself and to the world.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_093_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_093_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_093_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42601340,
+        "name": "Dusk Honeypot",
+        "value": 3
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      },
+      {
+        "id": 80050005,
+        "name": "Milk",
+        "value": 2
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10085,
+    "resultItem": {
+      "id": 80000085,
+      "name": "Spicy Crispy Chicken Burger",
+      "attributes_description": "Increases ATK by 10% and Crit. DMG by 20% for all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A fried drumstick with a crisp golden crust and tender meat inside, finished with a house-made spicy sauce. It's savory with just the right kick, making every bite deeply satisfying.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_092_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_092_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_092_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 4
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 2
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": 2
+      },
+      {
+        "id": 80050001,
+        "name": "Cooking oil",
+        "value": 1
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10086,
+    "resultItem": {
+      "id": 80000086,
+      "name": "The David Martinez",
+      "attributes_description": "Increases ATK of all Resonators in the team by 30%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A drink in the Afterlife named after David Martinez. Part of a ritual to honor the memory of street legends who went out in a blaze of glory.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_095_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_095_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_095_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42601340,
+        "name": "Dusk Honeypot",
+        "value": 4
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 4
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10087,
+    "resultItem": {
+      "id": 80000087,
+      "name": "Jade Mushroom Soup",
+      "attributes_description": "Grants 40% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A soup made by pouring Uncracked Jade liquid and White Jade Beauty into a broth, then letting it simmer over a low flame. Remarkably versatile, it bends willingly to the cook's hand—a rich stock brings out a deep, savory character, while spring water yields a lighter, fresher note. A brief simmer is all it takes for the flavors to naturally bloom.\n\nTo keep impatient children from sneaking a taste before the mushrooms are fully cooked, parents have long made a habit of hiding away their bowls and chopsticks until the White Jade Beauty is properly done. Across the Land of Xuanfang, this is a comfort dish everyone grows up with.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_098_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_098_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_098_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601530,
+        "name": "Uncracked Jade",
+        "value": 3
+      },
+      {
+        "id": 42601560,
+        "name": "White Jade Beauty",
+        "value": 2
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001087,
+      "name": "Gilded Jadeite",
+      "attributes_description": "Grants 44% Resonance Liberation DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Wax gourd and fresh crab meat are simmered together with an Uncracked Jade egg mixture in a tureen, creating rich, alternating layers of gold and jade. Stewed slowly in a rich broth, the wax gourd soaks up the full sweetness of the crab, while a delicate topping of finely minced ham adds a savory depth to the unfolding finish. Every spoonful feels like a conversation between the mountains and the sea.\n\nThe first time Suisui laid eyes on this soup in a small eatery, she was instantly captivated by its layers of jade-and-gold hue. One spoonful, and the fragrance unfurled across her tongue. From then on, she sent someone to buy takeout from the shop every single day. However, it was tucked away in a remote corner and saw few customers, teetering on the edge of closure and soon to be turned into a tea house. Without a second thought, Suisui marched in with a chest of Credit Shells and an acquisition contract, and set them down squarely in front of the shopkeeper.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_29_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_29_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_29_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1110,
+      "name": "Suisui",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_71_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10088,
+    "resultItem": {
+      "id": 80000088,
+      "name": "Cloudward Stew",
+      "attributes_description": "Grants 50% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Made by slow-stewing newly sprouted bamboo shoots with salted meat in a single pot. The natural sweetness of the bamboo melds with the savory depth of the meat, yielding a classic dish that is both hearty and deeply satisfying.\n\nIn Yuan Fortress, Cloudward Stew is regarded as a dish of good fortune, said to grant children sharp senses and a compassionate heart. During school enrollments or festive occasions, families often prepare this meal, wishing for their little ones to grow as strong and upright as spring bamboo, reaching ever skyward toward the clouds.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_103_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_103_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_103_UI.png",
+      "rarity": 5
+    },
+    "materials": [
+      {
+        "id": 42601540,
+        "name": "Climber Shoots",
+        "value": 3
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 42601550,
+        "name": "Jade Hexahedron",
+        "value": 2
+      }
+    ],
+    "typeId": 2,
+    "specialtyItem": {
+      "id": 80001088,
+      "name": "Abundant Azure",
+      "attributes_description": "Increases Healing Bonus of all Resonators in the team by 55% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Cloudward Stew prepared by Hsin. Fresh and rich broth, white as silk, with bamboo shoots meticulously cut into the delicate patterns of modular parts, and fresh vegetables carved into floral garnishes, presented in a jade bowl inscribed with a gold fox. The seasoning and heat are matched to perfection, exquisite beyond reproach.\nAccording to legend, the original recipe of this dish derived from the guidance of Hsin the Moon Fox. Hsin naturally remembered it by heart, yet after tasting the many variations throughout the streets of Xuanfang, She discovered that the flavor would vary from household to household. This home cooking, brought forth from ordinary stoves, is sometimes rich, sometimes light, each unique in its own way, yet it is a taste that people, although separated, still hold dear in their hearts.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_33_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_33_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_33_UI.png",
+      "rarity": 5
+    },
+    "specialtyCook": {
+      "id": 1311,
+      "name": "Hsin",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_75_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10089,
+    "resultItem": {
+      "id": 80000089,
+      "name": "Sizzling Jade Stir-fry",
+      "attributes_description": "Grants 25% Healing Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Thinly sliced cured meat is layered atop sliced mushrooms and steamed for hours. The saltiness of the meat seeps into the mushrooms' natural sweetness, lifting the whole dish to something far greater than its parts.\n\nMengzhou has a long-standing tradition of curing meat to bring out deeper flavor. Among the cuts, locals prize the rose-colored core as the \"Sizzling Cube.\" This dish lays that cube over White Jade Beauty mushrooms, hence the name \"Sizzling Jade Stir-fry.\" When honored guests arrive, a plate of this fine delicacy is more than enough to delight them.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_097_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_097_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_097_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 3
+      },
+      {
+        "id": 42601560,
+        "name": "White Jade Beauty",
+        "value": 3
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10090,
+    "resultItem": {
+      "id": 80000090,
+      "name": "Crab Braised Fish",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Fresh fish fillets are bathed in a sweet-and-sour glaze, then simmered over a low flame to bring out their delicate flavor. Though no crab ever touches the pot, the taste is remarkably true to the real thing.\n\nThis famous Yuan Fortress dish boasts a long history, though its reputation has waxed and waned with the passing generations. The recipe that now circulates across the Land of Xuanfang preserves the most widely embraced method, yet the truly authentic taste is known only to a few.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_104_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_104_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_104_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400120,
+        "name": "Fish",
+        "value": 3
+      },
+      {
+        "id": 80020003,
+        "name": "Sweet and Sour Sauce",
+        "value": 2
+      },
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 2
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001090,
+      "name": "Mengzhou Fish in Vinegar",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 34% for 30 min. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Made with fresh live fish from the Luo River, this dish is gently poached over a low flame and dressed in a traditional sweet-and-sour sauce. It gleams a glossy red, its flesh silver-white at every cut—delicate on the tongue, with a bright tangy-sweetness. The recipe is an old one, and though no shortage of variations have appeared over the years, only the original may be called \"Mengzhou Fish in Vinegar.\"\nAt the Waking Moon Festival in Yuan Fortress long ago, Qingxiao once tasted this dish at the famed restaurant Yuan's Flavors. Lanterns filled the city that night; dragons and fishes of light danced above the crowds, and every face wore a smile. A century later, fewer and fewer can cook it the way it tasted back then. Qingxiao has tried her own hand at it, but never managed to bring back the taste she remembers.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_31_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_31_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_31_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1413,
+      "name": "Qingxiao",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_73_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10091,
+    "resultItem": {
+      "id": 80000091,
+      "name": "Little Snowy Moons",
+      "attributes_description": "Increases ATK of all Resonators in the team by 25% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Steamed from a base of rice milk, these snow-white sponge cakes are shaped like a full moon, earning them the name \"Little Snowy Moons.\" Soft and sweet, the pastry also goes by alternative names such as \"Jade Plate\" or \"Water Moon Bun.\"\n\nDuring Mengzhou's annual Waking Moon Festival, it has long been a tradition for every household to prepare these cakes in welcome of the rising moon. Soldiers stationed far from home in Xuanfang carried this custom with them, hoping that even if the same moon doesn't shine over both lands, their hearts might still meet in this shared moment of reunion.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_101_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_101_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_101_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601530,
+        "name": "Uncracked Jade",
+        "value": 3
+      },
+      {
+        "id": 80050006,
+        "name": "Rice",
+        "value": 2
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 2
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001091,
+      "name": "Moonlit Splendor",
+      "attributes_description": "Increases ATK of all Resonators in the team by 28% for 30 min. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "This snow-white steamed rice cake is round as a full moon, soft and springy, and scattered with candied green and red threads like twin rainbows fallen across snow. Hence the name \"Moonlit Splendor.\" Lightly sweet and dense on the tongue, the fragrance of rice and sugar from it melts slowly between the teeth.\nThis confection is created by the wife of Jingran's Shifu, Granny Yanshu, and is his favorite. His little sister always says the cake is sickly sweet. Jingran disagrees, and every time he cups one in his hands and bites down, the satisfaction shows in his whole face.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_30_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_30_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_30_UI.png",
+      "rarity": 3
+    },
+    "specialtyCook": {
+      "id": 1212,
+      "name": "Jingran",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_74_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10092,
+    "resultItem": {
+      "id": 80000092,
+      "name": "Stir-Fried Trio",
+      "attributes_description": "Grants 10% Healing Bonus to all Resonators in the team and increases their Max HP by 20%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Two varieties of fresh meat and seasonal bamboo shoots are finely scored in a chrysanthemum pattern, then flash-fried over a roaring flame. When the heat hits just right, all three ingredients curl up and bloom into a bright, glistening cascade of crimson.\n\nThis dish boasts an incredibly short cooking time, delivering a rich aroma and fiery kick that instantly stirs the appetite. In the Land of Xuanfang, locals often gauge a patient's recovery by their craving for the Stir-Fried Trio. If they can catch its scent and handle the heat, they're bound to be well on the mend.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_096_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_096_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_096_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 4
+      },
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 2
+      },
+      {
+        "id": 42601540,
+        "name": "Climber Shoots",
+        "value": 2
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": 1
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10093,
+    "resultItem": {
+      "id": 80000093,
+      "name": "Flavor Under Heaven",
+      "attributes_description": "Grants 30% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "A whole fowl is submerged in an aged stock and braised thoroughly over a low flame, basted again and again with the savory broth until the meat turns tender.\n\nThis dish is intensely spicy, yet the heat builds up rather than striking at first bite. First-timers are often fooled by its seemingly mild appearance, but by the time the waves of spice roll in, they are drenched in sweat, tongues burning as if they'd swallowed a wheel of fire. Rumor has it that an epicure who feared no spice once polished off three whole plates. Finishing his meal, he let out a satisfied cry: \"Three birds, one hand—enough to seize every flavor under heaven.\" The room fell silent in awe, and the dish has borne the name ever since.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_106_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_106_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_106_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42400010,
+        "name": "Fowl Meat",
+        "value": 4
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": 2
+      },
+      {
+        "id": 42310200,
+        "name": "Pavo Plum",
+        "value": 2
+      },
+      {
+        "id": 80020002,
+        "name": "Braising Sauce",
+        "value": 1
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10094,
+    "resultItem": {
+      "id": 80000094,
+      "name": "Brocade Pearl Meatballs",
+      "attributes_description": "Grants 50% Resonance Skill DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Minced meat is mixed with diced bamboo shoots and chili flakes, shaped into perfect spheres, and placed into a bamboo steamer to cook through. The finished meatballs gleam with a pleasing, glossy crimson hue. With each bite, a fragrant burst of meat and spice unfurls, revealing a texture that is soft yet chewy. Their luminous, pearl-like appearance has earned them the local name \"Brocade Pearl Meatballs.\"\n\nRound as they are, they speak of reunion. Red as they gleam, they carry wishes for prosperity. And that perfect hint of spice keeps this well-rounded flavor ever tasting plain.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_099_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_099_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_099_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42601540,
+        "name": "Climber Shoots",
+        "value": 4
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 80050002,
+        "name": "Chili",
+        "value": 2
+      },
+      {
+        "id": 42601550,
+        "name": "Jade Hexahedron",
+        "value": 1
+      }
+    ],
+    "typeId": 1
+  },
+  {
+    "type": "dish",
+    "id": 10095,
+    "resultItem": {
+      "id": 80000095,
+      "name": "Memories of Autumn",
+      "attributes_description": "Grants 40% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Delicate fish balls, crafted from minced fish, are simmered together with tea leaves to form a refined soup. The tea buds offer a gentle bitterness while the fish balls lend a subtle sweetness. At first glance, the soup appears modest and unassuming, but a careful sip reveals a faint, lingering note of autumn that stays on the palate.\n\nThis soup traces its origins to Mengzhou, where it was initially made with an entirely different aquatic ingredient, one far fresher than tea leaves. When the recipe made its way here, however, that original ingredient was nowhere to be found, and the locals had no choice but to substitute it with tea. And so, as the soup meets the tongue—poised somewhere between the familiar and the foreign—it stirs a flood of memories all the way back home.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_100_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_100_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_100_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 42400120,
+        "name": "Fish",
+        "value": 3
+      },
+      {
+        "id": 80050004,
+        "name": "Tea",
+        "value": 2
+      },
+      {
+        "id": 80050008,
+        "name": "Salt",
+        "value": 2
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001095,
+      "name": "Huating Memories",
+      "attributes_description": "Grants 44% Heavy Attack DMG Bonus to all Resonators in the team for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "When Suoming first arrived at Xuanfang Hold, she came across a dish flavored with tea broth called \"Memories of Autumn,\" which awakened memories of the white tea from home. It was Tangning who later told her that this dish originally used no tea at all, but due to the lack of its true ingredients locally, it was a traveling soul yearning for the taste who used tea as a substitute, thus giving it its present form.\nSuoming then procured Huating white tea and personally remade the dish. The tea's fresh aroma gave it a delicate flavor, and from then on it frequently graced her table. Those under her command secretly lamented that her homesickness was difficult to dispel, which accounted for her singular fondness for the flavor. Yet to her, it was merely a preference for that fresh and clear taste, and perhaps, without intention, this dish had also retained within it the flavor of her homeland.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_32_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_32_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_32_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1312,
+      "name": "Suoming",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_76_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10096,
+    "resultItem": {
+      "id": 80000096,
+      "name": "Jade Broth Noodles",
+      "attributes_description": "Increases ATK of all Resonators in the team by 30% for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Fine noodles, thin as silver silk, are dropped into boiling water, blanched in an instant, then nestled neatly into a bowl. Large chunks of meat, slow-braised to a melt-in-your-mouth tenderness, rest atop the noodles. The broth, clarified to crystal clarity with White Jade Beauty mushrooms and rich stock, carries a faint, lingering whisper of cooking wine.\n\nIt is the most common meal you'll find across the Land of Xuanfang. Utterly ordinary in appearance, yet it delivers a depth of flavor that surprises with the very first bite. As some have put it: \"The mildest flavors hold the truest essence. The ultimate delicacy is pure simplicity.\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_105_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_105_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_105_UI.png",
+      "rarity": 4
+    },
+    "materials": [
+      {
+        "id": 80050000,
+        "name": "Flour",
+        "value": 3
+      },
+      {
+        "id": 42400030,
+        "name": "Raw Meat",
+        "value": 2
+      },
+      {
+        "id": 42601560,
+        "name": "White Jade Beauty",
+        "value": 2
+      }
+    ],
+    "typeId": 1,
+    "specialtyItem": {
+      "id": 80001096,
+      "name": "The Secret of Delicacy",
+      "attributes_description": "Increases ATK of all Resonators in the team by 33%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "The egg noodles Yangyang makes, tasting exactly as she remembers her mother's did.\n\nBack in her hometown, Yangyang's schedule was always packed to the brim. Still unsure of where her path would lead, she was constantly trying to squeeze out every last second, desperate to add any edge that might carry her forward.  But no matter how late she came home from vocal lessons, walking back under a starlit sky, a steaming bowl of egg noodles was always waiting for her on the table. Sometimes there would be two bowls, which meant her father had also worked late into the night. And sometimes, there would be three, because her older sister, who was supposed to be fast asleep, would inevitably catch the scent of the noodles and coax her mother into making her a midnight meal.\n\nTo Yangyang, that bowl of egg noodles means home, love, and all the quiet warmth folded into everyday life.\n\nIt's the flavor that carried her all the way to where she is now, and the exact taste she wishes to pass on to someone special, someday.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_102_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_102_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_102_UI.png",
+      "rarity": 4
+    },
+    "specialtyCook": {
+      "id": 1610,
+      "name": "Yangyang: Xuanling",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_70_UI.png",
+      "rarity": 5
+    }
+  },
+  {
+    "type": "dish",
+    "id": 10097,
+    "resultItem": {
+      "id": 80000097,
+      "name": "Immortal's Medley Tribute",
+      "attributes_description": "Increases Max HP of all Resonators in the team by 25%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "White Jade Beauty mushrooms and Climber Shoots are julienned and flash-fried in hot oil until their edges curl slightly. An Uncracked Jade egg mixture is then poured in and tossed gently until soft, delicate curds form, then finished with a scattering of Pavo Plums. With each sudden burst of berry juice, an intense, spicy aroma unfurls, instantly coaxing out the freshness of every ingredient.\n\nUnbound by the traditional culinary methods, the Fillet Fairmaiden captures the true spirit of cooking. The essence of these premium ingredients seeps fully into the mushrooms, bamboo shoots, and egg curds, sending out a fragrance so mouthwatering that anyone who catches a whiff can't help but crave a taste.",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_238_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_238_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_238_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601530,
+        "name": "Uncracked Jade",
+        "value": 4
+      },
+      {
+        "id": 42601560,
+        "name": "White Jade Beauty",
+        "value": 2
+      },
+      {
+        "id": 42601540,
+        "name": "Climber Shoots",
+        "value": 2
+      },
+      {
+        "id": 42310200,
+        "name": "Pavo Plum",
+        "value": 1
+      }
+    ],
+    "typeId": 2
+  },
+  {
+    "type": "dish",
+    "id": 10098,
+    "resultItem": {
+      "id": 80000098,
+      "name": "Emerald Tonic",
+      "attributes_description": "Increases Energy Regen of all Resonators in the team by 20%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
+      "bg_description": "Mung bean soup commonly found in the streets of Mengzhou. Rich in flavor and refreshing, perfect for beating the summer heat. This beverage has accompanied many through the sweltering days, a simple taste of home one remembers best.\n\"Not used to the taste? Don't worry! A person's taste varies from place to place, after all! It's fine...\"\n\"...How about another sip or two?\"",
+      "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_107_UI.png",
+      "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_107_UI.png",
+      "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_107_UI.png",
+      "rarity": 3
+    },
+    "materials": [
+      {
+        "id": 42601530,
+        "name": "Uncracked Jade",
+        "value": 4
+      },
+      {
+        "id": 80050003,
+        "name": "Sugar",
+        "value": 3
+      }
+    ],
+    "typeId": 1
   }
 ]

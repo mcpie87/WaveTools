@@ -7,7 +7,10 @@ export enum ItemType {
   SPECIALTY = "SPECIALTY",
   RESONATOR_EXP = "RESONATOR_EXP",
   WEAPON_EXP = "WEAPON_EXP",
+  ECHO_EXP = "ECHO_EXP",
 }
+
+export type ItemTypeEXP = ItemType.RESONATOR_EXP | ItemType.WEAPON_EXP;
 
 export type SHELL_CREDIT = "Shell Credit";
 export const SHELL_CREDIT: SHELL_CREDIT = "Shell Credit";
@@ -65,31 +68,168 @@ export enum ItemEliteBoss {
   LORELEI = "Cleansing Conch",
   SENTRY_CONSTRUCT = "Platinum Core",
   DRAGON_OF_DIRGE = "Blazing Bone",
+  UNFADING_GLORY = "Unfading Glory", // 2.4 boss
+  TRUTH_IN_LIES = "Truth in Lies", // 2.5 boss
 };
 
 export enum ItemSpecialty {
-  // Jinzhou
-  BELLE_POPPY = "Belle Poppy",
-  CORIOLUS = "Coriolus",
+  // 1.0 Huanglong
   IRIS = "Iris",
+  TERRASPAWN_FUNGUS = "Terraspawn Fungus",
   LANTERNBERRY = "Lanternberry",
   PECOK_FLOWER = "Pecok Flower",
-  TERRASPAWN_FUNGUS = "Terraspawn Fungus",
-  VIOLET_CORAL = "Violet Coral",
+  BELLE_POPPY = "Belle Poppy",
+  CORIOLUS = "Coriolus",
   WINTRY_BELL = "Wintry Bell",
-
-  // Mt. Firmament
+  VIOLET_CORAL = "Violet Coral",
+  // 1.1 Mt. Firmament
   LOONGS_PEARL = "Loong's Pearl",
   PAVO_PLUM = "Pavo Plum",
-
-  // Black Shores
+  // 1.3 Black Shores
   NOVA = "Nova",
-
-  // Rinascita
+  // 2.0 Rinascita
+  GOLDEN_FLEECE = "Golden Fleece",
   FIRECRACKER_JEWELWEED = "Firecracker Jewelweed",
-  GOLDEN_FLEEC = "Golden Fleec",
   SWORD_ACORUS = "Sword Acorus",
+  // 2.2 Avinoleum
   SEASIDE_CENDRELIS = "Seaside Cendrelis",
+  // 2.4 Septimont
+  BAMBOO_IRIS = "Bamboo Iris",
+  BLOODLEAF_VIBURNUM = "Bloodleaf Viburnum",
+  // 2.5 Fabricatorium
+  AFTERLIFE = "\"Afterlife\"",
+  // 2.6 Septimont further
+  SLIVERGLOW_BLOOM = "Sliverglow Bloom",
+  // 2.8 Honami
+  SUMMER_FLOWER = "Summer Flower",
+  // 3.0 Lahai Roi
+  RIMEWISP = "Rimewisp",
+  GEMINI_SPORE = "Gemini Spore",
+  ARITHMETIC_SHELL = "Arithmetic Shell",
+  // 3.1 Frostlands
+  MOSS_AMBER = "Moss Amber",
+  // 3.3 Dimmr Plains
+  REDBELL = "Redbell",
+  DREAM_OF_STARS = "Dream of Stars",
+  FORGET_ME_NOT = "Forget-Me-Not",
+  // 3.4 Night City
+  PAST_REVERIES = "Past Reveries",
+  // 3.5
+  CLOUDPERCH_SEED = "Cloudperch Seed",
+  FLOWBORNE_DREAM = "Flowborne Dream",
+  // 3.7
+  BLOOM_OF_HEARKENING = "Bloom of Hearkening",
+  MIASMIC_BRANCH = "Miasmic Branch",
+}
+
+export enum ItemCasket {
+  // 1.0
+  SONANCE_CASKET = "Sonance Casket",
+  // 1.1
+  WINDCHIMER = "Windchimer",
+  // 2.0
+  SONANCE_RINASCITA = "Sonance Casket: Ragunna",
+  // 2.4
+  SONANCE_SEPTIMONT = "Sonance Casket: Septimont",
+  // 3.0
+  LAHAI_TAPE = "Lahai Tape",
+  // 3.5
+  RAFTER_KITE = "Rafter Kite",
+}
+
+export enum ItemOre {
+  // 1.0
+  FLORAMBER = "Floramber",
+  SCARLETTHORN = "Scarletthorn",
+  LAMPYLUMEN = "Lampylumen",
+  INDIGOITE = "Indigoite",
+  // 1.1
+  FLUORITE = "Fluorite",
+  // 2.0
+  FOOLS_GOLD = "Fool's Gold",
+  RESONANT_CALCITE = "Resonant Calcite",
+  // 3.0
+  LUXITE = "Luxite",
+  // 3.1
+  METEORIC_IRON = "Meteoric Iron",
+  // 3.5
+  JADE_HEXAHEDRON = "Jade Hexahedron",
+}
+
+export enum ItemPlant {
+  // 1.0
+  LOTUS_SEEDS = "Lotus Seeds",
+  CLIMBING_FIG = "Climbing Fig",
+  BITTBERRY = "Bittberry",
+  PEARL_LEAF = "Pearl Leaf",
+  DEWVETCH = "Dewvetch",
+  NOCTEMINT = "Noctemint",
+  HONEYSUCKLE = "Honeysuckle",
+  PERILLA = "Perilla",
+  ANGELICA = "Angelica",
+  LEMONGRASS = "Lemongrass",
+  ERODORCHID = "Erodorchid",
+  WATERLAMP = "Waterlamp",
+  BUNNYWORT = "Bunnywort",
+  CALTROP = "Caltrop",
+  CHROMESHELL = "Chromeshell",
+  DRIPSNAIL = "Dripsnail",
+  CLIFFRECLUSE = "Cliffrecluse",
+  UMBRAGRICUS = "Umbragricus",
+  GEMBERRY = "Gemberry",
+  EDODES = "Edodes",
+  VIOLA = "Viola",
+  GLOOM_SLOUGH = "Gloom Slough",
+
+  // 1.1
+  BIRD_EGG = "Bird Egg",
+
+  // 2.0
+  SILVER_LOTUS = "Silver Lotus",
+
+  // 2.2
+  MASTIC_NUVOLA = "Mastic Nuvola",
+  SEA_FLYTRAP = "Sea Flytrap",
+
+  // 2.4
+  VISCUM_BERRY = "Viscum Berry",
+  SUNFLARE_EVERLASTING = "Sunflare Everlasting",
+  FELICIOUS_OLIVES = "Felicitous Olives",
+  LAURUS_SPROUTS = "Laurus Sprouts",
+
+  RAW_MEAT = "Raw Meat",
+  FOWL_MEAT = "Fowl Meat",
+  HELIOBANE_FUNGIA = "Heliobane Fungia",
+  GOLDCREST_SCARAB = "Goldcrest Scarab",
+  AMBER_HALITE = "Amber Halite",
+  OAKNUT = "Oaknut",
+  EDELSCHNEE = "Edelschnee",
+  FROSTWORT = "Frostwort",
+  STONE_ROSE = "Stone Rose",
+  FOXTAIL_KELP = "Foxtail Kelp",
+  LUMINOUS_CALENDULA = "Luminous Calendar",
+  // 3.5 Mengzhou
+  WHITE_JADE_BEAUTY = "White Jade Beauty",
+  CLIMBER_SHOOTS = "Climber Shoots",
+  UNCRACKED_JADE = "Uncracked Jade",
+  LEAFWEAVER = "Leafweaver",
+  FLORAL_CREST_JADE = "Floral Crest Jade",
+}
+
+export enum ItemAnimal {
+  PHOENIX_BUTTERFLY = "Phoenix Butterfly",
+  RED_FEATHER_BUTTERFLY = "Red Feather Butterfly",
+  BLUE_FEATHER_BUTTERFLY = "Blue Feather Butterfly",
+
+  SILVER_BANDED_LIZARD = "Silver-Banded Lizard",
+  GREEN_PIT_LIZARD = "Green Pit Lizard",
+  AZURE_LIZARD = "Azure Lizard",
+
+  BLACK_STRIPED_FROG = "Black-Striped Frog",
+  GOLDENBACK_FROG = "Goldenback Frog",
+
+  CHRYSOPA = "Chrysopa",
+  GOLDEN_RINGED_CHRYSOPA = "Golden-ringed Dragonfly",
 }
 
 export enum ItemWeapon {

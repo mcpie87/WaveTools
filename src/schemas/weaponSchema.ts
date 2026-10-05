@@ -10,10 +10,11 @@ export const weaponSchema = z.object({
   priority: z.number(),
   rarity: z.number(),
   level: levelSchema,
+  isActive: z.boolean().default(true),
 })
 
 export type weaponSchemaField = keyof typeof weaponSchema.shape;
 export type weaponSchemaForForm = Exclude<
   keyof typeof weaponSchema.shape,
-  "name" | "priority" | "rarity" | "id" | "type" | "orderId"
+  "name" | "priority" | "rarity" | "id" | "type" | "orderId" | "isActive"
 >;

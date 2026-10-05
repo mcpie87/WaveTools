@@ -71,7 +71,7 @@ export const InputNumber = ({
           <Input
             ref={inputRef}
             onClick={inputOnClick}
-            className="bg-static-base-100 text-static-text-primary text-center w-[50px]"
+            className="bg-static-base-light-100 text-static-text-primary text-center w-[50px]"
             value={value}
             onChange={handleChange}
           />

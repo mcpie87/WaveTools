@@ -1,0 +1,346 @@
+import { create } from "zustand";
+import { DbMapData, SelectedMap } from "@/types/mapTypes";
+import { MapName, getMarkerRealId, QuestFilter, __DISPLAY_ALL__ } from "../mapUtils";
+import { mapStorageService } from "../services/mapStorageService";
+import { IMarker } from "../types";
+import { getMatchedTrackableCategories } from "../TranslationMaps/translationMap";
+import { registerStore } from "./storeRegistry";
+export const defaultMapState: DbMapData = {
+  visibleCategories: {},
+  visitedMarkers: {},
+  displayedCategoryGroups: {},
+  visitedEntities: {},
+  visitedEntitiesTimestamps: {},
+  categoryPresets: {},
+};
+
+export function initMapState(): DbMapData {
+  const loaded = mapStorageService.load() as Partial<DbMapData> | null;
+
+  if (!loaded) return defaultMapState;
+
+  return {
+    visibleCategories: {
+      ...defaultMapState.visibleCategories,
+      ...loaded.visibleCategories
+    },
+    visitedMarkers: {
+      ...defaultMapState.visitedMarkers,
+      ...loaded.visitedMarkers
+    },
+    visitedEntities: {
+      ...defaultMapState.visitedEntities,
+      ...loaded.visitedEntities
+    },
+    visitedEntitiesTimestamps: {
+      ...defaultMapState.visitedEntitiesTimestamps,
+      ...loaded.visitedEntitiesTimestamps
+    },
+    displayedCategoryGroups: {
+      ...defaultMapState.displayedCategoryGroups,
+      ...loaded.displayedCategoryGroups
+    },
+    categoryPresets: {
+      ...defaultMapState.categoryPresets,
+      ...loaded.categoryPresets
+    },
+  };
+}
+
+interface MapState {
+  // DB Map Data
+  dbMapData: DbMapData;
+  hydrate: () => void;
+  toggleEntityCategoryVisited: (marker: IMarker, categoryKey: string) => void;
+  setCategoryVisibility: (category: string, value: boolean) => void;
+  toggleCategoryVisibility: (category: string) => void;
+  bulkSetCategoryVisibility: (categories: string[], value: boolean) => void;
+  clearCategoriesVisibility: () => void;
+  setCategoryGroupVisibility: (categoryGroup: string, value: boolean) => void;
+  toggleCategoryGroupVisibility: (categoryGroup: string) => void;
+  bulkSetMarkersVisited: (markers: IMarker[], value: boolean) => void;
+  saveCategoryPreset: (name: string) => void;
+  loadCategoryPreset: (name: string) => void;
+  deleteCategoryPreset: (name: string) => void;
+
+  // UI State
+  selectedMap: SelectedMap;
+  setSelectedMap: (map: SelectedMap) => void;
+  activeAreaId: number | null;
+  setActiveAreaId: (id: number | null) => void;
+  selectedMapId: number | null;
+  setSelectedMapId: (id: number | null) => void;
+  enableClick: boolean;
+  setEnableClick: (enabled: boolean) => void;
+  coords: { x: number; y: number; z: number };
+  setCoords: (coords: { x: number; y: number; z: number }) => void;
+  radius: number;
+  setRadius: (radius: number) => void;
+  showDescriptions: boolean;
+  setShowDescriptions: (show: boolean) => void;
+  questFilter: QuestFilter;
+  setQuestFilter: (filter: QuestFilter) => void;
+  hideVisited: boolean;
+  setHideVisited: (hide: boolean) => void;
+
+  // Multi-select state
+  multiSelectMode: boolean;
+  setMultiSelectMode: (enabled: boolean) => void;
+  selectedMarkerIds: Set<number>;
+  toggleMarkerSelected: (markerId: number) => void;
+  clearSelectedMarkers: () => void;
+  selectAllVisibleMarkers: (markerIds: number[]) => void;
+
+  // Map Movement
+  flyToCoord: { lat: number; lng: number } | null;
+  setFlyToCoord: (coord: { lat: number; lng: number } | null) => void;
+}
+
+export const useMapStore = create<MapState>((set) => ({
+  dbMapData: initMapState(),
+
+  hydrate: () => set({ dbMapData: initMapState() }),
+
+  toggleEntityCategoryVisited: (marker, categoryKey) => {
+    set((state) => {
+      const entityKey = getMarkerRealId(marker);
+      const newVisitedParts = new Set(state.dbMapData.visitedEntities[entityKey] || []);
+      const newTimestamps = { ...(state.dbMapData.visitedEntitiesTimestamps[entityKey] || {}) };
+
+      if (newVisitedParts.has(categoryKey)) {
+        newVisitedParts.delete(categoryKey);
+        delete newTimestamps[categoryKey];
+      } else {
+        newVisitedParts.add(categoryKey);
+        newTimestamps[categoryKey] = Date.now();
+      }
+
+      const newData = {
+        ...state.dbMapData,
+        visitedEntities: {
+          ...state.dbMapData.visitedEntities,
+          [entityKey]: newVisitedParts,
+        },
+        visitedEntitiesTimestamps: {
+          ...state.dbMapData.visitedEntitiesTimestamps,
+          [entityKey]: newTimestamps,
+        }
+      };
+      if (Object.keys(newTimestamps).length === 0) {
+        delete newData.visitedEntitiesTimestamps![entityKey];
+      }
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  setCategoryVisibility: (category, value) => {
+    set((state) => {
+      const newData = {
+        ...state.dbMapData,
+        visibleCategories: {
+          ...state.dbMapData.visibleCategories,
+          [category]: value,
+        },
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  toggleCategoryVisibility: (category) => {
+    set((state) => {
+      const newData = {
+        ...state.dbMapData,
+        visibleCategories: {
+          ...state.dbMapData.visibleCategories,
+          [category]: !state.dbMapData.visibleCategories[category],
+        },
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  bulkSetCategoryVisibility: (categories, value) => {
+    set((state) => {
+      const newData = {
+        ...state.dbMapData,
+        visibleCategories: {
+          ...state.dbMapData.visibleCategories,
+          ...categories.reduce((acc, category) => ({
+            ...acc,
+            [category]: value,
+          }), {}),
+        },
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  clearCategoriesVisibility: () => {
+    set((state) => {
+      const newData = {
+        ...state.dbMapData,
+        visibleCategories: {},
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  saveCategoryPreset: (name) => {
+    set((state) => {
+      const newData = {
+        ...state.dbMapData,
+        categoryPresets: {
+          ...state.dbMapData.categoryPresets,
+          [name]: { ...state.dbMapData.visibleCategories },
+        },
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  loadCategoryPreset: (name) => {
+    set((state) => {
+      const preset = state.dbMapData.categoryPresets?.[name];
+      if (!preset) return state;
+      const newData = {
+        ...state.dbMapData,
+        visibleCategories: { ...preset },
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  deleteCategoryPreset: (name) => {
+    set((state) => {
+      const newPresets = { ...state.dbMapData.categoryPresets };
+      delete newPresets[name];
+      const newData = {
+        ...state.dbMapData,
+        categoryPresets: newPresets,
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  setCategoryGroupVisibility: (categoryGroup, value) => {
+    set((state) => {
+      const newData = {
+        ...state.dbMapData,
+        displayedCategoryGroups: {
+          ...state.dbMapData.displayedCategoryGroups,
+          [categoryGroup]: value,
+        },
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  toggleCategoryGroupVisibility: (categoryGroup) => {
+    set((state) => {
+      const newData = {
+        ...state.dbMapData,
+        displayedCategoryGroups: {
+          ...state.dbMapData.displayedCategoryGroups,
+          [categoryGroup]: !state.dbMapData.displayedCategoryGroups[categoryGroup],
+        },
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  bulkSetMarkersVisited: (markers, value) => {
+    set((state) => {
+      const updatedVisited = { ...state.dbMapData.visitedEntities };
+      const updatedTimestamps = { ...(state.dbMapData.visitedEntitiesTimestamps || {}) };
+      for (const m of markers) {
+        const entityKey = getMarkerRealId(m);
+        const matched = getMatchedTrackableCategories(m);
+        const visitedSet = new Set(updatedVisited[entityKey] || []);
+        const timestampSet = { ...(updatedTimestamps[entityKey] || {}) };
+
+        for (const cat of matched) {
+          if (value) {
+            visitedSet.add(cat.key);
+            timestampSet[cat.key] = Date.now();
+          } else {
+            visitedSet.delete(cat.key);
+            delete timestampSet[cat.key];
+          }
+        }
+
+        if (visitedSet.size === 0) {
+          delete updatedVisited[entityKey];
+        } else {
+          updatedVisited[entityKey] = visitedSet;
+        }
+
+        if (Object.keys(timestampSet).length === 0) {
+          delete updatedTimestamps[entityKey];
+        } else {
+          updatedTimestamps[entityKey] = timestampSet;
+        }
+      }
+      const newData = {
+        ...state.dbMapData,
+        visitedEntities: updatedVisited,
+        visitedEntitiesTimestamps: updatedTimestamps,
+      };
+      mapStorageService.save(newData);
+      return { dbMapData: newData };
+    });
+  },
+
+  // UI State
+  selectedMap: MapName.SOLARIS_3,
+  setSelectedMap: (selectedMap) => set({ selectedMap }),
+  activeAreaId: null,
+  setActiveAreaId: (activeAreaId) => set({ activeAreaId }),
+  selectedMapId: null,
+  setSelectedMapId: (selectedMapId) => set({ selectedMapId }),
+  enableClick: false,
+  setEnableClick: (enableClick) => set({ enableClick }),
+  coords: { x: 0, y: 0, z: 0 },
+  setCoords: (coords) => set({ coords }),
+  radius: 50,
+  setRadius: (radius) => set({ radius }),
+  showDescriptions: false,
+  setShowDescriptions: (showDescriptions) => set({ showDescriptions }),
+  questFilter: __DISPLAY_ALL__,
+  setQuestFilter: (questFilter) => set({ questFilter }),
+  hideVisited: false,
+  setHideVisited: (hideVisited) => set({ hideVisited }),
+
+  // Multi-select state
+  multiSelectMode: false,
+  setMultiSelectMode: (enabled) => set({ multiSelectMode: enabled }),
+  selectedMarkerIds: new Set<number>(),
+  toggleMarkerSelected: (markerId) => {
+    set((state) => {
+      const newSet = new Set(state.selectedMarkerIds);
+      if (newSet.has(markerId)) {
+        newSet.delete(markerId);
+      } else {
+        newSet.add(markerId);
+      }
+      return { selectedMarkerIds: newSet };
+    });
+  },
+  clearSelectedMarkers: () => set({ selectedMarkerIds: new Set() }),
+  selectAllVisibleMarkers: (markerIds) => set({ selectedMarkerIds: new Set(markerIds) }),
+
+  // Map Movement
+  flyToCoord: null,
+  setFlyToCoord: (flyToCoord) => set({ flyToCoord }),
+}));
+
+registerStore(() => useMapStore.getState().hydrate());

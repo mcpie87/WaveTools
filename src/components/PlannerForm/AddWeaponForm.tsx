@@ -26,10 +26,9 @@ enum SORT_BY {
 }
 interface AddWeaponFormProps {
   onAddWeapon: (name: string) => void;
-  showForm: boolean;
   onClose: () => void;
 }
-export const AddWeaponForm = ({ showForm, onAddWeapon, onClose }: AddWeaponFormProps) => {
+export const AddWeaponForm = ({ onAddWeapon, onClose }: AddWeaponFormProps) => {
   const [searchText, setSearchText] = useState("");
   const [searchFilter, setSearchFilter] = useState(defaultFilter);
   const [sortBy, setSortBy] = useState(SORT_BY.RELEASE_DATE);
@@ -73,7 +72,7 @@ export const AddWeaponForm = ({ showForm, onAddWeapon, onClose }: AddWeaponFormP
   );
 
   return (
-    <ModalComponent show={showForm} onClose={onClose}>
+    <ModalComponent show={true} onClose={onClose}>
       <div className="flex flex-col gap-5 w-[800px]">
         <div className="flex flex-rowjustify-center items-center gap-1">
           Search:

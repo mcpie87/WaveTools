@@ -12,7 +12,8 @@ export interface IItem {
   attributes_description: string;
   bg_description?: string;
   // display purposes
-  value?: number;
+  needed?: number; // always visible
+  value?: number; // can be subtracted from inventory
   converted?: number; // 3x LF = 1x MF, so if need 10 MF, have 0 MF and 9 LF -> display 3 MF
   checked?: boolean; // for inventory (need 4 -> have 5 => true)
 };

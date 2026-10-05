@@ -1,117 +1,227 @@
-// 'use client'; // Mark as a Client Component in Next.js
-// import 'leaflet/dist/leaflet.css';
+'use client';
 
-// import React, { useEffect, useState } from 'react';
-// import { MapContainer, Marker, Popup } from 'react-leaflet';
-// import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
-// const simpleCRS = L.CRS.Simple;
+import React, { useMemo } from 'react';
+import { MapContainer, Circle } from 'react-leaflet';
+import L from 'leaflet';
+import './fixLeafletIcon';
 
-// const convertMarkerToCoord = (marker: APIMarker): IMarker => ({
-//   x: marker.Transform[0].X / 10000,
-//   y: -1 * marker.Transform[0].Y / 10000,
-//   z: marker.Transform[0].Z / 10000,
-//   name: marker.BlueprintType,
-//   description: JSON.stringify(marker, null, 2),
-// });
-// const convertMarkersToCoords = (markers: APIMarker[]): IMarker[] => markers.map(convertMarkerToCoord);
+import { MapLoadingScreen } from './Components/MapLoadingScreen';
+import { APIMarker, IMarker } from './types';
+import {
+  convertMarkerToCoord,
+  getBounds,
+  getMapCenter,
+  isCustomMapSelected,
+  mapConfigs,
+  MapName,
+  scaleFactor,
+  TILE_SIZE,
+  unionMapConfigs,
+  UnionMapName,
+} from './mapUtils';
+import { MapSettingsComponent } from './Components/MapSettingsComponent';
+import { useFilteredMarkers } from './hooks/useFilteredMarkers';
+import { CustomTileLayer } from './MapLayers/CustomTileLayer';
+import { AreaTileLayer } from './MapLayers/AreaTileLayer';
+import { useMapLogic } from './hooks/useMapLogic';
+import { MapClickHandler } from './handlers/MapClickHandler';
+import { MarkerLayer } from './MapLayers/MarkerLayer';
+import { useMapCategoryStats } from './hooks/useMapCategoryStats';
+import { useDisplayedMarkers } from './hooks/useDisplayedMarkers';
+import { useMapStore } from './state/mapStore';
+import { MapFlyToHandler } from './handlers/MapFlyToHandler';
+import { MultiSelectToolbar } from './Components/MultiSelectToolbar';
+import { CursorCoordinates } from './Components/CursorCoordinates';
 
-// // const TranslationMap: Record<string, object> = {
-// //   "Treasure034": {
-// //     name: "Vault Undergrounds Shell Credit",
-// //     rewardId: 1321,
-// //   }
-// // };
 
-// interface APIMarker {
-//   Transform: {
-//     X: number;
-//     Y: number;
-//     Z: number;
-//   }[];
-//   BlueprintType: string;
-//   MapId: number;
-//   ComponentsData?: {
-//     RewardComponent?: {
-//       RewardId?: number;
-//     }
-//   }
-// }
+const simpleCRS = L.CRS.Simple;
 
-// interface IMarker {
-//   x: number;
-//   y: number;
-//   z: number;
-//   name: string;
-//   description: string;
-// }
 export default function XYZMap() {
-  //   const [data, setData] = useState<APIMarker[]>([]);
-  //   const [visibleCategories, setVisibleCategories] = useState<Record<string, number | boolean>>({});
-  //   useEffect(() => {
-  //     async function fetchData() {
-  //       const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  //       const dataResponse = await fetch(`${basePath}/data/levelentityconfig.json`);
-  //       const data = await dataResponse.json();
-  //       setData(data);
-  //     }
-  //     fetchData();
-  //   }, [])
+  const { indexes, ready, loadingSteps, areaLayers } = useMapLogic();
 
-  //   if (!data) return (<div>Loading...</div>);
-  //   const categories = [...new Set(data.map(e => e.BlueprintType))]
-  //     .sort((a, b) => a.localeCompare(b));
-  //   const markers = data
-  //     .filter(entry => visibleCategories[entry.BlueprintType])
-  //     .filter(entry => entry.ComponentsData?.RewardComponent?.RewardId === 1321)
-  //   // .filter(entry => entry.MapId === 8);
-  //   const displayedMarkers = convertMarkersToCoords(markers);
+  // Use Zustand store for UI state
+  const selectedMap = useMapStore((state) => state.selectedMap);
+  const setSelectedMap = useMapStore((state) => state.setSelectedMap);
+  const activeAreaId = useMapStore((state) => state.activeAreaId);
+  const selectedMapId = useMapStore((state) => state.selectedMapId);
+  const setSelectedMapId = useMapStore((state) => state.setSelectedMapId);
+  const enableClick = useMapStore((state) => state.enableClick);
+  const setEnableClick = useMapStore((state) => state.setEnableClick);
+  const coords = useMapStore((state) => state.coords);
+  const setCoords = useMapStore((state) => state.setCoords);
+  const radius = useMapStore((state) => state.radius);
+  const setRadius = useMapStore((state) => state.setRadius);
+  const showDescriptions = useMapStore((state) => state.showDescriptions);
+  const setShowDescriptions = useMapStore((state) => state.setShowDescriptions);
+  const questFilter = useMapStore((state) => state.questFilter);
+  const setQuestFilter = useMapStore((state) => state.setQuestFilter);
+  const hideVisited = useMapStore((state) => state.hideVisited);
+  const setHideVisited = useMapStore((state) => state.setHideVisited);
 
-  //   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //     const { name, value } = event.target;
-  //     console.log("handleCheckboxChange", name, value, event.target.checked);
-  //     setVisibleCategories(prevState => ({
-  //       ...prevState,
-  //       [name]: event.target.checked
-  //     }));
-  //   }
-  return (
-    <div className="flex flex-row">
-      test
-      {/* //       <div>
-//         {categories.map(category => (
-//           <div key={category} className="flex flex-row">
-//             <input type="checkbox" id={category} name={category} value={category} onChange={handleCheckboxChange} />
-//             <h2>{category}</h2>
-//           </div>
-//         ))}
-//       </div>
-//       <MapContainer
-//         crs={simpleCRS}
-//         center={[0, 0]}
-//         zoom={-10}
-//         minZoom={-10}
-//         maxZoom={10}
-//         style={{ height: '1000px', width: '100%' }}
-//         attributionControl={false}
-//       >
-//         {displayedMarkers.map((coord, index) => (
-//           <Marker
-//             key={index}
-//             position={[coord.y, coord.x]}
-//           >
-//             <Popup>
-//               <div>
-//                 <strong>{coord.name}</strong><br />
-//                 <pre>{coord.description}</pre>
-//                 X: {coord.x}<br />
-//                 Y: {coord.y}<br />
-//                 Z: {coord.z}
-//               </div>
-//             </Popup>
-//           </Marker>
-//         ))}
-//       </MapContainer> */}
-    </div >
+  // DB state and actions
+  const dbMapData = useMapStore((state) => state.dbMapData);
+  const toggleCategory = useMapStore((state) => state.toggleCategoryVisibility);
+  const toggleCategories = useMapStore(
+    (state) => state.bulkSetCategoryVisibility
   );
-};
+  const clearCategories = useMapStore(
+    (state) => state.clearCategoriesVisibility
+  );
+  const toggleDisplayedCategoryGroup = useMapStore(
+    (state) => state.setCategoryGroupVisibility
+  );
+
+  const markers = useFilteredMarkers(indexes, selectedMap, selectedMapId, questFilter);
+  const categories: Array<[string, number, number]> = useMapCategoryStats(
+    markers,
+    dbMapData
+  );
+
+  const selectedPoint: IMarker = useMemo(() => {
+    const apiMarker: APIMarker = {
+      Transform: [
+        {
+          X: coords.x * 10000,
+          Y: coords.y * 10000,
+          Z: coords.z * 10000,
+        },
+      ],
+      BlueprintType: 'Selected Point',
+      Id: -1,
+      EntityId: -1,
+      MapId: mapConfigs[selectedMap]?.mapId ?? -1,
+    };
+    return convertMarkerToCoord(apiMarker, dbMapData.visitedEntities, dbMapData.visitedEntitiesTimestamps);
+  }, [coords, selectedMap, dbMapData.visitedEntities, dbMapData.visitedEntitiesTimestamps]);
+
+  const markersWithinRadius = useMemo(() => {
+    const cx = coords.x * 10000;
+    const cy = coords.y * 10000;
+    const cz = coords.z * 10000;
+
+    return markers.filter((m) => {
+      const dx = (m.displayedX * 10000) - cx;
+      const dy = (m.displayedY * 10000) - cy;
+      const dz = cz ? (m.displayedZ * 10000) - cz : 0;
+      return Math.sqrt(dx * dx + dy * dy + dz * dz) < radius * 10000;
+    });
+  }, [markers, coords, radius]);
+
+  const displayedMarkers = useDisplayedMarkers(
+    markers,
+    markersWithinRadius,
+    dbMapData,
+    enableClick,
+    selectedPoint,
+    hideVisited,
+  );
+
+  if (!ready.entities || !ready.manifest || !ready.translations) {
+    return <MapLoadingScreen steps={loadingSteps} />;
+  }
+
+  return (
+    <div className="h-screen w-screen flex relative">
+      {/* Left controls */}
+      <div className="absolute top-4 left-4 z-[20] flex items-start gap-4 pointer-events-none">
+        <div className="pointer-events-auto shrink-0 transition-all duration-300">
+          <MapSettingsComponent
+            selectedMap={selectedMap}
+            setSelectedMap={setSelectedMap}
+            coords={coords}
+            setCoords={setCoords}
+            radius={radius}
+            setRadius={setRadius}
+            enableClick={enableClick}
+            setEnableClick={setEnableClick}
+            hideVisited={hideVisited}
+            setHideVisited={setHideVisited}
+            showDescriptions={showDescriptions}
+            setShowDescriptions={setShowDescriptions}
+            questFilter={questFilter}
+            setQuestFilter={setQuestFilter}
+            clearCategories={clearCategories}
+            dbMapData={dbMapData}
+            toggleCategory={toggleCategory}
+            toggleCategories={toggleCategories}
+            toggleDisplayedCategoryGroup={toggleDisplayedCategoryGroup}
+            categories={categories}
+            selectedMapId={selectedMapId}
+            setSelectedMapId={setSelectedMapId}
+          />
+        </div>
+        <div className="pointer-events-auto transition-all duration-300">
+          <MultiSelectToolbar displayedMarkers={displayedMarkers} />
+        </div>
+      </div>
+
+      {/* Map */}
+      <main className="flex-1 relative z-0">
+        {enableClick && (
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-3 py-1 rounded z-[1000]">
+            Click map to set center
+          </div>
+        )}
+        <MapContainer
+          key={selectedMap}
+          crs={simpleCRS}
+          center={getMapCenter(selectedMap)}
+          zoom={0}
+          minZoom={-3}
+          maxZoom={10}
+          zoomControl={false}
+          className={enableClick ? 'cursor-crosshair' : 'cursor-grab'}
+          style={{
+            height: '100%',
+            width: '100%',
+            backgroundColor: '#111',
+          }}
+          maxBounds={
+            isCustomMapSelected(selectedMap)
+              ? undefined
+              : getBounds(selectedMap as UnionMapName, 5)
+          }
+          attributionControl={false}
+        >
+          {unionMapConfigs[selectedMap]?.url && selectedMapId === null && (
+            <CustomTileLayer
+              mapName={selectedMap as MapName}
+              shouldDim={activeAreaId !== null && areaLayers.has(activeAreaId)}
+            />
+          )}
+          {activeAreaId !== null && (
+            <AreaTileLayer areaId={activeAreaId} areaLayers={areaLayers} />
+          )}
+          <MapClickHandler
+            enabled={enableClick}
+            onClick={(p) =>
+              setCoords({
+                x: (p.lng - TILE_SIZE) / scaleFactor,
+                y: -p.lat / scaleFactor,
+                z: 0,
+              })
+            }
+          />
+          <MapFlyToHandler />
+          <MarkerLayer markers={displayedMarkers} />
+          <CursorCoordinates />
+          {enableClick && (
+            <Circle
+              center={[-coords.y * scaleFactor, TILE_SIZE + coords.x * scaleFactor]}
+              radius={radius * scaleFactor}
+              pathOptions={{
+                color: '#eab308',
+                fillColor: '#eab308',
+                fillOpacity: 0.2,
+                weight: 2,
+                dashArray: '8, 12',
+              }}
+            />
+          )}
+        </MapContainer>
+      </main>
+    </div>
+  );
+}
