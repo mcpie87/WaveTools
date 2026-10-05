@@ -294,7 +294,7 @@ export const filterTrackedCategoriesForMarker = (marker: IMarker): { name: strin
   const { visibleCategories } = useMapStore.getState().dbMapData;
 
   if (visibleCategories) {
-    return matchedCategories.filter(cat => cat.dictKey && visibleCategories[cat.dictKey]);
+    return matchedCategories.filter(cat => visibleCategories[cat.key]);
   }
   return matchedCategories;
 };
