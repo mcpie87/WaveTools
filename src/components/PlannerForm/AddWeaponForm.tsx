@@ -35,8 +35,8 @@ export const AddWeaponForm = ({ onAddWeapon, onClose }: AddWeaponFormProps) => {
   const { data, error, loading } = useData();
 
   if (loading) return (<div>Loading...</div>);
-  if (!data) return (<div>Data is not present</div>);
   if (error) return (<div>Error present: {error.message}</div>);
+  if (!data) return (<div>Data is not present</div>);
 
   const toggleFilter = (key: string) => {
     setSearchFilter({

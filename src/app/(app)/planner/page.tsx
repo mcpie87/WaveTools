@@ -39,8 +39,8 @@ const CharactersPage = () => {
   const { updatePlannerPriority, deletePlannerItem, toggleActive } = usePlanner(); // TODO: rename or modify
   const { data, error, loading } = useData();
   if (loading) return (<div>Loading...</div>);
-  if (!data) return (<div>Data is not present</div>);
   if (error) return (<div>Error present: {error.message}</div>);
+  if (!data) return (<div>Data is not present</div>);
   const { weapons: apiWeapons, resonators, items } = data;
   const plannerItems = getPlannerItems(characters, resonators, dbWeapons, apiWeapons, items)
     .filter(item => showInactiveItems ? true : item.dbData.isActive);

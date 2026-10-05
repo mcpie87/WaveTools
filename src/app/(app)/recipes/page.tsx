@@ -65,34 +65,45 @@ export default function RecipesPage() {
   const [showTotalMats, setShowTotalMats] = useState<boolean>(false);
   const [disablePurchasableCookingMaterials, setDisablePurchasableCookingMaterials] = useState<boolean>(false);
   const [shops, setShops] = useState<Record<string, IItemToShops>>({});
+  const [recipesLoading, setRecipesLoading] = useState(true);
+  const [recipesError, setRecipesError] = useState<Error | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-      const dishesResponse = await fetch(`${basePath}/data/cooking.json`);
-      const dishesData = await dishesResponse.json();
-      const synthesisResponse = await fetch(`${basePath}/data/synthesis.json`);
-      const synthesisData = await synthesisResponse.json();
-      const processedResponse = await fetch(`${basePath}/data/cookprocessed.json`);
-      const processedData = await processedResponse.json();
-      const data = [...dishesData, ...synthesisData, ...processedData];
-      setDisplayedFormulas(data);
+      try {
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+        const paths = ["cooking.json", "synthesis.json", "cookprocessed.json", "buyable_items.json"];
+        const responses = await Promise.all(paths.map(path => fetch(`${basePath}/data/${path}`)));
+        const failedIndex = responses.findIndex(response => !response.ok);
+        if (failedIndex !== -1) {
+          const failedResponse = responses[failedIndex];
+          throw new Error(`Failed to load ${paths[failedIndex]} (${failedResponse.status} ${failedResponse.statusText})`);
+        }
 
-      const shopsResponse = await fetch(`${basePath}/data/buyable_items.json`);
-      const shopsData = await shopsResponse.json();
-      const shopsMap: Record<string, IItemToShops> = {};
-      shopsData.forEach((itemToShop: IItemToShops) => {
-        shopsMap[itemToShop.itemName] = itemToShop;
-      });
-      setShops(shopsMap);
+        const [dishesData, synthesisData, processedData, shopsData] = await Promise.all(
+          responses.map(response => response.json())
+        );
+        setDisplayedFormulas([...dishesData, ...synthesisData, ...processedData]);
+
+        const shopsMap: Record<string, IItemToShops> = {};
+        shopsData.forEach((itemToShop: IItemToShops) => {
+          shopsMap[itemToShop.itemName] = itemToShop;
+        });
+        setShops(shopsMap);
+      } catch (err) {
+        setRecipesError(err instanceof Error ? err : new Error("Unknown error"));
+      } finally {
+        setRecipesLoading(false);
+      }
     };
     fetchData();
   }, []);
 
   const { data, error, loading } = useData();
-  if (loading) return (<div>Loading...</div>);
-  if (!data) return (<div>Data is not present</div>);
   if (error) return (<div>Error present: {error.message}</div>);
+  if (recipesError) return (<div>Error present: {recipesError.message}</div>);
+  if (loading || recipesLoading) return (<div>Loading...</div>);
+  if (!data) return (<div>Data is not present</div>);
   const { items: apiItems } = data;
 
   const setCategory = (category: ERecipeType | null) => {
