@@ -55,6 +55,13 @@ export const InputNumber = ({
     }
   }
 
+  const minValue = parseInt(min as string);
+  const maxValue = parseInt(max as string);
+  const dropdownValues = values?.filter((option) => {
+    const optionValue = parseInt(option as string);
+    return optionValue >= minValue && optionValue <= maxValue;
+  });
+
   return (
     <div className="flex flex-col items-center justify-center">
       <h3>{label}</h3>
@@ -84,10 +91,10 @@ export const InputNumber = ({
             +
           </Button>
         </div>
-        {values && dropdownOpen && (
+        {dropdownValues && dropdownOpen && (
           <div className="absolute flex flex-wrap mt-2 w-full bg-base-300 border rounded shadow-lg z-10">
-            {values.map((lvl, idx) => {
-              const fullWidth = idx === 0 || idx === values.length - 1;
+            {dropdownValues.map((lvl, idx) => {
+              const fullWidth = idx === 0 || idx === dropdownValues.length - 1;
               return (
                 <div
                   key={lvl}
