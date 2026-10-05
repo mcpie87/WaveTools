@@ -11,10 +11,11 @@ export enum LocalStorageKey {
   SCHEMA_VERSION = "schema_version",
   RESONATORS = "resonators",
   WEAPONS = "weapons",
-  INVENTORY = "inventory",
-  LEVEL = "level",
+  INVENTORY = "items",
+  UNION_LEVELS = "union_levels",
   MAP = "map",
   ECHO_DISCARD_SYSTEM = "echo_discard_system",
+  VERSION = "version",
 }
 
 
