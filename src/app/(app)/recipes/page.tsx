@@ -43,6 +43,33 @@ const postprocessFormulas = (
   }));
 }
 
+const getBaseMaterials = (material: IRecipeItem, formulas: IRecipeFormula[]): IRecipeItem[] => {
+  const matchingFormula = formulas
+    .find((formula) => formula.resultItem.name === material.name);
+
+  if (!matchingFormula) return [material];
+
+  return matchingFormula.materials.flatMap((subMaterial) =>
+    getBaseMaterials({
+      ...subMaterial,
+      value: subMaterial.value * material.value,
+    }, formulas)
+  );
+}
+
+const reduceMaterials = (materials: IRecipeItem[]): IRecipeItem[] => {
+  const retMaterials: Record<string, IRecipeItem> = {};
+  for (const material of materials) {
+    if (retMaterials[material.name]) {
+      retMaterials[material.name].value += material.value;
+    } else {
+      retMaterials[material.name] = { ...material };
+    }
+  }
+
+  return Object.values(retMaterials);
+}
+
 const COOKING_MATERIAL_LIST: string[] = [
   "Flour",
   "Cooking oil",
@@ -156,32 +183,6 @@ export default function RecipesPage() {
     setDisablePurchasableCookingMaterials(show);
   }
 
-  const getBaseMaterials = (material: IRecipeItem): IRecipeItem[] => {
-    const matchingFormula = baseFilteredFormulas
-      .find((baseFormula) => baseFormula.resultItem.name === material.name);
-
-    if (!matchingFormula) return [material];
-
-    const retMaterials = [];
-    for (const materials of matchingFormula.materials) {
-      retMaterials.push(getBaseMaterials(materials));
-    }
-    return retMaterials.flat();
-  }
-
-  const reduceMaterials = (materials: IRecipeItem[]): IRecipeItem[] => {
-    const retMaterials: Record<string, IRecipeItem> = {};
-    for (const material of materials) {
-      if (retMaterials[material.name]) {
-        retMaterials[material.name].value += material.value;
-      } else {
-        retMaterials[material.name] = { ...material };
-      }
-    }
-
-    return Object.values(retMaterials);
-  }
-
   let filteredFormulas = baseFilteredFormulas
     .filter((formula) => !displayedCategory.size || displayedCategory.has(formula.type))
     .filter((formula) => formula.formulaType !== 3) // 3 === Synthesis Conversion Materials
@@ -192,7 +193,7 @@ export default function RecipesPage() {
     filteredFormulas = filteredFormulas.map((formula) => ({
       ...formula,
       materials: reduceMaterials(
-        formula.materials.flatMap((material) => getBaseMaterials(material))
+        formula.materials.flatMap((material) => getBaseMaterials(material, baseFilteredFormulas))
       ),
     }));
   }
