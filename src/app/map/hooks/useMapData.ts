@@ -151,8 +151,7 @@ export function useMapData() {
     // Manifest
     updateStep('manifest', { status: 'loading', startedAt: Date.now() });
     ensureManifest()
-      .then(async () => {
-        await new Promise(r => setTimeout(r, 400));
+      .then(() => {
         if (cancelled) return;
         setReady(r => ({ ...r, manifest: true }));
         updateStep('manifest', { status: 'done', completedAt: Date.now() });
@@ -165,8 +164,7 @@ export function useMapData() {
     // Translations
     updateStep('translations', { status: 'loading', startedAt: Date.now() });
     loadBlueprintTranslations()
-      .then(async () => {
-        await new Promise(r => setTimeout(r, 400));
+      .then(() => {
         if (cancelled) return;
         setReady(r => ({ ...r, translations: true }));
         updateStep('translations', { status: 'done', completedAt: Date.now() });
@@ -234,14 +232,11 @@ export function useMapData() {
         }
 
         if (cancelled) return;
-        await new Promise(r => setTimeout(r, 400));
-        if (cancelled) return;
         updateStep('entities', { status: 'done', completedAt: Date.now(), progress: 1 });
 
         // Indexing phase
         updateStep('indexing', { status: 'loading', startedAt: Date.now() });
         const builtIndexes = buildIndexes(raw);
-        await new Promise(r => setTimeout(r, 400));
         if (cancelled) return;
         setIndexes(builtIndexes);
         setReady(r => ({ ...r, entities: true }));
@@ -279,7 +274,6 @@ export function useMapData() {
             if (!cancelled) setLayersData(await res.json());
           }
         }
-        await new Promise(r => setTimeout(r, 400));
         if (!cancelled) updateStep('layers', { status: 'done', completedAt: Date.now() });
       } catch (err) {
         if (!cancelled) updateStep('layers', { status: 'error', error: err instanceof Error ? err.message : "Unknown error", completedAt: Date.now() });
