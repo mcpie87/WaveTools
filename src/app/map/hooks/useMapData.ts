@@ -187,6 +187,7 @@ export function useMapData() {
     (async () => {
       updateStep('entities', { status: 'loading', startedAt: Date.now(), progress: undefined });
       let raw: APIMarker[];
+      let activeStep: 'entities' | 'indexing' = 'entities';
       try {
         if (isDevelopment()) {
           // Dev: local file, no progress needed (it's instant from disk)
@@ -239,7 +240,10 @@ export function useMapData() {
         updateStep('entities', { status: 'done', completedAt: Date.now(), progress: 1 });
 
         // Indexing phase
+        activeStep = 'indexing';
         updateStep('indexing', { status: 'loading', startedAt: Date.now() });
+        await loadBlueprintTranslations();
+        if (cancelled) return;
         const builtIndexes = buildIndexes(raw);
         await new Promise(r => setTimeout(r, 400));
         if (cancelled) return;
@@ -248,7 +252,7 @@ export function useMapData() {
         updateStep('indexing', { status: 'done', completedAt: Date.now() });
       } catch (err) {
         if (cancelled) return;
-        updateStep('entities', { status: 'error', error: err instanceof Error ? err.message : "Unknown error", completedAt: Date.now() });
+        updateStep(activeStep, { status: 'error', error: err instanceof Error ? err.message : "Unknown error", completedAt: Date.now() });
       }
     })();
 
