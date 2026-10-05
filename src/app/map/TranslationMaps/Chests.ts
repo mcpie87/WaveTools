@@ -108,6 +108,7 @@ const ChestTranslationMapGroups: Record<string, { keys: string[]; key: string }>
       "branch2.4_151_Treasure_LNXT_Hide05", // verify
       "Treasure_LNXT_Hide04", // verify
       "branch3.0_693_Treasure_3_20", // added in 3.3, not sure why 3.0 (only in Dimmr Plains)
+      "branch3.5_150_Treasure_3_5",
     ]
   },
   [Chest.TIDAL_SUPPLY_CHEST]: {
@@ -121,6 +122,7 @@ const ChestTranslationMapGroups: Record<string, { keys: string[]; key: string }>
       "branch2.0_Treasure_2_0_07", // verify
       "Treasure_LNXT_Hide05", // verify
       "branch3.0_693_Treasure_3_10", // added in 3.3, not sure why 3.0 (only in Dimmr Plains)
+      "branch3.5_150_Treasure_3_6",
     ]
   },
   [Chest.BASIC_TROPHY_CHEST]: {

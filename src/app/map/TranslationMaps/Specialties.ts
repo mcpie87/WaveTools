@@ -65,5 +65,9 @@ export const SpecialtyTranslationMap: Record<string, TranslationMapEntry> = {
   // 3.5
   "branch3.5_247_Collect_3_17": { key: "SPECIALTY_CLOUDPERCH_SEED", name: ItemSpecialty.CLOUDPERCH_SEED },
   "branch3.5_247_Collect_3_23": { key: "SPECIALTY_FLOWBORNE_DREAM", name: ItemSpecialty.FLOWBORNE_DREAM },
+
+  // 3.7
+  "branch3.7_232_Collect_3_8": { key: "SPECIALTY_BLOOM_OF_HEARKENING", name: ItemSpecialty.BLOOM_OF_HEARKENING },
+  "branch3.7_232_Collect_3_9": { key: "SPECIALTY_MIASMIC_BRANCH", name: ItemSpecialty.MIASMIC_BRANCH },
 };
 export const SpecialtyDisplayOrder = Object.values(ItemSpecialty);

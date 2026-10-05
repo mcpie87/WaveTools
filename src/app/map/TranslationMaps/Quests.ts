@@ -13,7 +13,7 @@ export enum Quest {
   // 10, // event
   // 14, // 3.1 festival event zone it seems?
   // 100, // test stuff
-  MAIN_QUEST = "Main Quest", // questTypeId === 1
+  MAIN_QUEST = "Main Quest", // questTypeId === 1 || 15
   SIDE_QUEST = "Side Quest", // questTypeId === 2
   TUTORIAL_QUEST = "Tutorial Quest", // questTypeId === 7
   STORY_QUEST = "Story Quest", // questTypeId === 3
@@ -21,13 +21,14 @@ export enum Quest {
   EXPLORATION_QUEST = "Exploration Quest", // questTypeId === 9
   EVENT_QUEST = "Event Quest", // questTypeId === 10
   EPISODIC_QUEST = "Episodic Quest", // questTypeId === 11
+  TALES_QUEST = "Tales Quest", // questTypeId === 17
 }
 
 export const QuestQueryCategories: Record<string, QueryCategory> = {
   "QUERY_Main_Quest": {
     key: "QUERY_MAIN_QUEST",
     name: Quest.MAIN_QUEST,
-    query: (m) => m?.questData?.some(q => q.questTypeId === 1) ?? false,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 1 || q.questTypeId === 15) ?? false,
   },
   "QUERY_Side_Quest": {
     key: "QUERY_SIDE_QUEST",
@@ -68,6 +69,11 @@ export const QuestQueryCategories: Record<string, QueryCategory> = {
     key: "QUERY_EPISODIC_QUEST",
     name: Quest.EPISODIC_QUEST,
     query: (m) => m?.questData?.some(q => q.questTypeId === 16) ?? false,
+  },
+  "QUERY_TALES_Quest": {
+    key: "QUERY_TALES_QUEST",
+    name: Quest.TALES_QUEST,
+    query: (m) => m?.questData?.some(q => q.questTypeId === 17) ?? false,
   },
   "QUERY_LevelPlayData_Quest": {
     key: "QUERY_LEVEL_PLAY_DATA_QUEST",

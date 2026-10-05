@@ -117,6 +117,9 @@ export enum ItemSpecialty {
   // 3.5
   CLOUDPERCH_SEED = "Cloudperch Seed",
   FLOWBORNE_DREAM = "Flowborne Dream",
+  // 3.7
+  BLOOM_OF_HEARKENING = "Bloom of Hearkening",
+  MIASMIC_BRANCH = "Miasmic Branch",
 }
 
 export enum ItemCasket {
@@ -205,6 +208,12 @@ export enum ItemPlant {
   STONE_ROSE = "Stone Rose",
   FOXTAIL_KELP = "Foxtail Kelp",
   LUMINOUS_CALENDULA = "Luminous Calendar",
+  // 3.5 Mengzhou
+  WHITE_JADE_BEAUTY = "White Jade Beauty",
+  CLIMBER_SHOOTS = "Climber Shoots",
+  UNCRACKED_JADE = "Uncracked Jade",
+  LEAFWEAVER = "Leafweaver",
+  FLORAL_CREST_JADE = "Floral Crest Jade",
 }
 
 export enum ItemAnimal {

@@ -74,5 +74,15 @@ export const PlantTranslationMap: Record<string, TranslationMapEntry> = {
   "branch3.1_693_Collect_3_5": { key: "PLANT_FOXTAIL_KELP", name: "Foxtail Kelp" },
   "branch3.1_693_Collect_3_10": { key: "PLANT_FOXTAIL_KELP", name: "Foxtail Kelp" },
   "branch2.6_41_Collect_QQ3": { key: "PLANT_STONE_ROSE", name: "Stone Rose" },
+
+  // 3.5 Mengzhou blueprints, never mapped before. Each existed on map 8 since 3.5 and got new spawns on map 912 in 3.7.
+  // Separate *_Base blueprints (Collect_3_8, 3_11, 3_12, 3_16) are the empty stands and are intentionally not mapped.
+  "branch3.5_247_Collect_3_7": { key: "PLANT_WHITE_JADE_BEAUTY", name: ItemPlant.WHITE_JADE_BEAUTY }, // Cooking Ingredient, item 42601560; 210 on map 8, 90 on map 912
+  "branch3.5_247_Collect_3_20": { key: "PLANT_CLIMBER_SHOOTS", name: ItemPlant.CLIMBER_SHOOTS }, // Cooking Ingredient, item 42601540; 213 on map 8, 35 on map 912
+  "branch3.5_247_Collect_3_9": { key: "PLANT_UNCRACKED_JADE", name: ItemPlant.UNCRACKED_JADE }, // Cooking Ingredient, item 42601530; 195 on map 8, 15 on map 912. A jade node, could arguably live in Ores next to Jade Hexahedron
+  "branch3.5_247_Collect_3_21": { key: "PLANT_LEAFWEAVER", name: ItemPlant.LEAFWEAVER }, // Medicinal Material, item 42601580; 170 on map 8, 10 on map 912
+  "branch3.5_247_Collect_3_13": { key: "PLANT_FLORAL_CREST_JADE", name: ItemPlant.FLORAL_CREST_JADE }, // Medicinal Material, item 42601590; large node (entity name suffix _大); 37 on map 8, 5 on map 912
+  "branch3.5_247_Collect_3_14": { key: "PLANT_FLORAL_CREST_JADE", name: ItemPlant.FLORAL_CREST_JADE }, // Medicinal Material, item 42601590; medium node (_中); 34 on map 8, 5 on map 912
+  "branch3.5_247_Collect_3_15": { key: "PLANT_FLORAL_CREST_JADE", name: ItemPlant.FLORAL_CREST_JADE }, // Medicinal Material, item 42601590; small node (_小); 95 on map 8, 7 on map 912
 };
 export const PlantDisplayOrder = Object.values(ItemPlant);

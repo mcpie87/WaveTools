@@ -60,6 +60,9 @@ export enum Echo4Cost {
   // 3.1
   NAMELESS_EXPLORER = "Nameless Explorer",
   SIGILLUM = "Sigillum",
+
+  // 3.5
+  MYRIAD_SNARE_RUSTFIRE_CHASSIS = "Myriad Snare: Rustfire Chassis",
 }
 
 const Echo4CostTranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
@@ -340,7 +343,15 @@ const Echo4CostTranslationMapGroups: Record<string, { keys: string[]; key: strin
       "Monster_Branch3.1_002",
       "Monster_Branch3.1_003",
     ]
-  }
+  },
+
+  // 3.5
+  [Echo4Cost.MYRIAD_SNARE_RUSTFIRE_CHASSIS]: {
+    key: "ECHO_MYRIAD_SNARE_RUSTFIRE_CHASSIS",
+    keys: [
+      "Monster_Branch3.7_008",
+    ]
+  },
 };
 
 export const Echo4CostTranslationMap: Record<string, TranslationMapEntry> =
