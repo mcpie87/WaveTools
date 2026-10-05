@@ -23,7 +23,9 @@ export const SingleMarkerComponent = ({
   );
   const toggleMarkerSelected = useMapStore((state) => state.toggleMarkerSelected);
 
-  const isVisited = useMapStore((state) => isMarkerVisitedBasedOnVisibleCategories(state.dbMapData, marker));
+  const isVisited = useMapStore((state) =>
+    isMarkerVisitedBasedOnVisibleCategories(state.dbMapData, marker, state.dbMapData.visibleCategories)
+  );
 
   const icon = useMemo(
     () => getIcon(marker, isVisited, isSelected),
