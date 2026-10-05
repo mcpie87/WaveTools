@@ -23,19 +23,8 @@ import {
 import { runMigrations } from "@/migrations/runMigrations";
 import { hydrateRegisteredStores } from "@/app/map/state/storeRegistry";
 import { GAME_VERSION } from "@/constants/constants";
-
-export enum LocalStorageKey {
-  THEME = "theme",
-  SCHEMA_VERSION = "schema_version",
-  RESONATORS = "resonators",
-  WEAPONS = "weapons",
-  INVENTORY = "items",
-  UNION_LEVELS = "union_levels",
-  MAP = "map",
-  VERSION = "version",
-}
-
-const LS_PREFIX = "wave_tools_";
+import { STORAGE_KEY } from "@/services/LocalStorageService";
+import { LocalStorageKey } from "@/types/localStorageTypes";
 
 interface BackupFile {
   exportedAt: string;
@@ -57,7 +46,7 @@ function exportBackup(): void {
   const data: Partial<Record<LocalStorageKey, unknown>> = {};
 
   for (const key of Object.values(LocalStorageKey)) {
-    const raw = localStorage.getItem(`${LS_PREFIX}${key}`);
+    const raw = localStorage.getItem(`${STORAGE_KEY}_${key}`);
     if (raw !== null) {
       try {
         data[key] = JSON.parse(raw);
@@ -88,7 +77,7 @@ async function importBackup(file: File): Promise<number> {
   const text = await file.text();
   const backup: BackupFile = JSON.parse(text);
 
-  const localVersionRaw = localStorage.getItem(`${LS_PREFIX}${LocalStorageKey.VERSION}`);
+  const localVersionRaw = localStorage.getItem(`${STORAGE_KEY}_${LocalStorageKey.VERSION}`);
   const localVersion = localVersionRaw ? JSON.parse(localVersionRaw) : "";
   const fileVersion = (backup?.data?.[LocalStorageKey.VERSION] as string) ?? LEGACY_BACKUP_VERSION;
 
@@ -110,14 +99,14 @@ async function importBackup(file: File): Promise<number> {
     if (!validKeys.has(key as LocalStorageKey)) continue;
     console.log(`[BackupManager] Restoring ${fileVersion}`, key, value);
     localStorage.setItem(
-      `${LS_PREFIX}${key}`,
+      `${STORAGE_KEY}_${key}`,
       JSON.stringify(value)
     );
     count++;
   }
   // sanity check for old backups that dont have version
   if (fileVersion === LEGACY_BACKUP_VERSION) {
-    localStorage.setItem(`${LS_PREFIX}${LocalStorageKey.VERSION}`, JSON.stringify(fileVersion));
+    localStorage.setItem(`${STORAGE_KEY}_${LocalStorageKey.VERSION}`, JSON.stringify(fileVersion));
   }
 
   return count;
@@ -125,7 +114,7 @@ async function importBackup(file: File): Promise<number> {
 
 function getStorageSnapshot(): { key: LocalStorageKey; hasData: boolean; size: string }[] {
   return Object.values(LocalStorageKey).map((key) => {
-    const raw = localStorage.getItem(`${LS_PREFIX}${key}`);
+    const raw = localStorage.getItem(`${STORAGE_KEY}_${key}`);
     const bytes = raw ? new Blob([raw]).size : 0;
     const size =
       bytes === 0
@@ -159,8 +148,11 @@ export function BackupManager() {
     try {
       const count = await importBackup(file);
 
-      // Run migrations and rehydrate stores in the background
-      await runMigrations();
+      // Run migrations before rehydrating stores.
+      const migrationsSucceeded = await runMigrations();
+      if (!migrationsSucceeded) {
+        throw new Error("Migrations failed after importing the backup.");
+      }
       hydrateRegisteredStores();
 
       setImportStatus({ type: "success", count });
