@@ -30,7 +30,7 @@ export const ManagePriorityComponent = ({
       return;
     }
     const draggedItem = plannerItems[draggedItemIndex];
-    onDragAndDrop(draggedItem, dropIndex + 1);
+    onDragAndDrop(draggedItem, plannerItems[dropIndex].priority);
     setDraggedItemIndex(null);
   };
 
