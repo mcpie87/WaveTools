@@ -133,10 +133,9 @@ export function calculateWaveplate(items: IItem[]): WaveplateEntry[] {
 
   const weeklyCount = getWeeklyCountFromList(items) / weeklyBossDropRates.WEEKLY;
   const forgeryCount = getWeapon2CountFromList(items) / forgeryDropRates.WEAPON_2;
-  // If it's resonator, we get items for free
-  const eliteCount = items.find(e => e.name === ItemEliteBoss.MYSTERIOUS_CODE)
-    ? 0
-    : getEliteCountFromList(items) / eliteBossDropRates.ELITE;
+  const eliteCount = getEliteCountFromList(
+    items.filter(item => item.name !== ItemEliteBoss.MYSTERIOUS_CODE)
+  ) / eliteBossDropRates.ELITE;
 
   const initialResonatorExpNeeded = getResonatorExpNeededFromList(items);
   let resonatorExpNeeded = initialResonatorExpNeeded;
