@@ -16,14 +16,22 @@ export const DataProvider = ({ children }: DataProviderProps) => {
     async function fetchData() {
       try {
         const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-        const itemsResponse = await fetch(`${basePath}/data/items_minified.json`);
-        const itemsDb: IAPIItem[] = await itemsResponse.json();
+        const paths = ["items_minified.json", "resonators_minified.json", "weapons_minified.json"] as const;
+        const [itemsResponse, resonatorResponse, weaponsResponse] = await Promise.all([
+          fetch(`${basePath}/data/${paths[0]}`),
+          fetch(`${basePath}/data/${paths[1]}`),
+          fetch(`${basePath}/data/${paths[2]}`),
+        ]);
 
-        const resonatorResponse = await fetch(`${basePath}/data/resonators_minified.json`);
-        const resonatorDb: IAPIResonator[] = await resonatorResponse.json();
+        for (const [index, response] of [itemsResponse, resonatorResponse, weaponsResponse].entries()) {
+          if (!response.ok) {
+            throw new Error(`Failed to load ${paths[index]} (${response.status} ${response.statusText})`);
+          }
+        }
 
-        const weaponsResponse = await fetch(`${basePath}/data/weapons_minified.json`);
-        const weaponsDb: IAPIWeapon[] = (await weaponsResponse.json());
+        const [itemsDb, resonatorDb, weaponsDb]: [IAPIItem[], IAPIResonator[], IAPIWeapon[]] = await Promise.all(
+          [itemsResponse.json(), resonatorResponse.json(), weaponsResponse.json()]
+        );
 
         setData({
           items: itemsDb,

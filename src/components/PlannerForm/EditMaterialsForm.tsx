@@ -27,8 +27,8 @@ export const EditSelectedMaterialsForm = ({
 
   const { data, error, loading } = useData();
   if (loading) return (<div>Loading...</div>);
-  if (!data) return (<div>Data is not present</div>);
   if (error) return (<div>Error present: {error.message}</div>);
+  if (!data) return (<div>Data is not present</div>);
   const { items: apiItems } = data;
 
   if (!selectedItem) return null;
