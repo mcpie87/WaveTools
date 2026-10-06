@@ -10,11 +10,3 @@ export function getPMTilesInstance(url: string, version: string): PMTiles {
   }
   return cache.get(key)!;
 }
-
-export function evictPMTilesInstance(url: string): void {
-  cache.delete(url);
-}
-
-export function getCacheSize(): number {
-  return cache.size;
-}

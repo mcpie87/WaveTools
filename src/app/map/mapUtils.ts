@@ -17,11 +17,6 @@ const translateGameToMap = ({ x, y, z }: { x: number; y: number; z: number }) =>
 });
 export const translateMapToGameX = (x: number) => (x - TILE_SIZE) * 10000 / scaleFactor;
 export const translateMapToGameY = (y: number) => -y * 10000 / scaleFactor;
-export const translateMapToGame = ({ x, y, z }: { x: number; y: number; z: number }) => ({
-  x: translateMapToGameX(x),
-  y: translateMapToGameY(y),
-  z: z * 10000,
-});
 export const getGameBounds = (mapName: SelectedMap) => {
   const config = unionMapConfigs[mapName];
   if (!config?.bounds) return undefined;
@@ -90,14 +85,6 @@ export const getBounds = (mapName: UnionMapName, padding = 0) => {
   );
 }
 
-export const isGameCoordInGameBounds = (mapName: SelectedMap, x: number, y: number) => {
-  if (isCustomMapSelected(mapName)) return true;
-
-  const bounds = getGameBounds(mapName);
-  if (!bounds) return true;
-  // y is REVERSED due to map translation
-  return bounds[0][1] <= y && y <= bounds[0][0] && bounds[1][0] <= x && x <= bounds[1][1];
-}
 export const getMapCenter = (mapName: SelectedMap): L.LatLngExpression => {
   if (isCustomMapSelected(mapName)) return [0, 0];
 

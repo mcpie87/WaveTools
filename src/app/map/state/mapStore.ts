@@ -52,12 +52,10 @@ interface MapState {
   dbMapData: DbMapData;
   hydrate: () => void;
   toggleEntityCategoryVisited: (marker: IMarker, categoryKey: string) => void;
-  setCategoryVisibility: (category: string, value: boolean) => void;
   toggleCategoryVisibility: (category: string) => void;
   bulkSetCategoryVisibility: (categories: string[], value: boolean) => void;
   clearCategoriesVisibility: () => void;
   setCategoryGroupVisibility: (categoryGroup: string, value: boolean) => void;
-  toggleCategoryGroupVisibility: (categoryGroup: string) => void;
   bulkSetMarkersVisited: (markers: IMarker[], value: boolean) => void;
   saveCategoryPreset: (name: string) => void;
   loadCategoryPreset: (name: string) => void;
@@ -129,20 +127,6 @@ export const useMapStore = create<MapState>((set) => ({
       if (Object.keys(newTimestamps).length === 0) {
         delete newData.visitedEntitiesTimestamps![entityKey];
       }
-      mapStorageService.save(newData);
-      return { dbMapData: newData };
-    });
-  },
-
-  setCategoryVisibility: (category, value) => {
-    set((state) => {
-      const newData = {
-        ...state.dbMapData,
-        visibleCategories: {
-          ...state.dbMapData.visibleCategories,
-          [category]: value,
-        },
-      };
       mapStorageService.save(newData);
       return { dbMapData: newData };
     });
@@ -237,20 +221,6 @@ export const useMapStore = create<MapState>((set) => ({
         displayedCategoryGroups: {
           ...state.dbMapData.displayedCategoryGroups,
           [categoryGroup]: value,
-        },
-      };
-      mapStorageService.save(newData);
-      return { dbMapData: newData };
-    });
-  },
-
-  toggleCategoryGroupVisibility: (categoryGroup) => {
-    set((state) => {
-      const newData = {
-        ...state.dbMapData,
-        displayedCategoryGroups: {
-          ...state.dbMapData.displayedCategoryGroups,
-          [categoryGroup]: !state.dbMapData.displayedCategoryGroups[categoryGroup],
         },
       };
       mapStorageService.save(newData);
