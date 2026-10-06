@@ -150,8 +150,6 @@ export const MAP_TILES_URL = IS_DEV && DEV_CONFIG.map.layer.forceLocalPMTiles
   ? `${BASE_PATH}/data` // /pmtiles folder is inside
   : "https://raw.githubusercontent.com/mcpie87/wuwa-map-tiles/refs/heads/master";
 const prefix = MAP_TILES_URL;
-// ? `${MAP_TILES_URL}` //'/map_tiles/'
-// : `${ASSET_URL}UIResources/UiWorldMap/Image`;
 
 const format = 'webp';
 
@@ -164,7 +162,6 @@ export enum MapName {
   VAULT_UNDERGROUNDS = "Vault Undergrounds",
   AVINOLEUM = "Avinoleum",
   FABRICATORIUM = "Fabricatorium of the Deep",
-  // HONAMI_CITY_WAR = "Honami City - war area",
   HONAMI_CITY = "Chronorift Metropolis",
   LAHAI_ROI = "Lahai Roi",
   ROYA_FROSTLANDS = "Roya Frostlands",
@@ -288,11 +285,6 @@ export const mapConfigs: Record<string, MapConfig> = {
     bounds: [[3, 13], [-6, 5]],
     url: `${prefix}/LHLTiles/T_LHLTiles_{x}_{y}_UI.${format}`
   },
-  // [MapName.HONAMI_CITY_WAR]: {
-  //   mapId: 907,
-  //   bounds: [[-4, 2], [-1, 2]],
-  //   url: `${prefix}/SUIBOTiles/T_SUIBOTiles_{x}_{y}_UI.${format}`
-  // },
   [MapName.HONAMI_CITY]: {
     mapId: 910,
     bounds: [[-1, 1], [0, 2]],
