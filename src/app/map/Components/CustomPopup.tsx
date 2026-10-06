@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import { Fragment } from "react";
 import { translateBlueprint } from "../BlueprintTranslationService";
 import { IMarker } from "../types";
 import { Button } from "@/components/ui/button";
@@ -90,9 +91,9 @@ export function CustomPopup({
         {marker.levelPlayReferences && ((marker.levelPlayData && marker.levelPlayReferences.find(e => e.Id !== marker.levelPlayData!.LevelPlayId)) || !marker.levelPlayData) && (
           <div className="text-xs italic mb-2">
             LP Reference of:
-            {marker.levelPlayReferences.map(e => (
-              <>
-                <div key={e.Key} className="text-blue-400">
+            {marker.levelPlayReferences.map((e, index) => (
+              <Fragment key={`${e.Id}-${e.Key}-${index}`}>
+                <div className="text-blue-400">
                   {`[${e.Type}][${e.Id}][Key: ${e.Key}`}
                 </div>
                 {e.Translations && e.Translations.length > 0 && (
@@ -111,14 +112,14 @@ export function CustomPopup({
                   <>
                     <span>Conditions:</span>
                     <div>
-                      {e.Condition.map(({ Type, PreLevelPlay, PreQuest, PreChildQuest, Config, ExploreLevel }) => {
+                      {e.Condition.map(({ Type, PreLevelPlay, PreQuest, PreChildQuest, Config, ExploreLevel }, index) => {
                         const questName = PreQuest && getQuestInfo(PreQuest)?.name
                           || PreChildQuest?.QuestId && `${getQuestInfo(PreChildQuest.QuestId)?.name} - ${PreChildQuest.ChildQuestId}`
                           || Type === "SystemState" && Config && `[Type: ${Config.Type}, RoadId: ${Config.RoadId}, IsBuilt: ${Config.IsBuilt}]`
                           || Type === "ExploreLevel" && ExploreLevel
                           || NO_DATA_STRING;
                         return (
-                          <div key={Type} className="text-blue-400">
+                          <div key={`${Type}-${index}`} className="text-blue-400">
                             {Type}: {PreLevelPlay || questName}
                           </div>
                         );
@@ -126,7 +127,7 @@ export function CustomPopup({
                     </div>
                   </>
                 )}
-              </>
+              </Fragment>
             ))}
           </div>
         )}

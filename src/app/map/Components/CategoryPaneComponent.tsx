@@ -32,67 +32,70 @@ const CategoryPaneGroupComponent = ({
 
   return (
     <>
-      <button
-        className={clsx(
-          "flex flex-col p-1 pl-2 text-left rounded-md hover:bg-base-300 transition-colors",
-          allChecked ? "bg-base-300" : (someChecked ? "bg-base-200" : "")
-        )}
-        onClick={() => {
-          if (!toggleCategories) {
-            toggleCategory(groupName);
-            return;
-          }
-          if (allChecked) {
-            toggleCategories?.(categories.map(([t]) => t), false);
-          } else {
-            toggleCategories?.(categories.map(([t]) => t), true);
-          }
-        }}
-      >
-        {/* Title */}
-        <div className="flex flex-row items-center justify-between w-full text-xs">
-          {toggleCategories && (
-            <div className="w-6 h-6 mr-2 bg-gray-800 rounded-md flex items-center justify-center">
-              {getWorldmapIcon(groupName) && (
-                <Image
-                  src={getWorldmapIcon(groupName)?.[0] ?? ""}
-                  alt={groupName}
-                  width={20}
-                  height={20}
-                />
-              )}
+      <div className="flex items-stretch gap-1">
+        <button
+          type="button"
+          className={clsx(
+            "flex flex-col flex-1 p-1 pl-2 text-left rounded-md hover:bg-base-300 transition-colors",
+            allChecked ? "bg-base-300" : (someChecked ? "bg-base-200" : "")
+          )}
+          onClick={() => {
+            if (!toggleCategories) {
+              toggleCategory(groupName);
+              return;
+            }
+            if (allChecked) {
+              toggleCategories?.(categories.map(([t]) => t), false);
+            } else {
+              toggleCategories?.(categories.map(([t]) => t), true);
+            }
+          }}
+        >
+          {/* Title */}
+          <div className="flex flex-row items-center justify-between w-full text-xs">
+            {toggleCategories && (
+              <div className="w-6 h-6 mr-2 bg-gray-800 rounded-md flex items-center justify-center">
+                {getWorldmapIcon(groupName) && (
+                  <Image
+                    src={getWorldmapIcon(groupName)?.[0] ?? ""}
+                    alt={groupName}
+                    width={20}
+                    height={20}
+                  />
+                )}
+              </div>
+            )}
+            <div>{groupName}</div>
+            <div className="flex flex-row gap-2 items-center">
+              <div className="font-lightmono">({totalVisited}/{totalCount})</div>
+            </div>
+          </div>
+          {/* Translation if showDescriptions */}
+          {showDescriptions && !toggleCategories && (
+            <div className="text-xs text-gray-500 font-semibold">
+              Translation: {translateBlueprint(groupName)}
             </div>
           )}
-          <div>{groupName}</div>
-          <div className="flex flex-row gap-2 items-center">
-            <div className="font-lightmono">({totalVisited}/{totalCount})</div>
-            {toggleCategories && (
-              <Button className="flex p-1 h-6 w-6" onClick={(e) => {
-                e.stopPropagation();
-                setIsOpen(!isOpen)
-              }}>
-                {isOpen ? "−" : "+"}
-              </Button>
-            )}
-          </div>
-        </div>
-        {/* Translation if showDescriptions */}
-        {showDescriptions && !toggleCategories && (
-          <div className="text-xs text-gray-500 font-semibold">
-            Translation: {translateBlueprint(groupName)}
-          </div>
+        </button>
+        {toggleCategories && (
+          <Button type="button" className="flex p-1 h-6 w-6" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? "−" : "+"}
+          </Button>
         )}
-      </button>
+      </div>
       {isOpen && toggleCategories && (
         categories.map(([category, totalCount, visitedCount]) => (
-          <button
+          <label
             key={category}
             className="flex flex-col flex-wrap items-center justify-between gap-2 text-xs font-mono hover:bg-base-300 transition-colors"
-            onClick={() => toggleCategory(category)}
           >
             <div className="flex w-full justify-between">
               <div className="flex flex-row gap-2">
-                <input type="checkbox" key={category} checked={!!dbMapData.visibleCategories[category]} />
+                <input
+                  type="checkbox"
+                  checked={!!dbMapData.visibleCategories[category]}
+                  onChange={() => toggleCategory(category)}
+                />
                 <div className="flex flex-col text-xs font-mono">
                   <span className="font-mono text-gray-500">{category}</span>
                   {showDescriptions && (
@@ -104,7 +107,7 @@ const CategoryPaneGroupComponent = ({
               </div>
               <div className="flex flex-wrap align-center justify-between">({visitedCount}/{totalCount})</div>
             </div>
-          </button>
+          </label>
         ))
       )
       }
@@ -165,29 +168,30 @@ export const CategoryPaneComponent = ({
   return (
     <div className="mb-4">
       {/* Title */}
-      <button
-        onClick={() => toggleDisplayedCategoryGroup(title, !isOpen)}
-        className="flex items-center justify-between gap-2 text-sm font-semibold mb-2 w-full text-left hover:text-primary transition-colors"
-      >
-        <div className="flex items-center gap-1">
+      <div className="flex items-center justify-between gap-2 mb-2">
+        <button
+          type="button"
+          onClick={() => toggleDisplayedCategoryGroup(title, !isOpen)}
+          className="flex items-center gap-1 text-sm font-semibold w-full text-left hover:text-primary transition-colors"
+        >
           {isOpen ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
           {showDescriptions && (
-            <div>({categories.length})</div>
+            <span>({categories.length})</span>
           )}
           <span>{title}</span>
-        </div>
+        </button>
         {isOpen && toggleCategories && (
           <Button
+            type="button"
             className="flex-end"
-            onClick={(e) => {
-              e.stopPropagation();
+            onClick={() => {
               toggleCategories(categories.map(c => c[0]), !toggledCount);
             }}
           >
             {toggledCount > 0 ? "Uncheck all" : "Check all"}
           </Button>
         )}
-      </button>
+      </div>
 
       {/* Groups */}
       {isOpen && (
