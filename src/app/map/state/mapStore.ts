@@ -115,20 +115,25 @@ export const useMapStore = create<MapState>((set) => ({
         newTimestamps[categoryKey] = Date.now();
       }
 
+      const updatedVisited = { ...state.dbMapData.visitedEntities };
+      const updatedTimestamps = { ...state.dbMapData.visitedEntitiesTimestamps };
+      if (newVisitedParts.size === 0) {
+        delete updatedVisited[entityKey];
+        delete updatedTimestamps[entityKey];
+      } else {
+        updatedVisited[entityKey] = newVisitedParts;
+        if (Object.keys(newTimestamps).length === 0) {
+          delete updatedTimestamps[entityKey];
+        } else {
+          updatedTimestamps[entityKey] = newTimestamps;
+        }
+      }
+
       const newData = {
         ...state.dbMapData,
-        visitedEntities: {
-          ...state.dbMapData.visitedEntities,
-          [entityKey]: newVisitedParts,
-        },
-        visitedEntitiesTimestamps: {
-          ...state.dbMapData.visitedEntitiesTimestamps,
-          [entityKey]: newTimestamps,
-        }
+        visitedEntities: updatedVisited,
+        visitedEntitiesTimestamps: updatedTimestamps,
       };
-      if (Object.keys(newTimestamps).length === 0) {
-        delete newData.visitedEntitiesTimestamps![entityKey];
-      }
       mapStorageService.save(newData);
       return { dbMapData: newData };
     });
