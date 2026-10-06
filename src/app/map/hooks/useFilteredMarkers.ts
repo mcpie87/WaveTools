@@ -6,6 +6,8 @@ import { BBox } from "rbush";
 import {
   __ALL_MAPS__,
   __ALL_MAPS_BUT_DEFINED__,
+  __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__,
+  __ALL_MAPS_BUT_DUNGEONS_AND_TEST__,
   __ALL_MAPS_BUT_TEST_DUNGEON__,
   __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__,
   __DUNGEONS_ONLY__,
@@ -35,13 +37,15 @@ const sonoroMapIds = new Set(Object.values(sonoroDungeonMapConfigs).map(c => c.m
 const testMapIds = new Set(Object.values(testDungeonMapConfigs).map(c => c.mapId));
 const dungeonIds = new Set([...msqMapIds, ...storyMapIds, ...sonoroMapIds]);
 
-function buildMapIdPredicate(
+export function buildMapIdPredicate(
   selectedMap: SelectedMap,
   selectedMapId: number | null
 ): (mapId: number) => boolean {
   if (selectedMapId !== null) return (id) => id === selectedMapId;
   if (selectedMap === __ALL_MAPS__) return () => true;
   if (selectedMap === __ALL_MAPS_BUT_DEFINED__) return (id) => !definedMapIds.has(id);
+  if (selectedMap === __ALL_MAPS_BUT_DEFINED_AND_TEST_DUNGEON__) return (id) => !definedMapIds.has(id) && !testMapIds.has(id);
+  if (selectedMap === __ALL_MAPS_BUT_DUNGEONS_AND_TEST__) return (id) => !dungeonIds.has(id) && !testMapIds.has(id);
   if (selectedMap === __WORLD_MAPS__) return (id) => worldMapIds.has(id);
   if (selectedMap === __DUNGEONS_ONLY__) return (id) => dungeonIds.has(id);
   if (selectedMap === __ALL_MAPS_BUT_WORLD_MAP_AND_TEST__) return (id) => !worldMapIds.has(id) && !testMapIds.has(id);

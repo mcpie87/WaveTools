@@ -10,7 +10,7 @@ export const TILE_SIZE = 256;
 
 const translateGameToMapX = (x: number) => TILE_SIZE + scaleFactor * (x / 10000);
 const translateGameToMapY = (y: number) => -scaleFactor * (y / 10000);
-const translateGameToMap = ({ x, y, z }: { x: number; y: number; z: number }) => ({
+export const translateGameToMap = ({ x, y, z }: { x: number; y: number; z: number }) => ({
   x: translateGameToMapX(x),
   y: translateGameToMapY(y),
   z: z / 10000,
