@@ -20,8 +20,6 @@ export interface MarkerNode {
 
 export interface MarkerIndexes {
   spatial: Map<number, RBush<MarkerNode>>;
-  byBlueprint: Map<string, APIMarker[]>;
-  byMapId: Map<number, APIMarker[]>;
 }
 
 export type LoadingStepStatus = 'pending' | 'loading' | 'done' | 'error';
@@ -43,27 +41,17 @@ export interface LoadingStep {
 
 function buildIndexes(raw: APIMarker[]): MarkerIndexes {
   const spatial = new Map<number, RBush<MarkerNode>>();
-  const byBlueprint = new Map<string, APIMarker[]>();
-  const byMapId = new Map<number, APIMarker[]>();
 
   const spatialBatch = new Map<number, MarkerNode[]>();
 
   for (const marker of raw) {
     const x = marker.Transform[0].X;
     const y = marker.Transform[0].Y;
-    const { MapId, BlueprintType } = marker;
+    const { MapId } = marker;
 
     // spatial batch
     if (!spatialBatch.has(MapId)) spatialBatch.set(MapId, []);
     spatialBatch.get(MapId)!.push({ minX: x, minY: y, maxX: x, maxY: y, marker });
-
-    // byMapId
-    if (!byMapId.has(MapId)) byMapId.set(MapId, []);
-    byMapId.get(MapId)!.push(marker);
-
-    // byBlueprint
-    if (!byBlueprint.has(BlueprintType)) byBlueprint.set(BlueprintType, []);
-    byBlueprint.get(BlueprintType)!.push(marker);
   }
 
   for (const [mapId, nodes] of spatialBatch) {
@@ -72,7 +60,7 @@ function buildIndexes(raw: APIMarker[]): MarkerIndexes {
     spatial.set(mapId, tree);
   }
 
-  return { spatial, byBlueprint, byMapId };
+  return { spatial };
 }
 
 /**

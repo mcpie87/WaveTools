@@ -75,7 +75,7 @@ for (const lp of levelPlayData) {
     }
   }
 }
-export { mapMarksData, questData, questByEntityId };
+export { mapMarksData };
 
 export const getMapMark = (mapId: number, entityConfigId: number | undefined): APIMapMark | undefined => {
   if (entityConfigId === undefined) return undefined;

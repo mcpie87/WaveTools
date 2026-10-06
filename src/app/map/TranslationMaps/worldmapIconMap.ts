@@ -525,7 +525,6 @@ const CustomIcons: Record<string, IconUrl> = {
   [Miscellaneous.LAUNCH_PAD]: "Launchpad.png",
 };
 
-export const convertPngToWebp = (fileName: string) => fileName.replace(/\.png$/, '.webp');
 
 export const getWorldmapIcon = (name: string): IconRecord | null => {
   const gameAssetIcon = GameAssetIcons[name];
