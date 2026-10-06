@@ -23,15 +23,12 @@ export class IDBSource implements Source {
     const cached = await db.tiles.get(this.url);
     if (cached) {
       if (cached.version !== this.version) {
-        console.log(`[PMTiles] Stale cache: ${this.url}, re-downloading`);
         await db.tiles.delete(this.url);
         this.scheduleBackgroundDownload();
       } else {
-        console.log(`[PMTiles] Cache hit: ${this.url}`);
         this.buffer = cached.data;
       }
     } else {
-      console.log(`[PMTiles] Cache miss: ${this.url}`);
       this.scheduleBackgroundDownload();
     }
   }
@@ -53,7 +50,6 @@ export class IDBSource implements Source {
   }
 
   private async backgroundDownload(): Promise<void> {
-    console.log(`[PMTiles] Background download started: ${this.url}`);
     const res = await fetch(this.url, { priority: 'low' } as RequestInit);
     if (!res.ok) throw new Error(`[PMTiles] Fetch failed: ${res.status} ${res.statusText}`);
     const data = await res.arrayBuffer();
@@ -65,7 +61,6 @@ export class IDBSource implements Source {
       version: this.version
     });
     this.buffer = data;
-    console.log(`[PMTiles] Background download complete: ${this.url} (${data.byteLength} bytes)`);
   }
 
   async getBytes(offset: number, length: number): Promise<RangeResponse> {

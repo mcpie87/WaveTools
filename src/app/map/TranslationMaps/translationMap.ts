@@ -179,10 +179,6 @@ const TranslationMapGroups: Record<string, { keys: string[]; key: string }> = {
   "Interact ???": {
     key: "INTERACT_UNKNOWN",
     keys: ["Treasure034"]
-    // "Treasure034": {
-    //   name: "Vault Undergrounds Shell Credit",
-    //   rewardId: 1321,
-    // },
   },
   "Inspect": {
     key: "INSPECT",
