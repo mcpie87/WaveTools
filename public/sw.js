@@ -3,14 +3,18 @@ const CACHE_PREFIXES = ['wuwa-leaflet-tiles-', 'wuwa-assets-'];
 const ASSET_CACHE = `wuwa-assets-${PATCH}`;
 const META_DB = 'wuwa-tile-meta';
 const MONTH = 30 * 24 * 60 * 60 * 1000;
+let dbPromise;
 
 function openDB() {
-  return new Promise((resolve, reject) => {
-    const req = indexedDB.open(META_DB, 1);
-    req.onupgradeneeded = () => req.result.createObjectStore('tiles');
-    req.onsuccess = () => resolve(req.result);
-    req.onerror = () => reject(req.error);
-  });
+  if (!dbPromise) {
+    dbPromise = new Promise((resolve, reject) => {
+      const req = indexedDB.open(META_DB, 1);
+      req.onupgradeneeded = () => req.result.createObjectStore('tiles');
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => reject(req.error);
+    });
+  }
+  return dbPromise;
 }
 
 async function getTs(url) {
@@ -48,7 +52,7 @@ self.addEventListener('fetch', event => {
   if (
     req.method !== 'GET' ||
     !/\.(png|webp)$/.test(new URL(url).pathname) ||
-    (!url.includes('githubusercontent') && !url.includes('/Game/Aki/UI/'))
+    !url.includes('githubusercontent')
   ) {
     return;
   }
@@ -64,7 +68,13 @@ self.addEventListener('fetch', event => {
       }
     }
 
-    const res = await fetch(req);
+    let res;
+    try {
+      res = await fetch(req);
+    } catch (error) {
+      if (cached) return cached;
+      throw error;
+    }
     if (res.ok) {
       await cache.put(req, res.clone());
       await setTs(url);
