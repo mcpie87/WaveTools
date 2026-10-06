@@ -194,8 +194,8 @@ export function useMapData() {
           const url = `${basePath}/data/levelentityconfig.json`;
           raw = await (async () => {
             const res = await fetch(url, { signal: controller.signal });
-            if (res.ok) return await res.json();
-            return res.json();
+            if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+            return await res.json();
           })();
         } else {
           // Production: check cache first, then fetch with progress
@@ -274,10 +274,9 @@ export function useMapData() {
           if (!cancelled) setLayersData(await cached.json());
         } else {
           const res = await fetch(url);
-          if (res.ok) {
-            await cache.put(cacheKey, res.clone());
-            if (!cancelled) setLayersData(await res.json());
-          }
+          if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+          await cache.put(cacheKey, res.clone());
+          if (!cancelled) setLayersData(await res.json());
         }
         await new Promise(r => setTimeout(r, 400));
         if (!cancelled) updateStep('layers', { status: 'done', completedAt: Date.now() });
