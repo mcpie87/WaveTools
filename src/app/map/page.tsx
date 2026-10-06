@@ -19,7 +19,6 @@ import {
   scaleFactor,
   TILE_SIZE,
   unionMapConfigs,
-  UnionMapName,
 } from './mapUtils';
 import { MapSettingsComponent } from './Components/MapSettingsComponent';
 import { useFilteredMarkers } from './hooks/useFilteredMarkers';
@@ -181,7 +180,7 @@ export default function XYZMap() {
           maxBounds={
             isCustomMapSelected(selectedMap)
               ? undefined
-              : getBounds(selectedMap as UnionMapName, 5)
+              : getBounds(selectedMap, 5)
           }
           attributionControl={false}
         >
