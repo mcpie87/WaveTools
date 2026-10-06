@@ -207,7 +207,7 @@ export enum ItemPlant {
   FROSTWORT = "Frostwort",
   STONE_ROSE = "Stone Rose",
   FOXTAIL_KELP = "Foxtail Kelp",
-  LUMINOUS_CALENDULA = "Luminous Calendar",
+  LUMINOUS_CALENDULA = "Luminous Calendula",
   // 3.5 Mengzhou
   WHITE_JADE_BEAUTY = "White Jade Beauty",
   CLIMBER_SHOOTS = "Climber Shoots",
