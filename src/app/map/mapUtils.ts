@@ -55,7 +55,7 @@ export type QuestFilter = typeof __DISPLAY_ALL__
   | typeof __DISPLAY_NO_QUEST__
   | typeof __DISPLAY_NO_QUEST_NO_LEVELPLAY__;
 
-export const isCustomMapSelected = (selectedMap: SelectedMap) => {
+export const isCustomMapSelected = (selectedMap: SelectedMap): selectedMap is Exclude<SelectedMap, UnionMapName> => {
   return ([
     __ALL_MAPS__,
     __ALL_MAPS_BUT_DEFINED__,
@@ -238,7 +238,7 @@ export enum TestDungeonName {
   YANGYANG_TEST_DUNGEON = "Yangyang Test Dungeon",
 }
 
-export type UnionMapName = MapName | StoryDungeonName | SonoroDungeonName | TestDungeonName;
+export type UnionMapName = MapName | MainStoryDungeonName | StoryDungeonName | SonoroDungeonName | TestDungeonName;
 
 export interface MapConfig {
   mapId: number;
@@ -326,7 +326,7 @@ export const mapConfigs: Record<string, MapConfig> = {
     bounds: [[-18, 11], [-12, 18]],
     url: `${prefix}/MapTiles/T_MapTiles_{x}_{y}_UI.${format}`
   },
-} as const;
+};
 
 export const mainStoryDungeonMapConfigs: Record<string, MapConfig> = {
   [MainStoryDungeonName.GRAND_LIBRARY]: {
