@@ -549,6 +549,7 @@ const PuzzleTranslationMapGroups: Record<string, { keys: string[]; key: string }
       "branch3.7_239_Gameplay_InvisibleChair3",
       "branch3.7_239_Gameplay_3_7/GhostTitan5",
       "branch3.7_239_Gameplay_3_7/GhostTitan7",
+      "branch3.7_239_Gameplay_3_7/GhostTitan10",
     ]
   },
   [Puzzle.SHADOW_BINDER]: {
