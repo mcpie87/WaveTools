@@ -1,5 +1,5 @@
 export const ASSET_URL = "https://raw.githubusercontent.com/alt3ri/WW_Asset_Webp/refs/heads/main/";
-export const GAME_VERSION = "3.7";
+export const GAME_VERSION = "3.8";
 export const NO_DATA_STRING = "NO CONTENT"
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -21,4 +21,5 @@ export const LEVEL_ENTITY_CONFIG_URL = {
   "3.5": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYU2RHTP5D7tN6y5wEdxQGmviC1MIKOklTVa3P",
   "3.6": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYxv7rGtDI86TJHzYt4EGhwiWaL19OMkrAKFNp",
   "3.7": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYpVAeSVFYLosNBJe1D0Rl2KVgPCbIAWSEqdOZ",
+  "3.8": "https://wwfmp0c1vm.ufs.sh/f/GKKXYOQgq7aYxYbw1NDI86TJHzYt4EGhwiWaL19OMkrAKFNp",
 };
