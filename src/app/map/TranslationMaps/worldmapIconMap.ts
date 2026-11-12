@@ -169,6 +169,8 @@ const GameAssetIcons: Record<string, IconUrl | IconRecord> = {
   // 3.7
   [ItemSpecialty.BLOOM_OF_HEARKENING]: "Image/IconC/T_IconC_088_UI.png",
   [ItemSpecialty.MIASMIC_BRANCH]: "Image/IconC/T_IconC_089_UI.png",
+  // 3.8
+  [ItemSpecialty.REVERIE_LILY]: "Image/IconC/T_IconC_090_UI.png",
 
 
   /* ======================================================================= */
