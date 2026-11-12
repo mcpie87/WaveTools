@@ -120,6 +120,8 @@ export enum ItemSpecialty {
   // 3.7
   BLOOM_OF_HEARKENING = "Bloom of Hearkening",
   MIASMIC_BRANCH = "Miasmic Branch",
+  // 3.8
+  REVERIE_LILY = "Reverie Lily",
 }
 
 export enum ItemCasket {
