@@ -15338,7 +15338,9 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21010045_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21010045_UI.png"
     },
-    "ascensionMaterials": []
+    "ascensionMaterials": [
+
+    ]
   },
   {
     "id": 21020045,
@@ -15354,7 +15356,9 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21020045_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21020045_UI.png"
     },
-    "ascensionMaterials": []
+    "ascensionMaterials": [
+
+    ]
   },
   {
     "id": 21030045,
@@ -15370,7 +15374,9 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030045_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030045_UI.png"
     },
-    "ascensionMaterials": []
+    "ascensionMaterials": [
+
+    ]
   },
   {
     "id": 21040045,
@@ -15386,7 +15392,9 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21040045_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21040045_UI.png"
     },
-    "ascensionMaterials": []
+    "ascensionMaterials": [
+
+    ]
   },
   {
     "id": 21050045,
@@ -15402,7 +15410,9 @@
       "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21050045_UI.png",
       "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21050045_UI.png"
     },
-    "ascensionMaterials": []
+    "ascensionMaterials": [
+
+    ]
   },
   {
     "id": 21020076,
@@ -17484,6 +17494,155 @@
           {
             "id": 41100064,
             "name": "FF Exoswarm Core",
+            "value": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21030076,
+    "name": "Lullaby",
+    "rarity": 5,
+    "weaponType": {
+      "id": 3,
+      "name": "Pistols",
+      "icon": "/Game/Aki/UI/UIResources/Common/Atlas/SkillIcon/SkillIconNor/SP_IconNorGun.png"
+    },
+    "icon": {
+      "default": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon/T_IconWeapon21030076_UI.png",
+      "middle": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon160/T_IconWeapon160_21030076_UI.png",
+      "small": "/Game/Aki/UI/UIResources/Common/Image/IconWeapon80/T_IconWeapon80_21030076_UI.png"
+    },
+    "ascensionMaterials": [
+      {
+        "rank": 0,
+        "max": 20,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "max": 40,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 10000
+          },
+          {
+            "id": 41100081,
+            "name": "Fractured Exoswarm Pendant",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "max": 50,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 20000
+          },
+          {
+            "id": 43021021,
+            "name": "Incomplete Combustor",
+            "value": 6
+          },
+          {
+            "id": 41100082,
+            "name": "Worn Exoswarm Pendant",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "max": 60,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 40000
+          },
+          {
+            "id": 43021022,
+            "name": "Aftertune Combustor",
+            "value": 8
+          },
+          {
+            "id": 41100083,
+            "name": "Chipped Exoswarm Pendant",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 4,
+        "max": 70,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 60000
+          },
+          {
+            "id": 43021023,
+            "name": "Remnant Combustor",
+            "value": 6
+          },
+          {
+            "id": 41100083,
+            "name": "Chipped Exoswarm Pendant",
+            "value": 6
+          }
+        ]
+      },
+      {
+        "rank": 5,
+        "max": 80,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 80000
+          },
+          {
+            "id": 43021024,
+            "name": "Reverb Combustor",
+            "value": 8
+          },
+          {
+            "id": 41100084,
+            "name": "Intact Exoswarm Pendant",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "rank": 6,
+        "max": 90,
+        "items": [
+          {
+            "id": 2,
+            "name": "Shell Credit",
+            "value": 120000
+          },
+          {
+            "id": 43021024,
+            "name": "Reverb Combustor",
+            "value": 12
+          },
+          {
+            "id": 41100084,
+            "name": "Intact Exoswarm Pendant",
             "value": 8
           }
         ]

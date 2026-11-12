@@ -18040,6 +18040,14 @@
     "title": "Journey to Manifold Sanctum"
   },
   {
+    "id": 3720009,
+    "mapId": 912,
+    "relativeId": 0,
+    "entityConfigId": 270850063,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
     "id": 1320001,
     "mapId": 8,
     "relativeId": 0,
@@ -18164,14 +18172,6 @@
     "mapId": 8,
     "relativeId": 0,
     "entityConfigId": 138900002,
-    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
-    "title": "Resonance Beacon"
-  },
-  {
-    "id": 3720009,
-    "mapId": 912,
-    "relativeId": 0,
-    "entityConfigId": 270850063,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
     "title": "Resonance Beacon"
   },
@@ -18387,7 +18387,7 @@
     "id": 3750026,
     "mapId": 912,
     "relativeId": 270850014,
-    "entityConfigId": 270850095,
+    "entityConfigId": 270850093,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_94_UI.png",
     "title": "Sword Flight Point"
   },
@@ -18715,7 +18715,7 @@
     "id": 3750804,
     "mapId": 912,
     "relativeId": 232850003,
-    "entityConfigId": 232850006,
+    "entityConfigId": 232850010,
     "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_100_UI.png",
     "title": "Composite Anomaly Zone"
   },
@@ -19364,7 +19364,7 @@
     "mapId": 912,
     "relativeId": 923850016,
     "entityConfigId": 270850438,
-    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_16_UI.png",
     "title": "Days Without Number"
   },
   {
@@ -19372,7 +19372,7 @@
     "mapId": 912,
     "relativeId": 923850017,
     "entityConfigId": 270850440,
-    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_16_UI.png",
     "title": "Tales from the Capsule: Ashen Fox"
   },
   {
@@ -19380,7 +19380,503 @@
     "mapId": 912,
     "relativeId": 923850015,
     "entityConfigId": 270850439,
-    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_05_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_16_UI.png",
     "title": "Moonlike Heart, Mortal Longing"
+  },
+  {
+    "id": 2000001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 122900116,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2000002,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 122900114,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000003,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 122900118,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000004,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 122900123,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000005,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900118,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2000006,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900120,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000007,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900124,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000008,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900126,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000009,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900184,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2000010,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900186,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000011,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900188,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000012,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900190,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000013,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900192,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000014,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 106900602,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2000015,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 106900608,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000016,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 899900014,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2000017,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 899900016,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000018,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 899900018,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000019,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 899900221,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000020,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 899900225,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000021,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 899900223,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000022,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147900226,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000023,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147900228,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000024,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147900230,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000025,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147900797,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2000026,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147900234,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000027,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147900236,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000028,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147900793,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000029,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147900795,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2000030,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 148900101,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2000031,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 135900140,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000032,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 142900033,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2000033,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 135900138,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000034,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 142900035,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000035,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 142900039,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000036,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111900104,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000037,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 111901039,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2000038,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 114001622,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_03_UI.png",
+    "title": "Order of the Deep"
+  },
+  {
+    "id": 2000039,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 114900065,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_03_UI.png",
+    "title": "Averardo Vault"
+  },
+  {
+    "id": 2220001,
+    "mapId": 903,
+    "relativeId": 0,
+    "entityConfigId": 109000000,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2220002,
+    "mapId": 903,
+    "relativeId": 0,
+    "entityConfigId": 169750416,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220003,
+    "mapId": 903,
+    "relativeId": 0,
+    "entityConfigId": 109000002,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220004,
+    "mapId": 903,
+    "relativeId": 0,
+    "entityConfigId": 169750494,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220005,
+    "mapId": 903,
+    "relativeId": 0,
+    "entityConfigId": 169750414,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220006,
+    "mapId": 903,
+    "relativeId": 0,
+    "entityConfigId": 169750418,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220007,
+    "mapId": 903,
+    "relativeId": 0,
+    "entityConfigId": 169750420,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220008,
+    "mapId": 903,
+    "relativeId": 0,
+    "entityConfigId": 169750422,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220009,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 169750160,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_01_UI.png",
+    "title": "Resonance Nexus"
+  },
+  {
+    "id": 2220010,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 169750163,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220011,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 169750166,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220012,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 169750178,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220013,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 161750031,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220014,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 161750033,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220015,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 161750037,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220016,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 161750039,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220017,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 161750035,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220018,
+    "mapId": 903,
+    "relativeId": 0,
+    "entityConfigId": 169750741,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220019,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 169750191,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 3840001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 255700002,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Activity_11_UI.png",
+    "title": "Dreamfield Odyssey"
+  },
+  {
+    "id": 3830001,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 258700004,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_Play_105_UI.png",
+    "title": "Somnoire: Train of Souls"
+  },
+  {
+    "id": 2220020,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 147900228,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
+  },
+  {
+    "id": 2220021,
+    "mapId": 8,
+    "relativeId": 0,
+    "entityConfigId": 142900035,
+    "icon": "/Game/Aki/UI/UIResources/Common/Atlas/WorldMapIcon/SP_IconMap_CS_02_UI.png",
+    "title": "Resonance Beacon"
   }
 ]

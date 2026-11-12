@@ -6474,5 +6474,19 @@
         "limit": 1
       }
     ]
+  },
+  {
+    "id": 42601650,
+    "itemName": "Reverie Lily",
+    "shops": [
+      {
+        "id": 150,
+        "shopName": "Huaxu Apothecary",
+        "price": [
+          "Shell Credit - 3000"
+        ],
+        "limit": 15
+      }
+    ]
   }
 ]

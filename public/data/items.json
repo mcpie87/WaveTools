@@ -17292,7 +17292,7 @@
   {
     "id": 50000210,
     "name": "Gleaner's Ascension Supply",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nBloom of Hearkening x1\nMiasmic Branch x1\nCloudperch Seed x1\nFlowborne Dream x1\nBlade Blossom x1\n...",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nRimewisp *1\nGemini Spore *1\nArithmetic Shell *1\nSummer Flower *1\nStone Rose *1\n…",
     "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
@@ -17402,7 +17402,7 @@
   {
     "id": 50000211,
     "name": "Voyager's Ascension Supply",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nBloom of Hearkening x1\nMiasmic Branch x1\nCloudperch Seed x1\nFlowborne Dream x1\nBlade Blossom x1\n...",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nReverie Lily x1\nBloom of Hearkening x1\nMiasmic Branch x1\nCloudperch Seed x1\nFlowborne Dream x1\n...",
     "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
@@ -17412,7 +17412,7 @@
   {
     "id": 50000212,
     "name": "Reprise Ascension Supply",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nCloudperch Seed x1\nFlowborne Dream x1\nBlade Blossom x1\nRedbell x1\nForget-Me-Not x1\n...",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nReverie Lily x1\nBloom of Hearkening x1\nMiasmic Branch x1\nCloudperch Seed x1\nFlowborne Dream x1\n...",
     "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
@@ -20564,9 +20564,9 @@
     "name": "Peach Parfait",
     "attributes_description": "Used to unlock a Resonator-specific outfit that grants the designated Resonator a new look.",
     "bg_description": "The sky's colors melt into the sea. Splashing waves sparkle in the brilliant summer sun. A bird glides across the boundless blue overhead. A slice of watermelon and a perfectly chilled peach parfait. Just another slow summer day for her.",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_61_Skin1_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_61_Skin1_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_61_Skin1_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_57_Skin1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_57_Skin1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_57_Skin1_UI.png",
     "rarity": 5
   },
   {
@@ -20574,9 +20574,9 @@
     "name": "Peppermint",
     "attributes_description": "Used to unlock a Resonator-specific outfit that grants the designated Resonator a new look.",
     "bg_description": "Endless sunshine, golden sand beaches, and vibrant hues bursting everywhere—summer's here! Lynae's favorite season, hands down! Hm? The heatwave sapped your energy? Why not pop open another ice-cold soda?\n(∩^o^)⊃━☆ﾟ.*･",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_61_Skin1_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_61_Skin1_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_61_Skin1_UI.png",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_60_Skin1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_60_Skin1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_60_Skin1_UI.png",
     "rarity": 5
   },
   {
@@ -21810,56 +21810,6 @@
     "rarity": 4
   },
   {
-    "id": 50000216,
-    "name": "Gleaner's Ascension Supply IV",
-    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nCloudperch Seed x1\nFlowborne Dream x1\nBlade Blossom x1\nRedbell x1\nForget-Me-Not x1\n...",
-    "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cllb_05.png",
-    "rarity": 4
-  },
-  {
-    "id": 50000430,
-    "name": "Basic Enclosure Tank III",
-    "attributes_description": "Open to claim one basic material for Weapon Ascension or Skill Upgrade of your choice:\n<color=Rare2>LF Autopuppet Kernel *1</color>\n<color=Rare2>LF Exoswarm Core *1</color> \n<color=Rare2>LF Mech Core *1</color> \n<color=Rare2>Fractured Exoswarm Pendant *1</color>\n<color=Rare2>Crude Ring *1</color>\n<color=Rare2>LF Whisperin Core *1</color>\n<color=Rare2>LF Howler Core *1</color>\n<color=Rare2>LF Polygon Core *1</color>\n<color=Rare2>LF Tidal Residuum *1</color>",
-    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_023_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_023_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_023_UI.png",
-    "rarity": 2
-  },
-  {
-    "id": 50000431,
-    "name": "Medium Enclosure Tank III",
-    "attributes_description": "Open to claim one medium material for Weapon Ascension or Skill Upgrade of your choice: \n<color=Rare3>MF Autopuppet Kernel *1</color>\n<color=Rare3>MF Exoswarm Core *1</color> \n<color=Rare3>MF Mech Core *1</color> \n<color=Rare3>Worn Exoswarm Pendant *1</color>\n<color=Rare3>Basic Ring *1</color>\n<color=Rare3>MF Whisperin Core *1</color>\n<color=Rare3>MF Howler Core *1</color>\n<color=Rare3>MF Polygon Core *1</color>\n<color=Rare3>MF Tidal Residuum *1</color>",
-    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_024_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_024_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_024_UI.png",
-    "rarity": 3
-  },
-  {
-    "id": 50000432,
-    "name": "Advanced Enclosure Tank III",
-    "attributes_description": "Open to claim one advanced material for Weapon Ascension or Skill Upgrade of your choice: \n<color=Rare4>HF Autopuppet Kernel *1</color>\n<color=Rare4>HF Exoswarm Core *1</color> \n<color=Rare4>HF Mech Core *1</color> \n<color=Rare4>Chipped Exoswarm Pendant *1</color>\n<color=Rare4>Improved Ring *1</color>\n<color=Rare4>HF Whisperin Core *1</color>\n<color=Rare4>HF Howler Core *1</color>\n<color=Rare4>HF Polygon Core *1</color>\n<color=Rare4>HF Tidal Residuum *1</color>",
-    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_025_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_025_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_025_UI.png",
-    "rarity": 4
-  },
-  {
-    "id": 50000433,
-    "name": "Premium Enclosure Tank III",
-    "attributes_description": "Open to claim one premium material for Weapon Ascension or Skill Upgrade of your choice: \n<color=Rare5>FF Autopuppet Kernel *1</color>\n<color=Rare5>FF Exoswarm Core *1</color> \n<color=Rare5>FF Mech Core *1</color> \n<color=Rare5>Intact Exoswarm Pendant *1</color>\n<color=Rare5>Tailored Ring *1</color>\n<color=Rare5>FF Whisperin Core *1</color>\n<color=Rare5>FF Howler Core *1</color>\n<color=Rare5>FF Polygon Core *1</color>\n<color=Rare5>FF Tidal Residuum *1</color>",
-    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
-    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_026_UI.png",
-    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_026_UI.png",
-    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_026_UI.png",
-    "rarity": 5
-  },
-  {
     "id": 51056,
     "name": "Xuanfang's Support Ration",
     "attributes_description": "Obtain to receive the items inside.",
@@ -21937,6 +21887,56 @@
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_240_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_240_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_240_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50000430,
+    "name": "Basic Enclosure Tank III",
+    "attributes_description": "Open to claim one basic material for Weapon Ascension or Skill Upgrade of your choice:\n<color=Rare2>LF Autopuppet Kernel *1</color>\n<color=Rare2>LF Exoswarm Core *1</color> \n<color=Rare2>LF Mech Core *1</color> \n<color=Rare2>Fractured Exoswarm Pendant *1</color>\n<color=Rare2>Crude Ring *1</color>\n<color=Rare2>LF Whisperin Core *1</color>\n<color=Rare2>LF Howler Core *1</color>\n<color=Rare2>LF Polygon Core *1</color>\n<color=Rare2>LF Tidal Residuum *1</color>",
+    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_023_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_023_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_023_UI.png",
+    "rarity": 2
+  },
+  {
+    "id": 50000431,
+    "name": "Medium Enclosure Tank III",
+    "attributes_description": "Open to claim one medium material for Weapon Ascension or Skill Upgrade of your choice: \n<color=Rare3>MF Autopuppet Kernel *1</color>\n<color=Rare3>MF Exoswarm Core *1</color> \n<color=Rare3>MF Mech Core *1</color> \n<color=Rare3>Worn Exoswarm Pendant *1</color>\n<color=Rare3>Basic Ring *1</color>\n<color=Rare3>MF Whisperin Core *1</color>\n<color=Rare3>MF Howler Core *1</color>\n<color=Rare3>MF Polygon Core *1</color>\n<color=Rare3>MF Tidal Residuum *1</color>",
+    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_024_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_024_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_024_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 50000432,
+    "name": "Advanced Enclosure Tank III",
+    "attributes_description": "Open to claim one advanced material for Weapon Ascension or Skill Upgrade of your choice: \n<color=Rare4>HF Autopuppet Kernel *1</color>\n<color=Rare4>HF Exoswarm Core *1</color> \n<color=Rare4>HF Mech Core *1</color> \n<color=Rare4>Chipped Exoswarm Pendant *1</color>\n<color=Rare4>Improved Ring *1</color>\n<color=Rare4>HF Whisperin Core *1</color>\n<color=Rare4>HF Howler Core *1</color>\n<color=Rare4>HF Polygon Core *1</color>\n<color=Rare4>HF Tidal Residuum *1</color>",
+    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_025_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_025_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_025_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 50000433,
+    "name": "Premium Enclosure Tank III",
+    "attributes_description": "Open to claim one premium material for Weapon Ascension or Skill Upgrade of your choice: \n<color=Rare5>FF Autopuppet Kernel *1</color>\n<color=Rare5>FF Exoswarm Core *1</color> \n<color=Rare5>FF Mech Core *1</color> \n<color=Rare5>Intact Exoswarm Pendant *1</color>\n<color=Rare5>Tailored Ring *1</color>\n<color=Rare5>FF Whisperin Core *1</color>\n<color=Rare5>FF Howler Core *1</color>\n<color=Rare5>FF Polygon Core *1</color>\n<color=Rare5>FF Tidal Residuum *1</color>",
+    "bg_description": "The Bloom Bearers of the Black Shores always return from their field trips with abundant samples, which are inventoried and sealed away by the Gardener after running the necessary tests for future use.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_026_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack/T_IconGiftPack_026_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconGiftPack80/T_IconGiftPack80_026_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 50000216,
+    "name": "Gleaner's Ascension Supply IV",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nCloudperch Seed x1\nFlowborne Dream x1\nBlade Blossom x1\nRedbell x1\nForget-Me-Not x1\n...",
+    "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cllb_05.png",
     "rarity": 4
   },
   {
@@ -22140,6 +22140,16 @@
     "rarity": 5
   },
   {
+    "id": 53011,
+    "name": "Lune Noire",
+    "attributes_description": "Used to unlock a Resonator-specific outfit that grants the designated Resonator a new look.",
+    "bg_description": "A costume Hiyuki wore while filming a movie with Startorch Academy students.\nHer gaze has lost none of its resolve or compassion, nor have her movements any of their grace. With blade and frost at her command, she remains as formidable as ever.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_67_Skin1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_67_Skin1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_67_Skin1_UI.png",
+    "rarity": 5
+  },
+  {
     "id": 80001090,
     "name": "Mengzhou Fish in Vinegar",
     "attributes_description": "Increases Energy Regen of all Resonators in the team by 34% for 30 min. Only effective on your own Resonators in Co-op Mode.",
@@ -22152,7 +22162,7 @@
   {
     "id": 80001091,
     "name": "Moonlit Splendor",
-    "attributes_description": "Increases ATK of all Resonators in the team by 28% for 30 min. Only effective on your own Resonators in Co-op Mode.",
+    "attributes_description": "Increases ATK of all Resonators in the team by 28% for 30m. Only effective on your own Resonators in Co-op Mode.",
     "bg_description": "This snow-white steamed rice cake is round as a full moon, soft and springy, and scattered with candied green and red threads like twin rainbows fallen across snow. Hence the name \"Moonlit Splendor.\" Lightly sweet and dense on the tongue, the fragrance of rice and sugar from it melts slowly between the teeth.\nThis confection is created by the wife of Jingran's Shifu, Granny Yanshu, and is his favorite. His little sister always says the cake is sickly sweet. Jingran disagrees, and every time he cups one in his hands and bites down, the satisfaction shows in his whole face.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_30_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_30_UI.png",
@@ -22233,7 +22243,7 @@
     "id": 70360001,
     "name": "Cloudview Seat",
     "attributes_description": "When equipped, you can summon the Cloudview Seat in the overworld.",
-    "bg_description": "Seated, it draws cloud-wreathed mountains into the courtyard. Within a hand-sized screen, ten thousand ravines unfold.\nBuilt on the ever-changing Automata Mechanics, the Artisans of the Court of Savantae and the Ministry of Development have deftly woven Mengzhou's natural splendor into this seat. At rest, it is but an ordinary bench, sit upon it, and a myriad of scenes drift across the screen: haze and cloud-wreathed peaks like gauze and silk.\nIt is said that a wandering cultivator once passed through the Land of Xuanfang and sat alone on this seat for three days. When he finally rose, he declared he had \"seen every sight in Mengzhou's mortal world,\" and left with a flick of his sleeve. Whether the tale is true, not even he himself seems to remember...",
+    "bg_description": "Seated, it draws cloud-wreathed mountains into the courtyard. Within a hand-sized screen, ten thousand ravines unfold.\nBuilt on the ever-changing Automata Mechanics, the Artisans of the Court of Savantae and the Ministry of Development have deftly woven Mengzhou's natural splendor into this seat. At rest, it is but an ordinary bench. Sit upon it, and a myriad of scenes drift across the screen: haze and cloud-wreathed peaks like gauze and silk.\nIt is said that a wandering cultivator once passed through the Land of Xuanfang and sat alone on this seat for three days. When he finally rose, he declared he had \"seen every sight in Mengzhou's mortal world,\" and left with a flick of his sleeve. Whether the tale is true, not even he himself seems to remember...",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/Skin/RaritySummon256/T_RaritySummon256_70360001.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/Skin/RaritySummon160/T_RaritySummon160_70360001.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/Skin/RaritySummon80/T_RaritySummon80_70360001.png",
@@ -22730,6 +22740,26 @@
     "rarity": 5
   },
   {
+    "id": 85100001,
+    "name": "Selfie Pose: Salute",
+    "attributes_description": "A selfie pose. Can be used to switch Rover's pose while taking a selfie.",
+    "bg_description": "Hand up, salute! A moment of respect. Show the camera your coolest pose.",
+    "icon": "/Game/Aki/UI/UIResources/UiPhotograph/Image/UiCameraSystem37/UiCameraRoleStance/UiCameraCharacterPosture/CharacterPosture256/T_Posture256_Salute.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/UiPhotograph/Image/UiCameraSystem37/UiCameraRoleStance/UiCameraCharacterPosture/CharacterPosture160/T_Posture160_Salute.png",
+    "icon_small": "/Game/Aki/UI/UIResources/UiPhotograph/Image/UiCameraSystem37/UiCameraRoleStance/UiCameraCharacterPosture/CharacterPosture80/T_Posture80_Salute.png",
+    "rarity": 4
+  },
+  {
+    "id": 85100003,
+    "name": "Selfie Expression: Cool",
+    "attributes_description": "A selfie expression. Can be used to switch Rover's facial expression while taking a selfie.",
+    "bg_description": "The sharp eyes. The cool vibe. The one and only star in the camera.",
+    "icon": "/Game/Aki/UI/UIResources/UiPhotograph/Image/UiCameraSystem37/UiCameraRoleStance/UiCameraCharacterExpressions/CharacterExpressions256/T_Expressions_Showoff.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/UiPhotograph/Image/UiCameraSystem37/UiCameraRoleStance/UiCameraCharacterExpressions/CharacterExpressions160/T_Expressions160_Showoff.png",
+    "icon_small": "/Game/Aki/UI/UIResources/UiPhotograph/Image/UiCameraSystem37/UiCameraRoleStance/UiCameraCharacterExpressions/CharacterExpressions80/T_Expressions80_Showoff.png",
+    "rarity": 4
+  },
+  {
     "id": 80000098,
     "name": "Emerald Tonic",
     "attributes_description": "Increases Energy Regen of all Resonators in the team by 20%, lasting for 30m. Only effective on your own Resonators in Co-op Mode.",
@@ -22768,6 +22798,16 @@
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_32_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_32_UI.png",
     "rarity": 4
+  },
+  {
+    "id": 10001512,
+    "name": "Lily's Waveband",
+    "attributes_description": "Can be used to activate Lily's Resonance Chain.",
+    "bg_description": "A Resonator's Forte is composed of countless Wavebands. When these Wavebands form a complete Resonance Chain, the Resonator can unleash their full power.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1633_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1633_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRup/T_IconRup_Part_1633_UI.png",
+    "rarity": 5
   },
   {
     "id": 71200020,
@@ -22840,6 +22880,16 @@
     "rarity": 5
   },
   {
+    "id": 71110001,
+    "name": "Withered Shell",
+    "attributes_description": "<color=#c19f51>[Counterattack]</color>\nGrants a Shield equal to 50% of Max HP to all Resonators in the team for 15s, during which the Resonator becomes immune to interruption and continuously deals DMG to nearby targets. This DMG can trigger Counterattack. Cooldown: 20s.\nAvailable uses: 2",
+    "bg_description": "It stubbornly rejects all things, if only to protect what has yet to wither.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRouge/T_IconRouge_007_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRouge160/T_IconRouge160_007_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRouge80/T_IconRouge80_007_UI.png",
+    "rarity": 4
+  },
+  {
     "id": 44010064,
     "name": "Phantom: Smolder",
     "attributes_description": "Unlocks the Phantom Appearance of the corresponding Echo.",
@@ -22848,6 +22898,86 @@
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods160/T_IconMonsterGoods160_SG_31102_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMonsterGoods80/T_IconMonsterGoods80_SG_31102_UI.png",
     "rarity": 5
+  },
+  {
+    "id": 71110002,
+    "name": "Tainted Realm",
+    "attributes_description": "<color=#c19f51>[Traction]</color>\nGenerates a vortex that pulls in nearby targets and deals DMG each second, lasting for 8s. Each target hit by the vortex increases the team's total DMG by 20% for 8s, stacking up to 4 times. Cooldown: 10s.\nAvailable uses: 3",
+    "bg_description": "Upon its surface shimmer the lingering traces of countless splendors.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_46.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_46.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_46.png",
+    "rarity": 4
+  },
+  {
+    "id": 71110003,
+    "name": "Cruel Facade",
+    "attributes_description": "<color=#c19f51>[RES Reduction]</color>\nDeals DMG to nearby targets and reduces their All-Attribute RES to 0 for 20s. Cooldown: 5s.\nPassive: Reduces a target's All-Attribute RES by 10% when dealing DMG to it.\nAvailable uses: 3",
+    "bg_description": "Twisting, multiplying, mindless... Such is the ultimate fate of endless life.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRouge/T_IconRouge_051_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRouge160/T_IconRouge160_051_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRouge80/T_IconRouge80_051_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71110004,
+    "name": "Echo of Destruction",
+    "attributes_description": "<color=#c19f51>[Time Extension]</color>\nDeals DMG to targets in range. Each target hit adds 2s to the remaining time. Cooldown: 2s.\nAvailable uses: 3",
+    "bg_description": "The invention of firearms forever reshaped the very image of war and destruction.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRouge/T_IconRouge_017_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRouge160/T_IconRouge160_017_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRouge80/T_IconRouge80_017_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71110005,
+    "name": "Hollow Splendor",
+    "attributes_description": "<color=#c19f51>[Stagnation]</color>\nStagnates nearby targets and makes them take 50% more total DMG for 15s. Pauses the timer for 15s. Cooldown: 20s.\nAvailable uses: 2",
+    "bg_description": "Better to glimpse the void within the sphere than to behold a future long since perished.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRouge/T_IconRouge_039_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRouge160/T_IconRouge160_039_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRouge80/T_IconRouge80_039_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71110006,
+    "name": "Shattered Hope",
+    "attributes_description": "<color=#c19f51>[Haste]</color>\nGreatly increases the Resonator's Movement Speed for 8s.\nPassive: Actions consume no STA.\nAvailable uses: 4",
+    "bg_description": "Wings may offer no hope of escape, but at least they can evoke a sense of warmth.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRouge/T_IconRouge_038_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRouge160/T_IconRouge160_038_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRouge80/T_IconRouge80_038_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71110007,
+    "name": "Chaotic Fate",
+    "attributes_description": "<color=#c19f51>[DMG Boost]</color>\n<color=#b94f4e>Reduces the remaining time by 15s</color>. Increases the total DMG of all Resonators by 400% for 10s, stacking up to 3 times. Cooldown: 8s.\nAvailable uses: 3",
+    "bg_description": "For most, casting it is the only choice they have, even if the outcome is as unpredictable as fate itself.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_27.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_27.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_27.png",
+    "rarity": 4
+  },
+  {
+    "id": 71110008,
+    "name": "Scattered Memory",
+    "attributes_description": "<color=#c19f51>[Immobilization]</color>\nDeals DMG to targets in range and immobilizes targets that can be immobilized. Cooldown: 10s.\nPassive: Makes immobilized targets take 50% more total DMG.\nAvailable uses: 2",
+    "bg_description": "It helps people forget unpleasant memories, though in a rather crude way.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRouge/T_IconRouge_011_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRouge160/T_IconRouge160_011_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRouge80/T_IconRouge80_011_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71110009,
+    "name": "Eroding Reason",
+    "attributes_description": "<color=#c19f51>[Dodge]</color>\nSends all Resonators in the team into the Blink state for 12s, automatically dodging before taking DMG. Cooldown: 15s.\nPassive: Grants 1 stack of Berserk every 3s in combat. Each stack makes all Resonators in the team deal 5% more total DMG, stacking up to 20 times. Taking DMG removes all stacks.\nPauses the timer while Berserk is at 20 stacks.\nAvailable uses: 3",
+    "bg_description": "Nothing lies beneath the cloak, yet you can't shake the feeling that something inside is curiously watching everything around it.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRouge/T_IconRouge_044_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRouge160/T_IconRouge160_044_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRouge80/T_IconRouge80_044_UI.png",
+    "rarity": 4
   },
   {
     "id": 71200027,
@@ -22860,10 +22990,130 @@
     "rarity": 5
   },
   {
+    "id": 80001062,
+    "name": "Crispy Lilies",
+    "attributes_description": "Increases ATK of all Resonators in the team by 28% for 30m. Only effective on your own Resonators in Co-op Mode.",
+    "bg_description": "A snack Lily came up with on a whim as a child. It's simple to make: wash the lily petals, coat them in egg and breadcrumbs, and fry until golden brown. Sprinkle with a light dusting of sea salt, or serve with a side of honey for dipping.\n\"Mm, it tastes just like it did when I was little. The outside is crisp and golden, while the inside retains the lilies' delicate, slightly bitter sweetness. It's almost like...\"\nShe trailed off, saying no more. A faint smile played on her lips, as though she were gently savoring a taste of those bygone days.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconCook/T_IconCook_SP_34_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconCook160/T_IconCook160_SP_34_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconCook80/T_IconCook80_SP_34_UI.png",
+    "rarity": 3
+  },
+  {
+    "id": 42601650,
+    "name": "Reverie Lily",
+    "attributes_description": "A material used for Resonator Ascension.",
+    "bg_description": "The petals of the Reverie Lily are as pure and flawless as moonlight. The slender flower sways and releases wisps of delicate fragrance with every gentle breeze that passes. The scent is not quite sweet but faintly bitter, like old dreams steeped in the night's dew. Those dreams hold a thousand unspoken words, yet the flower remains silent.\nIt stays rooted in the earth, lifting all its whiteness toward the heavens. A quiet compassion lives in that unblemished white, as though the flower has witnessed all the world's imperfections and still chooses, in the depths of night, to shine like a tiny \"moon\" for souls who have lost their way.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconC/T_IconC_090_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconC160/T_IconC160_090_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconC80/T_IconC80_090_UI.png",
+    "rarity": 1
+  },
+  {
+    "id": 50000218,
+    "name": "Gleaner's Ascension Supply VI",
+    "attributes_description": "Open to claim one material for Resonator Ascension of your choice:\nReverie Lily x1\nBloom of Hearkening x1\nMiasmic Branch x1\nCloudperch Seed x1\nFlowborne Dream x1\n...",
+    "bg_description": "Bio samples collected by the Black Shores' Bloombearers during their fieldwork, which were later transplanted, preserved, and archived in the Bank of Life at Tethys' Deep. When necessary, specimens stored within may be used as supplies and freely accessed by personnel in need.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_cllb_05.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_cllb_05.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_cllb_05.png",
+    "rarity": 4
+  },
+  {
+    "id": 80131015,
+    "name": "Beyond the Dreamfield",
+    "attributes_description": "Complete 15 tasks in \"Dreamfield Odyssey\"",
+    "bg_description": "You find some little white flowers growing at the border of the dreamland. But before you can touch them, the alarm clock drags you back to reality, just as you're about to lose yourself.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_RoverTower_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_RoverTower_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_RoverTower_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 80130070,
+    "name": "Lullaby of the Dream Cradle",
+    "attributes_description": "She weaves her dreams into a garden of souls, her immaculate heart becoming both sun and moon, bathing those who have lost their way in gentle light.\n\nMay your soul wander no more.\nMay your past sink into silence.\nMay you find peace in endless light.\n\nHer gentle prayers drift softly into the dreams of every soul.",
+    "bg_description": "Fully activate Lily's Resonance Chain",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/T_IconA_Title_04_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/T_IconA160_Title_04_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/T_IconA80_Title_04_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71120001,
+    "name": "Illusion Unending: Jinhsi",
+    "attributes_description": "A relic found deep within the Desolate Dreamfield. Awarded for placing in the top 20% on Jinhsi's leaderboard in Dreamfield Odyssey when rankings are finalized. <color=Highlight>This is a limited-time item, valid until the end of Version 4.0.</color>",
+    "bg_description": "An extraordinary spinning top that never stops spinning, even outside the Somnoire. Time and space lose their familiar meaning in the dreamscape. Only those who reinterpret them have truly glimpsed a fragment of eternity.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity38/MowingTower/T_IconA_RoleTowerJinxi_1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity38/MowingTower/T_IconA160_RoleTowerJinxi_1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity38/MowingTower/T_IconA80_RoleTowerJinxi_1_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71120002,
+    "name": "Illusion Unending: Carlotta",
+    "attributes_description": "A relic found deep within the Desolate Dreamfield. Awarded for placing in the top 20% on Carlotta's leaderboard in Dreamfield Odyssey when rankings are finalized. <color=Highlight>This is a limited-time item, valid until the end of Version 4.0.</color>",
+    "bg_description": "An extraordinary spinning top that never stops spinning, even outside the Somnoire. Time and space lose their familiar meaning in the dreamscape. Only those who reinterpret them have truly glimpsed a fragment of eternity.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity38/MowingTower/T_IconA_RoleTowerKelaita_1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity38/MowingTower/T_IconA160_RoleTowerKelaita_1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity38/MowingTower/T_IconA80_RoleTowerKelaita_1_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71120003,
+    "name": "Illusion Unending: Changli",
+    "attributes_description": "A relic found deep within the Desolate Dreamfield. Awarded for placing in the top 20% on Changli's leaderboard in Dreamfield Odyssey when rankings are finalized. <color=Highlight>This is a limited-time item, valid until the end of Version 4.0.</color>",
+    "bg_description": "An extraordinary spinning top that never stops spinning, even outside the Somnoire. Time and space lose their familiar meaning in the dreamscape. Only those who reinterpret them have truly glimpsed a fragment of eternity.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity38/MowingTower/T_IconA_RoleTowerChangli_1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity38/MowingTower/T_IconA160_RoleTowerChangli_1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity38/MowingTower/T_IconA80_RoleTowerChangli_1_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71120004,
+    "name": "Illusion Unending: Camellya",
+    "attributes_description": "A relic found deep within the Desolate Dreamfield. Awarded for placing in the top 20% on Camellya's leaderboard in Dreamfield Odyssey when rankings are finalized. <color=Highlight>This is a limited-time item, valid until the end of Version 4.0.</color>",
+    "bg_description": "An extraordinary spinning top that never stops spinning, even outside the Somnoire. Time and space lose their familiar meaning in the dreamscape. Only those who reinterpret them have truly glimpsed a fragment of eternity.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity38/MowingTower/T_IconA_RoleTowerChun_1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity38/MowingTower/T_IconA160_RoleTowerChun_1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity38/MowingTower/T_IconA80_RoleTowerChun_1_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71120005,
+    "name": "Illusion Unending: Xiangli Yao",
+    "attributes_description": "A relic found deep within the Desolate Dreamfield. Awarded for placing in the top 20% on Xiangli Yao's leaderboard in Dreamfield Odyssey when rankings are finalized. <color=Highlight>This is a limited-time item, valid until the end of Version 4.0.</color>",
+    "bg_description": "An extraordinary spinning top that never stops spinning, even outside the Somnoire. Time and space lose their familiar meaning in the dreamscape. Only those who reinterpret them have truly glimpsed a fragment of eternity.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconA/Activity/Activity38/MowingTower/T_IconA_RoleTowerXiangliyao_1_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconA160/Activity/Activity38/MowingTower/T_IconA160_RoleTowerXiangliyao_1_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconA80/Activity/Activity38/MowingTower/T_IconA80_RoleTowerXiangliyao_1_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71550013,
+    "name": "Spirit Lily",
+    "attributes_description": "A lily flower made of frequencies left by the soldiers.",
+    "bg_description": "A lily flower made of frequencies left by the soldiers, carrying the words they wanted to tell Lily.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_276_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_276_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_276_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 71550014,
+    "name": "Petal of Tomorrow",
+    "attributes_description": "A lily petal that carries hope.",
+    "bg_description": "A lily petal that carries hope, and proof that the girl has found the courage to embrace tomorrow. Maybe one day, she'll travel all over the world, collect all kinds of scents, experience the many cultures, and make the best perfume in the whole world.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconTask/T_IconTask_Task_275_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconTask160/T_IconTask160_Task_275_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconTask80/T_IconTask80_Task_275_UI.png",
+    "rarity": 5
+  },
+  {
     "id": 80110547,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
+    "name": "From the Heart, Dare the Heavens",
+    "attributes_description": "Background music played when setting out for the Sanctum in search of Hsin.",
+    "bg_description": "Complete the Main Quest \"Simulacrum of the Heart\" to unlock.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
@@ -22871,9 +23121,9 @@
   },
   {
     "id": 80110548,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
+    "name": "Moon's Voice Ends, Heart's Light Shines",
+    "attributes_description": "Hsin's final conversation with the Sentinel.",
+    "bg_description": "Complete the Main Quest \"Simulacrum of the Heart\" to unlock.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
@@ -22881,9 +23131,9 @@
   },
   {
     "id": 80110549,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
+    "name": "Moon Over a Thousand Peaks",
+    "attributes_description": "Background music of the fight between Hsin and Suhsin the Inevitable.",
+    "bg_description": "Complete the Main Quest \"Simulacrum of the Heart\" to unlock.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
@@ -22891,9 +23141,9 @@
   },
   {
     "id": 80110550,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
+    "name": "This Night, Lanterns and the Moon",
+    "attributes_description": "Background music played when heading to the Waking Moon celebration together.",
+    "bg_description": "Complete the Main Quest \"Simulacrum of the Heart\" to unlock.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
@@ -22901,9 +23151,9 @@
   },
   {
     "id": 80110551,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
+    "name": "The Dreaming Vale",
+    "attributes_description": "Background music played when entering Mengxuan Vale.",
+    "bg_description": "Complete the Main Quest \"Simulacrum of the Heart\" to unlock.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
@@ -22911,9 +23161,169 @@
   },
   {
     "id": 80110552,
-    "name": "NO CONTENT",
-    "attributes_description": "NO CONTENT",
-    "bg_description": "NO CONTENT",
+    "name": "Lanterns Adrift in Night",
+    "attributes_description": "Background music of the Waking Moon Festival.",
+    "bg_description": "Complete the Main Quest \"Simulacrum of the Heart\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 85100005,
+    "name": "School Headlines",
+    "attributes_description": "Can be used to switch the Photo Frame while taking a photo.",
+    "bg_description": "A school magazine with Second Solaris School's headline story, filled with cherished moments of school life. Keep those memories in this photo frame, just for you.",
+    "icon": "/Game/Aki/UI/UIResources/UiPhotograph/Image/UiCameraSystem37/UiCameraPhotoFrame/Icon256/T_IconPhotoFrameH256_001.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/UiPhotograph/Image/UiCameraSystem37/UiCameraPhotoFrame/Icon160/T_IconPhotoFrameH160_001.png",
+    "icon_small": "/Game/Aki/UI/UIResources/UiPhotograph/Image/UiCameraSystem37/UiCameraPhotoFrame/Icon80/T_IconPhotoFrameH80_001.png",
+    "rarity": 4
+  },
+  {
+    "id": 55009,
+    "name": "Flaming Sakura",
+    "attributes_description": "Used to unlock the corresponding Echo Aspect set.",
+    "bg_description": "Once bound by thorns, these wings now break free, soaring into the boundless sea of clouds.\nThe old laws no longer hold sway, for they will carry you to the farthest skies of freedom.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_a_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead175/T_IconRoleHead175_7_a_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconRoleHead80/T_IconRoleHead80_7_a_UI.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500110,
+    "name": "Reveler Captain's Seal",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_18.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500111,
+    "name": "The Mirror Reflecting the Beyond",
+    "attributes_description": "Resonators deal 60% more total DMG for 15s after they inflict Havoc Bane.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "When reflection begins to usurp reality, who you see in the mirror will take your place... and walk into the real world.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_43.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_43.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_43.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500112,
+    "name": "The Craft of Endless Inspiration",
+    "attributes_description": "When a Resonator inflicts Electro Flare, they deal 65% more total DMG for 20s.\nWhen a Resonator triggers Unison Response, they deal 60% more total Electro DMG for 20s.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "The artisan gazed upon the meteorite for three days, before shutting himself away in his home. Days later, officers came, who took the meteorite and burned the house to the ground with him still inside.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_53.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_53.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_53.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500113,
+    "name": "Torch that Ignites the Lasting Night",
+    "attributes_description": "Total Aero DMG is increased by 35%. Enemies take 30% more total Echo Skill DMG.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Lift your torch higher! Higher still! Until your shadow devours the darkness haunting these walls. Until you become the first to rewrite this long night through the sheer weight of your existence.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_44.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_44.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_44.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500114,
+    "name": "Reveler Captain's Seal",
+    "attributes_description": "Amplifies all Attribute DMG by 25%.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Evil sank their ship, trying to stifle their joy. Instead, they turned their last moments into a fiery celebration, singing and dancing atop the blazing sea.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_18.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_18.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_18.png",
+    "rarity": 4
+  },
+  {
+    "id": 71500115,
+    "name": "The Silence Adrift on the Waves",
+    "attributes_description": "Inflicting Tunability - Shifting increases the ATK and Crit. DMG of all Resonators in the team by 30% and 60% respectively.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Deaf since childhood, the fisherman spent his whole life adrift at sea, never once hearing the voice of the tide. When the entire village went mad at a roar that would not end, he finally understood: the silence was never a curse. It was a blessing.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_56.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_56.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_56.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500116,
+    "name": "The Echoes Shattering the Night",
+    "attributes_description": "After a Resonator casts Intro Skill, they deal 25% more total Fusion DMG for 15s.\nResonators deal 30% more total Basic Attack DMG.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "...A courier galloped past, throwing the tavern into an uproar. Invaders at the frontier, some swore. Warlords in revolt, said others. Not one of them guessed what future those hoofbeats, fading down the alley, truly heralded.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_55.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_55.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_55.png",
+    "rarity": 5
+  },
+  {
+    "id": 71500117,
+    "name": "The Paean of the Azure Hunt",
+    "attributes_description": "Resonators deal 50% more total Echo Skill DMG.\n\nThis Token can be used up to <color=#fee388>2</color> times in Whimpering Wastes.",
+    "bg_description": "Poised at the prow, the scholar drew his bow taut as the full moon. As his arrow pierced the vicious flood dragon's skull, a voice breathed approval into his ear: the voice of the one who had volunteered as bait.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMowing/T_IconMowing_57.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMowing160/T_IconMowing160_57.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMowing80/T_IconMowing80_57.png",
+    "rarity": 5
+  },
+  {
+    "id": 80110553,
+    "name": "A Bouquet for Tomorrow",
+    "attributes_description": "Background music played while Lily tells the truth, reshapes herself, and defeats the \"monsters that don't exist in the real world.\"",
+    "bg_description": "Complete Main Quest \"A Bouquet for Tomorrow\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110554,
+    "name": "JUST WITH YOU: After-School Hours with You",
+    "attributes_description": "OP of \"Second Coming of Solaris: Unwritten Dreams.\"",
+    "bg_description": "Participate in the event \"Second Coming of Solaris: Unwritten Dreams\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110555,
+    "name": "Train to Slumberland",
+    "attributes_description": "Background music of the Train of Souls during the day.",
+    "bg_description": "Complete Main Quest \"A Bouquet for Tomorrow\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110556,
+    "name": "A Dream Spun from Night",
+    "attributes_description": "Background music of the Train of Souls during the night.",
+    "bg_description": "Complete Main Quest \"A Bouquet for Tomorrow\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110557,
+    "name": "Memories in Sepia",
+    "attributes_description": "Background music played when Lily displays the missing content of the diary.",
+    "bg_description": "Complete Main Quest \"A Bouquet for Tomorrow\" to unlock.",
+    "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
+    "rarity": 4
+  },
+  {
+    "id": 80110558,
+    "name": "CATCH UP! - Clear School Days",
+    "attributes_description": "The background music of \"Second Coming of Solaris: Unwritten Dreams.\"",
+    "bg_description": "Participate in the event \"Second Coming of Solaris: Unwritten Dreams\" to unlock.",
     "icon": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_middle": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
     "icon_small": "/Game/Aki/UI/UIResources/Common/Image/IconMst/T_IconMst_009_UI.png",
